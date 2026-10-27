@@ -66,8 +66,8 @@ compared, with concept matching left to a review file).
   crosswalk decisions, topic and response rules, reading reviews.
 - Every result is checked twice: SPARQL against pandas, and each finding's observed value against the value
   recorded when it was agreed. A mismatch stops the build.
-- Status labels: *document fact*, *rule-derived*, *analyst reading*, *decision by Kerstin*. Readings that wait
-  for a trial-design reviewer or a clinical reader are marked in the catalogue.
+- Status labels (see Terms): *document fact*, *rule-derived*, *analyst-reading*, *decision by Kerstin*, and two
+  combined forms. Readings that wait for a trial-design reviewer or a clinical reader are marked in the catalogue.
 
 ### One chain, end to end: CP-11b
 
@@ -75,11 +75,13 @@ compared, with concept matching left to a review file).
    The threshold depends on the compound: less than 70 ml/min/1.73 m² for LY3016859 (OA01 [1004], BP01 [2003],
    NP01 [3003]), 60 for LY3556050 ([x030]), and 30 for LY3526318 and LY3857210 ([x052], [x077])
    (`usdm-master-protocol/output_cpmp/step5/criteria.csv`). OA01's number is shifted by its extra criterion [1003].
-2. **Proposal.** The crosswalk pairs criteria with similar wording (difflib ratio ≥ 0.85). Claude proposed a
-   decision per pair, with a pattern: P1 "eGFR threshold differs (same rule, different value)", and P3 for the
-   "< 30" variants that differ only in wording.
+2. **Proposal.** The crosswalk pairs criteria with similar wording (difflib ratio ≥ 0.85) or in the same slot
+   of the ISA numbering. Claude proposed a decision per pair, with a pattern: P1 "eGFR threshold differs (same
+   rule, different value)", P3 and P8 for variants that differ only in wording.
 3. **Decision.** Kerstin decided each pair in `cpmp-design-modules/sources/crosswalk_decisions.csv`: the 12 P1
-   pairs are kept apart, and the wording-only variants are merged.
+   pairs are kept apart; the wording-only variants are merged (11 P3 pairs for < 30, 1 P8 same-slot pair for
+   < 70). Three < 70 / < 60 pairs, kept apart in an earlier review group, are not P1 and are not counted: 27 eGFR
+   rows in the decision file, 12 in this finding.
 4. **Build.** `cpmp-design-modules/scripts/01_build_modules.py` merges only pairs decided "merge", and logs
    every pair kept apart (`output/build_log.csv`).
 5. **Finding.** CP-11b in `evidence-matrix/sources/findings.csv`, with the expected value "eGFR values 30/60/70".
@@ -108,9 +110,9 @@ in this repo today, and they may change as the work goes on.
 | Module | An OWL class that groups the components of one layer or one shared set (for example the CPMP compound module, which has no document of its own) |
 | Hand-over (delegation) | A parent statement that leaves content to a child ("will be specified in the relevant DSA"). An obligation: it can be answered, or not |
 | Default (overridable) | A parent rule that holds unless a child states otherwise |
-| Reading | Claude's reading of one statement by an agreed rule, marked *analyst reading* and reviewed by Kerstin |
+| Reading | Claude's reading of one statement by an agreed rule, marked *analyst-reading* and reviewed by Kerstin |
 | Crosswalk decision | Kerstin's decision that two differently worded occurrences are, or are not, the same component |
-| Status labels | *document fact* (stated in the document), *rule-derived* (computed by an agreed rule), *analyst reading* (as above), *decision by Kerstin* |
+| Status labels | As written in the evidence matrix: *document fact* (stated in the document); *document fact (identity decided by Kerstin)* (stated, with the component identity from a crosswalk decision); *rule-derived* (computed by an agreed rule); *rule-derived from analyst readings* (computed from reviewed readings); *analyst-reading* (as above); *decision by Kerstin* |
 
 ## Layout
 
