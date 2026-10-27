@@ -5,8 +5,8 @@ sources/case_questions.csv (which case question, finding or open question belong
 general question, and review still pending: not yet reviewed, or the reviewer it waits for). Everything else is read from the committed outputs of the builds:
 
 - CPMP case questions: answer and check from cpmp-design-modules/output/cq_results.csv.
-- REMAP-CAP case questions: the query file must be run and asserted against pandas in
-  remapcap-design-modules/notebooks/01_cq_check.ipynb; the answers are in the findings.
+- REMAP-CAP case questions: answer from remapcap-design-modules/output/cq_results.csv, written by
+  notebooks/01_cq_check.ipynb only after each query has been asserted against pandas.
 - Findings: expected, observed and check from evidence-matrix/output/findings_checked.csv;
   status from the evidence rows in evidence-matrix/output/evidence_matrix.csv; review of analyst
   readings from remapcap-design-modules/sources/reading_reviews.csv (decisions by Kerstin).
@@ -37,6 +37,7 @@ KINDS = ["case question", "finding", "earlier", "open", "not asked"]
 questions = pd.read_csv(HERE / "sources" / "questions.csv", dtype=str)
 cases = pd.read_csv(HERE / "sources" / "case_questions.csv", dtype=str).fillna("")
 cpmp = pd.read_csv(ROOT / "cpmp-design-modules" / "output" / "cq_results.csv", dtype=str)
+rcap = pd.read_csv(ROOT / "remapcap-design-modules" / "output" / "cq_results.csv", dtype=str).set_index("question")
 findings = pd.read_csv(ROOT / "evidence-matrix" / "output" / "findings_checked.csv", dtype=str)
 statements = pd.read_csv(ROOT / "evidence-matrix" / "sources" / "findings.csv", dtype=str).set_index("finding_id").finding
 matrix = pd.read_csv(ROOT / "evidence-matrix" / "output" / "evidence_matrix.csv", dtype=str)
@@ -88,6 +89,9 @@ assert placed.is_unique, placed[placed.duplicated()].tolist()
 assert set(placed) == set(findings.index), set(findings.index) ^ set(placed)
 cq_placed = cases[(cases.case == "CPMP") & (cases.kind == "case question")].item_id
 assert set(cq_placed) == set(cpmp.index), set(cpmp.index) ^ set(cq_placed)
+rq_placed = cases[(cases.case == "REMAP-CAP") & (cases.kind == "case question")].item_id
+assert set(rq_placed) == set(rcap.index), set(rcap.index) ^ set(rq_placed)
+assert (rcap.check == "pass").all(), rcap[rcap.check != "pass"]
 rq_files = {str(p.relative_to(ROOT)) for p in ROOT.glob("*-design-modules/queries/*.rq")}
 assert rq_files == set(cases[cases["query"].str.endswith(".rq")]["query"]), rq_files ^ set(cases["query"])
 for q in cases[cases["query"] != ""]["query"]:
@@ -127,8 +131,8 @@ for c in cases.itertuples():
         text, answer, check = rq_header(c.query), r.answer, f"{r.check} (against pandas, cq_results.csv)"
     elif c.kind == "case question" and c.case == "REMAP-CAP":
         assert Path(c.query).name in rcap_nb, c.query
-        text, answer = rq_header(c.query), "in the findings"
-        check = "asserted against pandas in notebooks/01_cq_check.ipynb"
+        text, answer = rq_header(c.query), rcap.loc[c.item_id, "answer"]
+        check = "pass (against pandas, notebooks/01_cq_check.ipynb)"
     elif c.kind == "finding":
         f = findings.loc[c.item_id]
         text, answer, check, stat = statements[c.item_id], f.observed, f.check, status[c.item_id]

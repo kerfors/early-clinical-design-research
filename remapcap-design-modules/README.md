@@ -206,6 +206,8 @@ PYTHONPATH=.pydeps/lib ROBOT_JAR=$PWD/.tools/robot.jar python3 remapcap-design-m
 PYTHONPATH=.pydeps/lib python3 remapcap-design-modules/scripts/06_build_notebook.py   # then execute notebooks/01_cq_check.ipynb
 ```
 
+The notebook's last cell writes `output/cq_results.csv` (question, answer, check), one row per query, only after every check has passed (added 2026-10-27; read by the competency-question catalogue).
+
 ## Step 2 fix and crosswalk decisions (2026-10-25)
 
 **Table text** (`02_extract_components.py`, diff reviewed by Kerstin):

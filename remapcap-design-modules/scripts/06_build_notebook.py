@@ -343,6 +343,43 @@ table = pd.DataFrame(rows)
 assert table.loc[0, "decided"] == len(r1)
 table
 """),
+    markdown_cell("""
+## Results file
+
+One row per competency query, written only after every check above has passed: `output/cq_results.csv`
+(question, answer, check), read by `../competency-questions/scripts/01_build_catalogue.py`.
+"""),
+    code_cell("""
+def short(d):
+    return d.replace("rcap:DomainDesign_", "")
+
+
+def counts(s):
+    return "; ".join(f"{k} {n}" for k, n in s.items())
+
+
+top = r3.sort_values(["shared", "a", "b"], ascending=[False, True, True]).iloc[0]
+unreached = r2e.unreached.value_counts().sort_index()
+per_dsa = r6s.groupby("dsa").size()
+results = [
+    ("R1", f"{len(r1)} components in all {len(DSAS)} DSAs and in no Core or PANDA text"),
+    ("R2a", f"{up.component.nunique()} inherited components ({r2a.n.sum()} component-kind pairs)"),
+    ("R2b", counts(r2b.groupby("allocation_kind").size()) + " (Core 4.1 statements)"),
+    ("R2c", "TAB 1: " + counts(r2c.groupby("how").n.sum())),
+    ("R2e", "; ".join(f"{u} unreached in {n} DSA" + ("s" if n > 1 else "") for u, n in unreached.items())),
+    ("R3", f"{len(r3)} DSA pairs; most shared {short(top.a)}-{short(top.b)} {top.shared}"),
+    ("R4", counts(r4.response.value_counts().sort_index())
+     + f"; defers back in another section {(r4.secondary == 'defers_back').sum()}"),
+    ("R5", counts(r5[r5.state == ""].response.value_counts().sort_index())),
+    ("R6a", f"{r6a.parent.nunique()} revised Core components, inherited unversioned by all {len(DSAS)} DSAs"),
+    ("R6b", counts(r6b.status.value_counts().sort_index())),
+    ("R6s", f"{len(r6s)} statements on Core sections changed in 4.1; {per_dsa.min()}-{per_dsa.max()} per DSA"),
+    ("R7", counts(r7.groupby("versions").n.sum())),
+]
+out = pd.DataFrame(results, columns=["question", "answer"]).assign(check="pass")
+out.to_csv(BASE / "output" / "cq_results.csv", index=False)
+out
+"""),
 ]
 
 for i, cell in enumerate(cells):

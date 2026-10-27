@@ -1,0 +1,13 @@
+question,answer,check
+R1,4 components in all 9 DSAs and in no Core or PANDA text,pass
+R2a,219 inherited components (222 component-kind pairs),pass
+R2b,delegation 15; overridable default 6 (Core 4.1 statements),pass
+R2c,TAB 1: points_at 109; states_own_TAB_only 16; states_own_shared 59,pass
+R2e,113 unreached in 8 DSAs; 119 unreached in 1 DSA,pass
+R3,36 DSA pairs; most shared AB-TAB 58,pass
+R4,condition_not_stated 13; fills 6; no_answer 4; defers back in another section 9,pass
+R5,ambiguous 9; silent 18; takes 9,pass
+R6a,"3 revised Core components, inherited unversioned by all 9 DSAs",pass
+R6b,moved 8; only_40 14; only_41 30,pass
+R6s,54 statements on Core sections changed in 4.1; 3-10 per DSA,pass
+R7,4.1 32; 4.1 + 4.0 (additionally) 22,pass
