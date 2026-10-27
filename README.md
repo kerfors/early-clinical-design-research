@@ -69,6 +69,49 @@ compared, with concept matching left to a review file).
 - Status labels: *document fact*, *rule-derived*, *analyst reading*, *decision by Kerstin*. Readings that wait
   for a trial-design reviewer or a clinical reader are marked in the catalogue.
 
+### One chain, end to end: CP-11b
+
+1. **Documents.** All 12 CPMP ISAs have an eGFR exclusion with the same CKD-EPI formula at Visit 1 or Visit 2.
+   The threshold depends on the compound: less than 70 ml/min/1.73 m² for LY3016859 (OA01 [1004], BP01 [2003],
+   NP01 [3003]), 60 for LY3556050 ([x030]), and 30 for LY3526318 and LY3857210 ([x052], [x077])
+   (`usdm-master-protocol/output_cpmp/step5/criteria.csv`). OA01's number is shifted by its extra criterion [1003].
+2. **Proposal.** The crosswalk pairs criteria with similar wording (difflib ratio ≥ 0.85). Claude proposed a
+   decision per pair, with a pattern: P1 "eGFR threshold differs (same rule, different value)", and P3 for the
+   "< 30" variants that differ only in wording.
+3. **Decision.** Kerstin decided each pair in `cpmp-design-modules/sources/crosswalk_decisions.csv`: the 12 P1
+   pairs are kept apart, and the wording-only variants are merged.
+4. **Build.** `cpmp-design-modules/scripts/01_build_modules.py` merges only pairs decided "merge", and logs
+   every pair kept apart (`output/build_log.csv`).
+5. **Finding.** CP-11b in `evidence-matrix/sources/findings.csv`, with the expected value "eGFR values 30/60/70".
+   The selector `cp11b()` in `evidence-matrix/scripts/01_build_matrix.py` reads the 12 P1 decisions and both
+   texts of each pair, and extracts the thresholds. That gives 12 evidence rows, status *decision by Kerstin*.
+6. **Check.** Observed "eGFR values 30/60/70" equals the expected value: pass (`output/findings_checked.csv`). A
+   changed decision or threshold stops the build.
+7. **Catalogue.** Q1, row CP-11b, with the answer, the check and the status (`competency-questions/output/catalogue.md`).
+
+What it shows: text identity cannot say "the same rule with a different value". A design model needs the rule
+as one component with a parameter that varies by compound.
+
+## Terms (draft)
+
+Working definitions for this early exploratory work, not definitions for reuse. They are how the terms are used
+in this repo today, and they may change as the work goes on.
+
+| Term | Working definition |
+|---|---|
+| Master protocol | One protocol for several sub-studies, holding what they share; the rest is in appendices |
+| DSA | **CPMP:** disease-state addendum (what is specific to one disease; not public). **REMAP-CAP:** domain-specific appendix (one question, e.g. antivirals, with its interventions and rules) |
+| ISA | Intervention-specific appendix (CPMP): one compound in one disease state; the sub-study protocol |
+| Core, PANDA | REMAP-CAP Core Protocol (4.0, 4.1) and its Patient, Pathogen and Disease Appendix |
+| Layer | A document level: master, DSA, ISA (CPMP); Core, PANDA, DSA (REMAP-CAP) |
+| Component | One unit of design content (a criterion, an endpoint, an SoA cell, a statement), with one identity across documents |
+| Module | An OWL class that groups the components of one layer or one shared set (for example the CPMP compound module, which has no document of its own) |
+| Hand-over (delegation) | A parent statement that leaves content to a child ("will be specified in the relevant DSA"). An obligation: it can be answered, or not |
+| Default (overridable) | A parent rule that holds unless a child states otherwise |
+| Reading | Claude's reading of one statement by an agreed rule, marked *analyst reading* and reviewed by Kerstin |
+| Crosswalk decision | Kerstin's decision that two differently worded occurrences are, or are not, the same component |
+| Status labels | *document fact* (stated in the document), *rule-derived* (computed by an agreed rule), *analyst reading* (as above), *decision by Kerstin* |
+
 ## Layout
 
 | Folder | Content |
@@ -104,6 +147,10 @@ Upstream ontology terms are imported from OBI, MONDO and HP (versions and checks
 
 ## Related
 
+- [ICH M11 as linked data: why, and what I did](https://www.linkedin.com/pulse/ich-m11-linked-data-why-what-i-did-kerstin-forsberg-26b7e/)
+  (article, 26 October 2026) and the pages
+  [ICH M11 and USDM, coming together](https://kerfors.github.io/usdm-one-graph/m11/) and
+  [the CDISC Pilot as an ICH M11 protocol](https://kerfors.github.io/usdm-one-graph/m11/protocol.html)
 - [usdm-rdf](https://w3id.org/cdisc/usdm/v4/): USDM v4 as RDF/OWL
 - [m11-rdf](https://w3id.org/m11-rdf/): ICH M11 sections and elements with identifiers, and the M11–USDM mappings
 - [soa2usdm](https://github.com/kerfors/soa2usdm) and [soa2usdm-collections](https://kerfors.github.io/soa2usdm-collections):

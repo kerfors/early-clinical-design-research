@@ -1,4 +1,4 @@
-# cdd-layer
+# cdd-layer (parked 2026-10-25)
 
 A CDD-style allocation layer above USDM v4.0.0: which layer of a master protocol decides where an item of design content is specified or taken from. Sketch, not pipeline.
 Parked 2026-10-25: its allocation kinds informed the design modules and the requirements. Seed data: `../usdm-master-protocol/output_remapcap/` (REMAP-CAP), `../cpmp-soa-join/output/` and `output/panel_statements.csv` (CPMP).
