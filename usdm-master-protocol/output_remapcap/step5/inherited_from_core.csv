@@ -1,0 +1,13 @@
+dsa_section,dsa_statement,core_location,basis,changed_in_v41
+7,primary endpoint specified in the Core Protocol documents,CORE 7.6.1,primary endpoint definition,CORE 7.6.1
+8.1.1,"Age Strata, as defined in Core Protocol documents",PANDA 2,"age categories are defined in PANDA §2, not in the Core",
+8.1.2,These States are defined in Core Protocol documents,PANDA 4.3,Moderate/Severe State defined in PANDA §4.3,
+8.2,platform-level inclusion and none of the platform-level exclusion criteria,CORE 7.4.1; CORE 7.4.2,platform inclusion / exclusion criteria,
+8.5.1,primary outcome as specified in Core Protocol documents,CORE 7.6.1,primary endpoint definition,CORE 7.6.1
+8.5.2,All secondary endpoints as specified in the Core Protocol,CORE 7.6.2,secondary endpoints,CORE 7.6.2
+9.3,Refer to relevant core protocol documents for criteria for the discontinuation,CORE 8.6,Core 8.6 'Criteria for discontinuation of an allocated intervention within the Platform',
+10.1,stopping rules for this domain are those outlined in the relevant Core Protocol documents,CORE 7.8.6; CORE 7.8.7,statistical triggers and actions,CORE 7.8.6; CORE 7.8.7
+10.2,borrowing between all strata as specified in Core Protocol documents,CORE 7.8.3,treatment-by-strata borrowing (gamma),CORE 7.8.3
+10.3,the cap on the maximum or minimum proportion of patients assigned to an intervention,CORE 7.8.7,RAR allocation cap,CORE 7.8.7
+10.7,"threshold probability for statistical triggers for superiority, efficacy, and inferiority",CORE 7.8.6,statistical triggers,CORE 7.8.6
+10.8,threshold probability of a statistical trigger for futility,CORE 7.8.6,futility trigger,CORE 7.8.6

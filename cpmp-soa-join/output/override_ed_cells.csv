@@ -1,0 +1,13 @@
+isa,compound,disease,activity_key,master_mark,in_master_soa
+BP01,LY3016859,CLBP,NRS for pain,True,True
+BP01,LY3016859,CLBP,PGI,True,True
+BP01,LY3016859,CLBP,RMDQ,False,False
+BP01,LY3016859,CLBP,Rescue medication usage reporting,True,True
+NP01,LY3016859,DPNP,BPI,False,False
+NP01,LY3016859,DPNP,NRS for pain,True,True
+NP01,LY3016859,DPNP,PGI,True,True
+NP01,LY3016859,DPNP,Rescue medication usage reporting,True,True
+OA01,LY3016859,OA,NRS for pain,True,True
+OA01,LY3016859,OA,PGI,True,True
+OA01,LY3016859,OA,Rescue medication usage reporting,True,True
+OA01,LY3016859,OA,WOMAC,False,False

@@ -1,0 +1,158 @@
+design,role,superclass,status
+cpmp:Compound_LY3016859,compound,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:Compound_LY3016859,compound,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:Compound_LY3016859,compound,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:Compound_LY3016859,compound,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:Compound_LY3016859,compound,http://purl.obolibrary.org/obo/OBI_0500001,inferred
+cpmp:Compound_LY3526318,compound,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:Compound_LY3526318,compound,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:Compound_LY3526318,compound,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:Compound_LY3526318,compound,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:Compound_LY3526318,compound,http://purl.obolibrary.org/obo/OBI_0500001,inferred
+cpmp:Compound_LY3556050,compound,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:Compound_LY3556050,compound,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:Compound_LY3556050,compound,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:Compound_LY3556050,compound,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:Compound_LY3556050,compound,http://purl.obolibrary.org/obo/OBI_0500001,inferred
+cpmp:Compound_LY3857210,compound,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:Compound_LY3857210,compound,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:Compound_LY3857210,compound,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:Compound_LY3857210,compound,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:Compound_LY3857210,compound,http://purl.obolibrary.org/obo/OBI_0500001,inferred
+cpmp:DiseaseState_CLBP,disease state,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:DiseaseState_CLBP,disease state,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:DiseaseState_CLBP,disease state,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:DiseaseState_CLBP,disease state,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:DiseaseState_CLBP,disease state,http://purl.obolibrary.org/obo/OBI_0500001,inferred
+cpmp:DiseaseState_DPNP,disease state,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:DiseaseState_DPNP,disease state,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:DiseaseState_DPNP,disease state,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:DiseaseState_DPNP,disease state,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:DiseaseState_DPNP,disease state,http://purl.obolibrary.org/obo/OBI_0500001,inferred
+cpmp:DiseaseState_OA,disease state,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:DiseaseState_OA,disease state,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:DiseaseState_OA,disease state,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:DiseaseState_OA,disease state,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:DiseaseState_OA,disease state,http://purl.obolibrary.org/obo/OBI_0500001,inferred
+cpmp:ISA_BP01,compound x disease state,cpmp:Compound_LY3016859,inferred
+cpmp:ISA_BP01,compound x disease state,cpmp:DiseaseState_CLBP,asserted
+cpmp:ISA_BP01,compound x disease state,cpmp:MasterDesign,asserted
+cpmp:ISA_BP01,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:ISA_BP01,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:ISA_BP01,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:ISA_BP01,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:ISA_BP01,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500001,asserted
+cpmp:ISA_BP02,compound x disease state,cpmp:Compound_LY3526318,inferred
+cpmp:ISA_BP02,compound x disease state,cpmp:DiseaseState_CLBP,asserted
+cpmp:ISA_BP02,compound x disease state,cpmp:MasterDesign,asserted
+cpmp:ISA_BP02,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:ISA_BP02,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:ISA_BP02,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:ISA_BP02,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:ISA_BP02,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500001,asserted
+cpmp:ISA_BP03,compound x disease state,cpmp:Compound_LY3556050,inferred
+cpmp:ISA_BP03,compound x disease state,cpmp:DiseaseState_CLBP,asserted
+cpmp:ISA_BP03,compound x disease state,cpmp:MasterDesign,asserted
+cpmp:ISA_BP03,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:ISA_BP03,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:ISA_BP03,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:ISA_BP03,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:ISA_BP03,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500001,asserted
+cpmp:ISA_BP05,compound x disease state,cpmp:Compound_LY3857210,inferred
+cpmp:ISA_BP05,compound x disease state,cpmp:DiseaseState_CLBP,asserted
+cpmp:ISA_BP05,compound x disease state,cpmp:MasterDesign,asserted
+cpmp:ISA_BP05,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:ISA_BP05,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:ISA_BP05,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:ISA_BP05,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:ISA_BP05,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500001,asserted
+cpmp:ISA_BP07,compound x disease state,cpmp:DiseaseState_CLBP,asserted
+cpmp:ISA_BP07,compound x disease state,cpmp:MasterDesign,asserted
+cpmp:ISA_BP07,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:ISA_BP07,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:ISA_BP07,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:ISA_BP07,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:ISA_BP07,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500001,asserted
+cpmp:ISA_NP01,compound x disease state,cpmp:Compound_LY3016859,inferred
+cpmp:ISA_NP01,compound x disease state,cpmp:DiseaseState_DPNP,asserted
+cpmp:ISA_NP01,compound x disease state,cpmp:MasterDesign,asserted
+cpmp:ISA_NP01,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:ISA_NP01,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:ISA_NP01,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:ISA_NP01,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:ISA_NP01,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500001,asserted
+cpmp:ISA_NP02,compound x disease state,cpmp:Compound_LY3526318,inferred
+cpmp:ISA_NP02,compound x disease state,cpmp:DiseaseState_DPNP,asserted
+cpmp:ISA_NP02,compound x disease state,cpmp:MasterDesign,asserted
+cpmp:ISA_NP02,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:ISA_NP02,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:ISA_NP02,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:ISA_NP02,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:ISA_NP02,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500001,asserted
+cpmp:ISA_NP03,compound x disease state,cpmp:Compound_LY3556050,inferred
+cpmp:ISA_NP03,compound x disease state,cpmp:DiseaseState_DPNP,asserted
+cpmp:ISA_NP03,compound x disease state,cpmp:MasterDesign,asserted
+cpmp:ISA_NP03,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:ISA_NP03,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:ISA_NP03,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:ISA_NP03,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:ISA_NP03,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500001,asserted
+cpmp:ISA_NP05,compound x disease state,cpmp:Compound_LY3857210,inferred
+cpmp:ISA_NP05,compound x disease state,cpmp:DiseaseState_DPNP,asserted
+cpmp:ISA_NP05,compound x disease state,cpmp:MasterDesign,asserted
+cpmp:ISA_NP05,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:ISA_NP05,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:ISA_NP05,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:ISA_NP05,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:ISA_NP05,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500001,asserted
+cpmp:ISA_NP07,compound x disease state,cpmp:DiseaseState_DPNP,asserted
+cpmp:ISA_NP07,compound x disease state,cpmp:MasterDesign,asserted
+cpmp:ISA_NP07,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:ISA_NP07,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:ISA_NP07,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:ISA_NP07,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:ISA_NP07,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500001,asserted
+cpmp:ISA_OA01,compound x disease state,cpmp:Compound_LY3016859,inferred
+cpmp:ISA_OA01,compound x disease state,cpmp:DiseaseState_OA,asserted
+cpmp:ISA_OA01,compound x disease state,cpmp:MasterDesign,asserted
+cpmp:ISA_OA01,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:ISA_OA01,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:ISA_OA01,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:ISA_OA01,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:ISA_OA01,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500001,asserted
+cpmp:ISA_OA02,compound x disease state,cpmp:Compound_LY3526318,inferred
+cpmp:ISA_OA02,compound x disease state,cpmp:DiseaseState_OA,asserted
+cpmp:ISA_OA02,compound x disease state,cpmp:MasterDesign,asserted
+cpmp:ISA_OA02,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:ISA_OA02,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:ISA_OA02,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:ISA_OA02,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:ISA_OA02,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500001,asserted
+cpmp:ISA_OA03,compound x disease state,cpmp:Compound_LY3556050,inferred
+cpmp:ISA_OA03,compound x disease state,cpmp:DiseaseState_OA,asserted
+cpmp:ISA_OA03,compound x disease state,cpmp:MasterDesign,asserted
+cpmp:ISA_OA03,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:ISA_OA03,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:ISA_OA03,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:ISA_OA03,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:ISA_OA03,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500001,asserted
+cpmp:ISA_OA05,compound x disease state,cpmp:Compound_LY3857210,inferred
+cpmp:ISA_OA05,compound x disease state,cpmp:DiseaseState_OA,asserted
+cpmp:ISA_OA05,compound x disease state,cpmp:MasterDesign,asserted
+cpmp:ISA_OA05,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:ISA_OA05,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:ISA_OA05,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:ISA_OA05,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:ISA_OA05,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500001,asserted
+cpmp:ISA_OA07,compound x disease state,cpmp:DiseaseState_OA,asserted
+cpmp:ISA_OA07,compound x disease state,cpmp:MasterDesign,asserted
+cpmp:ISA_OA07,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:ISA_OA07,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:ISA_OA07,compound x disease state,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:ISA_OA07,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:ISA_OA07,compound x disease state,http://purl.obolibrary.org/obo/OBI_0500001,asserted
+cpmp:MasterDesign,master,http://purl.obolibrary.org/obo/IAO_0000030,inferred
+cpmp:MasterDesign,master,http://purl.obolibrary.org/obo/IAO_0000033,inferred
+cpmp:MasterDesign,master,http://purl.obolibrary.org/obo/IAO_0000104,inferred
+cpmp:MasterDesign,master,http://purl.obolibrary.org/obo/OBI_0500000,inferred
+cpmp:MasterDesign,master,http://purl.obolibrary.org/obo/OBI_0500001,inferred

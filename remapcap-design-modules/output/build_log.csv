@@ -1,0 +1,55 @@
+step,item,rule,detail
+parent,c0a964350f0,B-parent families differ,kinds category_illness_severity;endpoint_primary: Non-invasive ventilation (bilevel positive airway pressure or continuo
+parent,c45bf8da54f,B-parent families differ,kinds category_illness_severity;endpoint_primary: Invasive mechanical ventilation
+parent,c4ee594ef26,B-parent families differ,kinds domain_exclusion;domain_inclusion: SARS-CoV-2 infection has been confirmed by microbiological testing
+parent,c74d77f164d,B-parent families differ,kinds data_collection;endpoint_secondary: Administration of rescue therapies
+parent,c91b4608fe0,B-parent families differ,kinds data_collection;endpoint_secondary: Occurrence of barotrauma
+parent,cb34d84e7ea,B-parent families differ,"kinds category_illness_severity;endpoint_primary: Continuous infusion of vasopressors, inotropes or both"
+revision,r87900e2424,B-core revision parent,7.6.1 ratio 0.994
+revision,r52076d4ff9,B-core revision parent,7.8.7 ratio 0.983
+revision,rcdb4b81960,B-core revision parent,8.8.2 ratio 0.881
+about,c66579d1944,B-about,respiratory tract infection -> MONDO_0024355; gap []: Acute respiratory tract infection
+about,c1b0d782be7,B-about,respiratory tract infection -> MONDO_0024355; gap ['lower']: Patient has lower-respiratory tract infection
+about,c608aaeeb9b,"B-about conditional, not asserted","If in the Severe State, patient has pneumonia"
+about,c32c8e26722,"B-about conditional, not asserted","If in the Moderate State, patient is receiving some form of supplemental oxygen (simple facemask, low or high flow nasal oxygen, or non-invasive ventilation)"
+about,cba8b5376a9,B-about,respiratory tract infection -> MONDO_0024355; gap ['community-acquired']: Patient has community-acquired respiratory tract infection
+about,c3e253b26d2,B-about,pneumonia -> MONDO_0005249; gap []: Patient has pneumonia
+about,c5eb0851e13,B-about,pneumonia -> MONDO_0005249; gap []: Empiric antibiotic therapy for bacterial pneumonia is considered appropriate
+about,c403aa283ef,B-about,pneumonia -> MONDO_0005249; gap []: Empiric antibiotic therapy for bacterial pneumonia including melioidosis is considered appropriate
+about,c9e40a2b775,B-about,influenza -> MONDO_0005812; gap []: Influenza infection has been confirmed by microbiological testing.
+about,c40e386d490,B-about,"respiratory tract infection -> MONDO_0024355; gap []: In the opinion of the treating clinician, the primary contributor to the patient’s Severe Illness State is a respiratory tract infection"
+core,CoreDesign,B-core,95 stable components + 3 revision parents
+core,rcap:CoreDesign_4_0,B-core,"112 components, versionIRI core/4.0"
+core,rcap:CoreDesign_4_1,B-core,"128 components, versionIRI core/4.1"
+panda,PandaDesign,B-panda,94 components; appendixTo CoreDesign (annotation)
+dsa,rcap:DomainDesign_CS,B-dsa / E-locate,generic sentence p.10
+dsa,rcap:Domain_CS,B-domain,3 arms: No corticosteroid (no placebo) | Shock-dependent hydrocortisone while the patient is in septic shock (Severe State only) | Fixed duration dexamethasone for 10 days
+dsa,rcap:DomainDesign_AB,B-dsa / E-locate,generic sentence p.9
+dsa,rcap:Domain_AB,B-domain,4 arms: Ceftriaxone + Macrolide | Moxifloxacin or Levofloxacin | Piperacillin-tazobactam + Macrolide | Amoxicillin-clavulanate + Macrolide
+dsa,rcap:DomainDesign_TAB,B-dsa / E-locate,generic sentence p.9
+dsa,rcap:Domain_TAB,B-domain,2 arms: Amoxicillin-clavulanate + Ceftazidime + Macrolide | Meropenem + Macrolide
+dsa,rcap:DomainDesign_IAV,B-dsa / E-locate,generic sentence p.10
+dsa,rcap:Domain_IAV,B-domain,4 arms: No antiviral agent (no placebo) | Oseltamivir twice daily for five days | Baloxavir on days 1 and 4 after reveal of randomized treatment assignment | Oseltamivir twice daily for 5 days + baloxavir on days 1 and 4 after reveal of randomized treatment assignment
+dsa,rcap:DomainDesign_MD,B-dsa / E-locate,generic sentence p.8
+dsa,rcap:Domain_MD,B-domain,"2 arms: Standard course macrolide discontinued between day 3 and day 5 or at hospital discharge, whichever occurs first | Extended course macrolide for 14 days or hospital discharge, whichever occurs first"
+dsa,rcap:DomainDesign_IG,B-dsa / E-locate,generic sentence p.9
+dsa,rcap:Domain_IG,B-domain,2 arms: No immunoglobulin against COVID-19 (no placebo) | High titer convalescent plasma
+dsa,rcap:DomainDesign_MV,B-dsa / E-locate,generic sentence p.10
+dsa,rcap:Domain_MV,B-domain,2 arms: Protocolized mechanical ventilation strategy | Clinician-preference mechanical ventilation strategy
+dsa,rcap:DomainDesign_END,B-dsa / E-locate,generic sentence p.9
+dsa,rcap:Domain_END,B-domain,2 arms: No Endothelial modulator therapy | Enteral imatinib
+dsa,rcap:DomainDesign_IIM,B-dsa / E-locate,generic sentence p.9
+dsa,rcap:Domain_IIM,B-domain,3 arms: No immune modulation (no placebo) | Tocilizumab | Baricitinib
+shared,SharedDSA_CS_AB_TAB_IAV_MD_IG_MV_END_IIM,B-shared,4 components
+shared,SharedDSA_AB_MD,B-shared,1 components
+shared,SharedDSA_AB_TAB,B-shared,33 components
+shared,SharedDSA_CS_IAV,B-shared,1 components
+shared,SharedDSA_CS_IIM,B-shared,1 components
+shared,SharedDSA_CS_TAB,B-shared,1 components
+shared,SharedDSA_IG_END,B-shared,2 components
+shared,SharedDSA_END_IIM,B-shared,1 components
+shared,SharedDSA_TAB_END,B-shared,1 components
+shared,SharedDSA_IAV_IIM,B-shared,1 components
+shared,SharedDSA_IG_IIM,B-shared,1 components
+shared,SharedDSA_TAB_IG,B-shared,1 components
+scope,Biological Sampling Appendix,decision 9,named in Core 4.0/4.1 2.2 and 2.2.6; no statement delegates content to it; no module

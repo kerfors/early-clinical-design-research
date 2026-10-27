@@ -1,0 +1,100 @@
+step,item,rule,detail
+scope,intervention attribute,not built (agreed 2026-10-25),51 components left out
+crosswalk,"Have an eGFR of less than 30 ml/min/1.73 m, based on the Chronic Kidney Disease ",merged (sources/crosswalk_decisions.csv),"5 keys; classes ['compound column (part)', 'single ISA'] -> other; docs BP02;BP05;NP02;NP05;OA02;OA05"
+crosswalk,Have an eGFR of less than 70 ml/min/1.73m2 based on CKD-EPI formula at Visit 1 o,merged (sources/crosswalk_decisions.csv),3 keys; classes ['single ISA'] -> compound column; docs BP01;NP01;OA01
+crosswalk,"Have any clinically serious or unstable cardiovascular, musculoskeletal disorder",merged (sources/crosswalk_decisions.csv),"2 keys; classes ['compound column (part)', 'single ISA'] -> compound column; docs BP01;NP01;OA01"
+crosswalk,are men or women who abide by the reproductive and contraceptive requirements pr,merged (sources/crosswalk_decisions.csv),3 keys; classes ['single ISA'] -> compound column; docs BP03;NP03;OA03
+crosswalk,Are men or women who abide by the reproductive and contraceptive requirements pr,merged (sources/crosswalk_decisions.csv),2 keys; classes ['compound column'] -> other; docs BP01;BP02;NP01;NP02;OA01;OA02
+crosswalk,"have a history of allergic reactions to monoclonal antibodies, or clinically sig",merged (sources/crosswalk_decisions.csv),"2 keys; classes ['compound column (part)', 'single ISA'] -> compound column; docs BP01;NP01;OA01"
+crosswalk,"have a history or presence of uncontrolled asthma, eczema, significant atopy, si",merged (sources/crosswalk_decisions.csv),3 keys; classes ['single ISA'] -> compound column; docs BP01;NP01;OA01
+crosswalk,"have a history within 2 years prior to Visit 1 or current evidence of syncope, p",merged (sources/crosswalk_decisions.csv),"2 keys; classes ['compound column (part)', 'single ISA'] -> compound column; docs BP03;NP03;OA03"
+crosswalk,have had a change in beta blocker therapy in the last 12 weeks before Visit 2. T,merged (sources/crosswalk_decisions.csv),"2 keys; classes ['compound column (part)', 'single ISA'] -> compound column; docs BP03;NP03;OA03"
+crosswalk,"have received any antibodies against nerve growth factor (NGF), antibodies again",merged (sources/crosswalk_decisions.csv),3 keys; classes ['single ISA'] -> compound column; docs BP01;NP01;OA01
+crosswalk,Women who are pregnant or breastfeeding.,merged (sources/crosswalk_decisions.csv),"4 keys; classes ['compound column', 'compound column (part)', 'other', 'single ISA'] -> other; docs BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05"
+crosswalk,are willing to discontinue all pain medications for condition under study except,merged (sources/crosswalk_decisions.csv),"2 keys; classes ['compound column (part)', 'single ISA'] -> compound column; docs BP01;NP01;OA01"
+crosswalk,BP01 [2003] / BP03 [2030],kept apart (sources/crosswalk_decisions.csv),"different eGFR threshold (< 70 / < 60), different compounds"
+crosswalk,BP01 [2003] / NP03 [3030],kept apart (sources/crosswalk_decisions.csv),"different eGFR threshold (< 70 / < 60), different compounds"
+crosswalk,BP01 [2003] / OA03 [1030],kept apart (sources/crosswalk_decisions.csv),"different eGFR threshold (< 70 / < 60), different compounds"
+crosswalk,BP01 [2003] / BP02 [2052],kept apart (sources/crosswalk_decisions.csv),"P1: eGFR threshold differs (same rule, different value)"
+crosswalk,BP01 [2003] / NP02 [3052],kept apart (sources/crosswalk_decisions.csv),"P1: eGFR threshold differs (same rule, different value)"
+crosswalk,BP01 [2003] / OA02 [1052],kept apart (sources/crosswalk_decisions.csv),"P1: eGFR threshold differs (same rule, different value)"
+crosswalk,BP02 [2052] / BP03 [2030],kept apart (sources/crosswalk_decisions.csv),"P1: eGFR threshold differs (same rule, different value)"
+crosswalk,BP02 [2052] / NP03 [3030],kept apart (sources/crosswalk_decisions.csv),"P1: eGFR threshold differs (same rule, different value)"
+crosswalk,BP02 [2052] / OA03 [1030],kept apart (sources/crosswalk_decisions.csv),"P1: eGFR threshold differs (same rule, different value)"
+crosswalk,BP03 [2030] / NP02 [3052],kept apart (sources/crosswalk_decisions.csv),"P1: eGFR threshold differs (same rule, different value)"
+crosswalk,BP03 [2030] / OA02 [1052],kept apart (sources/crosswalk_decisions.csv),"P1: eGFR threshold differs (same rule, different value)"
+crosswalk,NP02 [3052] / NP03 [3030],kept apart (sources/crosswalk_decisions.csv),"P1: eGFR threshold differs (same rule, different value)"
+crosswalk,NP02 [3052] / OA03 [1030],kept apart (sources/crosswalk_decisions.csv),"P1: eGFR threshold differs (same rule, different value)"
+crosswalk,NP03 [3030] / OA02 [1052],kept apart (sources/crosswalk_decisions.csv),"P1: eGFR threshold differs (same rule, different value)"
+crosswalk,OA02 [1052] / OA03 [1030],kept apart (sources/crosswalk_decisions.csv),"P1: eGFR threshold differs (same rule, different value)"
+crosswalk,BP01 [2003] / OA01 [1003],kept apart (sources/crosswalk_decisions.csv),"P6: same criterion number, different criteria (numbering shifted by an inserted criterion)"
+crosswalk,NP01 [3003] / OA01 [1003],kept apart (sources/crosswalk_decisions.csv),"P6: same criterion number, different criteria (numbering shifted by an inserted criterion)"
+crosswalk,BP01 [2004] / OA01 [1004],kept apart (sources/crosswalk_decisions.csv),"P6: same criterion number, different criteria (numbering shifted by an inserted criterion)"
+crosswalk,BP01 [2005] / NP01 [3005],kept apart (sources/crosswalk_decisions.csv),"P6: same criterion number, different criteria (numbering shifted by an inserted criterion)"
+crosswalk,BP01 [2005] / OA01 [1005],kept apart (sources/crosswalk_decisions.csv),"P6: same criterion number, different criteria (numbering shifted by an inserted criterion)"
+crosswalk,NP01 [3004] / OA01 [1004],kept apart (sources/crosswalk_decisions.csv),"P6: same criterion number, different criteria (numbering shifted by an inserted criterion)"
+crosswalk,NP01 [3005] / OA01 [1005],kept apart (sources/crosswalk_decisions.csv),"P6: same criterion number, different criteria (numbering shifted by an inserted criterion)"
+crosswalk,BP03 [2034] / NP03 [3034],kept apart (sources/crosswalk_decisions.csv),P7: NP03 adds the metformin exception (disease content)
+crosswalk,NP03 [3034] / OA03 [1034],kept apart (sources/crosswalk_decisions.csv),P7: NP03 adds the metformin exception (disease content)
+crosswalk,BP01 [2006] / NP01 [3006],kept apart (sources/crosswalk_decisions.csv),"P6: same criterion number, different criteria (numbering shifted by an inserted criterion)"
+crosswalk,BP01 [2006] / OA01 [1006],kept apart (sources/crosswalk_decisions.csv),"P6: same criterion number, different criteria (numbering shifted by an inserted criterion)"
+crosswalk,BP01 [2007] / NP01 [3007],kept apart (sources/crosswalk_decisions.csv),"P6: same criterion number, different criteria (numbering shifted by an inserted criterion)"
+crosswalk,BP01 [2007] / OA01 [1007],kept apart (sources/crosswalk_decisions.csv),"P6: same criterion number, different criteria (numbering shifted by an inserted criterion)"
+crosswalk,BP01 [2008] / NP01 [3008],kept apart (sources/crosswalk_decisions.csv),"P6: same criterion number, different criteria (numbering shifted by an inserted criterion)"
+crosswalk,BP01 [2008] / OA01 [1008],kept apart (sources/crosswalk_decisions.csv),"P6: same criterion number, different criteria (numbering shifted by an inserted criterion)"
+schedule,master cells,master marks (SoA join),"151 cells, 3 defaults: NRS for pain, PGI, Rescue medication usage reporting at ED"
+schedule,ISA cells,"ISA marks, not restated; sharing rule as for criteria","185 cells: {'compound column': 109, 'other': 71, 'single ISA': 5}"
+schedule,restated,ISA marks a master cell: has part annotated 'restated',30 ISA x cell
+schedule,overrides,'not needed for ED per the CPMP SoA',"9 on master defaults, 3 on activities not in the master SoA (-> disease state)"
+master,MasterDesign,defined class over master components,"51 components ({'criterion': 32, 'endpoint': 14, 'objective': 5})"
+delegation,are male or female participants ¶ Reproductive and contraceptive requirements wi,phrase in master component text,delegates to ISA designs
+delegation,Mean change from baseline assessment to endpoint for physical functioning measur,phrase in master component text,delegates to disease-state designs
+delegation,Proportion of participants with reduction from baseline greater than or equal to,phrase in master component text,delegates to disease-state designs
+slot,CPMP 1.1 p12,excluded: delegation carried by master component(s),1 component(s)
+slot,CPMP 3 p26,excluded: delegation carried by master component(s),2 component(s)
+slot,CPMP 10.7 p88,excluded: abbreviation list (Step 2 false positive),CONSORT Consolidated Standards of Reporting Trials CRF case report form CSF crit
+slot,The DSA will contain specific study elements to appropriately define the target ,master -> DSA delegation sentence (role statement),sections 1.1
+slot,Screening Period The investigator determines what DSA the potential participant ,master -> DSA delegation sentence (role statement),"sections 1.1, 4.1.1"
+slot,The disease-state addenda (DSA) will contain specific study elements to appropri,master -> DSA delegation sentence (role statement),sections 2.2
+slot,The master protocol contains DSA that have specific study elements to appropriat,master -> DSA delegation sentence (role statement),sections 4.1
+slot,Participants are eligible to be included in the study only if the following crit,master -> DSA delegation sentence (content); sentence also names the ISA: delegates to ISA designs too,sections 5.1
+slot,Additional stratification factors may be defined in the ISA or DSA.,master -> DSA delegation sentence (content); sentence also names the ISA: delegates to ISA designs too,sections 6.3.1
+slot,Data to be collected at the time of study discontinuation and follow-up and for ,master -> DSA delegation sentence (content); sentence also names the ISA: delegates to ISA designs too,sections 7.2
+slot,Additional SoAs are included in the DSA and may also be included in each ISA.,master -> DSA delegation sentence (content); sentence also names the ISA: delegates to ISA designs too,sections 8
+schedule slot,Visits after V7,master SoA delegation_visits,Visits after V7 may be specified in the ISA.
+schedule slot,Post-randomization ECG,master SoA delegation_activity,Triplicate ECGs. Post randomization ECGs are included in each ISA.
+schedule slot,Post-randomization Hematology,master SoA delegation_activity,Post randomization collections will be defined in each respective ISA.
+schedule slot,Post-randomization Chemistry,master SoA delegation_activity,Post randomization collections will be defined in each respective ISA.
+schedule slot,Post-randomization Lipid panel,master SoA delegation_activity,Post randomization collections will be defined in each respective ISA.
+schedule slot,Post-randomization Urinalysis,master SoA delegation_activity,Post randomization collections will be defined in each respective ISA.
+schedule slot,Post-randomization TSH,master SoA delegation_activity,Post randomization collections will be defined in each respective ISA.
+schedule slot,Post-randomization HbA1c,master SoA delegation_activity,Post randomization collections will be defined in each respective ISA.
+schedule slot,Post-randomization Exploratory biomarker samples,master SoA delegation_activity,Post randomization collections will be defined in each respective ISA.
+disease,CLBP,upstream gap,HP phenotype term 'Low back pain'; MONDO has no chronic low back pain; 'chronic' not represented
+disease,DPNP,upstream gap,MONDO 'diabetic neuropathy' covers peripheral and/or autonomic; 'painful' and 'peripheral' not represented
+compound,LY3016859,defined class over compound-column components,"13 components ({'criterion': 7, 'endpoint': 4, 'objective': 2})"
+compound,LY3016859,schedule cells in all three ISAs of the compound,50 cells
+compound,LY3526318,defined class over compound-column components,"2 components ({'objective': 1, 'endpoint': 1})"
+compound,LY3526318,schedule cells in all three ISAs of the compound,0 cells
+compound,LY3556050,defined class over compound-column components,9 components ({'criterion': 9})
+compound,LY3556050,schedule cells in all three ISAs of the compound,26 cells
+compound,LY3857210,defined class over compound-column components,2 components ({'criterion': 2})
+compound,LY3857210,schedule cells in all three ISAs of the compound,33 cells
+isa,BP01,asserted: master + disease-state design; has part own components,17 components (4 not compound-column); 10 DSA references
+isa,BP02,asserted: master + disease-state design; has part own components,5 components (3 not compound-column); 9 DSA references
+isa,BP03,asserted: master + disease-state design; has part own components,11 components (2 not compound-column); 9 DSA references
+isa,BP05,asserted: master + disease-state design; has part own components,4 components (2 not compound-column); 11 DSA references
+isa,NP01,asserted: master + disease-state design; has part own components,18 components (5 not compound-column); 7 DSA references
+isa,NP02,asserted: master + disease-state design; has part own components,5 components (3 not compound-column); 11 DSA references
+isa,NP03,asserted: master + disease-state design; has part own components,17 components (8 not compound-column); 11 DSA references
+isa,NP05,asserted: master + disease-state design; has part own components,4 components (2 not compound-column); 12 DSA references
+isa,OA01,asserted: master + disease-state design; has part own components,18 components (5 not compound-column); 7 DSA references
+isa,OA02,asserted: master + disease-state design; has part own components,5 components (3 not compound-column); 9 DSA references
+isa,OA03,asserted: master + disease-state design; has part own components,11 components (2 not compound-column); 10 DSA references
+isa,OA05,asserted: master + disease-state design; has part own components,4 components (2 not compound-column); 11 DSA references
+isa-new,NP07,CT.gov: secondary ID H0P-MC-CPMP; disease from brief summary; compound from interventions,NCT07285018 DPNP LY4065967
+isa-new,BP07,CT.gov: secondary ID H0P-MC-CPMP; disease from brief summary; compound from interventions,NCT07641504 CLBP LY4065967
+isa-new,OA07,CT.gov: secondary ID H0P-MC-CPMP; disease from brief summary; compound from interventions,NCT07641517 OA LY4065967
+crosswalk,decisions,sources/crosswalk_decisions.csv,"85 pairs merged, 30 kept apart; band(s) 0.00-0.85, 0.85-0.97, 0.97-1.00"
+scope,objective-endpoint pairing,not represented,objectives and endpoints are separate components
+scope,fepixnebart CHEBI_758046,"not used: BioPortal synonym of LY3016859, not document content",

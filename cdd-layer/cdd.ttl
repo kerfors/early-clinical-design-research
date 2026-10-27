@@ -1,0 +1,388 @@
+# CDD design-decision layer: vocabulary sketch (v0.2, 2026-10-25)
+# Scope and modelling decisions: cdd-layer/README.md
+# Hand-written. Instances are generated from the seed CSVs, never written here.
+
+@prefix cdd: <https://kerfors.github.io/early-clinical-design-research/cdd/> .
+@prefix usdm: <https://w3id.org/cdisc/usdm/v4/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+cdd: a owl:Ontology ;
+    rdfs:label "CDD design-decision layer (sketch)" ;
+    dcterms:created "2026-10-24"^^xsd:date ;
+    dcterms:modified "2026-10-25"^^xsd:date ;
+    owl:versionInfo "0.2" ;
+    rdfs:comment "Allocations between master-protocol layers: which layer decides where an item of design content is specified or taken from, with or without a bound version. The items are USDM v4.0.0 objects (usdm-rdf): narrative content, scheduled activity instances, biomedical concept categories and biomedical concepts. USDM holds these within one study version; the allocations link them across layers. Statement (the text) and Allocation (what it directs) are kept apart. Sketch over REMAP-CAP and Lilly CPMP." .
+
+#################################################################
+# Programmes and layers
+#################################################################
+
+cdd:Programme a owl:Class ;
+    rdfs:label "Programme" ;
+    rdfs:comment "The set of documents under one master protocol (REMAP-CAP, Lilly CPMP). Not usdm:Study: in CPMP the master protocol and each ISA are registered as separate studies." .
+
+cdd:Layer a owl:Class ;
+    rdfs:label "Layer" ;
+    rdfs:comment "A kind of protocol document in one programme's master protocol (REMAP-CAP: Core, PANDA, DSA; CPMP: master protocol, DSA, ISA). A statement such as 'as specified in the DSA' points at a layer, not at one document. One individual per programme and layer, with skos:prefLabel for the full name and skos:altLabel for the abbreviation the documents use. Abbreviations are not identifiers: 'DSA' is the Domain-Specific Appendix in REMAP-CAP and the disease-state addendum in CPMP. USDM v4 has no class for this: StudyDefinitionDocument.childIds gives a tree, not layer kinds." .
+
+cdd:layer a owl:ObjectProperty ;
+    rdfs:label "layer" ;
+    rdfs:comment "The layer a document belongs to." ;
+    rdfs:domain usdm:StudyDefinitionDocument ;
+    rdfs:range cdd:Layer .
+
+cdd:inProgramme a owl:ObjectProperty ;
+    rdfs:label "in programme" ;
+    rdfs:domain cdd:Layer ;
+    rdfs:range cdd:Programme .
+
+cdd:layerRole a owl:ObjectProperty ;
+    rdfs:label "layer role" ;
+    rdfs:comment "The role of a layer in the master protocol, from the fixed scheme cdd:layerRoles. Lets layers of different programmes be compared: REMAP-CAP DSA and CPMP ISA are both intervention layers." ;
+    rdfs:domain cdd:Layer ;
+    rdfs:range cdd:LayerRole .
+
+#################################################################
+# Section revisions
+#################################################################
+
+cdd:SectionRevision a owl:Class ;
+    rdfs:label "Section revision" ;
+    rdfs:comment "A section that changed between two versions of a document. Only changed sections get one; see cdd:revisionScope for what was compared." .
+
+cdd:revisedSection a owl:ObjectProperty ;
+    rdfs:label "revised section" ;
+    rdfs:comment "The section in the earlier version. Absent when the section is new in the later version." ;
+    rdfs:domain cdd:SectionRevision ;
+    rdfs:range usdm:NarrativeContent .
+
+cdd:revisingSection a owl:ObjectProperty ;
+    rdfs:label "revising section" ;
+    rdfs:comment "The section in the later version. Absent when the section was removed." ;
+    rdfs:domain cdd:SectionRevision ;
+    rdfs:range usdm:NarrativeContent .
+
+cdd:similarity a owl:DatatypeProperty ;
+    rdfs:label "similarity" ;
+    rdfs:comment "Text similarity between the two section texts, as computed in Plan 1 Step 5 (core_v40_v41_diff.csv)." ;
+    rdfs:domain cdd:SectionRevision ;
+    rdfs:range xsd:decimal .
+
+cdd:revisionScope a owl:DatatypeProperty ;
+    rdfs:label "revision scope" ;
+    rdfs:comment "What was compared to find the revisions, so that 'no revision' can be read as 'unchanged' (closed within that scope) rather than 'unknown'." ;
+    rdfs:range xsd:string .
+
+#################################################################
+# Statements
+#################################################################
+
+cdd:Statement a owl:Class ;
+    rdfs:label "Statement" ;
+    rdfs:comment "A sentence in one section of one document version. Its text is document-stated. Kept separate from cdd:Allocation: several statements, across layers and versions, can express one allocation, and a rule-derived allocation has none." .
+
+cdd:inSection a owl:ObjectProperty ;
+    rdfs:label "in section" ;
+    rdfs:domain cdd:Statement ;
+    rdfs:range usdm:NarrativeContent .
+
+cdd:text a owl:DatatypeProperty ;
+    rdfs:label "text" ;
+    rdfs:comment "Verbatim sentence as extracted." ;
+    rdfs:domain cdd:Statement ;
+    rdfs:range xsd:string .
+
+cdd:page a owl:DatatypeProperty ;
+    rdfs:label "page" ;
+    rdfs:comment "Page number in the source PDF." ;
+    rdfs:domain cdd:Statement ;
+    rdfs:range xsd:integer .
+
+cdd:targetLayer a owl:ObjectProperty ;
+    rdfs:label "target layer" ;
+    rdfs:comment "The layer the statement names ('as specified in Core Protocol documents', 'specified in the DSA')." ;
+    rdfs:domain cdd:Statement ;
+    rdfs:range cdd:Layer .
+
+cdd:versionBinding a owl:ObjectProperty ;
+    rdfs:label "version binding" ;
+    rdfs:comment "Whether the allocation names the version of the counterpart layer's document. On the allocation, not the statement, because a rule-derived allocation has no statement. Explicit value, so that 'names no version' is document-stated, not absence." ;
+    rdfs:domain cdd:Allocation ;
+    rdfs:range cdd:VersionBinding .
+
+cdd:VersionBinding a owl:Class ;
+    rdfs:label "Version binding" .
+
+cdd:bound a cdd:VersionBinding ;
+    rdfs:label "bound" ;
+    rdfs:comment "A statement names the version of the document it points at; see cdd:boundToVersion." .
+
+cdd:unversioned a cdd:VersionBinding ;
+    rdfs:label "unversioned" ;
+    rdfs:comment "The statement names a layer or document, but no version." .
+
+cdd:noStatement a cdd:VersionBinding ;
+    rdfs:label "no statement" ;
+    rdfs:comment "No statement expresses the allocation; it is rule-derived (e.g. from the schedules of two layers), so no version can be named." .
+
+cdd:boundToVersion a owl:ObjectProperty ;
+    rdfs:label "bound to version" ;
+    rdfs:comment "The document version an allocation's statement names explicitly. Not used in REMAP-CAP CS_DSA 6, where no statement names a Core version." ;
+    rdfs:domain cdd:Allocation ;
+    rdfs:range usdm:StudyDefinitionDocumentVersion .
+
+#################################################################
+# Allocations
+#################################################################
+
+cdd:Allocation a owl:Class ;
+    rdfs:label "Allocation" ;
+    rdfs:comment "What a layer directs about where an item of design content is specified or taken from, relative to one other layer (the counterpart). Renamed from cdd:Decision (v0.1): it records allocation of authority between layers, not design decisions with alternatives. One allocation per allocated item and kind; at scheduled-activity level one per scheduled activity instance. Expressed by zero or more statements." .
+
+cdd:expressedBy a owl:ObjectProperty ;
+    rdfs:label "expressed by" ;
+    rdfs:comment "A statement that expresses the allocation. None for a rule-derived allocation; several when one sentence is repeated across documents (e.g. the panel-content sentence in each ISA)." ;
+    rdfs:domain cdd:Allocation ;
+    rdfs:range cdd:Statement .
+
+cdd:decidedIn a owl:ObjectProperty ;
+    rdfs:label "decided in" ;
+    rdfs:comment "The document version in which the allocation is made. For a rule-derived allocation: the document version of the layer that takes, restates, adds to, extends or overrides the item." ;
+    rdfs:domain cdd:Allocation ;
+    rdfs:range usdm:StudyDefinitionDocumentVersion .
+
+cdd:counterpartLayer a owl:ObjectProperty ;
+    rdfs:label "counterpart layer" ;
+    rdfs:comment "The other layer of the allocation; its meaning is given by the kind. Delegation and overridable default: the layer that may specify the content. Inheritance: the layer the content is taken from. Restatement, addition, extension, override: the layer whose content is restated, added to, extended or overridden. Replaces cdd:delegatesTo and cdd:inheritsFrom (v0.1)." ;
+    rdfs:domain cdd:Allocation ;
+    rdfs:range cdd:Layer .
+
+cdd:allocates a owl:ObjectProperty ;
+    rdfs:label "allocates" ;
+    rdfs:comment "The USDM object the allocation is about. Inheritance, restatement and override point at the counterpart layer's object; addition and extension at the deciding layer's own object." ;
+    rdfs:domain cdd:Allocation ;
+    rdfs:range [ a owl:Class ; owl:unionOf ( usdm:NarrativeContent usdm:ScheduledActivityInstance usdm:BiomedicalConceptCategory usdm:BiomedicalConcept ) ] .
+
+cdd:withinCategory a owl:ObjectProperty ;
+    rdfs:label "within category" ;
+    rdfs:comment "For an allocation of a biomedical concept: the counterpart layer's category the concept is added to or taken from (CPMP: an ISA's Cystatin-C added to the master's Chemistry)." ;
+    rdfs:domain cdd:Allocation ;
+    rdfs:range usdm:BiomedicalConceptCategory .
+
+cdd:level a owl:ObjectProperty ;
+    rdfs:label "level" ;
+    rdfs:comment "The level at which the allocation is made, from cdd:levels. Follows from the class of the allocated object; stated explicitly so that the cross-programme question does not depend on class reasoning." ;
+    rdfs:domain cdd:Allocation ;
+    rdfs:range cdd:Level .
+
+cdd:scopeStartsAt a owl:ObjectProperty ;
+    rdfs:label "scope starts at" ;
+    rdfs:comment "The scheduled activity instance from which a delegation applies, when the statement bounds it by an event and not by an encounter (CPMP: 'post randomization', inside Visit 3). The order of other instances in the encounter relative to it is USDM Timing, not cdd." ;
+    rdfs:domain cdd:Allocation ;
+    rdfs:range usdm:ScheduledActivityInstance .
+
+cdd:activityInCounterpart a owl:DatatypeProperty ;
+    rdfs:label "activity in counterpart" ;
+    rdfs:comment "For an addition or extension at scheduled-activity level: whether the counterpart layer schedules the activity at all." ;
+    rdfs:domain cdd:Allocation ;
+    rdfs:range xsd:boolean .
+
+cdd:Delegation a owl:Class ;
+    rdfs:subClassOf cdd:Allocation ;
+    rdfs:label "Delegation" ;
+    rdfs:comment "A layer decides that content is specified in another layer ('will be specified in the DSAs'; CPMP: 'included in each ISA')." .
+
+cdd:OverridableDefault a owl:Class ;
+    rdfs:subClassOf cdd:Allocation ;
+    rdfs:label "Overridable default" ;
+    rdfs:comment "A layer sets content that applies unless another layer specifies otherwise ('unless otherwise specified in a DSA')." .
+
+cdd:Inheritance a owl:Class ;
+    rdfs:subClassOf cdd:Allocation ;
+    rdfs:label "Inheritance" ;
+    rdfs:comment "A layer takes content from another layer ('as specified in Core Protocol documents'). Scheduled-activity level: the counterpart schedules the activity at the encounter and the layer does not. Category level: the layer takes the members of the counterpart's category." .
+
+cdd:Restatement a owl:Class ;
+    rdfs:subClassOf cdd:Allocation ;
+    rdfs:label "Restatement" ;
+    rdfs:comment "A layer states content the counterpart layer also states. Scheduled-activity level: both schedule the activity at the encounter." .
+
+cdd:Addition a owl:Class ;
+    rdfs:subClassOf cdd:Allocation ;
+    rdfs:label "Addition" ;
+    rdfs:comment "A layer adds content within the counterpart layer's frame. Scheduled-activity level: the layer schedules an activity at an encounter the counterpart has, where the counterpart does not schedule it. Category level: a biomedical concept the layer lists as unique to it. Section level: 'additional domain-specific variables'." .
+
+cdd:Extension a owl:Class ;
+    rdfs:subClassOf cdd:Allocation ;
+    rdfs:label "Extension" ;
+    rdfs:comment "A layer adds content beyond the counterpart layer's frame. Scheduled-activity level: the layer schedules an activity at an encounter the counterpart does not have (CPMP: visits after V7)." .
+
+cdd:Override a owl:Class ;
+    rdfs:subClassOf cdd:Allocation ;
+    rdfs:label "Override" ;
+    rdfs:comment "A layer replaces content of the counterpart layer for the item. Scheduled-activity level: 'not needed for ED per the CPMP SoA'." .
+
+#################################################################
+# Rationale
+#################################################################
+
+cdd:rationale a owl:ObjectProperty ;
+    rdfs:label "rationale" ;
+    rdfs:comment "Why the allocation was made. Range is a recorded rationale or an explicit not-available record; plain absence means 'not yet looked'." ;
+    rdfs:domain cdd:Allocation .
+
+cdd:Rationale a owl:Class ;
+    rdfs:label "Rationale" ;
+    rdfs:comment "A recorded reason for an allocation, with its source. No instances for REMAP-CAP or CPMP." .
+
+cdd:RationaleNotAvailable a owl:Class ;
+    rdfs:label "Rationale not available" ;
+    rdfs:comment "Checked, and no rationale found." .
+
+cdd:reason a owl:DatatypeProperty ;
+    rdfs:label "reason" ;
+    rdfs:comment "Why no rationale is available, e.g. no public source." ;
+    rdfs:domain cdd:RationaleNotAvailable ;
+    rdfs:range xsd:string .
+
+cdd:sourcesChecked a owl:DatatypeProperty ;
+    rdfs:label "sources checked" ;
+    rdfs:domain cdd:RationaleNotAvailable ;
+    rdfs:range xsd:string .
+
+#################################################################
+# Readings (analyst interpretations)
+#################################################################
+
+cdd:Reading a owl:Class ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:label "Reading" ;
+    rdfs:comment "An interpretation that links statements, sections or allocations where the documents do not state the link. Carries an evidence tier and, if not settled, an open question." .
+
+cdd:evidenceTier a owl:ObjectProperty ;
+    rdfs:label "evidence tier" ;
+    rdfs:range cdd:EvidenceTier .
+
+cdd:openQuestion a owl:DatatypeProperty ;
+    rdfs:label "open question" ;
+    rdfs:comment "The question that would settle the reading. Present only while the reading is open." ;
+    rdfs:domain cdd:Reading ;
+    rdfs:range xsd:string .
+
+cdd:note a owl:DatatypeProperty ;
+    rdfs:label "note" ;
+    rdfs:comment "Basis of the reading, as written by the analyst." ;
+    rdfs:domain cdd:Reading ;
+    rdfs:range xsd:string .
+
+cdd:InheritanceSource a owl:Class ;
+    rdfs:subClassOf cdd:Reading ;
+    rdfs:label "Inheritance source" ;
+    rdfs:comment "Reading of which section(s) hold the content an inheritance takes (CQ1). Seed: inherited_from_core.csv, core_location." .
+
+cdd:ofInheritance a owl:ObjectProperty ;
+    rdfs:label "of inheritance" ;
+    rdfs:domain cdd:InheritanceSource ;
+    rdfs:range cdd:Inheritance .
+
+cdd:sourceSection a owl:ObjectProperty ;
+    rdfs:label "source section" ;
+    rdfs:comment "A section read as holding the inherited content. In the version current when the inheriting document was approved." ;
+    rdfs:domain cdd:InheritanceSource ;
+    rdfs:range usdm:NarrativeContent .
+
+cdd:Response a owl:Class ;
+    rdfs:subClassOf cdd:Reading ;
+    rdfs:label "Response" ;
+    rdfs:comment "Reading of how one document version answers a delegation or overridable default. Section level (REMAP-CAP, CQ2): cq2_pairing_draft.csv. Biomedical concept level (CPMP, CQ-B): delegated_test_level.csv." .
+
+cdd:toAllocation a owl:ObjectProperty ;
+    rdfs:label "to allocation" ;
+    rdfs:comment "Replaces cdd:toDecision (v0.1)." ;
+    rdfs:domain cdd:Response ;
+    rdfs:range cdd:Allocation .
+
+cdd:respondingVersion a owl:ObjectProperty ;
+    rdfs:label "responding version" ;
+    rdfs:comment "The document version whose response this is. Needed also when the response is silent and no statement exists." ;
+    rdfs:domain cdd:Response ;
+    rdfs:range usdm:StudyDefinitionDocumentVersion .
+
+cdd:respondingStatement a owl:ObjectProperty ;
+    rdfs:label "responding statement" ;
+    rdfs:comment "The statement read as the answer. Absent for silent and not_applicable responses without evidence." ;
+    rdfs:domain cdd:Response ;
+    rdfs:range cdd:Statement .
+
+cdd:responseKind a owl:ObjectProperty ;
+    rdfs:label "response kind" ;
+    rdfs:domain cdd:Response ;
+    rdfs:range cdd:ResponseKind .
+
+cdd:inCQ2Expected a owl:DatatypeProperty ;
+    rdfs:label "in CQ2 expected results" ;
+    rdfs:comment "False for responses kept in the record but excluded from the CQ2 test (generic delegation)." ;
+    rdfs:domain cdd:Response ;
+    rdfs:range xsd:boolean .
+
+#################################################################
+# Concept schemes
+#################################################################
+
+cdd:LayerRole a owl:Class ; rdfs:subClassOf skos:Concept ; rdfs:label "Layer role" .
+cdd:layerRoles a skos:ConceptScheme ; skos:prefLabel "Layer roles" ;
+    rdfs:comment "Fixed scheme of three roles, from the layer table in the landscape note (Master protocol layers as programme design)." .
+
+cdd:role-master a cdd:LayerRole ; skos:inScheme cdd:layerRoles ;
+    skos:prefLabel "master" ; skos:definition "Holds what is shared by all parts of the programme: entry criteria, primary endpoint, randomisation, statistics, governance." .
+cdd:role-population a cdd:LayerRole ; skos:inScheme cdd:layerRoles ;
+    skos:prefLabel "population / disease" ; skos:definition "Narrows the population and adds disease-specific content; may not broaden the master's inclusion." .
+cdd:role-intervention a cdd:LayerRole ; skos:inScheme cdd:layerRoles ;
+    skos:prefLabel "intervention" ; skos:definition "Holds one intervention or treatment question: dose, extra safety rules, own statistical plan." .
+
+cdd:Level a owl:Class ; rdfs:subClassOf skos:Concept ; rdfs:label "Level" .
+cdd:levels a skos:ConceptScheme ; skos:prefLabel "Allocation levels" .
+
+cdd:level-narrativeContent a cdd:Level ; skos:inScheme cdd:levels ;
+    skos:prefLabel "narrative content" ; skos:definition "The allocated object is a usdm:NarrativeContent (a document section)." .
+cdd:level-scheduledActivity a cdd:Level ; skos:inScheme cdd:levels ;
+    skos:prefLabel "scheduled activity" ; skos:definition "The allocated object is a usdm:ScheduledActivityInstance (an activity at an encounter)." .
+cdd:level-bcCategoryContent a cdd:Level ; skos:inScheme cdd:levels ;
+    skos:prefLabel "biomedical concept category content" ; skos:definition "The allocated object is a usdm:BiomedicalConceptCategory or a usdm:BiomedicalConcept within one." .
+
+cdd:ResponseKind a owl:Class ; rdfs:subClassOf skos:Concept ; rdfs:label "Response kind" .
+cdd:responseKinds a skos:ConceptScheme ; skos:prefLabel "Response kinds" .
+
+cdd:takes_explicit a cdd:ResponseKind ; skos:inScheme cdd:responseKinds ;
+    skos:prefLabel "takes explicitly" ; skos:definition "The responding document states that it uses the content of the delegating layer." .
+cdd:silent a cdd:ResponseKind ; skos:inScheme cdd:responseKinds ;
+    skos:prefLabel "silent" ; skos:definition "The responding document does not address it; a default applies by silence." .
+cdd:fills a cdd:ResponseKind ; skos:inScheme cdd:responseKinds ;
+    skos:prefLabel "fills" ; skos:definition "The responding document specifies the delegated content." .
+cdd:fills_none a cdd:ResponseKind ; skos:inScheme cdd:responseKinds ;
+    skos:prefLabel "fills: none" ; skos:definition "The responding document states explicitly that there is none, or that it is not applicable." .
+cdd:defers_back a cdd:ResponseKind ; skos:inScheme cdd:responseKinds ;
+    skos:prefLabel "defers back" ; skos:definition "The responding document refers the delegated content back to the delegating layer." .
+cdd:not_applicable a cdd:ResponseKind ; skos:inScheme cdd:responseKinds ;
+    skos:prefLabel "not applicable" ; skos:definition "The condition in the delegating statement does not hold for this document." .
+cdd:ambiguous a cdd:ResponseKind ; skos:inScheme cdd:responseKinds ;
+    skos:prefLabel "ambiguous" ; skos:definition "Reading not settled; see the open question." .
+
+cdd:EvidenceTier a owl:Class ; rdfs:subClassOf skos:Concept ; rdfs:label "Evidence tier" .
+cdd:evidenceTiers a skos:ConceptScheme ; skos:prefLabel "Evidence tiers" ;
+    rdfs:comment "Pattern from usdm-overlay; local tiers, not its IRIs." .
+
+cdd:document-stated a cdd:EvidenceTier ; skos:inScheme cdd:evidenceTiers ;
+    skos:prefLabel "document-stated" ; skos:definition "Stated in the document text." .
+cdd:rule-derived a cdd:EvidenceTier ; skos:inScheme cdd:evidenceTiers ;
+    skos:prefLabel "rule-derived" ; skos:definition "Derived from document text or schedules by a stated rule (e.g. the EU-PEARL relation-phrase rules in Plan 1 Step 2; the schedule comparison rules in cpmp_soa_join.ipynb)." .
+cdd:analyst-reading a cdd:EvidenceTier ; skos:inScheme cdd:evidenceTiers ;
+    skos:prefLabel "analyst reading" ; skos:definition "An analyst interpretation, not reviewed." .
+cdd:analyst-reading-agreed a cdd:EvidenceTier ; skos:inScheme cdd:evidenceTiers ;
+    skos:prefLabel "analyst reading, agreed" ; skos:definition "An analyst interpretation, reviewed and agreed." .

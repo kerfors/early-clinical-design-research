@@ -1,0 +1,1101 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rcap: <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-MV> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/about>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/core> .
+
+rcap:Domain_MV a owl:Class ;
+    rdfs:label "Mechanical Ventilation domain" ;
+    rdfs:subClassOf _:Nd4f239b7449944489dd3a95a6f28b0f2,
+        _:Nf35d883e71374de9966e163b9223778f,
+        rcap:Domain .
+
+rcap:DomainDesign_MV a owl:Class ;
+    rdfs:label "REMAP-CAP Mechanical Ventilation Domain-Specific Appendix 2 design" ;
+    rdfs:subClassOf _:N0160258179ca4a6a9fb9ecb8bd2ea956,
+        _:N06971cea40e54af4a998978d212a9fa7,
+        _:N0737024f22ca4407a787f8401dd4e4a6,
+        _:N0afd1aa579524604a7ebf2b326068a50,
+        _:N133220ed206d4ed3b8a647c791440ae2,
+        _:N17f799648abb42c09199a0b9df023967,
+        _:N1fd2428e93964a97bbb0d584bba358bd,
+        _:N2665f6b041114b7fb510672f3174a2f1,
+        _:N2d4aee553f8c4872869733b169937ab1,
+        _:N2e4ebb4982324aadbd4eb1223f28c7a5,
+        _:N38607644ae474a6eb2f616bae1f06087,
+        _:N4062e2b5b94b4ce98ebe5410fda9a94e,
+        _:N41396089777347ce95a721c50a59382f,
+        _:N4324e9c49a164e1c92b0bce30992df77,
+        _:N4dd0138185fa465bacc149c408dc9f34,
+        _:N50ff3cbb35484e838721dc2d7ddbeca5,
+        _:N5caf10bcddf34cec8bf3118696b86cc2,
+        _:N5d2ec99127e74a078c2b75698858bef6,
+        _:N6475a9dd094c46f299adac422b5bc112,
+        _:N676842845e6742f2a58c55d591f2b356,
+        _:N6c6da93b7d7f4c06aee4b3b0ebb96642,
+        _:N6e10d36e05c34f7fbc4ab1c3806f042b,
+        _:N709e8b98a55b4f17a33a313e9ffb5f34,
+        _:N747ac1cefec14043808c83ca1a0960c0,
+        _:N77cb8e006c8c4c309085a88b86340cb1,
+        _:N77db46414a3446debae626426dbeebd7,
+        _:N7ab17fe696ae4039ac0641491827cae0,
+        _:N7d9dc4c1183c4c33b144e260fe062e75,
+        _:N80dcddaaaccf4617a9fd233da08be59a,
+        _:N88738c263030460eaabd6eb0d0ed414c,
+        _:N8878073bca304ec4bb7d810678a5c347,
+        _:N900735fc8034491dab76e65edc7e3a1e,
+        _:N901a2fc2b7974a9da3e48dc736108587,
+        _:N91949177a7bd4ffd8f332e1e2446f4b7,
+        _:N9495f1fd99984fb1a5b737fcf2aa0473,
+        _:N978ca14ea1d645ac982e22d675266eb7,
+        _:N97c6bc212f494dc3b860088fe25ded7e,
+        _:N98b91e60be004c8e94d26fefe127f5cb,
+        _:Na25947331a624489856139b11925664a,
+        _:Na37ed952be2a435aacf9b0d2e8017c94,
+        _:Na4c9f48e478e43e68724df812db866a3,
+        _:Na7068e254a9344b18684807c615b7c41,
+        _:Na73d7a1426fe4c0fbddc89d250905db3,
+        _:Na917a94911f1477a879cafbb9027fd44,
+        _:Naa550412f9224e8dbb765d68e74702b5,
+        _:Nb01adef24bf84267acaeb24e309f5e2e,
+        _:Nb03c08a1ea0941308e6d63ff9d7dc88d,
+        _:Nb1e9874b3e3a4082ad7795386fbdbb64,
+        _:Nb3ccb2a8227e4a7ebe0b061062f66fbf,
+        _:Nb6e43b159cea471cb791b74bf363b599,
+        _:Nc32a15f885194ef8b6f7c8150340fd8b,
+        _:Nc397dfe985cd4051b0c575daef571e48,
+        _:Nc4851dab3c664a09aef7c6d20b0fbc81,
+        _:Nd2648d03786547b8893bc8975a4340b8,
+        _:Nd5c371eff5c34a4b8c2885062a1c52e9,
+        _:Nd6a3329348d64f8dae79f08f8ad6a158,
+        _:Nd714b4088e4a4b2fb2e90c61e5145b88,
+        _:Ndcb935a7fcaf430db42647c47961b082,
+        _:Ndd8df7cccab24d32863cb35d81b9f4d9,
+        _:Ne58ed5aa486142939f15f285319e2e43,
+        _:Ne590cd3e172649688ed8f807f22b502b,
+        _:Ne6cecf61efba46bb862a18d1e781303b,
+        _:Ned176fdb9766448881ee06f08205e31c,
+        _:Nf08940d1551047d1ad94b46613b8aa44,
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000051 ;
+            owl:someValuesFrom rcap:Domain_MV ],
+        rcap:CoreDesign ;
+    rcap:documentDate "5 Nov 2024" ;
+    rcap:documentTitle "Mechanical Ventilation Domain-Specific Appendix 2" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Na25947331a624489856139b11925664a ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 30 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "SAE as defined in the core protocol documents and qualified in this DSA" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N747ac1cefec14043808c83ca1a0960c0 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 30 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Administration of rescue therapies" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N676842845e6742f2a58c55d591f2b356 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.3.5" ;
+    rcap:evidenceText "Adherence to the allocated mechanical ventilation strategy should continue as long as the patient is receiving invasive ventilation or until day 28, whichever occurs first." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N2d4aee553f8c4872869733b169937ab1 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "The domain-specific secondary outcome measures (occurring during the index hospitalization, censored 90 days after enrollment) are:" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Nb03c08a1ea0941308e6d63ff9d7dc88d ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:14" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "Given that the original ARDSnet including the standard PEEP arm is frequently the control group in ventilation studies and many units still deliver the original ARDS net protocol (including the standard PEEP approach), we will allow units to use either FiO2 / PEEP table below." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Na7068e254a9344b18684807c615b7c41 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "9.2" ;
+    rcap:evidenceText "Refer to relevant Core Protocol documents for criteria for discontinuation of participation in this trial." ;
+    rcap:occurrenceKind "discontinuation" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Ndd8df7cccab24d32863cb35d81b9f4d9 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Patients will be randomly assigned to receive one of the following open-label study interventions." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Ndcb935a7fcaf430db42647c47961b082 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.4" ;
+    rcap:evidenceText "The timing of the revealing of allocation status and administration of interventions is as specified to be Randomization with Immediate Reveal and Initiation, Delayed Reveal and Initiation, or Deferred Reveal and Initiation." ;
+    rcap:occurrenceKind "allocation_reveal" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Nb3ccb2a8227e4a7ebe0b061062f66fbf ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Patients will be excluded from this domain if they have any of the following:" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N88738c263030460eaabd6eb0d0ed414c ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "Any and all ventilatory parameters, including mode of ventilation, can be adjusted at any time." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N9495f1fd99984fb1a5b737fcf2aa0473 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:18" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "The delivery of protocolized mechanical ventilation will be facilitated by training of site personnel, the availability of bedside study tools, and audit and feedback to sites regarding adherence to the protocol." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N2665f6b041114b7fb510672f3174a2f1 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 31 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "9.1.1" ;
+    rcap:evidenceText "Occurrence and duration of prone ventilation" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Nc397dfe985cd4051b0c575daef571e48 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:11" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "If the acidosis has a substantial metabolic component, continuous renal replacement therapy may be instituted, at the discretion of the treating clinician." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N17f799648abb42c09199a0b9df023967 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:9" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "If arterial pH is less than 7.15, the tidal volume can be increased in 5 to 10% increments until arterial pH is more than 7.15, noting that, if necessary, to maintain a pH of not less than 7.15, it is permitted for the plateau pressure to exceed 30 cm H 2 O." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N91949177a7bd4ffd8f332e1e2446f4b7 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "If the plateau pressure is more than 30 cmH 2 O, the tidal volume should be reduced in 5 to 10% increments, but to not less than 65% of the initial specified tidal volume (corresponding to 4.0 ml/kg PBW)." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N4dd0138185fa465bacc149c408dc9f34 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:12" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "Administration of a tidal volume of more than 6.0 ml/kg PBW or a plateau pressure of 30 cm H20 or more is a protocol deviation unless the pH is less than 7.15." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N50ff3cbb35484e838721dc2d7ddbeca5 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.5" ;
+    rcap:evidenceText "The duration of administration of the interventions outlined in this domain is at the discretion of the treating clinician." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N4062e2b5b94b4ce98ebe5410fda9a94e ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:15" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "Each participating Intensive Care Unit will declare a priori which PEEP table it will follow in the Protocolized intervention." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N0160258179ca4a6a9fb9ecb8bd2ea956 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Treating clinician regards Protocolized Mechanical Ventilation Strategy or their preferred mechanical ventilation strategy as (equally) appropriate for this patient." ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Nc32a15f885194ef8b6f7c8150340fd8b ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "All secondary endpoints as specified in the Core Protocol." ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Nd5c371eff5c34a4b8c2885062a1c52e9 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "The treating clinician will set the mode of ventilation as either SIMV, Assist Control, or Pressure Regulated Volume Control, setting the tidal volume to that specified by the on-line eligibility system or calculated by the site." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N6475a9dd094c46f299adac422b5bc112 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.3" ;
+    rcap:evidenceText "Domain-specific strata are not applied to patients at the time of assessment for this domain." ;
+    rcap:occurrenceKind "domain_strata" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N7d9dc4c1183c4c33b144e260fe062e75 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 26 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Receiving invasive mechanical ventilation" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N5d2ec99127e74a078c2b75698858bef6 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "The respiratory rate is set by the treating clinician with the goal of achieving the targeted PaCO 2 and adjusted, as required, to achieve the PaCO 2 target." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N8878073bca304ec4bb7d810678a5c347 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:10" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "In the presence of severe acidosis, bicarbonate may be administered, at the discretion of the treating clinician." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N7ab17fe696ae4039ac0641491827cae0 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.6" ;
+    rcap:evidenceText "Nesting is not applicable to this domain." ;
+    rcap:occurrenceKind "allocation_nesting" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Nb1e9874b3e3a4082ad7795386fbdbb64 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "At any time, if the tidal volume is less than that specified following calculation from the patient’s height and the plateau pressure is 29 cm or less, the tidal volume should be increased in 5% increments to achieve a tidal volume as close to, but not exceeding, the specified target tidal volume while maintain plateau pressure of not more than 30 cm H 2 O." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Nd714b4088e4a4b2fb2e90c61e5145b88 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 26 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "The most recent PaO 2 :FiO 2 ratio obtained within the preceding 6 hours is less than 200 mmHg" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N1fd2428e93964a97bbb0d584bba358bd ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "This domain is available to patients who are in the Adult Age Stratum, as defined in Core Protocol documents." ;
+    rcap:occurrenceKind "applicability_age" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Na73d7a1426fe4c0fbddc89d250905db3 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:6" ;
+    rcap:evidenceSection "8.3.5" ;
+    rcap:evidenceText "Criteria for extubation, or insertion of a tracheostomy tube, are not specified by the trial and are at the discretion of the treating clinician." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Na37ed952be2a435aacf9b0d2e8017c94 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.5" ;
+    rcap:evidenceText "Interactions with all other domains are either not evaluable or not considered possible and will not be incorporated into the statistical model in which this domain is evaluated." ;
+    rcap:occurrenceKind "allocation_interactions" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N0afd1aa579524604a7ebf2b326068a50 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:13" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "The FiO 2 and PEEP should be set on the ventilator to the minimum allowable combination of FiO 2 and PEEP that consistently achieves a PaO 2 / SaO 2 within the target range and adjusted further, as required according to either of the tables below which is derived from either the ARMA ARDSnet trial (the standard PEEP arm) OR the LOVS and ALVEOLI trials (the high PEEP arm) (Meade et al., 2008, Brower et al., 2004)." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N6e10d36e05c34f7fbc4ab1c3806f042b ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "The clinician will choose the mode of ventilation and all ventilatory parameters that they would use normally for this patient." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Ned176fdb9766448881ee06f08205e31c ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "The treating clinician believes that participation in this domain is not in the best interests of the patient." ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N0737024f22ca4407a787f8401dd4e4a6 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "The allocated intervention will be commenced immediately after allocation status is revealed." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N900735fc8034491dab76e65edc7e3a1e ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 31 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "9.1.1" ;
+    rcap:evidenceText "Daily ventilatory and physiological parameters and arterial blood gas parameters" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget rcap:CoreDesign ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePage 10 ;
+    rcap:evidenceRule "B-dsa" ;
+    rcap:evidenceText "The Core Protocol contains all information that is generic to the trial …" ;
+    rcap:note "Core Protocol 4.0 1.2: Domain-Specific Appendix is an appendix to the Core Protocol.",
+        "Core Protocol 4.1 1.2: Domain-Specific Appendix is an appendix to the Core Protocol." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N77db46414a3446debae626426dbeebd7 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "This may be provided as a component of the allocation status for the patient but is determined by the treating clinician and can be adjusted at any time by the treating clinician." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Ne6cecf61efba46bb862a18d1e781303b ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:20" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "Administration of a combination of PEEP and FiO 2 that is not specified by the table is a protocol deviation unless the plateau pressure is 30 cm of H 2 O or more." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Na4c9f48e478e43e68724df812db866a3 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Clinician-preference mechanical ventilation strategy" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Nd2648d03786547b8893bc8975a4340b8 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "If the treating clinician would usually apply low tidal volume ventilation this is acceptable." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N5caf10bcddf34cec8bf3118696b86cc2 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 30 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Occurrence of barotrauma" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Ne58ed5aa486142939f15f285319e2e43 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:19" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "The use of any other mode of controlled mechanical ventilation (Pressure Control, APRV) is a protocol deviation." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Nb01adef24bf84267acaeb24e309f5e2e ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "Sedative medications should be administered, as determined by the treating clinician, with or without administration of a neuromuscular blocker, to provide patient safety and comfort as well as to allow delivery of the specified ventilator settings." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N06971cea40e54af4a998978d212a9fa7 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 26 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Treating clinician expects the patient to still require invasive mechanical ventilation tomorrow." ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N2e4ebb4982324aadbd4eb1223f28c7a5 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:6" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "If the PaCO 2 target cannot be achieved the respiratory rate should be adjusted upwards preserving, at all times (unless pH of arterial blood is less than 7.15 see below), the tidal volume (and plateau pressure target)." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Nc4851dab3c664a09aef7c6d20b0fbc81 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "This domain is available for patients who are in the Severe Illness Severity State, as defined in Core Protocol Documents." ;
+    rcap:occurrenceKind "applicability_state" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N5caf10bcddf34cec8bf3118696b86cc2 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 31 ;
+    rcap:evidencePosition "6" ;
+    rcap:evidenceSection "9.1.1" ;
+    rcap:evidenceText "Occurrence of barotrauma" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N98b91e60be004c8e94d26fefe127f5cb ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "8.3.5" ;
+    rcap:evidenceText "Criteria for readiness for a trial of unsupported or minimally supported spontaneous ventilation are not specified by the trial and are at the discretion of the treating clinician." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N747ac1cefec14043808c83ca1a0960c0 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 31 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "9.1.1" ;
+    rcap:evidenceText "Administration of rescue therapies" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N77cb8e006c8c4c309085a88b86340cb1 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "More than 48 hours has elapsed since commencement of invasive mechanical ventilation" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N901a2fc2b7974a9da3e48dc736108587 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "At the time of establishing eligibility, the treating clinician will specify a target range for the arterial PaCO 2 ." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N6c6da93b7d7f4c06aee4b3b0ebb96642 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:7" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "The maximum rate is 35 breaths per minute." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N77db46414a3446debae626426dbeebd7 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "This may be provided as a component of the allocation status for the patient but is determined by the treating clinician and can be adjusted at any time by the treating clinician." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N38607644ae474a6eb2f616bae1f06087 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:16" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "If the patient has a significant and sudden drop in saturation, it is permitted to increase the PEEP/FiO 2 rapidly from the left to the right of the chart as quickly as required to achieve an oxygen saturation that is in the target range." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:Domain_MV ;
+    owl:annotatedTarget _:Nd4f239b7449944489dd3a95a6f28b0f2 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidenceRule "B-domain" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Protocolized mechanical ventilation strategy" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Nb6e43b159cea471cb791b74bf363b599 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "9.1.1" ;
+    rcap:evidenceText "Additional domain-specific data will be collected." ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Nd6a3329348d64f8dae79f08f8ad6a158 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "Acceptable modes of ventilation include but are not limited to Pressure Control, Synchronized Intermittent Mandatory Ventilation (SIMV), Assist Control (AC), and APRV." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N80dcddaaaccf4617a9fd233da08be59a ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:6" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "Each participating ICU will be asked to outline the mechanical ventilation strategy that is used most commonly, and this may be made available to guide patient care but is regarded only as advisory and deviation from this guide is permitted at any time." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Naa550412f9224e8dbb765d68e74702b5 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 31 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "9.1.1" ;
+    rcap:evidenceText "Baseline ventilatory, physiological parameters and arterial blood gas parameters" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Na917a94911f1477a879cafbb9027fd44 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "At the time of establishing eligibility, if feasible, the patient’s height will be entered into the on-line eligibility system which will be used to calculate PBW and to specify a starting tidal volume that will be set on the ventilator that corresponds to a tidal volume of 6.0 ml/kg PBW." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N4324e9c49a164e1c92b0bce30992df77 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.5.1" ;
+    rcap:evidenceText "The primary endpoint for this domain is as specified in Core Protocol documents." ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:Domain_MV ;
+    owl:annotatedTarget _:Nf35d883e71374de9966e163b9223778f ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidenceRule "B-domain" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Clinician-preference mechanical ventilation strategy" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Nf08940d1551047d1ad94b46613b8aa44 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "8.3.5" ;
+    rcap:evidenceText "The introduction and transition to spontaneous ventilation is at the discretion of the treating clinician." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Ne590cd3e172649688ed8f807f22b502b ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Protocolized mechanical ventilation strategy" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N97c6bc212f494dc3b860088fe25ded7e ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:17" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "If there is doubt about accuracy of a SaO 2 , arterial blood gases should be measured and used to adjust the PEEP and FiO 2 as required." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:Nb01adef24bf84267acaeb24e309f5e2e ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:8" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "Sedative medications should be administered, as determined by the treating clinician, with or without administration of a neuromuscular blocker, to provide patient safety and comfort as well as to allow delivery of the specified ventilator settings." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N709e8b98a55b4f17a33a313e9ffb5f34 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Patients are eligible for this domain if:" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N41396089777347ce95a721c50a59382f ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "interventions At the time of establishing eligibility, the treating clinician will specify a current target range for the oxygen saturation." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N978ca14ea1d645ac982e22d675266eb7 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 31 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "9.1.1" ;
+    rcap:evidenceText "Daily targets for physiological parameters, if specified" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MV ;
+    owl:annotatedTarget _:N133220ed206d4ed3b8a647c791440ae2 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.5" ;
+    rcap:evidenceText "The entry criteria of the domain are designed to identify patients who are likely to require invasive mechanical ventilation for at least 24 hours." ;
+    rcap:occurrenceKind "intervention" .
+
+_:N0160258179ca4a6a9fb9ecb8bd2ea956 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c28cabd4385 .
+
+_:N06971cea40e54af4a998978d212a9fa7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c279cf239e5 .
+
+_:N0737024f22ca4407a787f8401dd4e4a6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c29662860b2 .
+
+_:N0afd1aa579524604a7ebf2b326068a50 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ccecc33eb10 .
+
+_:N133220ed206d4ed3b8a647c791440ae2 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9219e5fe98 .
+
+_:N17f799648abb42c09199a0b9df023967 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9733fcba16 .
+
+_:N1fd2428e93964a97bbb0d584bba358bd a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ced7c375feb .
+
+_:N2665f6b041114b7fb510672f3174a2f1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c910da2da31 .
+
+_:N2d4aee553f8c4872869733b169937ab1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cfc67fd1c19 .
+
+_:N2e4ebb4982324aadbd4eb1223f28c7a5 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd5cc6b9856 .
+
+_:N38607644ae474a6eb2f616bae1f06087 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0d034cc9f6 .
+
+_:N4062e2b5b94b4ce98ebe5410fda9a94e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c27446f2f17 .
+
+_:N41396089777347ce95a721c50a59382f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c314818bf48 .
+
+_:N4324e9c49a164e1c92b0bce30992df77 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c70fcba7483 .
+
+_:N4dd0138185fa465bacc149c408dc9f34 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c634411012a .
+
+_:N50ff3cbb35484e838721dc2d7ddbeca5 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5f86629818 .
+
+_:N5d2ec99127e74a078c2b75698858bef6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c761a97ac05 .
+
+_:N6475a9dd094c46f299adac422b5bc112 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c206b9c5488 .
+
+_:N676842845e6742f2a58c55d591f2b356 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c06de9f2a96 .
+
+_:N6c6da93b7d7f4c06aee4b3b0ebb96642 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7b4a0d3026 .
+
+_:N6e10d36e05c34f7fbc4ab1c3806f042b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb41b0cebb4 .
+
+_:N709e8b98a55b4f17a33a313e9ffb5f34 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8bc517a21d .
+
+_:N77cb8e006c8c4c309085a88b86340cb1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c933da4f669 .
+
+_:N7ab17fe696ae4039ac0641491827cae0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6e4a622d7b .
+
+_:N7d9dc4c1183c4c33b144e260fe062e75 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce7001d5827 .
+
+_:N80dcddaaaccf4617a9fd233da08be59a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1f01b046eb .
+
+_:N88738c263030460eaabd6eb0d0ed414c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c83c14adf1c .
+
+_:N8878073bca304ec4bb7d810678a5c347 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c762828ec4b .
+
+_:N900735fc8034491dab76e65edc7e3a1e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9061fee8f6 .
+
+_:N901a2fc2b7974a9da3e48dc736108587 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc769ad72db .
+
+_:N91949177a7bd4ffd8f332e1e2446f4b7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cba62d620cf .
+
+_:N9495f1fd99984fb1a5b737fcf2aa0473 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca9ac94debc .
+
+_:N978ca14ea1d645ac982e22d675266eb7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:caef1c59e4d .
+
+_:N97c6bc212f494dc3b860088fe25ded7e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc02a7653f7 .
+
+_:N98b91e60be004c8e94d26fefe127f5cb a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cedbd214eac .
+
+_:Na25947331a624489856139b11925664a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7573c19064 .
+
+_:Na37ed952be2a435aacf9b0d2e8017c94 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc4efc1a692 .
+
+_:Na4c9f48e478e43e68724df812db866a3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce5e7726301 .
+
+_:Na7068e254a9344b18684807c615b7c41 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c85858c8378 .
+
+_:Na73d7a1426fe4c0fbddc89d250905db3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce71bb98dce .
+
+_:Na917a94911f1477a879cafbb9027fd44 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc69f3a284d .
+
+_:Naa550412f9224e8dbb765d68e74702b5 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5b0b69722b .
+
+_:Nb03c08a1ea0941308e6d63ff9d7dc88d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb87f53e4f6 .
+
+_:Nb1e9874b3e3a4082ad7795386fbdbb64 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c599074e5e9 .
+
+_:Nb3ccb2a8227e4a7ebe0b061062f66fbf a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc4a3982cda .
+
+_:Nb6e43b159cea471cb791b74bf363b599 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4c016e4e79 .
+
+_:Nc32a15f885194ef8b6f7c8150340fd8b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c494ee9cfa6 .
+
+_:Nc397dfe985cd4051b0c575daef571e48 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c12828954c3 .
+
+_:Nc4851dab3c664a09aef7c6d20b0fbc81 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7fd21cde5f .
+
+_:Nd2648d03786547b8893bc8975a4340b8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c36cd017fd8 .
+
+_:Nd4f239b7449944489dd3a95a6f28b0f2 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdb227e9044 .
+
+_:Nd5c371eff5c34a4b8c2885062a1c52e9 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c392ca2f8d9 .
+
+_:Nd6a3329348d64f8dae79f08f8ad6a158 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3895c1d30c .
+
+_:Nd714b4088e4a4b2fb2e90c61e5145b88 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cbcd69628d6 .
+
+_:Ndcb935a7fcaf430db42647c47961b082 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdee1a90648 .
+
+_:Ndd8df7cccab24d32863cb35d81b9f4d9 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb26af16384 .
+
+_:Ne58ed5aa486142939f15f285319e2e43 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb41d7b2b8c .
+
+_:Ne590cd3e172649688ed8f807f22b502b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdb227e9044 .
+
+_:Ne6cecf61efba46bb862a18d1e781303b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf75a7deb88 .
+
+_:Ned176fdb9766448881ee06f08205e31c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c324186f8e2 .
+
+_:Nf08940d1551047d1ad94b46613b8aa44 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb23c46b462 .
+
+_:Nf35d883e71374de9966e163b9223778f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce5e7726301 .
+
+_:N5caf10bcddf34cec8bf3118696b86cc2 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c91b4608fe0 .
+
+_:N747ac1cefec14043808c83ca1a0960c0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c74d77f164d .
+
+_:N77db46414a3446debae626426dbeebd7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c287107c507 .
+
+_:Nb01adef24bf84267acaeb24e309f5e2e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c10b99f1d7e .
+

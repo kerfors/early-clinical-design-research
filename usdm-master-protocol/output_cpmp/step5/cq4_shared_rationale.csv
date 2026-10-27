@@ -1,0 +1,41 @@
+rationale,docs,n_docs,sections
+"Minor, therefore not described",CPMP;NP01;NP03;OA01;OA03,5,Throughout the protocol
+Per regulatory feedback.,BP05;NP05;OA05,3,1.3. Schedule of Activities |  | 8.2.1. Physical Examinations
+Based on in vitro data suggesting a potential for LY3526318 to inhibit P-gp.,BP02;NP02;OA02,3,5.1. Study Population | 5.2. Exclusion Criteria
+Based on in vitro data suggesting a potential for PK interactions.,BP02;NP02;OA02,3,2.3.1. Risk Assessment
+Based on in vitro data suggesting potential CYP3A4 inhibition at the proposed LY3526318 dose.,BP02;NP02;OA02,3,5.1. Study Population | 5.2. Exclusion Criteria
+"Simvastatin is a sensitive CYP3A4 substrate, with a projected maximal increase in exposure <2-fold in combination with LY3526318. Therefore, doses of 20 mg or less are considered safe.",BP02;NP02;OA02,3,5.1. Study Population | 5.2. Exclusion Criteria
+Clarification of the potential of LY3526318 exposure to affect metabolism of other drugs.,BP02;NP02;OA02,3,2.3.1. Risk Assessment
+Clarification.,BP05;NP05;OA05,3,5.2. Exclusion Criteria
+Topical drugs are allowed.,BP02;NP02;OA02,3,5.1. Study Population | 5.2. Exclusion Criteria
+"Minor, therefore not described.",BP02;NP02;OA02,3,Throughout the protocol | Throughoutthe protocol
+Editorial.,BP05;NP05;OA05,3,8.2.1. Physical Examinations
+For clarity.,BP02;NP02;OA02,3,2.3. Benefit/Risk Assessment | 2.3.1. Risk Assessment | 2.3.Benefit/Risk Assessment | 10.3. Appendix 3: List of Excluded Concomitant Medications
+This language is intended for global studies. This study will be conducted in the United States only.,NP01;OA01,2,Section 5.3. Lifestyle Considerations
+Sample collection time missed in the original version,NP01;OA01,2,Section 1.3. Schedule of Activities
+Sample size and study intervention text updated for new dose titration scheme “Data monitoring committee” changed to “Assessment committee” for consistency with master CPMP protocol,NP03;OA03,2,1.1 Synopsis
+The master protocol defines the populations for analyses,NP03;OA03,2,9.3 Populations for Analyses
+Adding flexibility,NP03;OA03,2,1.3 Schedule of Activities (SoA)
+To account for the addition of women of childbearing potential to the study per toxicology data,NP01;OA01,2,"Section 5.1. Inclusion Criteria | Section 10.2, Appendix 2"
+To align with master protocol and ISA numbering system.,BP02;OA02,2,5.1. Study Population
+Reference to added exclusion criteria.,BP02;OA02,2,6.6. Concomitant Therapy
+To indicate when the participant needs to return the device.,NP03;OA03,2,1.3 Schedule of Activities (SoA)
+Updated to maximize data collection in the follow-up period,NP01;OA01,2,Section 4 Study Design
+Updates to internal Lilly guidance,NP03;OA03,2,10.2 Appendix 2
+"Urinalysis was only for Visit 3, so removed. Urine drug screen added and performed according to investigator discretion",NP03;OA03,2,1.3 Schedule of Activities (SoA)
+To implement new dose titration scheme,NP03;OA03,2,1.3 Schedule of Activities (SoA)
+New dose titration scheme for participants,NP03;OA03,2,1.2 Schema | 4.1 Overall Design | 6.6 Dose Modification | 9.2 Sample Size Determination
+Per regulatory feedback,NP01;OA01,2,Section 1.3. Schedule of Activities | Section 5.2. Exclusion Criteria | Section 6.1.1. Special Treatment Considerations | Section 8.1.1. Physical Examinations
+Per new toxicology data,NP01;OA01,2,Section 1.3. Schedule of Activities
+New dose titration scheme for participants Study LXBA is now completed,NP03;OA03,2,4.3 Justification for Dose
+Additional information for excluded concomitant medications are listed in Section 5.2 and the Manual of Operations.,BP02;OA02,2,10.3. Appendix 3: List of Excluded Concomitant Medications
+Master protocol updates for CPMP amendment (a),NP03;OA03,2,5.3 Lifestyle Considerations
+Master protocol contains AE and SAE information,NP03;OA03,2,8.2 Adverse Events and Serious Adverse Events
+Editorial correction.,NP05;OA05,2,1.3. Schedule of Activities
+Corrections for clarity,NP03;OA03,2,1.3 Schedule of Activities (SoA)
+Consistency across ISAs,NP03;OA03,2,6.5 Concomitant Therapy
+Clarifications based on clinical experience and emerging pharmacokinetic/metabolism data,NP03;OA03,2,5.2 Exclusion Criteria
+Both studies are completed,NP03;OA03,2,2.2 Background
+Based on limited data related to inhibition of renal transporters.,BP02;OA02,2,5.1. Study Population
+Allows flexibility for participants,NP01;OA01,2,Section 1.3. Schedule of Activities
+Women of childbearing potential are now allowed in the study; pregnant or breastfeeding women are not allowed,NP01;OA01,2,Section 2.3.1. Risk Assessment

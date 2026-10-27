@@ -1,0 +1,1407 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rcap: <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-CS> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/about>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/core> .
+
+rcap:Domain_CS a owl:Class ;
+    rdfs:label "Corticosteroid domain" ;
+    rdfs:subClassOf _:N3b6ad1359b974753971805a47aab0338,
+        _:N73a47666cd764027b1579ee6dbec9552,
+        _:Nde0fb8520dea4bfb913c39ec244941f7,
+        rcap:Domain .
+
+rcap:DomainDesign_CS a owl:Class ;
+    rdfs:label "REMAP-CAP Corticosteroid Domain-Specific Appendix 6 design" ;
+    rdfs:subClassOf _:N0c04e1ea6c784c62addff5968b8e347b,
+        _:N0f88377c38c74f9e919aab9278b37619,
+        _:N1aed9429f9cf4a67a59ccdd253beb839,
+        _:N1c033998ad4b42f1bee92ffc773c668b,
+        _:N1d82072187ed4558aaab5c6ab31f81b3,
+        _:N2122b54c3a1248feb6a9ee6ee9bbadc8,
+        _:N21810a81543d4e07841111d4f7250e77,
+        _:N268adfd8ed5f4844b8943885b5fcf536,
+        _:N2da5c8e8ee5c4be8bd127bef15a59a76,
+        _:N32077e468fe94588824c920f547aa370,
+        _:N322cd6e1634844d59c4eabe6e4d486b7,
+        _:N329127864e5c4330bbad1fd4197d0870,
+        _:N34e1c6f056104852aae053bb372ee070,
+        _:N3a49d6fd4ae440798fa326b20f29b8ea,
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000051 ;
+            owl:someValuesFrom rcap:Domain_CS ],
+        _:N3f2bc7c4cdf745d5b7151aeec57d329c,
+        _:N42aa855014d447558d78d6c90a4414fc,
+        _:N43d4b15da68d4bd7aea25e9a6e8bfadc,
+        _:N44958602e06c484aaa39812326561675,
+        _:N4d1eae9a2c9c4cc4bab720cf1b754e7a,
+        _:N527fb2436be94246b770c48ee54a02f9,
+        _:N52cecc3c342649728bc2f63f9f7af029,
+        _:N552bc6c30d294520bfb87721ad6baeee,
+        _:N59db3ae007b84f1d85c58c8bc132b618,
+        _:N5c84ecd838e14360a741568066bb8445,
+        _:N5db1d8f5ee7f45cba85c6587ef406267,
+        _:N60716f2057ef47e2b38175ee1e7004c0,
+        _:N60812036d88f45d1a1383a31f881986b,
+        _:N612d6273448a4ed8af5df0163051da69,
+        _:N66b233e06f4040659b83d3067c28ea3b,
+        _:N66d9e97bc34f420993a9f40b16b6497d,
+        _:N676c568712784088aa0676d60fa248f4,
+        _:N73f1cd1545174220a7d6ceff58ecd024,
+        _:N75cdb74277f64fa8abb751801a94fb5a,
+        _:N76694c4b9b54485081ca39b0b02418f5,
+        _:N78765e0b2ece4aa585c5231dc4fd9a5e,
+        _:N7d9220c649e34dc09c7a0bef5f98b280,
+        _:N7f42b0890245442f84717a7b28787c66,
+        _:N82ab47019e0d4771a0392cb86aa23c6f,
+        _:N87ead87c0fbc4465a2d3b2eef33d48ce,
+        _:N94443b63b2f249c19f7d6b5886e64d25,
+        _:N94877cc9b4f8490f90e74687bddf351c,
+        _:N95347ae284af445aa95aa950f4ed64f7,
+        _:N962d327717b54f1fa68b85f5b83117c7,
+        _:N9906559377744f2f9280a5de919f4b03,
+        _:N9a2dd9202a964080973e1d35bfa9b27a,
+        _:N9bd549b10ee74afc8e19841949e2152f,
+        _:N9d8c7891f4124661824af23bf9472c19,
+        _:N9fc1f3fac2894cdcb95c7d00df5c42ab,
+        _:Na10b6305410e4a43a427317969ee116a,
+        _:Na308aaa52872491f88900909fff06f1b,
+        _:Na65aa264ac06484c81c8f67ac3ace64b,
+        _:Naf758154b0ea48518d091fa1162918ee,
+        _:Nafee710de94747839d2e62f55503eca2,
+        _:Nb13d1f3f4a5c46d484ef62286208262e,
+        _:Nb70b577d428a4939891be76e67a68a22,
+        _:Nc0155cb2b9fb4f48bfd64db32489bb7f,
+        _:Nc42524af74214f8ca14e717d5f78c432,
+        _:Ncb70a69c95a047caa45c3b692198f6fb,
+        _:Nccdab1c7b94e49a2a3a68e6a64435e88,
+        _:Ncd53d9a2cc7f486a84679c265c9d32a8,
+        _:Nd08a6b30f9ee405f99d27ea0d25546c0,
+        _:Nd0de5bcd32f84c3e85754f88fb9c7451,
+        _:Nd33df29bacb04669b26b9f7978ceb6c6,
+        _:Nd38a63e5f42841a7b1432caf4c8d565d,
+        _:Nd8152d8ff28d43e085c16232dbc369eb,
+        _:Ndb54b8ac0aa14206bcf860fa259deeea,
+        _:Ndc8413fe623e4611a9c4a37efdf37b98,
+        _:Ndd06a056010641e39984e897235f58b4,
+        _:Ndd5aab4d387a41369a8d0a051fe7cb52,
+        _:Ndd7b536845ef473cb3c3ea866c396fb9,
+        _:Nddf0ed6cad5c4b75abeb4210f3cf3310,
+        _:Nde3b97aea2354fb690787cb7b1cfb6dd,
+        _:Ne032462422214814b045d224694f76ba,
+        _:Ne1331a145aae43a28656189995e63cea,
+        _:Ne356a0d3f74a4d6394fbbc1936c94814,
+        _:Ne36b4b14ec694fd48c608ad12549db65,
+        _:Ne86cd7d32bef46869da2b33d8f7f643c,
+        _:Nea955766c386405d9ca7d93db893e6a4,
+        _:Nee33140c5549491da3900cc3d56d89c5,
+        _:Nef8ef2fa9eb34c668ac2d41ee261a5a8,
+        _:Nf16116fbc4fc4ea58fa4ff1b843b563e,
+        _:Nf20bf629213f4cc6821f254f8b31211c,
+        _:Nf23dc0a41a784b77a95880568b943c07,
+        _:Nfa42460bd1b4410b867905154a78701f,
+        _:Nfb3771416d7e495e9808477b76fa6ea2,
+        _:Nfc43b6ba40954d45a16ccb46241973b5,
+        rcap:CoreDesign ;
+    rcap:documentDate "5 Nov 2024" ;
+    rcap:documentTitle "Corticosteroid Domain-Specific Appendix 6" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N94877cc9b4f8490f90e74687bddf351c ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.8" ;
+    rcap:evidenceText "The size of the pre-specified odds ratio delta is 0.10." ;
+    rcap:occurrenceKind "allocation_threshold" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Nd8152d8ff28d43e085c16232dbc369eb ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.5.1" ;
+    rcap:evidenceText "The primary endpoint for this domain is the primary outcome as specified in Core Protocol documents." ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Nea955766c386405d9ca7d93db893e6a4 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Patients may also be excluded from receiving one or more interventions within the domain for patient-specific reasons." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N3f2bc7c4cdf745d5b7151aeec57d329c ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:9" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "Septic shock would always be regarded as having resolved if vasopressor infusion has not been administered in the preceding 24 hours." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Nef8ef2fa9eb34c668ac2d41ee261a5a8 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "Eligibility within each stratum may be further constrained by domain-specific eligibility criteria specified below." ;
+    rcap:occurrenceKind "applicability_age" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N9bd549b10ee74afc8e19841949e2152f ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "9.2.1" ;
+    rcap:evidenceText "Administration of systemic corticosteroids" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Na308aaa52872491f88900909fff06f1b ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 23 ;
+    rcap:evidencePosition "6" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "The treating clinician believes that participation in the domain would not be in the best interests of the patient" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Nd0de5bcd32f84c3e85754f88fb9c7451 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "10.3" ;
+    rcap:evidenceText "If required, any such modifications will be an operational decision of the Design Team specified in the Current State document and applied by the SAC." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N9906559377744f2f9280a5de919f4b03 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:10" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "A clinician may regard septic shock to have resolved if vasopressor infusion is being administered intermittently or at sufficiently low dose." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N94443b63b2f249c19f7d6b5886e64d25 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.5" ;
+    rcap:evidenceText "The interventions in this domain apply up until study day 28 during the index hospitalization, noting that the criteria related to respiratory tract infection and its direct complications still apply." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Ne356a0d3f74a4d6394fbbc1936c94814 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.5" ;
+    rcap:evidenceText "Interactions with all other domains are either not evaluable or not considered possible and will not be incorporated into the statistical model or models in which this domain is evaluated." ;
+    rcap:occurrenceKind "allocation_interactions" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N60716f2057ef47e2b38175ee1e7004c0 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:9" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "In particular longer courses of corticosteroids should be avoided in very young infants." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Na10b6305410e4a43a427317969ee116a ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "Administration is to commence immediately after reveal of allocation." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N52cecc3c342649728bc2f63f9f7af029 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceGlyph "☐" ;
+    rcap:evidencePage 24 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Fixed duration dexamethasone for 10 days" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:Domain_CS ;
+    owl:annotatedTarget _:N73a47666cd764027b1579ee6dbec9552 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceGlyph "☐" ;
+    rcap:evidencePage 24 ;
+    rcap:evidenceRule "B-domain" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Shock-dependent hydrocortisone while the patient is in septic shock (Severe State only)" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N95347ae284af445aa95aa950f4ed64f7 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.3" ;
+    rcap:evidenceText "Domain-specific strata are not applied to patients at the time of assessment for this domain." ;
+    rcap:occurrenceKind "domain_strata" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N75cdb74277f64fa8abb751801a94fb5a ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 24 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "It is recognized that there is a wide range of regulatory approaches and attitudes to the evaluation of interventions in pregnant trial participants across participating regions and sites. Known or suspected pregnancy is not an intervention-level exclusion for the fixed-course dexamethasone intervention by default; however, if a site does not have regulatory approval to enroll pregnant patients to the fixed-course dexamethasone intervention, known or suspected pregnancy will be applied as an intervention-specific exclusion and will result in exclusion from the fixed course dexamethasone intervention." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Nd08a6b30f9ee405f99d27ea0d25546c0 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:7" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "Dosage guidance of vasopressor for initiation of corticosteroids for this intervention is described in a separate operational document." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N527fb2436be94246b770c48ee54a02f9 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.7" ;
+    rcap:evidenceText "The threshold probability for statistical triggers for superiority, efficacy, and inferiority, are those specified in the relevant Core Protocol documents." ;
+    rcap:occurrenceKind "allocation_threshold" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Nfc43b6ba40954d45a16ccb46241973b5 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:6" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "In pregnancy dexamethasone should be replaced by oral prednisolone 40mg once daily or IV hydrocortisone 50mg every 6 hours for 10 days while in hospital." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N2da5c8e8ee5c4be8bd127bef15a59a76 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:6" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "The rationale for avoiding an exact dose is because no particular dose signifies 'shock' unambiguously." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Nf16116fbc4fc4ea58fa4ff1b843b563e ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 23 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Confirmed SARS-CoV-2 infection" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Nddf0ed6cad5c4b75abeb4210f3cf3310 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Criteria that exclude a patient from a one or more interventions are:" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Nfb3771416d7e495e9808477b76fa6ea2 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "Patients allocated to the shock-dependent duration hydrocortisone intervention, will receive hydrocortisone, IV 50 mg every 6 hours, commenced if septic shock develops as a result of the patient’s respiratory tract infection, up until study day 28." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N612d6273448a4ed8af5df0163051da69 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.5" ;
+    rcap:evidenceText "For all patients in this domain who remain in hospital after study day 28, data on the administration of corticosteroids are not collected, and administration of corticosteroids after study day 28 is at the discretion of the treating clinician." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N7f42b0890245442f84717a7b28787c66 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Patients who are eligible for only a single intervention at a site (i.e., all other interventions are contraindicated) are not eligible for this domain." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Nde3b97aea2354fb690787cb7b1cfb6dd ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "All use of systemic corticosteroids is recorded and the reason for any administration will be documented." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Ne36b4b14ec694fd48c608ad12549db65 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "9.2.1" ;
+    rcap:evidenceText "Administration of etomidate between index hospital admission and randomization, and between randomization and the end of study day 8" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Nb70b577d428a4939891be76e67a68a22 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "All secondary endpoints as specified in the Core Protocol." ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Ne86cd7d32bef46869da2b33d8f7f643c ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 23 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "If in the Moderate State, patient is receiving some form of supplemental oxygen (simple facemask, low or high flow nasal oxygen, or non-invasive ventilation)" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Ndd5aab4d387a41369a8d0a051fe7cb52 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 23 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "If in the Severe State, patient has pneumonia" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N962d327717b54f1fa68b85f5b83117c7 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "9.3" ;
+    rcap:evidenceText "Refer to relevant core protocol documents for criteria for the discontinuation of participation in this trial." ;
+    rcap:occurrenceKind "discontinuation" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N7d9220c649e34dc09c7a0bef5f98b280 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "serious adverse events (SAE) as defined in the Core Protocol" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N1c033998ad4b42f1bee92ffc773c668b ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.6" ;
+    rcap:evidenceText "Nesting is not applicable to this domain." ;
+    rcap:occurrenceKind "allocation_nesting" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N42aa855014d447558d78d6c90a4414fc ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "For the purposes of this intervention, septic shock is defined as administration of any vasopressor by continuous infusion where the treating clinician believes that the vasopressor requirement is caused by the respiratory tract infection and is not being administered for another reason such as untreated hypovolemia or solely to offset the effects of other interventions such as administration of sedation or mechanical ventilation." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:Domain_CS ;
+    owl:annotatedTarget _:N3b6ad1359b974753971805a47aab0338 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceGlyph "☐" ;
+    rcap:evidencePage 24 ;
+    rcap:evidenceRule "B-domain" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Fixed duration dexamethasone for 10 days" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Nd38a63e5f42841a7b1432caf4c8d565d ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 23 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Intention to prescribe systemic corticosteroids for a reason that is unrelated to the current respiratory tract infection, such as chronic corticosteroid use before admission, acute severe asthma, or suspected or proven Pneumocystis jiroveci or COVID-19 pneumonia" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N1aed9429f9cf4a67a59ccdd253beb839 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "It is noted that the definition of shock that is specified in the Core Protocol (presence or absence of inotrope or vasopressor infusion at baseline) determines strata status, and not the definition of septic shock that is used to define administration of hydrocortisone in the shock-dependent duration hydrocortisone intervention." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Ne1331a145aae43a28656189995e63cea ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:8" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "Hydrocortisone administration is to cease when the clinician believes that septic shock has resolved." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N1d82072187ed4558aaab5c6ab31f81b3 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceGlyph "☐" ;
+    rcap:evidencePage 24 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "No corticosteroid (no placebo)" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Naf758154b0ea48518d091fa1162918ee ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Patients will be randomly assigned to receive one of the following open-label study interventions." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N60812036d88f45d1a1383a31f881986b ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "trailing:2" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "It is accepted as being established that treatment with corticosteroids results in increase in blood sugar levels and decreases the duration of vasoactive therapy." ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N329127864e5c4330bbad1fd4197d0870 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 23 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Patient has lower-respiratory tract infection" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N9fc1f3fac2894cdcb95c7d00df5c42ab ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "The choice of enteral or IV administration is at the discretion of the treating clinician based on the patient’s ability to take enteral medication and illness severity including likely gastric absorption rates." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N9d8c7891f4124661824af23bf9472c19 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "This domain is available to patients in the Pediatric, Adolescent, or Adult Age Strata, as defined in Core Protocol documents." ;
+    rcap:occurrenceKind "applicability_age" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N82ab47019e0d4771a0392cb86aa23c6f ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "If a patient has been receiving any corticosteroid for their respiratory tract infection or its direct complications prior to enrollment, this medication must be ceased." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N66b233e06f4040659b83d3067c28ea3b ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "10.8" ;
+    rcap:evidenceText "The threshold probability of a statistical trigger for futility will be those specified in the Core Protocol." ;
+    rcap:occurrenceKind "allocation_threshold" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Nfa42460bd1b4410b867905154a78701f ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "This intervention is only available for patients in the Severe Illness Severity State at time of randomization." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Ndb54b8ac0aa14206bcf860fa259deeea ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "Patients allocated to the fixed duration dexamethasone intervention, will have dexamethasone, IV or enteral 6 mg daily for 10 days while in hospital." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Nc0155cb2b9fb4f48bfd64db32489bb7f ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "In such cases, patients will be randomly allocated a remaining intervention from among those available at that site." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Nafee710de94747839d2e62f55503eca2 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "The statistical model will permit borrowing between all strata as specified in Core Protocol documents." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N322cd6e1634844d59c4eabe6e4d486b7 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Participants will be eligible for this domain if:" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N44958602e06c484aaa39812326561675 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Patients will be excluded from this domain if they have any of the following:" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N59db3ae007b84f1d85c58c8bc132b618 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:8" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "Administration of a systemic corticosteroid, including hydrocortisone or dexamethasone, after completion of the 10-day course is permitted only for the treatment of new illnesses that develop in the course of a patient’s hospital stay, such as asthma, airway swelling or treatment of an allergic reaction." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N268adfd8ed5f4844b8943885b5fcf536 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "Hydrocortisone is to be commenced as soon as septic shock is diagnosed, including immediately after enrollment if septic shock has already been diagnosed." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Ndd7b536845ef473cb3c3ea866c396fb9 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "These States are defined in Core Protocol documents." ;
+    rcap:occurrenceKind "applicability_state" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N9a2dd9202a964080973e1d35bfa9b27a ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "Participating sites may choose to offer this domain to patients in one or more (or all) of these Age Strata." ;
+    rcap:occurrenceKind "applicability_age" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N552bc6c30d294520bfb87721ad6baeee ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "It is expected that most children will spend less than 10days in hospital and therefore duration of therapy will be shorter." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Nc42524af74214f8ca14e717d5f78c432 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.3" ;
+    rcap:evidenceText "If RAR is applied, the cap on the maximum or minimum proportion of patients assigned to an intervention that is specified in core protocol documents may be modified by the Statistical Analysis Committee (SAC) if needed to reduce the likelihood of sites being unblinded or to improve power." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N78765e0b2ece4aa585c5231dc4fd9a5e ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "Administration of a systemic corticosteroid, including hydrocortisone or dexamethasone, is permitted only for the treatment of new illnesses that develop in the course of a patient’s hospital stay, such as asthma, airway swelling or treatment of an allergic reaction." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Ndd06a056010641e39984e897235f58b4 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "9.2.1" ;
+    rcap:evidenceText "Additional domain-specific data will be collected." ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Nd33df29bacb04669b26b9f7978ceb6c6 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.8" ;
+    rcap:evidenceText "If two interventions within this domain, for a unit-of-analysis, have at least a 0.90 probability of being within a pre-specified delta for the primary endpoint then these interventions will be deemed as being equivalent." ;
+    rcap:occurrenceKind "allocation_threshold" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Ncd53d9a2cc7f486a84679c265c9d32a8 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 23 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "If in the Severe State, more than 24 hours have elapsed since commencement of sustained organ failure support" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Ncb70a69c95a047caa45c3b692198f6fb ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "Patients allocated to the no corticosteroid intervention are not to receive any systemic corticosteroid, including hydrocortisone or dexamethasone, for this respiratory tract infection and its direct complications up until study day 28 or hospital discharge, whichever occurs first." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N0f88377c38c74f9e919aab9278b37619 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "There is no administration of placebo." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Ndc8413fe623e4611a9c4a37efdf37b98 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "This domain is available for patients in either the Moderate or Severe State." ;
+    rcap:occurrenceKind "applicability_state" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget rcap:CoreDesign ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePage 10 ;
+    rcap:evidenceRule "B-dsa" ;
+    rcap:evidenceText "The Core Protocol contains all information that is generic to the trial …" ;
+    rcap:note "Core Protocol 4.0 1.2: Domain-Specific Appendix is an appendix to the Core Protocol.",
+        "Core Protocol 4.1 1.2: Domain-Specific Appendix is an appendix to the Core Protocol." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N73f1cd1545174220a7d6ceff58ecd024 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "The exact dose of vasopressor that defines septic shock is not set by the protocol but is based on the treating clinician’s judgement." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:Domain_CS ;
+    owl:annotatedTarget _:Nde0fb8520dea4bfb913c39ec244941f7 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceGlyph "☐" ;
+    rcap:evidencePage 24 ;
+    rcap:evidenceRule "B-domain" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "No corticosteroid (no placebo)" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N3a49d6fd4ae440798fa326b20f29b8ea ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 23 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Hospital-acquired respiratory tract infection, except where the patient has confirmed influenza infection" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N676c568712784088aa0676d60fa248f4 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Patients in whom all interventions are contraindicated will be treated according to the current standard of care at the clinician’s discretion." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N43d4b15da68d4bd7aea25e9a6e8bfadc ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceGlyph "☐" ;
+    rcap:evidencePage 24 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Shock-dependent hydrocortisone while the patient is in septic shock (Severe State only)" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N5db1d8f5ee7f45cba85c6587ef406267 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "trailing:1" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "There are no additional domain-specific secondary outcome measures." ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N2122b54c3a1248feb6a9ee6ee9bbadc8 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "Participating sites may choose to offer this domain to patients in one or both of these Illness Severity States." ;
+    rcap:occurrenceKind "applicability_state" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N21810a81543d4e07841111d4f7250e77 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:12" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "Hydrocortisone should be ceased prior to hospital discharge." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Nb13d1f3f4a5c46d484ef62286208262e ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:7" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "From completion of the 10-day course onwards, patients allocated to this intervention are not to receive any systemic corticosteroid, including hydrocortisone or dexamethasone, for this respiratory tract infection and its direct complications up until study day 28 or hospital discharge, whichever occurs first." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Nf20bf629213f4cc6821f254f8b31211c ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:10" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "All use of systemic corticosteroids is recorded and the reason for any administration after Study Day 10 will be documented." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N87ead87c0fbc4465a2d3b2eef33d48ce ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 23 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Patient is aged ≥ 28 days old (corrected gestational age)" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N32077e468fe94588824c920f547aa370 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.4" ;
+    rcap:evidenceText "The timing of the revealing of allocation status and administration of interventions is specified to be Randomization with Immediate Reveal and Initiation or Randomization with Deferred Reveal and Initiation if prospective agreement to participate is required for this domain (see relevant Core Protocol documents)." ;
+    rcap:occurrenceKind "allocation_reveal" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N76694c4b9b54485081ca39b0b02418f5 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.3.5" ;
+    rcap:evidenceText "If septic shock develops due to a cause other than the respiratory tract infection, administration of corticosteroids is at the discretion of the treating clinician." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Nccdab1c7b94e49a2a3a68e6a64435e88 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.5" ;
+    rcap:evidenceText "If an interaction is specified with a future domain, it is sufficient for the interaction to be specified only in the DSA or such a future domain." ;
+    rcap:occurrenceKind "allocation_interactions" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Nf23dc0a41a784b77a95880568b943c07 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "In children the dose of dexamethasone will be 0.15 mg/kg (max 6mg/day) for a maximum of 10 days while in hospital." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N4d1eae9a2c9c4cc4bab720cf1b754e7a ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.3" ;
+    rcap:evidenceText "Response Adaptive Randomization may be applied." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N34e1c6f056104852aae053bb372ee070 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 23 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Known hypersensitivity to any corticosteroid" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N5c84ecd838e14360a741568066bb8445 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "trailing:3" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "It is not an objective of this trial to re-evaluate these questions but determine the aggregate effect of treatment with corticosteroids on mortality." ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N66d9e97bc34f420993a9f40b16b6497d ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "trailing:4" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "It is also known that treatment with corticosteroids can result in myopathy and muscle weakness but this effect will be evaluated by the aggregate effect of treatment, in conjunction with other factors, on the duration of mechanical ventilation and long-term outcomes, for participants enrolled at sites that are collecting long-term outcomes." ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:N0c04e1ea6c784c62addff5968b8e347b ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.4" ;
+    rcap:evidenceText "For patients allocated to the shock-dependent duration hydrocortisone intervention, who are not in septic shock at the time of randomization, Immediate Reveal and Initiation is interpreted as intention to commence hydrocortisone if and when septic shock develops." ;
+    rcap:occurrenceKind "allocation_reveal" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Ne032462422214814b045d224694f76ba ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "The unit-of-analysis for this domain corresponds to the patients who receive an allocation in this domain, further subdivided by the combination of: Influenza Infection Confirmed Strata (defined as Influenza Infection Confirmed or Influenza Infection Not Confirmed); Shock Strata (defined as Shock Present or Shock Absent); Age Strata (defined as Pediatric, or combined Adolescent and Adult Age Strata); and Illness Severity State (defined as Moderate or Severe State)." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Na65aa264ac06484c81c8f67ac3ace64b ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:11" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "If, after cessation of hydrocortisone, there is redevelopment of septic shock due to CAP (as defined above), then hydrocortisone IV 50 mg every 6 hours is to be recommenced until resolution." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_CS ;
+    owl:annotatedTarget _:Nee33140c5549491da3900cc3d56d89c5 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "The domain-specific secondary outcome measures (occurring during the index hospitalization, censored at 90 days after enrollment) will be:" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+_:N0c04e1ea6c784c62addff5968b8e347b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2945b9d83a .
+
+_:N0f88377c38c74f9e919aab9278b37619 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0e7d61c2a9 .
+
+_:N1aed9429f9cf4a67a59ccdd253beb839 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd3604c9617 .
+
+_:N1c033998ad4b42f1bee92ffc773c668b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6e4a622d7b .
+
+_:N1d82072187ed4558aaab5c6ab31f81b3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cde67788f7a .
+
+_:N2122b54c3a1248feb6a9ee6ee9bbadc8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7584fb6acd .
+
+_:N21810a81543d4e07841111d4f7250e77 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdd2be8e9cf .
+
+_:N268adfd8ed5f4844b8943885b5fcf536 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c384387fa17 .
+
+_:N2da5c8e8ee5c4be8bd127bef15a59a76 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c51e00a244f .
+
+_:N32077e468fe94588824c920f547aa370 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca8c5ba6b39 .
+
+_:N322cd6e1634844d59c4eabe6e4d486b7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8bc517a21d .
+
+_:N329127864e5c4330bbad1fd4197d0870 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1b0d782be7 .
+
+_:N34e1c6f056104852aae053bb372ee070 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cfb6fc009ea .
+
+_:N3a49d6fd4ae440798fa326b20f29b8ea a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf49162b05e .
+
+_:N3b6ad1359b974753971805a47aab0338 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd55c1341f6 .
+
+_:N3f2bc7c4cdf745d5b7151aeec57d329c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc977d9946c .
+
+_:N42aa855014d447558d78d6c90a4414fc a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca69a8b569c .
+
+_:N43d4b15da68d4bd7aea25e9a6e8bfadc a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9775fa413c .
+
+_:N44958602e06c484aaa39812326561675 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc4a3982cda .
+
+_:N4d1eae9a2c9c4cc4bab720cf1b754e7a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c129e610700 .
+
+_:N527fb2436be94246b770c48ee54a02f9 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c49cafec9f1 .
+
+_:N52cecc3c342649728bc2f63f9f7af029 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd55c1341f6 .
+
+_:N552bc6c30d294520bfb87721ad6baeee a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1a81fa0c38 .
+
+_:N59db3ae007b84f1d85c58c8bc132b618 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cfaa5fbfd6e .
+
+_:N5c84ecd838e14360a741568066bb8445 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0d027dc361 .
+
+_:N5db1d8f5ee7f45cba85c6587ef406267 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2ff63e56e1 .
+
+_:N60716f2057ef47e2b38175ee1e7004c0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c017de64a90 .
+
+_:N60812036d88f45d1a1383a31f881986b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c30a922617d .
+
+_:N612d6273448a4ed8af5df0163051da69 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c05075dff40 .
+
+_:N66b233e06f4040659b83d3067c28ea3b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cee7d1a66ec .
+
+_:N66d9e97bc34f420993a9f40b16b6497d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb108da728c .
+
+_:N676c568712784088aa0676d60fa248f4 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5b61229d68 .
+
+_:N73a47666cd764027b1579ee6dbec9552 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9775fa413c .
+
+_:N73f1cd1545174220a7d6ceff58ecd024 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdb6639ba6e .
+
+_:N75cdb74277f64fa8abb751801a94fb5a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9d34740b48 .
+
+_:N76694c4b9b54485081ca39b0b02418f5 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c34ba902a86 .
+
+_:N78765e0b2ece4aa585c5231dc4fd9a5e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c70c1cc212f .
+
+_:N7d9220c649e34dc09c7a0bef5f98b280 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd7e3bd8fce .
+
+_:N7f42b0890245442f84717a7b28787c66 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c30b25c536b .
+
+_:N82ab47019e0d4771a0392cb86aa23c6f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c08fb792710 .
+
+_:N87ead87c0fbc4465a2d3b2eef33d48ce a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4dfe8b449c .
+
+_:N94443b63b2f249c19f7d6b5886e64d25 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce7febd34c0 .
+
+_:N94877cc9b4f8490f90e74687bddf351c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cbf7925c08d .
+
+_:N95347ae284af445aa95aa950f4ed64f7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c206b9c5488 .
+
+_:N962d327717b54f1fa68b85f5b83117c7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c85858c8378 .
+
+_:N9906559377744f2f9280a5de919f4b03 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c228b0b878c .
+
+_:N9a2dd9202a964080973e1d35bfa9b27a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9c4ee896ea .
+
+_:N9bd549b10ee74afc8e19841949e2152f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c50952502b5 .
+
+_:N9d8c7891f4124661824af23bf9472c19 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c404c1328e4 .
+
+_:N9fc1f3fac2894cdcb95c7d00df5c42ab a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c64ec076e74 .
+
+_:Na10b6305410e4a43a427317969ee116a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9a41291a28 .
+
+_:Na308aaa52872491f88900909fff06f1b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c324186f8e2 .
+
+_:Na65aa264ac06484c81c8f67ac3ace64b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf6882128d8 .
+
+_:Naf758154b0ea48518d091fa1162918ee a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb26af16384 .
+
+_:Nafee710de94747839d2e62f55503eca2 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c048bddcbd7 .
+
+_:Nb13d1f3f4a5c46d484ef62286208262e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb59ab3377d .
+
+_:Nb70b577d428a4939891be76e67a68a22 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c494ee9cfa6 .
+
+_:Nc0155cb2b9fb4f48bfd64db32489bb7f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf6051db800 .
+
+_:Nc42524af74214f8ca14e717d5f78c432 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ccdc64e11f3 .
+
+_:Ncb70a69c95a047caa45c3b692198f6fb a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:caa02ba49d4 .
+
+_:Nccdab1c7b94e49a2a3a68e6a64435e88 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c168c834f5a .
+
+_:Ncd53d9a2cc7f486a84679c265c9d32a8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c258c11804f .
+
+_:Nd08a6b30f9ee405f99d27ea0d25546c0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6bea1689f9 .
+
+_:Nd0de5bcd32f84c3e85754f88fb9c7451 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5195342be2 .
+
+_:Nd33df29bacb04669b26b9f7978ceb6c6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c715f02f8d2 .
+
+_:Nd38a63e5f42841a7b1432caf4c8d565d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1230dec75c .
+
+_:Nd8152d8ff28d43e085c16232dbc369eb a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c70fcba7483 .
+
+_:Ndb54b8ac0aa14206bcf860fa259deeea a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c30428b06d8 .
+
+_:Ndc8413fe623e4611a9c4a37efdf37b98 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9b8bdba438 .
+
+_:Ndd06a056010641e39984e897235f58b4 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4c016e4e79 .
+
+_:Ndd5aab4d387a41369a8d0a051fe7cb52 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c608aaeeb9b .
+
+_:Ndd7b536845ef473cb3c3ea866c396fb9 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc26608429f .
+
+_:Nddf0ed6cad5c4b75abeb4210f3cf3310 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4c7e690055 .
+
+_:Nde0fb8520dea4bfb913c39ec244941f7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cde67788f7a .
+
+_:Nde3b97aea2354fb690787cb7b1cfb6dd a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c77ba2be096 .
+
+_:Ne032462422214814b045d224694f76ba a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3c4eef02e9 .
+
+_:Ne1331a145aae43a28656189995e63cea a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8f3e270ba9 .
+
+_:Ne356a0d3f74a4d6394fbbc1936c94814 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc4efc1a692 .
+
+_:Ne36b4b14ec694fd48c608ad12549db65 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3550866d02 .
+
+_:Ne86cd7d32bef46869da2b33d8f7f643c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c32c8e26722 .
+
+_:Nea955766c386405d9ca7d93db893e6a4 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2ca322189f .
+
+_:Nee33140c5549491da3900cc3d56d89c5 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cfc67fd1c19 .
+
+_:Nef8ef2fa9eb34c668ac2d41ee261a5a8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce5c526ddb9 .
+
+_:Nf16116fbc4fc4ea58fa4ff1b843b563e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1a78973420 .
+
+_:Nf20bf629213f4cc6821f254f8b31211c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c558729b3a7 .
+
+_:Nf23dc0a41a784b77a95880568b943c07 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd447210279 .
+
+_:Nfa42460bd1b4410b867905154a78701f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c39ece23ec4 .
+
+_:Nfb3771416d7e495e9808477b76fa6ea2 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c56db8a6da3 .
+
+_:Nfc43b6ba40954d45a16ccb46241973b5 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd39e0ef162 .
+

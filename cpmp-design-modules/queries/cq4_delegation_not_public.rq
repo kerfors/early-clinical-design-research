@@ -1,0 +1,13 @@
+# CQ4: where does a delegation point to a module with no public content?
+PREFIX cpmp: <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?source ?label ?kind ?slot_kind ?target
+WHERE {
+    ?source cpmp:delegatesTo ?target ;
+            rdfs:label ?label .
+    OPTIONAL { ?source cpmp:slotKind ?slot_kind }
+    ?target cpmp:contentStatus "not public" .
+    BIND (IF(EXISTS { ?source rdfs:subClassOf cpmp:DelegatedSlot }, "slot", "master component") AS ?kind)
+}
+ORDER BY ?kind ?label ?target

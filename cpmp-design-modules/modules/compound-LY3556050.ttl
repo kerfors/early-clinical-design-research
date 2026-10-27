@@ -1,0 +1,362 @@
+@prefix cpmp: <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cpmp:Compound_LY3556050 a owl:Class ;
+    rdfs:label "CPMP compound design LY3556050" ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( obo:OBI_0500001 [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:crit-338e4ea957 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:crit-cc78b48656 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:crit-578079d30a ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:crit-a4aa2e6f14 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:crit-1b8ff35216 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:crit-f9e86aef39 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:crit-4669bceb64 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:crit-0b7e78fdc5 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:crit-9f7486b84a ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-1e90f4e6a0 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-668fd73716 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-88b6967f96 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-8cec5f13d0 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-8730098b0d ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-a93954ad6a ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-be70874649 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-425415259a ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-a60f669c55 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-5d27c27b87 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-7277543555 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-9745c3b10e ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-6f2515d406 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-b089e31a19 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-d46d04092d ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-5d8acca92a ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-cb65a5ebab ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-3529010986 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-f8db2015d3 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-0b03ede8de ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-c6ab81af7c ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-79cb32ae42 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-9d9dffadc9 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-676f6c0fb0 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-e322d4ba03 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-432f731dc6 ] ) ] ;
+    cpmp:moduleRole "compound" ;
+    cpmp:note "No document of its own: components worded the same (Step 5 template) in all three ISAs of this compound." .
+
+<https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/compound-LY3556050> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/cpmp-core> .
+
+cpmp:crit-0b7e78fdc5 a owl:Class ;
+    rdfs:label "have had a change in beta blocker therapy in the last 12 weeks before Visit 2. This does not include a discontinuation of therapy." ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical false ;
+    cpmp:variantText "have had a change in beta blocker therapy in the last 12 weeks before Visit 2. This does not include a discontinuation of therapy" .
+
+cpmp:crit-1b8ff35216 a owl:Class ;
+    rdfs:label "have an estimated glomerular filtration rate (eGFR) of less than 60 ml/min/1.73 m2 based on the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI) formula at Visit 1 or Visit 2" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical true .
+
+cpmp:crit-338e4ea957 a owl:Class ;
+    rdfs:label "have a history within 2 years prior to Visit 1 or current evidence of syncope, presyncope, uncontrolled vertigo, or postural dizziness, judged to be clinically significant by the investigator" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical false ;
+    cpmp:variantText "have a history within 2 years prior to Visit 1or current evidence of syncope, presyncope, uncontrolled vertigo, or postural dizziness, judged to be clinically significant by the investigator" .
+
+cpmp:crit-4669bceb64 a owl:Class ;
+    rdfs:label "have been on thyroid replacement therapy or supplements for less than 12 weeks or had a change in thyroid replacement therapy or supplements in the last 12 weeks before Visit 2" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical true .
+
+cpmp:crit-578079d30a a owl:Class ;
+    rdfs:label "have a non-evaluable PR interval or a PR interval >200 msec at Visit 1 or Visit 2" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical true .
+
+cpmp:crit-9f7486b84a a owl:Class ;
+    rdfs:label "are men or women who abide by the reproductive and contraceptive requirements provided in this ISA Section 10.2, Appendix 2. ¶ Women of childbearing potential (WOCBP) may participate and include those who ¶ are completely abstinent or in a same-sex relationship, as part of their preferred and usual lifestyle, and must agree to either remain abstinent or stay in a same-sex relationship without sexual relationships with males, or must agree to use 1 highly effective method of contraception (less than 1% failure rate), or a combination of 2 effective methods of contraception, for the entirety of the study. ¶ Women not of childbearing potential may participate and include those who ¶ have a congenital anomaly such as Müllerian agenesis are infertile due to surgical sterilization, or are postmenopausal." ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical false ;
+    cpmp:variantText "are men or women who abide by the reproductive and contraceptive requirements provided in this ISA Section 10.2, Appendix 2. ¶ Women of childbearing potential (WOCBP) may participate and include those who ¶  are completely abstinent or in a same-sex relationship, as part of their preferred and usual lifestyle, and must agree to either remain abstinent or stay in a same-sex relationship without sexual relationships with males, or  must agree to use 1 highly effective method of contraception (less than 1% failure rate), or a combination of 2 effective methods of contraception, for the entirety of the study. ¶ Women not of childbearing potential may participate and include those who ¶  have a congenital anomaly such as Müllerian agenesis  are infertile due to surgical sterilization, or  are postmenopausal.",
+        "are men or women who abide by the reproductive and contraceptive requirements provided in {isa} Section 10.2, Appendix 2. ¶ Women of childbearing potential (WOCBP) may participate and include those who ¶  are completely abstinent or in a same-sex relationship, as part of their preferred and usual lifestyle, must agree to either remain abstinent or stay in a same-sex relationship without sexual relationships with males, or  must agree to use 1 highly effective method of contraception (less than 1% failure rate), or a combination of 2 effective methods of contraception, for the entirety of the study. ¶ Women not of childbearing potential may participate and include those who ¶  have a congenital anomaly such as Müllerian agenesis  are infertile due to surgical sterilization, or  are postmenopausal." .
+
+cpmp:crit-a4aa2e6f14 a owl:Class ;
+    rdfs:label "have a heart rate <40 bpm at Visit 1 or Visit 2" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical true .
+
+cpmp:crit-cc78b48656 a owl:Class ;
+    rdfs:label "have a QRS interval ≥120 msec at Visit 1 or Visit 2" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical true .
+
+cpmp:crit-f9e86aef39 a owl:Class ;
+    rdfs:label "have clinically significant active thyroid disease, including Hashimoto’s thyroiditis" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical true .
+
+cpmp:sched-0b03ede8de a owl:Class ;
+    rdfs:label "Somatostatin-regulated hormone sample @ V7" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Somatostatin-regulated hormone sample" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V7" .
+
+cpmp:sched-1e90f4e6a0 a owl:Class ;
+    rdfs:label "Cystatin C @ ED" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Cystatin C" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "ED" .
+
+cpmp:sched-3529010986 a owl:Class ;
+    rdfs:label "Somatostatin-regulated hormone sample @ V5" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Somatostatin-regulated hormone sample" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V5" .
+
+cpmp:sched-425415259a a owl:Class ;
+    rdfs:label "ECG @ V6" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "ECG" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V6" .
+
+cpmp:sched-432f731dc6 a owl:Class ;
+    rdfs:label "Thyroid panel @ V7" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Thyroid panel" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V7" .
+
+cpmp:sched-5d27c27b87 a owl:Class ;
+    rdfs:label "Serum pregnancy @ ED" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Serum pregnancy" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "ED" .
+
+cpmp:sched-5d8acca92a a owl:Class ;
+    rdfs:label "Somatostatin-regulated hormone sample @ V3" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Somatostatin-regulated hormone sample" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V3" .
+
+cpmp:sched-668fd73716 a owl:Class ;
+    rdfs:label "Cystatin C @ V3" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Cystatin C" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V3" .
+
+cpmp:sched-676f6c0fb0 a owl:Class ;
+    rdfs:label "Thyroid panel @ V5" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Thyroid panel" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V5" .
+
+cpmp:sched-6f2515d406 a owl:Class ;
+    rdfs:label "Serum pregnancy @ V6" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Serum pregnancy" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V6" .
+
+cpmp:sched-7277543555 a owl:Class ;
+    rdfs:label "Serum pregnancy @ V4" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Serum pregnancy" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V4" .
+
+cpmp:sched-79cb32ae42 a owl:Class ;
+    rdfs:label "Thyroid panel @ V3" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Thyroid panel" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V3" .
+
+cpmp:sched-8730098b0d a owl:Class ;
+    rdfs:label "Cystatin C @ V6" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Cystatin C" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V6" .
+
+cpmp:sched-88b6967f96 a owl:Class ;
+    rdfs:label "Cystatin C @ V4" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Cystatin C" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V4" .
+
+cpmp:sched-8cec5f13d0 a owl:Class ;
+    rdfs:label "Cystatin C @ V5" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Cystatin C" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V5" .
+
+cpmp:sched-9745c3b10e a owl:Class ;
+    rdfs:label "Serum pregnancy @ V5" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Serum pregnancy" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V5" .
+
+cpmp:sched-9d9dffadc9 a owl:Class ;
+    rdfs:label "Thyroid panel @ V4" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Thyroid panel" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V4" .
+
+cpmp:sched-a60f669c55 a owl:Class ;
+    rdfs:label "Evaluate all I/E criteria @ V3" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Evaluate all I/E criteria" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V3" .
+
+cpmp:sched-a93954ad6a a owl:Class ;
+    rdfs:label "Cystatin C @ V7" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Cystatin C" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V7" .
+
+cpmp:sched-b089e31a19 a owl:Class ;
+    rdfs:label "Serum pregnancy @ V7" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Serum pregnancy" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V7" .
+
+cpmp:sched-be70874649 a owl:Class ;
+    rdfs:label "ECG @ V4" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "ECG" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V4" .
+
+cpmp:sched-c6ab81af7c a owl:Class ;
+    rdfs:label "Thyroid panel @ ED" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Thyroid panel" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "ED" .
+
+cpmp:sched-cb65a5ebab a owl:Class ;
+    rdfs:label "Somatostatin-regulated hormone sample @ V4" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Somatostatin-regulated hormone sample" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V4" .
+
+cpmp:sched-d46d04092d a owl:Class ;
+    rdfs:label "Somatostatin-regulated hormone sample @ ED" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Somatostatin-regulated hormone sample" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "ED" .
+
+cpmp:sched-e322d4ba03 a owl:Class ;
+    rdfs:label "Thyroid panel @ V6" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Thyroid panel" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V6" .
+
+cpmp:sched-f8db2015d3 a owl:Class ;
+    rdfs:label "Somatostatin-regulated hormone sample @ V6" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Somatostatin-regulated hormone sample" ;
+    cpmp:occursIn "BP03;NP03;OA03" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V6" .
+

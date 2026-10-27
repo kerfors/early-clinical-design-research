@@ -1,0 +1,57 @@
+CORE40   pages= 98 header lines removed=194
+CORE41   pages=100 header lines removed=109
+PANDA    pages= 12 header lines removed=22
+CS_DSA   pages= 38 header lines removed=74
+AB_DSA   pages= 34 header lines removed=66
+TAB_DSA  pages= 31 header lines removed=60
+IAV_DSA  pages= 32 header lines removed=62
+CORE40   TOC numbered=145 found=145 not_found=0
+CORE41   TOC numbered=145 found=145 not_found=0
+PANDA    TOC numbered=17 found=17 not_found=0
+CS_DSA   TOC numbered=64 found=64 not_found=0
+AB_DSA   TOC numbered=64 found=64 not_found=0
+TAB_DSA  TOC numbered=60 found=60 not_found=0
+IAV_DSA  TOC numbered=55 found=55 not_found=0
+gate 1 ok: Step 2 sections and cross references reproduced
+gate 2: changed=13 only_in_4.0=[] only_in_4.1=['7.6.3', '7.6.4']; step5 rows=15
+  step5 sections: ['2.1', '2.2.9', '4', '6.1', '6.2', '7.6', '7.6.1', '7.6.2', '7.6.3', '7.6.4', '7.8.3', '7.8.6', '7.8.7', '8.4.2', '8.8.2']
+  mine changed:   ['2.1', '2.2.9', '4', '6.1', '6.2', '7.6', '7.6.1', '7.6.2', '7.8.3', '7.8.6', '7.8.7', '8.4.2', '8.8.2']
+gate 2 ok
+relation               default_overridable  delegates  mention_only  refers_to  version_scoped  All
+doc     target                                                                                     
+AB_DSA  CORE                             0          0             7         12               1   20
+        CURRENT_STATE                    0          0             0          1               0    1
+        DSA                              0          0             7          0               0    7
+        PANDA                            0          0             1          0               0    1
+        RSA                              0          0             4          0               0    4
+        SAA                              0          0             2          0               0    2
+CORE40  CURRENT_STATE                    0          1             7          0               0    8
+        DSA                              6         15            43          0               0   64
+        PANDA                            0          3             7          0               0   10
+        PANDEMIC                         0          0             7          0               0    7
+        RSA                              0          4            20          0               0   24
+        SAA                              0          0             6          0               0    6
+CORE41  CURRENT_STATE                    0          1             7          0               0    8
+        DSA                              6         15            43          0               0   64
+        PANDA                            0          3             7          0               0   10
+        PANDEMIC                         0          0             7          0               0    7
+        RSA                              0          4            20          0               0   24
+        SAA                              0          0             6          0               0    6
+CS_DSA  CORE                             0          0             7         19               1   27
+        CURRENT_STATE                    0          0             2          0               0    2
+        DSA                              0          0             8          0               0    8
+        PANDA                            0          0             1          0               0    1
+        RSA                              0          0             5          0               0    5
+        SAA                              0          0             2          1               0    3
+IAV_DSA CORE                             0          0             1         15               0   16
+        CURRENT_STATE                    0          0             2          0               0    2
+        DSA                              0          0             3          0               0    3
+PANDA   CORE                             0          0             2          0               0    2
+        DSA                              0          0             4          0               0    4
+TAB_DSA CORE                             0          0             7         12               1   20
+        CURRENT_STATE                    0          0             0          1               0    1
+        DSA                              0          0             7          0               0    7
+        PANDA                            0          0             1          0               0    1
+        RSA                              0          0             4          0               0    4
+        SAA                              0          0             2          0               0    2
+All                                     12         46           259         61               3  381

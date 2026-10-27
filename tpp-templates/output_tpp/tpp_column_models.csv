@@ -1,0 +1,14 @@
+source,columns,n_elements
+FDA2007,,15
+FDA2007,Date | *TPP Submitted? Y/N | TPP Version Date | TPP Discussed? Y/N,7
+FDA2007,Target | Annotations | Comments,16
+PAVEGT,Minimum Acceptable Result | Ideal Result,7
+SEED_BIOLOGIC,Description,19
+SEED_BIOLOGIC,Minimal Acceptance Criteria | Preferred Acceptance Criteria,6
+SEED_CGT,Description,19
+SEED_CGT,Minimal Acceptance Criteria | Preferred Acceptance Criteria,6
+SEED_SMALL_MOLECULE,Description,15
+SEED_SMALL_MOLECULE,Minimal Acceptance Criteria | Preferred Acceptance Criteria,6
+SEED_VACCINE,Description,18
+SEED_VACCINE,Minimal Acceptance Criteria | Preferred Acceptance Criteria,6
+WOAH2026,Ideal | Minimum | Comments,32

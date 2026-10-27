@@ -1,0 +1,93 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rcap: <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+rcap:AllocationSpecification a owl:Class ;
+    rdfs:label "allocation specification" ;
+    rdfs:subClassOf obo:IAO_0000033 ;
+    rcap:note "README upstream terms" .
+
+rcap:ApplicabilitySpecification a owl:Class ;
+    rdfs:label "domain applicability specification" ;
+    rdfs:subClassOf obo:IAO_0000033 ;
+    rcap:note "README upstream terms" .
+
+rcap:CategorySpecification a owl:Class ;
+    rdfs:label "patient, pathogen or disease category specification" ;
+    rdfs:subClassOf obo:IAO_0000033 ;
+    rcap:note "README upstream terms: no stratification term in OBI" .
+
+rcap:DataCollectionSpecification a owl:Class ;
+    rdfs:label "data collection specification" ;
+    rdfs:subClassOf obo:IAO_0000033 ;
+    rcap:note "README upstream terms: no data-item term in OBI" .
+
+rcap:DesignStatement a owl:Class ;
+    rdfs:label "design statement (sentence of a protocol document)" ;
+    rdfs:subClassOf obo:IAO_0000033 ;
+    rcap:note "step 2 R-sentence" .
+
+rcap:DiscontinuationSpecification a owl:Class ;
+    rdfs:label "discontinuation specification" ;
+    rdfs:subClassOf obo:IAO_0000033 ;
+    rcap:note "README upstream terms" .
+
+rcap:Domain a owl:Class ;
+    rdfs:label "REMAP-CAP domain" ;
+    rdfs:subClassOf obo:OBI_0000750 ;
+    rcap:note "decision 7" .
+
+rcap:EndpointSpecification a owl:Class ;
+    rdfs:label "endpoint specification" ;
+    rdfs:subClassOf obo:IAO_0000033 ;
+    rcap:note "decision 8: no endpoint class in OBI/IAO; as in cpmp-design-modules" .
+
+rcap:InterventionSpecification a owl:Class ;
+    rdfs:label "intervention specification" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    rcap:note "decision 7 / README upstream terms" .
+
+rcap:appendixTo a owl:AnnotationProperty .
+
+rcap:binding a owl:AnnotationProperty .
+
+rcap:coreStatus a owl:AnnotationProperty .
+
+rcap:documentDate a owl:AnnotationProperty .
+
+rcap:documentTitle a owl:AnnotationProperty .
+
+rcap:evidenceDoc a owl:AnnotationProperty .
+
+rcap:evidenceGlyph a owl:AnnotationProperty .
+
+rcap:evidenceGroup a owl:AnnotationProperty .
+
+rcap:evidencePage a owl:AnnotationProperty .
+
+rcap:evidencePosition a owl:AnnotationProperty .
+
+rcap:evidenceRule a owl:AnnotationProperty .
+
+rcap:evidenceSection a owl:AnnotationProperty .
+
+rcap:evidenceText a owl:AnnotationProperty .
+
+rcap:inVersion a owl:AnnotationProperty .
+
+<https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/rcap-core> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/imports/upstream_import> .
+
+rcap:note a owl:AnnotationProperty .
+
+rcap:occurrenceKind a owl:AnnotationProperty .
+
+rcap:occursIn a owl:AnnotationProperty .
+
+rcap:revisionOf a owl:AnnotationProperty .
+
+rcap:text a owl:AnnotationProperty .
+
+rcap:upstreamGap a owl:AnnotationProperty .
+

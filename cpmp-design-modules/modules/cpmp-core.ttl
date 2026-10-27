@@ -1,0 +1,115 @@
+@prefix cpmp: <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+cpmp:DelegatedSlot a owl:Class ;
+    rdfs:label "delegated slot" ;
+    rdfs:comment "Content the master protocol states will be provided by another layer; one slot per master delegation sentence." ;
+    rdfs:subClassOf obo:IAO_0000033 .
+
+cpmp:EndpointSpecification a owl:Class ;
+    rdfs:label "endpoint specification" ;
+    dcterms:source <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25212> ;
+    rdfs:comment "Authored: no endpoint class in OBI or IAO (BioPortal check 2026-10-25). Definition source NCIt C25212 'End Point'." ;
+    rdfs:subClassOf obo:IAO_0000033 .
+
+cpmp:activityKey a owl:AnnotationProperty ;
+    rdfs:label "activity key" ;
+    rdfs:comment "SoA activity identity (SoA join crosswalk)." .
+
+cpmp:additionStated a owl:AnnotationProperty ;
+    rdfs:label "addition stated" ;
+    rdfs:comment "ISA sentence 'in addition to schedule described in ...' for this cell's activity." .
+
+cpmp:allocation a owl:AnnotationProperty ;
+    rdfs:label "allocation" ;
+    rdfs:comment "How the ISA has the cell: own, restated, default, default assumed (no document)." .
+
+cpmp:compoundStated a owl:AnnotationProperty ;
+    rdfs:label "compound stated" ;
+    rdfs:comment "Compound named in the ISA section 5 sentence (grid.csv), kept to check the inferred compound design." .
+
+cpmp:contentStatus a owl:AnnotationProperty ;
+    rdfs:label "content status" ;
+    rdfs:comment "Set to 'not public' on the disease-state modules." .
+
+cpmp:delegatesTo a owl:AnnotationProperty ;
+    rdfs:label "delegates to" ;
+    rdfs:comment "From a master component or slot to the design classes that are to hold its content. Annotation property: links classes to classes." .
+
+cpmp:dependsOn a owl:AnnotationProperty ;
+    rdfs:label "depends on" ;
+    rdfs:comment "From an ISA design to the disease-state design its text refers to. Each occurrence is an axiom annotation with the sentence." .
+
+cpmp:diseaseStated a owl:AnnotationProperty ;
+    rdfs:label "disease stated" ;
+    rdfs:comment "Disease-state abbreviation stated in the source." .
+
+cpmp:evidenceDoc a owl:AnnotationProperty ;
+    rdfs:label "evidence document" .
+
+cpmp:evidenceNumber a owl:AnnotationProperty ;
+    rdfs:label "evidence criterion number" .
+
+cpmp:evidencePage a owl:AnnotationProperty ;
+    rdfs:label "evidence page" .
+
+cpmp:evidenceSection a owl:AnnotationProperty ;
+    rdfs:label "evidence section" .
+
+cpmp:evidenceSource a owl:AnnotationProperty ;
+    rdfs:label "evidence source" ;
+    rdfs:comment "Source of an SoA mark." .
+
+cpmp:evidenceText a owl:AnnotationProperty ;
+    rdfs:label "evidence text" ;
+    rdfs:comment "Verbatim sentence or criterion text from the document." .
+
+cpmp:masterDefault a owl:AnnotationProperty ;
+    rdfs:label "master default" ;
+    rdfs:comment "Master SoA cell overridden in at least one ISA; the master protocol does not call it a default." .
+
+cpmp:moduleRole a owl:AnnotationProperty ;
+    rdfs:label "module role" ;
+    rdfs:comment "master, disease state, compound, compound x disease state." .
+
+<https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/cpmp-core> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/imports/upstream_import> .
+
+cpmp:note a owl:AnnotationProperty ;
+    rdfs:label "note" .
+
+cpmp:occursIn a owl:AnnotationProperty ;
+    rdfs:label "occurs in" ;
+    rdfs:comment "Documents (Step 5 doc codes) the component occurs in." .
+
+cpmp:overrides a owl:AnnotationProperty ;
+    rdfs:label "overrides" ;
+    rdfs:comment "From an ISA design to the master default or disease-state design it overrides; axiom annotation carries the sentence." .
+
+cpmp:sharingClass a owl:AnnotationProperty ;
+    rdfs:label "sharing class" ;
+    rdfs:comment "Step 5 class: master, compound column, compound column (part), single ISA, other." .
+
+cpmp:slotKind a owl:AnnotationProperty ;
+    rdfs:label "slot kind" ;
+    rdfs:comment "content: the slot names what the other layer must supply; role statement: the sentence only describes the DSA's role (rule-derived)." .
+
+cpmp:textIdentical a owl:AnnotationProperty ;
+    rdfs:label "text identical" ;
+    rdfs:comment "True when every occurrence has the same wording (Step 5); False when identity rests on the Step 5 template." .
+
+cpmp:upstreamGap a owl:AnnotationProperty ;
+    rdfs:label "upstream gap" ;
+    rdfs:comment "What the upstream term does not represent." .
+
+cpmp:variantText a owl:AnnotationProperty ;
+    rdfs:label "variant text" ;
+    rdfs:comment "Another wording of this component, merged by a crosswalk decision." .
+
+cpmp:visit a owl:AnnotationProperty ;
+    rdfs:label "visit" ;
+    rdfs:comment "SoA visit number as printed (V1 ... V803, ED)." .
+

@@ -1,0 +1,365 @@
+@prefix cpmp: <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cpmp:Compound_LY3857210 a owl:Class ;
+    rdfs:label "CPMP compound design LY3857210" ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( obo:OBI_0500001 [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:crit-00dfecc399 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:crit-abfb26e6f1 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-d348388645 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-8d3275527c ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-13974ed7cb ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-c010940fab ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-937cea1b2f ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-8f54919165 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-e7b26407e8 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-1d3340eeda ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-dac1081871 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-f6507fcf42 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-0cc8781722 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-895d940e99 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-71349f7b65 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-a350bca5af ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-7e6e507682 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-854a62d3f8 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-952a32c763 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-07b94cc3ff ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-86b3ae6516 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-76e79c8759 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-6c40f8c9b2 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-3a2d02167f ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-d59ee438a7 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-2b2006516f ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-67646d0a61 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-1d09703d13 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-b7e56203ed ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-87f01423bc ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-edd61e9741 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-6933849674 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-9d3f2b3c03 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-6448a5539b ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-26bab6352e ] ) ] ;
+    cpmp:moduleRole "compound" ;
+    cpmp:note "No document of its own: components worded the same (Step 5 template) in all three ISAs of this compound." .
+
+<https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/compound-LY3857210> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/cpmp-core> .
+
+cpmp:crit-00dfecc399 a owl:Class ;
+    rdfs:label "Males and females may participate in this trial. ¶ No male contraception is required except in compliance with specific local government study requirements. ¶ WOCBP and WNOCBP may participate in this trial. See Section 10.4 for definitions and additional requirements related to contraception. ¶ Contraceptive use by participants should be consistent with local regulations regarding the methods of contraception for those participating in clinical studies." ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical true .
+
+cpmp:crit-abfb26e6f1 a owl:Class ;
+    rdfs:label "Have known allergies to {compound}, related compounds or any components of the formulation, or history of significant atopy." ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical true .
+
+cpmp:sched-07b94cc3ff a owl:Class ;
+    rdfs:label "Participant returns unused study intervention @ V4" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Participant returns unused study intervention" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V4" .
+
+cpmp:sched-0cc8781722 a owl:Class ;
+    rdfs:label "Neurological assessment @ V3" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Neurological assessment" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V3" .
+
+cpmp:sched-13974ed7cb a owl:Class ;
+    rdfs:label "Confirm ISA inclusion and exclusion criteria @ V3" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Confirm ISA inclusion and exclusion criteria" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V3" .
+
+cpmp:sched-1d09703d13 a owl:Class ;
+    rdfs:label "Reinforce pain assessment guidelines @ V5" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Reinforce pain assessment guidelines" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V5" .
+
+cpmp:sched-1d3340eeda a owl:Class ;
+    rdfs:label "ECG @ V801" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "ECG" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V801" .
+
+cpmp:sched-26bab6352e a owl:Class ;
+    rdfs:label "Urinalysis @ V801" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Urinalysis" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V801" .
+
+cpmp:sched-2b2006516f a owl:Class ;
+    rdfs:label "Reinforce pain assessment guidelines @ V3" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Reinforce pain assessment guidelines" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V3" .
+
+cpmp:sched-3a2d02167f a owl:Class ;
+    rdfs:label "Placebo response video training (participant) @ V2" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Placebo response video training (participant)" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V2" .
+
+cpmp:sched-6448a5539b a owl:Class ;
+    rdfs:label "Study intervention administration @ V6" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Study intervention administration" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V6" .
+
+cpmp:sched-67646d0a61 a owl:Class ;
+    rdfs:label "Reinforce pain assessment guidelines @ V4" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Reinforce pain assessment guidelines" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V4" .
+
+cpmp:sched-6933849674 a owl:Class ;
+    rdfs:label "Study intervention administration @ V4" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Study intervention administration" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V4" .
+
+cpmp:sched-6c40f8c9b2 a owl:Class ;
+    rdfs:label "Participant returns unused study intervention @ V7" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Participant returns unused study intervention" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V7" .
+
+cpmp:sched-71349f7b65 a owl:Class ;
+    rdfs:label "Neurological assessment @ V5" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Neurological assessment" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V5" .
+
+cpmp:sched-76e79c8759 a owl:Class ;
+    rdfs:label "Participant returns unused study intervention @ V6" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Participant returns unused study intervention" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V6" .
+
+cpmp:sched-7e6e507682 a owl:Class ;
+    rdfs:label "Neurological assessment @ V7" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Neurological assessment" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V7" .
+
+cpmp:sched-854a62d3f8 a owl:Class ;
+    rdfs:label "Neurological assessment @ V801" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Neurological assessment" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V801" .
+
+cpmp:sched-86b3ae6516 a owl:Class ;
+    rdfs:label "Participant returns unused study intervention @ V5" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Participant returns unused study intervention" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V5" .
+
+cpmp:sched-87f01423bc a owl:Class ;
+    rdfs:label "Reinforce pain assessment guidelines @ V7" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Reinforce pain assessment guidelines" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V7" .
+
+cpmp:sched-895d940e99 a owl:Class ;
+    rdfs:label "Neurological assessment @ V4" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Neurological assessment" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V4" .
+
+cpmp:sched-8d3275527c a owl:Class ;
+    rdfs:label "Confirm ISA inclusion and exclusion criteria @ V2" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Confirm ISA inclusion and exclusion criteria" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V2" .
+
+cpmp:sched-8f54919165 a owl:Class ;
+    rdfs:label "Dispense study intervention to participant @ V5" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Dispense study intervention to participant" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V5" .
+
+cpmp:sched-937cea1b2f a owl:Class ;
+    rdfs:label "Dispense study intervention to participant @ V4" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Dispense study intervention to participant" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V4" .
+
+cpmp:sched-952a32c763 a owl:Class ;
+    rdfs:label "Participant returns unused study intervention @ ED" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Participant returns unused study intervention" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "ED" .
+
+cpmp:sched-9d3f2b3c03 a owl:Class ;
+    rdfs:label "Study intervention administration @ V5" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Study intervention administration" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V5" .
+
+cpmp:sched-a350bca5af a owl:Class ;
+    rdfs:label "Neurological assessment @ V6" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Neurological assessment" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V6" .
+
+cpmp:sched-b7e56203ed a owl:Class ;
+    rdfs:label "Reinforce pain assessment guidelines @ V6" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Reinforce pain assessment guidelines" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V6" .
+
+cpmp:sched-c010940fab a owl:Class ;
+    rdfs:label "Dispense study intervention to participant @ V3" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Dispense study intervention to participant" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V3" .
+
+cpmp:sched-d348388645 a owl:Class ;
+    rdfs:label "Confirm ISA inclusion and exclusion criteria @ V1" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Confirm ISA inclusion and exclusion criteria" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V1" .
+
+cpmp:sched-d59ee438a7 a owl:Class ;
+    rdfs:label "Reinforce pain assessment guidelines @ V2" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Reinforce pain assessment guidelines" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V2" .
+
+cpmp:sched-dac1081871 a owl:Class ;
+    rdfs:label "Lipid panel @ V801" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Lipid panel" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V801" .
+
+cpmp:sched-e7b26407e8 a owl:Class ;
+    rdfs:label "Dispense study intervention to participant @ V6" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Dispense study intervention to participant" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V6" .
+
+cpmp:sched-edd61e9741 a owl:Class ;
+    rdfs:label "Study intervention administration @ V3" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Study intervention administration" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V3" .
+
+cpmp:sched-f6507fcf42 a owl:Class ;
+    rdfs:label "Neurological assessment @ ED" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Neurological assessment" ;
+    cpmp:occursIn "BP05;NP05;OA05" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "ED" .
+

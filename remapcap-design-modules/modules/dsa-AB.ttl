@@ -1,0 +1,1601 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rcap: <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-AB> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/about>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/core> .
+
+rcap:Domain_AB a owl:Class ;
+    rdfs:label "Antibiotic domain" ;
+    rdfs:subClassOf _:N4461e362276441a7b41dfbc1f6fc29fe,
+        _:N5965509862cc4c9b93570b606f8fef47,
+        _:N779440fb91c54defa3ff532cf931877b,
+        _:N9fba24abde1f438280e86b208aa4ba0e,
+        rcap:Domain .
+
+rcap:DomainDesign_AB a owl:Class ;
+    rdfs:label "REMAP-CAP Antibiotic Domain-Specific Appendix 4 design" ;
+    rdfs:subClassOf _:N00b1c76ee83543b5b66a2e80aa8162cc,
+        _:N0549c04a5fd34fbf999dc91847d74c0f,
+        _:N0840f4cde1f0461fa15a0e2f123e80e4,
+        _:N0c9850503e174e5483c8d7231b50609c,
+        _:N0ea35653ddd944debee0db4777bf2bc4,
+        _:N147e69bcfdc64c11936976feaea5bcec,
+        _:N14e1b154356840a8a629253224350e97,
+        _:N18ec20e5c80b45b6969a9644d97be4ab,
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000051 ;
+            owl:someValuesFrom rcap:Domain_AB ],
+        _:N1b1757a121684be1b1576d6526e6aea2,
+        _:N1bc50eaa2f69441596b929ab43a7c63e,
+        _:N1cd7f34fcae54d96bc7bf5eaa14c37f2,
+        _:N20653323451f49dd82f8270b7bf4345e,
+        _:N20e38ff5b4684f60880f201f9c6d5fd0,
+        _:N228a1945e9b84899b3fe91acc7c3e457,
+        _:N231e2b2f11af48a48b0e272366abed69,
+        _:N2a40d049445f4c0784e2678c8da4fd19,
+        _:N2b427273aaa74bed97655c9663438249,
+        _:N2baa53089cde4c1b9e1adb38dd98417f,
+        _:N2e8852bb7f2c41298eaaeccee6652b8e,
+        _:N2ff615ce5e3d4a9c9c98a46a88051a14,
+        _:N329fa4826da34fe6b4ba1918029eb87c,
+        _:N36996a37e4174f7b947c06e7ae38d1e1,
+        _:N3a0ceb6d4657460ea6b00ee7281b6b9a,
+        _:N3b528ab48206457ebf800d0e771459f3,
+        _:N3bc8bb79cb7b42d2b1bf2de249ff81f1,
+        _:N3c0e4b044f53499f9c6e5052a644ae42,
+        _:N3f4931257ce742d0b4eb0534ceb834fd,
+        _:N413a1e20efa0477da4d1ebc8acf006ee,
+        _:N45139743488843b18e266f0df39d378b,
+        _:N4f221f3e0124499f9d9efb958a5929d3,
+        _:N4f6a118a1eb84314bada03cd25740f19,
+        _:N504e607ad1964bbf99df11be9e19182f,
+        _:N51d233f86741467685e1eb1c7c663d7a,
+        _:N54373b8aa17e4d418435c3556ccf7f32,
+        _:N55c66468a91e4d9eb45a680da1f29d69,
+        _:N5960d23c874d4bf0bbe3f8ac42078f9b,
+        _:N5e7d83fbad944fd3b28b0996d6a3be44,
+        _:N5f7388f90a5a4e42bdc7617bb9929569,
+        _:N600c39752fc8434ab2a643b6b074490d,
+        _:N636a15ddd4d44be5ba721ba771e44484,
+        _:N637c32e893e744b69ad7c8760c8a5d0b,
+        _:N6caf7e15ca674655bc761c8f71226f77,
+        _:N6d3480b5a08045f2a837e840e2b90760,
+        _:N6e90280c61e64258b3322f7056e79ba7,
+        _:N73562fd3c61b4bc2adb5be6d34504d61,
+        _:N7626ec90f47641baae7cebfdd8d51feb,
+        _:N7646e6fac79f491792ee15ed4ead498b,
+        _:N77cbb43a50214d298868fb7c9a2daf54,
+        _:N7a4caa52384341359c63aab121243740,
+        _:N7bbabe8ffa4a408e89659b4c722c0cca,
+        _:N7e1414c007b145d9b58c45cc0d2cef64,
+        _:N8478461f621c4cd880d8ef0a38bae762,
+        _:N84e5b53b40fe48c0ae0f7441e0f0a56c,
+        _:N86964b220b934f81a574d8184704302b,
+        _:N87dc9f144f1b4afda7bf784a93469812,
+        _:N89962d983121493289e5f4b435a92a35,
+        _:N8d2c586bc2d340b8967634bf3598a40f,
+        _:N8e2b8aa9919b44c59fccb22ae34a2c41,
+        _:N8e3d3f7e707443468ec053ce307425e8,
+        _:N922d139c36d94fc9acaad29ad46eda5a,
+        _:N9609ad76361141498642832517784e1a,
+        _:N9662a10854eb4ef7bf8f19ab3a5540c5,
+        _:N9777849713304a3fb70fef92121f7061,
+        _:N998d795fed1c47a9a1db15b3e608c234,
+        _:N99931c4f0b164a8e9929fd84763454ab,
+        _:N9cfe35522e3e41ba9b0cddbd76db5c10,
+        _:N9d2b0ad3999f46b58f41ac0661bb912a,
+        _:N9e108b704b794e0baf0740b1f84a2e4a,
+        _:Na0ce99c5046647f4a92067fdf4bb6b7a,
+        _:Na31152c2c9c34d6a9ea71abf0747e0d5,
+        _:Na5a271c0485949938c9f89fc4549a065,
+        _:Na5f7fb873ff94791a13c8a56415168e2,
+        _:Na72d0a81a88e40f580b798b1c566039a,
+        _:Na73d1060a6f245a28b730c12c10a6e9d,
+        _:Na7ca36ec000e411da352878cb93685ed,
+        _:Nabae176671d54a31867735095f59b6a1,
+        _:Nb6275c57bf014ee486a740927ed137a5,
+        _:Nb88838858a8a4fe380af21f67fe9e568,
+        _:Nbc8c559bb49b46b9a4b4c7e68c1b0002,
+        _:Nbe1e50ae203f4c1db767345d041606a6,
+        _:Nc52ce53515a540f8924c9c020cdf5edb,
+        _:Nc87a7ac5692e4d1cb7f0ba3ccf372c89,
+        _:Ncaa338bb8fd0453b9ccfa353d8b80a6b,
+        _:Nd425840d487149e18c4631b7a8dcbc08,
+        _:Ne3cb5e6ecd14409b8297ffbfade52eef,
+        _:Ne4a028b6cc17415cae2e941cbfb4ac29,
+        _:Ne884abdd80324f52ae7591d3412bc67b,
+        _:Ned7d9cab4eeb4b469fb13b43340b9da8,
+        _:Nef31fa80c37d492a844f20aa161209c9,
+        _:Nf136759f57b843e983703c330fc2abb7,
+        _:Nf40b266d96024e18b6d79af4a0321a04,
+        _:Nf6e95af51ad3404ea91154f8f1bec547,
+        _:Nf9579712cea14b9eadc2c980eed6e76e,
+        _:Nfc2a1cde0114495aa3b1af332dc20bcd,
+        _:Nfcd03f307a8b4c0dbe70987eb162effd,
+        rcap:CoreDesign ;
+    rcap:documentDate "5 Nov 2024" ;
+    rcap:documentTitle "Antibiotic Domain-Specific Appendix 4" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Nb6275c57bf014ee486a740927ed137a5 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "As such, most patients who receive an allocation within this domain will have already received empiric antibiotic therapy prior to enrollment." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N3f4931257ce742d0b4eb0534ceb834fd ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 21 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Ceftriaxone + Macrolide" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:Domain_AB ;
+    owl:annotatedTarget _:N779440fb91c54defa3ff532cf931877b ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 21 ;
+    rcap:evidenceRule "B-domain" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Moxifloxacin or Levofloxacin" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Nd425840d487149e18c4631b7a8dcbc08 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "The duration of empiric antibiotics will be determined by the treating clinician based on daily reviews of the following criteria:" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Nf136759f57b843e983703c330fc2abb7 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.6" ;
+    rcap:evidenceText "The rationale for this is that each of these interventions comprises a beta-lactam antibiotic combined with a macrolide." ;
+    rcap:occurrenceKind "allocation_nesting" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N329fa4826da34fe6b4ba1918029eb87c ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:9" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Patients in whom all interventions are contraindicated will be treated according to the current standard of care at the clinician’s discretion." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N36996a37e4174f7b947c06e7ae38d1e1 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Prior to the study commencement, sites will select which interventions that patients at their site will be allocated to, based on the current standards of acceptable care, local epidemiology and regulatory status of antibiotics as outlined below." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N20e38ff5b4684f60880f201f9c6d5fd0 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePage 23 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "8.3.5" ;
+    rcap:evidenceText "Enteral clarithromycin or roxithromycin" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Nc87a7ac5692e4d1cb7f0ba3ccf372c89 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePage 23 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.3.5" ;
+    rcap:evidenceText "IV clarithromycin, with switch to enteral azithromycin when appropriate" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N9609ad76361141498642832517784e1a ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 20 ;
+    rcap:evidencePosition "9" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "The treating clinician believes that participation in the domain would not be in the best interests of the patient" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N87dc9f144f1b4afda7bf784a93469812 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 19 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Empiric antibiotic therapy for bacterial pneumonia is considered appropriate" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Na31152c2c9c34d6a9ea71abf0747e0d5 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 21 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Known non-serious hypersensitivity to cephalosporins will result in exclusion from receiving interventions that include ceftriaxone" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Na72d0a81a88e40f580b798b1c566039a ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "The allocated intervention should be commenced immediately after reveal of allocation." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N2a40d049445f4c0784e2678c8da4fd19 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 22 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "Piperacillin-tazobactam ≥4.5 grams administered IV every 8 hours" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Ne3cb5e6ecd14409b8297ffbfade52eef ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.6" ;
+    rcap:evidenceText "There is one nest within this domain, comprising ceftriaxone + macrolide, piperacillin-tazobactam + macrolide, and amoxicillin-clavulanate + macrolide interventions." ;
+    rcap:occurrenceKind "allocation_nesting" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Nf6e95af51ad3404ea91154f8f1bec547 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "The unit-of-analysis for this domain is all patients who receive an allocation status in this domain." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N5960d23c874d4bf0bbe3f8ac42078f9b ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "trailing:2" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "It is permitted to provide these antibiotics via intermittent, prolonged, or continuous infusion." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N1bc50eaa2f69441596b929ab43a7c63e ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Patients may also be excluded from receiving one or more interventions within the domain for patient-specific reasons." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N1b1757a121684be1b1576d6526e6aea2 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 21 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Known serious hypersensitivity to the macrolide will result in exclusion from interventions that include piperacillin, amoxicillin, and ceftriaxone" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Na7ca36ec000e411da352878cb93685ed ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "An example would include patients with a history of a penicillin hypersensitivity, who may receive a cephalosporin or moxifloxacin." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N0840f4cde1f0461fa15a0e2f123e80e4 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 23 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "Discontinuation if the patient experiences a serious adverse event (SAE) that is thought to be related to a study drug" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N3a0ceb6d4657460ea6b00ee7281b6b9a ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 21 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Amoxicillin-clavulanate + Macrolide" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N45139743488843b18e266f0df39d378b ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Patients are eligible for this domain if:" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N55c66468a91e4d9eb45a680da1f29d69 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Patients will be excluded from this domain if they have any of the following:" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N51d233f86741467685e1eb1c7c663d7a ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "trailing:2" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "For sites that are including the moxifloxacin or levofloxacin intervention it is strongly encouraged that the sites participate in at least one intervention that includes a cephalosporin and one intervention that includes a penicillin so that causal inference by random allocation is possible for patients who have known non-serious intolerance to either cephalosporins or penicillins but not both." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N147e69bcfdc64c11936976feaea5bcec ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 20 ;
+    rcap:evidencePosition "6" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Febrile neutropenia or significant immunosuppression (including organ or bone marrow transplantation, human immunodeficiency virus (HIV) Infection with CD4 cell count <200 cells/µL, systemic immunosuppressive, systemic corticosteroids comprising prednisolone, or equivalent, ≥20mg/day for > 4 preceding weeks)." ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N3c0e4b044f53499f9c6e5052a644ae42 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 22 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "Moxifloxacin 400mg administered IV once daily, or Levofloxacin 750mg IV q24h" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Na0ce99c5046647f4a92067fdf4bb6b7a ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePage 23 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "8.3.5" ;
+    rcap:evidenceText "IV or enteral erythromycin. Sites in which only erythromycin is available are not able to participate in the Macrolide Duration Domain." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N7e1414c007b145d9b58c45cc0d2cef64 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 21 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Known hypersensitivity to moxifloxacin or levofloxacin will result in exclusion from moxifloxacin or levofloxacin intervention" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N228a1945e9b84899b3fe91acc7c3e457 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 25 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Serious adverse event (SAE) as defined in Core Protocol" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Na5f7fb873ff94791a13c8a56415168e2 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.5" ;
+    rcap:evidenceText "Interactions with all other domains are either not evaluable or are not considered possible and will not be incorporated into the statistical model or models in which the domain is evaluated." ;
+    rcap:occurrenceKind "allocation_interactions" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:Domain_AB ;
+    owl:annotatedTarget _:N4461e362276441a7b41dfbc1f6fc29fe ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 21 ;
+    rcap:evidenceRule "B-domain" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Amoxicillin-clavulanate + Macrolide" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Nfc2a1cde0114495aa3b1af332dc20bcd ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.3" ;
+    rcap:evidenceText "Domain-specific strata are not applied to patients at the time of assessment for this domain." ;
+    rcap:occurrenceKind "domain_strata" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N8e2b8aa9919b44c59fccb22ae34a2c41 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 20 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Suspected or proven infection with resistant bacteria where agents being trialed would not be expected to be active. This includes cystic fibrosis, bronchiectasis or other chronic suppurative lung disease where infection with Pseudomonas may be suspected but does not include patients with suspected methicillin-resistant staphylococcus aureus (MRSA) infection*." ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N14e1b154356840a8a629253224350e97 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "9.2" ;
+    rcap:evidenceText "Additional domain-specific data will be collected." ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N8e3d3f7e707443468ec053ce307425e8 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "trailing:3" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "All patients receiving ceftriaxone, piperacillin-tazobactam, or amoxicillin-clavulanate will also receive a macrolide." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N7646e6fac79f491792ee15ed4ead498b ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "No strata are applied in the model, although this may be modified as an operational decision as specified in the Current State document." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Ned7d9cab4eeb4b469fb13b43340b9da8 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.3" ;
+    rcap:evidenceText "Response-adaptive randomization will be applied to this domain." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N231e2b2f11af48a48b0e272366abed69 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePage 23 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.3.5" ;
+    rcap:evidenceText "IV azithromycin, with switch to enteral azithromycin when appropriate" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Ne884abdd80324f52ae7591d3412bc67b ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 22 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "Amoxicillin-clavulanate ≥1200mg administered IV every 8 hours" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N9777849713304a3fb70fef92121f7061 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "In such cases, patients will be randomly allocated a remaining intervention from among those available at that site." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N6e90280c61e64258b3322f7056e79ba7 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "trailing:1" ;
+    rcap:evidenceSection "8.3.5" ;
+    rcap:evidenceText "Vancomycin, linezolid or other antimicrobials active against MRSA may be added if MRSA is suspected at the discretion of the treating clinician, irrespective of the intervention to which the participant is allocated." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N2ff615ce5e3d4a9c9c98a46a88051a14 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "trailing:3" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "ǂ Melioidosis: Sites in areas where melioidosis is endemic (including Northern Australia and South-East Asia) where antibiotic treatment protocols specify antibiotics active against Burkholderia pseudomallei (e.g., ceftazidime or meropenem) will not participate in this domain." ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Nb88838858a8a4fe380af21f67fe9e568 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.5.1" ;
+    rcap:evidenceText "The primary endpoint for this domain is the primary outcome specified in the Core Protocol." ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:Domain_AB ;
+    owl:annotatedTarget _:N9fba24abde1f438280e86b208aa4ba0e ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 21 ;
+    rcap:evidenceRule "B-domain" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Ceftriaxone + Macrolide" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N413a1e20efa0477da4d1ebc8acf006ee ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 19 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Received more than 48 hours of intravenous antibiotic treatment for this index illness" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N9d2b0ad3999f46b58f41ac0661bb912a ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Patients may have multiple intervention exclusions (e.g." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Nfcd03f307a8b4c0dbe70987eb162effd ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "The doses specified below are recommended minimum doses and may be modified according to local guidelines or practice." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N5e7d83fbad944fd3b28b0996d6a3be44 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 21 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Moxifloxacin or Levofloxacin" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N73562fd3c61b4bc2adb5be6d34504d61 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "trailing:1" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "* MRSA: Suspected MRSA infection is not an exclusion criterion." ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N77cbb43a50214d298868fb7c9a2daf54 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 23 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "Cease antibiotics if an alternative diagnosis is made" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N998d795fed1c47a9a1db15b3e608c234 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.5" ;
+    rcap:evidenceText "The choice of macrolide will depend on the availability and acceptability of the agents at each site in the following order of preference;" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Nf9579712cea14b9eadc2c980eed6e76e ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 21 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Known serious hypersensitivity to beta-lactams, including penicillins or cephalosporins, will result in exclusion from interventions that include piperacillin, amoxicillin, and ceftriaxone" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N9662a10854eb4ef7bf8f19ab3a5540c5 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "The domain-specific secondary outcome measures (occurring during the index hospitalization, censored at 90 days after enrollment) will be:" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Na5a271c0485949938c9f89fc4549a065 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 19 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Suspected or proven concomitant infection such as meningitis" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget rcap:CoreDesign ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePage 9 ;
+    rcap:evidenceRule "B-dsa" ;
+    rcap:evidenceText "The Core Protocol contains all information that is generic to the trial …" ;
+    rcap:note "Core Protocol 4.0 1.2: Domain-Specific Appendix is an appendix to the Core Protocol.",
+        "Core Protocol 4.1 1.2: Domain-Specific Appendix is an appendix to the Core Protocol." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N7a4caa52384341359c63aab121243740 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 22 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "Ceftriaxone ≥1 gram administered intravenously (IV) once daily" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N18ec20e5c80b45b6969a9644d97be4ab ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 20 ;
+    rcap:evidencePosition "8" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "There is sufficient microbiological information to guide specific antibacterial therapy" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Ne4a028b6cc17415cae2e941cbfb4ac29 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:7" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Patients who are eligible for only a single intervention at a site (i.e." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N8d2c586bc2d340b8967634bf3598a40f ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "This domain is available to patients who are in the Severe Illness Severity State, as defined in Core Protocol documents." ;
+    rcap:occurrenceKind "applicability_state" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N504e607ad1964bbf99df11be9e19182f ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.6" ;
+    rcap:evidenceText "The study interventions can be temporarily or permanently discontinued at any time by the treating clinician if doing so is regarded as being in the best interests of the patient." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Nbe1e50ae203f4c1db767345d041606a6 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 19 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "More than 24 hours has elapsed since commencement of sustained organ failure support" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N6d3480b5a08045f2a837e840e2b90760 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "In keeping with all international guidelines optimized empiric antibiotic treatment should commence as soon as possible." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Na73d1060a6f245a28b730c12c10a6e9d ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "trailing:1" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "If no local guidelines exist, it is recommended that subsequent doses of antibiotics will be adjusted for estimated renal function (based on estimated Glomerular Filtration Rate (eGFR)) as follows:" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N7bbabe8ffa4a408e89659b4c722c0cca ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Patients will be randomly assigned to receive one of the following open-label study interventions." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Nc52ce53515a540f8924c9c020cdf5edb ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 25 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "9.2" ;
+    rcap:evidenceText "Isolation or detection of MROs" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Nabae176671d54a31867735095f59b6a1 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 21 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Piperacillin-tazobactam + Macrolide" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Ncaa338bb8fd0453b9ccfa353d8b80a6b ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 24 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Multi-resistant organisms (MRO) colonization/infection: Isolation of multi-drug resistant (MDR) bacteria from clinical or screening specimens including vancomycin resistant enterococci (VRE), MRSA, extended spectrum beta-lactamase (ESBL)-producing enterobacteriaceae, carbapenem resistant enterobacteriaceae (CRE)." ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N9e108b704b794e0baf0740b1f84a2e4a ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 25 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "C. difficile illness based on detection from feces using current standard of care diagnostics used at site" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N6caf7e15ca674655bc761c8f71226f77 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "trailing:4" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Patients allocated to the moxifloxacin or levofloxacin intervention will not receive a macrolide or any beta-lactam or monobactam agent." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N0549c04a5fd34fbf999dc91847d74c0f ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 25 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "9.2" ;
+    rcap:evidenceText "C. difficile isolation from feces" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N2baa53089cde4c1b9e1adb38dd98417f ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "trailing:2" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "If the treating clinician suspects MRSA pneumonia, these patients should be included (see Section 8.3.5)." ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N86964b220b934f81a574d8184704302b ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "trailing:1" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "While it is expected that all sites will participate in the ceftriaxone intervention, each site has the option to opt-in to one or more of the remaining three interventions based on local practice and the availability of the antibiotic in the country." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N3b528ab48206457ebf800d0e771459f3 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:8" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "all other interventions are contraindicated) are not eligible for this domain." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N2b427273aaa74bed97655c9663438249 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePage 23 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.3.5" ;
+    rcap:evidenceText "Enteral azithromycin" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Nf40b266d96024e18b6d79af4a0321a04 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.8" ;
+    rcap:evidenceText "The size of the pre-specified odds ratio delta is 0.10." ;
+    rcap:occurrenceKind "allocation_threshold" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N922d139c36d94fc9acaad29ad46eda5a ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "trailing:4" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Where antibiotic protocols specify BPS active antibiotics for part of the year (e.g., during the monsoonal season), sites may participate in this domain where BPS specific antibiotics are not indicated." ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N99931c4f0b164a8e9929fd84763454ab ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.4" ;
+    rcap:evidenceText "The timing of the revealing of allocation status and administration of interventions is specified to be Randomization with Immediate Reveal and Initiation, or Randomization with Deferred Reveal and Initiation if prospective agreement is required for participation in this domain." ;
+    rcap:occurrenceKind "allocation_reveal" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N20653323451f49dd82f8270b7bf4345e ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 19 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "A specific antibiotic choice is indicated, for example:" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N4f6a118a1eb84314bada03cd25740f19 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.8" ;
+    rcap:evidenceText "If two interventions within a domain, for a unit-of-analysis, have at least a 0.90 probability of being within a pre-specified delta for the primary endpoint then these interventions will be deemed as being equivalent." ;
+    rcap:occurrenceKind "allocation_threshold" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N0ea35653ddd944debee0db4777bf2bc4 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:6" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "both a penicillin and a cephalosporin hypersensitivity)." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N84e5b53b40fe48c0ae0f7441e0f0a56c ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:10" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Criteria that exclude a patient from a one or more interventions are:" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Nbc8c559bb49b46b9a4b4c7e68c1b0002 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.7" ;
+    rcap:evidenceText "The threshold probability for statistical triggers for superiority and inferiority are those specified in the Core Protocol documents." ;
+    rcap:occurrenceKind "allocation_threshold" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:Domain_AB ;
+    owl:annotatedTarget _:N5965509862cc4c9b93570b606f8fef47 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 21 ;
+    rcap:evidenceRule "B-domain" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Piperacillin-tazobactam + Macrolide" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N3bc8bb79cb7b42d2b1bf2de249ff81f1 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "All secondary endpoints as specified in the Core Protocol." ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N5f7388f90a5a4e42bdc7617bb9929569 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "trailing:3" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "If administered by continuous infusion, the recommended daily dosing is the cumulative dose given in a 24-hour period in the intermittent IV dosing regimens outlined above." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:Nef31fa80c37d492a844f20aa161209c9 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "The allocated intervention will be commenced immediately after allocation status is revealed." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N00b1c76ee83543b5b66a2e80aa8162cc ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 23 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "Change to a targeted antibiotic therapy if a microbiological diagnosis has been made" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N7626ec90f47641baae7cebfdd8d51feb ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 23 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "Change to enteral antibiotics once patient is clinically stable" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N637c32e893e744b69ad7c8760c8a5d0b ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 23 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "Cease antibiotics when there is evidence of sufficient clinical improvement, no microbiological diagnosis has been made and no clinical evidence of deep infection (e.g. empyema or lung abscess). The duration of antibiotic therapy will be decided by the treating clinician and local guidelines." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N600c39752fc8434ab2a643b6b074490d ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "This domain is available to patients who are in the Adult Age Stratum, as defined in Core Protocol documents." ;
+    rcap:occurrenceKind "applicability_age" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N8478461f621c4cd880d8ef0a38bae762 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 19 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Patient has pneumonia" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N636a15ddd4d44be5ba721ba771e44484 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "9.3" ;
+    rcap:evidenceText "Refer to Core Protocol documents for criteria for discontinuation of participation in this trial." ;
+    rcap:occurrenceKind "discontinuation" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N0c9850503e174e5483c8d7231b50609c ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 21 ;
+    rcap:evidencePosition "6" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Known or suspected pregnancy will result in exclusion from moxifloxacin or levofloxacin interventions. It is normal clinical practice that women admitted who are in an age group in which pregnancy is possible will have a pregnancy test conducted. The results of such tests will be used to determine interpretation of this exclusion criteria." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N9cfe35522e3e41ba9b0cddbd76db5c10 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "10.6" ;
+    rcap:evidenceText "The Macrolide component contributes to all interventions and the beta-lactam agents are all members of the same class of antibiotic." ;
+    rcap:occurrenceKind "allocation_nesting" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N2e8852bb7f2c41298eaaeccee6652b8e ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.5" ;
+    rcap:evidenceText "If an interaction is specified with a future domain, it is sufficient for the interaction to be specified only in the DSA of a future domain." ;
+    rcap:occurrenceKind "allocation_interactions" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N54373b8aa17e4d418435c3556ccf7f32 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 20 ;
+    rcap:evidencePosition "7" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Suspected melioidosis ǂ" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N1cd7f34fcae54d96bc7bf5eaa14c37f2 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 21 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Known non-serious hypersensitivity to penicillins will result in exclusion from receiving interventions that include piperacillin and amoxicillin" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N4f221f3e0124499f9d9efb958a5929d3 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.6" ;
+    rcap:evidenceText "Antibiotic therapy should be discontinued if there is development of a SAE which, in the opinion of the treating clinician, could be related to participation in this domain." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_AB ;
+    owl:annotatedTarget _:N89962d983121493289e5f4b435a92a35 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 19 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Patient has community-acquired respiratory tract infection" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+_:N00b1c76ee83543b5b66a2e80aa8162cc a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4fd9f6e576 .
+
+_:N0549c04a5fd34fbf999dc91847d74c0f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3b6e225db6 .
+
+_:N0840f4cde1f0461fa15a0e2f123e80e4 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2d16af401c .
+
+_:N0c9850503e174e5483c8d7231b50609c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cfad5121cfc .
+
+_:N0ea35653ddd944debee0db4777bf2bc4 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cbca0ca62ff .
+
+_:N147e69bcfdc64c11936976feaea5bcec a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c52c26d1d8a .
+
+_:N14e1b154356840a8a629253224350e97 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4c016e4e79 .
+
+_:N18ec20e5c80b45b6969a9644d97be4ab a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7b592a7e46 .
+
+_:N1b1757a121684be1b1576d6526e6aea2 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca6b1d7af7a .
+
+_:N1bc50eaa2f69441596b929ab43a7c63e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2ca322189f .
+
+_:N1cd7f34fcae54d96bc7bf5eaa14c37f2 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6e0ef15ff9 .
+
+_:N20653323451f49dd82f8270b7bf4345e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb0ae4a3b67 .
+
+_:N20e38ff5b4684f60880f201f9c6d5fd0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd52a12348a .
+
+_:N228a1945e9b84899b3fe91acc7c3e457 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd7e3bd8fce .
+
+_:N231e2b2f11af48a48b0e272366abed69 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c969a345043 .
+
+_:N2a40d049445f4c0784e2678c8da4fd19 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf22bf3aed7 .
+
+_:N2b427273aaa74bed97655c9663438249 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca58ce41d12 .
+
+_:N2baa53089cde4c1b9e1adb38dd98417f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7bbb84cd18 .
+
+_:N2e8852bb7f2c41298eaaeccee6652b8e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c168c834f5a .
+
+_:N2ff615ce5e3d4a9c9c98a46a88051a14 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c724a498c9a .
+
+_:N329fa4826da34fe6b4ba1918029eb87c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5b61229d68 .
+
+_:N36996a37e4174f7b947c06e7ae38d1e1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2c5daff44d .
+
+_:N3a0ceb6d4657460ea6b00ee7281b6b9a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4cc19b3e1e .
+
+_:N3b528ab48206457ebf800d0e771459f3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c20d2fa4a96 .
+
+_:N3bc8bb79cb7b42d2b1bf2de249ff81f1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c494ee9cfa6 .
+
+_:N3c0e4b044f53499f9c6e5052a644ae42 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0431228721 .
+
+_:N3f4931257ce742d0b4eb0534ceb834fd a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8de130c28c .
+
+_:N413a1e20efa0477da4d1ebc8acf006ee a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c23237d2b0f .
+
+_:N4461e362276441a7b41dfbc1f6fc29fe a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4cc19b3e1e .
+
+_:N45139743488843b18e266f0df39d378b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8bc517a21d .
+
+_:N4f221f3e0124499f9d9efb958a5929d3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3a328f808d .
+
+_:N4f6a118a1eb84314bada03cd25740f19 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c715f02f8d2 .
+
+_:N504e607ad1964bbf99df11be9e19182f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2fd0baa5ef .
+
+_:N51d233f86741467685e1eb1c7c663d7a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cde10e40597 .
+
+_:N54373b8aa17e4d418435c3556ccf7f32 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c53195b678c .
+
+_:N55c66468a91e4d9eb45a680da1f29d69 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc4a3982cda .
+
+_:N5960d23c874d4bf0bbe3f8ac42078f9b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c53bb58e5f4 .
+
+_:N5965509862cc4c9b93570b606f8fef47 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c852f3fa15d .
+
+_:N5e7d83fbad944fd3b28b0996d6a3be44 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c81b03e311b .
+
+_:N5f7388f90a5a4e42bdc7617bb9929569 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3f97b8968e .
+
+_:N600c39752fc8434ab2a643b6b074490d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ced7c375feb .
+
+_:N636a15ddd4d44be5ba721ba771e44484 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c85858c8378 .
+
+_:N637c32e893e744b69ad7c8760c8a5d0b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c15f4b96ff8 .
+
+_:N6caf7e15ca674655bc761c8f71226f77 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c969c498ac0 .
+
+_:N6d3480b5a08045f2a837e840e2b90760 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c024c5c7541 .
+
+_:N6e90280c61e64258b3322f7056e79ba7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf96154a40f .
+
+_:N73562fd3c61b4bc2adb5be6d34504d61 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c55d9a5de16 .
+
+_:N7626ec90f47641baae7cebfdd8d51feb a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0a14a0953a .
+
+_:N7646e6fac79f491792ee15ed4ead498b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0a159d07c6 .
+
+_:N779440fb91c54defa3ff532cf931877b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c81b03e311b .
+
+_:N77cbb43a50214d298868fb7c9a2daf54 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1465e48eba .
+
+_:N7a4caa52384341359c63aab121243740 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c298d7d1660 .
+
+_:N7bbabe8ffa4a408e89659b4c722c0cca a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb26af16384 .
+
+_:N7e1414c007b145d9b58c45cc0d2cef64 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c07ba9bbc05 .
+
+_:N8478461f621c4cd880d8ef0a38bae762 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3e253b26d2 .
+
+_:N84e5b53b40fe48c0ae0f7441e0f0a56c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4c7e690055 .
+
+_:N86964b220b934f81a574d8184704302b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc2adca9ada .
+
+_:N87dc9f144f1b4afda7bf784a93469812 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5eb0851e13 .
+
+_:N89962d983121493289e5f4b435a92a35 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cba8b5376a9 .
+
+_:N8d2c586bc2d340b8967634bf3598a40f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7fd21cde5f .
+
+_:N8e2b8aa9919b44c59fccb22ae34a2c41 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca35d9ae3e3 .
+
+_:N8e3d3f7e707443468ec053ce307425e8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4e23070952 .
+
+_:N922d139c36d94fc9acaad29ad46eda5a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1e51711ff1 .
+
+_:N9609ad76361141498642832517784e1a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c324186f8e2 .
+
+_:N9662a10854eb4ef7bf8f19ab3a5540c5 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cfc67fd1c19 .
+
+_:N9777849713304a3fb70fef92121f7061 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf6051db800 .
+
+_:N998d795fed1c47a9a1db15b3e608c234 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf8d30209fa .
+
+_:N99931c4f0b164a8e9929fd84763454ab a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c94270b8f05 .
+
+_:N9cfe35522e3e41ba9b0cddbd76db5c10 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2c383e5024 .
+
+_:N9d2b0ad3999f46b58f41ac0661bb912a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5cfed2565b .
+
+_:N9e108b704b794e0baf0740b1f84a2e4a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c535284f31d .
+
+_:N9fba24abde1f438280e86b208aa4ba0e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8de130c28c .
+
+_:Na0ce99c5046647f4a92067fdf4bb6b7a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cbd968086d6 .
+
+_:Na31152c2c9c34d6a9ea71abf0747e0d5 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7f0201166f .
+
+_:Na5a271c0485949938c9f89fc4549a065 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdef6c52c73 .
+
+_:Na5f7fb873ff94791a13c8a56415168e2 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc4efc1a692 .
+
+_:Na72d0a81a88e40f580b798b1c566039a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c45c4bf1083 .
+
+_:Na73d1060a6f245a28b730c12c10a6e9d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0322fd9949 .
+
+_:Na7ca36ec000e411da352878cb93685ed a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0c7c9a9c53 .
+
+_:Nabae176671d54a31867735095f59b6a1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c852f3fa15d .
+
+_:Nb6275c57bf014ee486a740927ed137a5 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cde7d81c44b .
+
+_:Nb88838858a8a4fe380af21f67fe9e568 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5770ae5285 .
+
+_:Nbc8c559bb49b46b9a4b4c7e68c1b0002 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ccbc477aff8 .
+
+_:Nbe1e50ae203f4c1db767345d041606a6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cbac53fc942 .
+
+_:Nc52ce53515a540f8924c9c020cdf5edb a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6591df809e .
+
+_:Nc87a7ac5692e4d1cb7f0ba3ccf372c89 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c57419c1d38 .
+
+_:Ncaa338bb8fd0453b9ccfa353d8b80a6b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd7c91b15f5 .
+
+_:Nd425840d487149e18c4631b7a8dcbc08 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf7a01ea34e .
+
+_:Ne3cb5e6ecd14409b8297ffbfade52eef a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0bef8728bb .
+
+_:Ne4a028b6cc17415cae2e941cbfb4ac29 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0096438fef .
+
+_:Ne884abdd80324f52ae7591d3412bc67b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c83be773831 .
+
+_:Ned7d9cab4eeb4b469fb13b43340b9da8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c93d0ed0860 .
+
+_:Nef31fa80c37d492a844f20aa161209c9 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c29662860b2 .
+
+_:Nf136759f57b843e983703c330fc2abb7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc434dea8eb .
+
+_:Nf40b266d96024e18b6d79af4a0321a04 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cbf7925c08d .
+
+_:Nf6e95af51ad3404ea91154f8f1bec547 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb1dfbad5c4 .
+
+_:Nf9579712cea14b9eadc2c980eed6e76e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c21e3e6e673 .
+
+_:Nfc2a1cde0114495aa3b1af332dc20bcd a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c206b9c5488 .
+
+_:Nfcd03f307a8b4c0dbe70987eb162effd a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7c759a1608 .
+

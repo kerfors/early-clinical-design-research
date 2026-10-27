@@ -1,0 +1,19 @@
+# CQ1a: which components are disease-independent by module?
+# A component is disease-independent when it is part of the master design or of a compound design.
+PREFIX cpmp: <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?component ?label ?module ?role
+WHERE {
+    ?module cpmp:moduleRole ?role .
+    FILTER (?role IN ("master", "compound"))
+    ?module owl:equivalentClass/owl:intersectionOf/rdf:rest*/rdf:first ?r .
+    ?r owl:onProperty obo:BFO_0000051 ;
+       owl:someValuesFrom ?component .
+    FILTER NOT EXISTS { ?component rdfs:subClassOf obo:IAO_0000007 }
+    ?component rdfs:label ?label .
+}
+ORDER BY ?role ?module ?label

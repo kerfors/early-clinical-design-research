@@ -1,0 +1,1134 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rcap: <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-IAV> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/about>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/core> .
+
+rcap:Domain_IAV a owl:Class ;
+    rdfs:label "Influenza Antiviral domain" ;
+    rdfs:subClassOf _:N28e5ed4dbc1442168d721382ee80d3d0,
+        _:N3336f2cf019340c0994d8e43e7ebdb17,
+        _:N6cec0d01352f4296b139627b7be31363,
+        _:Nffdb51a6710b4dbe8e4a5c4e30f6cf30,
+        rcap:Domain .
+
+rcap:DomainDesign_IAV a owl:Class ;
+    rdfs:label "REMAP-CAP Influenza Antiviral Domain-Specific Appendix 4 design" ;
+    rdfs:subClassOf _:N062a271896cf421ea308714789b18e5e,
+        _:N088f10663a6f4da599593289fdb55993,
+        _:N0fc75827c2ed42629997707547377ca5,
+        _:N100070b2f9404c548319c4b71b77d39d,
+        _:N1060b233d84d4380811e79aaca2a26e8,
+        _:N1322a4aa308f470f89dc9d7e1981248f,
+        _:N17a1da7906834be9898a4cd991470601,
+        _:N1b3a414c6f884842aae91f2f8db8e401,
+        _:N260e57744edf4436a3899a5de2845e3b,
+        _:N28ef63b187f746fd95da942d1739faf7,
+        _:N28f92a0e13804461b49bb16c1cc75329,
+        _:N2d8f2cc84fd34115be938b39c2ff3ff0,
+        _:N336001fa7c964509b433565db3fd1b4e,
+        _:N36cbf9896851485eb35f21ea7c3e83fc,
+        _:N375638c695a24dd087dd6396cb30b7ba,
+        _:N37846f47e1434bdd9e7690c80a05698e,
+        _:N3c0a4aad2da047e0a1470cec44df26d9,
+        _:N3d6160fbd1d74bb0b8aecd0166089ff0,
+        _:N40f0aa5ffc5748a1bf5a5ea6d28bb410,
+        _:N47357ce2e4f8436fa78ec410601db41a,
+        _:N5650f315fe6e4f6d9ebfe1cc3409caaa,
+        _:N56c8823acd994064bd1f7982de558e9c,
+        _:N592d6c138e004eb5a6e1a1f8af3c38dc,
+        _:N600bbdf567db4308b25b93f392166b88,
+        _:N66d435fdeef24efe9d9488a66e435535,
+        _:N687988356f014c8597cc244bc522eb10,
+        _:N752bb4170dfa44b18a3551fcae46b656,
+        _:N78c1cf2385e7473ca269ac1a3a83fcca,
+        _:N78cb91c8d2404c45845be192a5aa92d6,
+        _:N7e9d3d45758c4c17af8aef85929b9a39,
+        _:N80b3dc06581a4027b95d92740f5c28aa,
+        _:N845e6f80bc0b4a64b0bbafa4d2d47db3,
+        _:N85a5a85cb27a4af6a5978f99923f2638,
+        _:N92a0117bc085483a81c8b0c7c694c417,
+        _:N92e1c345da704c8ba582c7e8b1a0f2e1,
+        _:N9a0fffa1fb60460b93b6e03bec93bb9f,
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000051 ;
+            owl:someValuesFrom rcap:Domain_IAV ],
+        _:N9d8e5a3f40e046ec90f301cbe3ee18bd,
+        _:Na131e024112e4ca78f0b6711deb047af,
+        _:Na23e2554609947438a1995b239b102bf,
+        _:Na405537f9d34498794f4afa0c1b3e722,
+        _:Na4e5f70ff6904affb1d21959e37fb18a,
+        _:Na51033e1a77c4d9e957d20f1eb45d401,
+        _:Nb148c6081bb742bfbe6e95a3baea24e9,
+        _:Nb1e99ef4ba804dc187ce34d19fac8e9d,
+        _:Nb2e662cada4948139b7267fbac4e46b5,
+        _:Nbb7d9c0032d844ca89f177264ce9bc6a,
+        _:Nbd53756869de46a199aa9305fa2bf84b,
+        _:Nbe30e29b02664ff3bb69daf18a396d32,
+        _:Nbf4191243c9a4b06ab5af8139d8f4b24,
+        _:Nc03d13e186144de7a814887e223eccc7,
+        _:Nc5c81df8aa4f43a49cc8e8ca7da99ff8,
+        _:Nc873774d84bb402a9d76f6497efe3cf6,
+        _:Nc9e06b71f65b46fc9d798d33a807e919,
+        _:Ncc472c517e39482197281079841b0afd,
+        _:Ncdd97f44e3674ff6839a3aeb77f95f58,
+        _:Ncf8d336f17ad4320a2140018a24c2e13,
+        _:Nd1d2307fedff4bf188db7c75538ab4ab,
+        _:Nd340723396b6459caaa5ef28d6de0039,
+        _:Nd37af2366aa44ee0bf33cbd9c544c13a,
+        _:Nd6113b31b2c243d68e95a43bef8c1652,
+        _:Nd680a9fadea6439bba12653e5fda7e95,
+        _:Ndbfc7c7d37d34491a146121c0df74bc6,
+        _:Ne6ad4a4f670b4d5d98bd0702297b03f9,
+        _:Nedf78902408448488eaa2761165e048a,
+        _:Nf3bff2407bc44b2eba10b34c46d093ec,
+        _:Nf819cb13f1ee4b86afcac2918ee56ed3,
+        _:Nfb84f3bd99ff41f09d93408e7b72ebf7,
+        rcap:CoreDesign ;
+    rcap:documentDate "5 Oct 2026" ;
+    rcap:documentTitle "Influenza Antiviral Domain-Specific Appendix 4" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget rcap:CoreDesign ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePage 10 ;
+    rcap:evidenceRule "B-dsa" ;
+    rcap:evidenceText "The Core Protocol contains all information that is generic to the trial …" ;
+    rcap:note "Core Protocol 4.0 1.2: Domain-Specific Appendix is an appendix to the Core Protocol.",
+        "Core Protocol 4.1 1.2: Domain-Specific Appendix is an appendix to the Core Protocol." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N336001fa7c964509b433565db3fd1b4e ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "10.5" ;
+    rcap:evidenceText "If an interaction is specified with a future domain, it is sufficient for the interaction to be specified only in the DSA of such a future domain." ;
+    rcap:occurrenceKind "allocation_interactions" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N088f10663a6f4da599593289fdb55993 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.3" ;
+    rcap:evidenceText "If RAR is applied, the cap on the maximum or minimum proportion of patients assigned to an intervention that is specified in core protocol documents may be modified by the Statistical Analysis Committee (SAC) if needed to reduce the likelihood of sites being unblinded or to improve power." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Nbe30e29b02664ff3bb69daf18a396d32 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "The primary unit-of-analysis, for both analysis of treatment effect and the Response Adaptive Randomization (RAR), corresponds to patients who have received an allocation within this domain (i.e." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Ndbfc7c7d37d34491a146121c0df74bc6 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "10.3" ;
+    rcap:evidenceText "If required, any such modifications will be an operational decision of the Design Team specified in the Current State document and applied by the SAC." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N260e57744edf4436a3899a5de2845e3b ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "The study interventions can be temporarily or permanently discontinued at any time by the treating clinician if doing so is regarded as being in the best interests of the patient." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N47357ce2e4f8436fa78ec410601db41a ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.6" ;
+    rcap:evidenceText "Patients enrolled in previous versions of this DSA to the 10-day oseltamivir + baloxavir intervention will continue to be nested with the 5-day oseltamivir + baloxavir intervention." ;
+    rcap:occurrenceKind "allocation_nesting" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Nd1d2307fedff4bf188db7c75538ab4ab ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.3" ;
+    rcap:evidenceText "Response Adaptive Randomization may be applied." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N845e6f80bc0b4a64b0bbafa4d2d47db3 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "This domain is available for patients who are in either the Moderate or Severe State." ;
+    rcap:occurrenceKind "applicability_state" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N36cbf9896851485eb35f21ea7c3e83fc ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "For baloxavir containing interventions, a third dose can be administered on day 7, if, in the opinion of the treating clinician, there has been insufficient clinical improvement." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N9a0fffa1fb60460b93b6e03bec93bb9f ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 19 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Known hypersensitivity to an agent specified as an intervention in this domain will exclude a patient from receiving that agent" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Na4e5f70ff6904affb1d21959e37fb18a ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "☐" ;
+    rcap:evidencePage 19 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Oseltamivir twice daily for 5 days + baloxavir on days 1 and 4 after reveal of randomized treatment assignment" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Nfb84f3bd99ff41f09d93408e7b72ebf7 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "☒" ;
+    rcap:evidencePage 19 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "No antiviral agent (no placebo)" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Nc5c81df8aa4f43a49cc8e8ca7da99ff8 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.5.1" ;
+    rcap:evidenceText "The primary endpoint for this domain is the primary outcome as specified in the Core Protocol." ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N600bbdf567db4308b25b93f392166b88 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.4" ;
+    rcap:evidenceText "The timing of the revealing of allocation status and administration of interventions is specified to be Randomization with Immediate Reveal and Initiation, or with Delayed Reveal and Initiation, for situations where randomization occurs before influenza test results are available, with reveal of allocation occurring at time of confirmed positive result." ;
+    rcap:occurrenceKind "allocation_reveal" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N1322a4aa308f470f89dc9d7e1981248f ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.5" ;
+    rcap:evidenceText "Interactions with all other domains are either not evaluable or not considered possible and will not be incorporated into the statistical model or models in which this domain is evaluated." ;
+    rcap:occurrenceKind "allocation_interactions" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N37846f47e1434bdd9e7690c80a05698e ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Patients may also be excluded from receiving one or more interventions within the domain for patient-specific reasons." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N92a0117bc085483a81c8b0c7c694c417 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Criteria that exclude a patient from one or more interventions are:" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N375638c695a24dd087dd6396cb30b7ba ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "All secondary endpoints as specified in the Core Protocol." ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Ncc472c517e39482197281079841b0afd ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "☐" ;
+    rcap:evidencePage 19 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Baloxavir on days 1 and 4 after reveal of randomized treatment assignment" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:Domain_IAV ;
+    owl:annotatedTarget _:Nffdb51a6710b4dbe8e4a5c4e30f6cf30 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "☒" ;
+    rcap:evidencePage 19 ;
+    rcap:evidenceRule "B-domain" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "No antiviral agent (no placebo)" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N1b3a414c6f884842aae91f2f8db8e401 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 18 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Patient has already received two or more doses of oseltamivir or other neuraminidase inhibitors" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Nbf4191243c9a4b06ab5af8139d8f4b24 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Patients will be eligible for this domain if:" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N100070b2f9404c548319c4b71b77d39d ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 18 ;
+    rcap:evidencePosition "6" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "The treating clinician believes that participation in the domain would not be in the best interests of the patient" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N85a5a85cb27a4af6a5978f99923f2638 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "9.3" ;
+    rcap:evidenceText "Refer to relevant Core Protocol documents for criteria for discontinuation of participation in this trial." ;
+    rcap:occurrenceKind "discontinuation" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Ncdd97f44e3674ff6839a3aeb77f95f58 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Patients will be excluded from this domain if they have any of the following:" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N5650f315fe6e4f6d9ebfe1cc3409caaa ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:7" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "Dose adjustment for renal dysfunction in children will be per local guidelines." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Nd340723396b6459caaa5ef28d6de0039 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "Participating sites may choose to offer this domain to patients in one or both of these Illness Severity States." ;
+    rcap:occurrenceKind "applicability_state" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Nb148c6081bb742bfbe6e95a3baea24e9 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "trailing:4" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Previous versions of this DSA incorporated a 10-day duration of oseltamivir intervention, which has been removed from this version." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Nc873774d84bb402a9d76f6497efe3cf6 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "The statistical model will not permit borrowing between Severity States but will borrow between Age Strata, as specified in the Core Protocol." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N752bb4170dfa44b18a3551fcae46b656 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "In such cases, patients will be randomly allocated a remaining intervention from among those available at that site." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Nd6113b31b2c243d68e95a43bef8c1652 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 21 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "9.2.1" ;
+    rcap:evidenceText "Administration of antiviral medications active against influenza" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Nd37af2366aa44ee0bf33cbd9c544c13a ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "Participating sites may choose to offer this domain to patients in one or more (or all) of these Age Stata." ;
+    rcap:occurrenceKind "applicability_age" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N56c8823acd994064bd1f7982de558e9c ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "The standard dose for oseltamivir for adult patients is 75 mg enterally twice per day." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Na131e024112e4ca78f0b6711deb047af ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 19 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Known or suspected pregnancy will result in exclusion from interventions that include baloxavir" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N78c1cf2385e7473ca269ac1a3a83fcca ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "☐" ;
+    rcap:evidencePage 19 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Oseltamivir twice daily for five days" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Na405537f9d34498794f4afa0c1b3e722 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "No dosage adjustment is suggested for Body Mass Index (BMI), pregnancy, or for extracorporeal membrane oxygenation." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Nb2e662cada4948139b7267fbac4e46b5 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Patients who are eligible for only a single intervention at a site (i.e., all other interventions are contraindicated or not available) are not eligible for this domain." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N17a1da7906834be9898a4cd991470601 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "trailing:2" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "It is required that all sites will participate in the no antiviral intervention." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Nedf78902408448488eaa2761165e048a ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "trailing:3" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Each participating site has the option to opt-in to one or more of the remaining interventions depending on local clinical preference, usual practice, acceptable practice, and the availability of the agent at that site." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:Domain_IAV ;
+    owl:annotatedTarget _:N28e5ed4dbc1442168d721382ee80d3d0 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "☐" ;
+    rcap:evidencePage 19 ;
+    rcap:evidenceRule "B-domain" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Oseltamivir twice daily for 5 days + baloxavir on days 1 and 4 after reveal of randomized treatment assignment" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N3c0a4aad2da047e0a1470cec44df26d9 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.8" ;
+    rcap:evidenceText "The size of the pre-specified odds ratio delta is 0.10." ;
+    rcap:occurrenceKind "allocation_threshold" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N1060b233d84d4380811e79aaca2a26e8 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "Dose adjustment for renal dysfunction will be per local guidelines." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N28f92a0e13804461b49bb16c1cc75329 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.6" ;
+    rcap:evidenceText "Patients enrolled in previous versions of this DSA to the 10-day oseltamivir intervention will continue to be nested with the 5-day oseltamivir intervention." ;
+    rcap:occurrenceKind "allocation_nesting" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N80b3dc06581a4027b95d92740f5c28aa ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 18 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "If in the Severe State, more than 48 hours has elapsed since commencement of sustained organ failure support" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N687988356f014c8597cc244bc522eb10 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 18 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Influenza infection has been confirmed by microbiological testing." ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Nc03d13e186144de7a814887e223eccc7 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "trailing:1" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "All interventions are administered until the stated duration of therapy has been reached or until hospital discharge (whichever occurs first)." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Na23e2554609947438a1995b239b102bf ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "10.8" ;
+    rcap:evidenceText "The default threshold probability of a statistical trigger for futility is as specified in the core protocol." ;
+    rcap:occurrenceKind "allocation_threshold" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Ne6ad4a4f670b4d5d98bd0702297b03f9 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "All interventions will be commenced immediately after allocation status is revealed." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Nbd53756869de46a199aa9305fa2bf84b ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.3" ;
+    rcap:evidenceText "Domain-specific strata are not applied to patients at the time of assessment for this domain." ;
+    rcap:occurrenceKind "domain_strata" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N3d6160fbd1d74bb0b8aecd0166089ff0 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "These States are defined in Core Protocol documents." ;
+    rcap:occurrenceKind "applicability_state" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N66d435fdeef24efe9d9488a66e435535 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "The allocated intervention should be discontinued if there is development of a SAE which, in the opinion of the treating clinician, could be related to participation in this domain." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N2d8f2cc84fd34115be938b39c2ff3ff0 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 18 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "If in the Moderate State, more than 96 hours has elapsed since hospital admission" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N28ef63b187f746fd95da942d1739faf7 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "Patients randomized in early versions of this DSA who did not have confirmed influenza infection are not part of this unit of analysis." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N592d6c138e004eb5a6e1a1f8af3c38dc ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 18 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Patient is aged ≥ 28 days old" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N40f0aa5ffc5748a1bf5a5ea6d28bb410 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:6" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "A standard dose for oseltamivir in children is 6 mg/kg/day, divided into two doses, up to children of 40 kg." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Nd680a9fadea6439bba12653e5fda7e95 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "If no local guideline exists, recommendations based on estimated Glomerular Filtration Rate (eGFR) are as follows: Hemo(dia)filtration Hemo(dia)filtration Agent eGFR <30 ml/min (1-1.8 L/hr exchange) (>1.8 L/hr exchange) Oseltamivir 30 mg twice daily 30 mg twice daily 75 mg, twice daily Dosing for children is as per local guidelines." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:Domain_IAV ;
+    owl:annotatedTarget _:N6cec0d01352f4296b139627b7be31363 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "☐" ;
+    rcap:evidencePage 19 ;
+    rcap:evidenceRule "B-domain" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Baloxavir on days 1 and 4 after reveal of randomized treatment assignment" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N7e9d3d45758c4c17af8aef85929b9a39 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "This domain is available to patients who are in the Pediatric, Adolescent or Adult Age Strata, as defined in Core Protocol Documents." ;
+    rcap:occurrenceKind "applicability_age" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Nbb7d9c0032d844ca89f177264ce9bc6a ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "Influenza Infection Confirmed Stratum)." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Nf819cb13f1ee4b86afcac2918ee56ed3 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 18 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Patient has already received one or more doses of baloxavir" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Na51033e1a77c4d9e957d20f1eb45d401 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "9.2.1" ;
+    rcap:evidenceText "Additional domain-specific data will be collected:" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N0fc75827c2ed42629997707547377ca5 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "Baloxavir will be administered as follows: Agent Weight < 40 kg Weight 40-80 kg Weight > 80 kg 2 mg/kg on days 1 and Baloxavir 40 mg on days 1 and 4 80 mg on days 1 and 4 4 to max of 40 mg No dose adjustment is necessary for renal impairment, hepatic impairment, or extracorporeal membrane oxygenation." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:Domain_IAV ;
+    owl:annotatedTarget _:N3336f2cf019340c0994d8e43e7ebdb17 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "☐" ;
+    rcap:evidencePage 19 ;
+    rcap:evidenceRule "B-domain" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Oseltamivir twice daily for five days" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Nf3bff2407bc44b2eba10b34c46d093ec ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Patients will be randomly assigned to receive one of the following open-label antiviral strategies, depending on illness severity." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Nb1e99ef4ba804dc187ce34d19fac8e9d ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "Dosing is determined by the treating clinician and the following are provided as a guide." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N062a271896cf421ea308714789b18e5e ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 18 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Patient is already receiving, or a clinical decision has been made to commence, an antiviral active against influenza other than oseltamivir or baloxavir." ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N92e1c345da704c8ba582c7e8b1a0f2e1 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "Eligibility within these strata may be further constrained by domain-specific eligibility criteria specified below." ;
+    rcap:occurrenceKind "applicability_age" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Nc9e06b71f65b46fc9d798d33a807e919 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.8" ;
+    rcap:evidenceText "If two interventions within this domain, for a unit-of-analysis, have at least a 0.90 probability of being within a pre-specified delta for the primary endpoint then these interventions will be deemed as being equivalent." ;
+    rcap:occurrenceKind "allocation_threshold" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N9d8e5a3f40e046ec90f301cbe3ee18bd ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.7" ;
+    rcap:evidenceText "The threshold probability for statistical triggers for efficacy, superiority, and inferiority are those specified in the relevant core protocol documents." ;
+    rcap:occurrenceKind "allocation_threshold" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:N78cb91c8d2404c45845be192a5aa92d6 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "The unit-of- analysis is further subdivided by Illness Severity State (defined as the Moderate and Severe Illness Severity States) and two Age Strata (defined as Pediatric Age Stratum and a combination of Adolescent and Adult Age Strata, which will be combined for analytic purposes)." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IAV ;
+    owl:annotatedTarget _:Ncf8d336f17ad4320a2140018a24c2e13 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.5" ;
+    rcap:evidenceText "An a priori interaction with the Corticosteroid Domain or Influenza Immunomodulator domains, while possible, will not be incorporated in the statistical model." ;
+    rcap:occurrenceKind "allocation_interactions" .
+
+_:N062a271896cf421ea308714789b18e5e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c43c010fe98 .
+
+_:N088f10663a6f4da599593289fdb55993 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ccdc64e11f3 .
+
+_:N0fc75827c2ed42629997707547377ca5 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3a6cd10440 .
+
+_:N100070b2f9404c548319c4b71b77d39d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c324186f8e2 .
+
+_:N1060b233d84d4380811e79aaca2a26e8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf5572160df .
+
+_:N1322a4aa308f470f89dc9d7e1981248f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc4efc1a692 .
+
+_:N17a1da7906834be9898a4cd991470601 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c29fbe389a1 .
+
+_:N1b3a414c6f884842aae91f2f8db8e401 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1cb8756c31 .
+
+_:N260e57744edf4436a3899a5de2845e3b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2fd0baa5ef .
+
+_:N28e5ed4dbc1442168d721382ee80d3d0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0914eb731b .
+
+_:N28ef63b187f746fd95da942d1739faf7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdd710c464b .
+
+_:N28f92a0e13804461b49bb16c1cc75329 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ccfef3c27d2 .
+
+_:N2d8f2cc84fd34115be938b39c2ff3ff0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6218f33cb2 .
+
+_:N3336f2cf019340c0994d8e43e7ebdb17 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc0ab609c4e .
+
+_:N336001fa7c964509b433565db3fd1b4e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c168c834f5a .
+
+_:N36cbf9896851485eb35f21ea7c3e83fc a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cfb4eb163d9 .
+
+_:N375638c695a24dd087dd6396cb30b7ba a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c494ee9cfa6 .
+
+_:N37846f47e1434bdd9e7690c80a05698e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2ca322189f .
+
+_:N3c0a4aad2da047e0a1470cec44df26d9 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cbf7925c08d .
+
+_:N3d6160fbd1d74bb0b8aecd0166089ff0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc26608429f .
+
+_:N40f0aa5ffc5748a1bf5a5ea6d28bb410 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c38144b1e19 .
+
+_:N47357ce2e4f8436fa78ec410601db41a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4045bb48b3 .
+
+_:N5650f315fe6e4f6d9ebfe1cc3409caaa a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ceda595c821 .
+
+_:N56c8823acd994064bd1f7982de558e9c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdffd88ebc9 .
+
+_:N592d6c138e004eb5a6e1a1f8af3c38dc a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c82d12c69d9 .
+
+_:N600bbdf567db4308b25b93f392166b88 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7a4a3d204c .
+
+_:N66d435fdeef24efe9d9488a66e435535 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8f0bf764e2 .
+
+_:N687988356f014c8597cc244bc522eb10 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9e40a2b775 .
+
+_:N6cec0d01352f4296b139627b7be31363 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1cc6e00337 .
+
+_:N752bb4170dfa44b18a3551fcae46b656 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf6051db800 .
+
+_:N78c1cf2385e7473ca269ac1a3a83fcca a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc0ab609c4e .
+
+_:N78cb91c8d2404c45845be192a5aa92d6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c05662763c7 .
+
+_:N7e9d3d45758c4c17af8aef85929b9a39 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c404c1328e4 .
+
+_:N80b3dc06581a4027b95d92740f5c28aa a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf40128f15b .
+
+_:N845e6f80bc0b4a64b0bbafa4d2d47db3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9b8bdba438 .
+
+_:N85a5a85cb27a4af6a5978f99923f2638 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c85858c8378 .
+
+_:N92a0117bc085483a81c8b0c7c694c417 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4c7e690055 .
+
+_:N92e1c345da704c8ba582c7e8b1a0f2e1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce5c526ddb9 .
+
+_:N9a0fffa1fb60460b93b6e03bec93bb9f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c03a44f4e7e .
+
+_:N9d8e5a3f40e046ec90f301cbe3ee18bd a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c49cafec9f1 .
+
+_:Na131e024112e4ca78f0b6711deb047af a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c40ca7ab171 .
+
+_:Na23e2554609947438a1995b239b102bf a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c59ffd75f17 .
+
+_:Na405537f9d34498794f4afa0c1b3e722 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6a51302e4c .
+
+_:Na4e5f70ff6904affb1d21959e37fb18a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0914eb731b .
+
+_:Na51033e1a77c4d9e957d20f1eb45d401 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4c016e4e79 .
+
+_:Nb148c6081bb742bfbe6e95a3baea24e9 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6f0eda0eb3 .
+
+_:Nb1e99ef4ba804dc187ce34d19fac8e9d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb7befa7b3a .
+
+_:Nb2e662cada4948139b7267fbac4e46b5 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd48313d7dc .
+
+_:Nbb7d9c0032d844ca89f177264ce9bc6a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1837126244 .
+
+_:Nbd53756869de46a199aa9305fa2bf84b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c206b9c5488 .
+
+_:Nbe30e29b02664ff3bb69daf18a396d32 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c507e561118 .
+
+_:Nbf4191243c9a4b06ab5af8139d8f4b24 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8bc517a21d .
+
+_:Nc03d13e186144de7a814887e223eccc7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cce1901356c .
+
+_:Nc5c81df8aa4f43a49cc8e8ca7da99ff8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5770ae5285 .
+
+_:Nc873774d84bb402a9d76f6497efe3cf6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c65709c1927 .
+
+_:Nc9e06b71f65b46fc9d798d33a807e919 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c715f02f8d2 .
+
+_:Ncc472c517e39482197281079841b0afd a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1cc6e00337 .
+
+_:Ncdd97f44e3674ff6839a3aeb77f95f58 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc4a3982cda .
+
+_:Ncf8d336f17ad4320a2140018a24c2e13 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c22dce2e60a .
+
+_:Nd1d2307fedff4bf188db7c75538ab4ab a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c129e610700 .
+
+_:Nd340723396b6459caaa5ef28d6de0039 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7584fb6acd .
+
+_:Nd37af2366aa44ee0bf33cbd9c544c13a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9c4ee896ea .
+
+_:Nd6113b31b2c243d68e95a43bef8c1652 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8fd5723cf0 .
+
+_:Nd680a9fadea6439bba12653e5fda7e95 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdbae604627 .
+
+_:Ndbfc7c7d37d34491a146121c0df74bc6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5195342be2 .
+
+_:Ne6ad4a4f670b4d5d98bd0702297b03f9 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c29662860b2 .
+
+_:Nedf78902408448488eaa2761165e048a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c83bd011155 .
+
+_:Nf3bff2407bc44b2eba10b34c46d093ec a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdeac60dcf6 .
+
+_:Nf819cb13f1ee4b86afcac2918ee56ed3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5a9afc4a18 .
+
+_:Nfb84f3bd99ff41f09d93408e7b72ebf7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1e6ba7ff69 .
+
+_:Nffdb51a6710b4dbe8e4a5c4e30f6cf30 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1e6ba7ff69 .
+

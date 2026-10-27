@@ -1,0 +1,3620 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rcap: <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+rcap:c0096438fef a owl:Class ;
+    rdfs:label "Patients who are eligible for only a single intervention at a site (i.e." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;END_DSA;IG_DSA;IIM_DSA" .
+
+rcap:c0103ae2e32 a owl:Class ;
+    rdfs:label "With respect to reporting of Platform Conclusions and adaptations of the domain the following actions are possible: Factors that should be taken into account by the DSMB and the ITSC include the results of the primary analysis, analysis of clinically relevant secondary end-points, the possibility of treatment-by-treatment interactions, the relative burden and cost of the two interventions, the clinical interpretation of the adequacy of the delta, the possibility that ongoing randomization with a smaller delta might also allow a Statistical Trigger for superiority (with a small effect size) and the ordinal position of the equivalent pair within the domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c017de64a90 a owl:Class ;
+    rdfs:label "In particular longer courses of corticosteroids should be avoided in very young infants." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c024c5c7541 a owl:Class ;
+    rdfs:label "In keeping with all international guidelines optimized empiric antibiotic treatment should commence as soon as possible." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:c025838a38f a owl:Class ;
+    rdfs:label "Survival and Recovery Trajectory Survival and Recovery Trajectory is a composite of all-cause mortality at day 90 and, among survivors, a daily ordinal scale of illness and recovery to 28 days." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:c02716df73b a owl:Class ;
+    rdfs:label "A baseline platelet count <50 x10 9 /L will exclude a patient from receiving enteral imatinib" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c027ab13bf7 a owl:Class ;
+    rdfs:label "Serious clinically diagnosed arterial (e.g. myocardial infarction (MI), cerebrovascular accident (CVA), mesenteric arterial thrombosis) or venous thrombotic events (e.g. deep vein thrombosis (DVT), pulmonary embolism (PE), portal or mesenteric venous thrombosis, or cortical venous sinus thrombosis) occurring during the index hospitalization censored at day 90 after enrolment." ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c02c1e22ba9 a owl:Class ;
+    rdfs:label "In this Platform, pathogen status may be assigned based on clinical assessment, microbiological testing, or both." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c02c7c3c4db a owl:Class ;
+    rdfs:label "If a patient develops a severe adverse reaction, imatinib should be discontinued and not restarted" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c0322fd9949 a owl:Class ;
+    rdfs:label "If no local guidelines exist, it is recommended that subsequent doses of antibiotics will be adjusted for estimated renal function (based on estimated Glomerular Filtration Rate (eGFR)) as follows:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c03a44f4e7e a owl:Class ;
+    rdfs:label "Known hypersensitivity to an agent specified as an intervention in this domain will exclude a patient from receiving that agent." ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "END_DSA;IAV_DSA;IG_DSA;IIM_DSA" .
+
+rcap:c0431228721 a owl:Class ;
+    rdfs:label "Moxifloxacin 400mg administered IV once daily, or Levofloxacin 750mg IV q24h" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c048bddcbd7 a owl:Class ;
+    rdfs:label "The statistical model will permit borrowing between all strata as specified in Core Protocol documents." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c04aca4d5c7 a owl:Class ;
+    rdfs:label "If the patient is allocated to extended course macrolide, macrolide therapy should be prescribed to Study Day 14, irrespective of the timing of reveal." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:c04bf744260 a owl:Class ;
+    rdfs:label "Patients assigned to this intervention are not to receive imatinib or another tyrosine kinase inhibitor targeting the same pathway as imatinib (i.e." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c04d371375d a owl:Class ;
+    rdfs:label "patients who are receiving invasive mechanical ventilation and have a ratio of arterial partial pressure of oxygen to fractional inspired concentration of oxygen (P:F ratio) of ≥ 200 mmHg (or saturation to fractional inspired concentration of oxygen ratio of ≥235) or are receiving invasive mechanical ventilation with the Positive End-Expiratory Pressure (PEEP) set to less than 5 cm of water (irrespective of the P:F ratio), and" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:c05075dff40 a owl:Class ;
+    rdfs:label "For all patients in this domain who remain in hospital after study day 28, data on the administration of corticosteroids are not collected, and administration of corticosteroids after study day 28 is at the discretion of the treating clinician." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c050828c00a a owl:Class ;
+    rdfs:label "No change to the interventions within the domain with continuation of RAR. This could be to further evaluate secondary endpoints, a smaller delta, or interest in interactions with other interventions." ;
+    rdfs:subClassOf rcap:AllocationSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c05662763c7 a owl:Class ;
+    rdfs:label "The unit-of- analysis is further subdivided by Illness Severity State (defined as the Moderate and Severe Illness Severity States) and two Age Strata (defined as Pediatric Age Stratum and a combination of Adolescent and Adult Age Strata, which will be combined for analytic purposes)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c05beb36299 a owl:Class ;
+    rdfs:label "Physiologic and laboratory results indicative of severity of illness and organ dysfunction" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c05d5045c24 a owl:Class ;
+    rdfs:label "Hospital readmission within 28 days" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "only_40" ;
+    rcap:occursIn "CORE40" .
+
+rcap:c06de9f2a96 a owl:Class ;
+    rdfs:label "Adherence to the allocated mechanical ventilation strategy should continue as long as the patient is receiving invasive ventilation or until day 28, whichever occurs first." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c077742c43e a owl:Class ;
+    rdfs:label "borrowing will occur between Moderate and Severe states." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c07829b4907 a owl:Class ;
+    rdfs:label "Randomization to the non-superior or non-efficacious interventions may continue at sites at which the superior or efficacious intervention is not available, pending its availability." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c07ba9bbc05 a owl:Class ;
+    rdfs:label "Known hypersensitivity to moxifloxacin or levofloxacin will result in exclusion from moxifloxacin or levofloxacin intervention" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c07c65fbdc2 a owl:Class ;
+    rdfs:label "High-flow nasal oxygen with a fractional inspired oxygen concentration of 0.4 or higher and with flow rate of at least 30 liters per minute (or at least 2 liters per minute per kilogram of bodyweight in children less than 15 kilograms)" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:c08c9ced8d5 a owl:Class ;
+    rdfs:label "It is acknowledged that a new pandemic pathogen may be completely novel and, in this situation, the default is for a novel pathogen to be considered separate from other pathogens as above." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c08df43abd6 a owl:Class ;
+    rdfs:label "In order to be eligible to participate in this trial, all patients must meet the following criteria:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c08f5b718bc a owl:Class ;
+    rdfs:label "The threshold probability for statistical triggers forefficacy are those specified in the relevant Core Protocol documents." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c08fb792710 a owl:Class ;
+    rdfs:label "If a patient has been receiving any corticosteroid for their respiratory tract infection or its direct complications prior to enrollment, this medication must be ceased." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c0914eb731b a owl:Class ;
+    rdfs:label "Oseltamivir twice daily for 5 days + baloxavir on days 1 and 4 after reveal of randomized treatment assignment" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c09cf90d5ee a owl:Class ;
+    rdfs:label "Domain-specific safety outcomes, where applicable" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c0a1453ce8f a owl:Class ;
+    rdfs:label "Therefore, the population considered to have bacterial infection is defined primarily by clinical assessment plus any microbiological data available at the time of eligibility assessment rather than final microbiological test results." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c0a14a0953a a owl:Class ;
+    rdfs:label "Change to enteral antibiotics once patient is clinically stable" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:c0a159d07c6 a owl:Class ;
+    rdfs:label "No strata are applied in the model, although this may be modified as an operational decision as specified in the Current State document." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;MD_DSA;TAB_DSA" .
+
+rcap:c0a5dc0cbed a owl:Class ;
+    rdfs:label "Disability status measured by WHODAS at 180 days and baseline information to interpret disability (adults)" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c0a964350f0 a owl:Class ;
+    rdfs:label "Non-invasive ventilation (bilevel positive airway pressure or continuous positive airway pressure by mask or helmet)" ;
+    rdfs:subClassOf obo:IAO_0000033 ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41;PANDA" .
+
+rcap:c0ac63ad5df a owl:Class ;
+    rdfs:label "In a domain that comprises three or more interventions, but in which two or more interventions are analyzed in a nested manner, the nested group may be combined for analyses of equivalence." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c0b3c8b79f8 a owl:Class ;
+    rdfs:label "It is possible that additional defined pathogens may be included in this appendix over time due to the changing epidemiology of respiratory tract infections or due to a changing focus of the Platform." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c0bef8728bb a owl:Class ;
+    rdfs:label "There is one nest within this domain, comprising ceftriaxone + macrolide, piperacillin-tazobactam + macrolide, and amoxicillin-clavulanate + macrolide interventions." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c0c776b6b49 a owl:Class ;
+    rdfs:label "For other pathogens, the clinical features are non-specific and microbiological tests have a high sensitivity and, in this case, microbiological testing may be more important than clinical suspicion." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c0c7c9a9c53 a owl:Class ;
+    rdfs:label "An example would include patients with a history of a penicillin hypersensitivity, who may receive a cephalosporin or moxifloxacin." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c0cc4f0f17b a owl:Class ;
+    rdfs:label "Confirmed acute myocardial infarction" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c0d027dc361 a owl:Class ;
+    rdfs:label "It is not an objective of this trial to re-evaluate these questions but determine the aggregate effect of treatment with corticosteroids on mortality." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c0d034cc9f6 a owl:Class ;
+    rdfs:label "If the patient has a significant and sudden drop in saturation, it is permitted to increase the PEEP/FiO 2 rapidly from the left to the right of the chart as quickly as required to achieve an oxygen saturation that is in the target range." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c0da3871612 a owl:Class ;
+    rdfs:label "Patients may have multiple intervention exclusions (e.g., both a penicillin and a cephalosporin hypersensitivity)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "TAB_DSA" .
+
+rcap:c0de6d4fcdc a owl:Class ;
+    rdfs:label "The weights for each daily ordinal status will be derived from existing REMAP-CAP data and correspond to the estimated probability of 90-day mortality for that category." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:c0e05a5a652 a owl:Class ;
+    rdfs:label "Acute Respiratory Distress Syndrome is a State defined in two categories, present or absent, with ‘present’ defined as patients with all of the following:" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:c0e7d61c2a9 a owl:Class ;
+    rdfs:label "There is no administration of placebo." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c0f39507184 a owl:Class ;
+    rdfs:label "Known severe liver disease or an alanine aminotransferase (ALT) or an aspartate aminotransferase (AST) that is more than five times the upper limit of normal or bilirubin more than three times the upper limit of normal will exclude a patient from receiving enteral imatinib" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c0f40ddaf60 a owl:Class ;
+    rdfs:label "Mortality is defined as death from any cause before the end of study day 90." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_40" ;
+    rcap:occursIn "CORE40" .
+
+rcap:c0f71d346a0 a owl:Class ;
+    rdfs:label "For some participants, additional microbiological test results which are indicative of infection status at baseline may become available after reveal of treatment allocation." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c0f86ea227e a owl:Class ;
+    rdfs:label "Patient has already received treatment with any non-trial prescribed polyclonal antibody therapy (hyperimmune immunoglobulin, or convalescent plasma) intended to be active against COVID-19 during this acute illness." ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c10b27d976a a owl:Class ;
+    rdfs:label "Hypotension and administration of vasopressors/inotropes" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c10b99f1d7e a owl:Class ;
+    rdfs:label "Sedative medications should be administered, as determined by the treating clinician, with or without administration of a neuromuscular blocker, to provide patient safety and comfort as well as to allow delivery of the specified ventilator settings." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c114f0571f8 a owl:Class ;
+    rdfs:label "Meropenem 1 gram administered IV every 8 hours" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "TAB_DSA" .
+
+rcap:c1230dec75c a owl:Class ;
+    rdfs:label "Intention to prescribe systemic corticosteroids for a reason that is unrelated to the current respiratory tract infection, such as chronic corticosteroid use before admission, acute severe asthma, or suspected or proven Pneumocystis jiroveci or COVID-19 pneumonia" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c12828954c3 a owl:Class ;
+    rdfs:label "If the acidosis has a substantial metabolic component, continuous renal replacement therapy may be instituted, at the discretion of the treating clinician." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c1287fb9829 a owl:Class ;
+    rdfs:label "A switch from IV to enteral macrolide is permitted as directed by the treating clinician." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:c129e610700 a owl:Class ;
+    rdfs:label "Response Adaptive Randomization may be applied." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA;END_DSA;IAV_DSA;IIM_DSA" .
+
+rcap:c13276457d5 a owl:Class ;
+    rdfs:label "The DSMB will oversee a range of actions as described in operational documents and the DSMB charter to confirm that the Statistical Trigger has been reached validly." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c1424395077 a owl:Class ;
+    rdfs:label "Domains may pool income level categories, for example, distinguishing two categories: high-income and non-high income (incorporating upper-middle, lower-middle, and low)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c144fb17704 a owl:Class ;
+    rdfs:label "All-cause mortality at 28 days censored at hospital discharge" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c1465e48eba a owl:Class ;
+    rdfs:label "Cease antibiotics if an alternative diagnosis is made." ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:c149340e649 a owl:Class ;
+    rdfs:label "Organ-support free days at day 28" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "only_40" ;
+    rcap:occursIn "CORE40" .
+
+rcap:c151c132f43 a owl:Class ;
+    rdfs:label "Borrowing is permitted between States, i.e." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c151c19e49b a owl:Class ;
+    rdfs:label "Pregnancy outcomes will be collected for patients who are pregnant at the time of randomization to this domain." ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c15ec59dfe1 a owl:Class ;
+    rdfs:label "The ITSC will take responsibility to undertake Public Disclosure as soon as practicable with the dissemination of the research result via presentation or publication or both." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c15f4b96ff8 a owl:Class ;
+    rdfs:label "Cease antibiotics when there is evidence of sufficient clinical improvement, no microbiological diagnosis has been made and no clinical evidence of deep infection (e.g. empyema or lung abscess). The duration of antibiotic therapy will be decided by the treating clinician and local guidelines." ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:c164a6e965d a owl:Class ;
+    rdfs:label "Pulmonary aspergillosis, during this hopsitalization and more than 48 hours following randomization, defined as culture of Aspergillus species from tracheal aspirate or bronchoalveolar lavage or invasive pulmonary aspergillosis diagnosed and treated with one or more systemic antifungal agent" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c168c834f5a a owl:Class ;
+    rdfs:label "If an interaction is specified with a future domain, it is sufficient for the interaction to be specified only in the DSA of such a future domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;CS_DSA;END_DSA;IAV_DSA;IG_DSA;IIM_DSA;MD_DSA;TAB_DSA" .
+
+rcap:c178de9633a a owl:Class ;
+    rdfs:label "Days alive and free of organ-failure support to day 28" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:c1837126244 a owl:Class ;
+    rdfs:label "Influenza Infection Confirmed Stratum)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c1873c181b7 a owl:Class ;
+    rdfs:label "Age: Age is defined in three categories, Adult (aged 18 years or older), Adolescent (aged 12 years or older and less than 18 years), or Pediatric (aged 28 days or older and less than 12 years) at the time of Platform enrollment." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c187cffc67e a owl:Class ;
+    rdfs:label "A patient’s pathogen status is defined by the matrix of all relevant pathogen groups." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c194af0dab6 a owl:Class ;
+    rdfs:label "The threshold probability for statistical triggers for superiority, inferiority, and futility are those specified in the Core Protocol." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:c19e778dc9d a owl:Class ;
+    rdfs:label "Organ failure support or hospital stay received prior to the end of study day 28, but outside of the index hospitalization (i.e., during a subsequent hospital admission after discharge from the index hospitalization) will not contribute to the primary endpoint." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:c1a0b1bcfd0 a owl:Class ;
+    rdfs:label "For each pathogen, a hierarchy of infection likelihood exists consisting of ‘confirmed’, ‘suspected but not confirmed’ (divisible, for bacterial infection, into two subcategories: ‘probable’ and ‘possible’), ‘not suspected’, and ‘excluded’ (i.e." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c1a78973420 a owl:Class ;
+    rdfs:label "Confirmed SARS-CoV-2 infection" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c1a81fa0c38 a owl:Class ;
+    rdfs:label "It is expected that most children will spend less than 10days in hospital and therefore duration of therapy will be shorter." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c1ae29f53d7 a owl:Class ;
+    rdfs:label "For the purposes of this primary endpoint, organ failure support is defined as:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:c1b0d782be7 a owl:Class ;
+    rdfs:label "Patient has lower-respiratory tract infection" ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c1b2898941a a owl:Class ;
+    rdfs:label "For patients who survive to day 90, each day's ordinal status is converted to its corresponding mortality-derived weight, and the score is calculated as the mean of these daily weights over the first 28 days." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:c1ba4c77056 a owl:Class ;
+    rdfs:label "For participants discharged from hospital before the end of the allocated course of macrolide therapy, macrolides should be discontinued at hospital discharge." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:c1bdd74e350 a owl:Class ;
+    rdfs:label "Respiratory syncytial virus (RSV)" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:c1bdec95f43 a owl:Class ;
+    rdfs:label "A single statistical model requires pathogen analysis strata to be defined based on information available at eligibility assessment, no later than time of reveal of treatment allocation." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c1c0f1e7b50 a owl:Class ;
+    rdfs:label "microbiological testing-confirmed influenza) and the Severe Illness Severity State." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c1ca983b883 a owl:Class ;
+    rdfs:label "More than 14 days have elapsed since hospital admission" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c1cb8756c31 a owl:Class ;
+    rdfs:label "Patient has already received two or more doses of oseltamivir or other neuraminidase inhibitors" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c1cc6e00337 a owl:Class ;
+    rdfs:label "Baloxavir on days 1 and 4 after reveal of randomized treatment assignment" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c1d4445d53f a owl:Class ;
+    rdfs:label "Serious adverse events as defined in relevant core protocol documents and this DSA" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c1e17f524e4 a owl:Class ;
+    rdfs:label "The dose of baricitinib administered will depend on the most recent eGFR, including modification of dose for change in renal function during the treatment period." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c1e51711ff1 a owl:Class ;
+    rdfs:label "Where antibiotic protocols specify BPS active antibiotics for part of the year (e.g., during the monsoonal season), sites may participate in this domain where BPS specific antibiotics are not indicated." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c1e6ba7ff69 a owl:Class ;
+    rdfs:label "No antiviral agent (no placebo)" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c1f01b046eb a owl:Class ;
+    rdfs:label "Each participating ICU will be asked to outline the mechanical ventilation strategy that is used most commonly, and this may be made available to guide patient care but is regarded only as advisory and deviation from this guide is permitted at any time." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c20585797b1 a owl:Class ;
+    rdfs:label "Alternatively, 2 mg of baricitinib can be given every second day." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c206b9c5488 a owl:Class ;
+    rdfs:label "Domain-specific strata are not applied to patients at the time of assessment for this domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;CS_DSA;END_DSA;IAV_DSA;IIM_DSA;MD_DSA;MV_DSA;TAB_DSA" .
+
+rcap:c20d2fa4a96 a owl:Class ;
+    rdfs:label "all other interventions are contraindicated) are not eligible for this domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;END_DSA;IG_DSA;IIM_DSA" .
+
+rcap:c21617daed3 a owl:Class ;
+    rdfs:label "The estimand is the transition between categories and the relative time spent in each category, modelled to produce an odds ratio from an ordinal logistic model, incorporating covariate adjustment as described in Section 7.8.3." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_40" ;
+    rcap:occursIn "CORE40" .
+
+rcap:c21e3e6e673 a owl:Class ;
+    rdfs:label "Known serious hypersensitivity to beta-lactams, including penicillins or cephalosporins, will result in exclusion from interventions that include piperacillin, amoxicillin, and ceftriaxone" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c220498dbf0 a owl:Class ;
+    rdfs:label "Hospitalized on ECLS or invasive mechanical ventilation (IMV)" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:c223310e85c a owl:Class ;
+    rdfs:label "Enteral imatinib will be administered as a 800mg loading dose (study day 1) followed by 400mg once daily (study day 2-14) while the patient remains in hospital." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c224ee6f9f0 a owl:Class ;
+    rdfs:label "If a patient develops elevation in bilirubin 3 times the upper limit of normal or ALT/AST 5 times the upper limit of normal, imatinib should be discontinued and not restarted" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c225b497b1c a owl:Class ;
+    rdfs:label "Survivors who never receive organ failure support during their index hospitalization to the end of study day 28 will be coded above the organ support-free days range, with categories defined by their number of hospital free days to the end of study day 28." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:c228b0b878c a owl:Class ;
+    rdfs:label "A clinician may regard septic shock to have resolved if vasopressor infusion is being administered intermittently or at sufficiently low dose." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c22dce2e60a a owl:Class ;
+    rdfs:label "An a priori interaction with the Corticosteroid Domain or Influenza Immunomodulator domains, while possible, will not be incorporated in the statistical model." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c23237d2b0f a owl:Class ;
+    rdfs:label "Received more than 48 hours of intravenous antibiotic treatment for this index illness" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:c2350a9a8ac a owl:Class ;
+    rdfs:label "The Severe State, defined as hospitalized patients:" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:c2369d7796b a owl:Class ;
+    rdfs:label "If an intervention reaches a Statistical Trigger for futility and the DSMB declares this as a Platform Conclusion, the ITSC will be informed that the trigger has been met." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c2487d60744 a owl:Class ;
+    rdfs:label "Factors that should be taken into account by the DSMB and the ITSC include the results of the primary analysis, analysis of clinically relevant secondary end-points, the possibility of treatment-by-treatment interactions, the relative burden and cost of the two interventions, the clinical interpretation of the adequacy of the delta, and the possibility that ongoing randomization with a smaller delta might also allow a Statistical Trigger for superiority (with a small effect size)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c258c11804f a owl:Class ;
+    rdfs:label "If in the Severe State, more than 24 hours have elapsed since commencement of sustained organ failure support" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c25ceebb432 a owl:Class ;
+    rdfs:label "Influenza virus" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:c27446f2f17 a owl:Class ;
+    rdfs:label "Each participating Intensive Care Unit will declare a priori which PEEP table it will follow in the Protocolized intervention." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c279cf239e5 a owl:Class ;
+    rdfs:label "Treating clinician expects the patient to still require invasive mechanical ventilation tomorrow." ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c27bd7ad6c4 a owl:Class ;
+    rdfs:label "Borrowing is permitted between strata." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c27cacd94ff a owl:Class ;
+    rdfs:label "The domain-specific secondary outcome measures will be: From randomization in this domain, during the index hospitalization until the end of study day 15:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c287080749b a owl:Class ;
+    rdfs:label "Known serious hypersensitivity to macrolides will result in exclusion from interventions that include macrolides" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "TAB_DSA" .
+
+rcap:c287107c507 a owl:Class ;
+    rdfs:label "This may be provided as a component of the allocation status for the patient but is determined by the treating clinician and can be adjusted at any time by the treating clinician." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c28cabd4385 a owl:Class ;
+    rdfs:label "Treating clinician regards Protocolized Mechanical Ventilation Strategy or their preferred mechanical ventilation strategy as (equally) appropriate for this patient." ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c29280fe471 a owl:Class ;
+    rdfs:label "Ventilator-free days at day 28" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c2945b9d83a a owl:Class ;
+    rdfs:label "For patients allocated to the shock-dependent duration hydrocortisone intervention, who are not in septic shock at the time of randomization, Immediate Reveal and Initiation is interpreted as intention to commence hydrocortisone if and when septic shock develops." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c29662860b2 a owl:Class ;
+    rdfs:label "The allocated intervention will be commenced immediately after allocation status is revealed." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;END_DSA;IAV_DSA;IG_DSA;IIM_DSA;MV_DSA;TAB_DSA" .
+
+rcap:c298d7d1660 a owl:Class ;
+    rdfs:label "Ceftriaxone ≥1 gram administered intravenously (IV) once daily" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c29fbe389a1 a owl:Class ;
+    rdfs:label "It is required that all sites will participate in the no antiviral intervention." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c2b10bf304c a owl:Class ;
+    rdfs:label "Participants assigned to imatinib who are women of childbearing potential (that is fertile, following menarche and until becoming post-menopausal unless permanently sterile, such as following hysterectomy, bilateral salpingectomy and bilateral oophorectomy) must be advised to use highly effective contraception for 15 days following the last dose of imatinib." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c2bad68295e a owl:Class ;
+    rdfs:label "We acknowledge mortality is tied to a longer time frame than the ordinal scale, however integrating 90-day mortality with a shorter-term outcome is patient-centered, allows continuity with previous versions of the Core protocol and the Pandemic Appendix to Core, and improves statistical power." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_40" ;
+    rcap:occursIn "CORE40" .
+
+rcap:c2bb8052454 a owl:Class ;
+    rdfs:label "Other thrombotic events" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c2bd61c29d0 a owl:Class ;
+    rdfs:label "Known objection to receiving plasma products will exclude a patient from receiving any plasma components" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c2c383e5024 a owl:Class ;
+    rdfs:label "The Macrolide component contributes to all interventions and the beta-lactam agents are all members of the same class of antibiotic." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c2c5daff44d a owl:Class ;
+    rdfs:label "Prior to the study commencement, sites will select which interventions that patients at their site will be allocated to, based on the current standards of acceptable care, local epidemiology and regulatory status of antibiotics as outlined below." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c2ca322189f a owl:Class ;
+    rdfs:label "Patients may also be excluded from receiving one or more interventions within the domain for patient-specific reasons." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;CS_DSA;END_DSA;IAV_DSA;IG_DSA;IIM_DSA" .
+
+rcap:c2cc32f1c28 a owl:Class ;
+    rdfs:label "A patient may transition between moderate, severe, and recovering illness severity stages while remaining potentially eligible within the Platform but is assigned to the Illness Severity State that applies at the time of each randomization." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c2cebf0c070 a owl:Class ;
+    rdfs:label "Baricitinib will be withheld if the eGFR is less than 15 mL/min/1.73m 2 and in patients who are receiving intermittent or continuous renal replacement therapy In children 2 years to <9 years of age, the baricitinib dose will be 2mg daily if the eGFR is at least 60 mL/min/1.73m 2 ." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c2cefafea4f a owl:Class ;
+    rdfs:label "new diagnosis of chronic myeloid leukemia) until the end of study day 14 or until hospital discharge, whichever occurs first." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c2d16af401c a owl:Class ;
+    rdfs:label "Discontinuation if the patient experiences a serious adverse event (SAE) that is thought to be related to a study drug" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:c2dd383f950 a owl:Class ;
+    rdfs:label "This will create a score reflecting whether and how quickly they recovered, where better health states receive weights closer to 0." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:c2ddec897ec a owl:Class ;
+    rdfs:label "The following pathogen categories are recognized:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c2de2c66180 a owl:Class ;
+    rdfs:label "In children 2 years to <9 years of age, baricitinib will be withheld if the eGFR is <30 mL/min/1.73m 2 or the patient is receiving renal replacement therapy For patients who are unable to swallow whole tablets, baricitinib may be dispersed in water and delivered via an enteral feeding tube." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c2f2797ef7b a owl:Class ;
+    rdfs:label "Date and time of ICU admission(s) (where applicable)" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c2f3692658b a owl:Class ;
+    rdfs:label "Cause of immunosuppression at baseline" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c2f468ce689 a owl:Class ;
+    rdfs:label "It is acknowledged that, for bacterial infection or co-infection, results from commonly used microbiological testing strategies may take a significant time (e.g., culture) and have low sensitivity." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c2fc6c76dfa a owl:Class ;
+    rdfs:label "SAE as defined in Core Protocol" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:c2fd0baa5ef a owl:Class ;
+    rdfs:label "The study interventions can be temporarily or permanently discontinued at any time by the treating clinician if doing so is regarded as being in the best interests of the patient." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;END_DSA;IAV_DSA;IIM_DSA;MD_DSA;TAB_DSA" .
+
+rcap:c2ff63e56e1 a owl:Class ;
+    rdfs:label "There are no additional domain-specific secondary outcome measures." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c304206ce4e a owl:Class ;
+    rdfs:label "From randomization in this domain, during the index hospitalization unless otherwise specified, censored 90 days after enrollment:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c30428b06d8 a owl:Class ;
+    rdfs:label "Patients allocated to the fixed duration dexamethasone intervention, will have dexamethasone, IV or enteral 6 mg daily for 10 days while in hospital." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c308f0c806e a owl:Class ;
+    rdfs:label "These microbiological test results do not influence pathogen strata for the primary analysis but can contribute to the definition of populations for additional safety analyses, secondary analyses or post-platform conclusion subgroups of interest for specific domains." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c30a922617d a owl:Class ;
+    rdfs:label "It is accepted as being established that treatment with corticosteroids results in increase in blood sugar levels and decreases the duration of vasoactive therapy." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c30b25c536b a owl:Class ;
+    rdfs:label "Patients who are eligible for only a single intervention at a site (i.e., all other interventions are contraindicated) are not eligible for this domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA;TAB_DSA" .
+
+rcap:c314818bf48 a owl:Class ;
+    rdfs:label "interventions At the time of establishing eligibility, the treating clinician will specify a current target range for the oxygen saturation." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c31bd59df7c a owl:Class ;
+    rdfs:label "Major bleeding (as defined by the ISTH criteria)" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c322d3a6829 a owl:Class ;
+    rdfs:label "Administration of oxygen support including ECLS" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c323b860242 a owl:Class ;
+    rdfs:label "The timing of the revealing of allocation status and administration of interventions is specified to be Randomization with Deferred Reveal to permit confirmation of microbiological diagnosis if results of testing are not known at the time of initial assessment of eligibility (see relevant core protocol documents)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c324186f8e2 a owl:Class ;
+    rdfs:label "The treating clinician believes that participation in the domain would not be in the best interests of the patient" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "AB_DSA;CS_DSA;END_DSA;IAV_DSA;IG_DSA;IIM_DSA;MD_DSA;MV_DSA;TAB_DSA" .
+
+rcap:c32c4257f26 a owl:Class ;
+    rdfs:label "Domains may also constrain eligibility according to additional criteria related to the nature of the sample undergoing microbiological tests, the time-window in which the sample is collected, or microbiological testing types." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c32c8e26722 a owl:Class ;
+    rdfs:label "If in the Moderate State, patient is receiving some form of supplemental oxygen (simple facemask, low or high flow nasal oxygen, or non-invasive ventilation)" ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c33f3696e91 a owl:Class ;
+    rdfs:label "Regional income level: Regional income level categories are defined by World Bank Income Classification (high, upper middle, lower middle, low) of the country of patient enrollment." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c347c9d7e7f a owl:Class ;
+    rdfs:label "Days free of organ failure support will be coded as 0-28." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:c34900c49d6 a owl:Class ;
+    rdfs:label "For domains with only two interventions a valid Statistical Trigger for equivalence or noninferiority will be reported as a Platform Conclusion." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c34ba902a86 a owl:Class ;
+    rdfs:label "If septic shock develops due to a cause other than the respiratory tract infection, administration of corticosteroids is at the discretion of the treating clinician." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c34bbecb9d3 a owl:Class ;
+    rdfs:label "Opinions and beliefs regarding participation in research (reported at 180 days)" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c3550866d02 a owl:Class ;
+    rdfs:label "Administration of etomidate between index hospital admission and randomization, and between randomization and the end of study day 8" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c3563d09427 a owl:Class ;
+    rdfs:label "A platelet count < 50 x 10 9 / L will result in exclusion from receiving tocilizumab" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c36608008f9 a owl:Class ;
+    rdfs:label "This Appendix defines stage of illness in the following three categories of illness severity at the time of randomization:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c367ebe39ce a owl:Class ;
+    rdfs:label "An a priori interaction with the Corticosteroid Domain or Influenza Antiviral Domain are considered possible but will only be investigated in post-trial subgroup analyses." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c36b0150e31 a owl:Class ;
+    rdfs:label "Baricitinib will be given at a dose of 2 mg daily if the eGFR is at least 30 and less than 60." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c36cd017fd8 a owl:Class ;
+    rdfs:label "If the treating clinician would usually apply low tidal volume ventilation this is acceptable." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c37a3fade76 a owl:Class ;
+    rdfs:label "All secondary endpoints as specified in Core Protocol documents." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "END_DSA;IG_DSA" .
+
+rcap:c38144b1e19 a owl:Class ;
+    rdfs:label "A standard dose for oseltamivir in children is 6 mg/kg/day, divided into two doses, up to children of 40 kg." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c381f58d58a a owl:Class ;
+    rdfs:label "It is acknowledged that patients hospitalized with respiratory tract infection may not have a causative pathogen diagnosed by clinical assessment or confirmed by microbiological testing." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c384387fa17 a owl:Class ;
+    rdfs:label "Hydrocortisone is to be commenced as soon as septic shock is diagnosed, including immediately after enrollment if septic shock has already been diagnosed." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c3895c1d30c a owl:Class ;
+    rdfs:label "Acceptable modes of ventilation include but are not limited to Pressure Control, Synchronized Intermittent Mandatory Ventilation (SIMV), Assist Control (AC), and APRV." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c38a6a4fdb6 a owl:Class ;
+    rdfs:label "Patient is already receiving or a clinical decision has been made to commence imatinib or another tyrosine kinase inhibitor targeting the same pathway as imatinib (i.e. dasatinib, nilotinib, ponatinib)" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c392ca2f8d9 a owl:Class ;
+    rdfs:label "The treating clinician will set the mode of ventilation as either SIMV, Assist Control, or Pressure Regulated Volume Control, setting the tidal volume to that specified by the on-line eligibility system or calculated by the site." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c39521898a2 a owl:Class ;
+    rdfs:label "Additional domain-specific data will be collected on all participants:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c39a5310383 a owl:Class ;
+    rdfs:label "No change to the interventions within the domain with continuation of RAR. This could be to further evaluate secondary endpoints, a smaller delta of equivalence, or interest in interactions with other interventions. Such changes would require amendment to the DSA. This could occur with or without reporting a Platform Conclusion." ;
+    rdfs:subClassOf rcap:AllocationSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c39ece23ec4 a owl:Class ;
+    rdfs:label "This intervention is only available for patients in the Severe Illness Severity State at time of randomization." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c3a328f808d a owl:Class ;
+    rdfs:label "Antibiotic therapy should be discontinued if there is development of a SAE which, in the opinion of the treating clinician, could be related to participation in this domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:c3a6cd10440 a owl:Class ;
+    rdfs:label "Baloxavir will be administered as follows: Agent Weight < 40 kg Weight 40-80 kg Weight > 80 kg 2 mg/kg on days 1 and Baloxavir 40 mg on days 1 and 4 80 mg on days 1 and 4 4 to max of 40 mg No dose adjustment is necessary for renal impairment, hepatic impairment, or extracorporeal membrane oxygenation." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c3a886e5212 a owl:Class ;
+    rdfs:label "If 1 mg tablets are not available, a 2 mg tablet can be split using a tablet splitter that has a razor blade to administer half a 2 mg tablet once daily." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c3abbbe9446 a owl:Class ;
+    rdfs:label "These may include: Additional outcomes that will be collected, where feasible, will comprise:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c3b6e225db6 a owl:Class ;
+    rdfs:label "C. difficile isolation from feces" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c3be69c8391 a owl:Class ;
+    rdfs:label "Confirmed ischemic cerebrovascular event" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c3c375c3292 a owl:Class ;
+    rdfs:label "A potentially eligible patient who meets any of the following criteria will be excluded from participation in this trial:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c3c4eef02e9 a owl:Class ;
+    rdfs:label "The unit-of-analysis for this domain corresponds to the patients who receive an allocation in this domain, further subdivided by the combination of: Influenza Infection Confirmed Strata (defined as Influenza Infection Confirmed or Influenza Infection Not Confirmed); Shock Strata (defined as Shock Present or Shock Absent); Age Strata (defined as Pediatric, or combined Adolescent and Adult Age Strata); and Illness Severity State (defined as Moderate or Severe State)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c3cdcb22828 a owl:Class ;
+    rdfs:label "Co-existing illnesses and risk factors for respiratory tract infection" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c3d1875c5d8 a owl:Class ;
+    rdfs:label "A pair of equivalent interventions may be compressed into a single group for the purposes of ongoing analyses. Both interventions continue to be interventions that are available within the domain for allocation, but the primary analysis considers the effect of the two interventions as a single group, where a balanced randomization will be assigned to each of the intervention pair within this compressed group. Secondary analyses can continue to be conducted to determine if equivalence is maintained, with the possibility of the intervention being restored as individual interventions if results no longer support equivalence. It is acknowledged that re-analysis of the domain immediately following compression of one (or more) pairs of equivalent interventions may result in the occurrence of other Statistical Triggers (e.g., a compressed pair may be superior or inferior to all remaining interventions). Any Statistical Trigger that results from compression of one or more pairs will be responded to as outlined in this section with reporting of the cascade of Statistical Triggers. Compression of a pair of interventions can occur with or without reporting of a Platform Conclusion." ;
+    rdfs:subClassOf rcap:AllocationSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c3d46cdf2c3 a owl:Class ;
+    rdfs:label "Bilateral opacities on chest imaging not fully explained by effusions, atelectasis, or nodules/masses" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:c3dc68afb7d a owl:Class ;
+    rdfs:label "The generic key secondary endpoints for the trial are:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c3dd8ad249e a owl:Class ;
+    rdfs:label "Survival status at 180 days" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c3deb0fab93 a owl:Class ;
+    rdfs:label "Mortality, censored at 90 days" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c3e253b26d2 a owl:Class ;
+    rdfs:label "Patient has pneumonia" ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    rcap:occursIn "AB_DSA;END_DSA;IIM_DSA;TAB_DSA" .
+
+rcap:c3e403ea549 a owl:Class ;
+    rdfs:label "The population of interest that will be reported as a result of the amendment of this domain are patients who have received an allocation in the Immunoglobulin Domain, including patients who have already been recruited and treated with convalescent plasma, as specified in earlier versions of this DSA." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c3ef0808232 a owl:Class ;
+    rdfs:label "Two additional exploratory outcome measures will be reported." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:c3f206ae93f a owl:Class ;
+    rdfs:label "Collected while participants are admitted to hospital between randomization and Day 28: For participants admitted to ICU at the time of enrollment, or after enrollment: Unless specified otherwise in an RSA or DSA:" ;
+    rdfs:subClassOf rcap:rcdb4b81960 ;
+    rcap:coreStatus "revised" ;
+    rcap:inVersion "4.1" ;
+    rcap:occursIn "CORE41" ;
+    rcap:revisionOf rcap:rcdb4b81960 .
+
+rcap:c3f97b8968e a owl:Class ;
+    rdfs:label "If administered by continuous infusion, the recommended daily dosing is the cumulative dose given in a 24-hour period in the intermittent IV dosing regimens outlined above." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:c403aa283ef a owl:Class ;
+    rdfs:label "Empiric antibiotic therapy for bacterial pneumonia including melioidosis is considered appropriate" ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    rcap:occursIn "TAB_DSA" .
+
+rcap:c4045bb48b3 a owl:Class ;
+    rdfs:label "Patients enrolled in previous versions of this DSA to the 10-day oseltamivir + baloxavir intervention will continue to be nested with the 5-day oseltamivir + baloxavir intervention." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c404c1328e4 a owl:Class ;
+    rdfs:label "This domain is available to patients who are in the Pediatric, Adolescent or Adult Age Strata, as defined in Core Protocol Documents." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA;IAV_DSA;IIM_DSA" .
+
+rcap:c40ca7ab171 a owl:Class ;
+    rdfs:label "Known or suspected pregnancy will result in exclusion from interventions that include baloxavir" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c40e386d490 a owl:Class ;
+    rdfs:label "In the opinion of the treating clinician, the primary contributor to the patient’s Severe Illness State is a respiratory tract infection" ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c40f4f99eeb a owl:Class ;
+    rdfs:label "As with other triggers, the DSMB may recommend that Public Disclosure should be delayed until additional results are available, so as to allow further recruitment to evaluate interactions between interventions in different domains or for other clinically or statistically valid reasons." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c4125d3aa63 a owl:Class ;
+    rdfs:label "SARS-CoV-2" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:c412779c2ab a owl:Class ;
+    rdfs:label "Confirmed or strongly-suspected active mycobacterial infection or invasive fungal infection" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c41ae9d218c a owl:Class ;
+    rdfs:label "This domain is available to patients who are in the Adolescent or Adult Age Strata, as defined in Core Protocol documents." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c4238bd9ab4 a owl:Class ;
+    rdfs:label "However, if the pandemic pathogen is considered to be sufficiently similar to an existing pathogen (e.g., pandemic influenza virus and seasonal influenza virus) it will be an operational decision as to whether borrowing, pooling, or an independent analysis occurs in the primary statistical model." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c4320f7169f a owl:Class ;
+    rdfs:label "Confirmed ischemic stroke" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c43c010fe98 a owl:Class ;
+    rdfs:label "Patient is already receiving, or a clinical decision has been made to commence, an antiviral active against influenza other than oseltamivir or baloxavir." ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c43da49de59 a owl:Class ;
+    rdfs:label "If reveal of allocation occurs after Study Day 3, and the patient is allocated to standard course macrolide, discontinued immediately." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:c4420ca6ee4 a owl:Class ;
+    rdfs:label "The secondary outcomes will have statistical testing performed." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_40" ;
+    rcap:occursIn "CORE40" .
+
+rcap:c44479053d2 a owl:Class ;
+    rdfs:label "Participants who have been, and still are, admitted to a healthcare facility 90 days after enrollment are coded as being alive." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "moved" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c44502bc4c4 a owl:Class ;
+    rdfs:label "Even after all microbiological and other clinical information is available it may not be possible to identify the pathogen(s) responsible for an episode of infection." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c445ffd4093 a owl:Class ;
+    rdfs:label "No immune modulation (no placebo)" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c44fce0b79e a owl:Class ;
+    rdfs:label "The preferred IV macrolide is azithromycin, but IV clarithromycin may be substituted." ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:c45959ad7c8 a owl:Class ;
+    rdfs:label "The threshold odds ratio delta for efficacy and futility in this domain are those specified as the default thresholds in the relevant Core Protocol documents." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c45bf8da54f a owl:Class ;
+    rdfs:label "Invasive mechanical ventilation" ;
+    rdfs:subClassOf obo:IAO_0000033 ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41;PANDA" .
+
+rcap:c45c4bf1083 a owl:Class ;
+    rdfs:label "The allocated intervention should be commenced immediately after reveal of allocation." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:c460eabd0d4 a owl:Class ;
+    rdfs:label "Additional secondary endpoints may be specified for a domain within the DSA." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c46fe2e7c1f a owl:Class ;
+    rdfs:label "Administration of a monoclonal antibody preparation is permitted prior to time of reveal of assigned treatment." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c486a11a14d a owl:Class ;
+    rdfs:label "Confirmed pulmonary embolism" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "END_DSA;IG_DSA" .
+
+rcap:c494ee9cfa6 a owl:Class ;
+    rdfs:label "All secondary endpoints as specified in the Core Protocol." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;CS_DSA;IAV_DSA;MD_DSA;MV_DSA;TAB_DSA" .
+
+rcap:c49640af252 a owl:Class ;
+    rdfs:label "Known or suspected pregnancy or breast-feeding will exclude a patient from receiving enteral imatinib. It is normal practice that women admitted who are in an age group in which pregnancy is considered possible will have a pregnancy test conducted. The results of such tests will be used to determine interpretation of this exclusion criteria" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c49b78eb6d0 a owl:Class ;
+    rdfs:label "Baricitinib" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c49cafec9f1 a owl:Class ;
+    rdfs:label "The threshold probability for statistical triggers for superiority, efficacy, and inferiority, are those specified in the relevant Core Protocol documents." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA;IAV_DSA" .
+
+rcap:c4ac501a924 a owl:Class ;
+    rdfs:label "Date and time of ICU admission and discharge" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c4bdde963ff a owl:Class ;
+    rdfs:label "Change from baseline in influenza virus levels, measured from upper or lower respiratory tract specimens taken while the patient remains in hospital at baseline, D3 and at D7 ." ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c4bf9cd2f70 a owl:Class ;
+    rdfs:label "Removal of one of the pair of equivalent interventions from the domain, for example the more burdensome or more expensive intervention, which will result in a reporting of a Platform Conclusion." ;
+    rdfs:subClassOf rcap:AllocationSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c4bfcda7010 a owl:Class ;
+    rdfs:label "patients who are receiving invasive mechanical ventilation with a PEEP of 5 cm of water or more and have a P:F ratio of <200 mmHg (or a S/F < 235)" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:c4c016e4e79 a owl:Class ;
+    rdfs:label "Additional domain-specific data will be collected." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;CS_DSA;END_DSA;IAV_DSA;IIM_DSA;MV_DSA;TAB_DSA" .
+
+rcap:c4c7e690055 a owl:Class ;
+    rdfs:label "Criteria that exclude a patient from a one or more interventions are:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;CS_DSA;END_DSA;IAV_DSA;IG_DSA;IIM_DSA;TAB_DSA" .
+
+rcap:c4cc19b3e1e a owl:Class ;
+    rdfs:label "Amoxicillin-clavulanate + Macrolide" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c4cc781e6f7 a owl:Class ;
+    rdfs:label "If no local guidelines exist, it is recommended that subsequent doses of antibiotics will be adjusted for estimated renal function (based on estimated Glomerular Filtration Rate (eGFR) and receipt of continuous renal replacement therapy (CRRT)) as follows:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "TAB_DSA" .
+
+rcap:c4dd673b17d a owl:Class ;
+    rdfs:label "Currently receiving respiratory support (meeting the Severe Illness Severity State organ failure definition) with FiO 2 ≥ 0.40" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:c4dfe8b449c a owl:Class ;
+    rdfs:label "Patient is aged ≥ 28 days old (corrected gestational age)" ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c4e1cf278ed a owl:Class ;
+    rdfs:label "This stratum definition will be applied retrospectively to patients enrolled using earlier versions of this domain and applied prospectively, operationalized as eligibility criteria, for Version 3 of this DSA onwards (i.e., only patients meeting this stratum definition are recruited using this version of the DSA)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c4e23070952 a owl:Class ;
+    rdfs:label "All patients receiving ceftriaxone, piperacillin-tazobactam, or amoxicillin-clavulanate will also receive a macrolide." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c4ea2e1b3d0 a owl:Class ;
+    rdfs:label "Landmark mortality at Day 90 post-randomization," ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "moved" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c4ee594ef26 a owl:Class ;
+    rdfs:label "SARS-CoV-2 infection has been confirmed by microbiological testing" ;
+    rdfs:subClassOf obo:IAO_0000033 ;
+    rcap:occursIn "IG_DSA;IIM_DSA" .
+
+rcap:c4fc623517c a owl:Class ;
+    rdfs:label "Randomization is only permitted once in each defined disease stage and illness severity analytic strata are always applied for domains that randomize patients in more than one stage of illness severity." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c4fd9f6e576 a owl:Class ;
+    rdfs:label "Change to a targeted antibiotic therapy if a microbiological diagnosis has been made" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c502d29f324 a owl:Class ;
+    rdfs:label "Serious ventricular arrhythmia (including ventricular fibrillation) or sudden unexpected death in hospital" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:c507e561118 a owl:Class ;
+    rdfs:label "The primary unit-of-analysis, for both analysis of treatment effect and the Response Adaptive Randomization (RAR), corresponds to patients who have received an allocation within this domain (i.e." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c50952502b5 a owl:Class ;
+    rdfs:label "Administration of systemic corticosteroids" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c5195342be2 a owl:Class ;
+    rdfs:label "If required, any such modifications will be an operational decision of the Design Team specified in the Current State document and applied by the SAC." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA;END_DSA;IAV_DSA;IIM_DSA" .
+
+rcap:c51e00a244f a owl:Class ;
+    rdfs:label "The rationale for avoiding an exact dose is because no particular dose signifies 'shock' unambiguously." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c51f246f1be a owl:Class ;
+    rdfs:label "Baseline variables are defined as at or before the time of randomization." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c526f7bee55 a owl:Class ;
+    rdfs:label "*High-flow oxygen is defined as a fractional inspired oxygen concentration of 0.4 or higher and with flow rate of at least 30 liters per minute (or at least 2 liters per minute per kilogram of bodyweight in children less than 15 kilograms)." ;
+    rdfs:subClassOf rcap:r87900e2424 ;
+    rcap:coreStatus "revised" ;
+    rcap:inVersion "4.1" ;
+    rcap:occursIn "CORE41" ;
+    rcap:revisionOf rcap:r87900e2424 .
+
+rcap:c52c26d1d8a a owl:Class ;
+    rdfs:label "Febrile neutropenia or significant immunosuppression (including organ or bone marrow transplantation, human immunodeficiency virus infection with CD4 cell count <200 cells/µL, systemic immunosuppressive, systemic corticosteroids comprising prednisolone, or equivalent, ≥20mg/day for > 4 preceding weeks)." ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:c53195b678c a owl:Class ;
+    rdfs:label "Suspected melioidosis ǂ" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c535284f31d a owl:Class ;
+    rdfs:label "C. difficile illness based on detection from feces using current standard of care diagnostics used at site" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:c53bb58e5f4 a owl:Class ;
+    rdfs:label "It is permitted to provide these antibiotics via intermittent, prolonged, or continuous infusion." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:c53bf0a00bd a owl:Class ;
+    rdfs:label "Hospital survival" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c5462fafecb a owl:Class ;
+    rdfs:label "Results of microbiological testing" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c554b463214 a owl:Class ;
+    rdfs:label "discharged from ICU to a ward) before completion of the 10-day course of baricitinib, it is the responsibility of the randomizing team to prescribe any doses of baricitinib to complete the 10-day course." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c558729b3a7 a owl:Class ;
+    rdfs:label "All use of systemic corticosteroids is recorded and the reason for any administration after Study Day 10 will be documented." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c55d9a5de16 a owl:Class ;
+    rdfs:label "* MRSA: Suspected MRSA infection is not an exclusion criterion." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:c5652e9a818 a owl:Class ;
+    rdfs:label "Domains can select the infection likelihood threshold that is required for eligibility." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c56da4f7386 a owl:Class ;
+    rdfs:label "Extended course macrolide for 14 days or hospital discharge, whichever occurs first" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:c56db8a6da3 a owl:Class ;
+    rdfs:label "Patients allocated to the shock-dependent duration hydrocortisone intervention, will receive hydrocortisone, IV 50 mg every 6 hours, commenced if septic shock develops as a result of the patient’s respiratory tract infection, up until study day 28." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c56e57f1ead a owl:Class ;
+    rdfs:label "For patients who are discharged or transferred from the participating clinical area (e.g." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c573bcf8236 a owl:Class ;
+    rdfs:label "Survival at 180 days after enrollment (where feasible, refer to relevant regional RSA)" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c57419c1d38 a owl:Class ;
+    rdfs:label "IV clarithromycin, with switch to enteral azithromycin when appropriate" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:c5770ae5285 a owl:Class ;
+    rdfs:label "The primary endpoint for this domain is the primary outcome specified in the Core Protocol." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;END_DSA;IAV_DSA;IIM_DSA;MD_DSA;TAB_DSA" .
+
+rcap:c587f017b4f a owl:Class ;
+    rdfs:label "Hospitalization or death due to major adverse cardiovascular events (at sites where linked data are available)" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c58d3c964c9 a owl:Class ;
+    rdfs:label "The appropriate dose of drug will be mixed in a 100 ml bag of 0.9% saline, after removing an equivalent volume of saline, 0.4ml/kg, to match the added drug, so that the total volume is 100 mls." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c590db8e067 a owl:Class ;
+    rdfs:label "Death is deemed to be imminent and inevitable during the next 24 hours AND one or more of the patient, substitute decision maker or attending physician are not committed to full active treatment." ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c597271389c a owl:Class ;
+    rdfs:label "Ceftazidime 2 grams administered intravenously (IV) every 8 hours" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "TAB_DSA" .
+
+rcap:c599074e5e9 a owl:Class ;
+    rdfs:label "At any time, if the tidal volume is less than that specified following calculation from the patient’s height and the plateau pressure is 29 cm or less, the tidal volume should be increased in 5% increments to achieve a tidal volume as close to, but not exceeding, the specified target tidal volume while maintain plateau pressure of not more than 30 cm H 2 O." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c59ffd75f17 a owl:Class ;
+    rdfs:label "The default threshold probability of a statistical trigger for futility is as specified in the core protocol." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c5a9afc4a18 a owl:Class ;
+    rdfs:label "Patient has already received one or more doses of baloxavir" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c5ab9f3456c a owl:Class ;
+    rdfs:label "HRQoL measured by EQ-5D or EQ-5D-Y and PedsQL-SF15 in participants aged less than 18 years at 180 days" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c5b0b69722b a owl:Class ;
+    rdfs:label "Baseline ventilatory, physiological parameters and arterial blood gas parameters" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c5b61229d68 a owl:Class ;
+    rdfs:label "Patients in whom all interventions are contraindicated will be treated according to the current standard of care at the clinician’s discretion." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;CS_DSA;END_DSA;IIM_DSA;TAB_DSA" .
+
+rcap:c5c4df60c48 a owl:Class ;
+    rdfs:label "Administration of allocated medications" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c5cecd99a5f a owl:Class ;
+    rdfs:label "An alanine aminotransferase or an aspartate aminotransferase that is more than five times the upper limit of normal will result in exclusion from receiving tocilizumab" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c5cfc3e893b a owl:Class ;
+    rdfs:label "This Appendix defines the following categories:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c5cfed2565b a owl:Class ;
+    rdfs:label "Patients may have multiple intervention exclusions (e.g." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c5dc5cbaa4f a owl:Class ;
+    rdfs:label "In this regard, the Macrolide Duration Domain sits within the macrolide-containing interventions of Antibiotic Domain(s) within this Platform." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:c5eb0851e13 a owl:Class ;
+    rdfs:label "Empiric antibiotic therapy for bacterial pneumonia is considered appropriate" ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c5f64d55307 a owl:Class ;
+    rdfs:label "Administration of renal replacement therapy" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c5f86629818 a owl:Class ;
+    rdfs:label "The duration of administration of the interventions outlined in this domain is at the discretion of the treating clinician." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c5fd82fa36d a owl:Class ;
+    rdfs:label "Community-acquired, defined as acute infection acquired outside of the hospital and manifesting within 48 hours of hospital admission" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:c608aaeeb9b a owl:Class ;
+    rdfs:label "If in the Severe State, patient has pneumonia" ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c6218f33cb2 a owl:Class ;
+    rdfs:label "If in the Moderate State, more than 96 hours has elapsed since hospital admission" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c627ea981bb a owl:Class ;
+    rdfs:label "HRQoL at 180 days after enrollment using the EQ5D-5L or EQ-5D-Y and PedsQL-SF15 in participants aged less than 18 years (where feasible, refer to relevant regional RSA)" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c62d08e12d8 a owl:Class ;
+    rdfs:label "More than 48 hours has elapsed since commencement of sustained organ failure support." ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "END_DSA;IIM_DSA" .
+
+rcap:c6333bb2823 a owl:Class ;
+    rdfs:label "clearly recovering from their acute respiratory tract infection AND" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:c634411012a a owl:Class ;
+    rdfs:label "Administration of a tidal volume of more than 6.0 ml/kg PBW or a plateau pressure of 30 cm H20 or more is a protocol deviation unless the pH is less than 7.15." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c6379004c57 a owl:Class ;
+    rdfs:label "High titer convalescent plasma" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c63908c2226 a owl:Class ;
+    rdfs:label "Qualifying immunosuppressive diseases and treatments are defined in an operational document." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c63e7da15e3 a owl:Class ;
+    rdfs:label "Enteral imatinib" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c6434a3b7ee a owl:Class ;
+    rdfs:label "Baricitinib will be commenced as soon as possible following reveal of allocation and will be administered for 10 days or until hospital discharge, whichever occurs first." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c64d13396b5 a owl:Class ;
+    rdfs:label "In children aged >2 years and <9 years, a baseline eGFR <30 mL/min/1.73m 2 and/or receipt of renal replacement therapy (including long-term renal replacement therapy) at baseline will result in exclusion from receiving baricitinib" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c64daa4653d a owl:Class ;
+    rdfs:label "The dose of all macrolides is the same for IV and enteral administration and no dose adjustment is required for alterations in renal function including if the patient is receiving renal replacement therapy." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:c64ec076e74 a owl:Class ;
+    rdfs:label "The choice of enteral or IV administration is at the discretion of the treating clinician based on the patient’s ability to take enteral medication and illness severity including likely gastric absorption rates." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c65709c1927 a owl:Class ;
+    rdfs:label "The statistical model will not permit borrowing between Severity States but will borrow between Age Strata, as specified in the Core Protocol." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c6591df809e a owl:Class ;
+    rdfs:label "Isolation or detection of MROs" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:c66579d1944 a owl:Class ;
+    rdfs:label "Acute respiratory tract infection" ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c66f12cc92f a owl:Class ;
+    rdfs:label "Severe renal impairment (eGFR <30 mL/min/1.73m 2 ) and/or receipt of renal replacement therapy (including long-term renal replacement therapy) at baseline will result in exclusion from receiving imatinib" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c6959a0587f a owl:Class ;
+    rdfs:label "Known viral hepatitis B or hepatitis C will exclude a patient from receiving imatinib" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c6a2bdef4ca a owl:Class ;
+    rdfs:label "Respiratory tract infection can be acquired in the community or in hospital." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c6a51302e4c a owl:Class ;
+    rdfs:label "No dosage adjustment is suggested for Body Mass Index (BMI), pregnancy, or for extracorporeal membrane oxygenation." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c6a712fb80d a owl:Class ;
+    rdfs:label "SARS-CoV-2 antibody status at baseline" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c6a8feb5659 a owl:Class ;
+    rdfs:label "Reveal of allocation status can occur at any time before the end of Study Day 5 after randomization to a macrolide-containing intervention within an Antibiotic Domain of this Platform, as soon as sufficient information is available to confirm eligibility." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:c6bea1689f9 a owl:Class ;
+    rdfs:label "Dosage guidance of vasopressor for initiation of corticosteroids for this intervention is described in a separate operational document." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c6c3b3de8ef a owl:Class ;
+    rdfs:label "The following doses (Table 2) are provided as guidance and may be modified according to local guidelines or practice." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:c6c97a30d25 a owl:Class ;
+    rdfs:label "For RAR, allocation proportions will be capped at 75% for two-intervention domains, unless otherwise specified in a DSA." ;
+    rdfs:subClassOf rcap:r52076d4ff9 ;
+    rcap:coreStatus "revised" ;
+    rcap:inVersion "4.1" ;
+    rcap:occursIn "CORE41" ;
+    rcap:revisionOf rcap:r52076d4ff9 .
+
+rcap:c6c9dcda960 a owl:Class ;
+    rdfs:label "Bacteria known to cause respiratory tract infection" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:c6cb92153ee a owl:Class ;
+    rdfs:label "Progression to IMV/ECLS/death" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "only_40" ;
+    rcap:occursIn "CORE40" .
+
+rcap:c6d1c3df7f2 a owl:Class ;
+    rdfs:label "Patient is aged ≥2 years" ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c6d2d9b72d9 a owl:Class ;
+    rdfs:label "Some domain-specific secondary endpoints may be specified as Key Domain-Specific Endpoints and will be interpreted in conjunction with the primary endpoint in determining the overall effectiveness of interventions." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c6da44bf065 a owl:Class ;
+    rdfs:label "Respiratory virus infection (influenza, SARS-CoV-2, MERS-CoV, RSV and any other recognized viral respiratory pathogen grouped together) is stratified as viral infection confirmed (a recognized viral respiratory pathogen is detected on microbiological testing with a clinically compatible illness) and respiratory viral infection not confirmed." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c6e0ef15ff9 a owl:Class ;
+    rdfs:label "Known non-serious hypersensitivity to penicillins will result in exclusion from receiving interventions that include piperacillin and amoxicillin" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c6e16e97770 a owl:Class ;
+    rdfs:label "Patient is aged ≥ 16 years old" ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c6e4a622d7b a owl:Class ;
+    rdfs:label "Nesting is not applicable to this domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA;IIM_DSA;MD_DSA;MV_DSA" .
+
+rcap:c6f0eda0eb3 a owl:Class ;
+    rdfs:label "Previous versions of this DSA incorporated a 10-day duration of oseltamivir intervention, which has been removed from this version." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c6fb7a69975 a owl:Class ;
+    rdfs:label "No immunoglobulin against COVID-19 (no placebo)" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c701544ad16 a owl:Class ;
+    rdfs:label "Hospitalized on extracorporeal life support (ECLS) or invasive mechanical ventilation (IMV)" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "only_40" ;
+    rcap:occursIn "CORE40" .
+
+rcap:c70b281ddd1 a owl:Class ;
+    rdfs:label "Patients may also be excluded from receiving one or both interventions within the domain for patient-specific reasons." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "TAB_DSA" .
+
+rcap:c70c1cc212f a owl:Class ;
+    rdfs:label "Administration of a systemic corticosteroid, including hydrocortisone or dexamethasone, is permitted only for the treatment of new illnesses that develop in the course of a patient’s hospital stay, such as asthma, airway swelling or treatment of an allergic reaction." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c70fcba7483 a owl:Class ;
+    rdfs:label "The primary endpoint for this domain is as specified in Core Protocol documents." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA;IG_DSA;MV_DSA" .
+
+rcap:c711c3155bb a owl:Class ;
+    rdfs:label "Days alive and out of hospital to day 28" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:c712552cb85 a owl:Class ;
+    rdfs:label "In this regard, consideration should be given to the development of ventricular dysrhythmias and evaluation of the QT interval during the intervention period and prior to discontinuation of continuous ECG monitoring." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:c715f02f8d2 a owl:Class ;
+    rdfs:label "If two interventions within this domain, for a unit-of-analysis, have at least a 0.90 probability of being within a pre-specified delta for the primary endpoint then these interventions will be deemed as being equivalent." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;CS_DSA;IAV_DSA;IIM_DSA;TAB_DSA" .
+
+rcap:c7194d0f95a a owl:Class ;
+    rdfs:label "Previous enrollment in this Platform within the last 90 days" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c71fe32f4bd a owl:Class ;
+    rdfs:label "For RAR, allocation proportions will be capped at 60% for two-intervention domains, unless otherwise specified in a DSA." ;
+    rdfs:subClassOf rcap:r52076d4ff9 ;
+    rcap:coreStatus "revised" ;
+    rcap:inVersion "4.0" ;
+    rcap:occursIn "CORE40" ;
+    rcap:revisionOf rcap:r52076d4ff9 .
+
+rcap:c724a498c9a a owl:Class ;
+    rdfs:label "ǂ Melioidosis: Sites in areas where melioidosis is endemic (including Northern Australia and South-East Asia) where antibiotic treatment protocols specify antibiotics active against Burkholderia pseudomallei (e.g., ceftazidime or meropenem) will not participate in this domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c73967ff128 a owl:Class ;
+    rdfs:label "The discontinuation of a domain, or interventions within a domain, in response to reaching a Statistical Trigger will not require a protocol amendment." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c74d77f164d a owl:Class ;
+    rdfs:label "Administration of rescue therapies" ;
+    rdfs:subClassOf obo:IAO_0000033 ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c7573c19064 a owl:Class ;
+    rdfs:label "SAE as defined in the core protocol documents and qualified in this DSA" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c7584fb6acd a owl:Class ;
+    rdfs:label "Participating sites may choose to offer this domain to patients in one or both of these Illness Severity States." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA;IAV_DSA;IG_DSA" .
+
+rcap:c759e6b1e5d a owl:Class ;
+    rdfs:label "Where compression converts a domain with three or more interventions into a domain with two interventions (and data continues to support equivalence of the compressed interventions) such a domain will be regarded as a two-intervention domain for the purposes of RAR and for evaluation of Statistical Triggers for superiority, inferiority, and equivalence." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c761a97ac05 a owl:Class ;
+    rdfs:label "The respiratory rate is set by the treating clinician with the goal of achieving the targeted PaCO 2 and adjusted, as required, to achieve the PaCO 2 target." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c762828ec4b a owl:Class ;
+    rdfs:label "In the presence of severe acidosis, bicarbonate may be administered, at the discretion of the treating clinician." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c766b35362d a owl:Class ;
+    rdfs:label "Discharged from index hospitalization Respiratory Infection Ordinal Weighted Score" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:c766b87cc4e a owl:Class ;
+    rdfs:label "Baricitinib will be given at a dose of 1 mg daily if the eGFR is at least 15 and less than 30 mL/min/1.73m 2 ." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c7772292f5f a owl:Class ;
+    rdfs:label "As co-infection is a common finding in the respiratory tract, Domains can constrain eligibility and define analysis populations to include or exclude patients with an assigned pathogen status in one or more of these categories." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c77ba2be096 a owl:Class ;
+    rdfs:label "All use of systemic corticosteroids is recorded and the reason for any administration will be documented." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c77c332e823 a owl:Class ;
+    rdfs:label "This Appendix defines pathogen analysis strata that contribute to the unit-of-analysis for the following pathogens: Influenza virus infection is stratified as influenza confirmed (influenza virus detected on microbiological testing with a compatible clinical assessment) and influenza not confirmed." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c790b78b24e a owl:Class ;
+    rdfs:label "Survival status at 28 days" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c796cb21447 a owl:Class ;
+    rdfs:label "Following any Platform Conclusion in this domain, a sensitivity analysis will be conducted that is restricted to patients randomized concurrently to P1 and P4 interventions." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c7a19fee7fd a owl:Class ;
+    rdfs:label "Survival status at hospital discharge" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c7a203272b8 a owl:Class ;
+    rdfs:label "The same odds ratio delta as specified in the relevant Core Protocol documents for equivalence will be used for futility." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c7a4a3d204c a owl:Class ;
+    rdfs:label "The timing of the revealing of allocation status and administration of interventions is specified to be Randomization with Immediate Reveal and Initiation, or with Delayed Reveal and Initiation, for situations where randomization occurs before influenza test results are available, with reveal of allocation occurring at time of confirmed positive result." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c7b4a0d3026 a owl:Class ;
+    rdfs:label "The maximum rate is 35 breaths per minute." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c7b592a7e46 a owl:Class ;
+    rdfs:label "There is sufficient microbiological information to guide specific antibacterial therapy" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:c7bbb84cd18 a owl:Class ;
+    rdfs:label "If the treating clinician suspects MRSA pneumonia, these patients should be included (see Section 8.3.5)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:c7bc833fbed a owl:Class ;
+    rdfs:label "Known previous history of transfusion-related acute lung injury will exclude a patient from receiving high titer plasma" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c7c5d9e9c31 a owl:Class ;
+    rdfs:label "The timing of the revealing of allocation status and administration of interventions is specified to be Randomization with Immediate Reveal and Initiation or Randomization with Deferred Reveal and Initiation (see relevant Core Protocol documents)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c7c759a1608 a owl:Class ;
+    rdfs:label "The doses specified below are recommended minimum doses and may be modified according to local guidelines or practice." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:c7ca5b8485d a owl:Class ;
+    rdfs:label "C. difficile detection from feces" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "TAB_DSA" .
+
+rcap:c7cb95286f2 a owl:Class ;
+    rdfs:label "The Respiratory Infection Ordinal Weighted Score will use the same ordinal scale categories as in the Survival and Recovery Trajectory described above but will be transformed to a numeric value between 0 (best) and 1 (worst) that reflects the severity of a patient’s illness and recovery trajectory over 28 days." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:c7d9db91aab a owl:Class ;
+    rdfs:label "If, at any time after reveal of allocation, there is confirmed diagnosis (or a strong clinical suspicion) of legionellosis or other microbiological diagnosis of an ‘atypical’ organism, then effective treatment for ‘atypical’ organisms must be provided." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:c7e00deda39 a owl:Class ;
+    rdfs:label "However, declaration of a Platform Conclusion will always result in the removal of inferior or harmful interventions from a domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c7e5aa8a12c a owl:Class ;
+    rdfs:label "Any patient randomized to standard course macrolide, in whom legionellosis or another ‘atypical’ organism is diagnosed after cessation of macrolide, must commence treatment that is effective against the organisms such as a macrolide or fluoroquinolone." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:c7e605d5258 a owl:Class ;
+    rdfs:label "Hospital length-of-stay" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "only_40" ;
+    rcap:occursIn "CORE40" .
+
+rcap:c7f0201166f a owl:Class ;
+    rdfs:label "Known non-serious hypersensitivity to cephalosporins will result in exclusion from receiving interventions that include ceftriaxone" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c7fd21cde5f a owl:Class ;
+    rdfs:label "This domain is available to patients who are in the Severe Illness Severity State, as defined in Core Protocol documents." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;END_DSA;IIM_DSA;MD_DSA;MV_DSA;TAB_DSA" .
+
+rcap:c80882e3170 a owl:Class ;
+    rdfs:label "No other strata will contribute to the unit-of-analysis, although this may be modified as an operational decision as specified in the Current State document." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c814b709fb3 a owl:Class ;
+    rdfs:label "Shock State, defined in two categories, present or absent, with ‘present’ defined as patients receiving a continuous infusion of intravenous vasopressor or inotrope medications" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:c81b03e311b a owl:Class ;
+    rdfs:label "Moxifloxacin or Levofloxacin" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c81b67d784e a owl:Class ;
+    rdfs:label "All secondary endpoints as specified in the Core Protocol The domain-specific secondary outcome measures (from randomization, during the index hospitalization, censored 90 days after enrollment) will be:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c82d12c69d9 a owl:Class ;
+    rdfs:label "Patient is aged ≥ 28 days old" ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c83bd011155 a owl:Class ;
+    rdfs:label "Each participating site has the option to opt-in to one or more of the remaining interventions depending on local clinical preference, usual practice, acceptable practice, and the availability of the agent at that site." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c83be773831 a owl:Class ;
+    rdfs:label "Amoxicillin-clavulanate ≥1200mg administered IV every 8 hours" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c83c14adf1c a owl:Class ;
+    rdfs:label "Any and all ventilatory parameters, including mode of ventilation, can be adjusted at any time." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c83d2f160ad a owl:Class ;
+    rdfs:label "It is possible that a superior or efficacious intervention will be retained but subjected to further evaluation to refine the optimal characteristics (for example duration of therapy or optimal dose)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c8427635eb7 a owl:Class ;
+    rdfs:label "A neutrophil count <1.0 x 10 9 / L" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c852f3fa15d a owl:Class ;
+    rdfs:label "Piperacillin-tazobactam + Macrolide" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c85858c8378 a owl:Class ;
+    rdfs:label "Refer to relevant Core Protocol documents for criteria for discontinuation of participation in this trial." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;CS_DSA;END_DSA;IAV_DSA;IG_DSA;IIM_DSA;MD_DSA;MV_DSA;TAB_DSA" .
+
+rcap:c876d85ebab a owl:Class ;
+    rdfs:label "This hierarchical ordinal scale is a composite of:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "moved" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c88d652552d a owl:Class ;
+    rdfs:label "SARS-CoV-2 infection is stratified as SARS-CoV-2 infection confirmed (SARS-CoV-2 detected on microbiological testing with a compatible clinical assessment) and SARS-CoV-2 not confirmed." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c89c6bd7fd6 a owl:Class ;
+    rdfs:label "Date and time of hospital admission" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c89d09ee65a a owl:Class ;
+    rdfs:label "Tocilizumab will be commenced as soon as possible following reveal of allocation and administered as an intravenous infusion via a central or peripheral line over a one-hour period." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c8aa5949cb6 a owl:Class ;
+    rdfs:label "Hospital discharge destination" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c8b63ca6c9c a owl:Class ;
+    rdfs:label "Known or suspected pregnancy will result in exclusion from the baricitinib intervention. It is normal clinical practice that women admitted who are in an age group in which pregnancy is possible will have a pregnancy test conducted. The results of such tests will be used to determine interpretation of this exclusion criteria." ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c8bc517a21d a owl:Class ;
+    rdfs:label "Patients are eligible for this domain if:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;CS_DSA;END_DSA;IAV_DSA;IG_DSA;IIM_DSA;MV_DSA;TAB_DSA" .
+
+rcap:c8c1b7c82a3 a owl:Class ;
+    rdfs:label "Within one week of the estimated onset of new or worsening respiratory symptoms" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:c8ca25838f1 a owl:Class ;
+    rdfs:label "patients who are not receiving invasive mechanical ventilation" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:c8cab22acf8 a owl:Class ;
+    rdfs:label "Severe neutropenia (defined as neutrophil count <1.0 x 10 9 /L)" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c8ce90776ba a owl:Class ;
+    rdfs:label "In addition to Domain-specific data required as a consequence of participation in the Antibiotic Domain, patients who are randomized in this domain will have the following data collected:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:c8d1e9454aa a owl:Class ;
+    rdfs:label "Hospitalized on non-invasive ventilation or high-flow oxygen*" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "moved" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c8da9e5a430 a owl:Class ;
+    rdfs:label "Dates of ICU readmission and discharge during the index hospitalization" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c8de130c28c a owl:Class ;
+    rdfs:label "Ceftriaxone + Macrolide" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c8e9a8b7596 a owl:Class ;
+    rdfs:label "Respiratory tract infection can manifest as a range of disease entities." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c8efcf1d144 a owl:Class ;
+    rdfs:label "At that point, randomization to all other remaining interventions in the domain and in that unit-of-analysis where superiority or efficacy has been declared will be halted at sites at which the relevant intervention is available." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c8f0bf764e2 a owl:Class ;
+    rdfs:label "The allocated intervention should be discontinued if there is development of a SAE which, in the opinion of the treating clinician, could be related to participation in this domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c8f3e270ba9 a owl:Class ;
+    rdfs:label "Hydrocortisone administration is to cease when the clinician believes that septic shock has resolved." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c8f73b85657 a owl:Class ;
+    rdfs:label "Corticosteroids can be administered, either by enrolment in the Corticosteroid Domain of REMAP-CAP or as determined by the treating clinician." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c8fb4c49cb7 a owl:Class ;
+    rdfs:label "In adults and in children 9 years of age and older, baricitinib will be administered enterally at a dose of 4 mg daily if the eGFR is at least 60 mL/min/1.73m 2 ." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c8fd5723cf0 a owl:Class ;
+    rdfs:label "Administration of antiviral medications active against influenza" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:c9061fee8f6 a owl:Class ;
+    rdfs:label "Daily ventilatory and physiological parameters and arterial blood gas parameters" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c90847b31b4 a owl:Class ;
+    rdfs:label "Baseline and nadir platelet and neutrophil counts (between randomization and day 15) and date of nadir result" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c9109c66618 a owl:Class ;
+    rdfs:label "The infusion speed must be 10 mls per hour for 15 minutes and then increased to 130 mls per hour for the next 45 minutes." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c910da2da31 a owl:Class ;
+    rdfs:label "Occurrence and duration of prone ventilation" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c91b4608fe0 a owl:Class ;
+    rdfs:label "Occurrence of barotrauma" ;
+    rdfs:subClassOf obo:IAO_0000033 ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c9219e5fe98 a owl:Class ;
+    rdfs:label "The entry criteria of the domain are designed to identify patients who are likely to require invasive mechanical ventilation for at least 24 hours." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c927d647e14 a owl:Class ;
+    rdfs:label "Patients assigned to this intervention are not to receive any additional targeted immune modulation therapy until the end of study day 28 or hospital discharge, whichever occurs first." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c9291b4492d a owl:Class ;
+    rdfs:label "Demographic data" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c92cfc5ceb8 a owl:Class ;
+    rdfs:label "All patients who die on or before day 90 will be assigned a score of ‘1’." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:c933da4f669 a owl:Class ;
+    rdfs:label "More than 48 hours has elapsed since commencement of invasive mechanical ventilation" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c93bcad2a88 a owl:Class ;
+    rdfs:label "Hypoxemic State, defined in 3 categories comprising:" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:c93d0ed0860 a owl:Class ;
+    rdfs:label "Response-adaptive randomization will be applied for this domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;MD_DSA" .
+
+rcap:c93f429f76c a owl:Class ;
+    rdfs:label "Positive blood culture for pathogenic bacteria and/or fungus during this hospitalization and more than 48 hours following randomization" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c93f9ab717f a owl:Class ;
+    rdfs:label "Vasopressor-free days at day 28" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c93fb75134e a owl:Class ;
+    rdfs:label "This can be either prolonged macrolide treatment or substitution with a fluoroquinolone or other active agent." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:c94270b8f05 a owl:Class ;
+    rdfs:label "The timing of the revealing of allocation status and administration of interventions is specified to be Randomization with Immediate Reveal and Initiation, or Randomization with Deferred Reveal and Initiation if prospective agreement is required for participation in this domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:c945e1d2493 a owl:Class ;
+    rdfs:label "It is recognised that there is a wide range of regulatory approaches and attitudes to the evaluation of interventions in pregnant trial participants across participating regions and sites. Known or suspected pregnancy is not an intervention-level exclusion for the tocilizumab intervention by default; however, if a site does not have regulatory approval to enrol pregnant patients to the tocilizumab intervention, known or suspected pregnancy will be applied as an intervention-specific exclusion and will result in exclusion from the tocilizumab intervention." ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c947cb519f4 a owl:Class ;
+    rdfs:label "The high titer convalescent plasma (active intervention specified in this DSA and designated the intervention code ‘P4’) will be nested with the (low titer) convalescent plasma intervention (intervention code ‘P2’ and the active intervention in earlier versions of this DSA approved in regions other than the United States) in the Immune Suppressed and Non-Immune Suppressed Strata." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c949256d13a a owl:Class ;
+    rdfs:label "Status for all applicable states and strata" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c955a3279e8 a owl:Class ;
+    rdfs:label "Enteral imatinib will be administered for a total of 14 days or until hospital discharge, whichever occurs first." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c969a345043 a owl:Class ;
+    rdfs:label "IV azithromycin, with switch to enteral azithromycin when appropriate" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:c969c498ac0 a owl:Class ;
+    rdfs:label "Patients allocated to the moxifloxacin or levofloxacin intervention will not receive a macrolide or any beta-lactam or monobactam agent." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:c96f99cecfd a owl:Class ;
+    rdfs:label "However, continued administration of the course of baricitinib after discharge from the participating clinical area is a clinical decision that is at the discretion of the treating clinician." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c9710c0df45 a owl:Class ;
+    rdfs:label "Serious ventricular arrhythmia (including ventricular fibrillation) or sudden unexpected death in hospital." ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:c97191d8ecd a owl:Class ;
+    rdfs:label "The timing of the revealing of allocation status and administration of interventions is specified to be Randomization with Immediate Reveal and Initiation or Randomization with Deferred Reveal and Initiation if prospective agreement to participate is required for this domain (see relevant Core Protocol documents) or if the results of microbiological testing for influenza or SARS-CoV-2 or both are unavailable at the time of eligibility." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c9733fcba16 a owl:Class ;
+    rdfs:label "If arterial pH is less than 7.15, the tidal volume can be increased in 5 to 10% increments until arterial pH is more than 7.15, noting that, if necessary, to maintain a pH of not less than 7.15, it is permitted for the plateau pressure to exceed 30 cm H 2 O." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:c9775fa413c a owl:Class ;
+    rdfs:label "Shock-dependent hydrocortisone while the patient is in septic shock (Severe State only)" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c9988e71abb a owl:Class ;
+    rdfs:label "dasatinib, nilotinib) unless for an accepted clinical indication (e.g." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c9a41291a28 a owl:Class ;
+    rdfs:label "Administration is to commence immediately after reveal of allocation." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c9af5ab3b4d a owl:Class ;
+    rdfs:label "A participant is eligible to be randomized in the Severe Illness Severity State if they have previously been randomized in the Moderate Illness Severity State, but not if they have previously been randomized in the Recovering Illness Severity State." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c9b0cdad1f3 a owl:Class ;
+    rdfs:label "P a O 2 :F I O 2 ratio ≤300 mmHg or S p O 2 /F I O 2 ratio ≤315 with S p O 2 ≤97% (altitude-adjusted if >1000m)" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:c9b40cb182e a owl:Class ;
+    rdfs:label "Hospital-acquired, defined as infection not incubating at the time of hospital admission and manifesting 48 hours or more after hospital admission" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:c9b8bdba438 a owl:Class ;
+    rdfs:label "This domain is available for patients who are in either the Moderate or Severe State." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA;IAV_DSA;IG_DSA" .
+
+rcap:c9b95fda8b6 a owl:Class ;
+    rdfs:label "Respiratory tract infection, defined in two categories, lower or upper, with lower defined as infection of the airways below the level of the larynx (including tracheitis, bronchitis, bronchiolitis, and pneumonia) and upper defined as infection of the airways at the level of the larynx and above, excluding isolated otitis media or mastoiditis" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:c9bfd7a0eed a owl:Class ;
+    rdfs:label "Highly effective contraception includes combined (estrogen and progestogen containing) hormonal contraception associated with inhibition of ovulation, progesterone-only contraception association with inhibition of ovulation, intrauterine device, intrauterine hormone-releasing system, bilateral tubal occlusion, vasectomised partner and sexual abstinence." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "END_DSA" .
+
+rcap:c9c2969bd8c a owl:Class ;
+    rdfs:label "An immune modulation intervention for influenza should be discontinued if there is development of a SAE which, in the opinion of the treating clinician, could be related to participation in this domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:c9c4ee896ea a owl:Class ;
+    rdfs:label "Participating sites may choose to offer this domain to patients in one or more (or all) of these Age Strata." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA;IAV_DSA;IG_DSA;IIM_DSA" .
+
+rcap:c9c6cc320ec a owl:Class ;
+    rdfs:label "A set of generic secondary endpoints will be evaluated in all domains." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_40" ;
+    rcap:occursIn "CORE40" .
+
+rcap:c9d34740b48 a owl:Class ;
+    rdfs:label "It is recognized that there is a wide range of regulatory approaches and attitudes to the evaluation of interventions in pregnant trial participants across participating regions and sites. Known or suspected pregnancy is not an intervention-level exclusion for the fixed-course dexamethasone intervention by default; however, if a site does not have regulatory approval to enroll pregnant patients to the fixed-course dexamethasone intervention, known or suspected pregnancy will be applied as an intervention-specific exclusion and will result in exclusion from the fixed course dexamethasone intervention." ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:c9dba388002 a owl:Class ;
+    rdfs:label "Such participants may be considered to be a separate pathogen analysis stratum." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c9e0ae9bd3c a owl:Class ;
+    rdfs:label "Pathogen analysis strata allow differential treatment effects to be assessed in participants with specific pathogens (or groups of pathogens) at eligibility assessment and improves covariate balance within pathogen strata." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:c9e40a2b775 a owl:Class ;
+    rdfs:label "Influenza virus infection has been confirmed by microbiological testing" ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    rcap:occursIn "IAV_DSA;IIM_DSA" .
+
+rcap:c9e7d01aeee a owl:Class ;
+    rdfs:label "Amoxicillin-clavulanate + Ceftazidime + Macrolide" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "TAB_DSA" .
+
+rcap:c9ef610c2b5 a owl:Class ;
+    rdfs:label "This nesting structure can be interpreted as an informative prior for high titer plasma that is a weighted average of the low titer plasma effect in immune suppressed and Non-Immune Suppressed strata." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:c9f97c0e55a a owl:Class ;
+    rdfs:label "Among Day-90 survivors, their daily respiratory support level as defined by position on a five-category ordinal scale:" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "moved" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:c9fd4c2c7f1 a owl:Class ;
+    rdfs:label "The index hospital admission is defined as continuing while the participant is admitted to any healthcare facility or level of residence that provides an equivalent or higher level of care than that corresponding to where the participant was enrolled." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "moved" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:ca041d3b3e0 a owl:Class ;
+    rdfs:label "Within this stratum and state, the unit-of-analysis is defined by the Bacterial Infection Diagnosed Strata (defined as Bacterial Infection Diagnosed or Bacterial Infection Not Diagnosed)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:ca053db75aa a owl:Class ;
+    rdfs:label "Progression to IMV/ECLS/death among those not receiving invasive mechanical ventilation or ECLS at baseline" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:ca0bdefd3cd a owl:Class ;
+    rdfs:label "Pandemic respiratory pathogen infection is stratified as pandemic respiratory pathogen infection confirmed (the pandemic respiratory pathogen is detected on microbiological testing with a clinically compatible illness) and pandemic respiratory pathogen infection not confirmed." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:ca23aee54fd a owl:Class ;
+    rdfs:label "Collected while participants are admitted to hospital between randomization and Day 28: For participants admitted to ICU at the time of enrollment, or after enrollment: At the discretion of the site, unless specified otherwise in an RSA or DSA, and collected by phone:" ;
+    rdfs:subClassOf rcap:rcdb4b81960 ;
+    rcap:coreStatus "revised" ;
+    rcap:inVersion "4.0" ;
+    rcap:occursIn "CORE40" ;
+    rcap:revisionOf rcap:rcdb4b81960 .
+
+rcap:ca2a9916271 a owl:Class ;
+    rdfs:label "Clinical treatment decisions are often made prior to the availability of microbiological test results and may rely on history, examination and supporting investigations such as inflammatory markers and imaging (“clinical assessment”) to include or exclude potential infecting pathogen(s) relevant to those decisions." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:ca33244a322 a owl:Class ;
+    rdfs:label "not receiving qualifying organ failure support AND" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:ca35d9ae3e3 a owl:Class ;
+    rdfs:label "Suspected or proven infection with resistant bacteria where agents being trialed would not be expected to be active. This includes cystic fibrosis, bronchiectasis or other chronic suppurative lung disease where infection with Pseudomonas may be suspected but does not include patients with suspected methicillin-resistant staphylococcus aureus (MRSA) infection*." ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:ca37e9eebf6 a owl:Class ;
+    rdfs:label "The duration of macrolide therapy will then be determined by allocation in this domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:ca38602c04e a owl:Class ;
+    rdfs:label "New or worsening respiratory symptoms that developed within 2 weeks prior to the onset of oxygen/respiratory support" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:ca3c788e844 a owl:Class ;
+    rdfs:label "receiving qualifying organ failure support AND" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:ca3cd41bbeb a owl:Class ;
+    rdfs:label "Actions following Statistical Trigger for superiority, efficacy, inferiority, or harm If an intervention reaches one of the above thresholds and the DSMB declares this as a Platform Conclusion, the ITSC will be informed that the trigger has been met." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:ca44d73b6be a owl:Class ;
+    rdfs:label "Extracorporeal life support (ECLS)" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:ca4f15ec584 a owl:Class ;
+    rdfs:label "MERS-CoV" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:ca581855e50 a owl:Class ;
+    rdfs:label "Macrolide antibiotics have already been discontinued for more than 36 hours" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:ca58ce41d12 a owl:Class ;
+    rdfs:label "Enteral azithromycin" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:ca5d0396f02 a owl:Class ;
+    rdfs:label "Patient has already received any dose of one or more of any form of tocilizumab or another IL-6 receptor antagonist (e.g. sarilumab), baricitinib or another JAK inhibitor (e.g. tofacitinib, ruxolitinib or upadacitinib) during this hospitalization or is on long-term therapy with any of these agents prior to this hospital admission." ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:ca60d0073b2 a owl:Class ;
+    rdfs:label "This Appendix defines the following categories at the time of randomization:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:ca69a8b569c a owl:Class ;
+    rdfs:label "For the purposes of this intervention, septic shock is defined as administration of any vasopressor by continuous infusion where the treating clinician believes that the vasopressor requirement is caused by the respiratory tract infection and is not being administered for another reason such as untreated hypovolemia or solely to offset the effects of other interventions such as administration of sedation or mechanical ventilation." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:ca6b1d7af7a a owl:Class ;
+    rdfs:label "Known serious hypersensitivity to the macrolide will result in exclusion from interventions that include piperacillin, amoxicillin, and ceftriaxone" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:ca6e134ec22 a owl:Class ;
+    rdfs:label "Bacterial infection is stratified as bacterial infection diagnosed (comprising cases where infection with a recognized bacterial respiratory pathogen is confirmed or probable) and bacterial infection not diagnosed (comprising cases where infection with a recognized bacterial respiratory pathogen is neither confirmed nor probable i.e., bacterial infection was assessed as only possible or not suspected)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:ca7233a7d9d a owl:Class ;
+    rdfs:label "A novel pandemic respiratory pathogen" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:ca7be08f164 a owl:Class ;
+    rdfs:label "Hospitalized patient" ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:ca7dd1a0df3 a owl:Class ;
+    rdfs:label "Results of culture of blood for pathogenic bacteria and/or fungus during this hospitalization" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:ca8098dc8a3 a owl:Class ;
+    rdfs:label "In adults and in children ≥ 9 years of age, a baseline eGFR <15 mL/min/1.73m 2 and/or receipt of renal replacement therapy (including long-term renal replacement therapy) at baseline will result in exclusion from receiving baricitinib" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:ca8c5ba6b39 a owl:Class ;
+    rdfs:label "The timing of the revealing of allocation status and administration of interventions is specified to be Randomization with Immediate Reveal and Initiation or Randomization with Deferred Reveal and Initiation if prospective agreement to participate is required for this domain (see relevant Core Protocol documents)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:ca8ce9c3f7e a owl:Class ;
+    rdfs:label "Administration of relevant concomitant medications" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:ca9ac94debc a owl:Class ;
+    rdfs:label "The delivery of protocolized mechanical ventilation will be facilitated by training of site personnel, the availability of bedside study tools, and audit and feedback to sites regarding adherence to the protocol." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:caa02ba49d4 a owl:Class ;
+    rdfs:label "Patients allocated to the no corticosteroid intervention are not to receive any systemic corticosteroid, including hydrocortisone or dexamethasone, for this respiratory tract infection and its direct complications up until study day 28 or hospital discharge, whichever occurs first." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:cab1ce74ed4 a owl:Class ;
+    rdfs:label "Viral variants. Method of viral testing and analysis will vary from country to country and will be within country-specific testing guidance document." ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:cab49a930cf a owl:Class ;
+    rdfs:label "For some pathogens, clinical features may be sufficiently similar that a domain considers them collectively (e.g., ‘confirmed viral respiratory tract infection’ may be a group defined as the detection of any virus known to cause respiratory tract infection on microbiological testing)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:cabc9ae0474 a owl:Class ;
+    rdfs:label "Receiving respiratory support with high-flow nasal oxygen (HFNO) at a flow rate of at least 30 liters per minute (or at least 2 liters per minute per kilogram of bodyweight in children less than 15 kilograms) OR invasive mechanical ventilation (IMV), non-invasive ventilation (NIV) or continuous positive airways pressure (CPAP) with PEEP or CPAP ≥5cm H 2 O. (This criterion is not required in resource-limited settings where none of these modalities are available)" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:cac352d8efe a owl:Class ;
+    rdfs:label "Confirmed proximal deep venous thrombosis" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "END_DSA" .
+
+rcap:cac579e3b99 a owl:Class ;
+    rdfs:label "We acknowledge mortality is tied to a longer time frame than the ordinal scale." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:cad22b7129d a owl:Class ;
+    rdfs:label "If a Statistical Trigger is achieved this will be communicated by the SAC to the DSMB." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cad81daa211 a owl:Class ;
+    rdfs:label "If reveal of allocation occurs before Study Day 3, and the patient is allocated to standard course macrolide, the intervention should be ceased on Study Day 3." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:caddd53de20 a owl:Class ;
+    rdfs:label "There is no automated adaptation when equivalence is deemed to have occurred." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cae2185962c a owl:Class ;
+    rdfs:label "Date and time of hospital admission and discharge" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:caef1c59e4d a owl:Class ;
+    rdfs:label "Daily targets for physiological parameters, if specified" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:caf1c7e456b a owl:Class ;
+    rdfs:label "The eligibility criteria for this domain correspond to the Influenza Infection Confirmed Stratum (i.e." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:cafe6794404 a owl:Class ;
+    rdfs:label "Screening information, including Platform, domain and intervention eligibility criteria" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cb045c9a15d a owl:Class ;
+    rdfs:label "Amoxicillin-clavulanate 1.2 grams administered IV every 8 hours" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "TAB_DSA" .
+
+rcap:cb09bcf457d a owl:Class ;
+    rdfs:label "Initial intravenous (IV) administration of a macrolide is strongly preferred" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:cb0ae4a3b67 a owl:Class ;
+    rdfs:label "A specific antibiotic choice is indicated, for example:" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:cb108da728c a owl:Class ;
+    rdfs:label "It is also known that treatment with corticosteroids can result in myopathy and muscle weakness but this effect will be evaluated by the aggregate effect of treatment, in conjunction with other factors, on the duration of mechanical ventilation and long-term outcomes, for participants enrolled at sites that are collecting long-term outcomes." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:cb18d74602f a owl:Class ;
+    rdfs:label "Known serious hypersensitivity to beta-lactams, including penicillins or cephalosporins, will result in exclusion from interventions that include amoxicillin and ceftazidime" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "TAB_DSA" .
+
+rcap:cb1dfbad5c4 a owl:Class ;
+    rdfs:label "The unit-of-analysis for this domain is all patients who receive an allocation status in this domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;END_DSA;MD_DSA;TAB_DSA" .
+
+rcap:cb214214243 a owl:Class ;
+    rdfs:label "Adapt the domain to better refine the optimal characteristics of interventions (i.e., duration or dose)" ;
+    rdfs:subClassOf rcap:AllocationSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cb23c46b462 a owl:Class ;
+    rdfs:label "The introduction and transition to spontaneous ventilation is at the discretion of the treating clinician." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:cb26af16384 a owl:Class ;
+    rdfs:label "Patients will be randomly assigned to receive one of the following open-label study interventions." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;CS_DSA;END_DSA;IG_DSA;IIM_DSA;MD_DSA;MV_DSA;TAB_DSA" .
+
+rcap:cb31eb2bc1f a owl:Class ;
+    rdfs:label "The ITSC in conjunction with the DSMB may undertake additional analyses, for example, of clinically relevant secondary endpoints." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cb34d84e7ea a owl:Class ;
+    rdfs:label "Continuous infusion of vasopressors, inotropes or both" ;
+    rdfs:subClassOf obo:IAO_0000033 ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41;PANDA" .
+
+rcap:cb366f79e1b a owl:Class ;
+    rdfs:label "Serious Adverse Events (SAE) as defined in Core Protocol documents and qualified in this DSA" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:cb3f54800eb a owl:Class ;
+    rdfs:label "There are no intervention-specific exclusion criteria for this domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:cb41b0cebb4 a owl:Class ;
+    rdfs:label "The clinician will choose the mode of ventilation and all ventilatory parameters that they would use normally for this patient." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:cb41d7b2b8c a owl:Class ;
+    rdfs:label "The use of any other mode of controlled mechanical ventilation (Pressure Control, APRV) is a protocol deviation." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:cb47d826c76 a owl:Class ;
+    rdfs:label "If a Platform Conclusion arises because one or more pairs of interventions reach a Statistical Trigger for equivalence or noninferiority within a unit-of-analysis, this will be communicated to the ITSC by the DSMB." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cb59ab3377d a owl:Class ;
+    rdfs:label "From completion of the 10-day course onwards, patients allocated to this intervention are not to receive any systemic corticosteroid, including hydrocortisone or dexamethasone, for this respiratory tract infection and its direct complications up until study day 28 or hospital discharge, whichever occurs first." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:cb769fefc84 a owl:Class ;
+    rdfs:label "RSV infection is stratified as RSV infection confirmed (RSV detected on microbiological testing with a compatible clinical assessment) and RSV not confirmed." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:cb7befa7b3a a owl:Class ;
+    rdfs:label "Dosing is determined by the treating clinician and the following are provided as a guide." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:cb7f092fa32 a owl:Class ;
+    rdfs:label "Ventilator-associated, a subcategory of hospital-acquired infection, additionally defined as infection in an invasively ventilated patient manifesting 48 hours or more after endotracheal intubation" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:cb87f53e4f6 a owl:Class ;
+    rdfs:label "Given that the original ARDSnet including the standard PEEP arm is frequently the control group in ventilation studies and many units still deliver the original ARDS net protocol (including the standard PEEP approach), we will allow units to use either FiO2 / PEEP table below." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:cb93e454359 a owl:Class ;
+    rdfs:label "Respiratory illness severity can change over time as a patient’s disease progresses and illness severity is an important determinate of both clinical outcome and potential differential treatment effect." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:cba62d620cf a owl:Class ;
+    rdfs:label "If the plateau pressure is more than 30 cmH 2 O, the tidal volume should be reduced in 5 to 10% increments, but to not less than 65% of the initial specified tidal volume (corresponding to 4.0 ml/kg PBW)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:cba8b5376a9 a owl:Class ;
+    rdfs:label "Patient has community-acquired respiratory tract infection" ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    rcap:occursIn "AB_DSA;END_DSA;IIM_DSA;TAB_DSA" .
+
+rcap:cbab88bbe86 a owl:Class ;
+    rdfs:label "The ordinal weighted score will be analyzed with a covariate-adjusted linear model, and effects will be reported as a difference in average scores between treatment groups." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:cbac53fc942 a owl:Class ;
+    rdfs:label "More than 24 hours has elapsed since commencement of sustained organ failure support" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:cbb090195d3 a owl:Class ;
+    rdfs:label "90-day mortality will be hierarchically integrated with the daily ordinal scale so that 90-day mortality will be deemed the worst possible category, regardless of prior trajectory." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_40" ;
+    rcap:occursIn "CORE40" .
+
+rcap:cbc08787e8f a owl:Class ;
+    rdfs:label "Patients who are not eligible for this domain will be treated according to the current standard of care at the clinician’s discretion." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:cbca0ca62ff a owl:Class ;
+    rdfs:label "both a penicillin and a cephalosporin hypersensitivity)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:cbcd69628d6 a owl:Class ;
+    rdfs:label "The most recent PaO 2 :FiO 2 ratio obtained within the preceding 6 hours is less than 200 mmHg" ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:cbd968086d6 a owl:Class ;
+    rdfs:label "IV or enteral erythromycin. Sites in which only erythromycin is available are not able to participate in the Macrolide Duration Domain." ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:cbd9f9062ae a owl:Class ;
+    rdfs:label "All participants who die before the end of study day 90 will be coded as ‘-1’ on the ordinal scale, the worst score." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:cbde5a9f0f5 a owl:Class ;
+    rdfs:label "Where a Platform Conclusion is reached for superiority or efficacy, the DSMB may recommend that Public Disclosure should be delayed until additional results are available, so as to allow further recruitment to evaluate interactions between interventions in different domains or for other clinically or statistically valid reasons." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cbde5b937d8 a owl:Class ;
+    rdfs:label "Baseline and peak AST, ALT and bilirubin (between randomization and day 15)" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "END_DSA" .
+
+rcap:cbdec051bf7 a owl:Class ;
+    rdfs:label "Tocilizumab" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:cbe129064a8 a owl:Class ;
+    rdfs:label "Administration of imatinib" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "END_DSA" .
+
+rcap:cbe7e2bf784 a owl:Class ;
+    rdfs:label "Sites where erythromycin is the only available macrolide will not be able to participate in this domain." ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:cbe8e555e2e a owl:Class ;
+    rdfs:label "Reveal of allocation in the Macrolide Duration Domain is only possible before the end of Study Day 5 after randomization to a macrolide-containing intervention within an Antibiotic Domain of this Platform." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:cbf77e1f709 a owl:Class ;
+    rdfs:label "Patients are eligible for this domain only if they have been allocated a macrolide-containing intervention within an Antibiotic Domain of this Platform." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:cbf7925c08d a owl:Class ;
+    rdfs:label "The size of the pre-specified odds ratio delta is 0.10." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;CS_DSA;IAV_DSA;IIM_DSA;TAB_DSA" .
+
+rcap:cc02a7653f7 a owl:Class ;
+    rdfs:label "If there is doubt about accuracy of a SaO 2 , arterial blood gases should be measured and used to adjust the PEEP and FiO 2 as required." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:cc0ab609c4e a owl:Class ;
+    rdfs:label "Oseltamivir twice daily for five days" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:cc0ad33a8ee a owl:Class ;
+    rdfs:label "The options following a Statistical Trigger for a pair of interventions in a Domain with three or more Interventions are more complex." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cc0c73f73da a owl:Class ;
+    rdfs:label "The generic variables to be collected for all domains in this Platform are as detailed below." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cc1810a8322 a owl:Class ;
+    rdfs:label "Qualifying organ failure support is defined as: Patients are not eligible for randomization in the Moderate State if they have been previously randomized in the Severe State, if they have previously been randomized in the Recovering State, or if they have received invasive mechanical ventilation at any time during this acute admission." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:cc26608429f a owl:Class ;
+    rdfs:label "These States are defined in Core Protocol documents." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA;IAV_DSA;IG_DSA" .
+
+rcap:cc28e5ec339 a owl:Class ;
+    rdfs:label "For the presence of a pathogen to be ‘confirmed’ or ‘excluded’, there must be supportive microbiological testing." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:cc2adca9ada a owl:Class ;
+    rdfs:label "While it is expected that all sites will participate in the ceftriaxone intervention, each site has the option to opt-in to one or more of the remaining three interventions based on local practice and the availability of the antibiotic in the country." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:cc2ba8bee5c a owl:Class ;
+    rdfs:label "For the purposes of eligibility, domains may include patients with differing likelihood thresholds for the same pathogen (e.g., one domain may include patients with suspected or confirmed influenza infection and another may constrain eligibility to confirmed infection only)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:cc3e5be1718 a owl:Class ;
+    rdfs:label "MERS-CoV infection is stratified as MERS-CoV infection confirmed (MERS-CoV detected on microbiological testing with a compatible clinical assessment) and MERS-CoV not confirmed." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:cc3ec0b825c a owl:Class ;
+    rdfs:label "Receiving immune suppressive therapy with a calcineurin inhibitor (e.g. cyclosporine, tacrolimus), everolimus or sirolimus will exclude a patient from receiving enteral imatinib" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "END_DSA" .
+
+rcap:cc3fd74fe4a a owl:Class ;
+    rdfs:label "Any recognized viral respiratory pathogen other than influenza, SARS-CoV-2, MERS-CoV or RSV (grouped together)" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:cc40460369d a owl:Class ;
+    rdfs:label "Tocilizumab will be administered as a single dose of 8mg/kg based on measured body weight (or estimated body weight in adults if measured body weight is unavailable) with the total dose not exceeding 800mg." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:cc434dea8eb a owl:Class ;
+    rdfs:label "The rationale for this is that each of these interventions comprises a beta-lactam antibiotic combined with a macrolide." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:cc4a3982cda a owl:Class ;
+    rdfs:label "Patients will be excluded from this domain if they have any of the following:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;CS_DSA;END_DSA;IAV_DSA;IG_DSA;IIM_DSA;MD_DSA;MV_DSA;TAB_DSA" .
+
+rcap:cc4b95a9b0a a owl:Class ;
+    rdfs:label "Each pathogen status used for analysis is defined as a binary variable at Platform level." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:cc4d4bee65c a owl:Class ;
+    rdfs:label "High-flow nasal oxygen*" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:cc4efc1a692 a owl:Class ;
+    rdfs:label "Interactions with all other domains are either not evaluable or not considered possible and will not be incorporated into the statistical model or models in which this domain is evaluated." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;CS_DSA;END_DSA;IAV_DSA;IG_DSA;IIM_DSA;MD_DSA;MV_DSA;TAB_DSA" .
+
+rcap:cc52e0becdf a owl:Class ;
+    rdfs:label "In addition to Platform inclusion and exclusion criteria, a domain can restrict eligibility by specifically including or excluding patients with a specific pathogen status (including co-infection) as domain eligibility criteria." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:cc5809dffc7 a owl:Class ;
+    rdfs:label "As exploratory outcomes, the exact categorizations of respiratory support may change in both of the above exploratory outcomes, which will be transparently reported in publications and presentations." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:cc60d05ae13 a owl:Class ;
+    rdfs:label "Acute myocardial infarction" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "END_DSA" .
+
+rcap:cc66e2d09a4 a owl:Class ;
+    rdfs:label "Hospitalized on low-intensity oxygen" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "moved" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cc69f3a284d a owl:Class ;
+    rdfs:label "At the time of establishing eligibility, if feasible, the patient’s height will be entered into the on-line eligibility system which will be used to calculate PBW and to specify a starting tidal volume that will be set on the ventilator that corresponds to a tidal volume of 6.0 ml/kg PBW." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:cc6cadc9e2c a owl:Class ;
+    rdfs:label "This endpoint is designed to encompass all illness severity states, and builds on our experience with the distribution and power of the primary endpoints used in previous versions of this Core Protocol and the Pandemic Appendix to the Core Protocol." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cc769ad72db a owl:Class ;
+    rdfs:label "At the time of establishing eligibility, the treating clinician will specify a target range for the arterial PaCO 2 ." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:cc80fdb595f a owl:Class ;
+    rdfs:label "Disability status measured at 180 days after enrollment using the WHODAS 2.0, 12-item instrument (where feasible, refer to relevant regional RSA) in those aged 18 or older" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cc8e4c6a249 a owl:Class ;
+    rdfs:label "Pulmonary edema precipitated by respiratory tract infection and not exclusively or primarily attributable to cardiac failure or fluid overload with hypoxemia not primarily attributable to atelectasis" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:cc905bfb5f1 a owl:Class ;
+    rdfs:label "Response Adaptive Randomization will not be applied to this domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IG_DSA;TAB_DSA" .
+
+rcap:cc94f676f8f a owl:Class ;
+    rdfs:label "The dosing of and route of administration of macrolide antibiotics are not specified in the protocol but the following guidance is provided:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:cc977d9946c a owl:Class ;
+    rdfs:label "Septic shock would always be regarded as having resolved if vasopressor infusion has not been administered in the preceding 24 hours." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:cc99a9f0acf a owl:Class ;
+    rdfs:label "Change to targeted antibiotic therapy if a causative microbiological diagnosis has been made, and continue assigned melioidosis-specific treatment (ceftazidime or meropenem) if melioidosis is confirmed, and transition to oral eradication therapy based on local practices and guidelines (usually trimethoprim-sulfamethoxazole for 3-6 months)." ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "TAB_DSA" .
+
+rcap:cca301735af a owl:Class ;
+    rdfs:label "Severe thrombocytopenia (defined as platelet count <50 x 10 9 /L)" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "END_DSA" .
+
+rcap:ccbc477aff8 a owl:Class ;
+    rdfs:label "The threshold probability for statistical triggers for superiority and inferiority are those specified in the Core Protocol documents." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:ccc10ee88ac a owl:Class ;
+    rdfs:label "A baseline neutrophil count <1.0 x 10 9 /L will exclude a patient from receiving enteral imatinib" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "END_DSA" .
+
+rcap:ccc13cbc8a7 a owl:Class ;
+    rdfs:label "The hypoxemia is caused by acute respiratory infection (and not primarily due to other causes such as acute heart failure, fluid overload, or pulmonary embolism)" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:ccd4355519f a owl:Class ;
+    rdfs:label "The timing of the revealing of allocation status and administration of interventions is specified to be Randomization with Deferred Reveal once the results of microbiological testing to establish domain eligibility are available, or if prospective agreement to participate is required for this domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:ccd60c004da a owl:Class ;
+    rdfs:label "For a domain with three or more interventions, the information provided by the DSMB to the ITSC may include specification of the ordinal rank of the interventions within the domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:ccdc64e11f3 a owl:Class ;
+    rdfs:label "If RAR is applied, the cap on the maximum or minimum proportion of patients assigned to an intervention that is specified in core protocol documents may be modified by the Statistical Analysis Committee (SAC) if needed to reduce the likelihood of sites being unblinded or to improve power." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA;END_DSA;IAV_DSA;IIM_DSA" .
+
+rcap:ccddbe3fd4b a owl:Class ;
+    rdfs:label "No Endothelial modulator therapy" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "END_DSA" .
+
+rcap:cce1901356c a owl:Class ;
+    rdfs:label "All interventions are administered until the stated duration of therapy has been reached or until hospital discharge (whichever occurs first)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:cce99450a79 a owl:Class ;
+    rdfs:label "A full blood count (to monitor for cytopenias) and liver function tests (bilirubin, ALT +/- AST) should be performed, as part of usual care, at least twice weekly whilst receiving enteral imatinib." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "END_DSA" .
+
+rcap:ccecc33eb10 a owl:Class ;
+    rdfs:label "The FiO 2 and PEEP should be set on the ventilator to the minimum allowable combination of FiO 2 and PEEP that consistently achieves a PaO 2 / SaO 2 within the target range and adjusted further, as required according to either of the tables below which is derived from either the ARMA ARDSnet trial (the standard PEEP arm) OR the LOVS and ALVEOLI trials (the high PEEP arm) (Meade et al., 2008, Brower et al., 2004)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:cceee3b61f1 a owl:Class ;
+    rdfs:label "Discharged from index hospitalization" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "only_40" ;
+    rcap:occursIn "CORE40" .
+
+rcap:ccfef3c27d2 a owl:Class ;
+    rdfs:label "Patients enrolled in previous versions of this DSA to the 10-day oseltamivir intervention will continue to be nested with the 5-day oseltamivir intervention." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:cd0dc3a1b8d a owl:Class ;
+    rdfs:label "The dose of baricitinib is dependent on age and renal function." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:cd0ec3ba25a a owl:Class ;
+    rdfs:label "Administration of immune modulatory agents intended to influence host response to infection" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "END_DSA" .
+
+rcap:cd236bdcb8b a owl:Class ;
+    rdfs:label "Respiratory tract infection can be associated with specific clinical features or syndromes." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:cd269ca08fb a owl:Class ;
+    rdfs:label "Patients assigned to this intervention will not receive any preparation of polyclonal immunoglobulin intended to neutralize COVID-19 during the index hospitalization." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:cd2a29aeec5 a owl:Class ;
+    rdfs:label "Virologic endpoints, at selected sites:" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:cd3604c9617 a owl:Class ;
+    rdfs:label "It is noted that the definition of shock that is specified in the Core Protocol (presence or absence of inotrope or vasopressor infusion at baseline) determines strata status, and not the definition of septic shock that is used to define administration of hydrocortisone in the shock-dependent duration hydrocortisone intervention." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:cd39e0ef162 a owl:Class ;
+    rdfs:label "In pregnancy dexamethasone should be replaced by oral prednisolone 40mg once daily or IV hydrocortisone 50mg every 6 hours for 10 days while in hospital." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:cd3a5049ef6 a owl:Class ;
+    rdfs:label "There will be a list of tertiary outcomes where no formal hypothesis tests will be performed." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cd3b3a61b4c a owl:Class ;
+    rdfs:label "The dose of tocilizumab is dependent on age and weight." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:cd447210279 a owl:Class ;
+    rdfs:label "In children the dose of dexamethasone will be 0.15 mg/kg (max 6mg/day) for a maximum of 10 days while in hospital." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:cd48313d7dc a owl:Class ;
+    rdfs:label "Patients who are eligible for only a single intervention at a site (i.e., all other interventions are contraindicated or not available) are not eligible for this domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:cd4e923874a a owl:Class ;
+    rdfs:label "The preferred enteral macrolide is azithromycin, but enteral clarithromycin or roxithromycin may be substituted." ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:cd52a12348a a owl:Class ;
+    rdfs:label "Enteral clarithromycin or roxithromycin" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:cd55c1341f6 a owl:Class ;
+    rdfs:label "Fixed duration dexamethasone for 10 days" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:cd5cc6b9856 a owl:Class ;
+    rdfs:label "If the PaCO 2 target cannot be achieved the respiratory rate should be adjusted upwards preserving, at all times (unless pH of arterial blood is less than 7.15 see below), the tidal volume (and plateau pressure target)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:cd6c006ce42 a owl:Class ;
+    rdfs:label "If a patient develops neutropenia (neutrophil count <1.0 x 10 9 /L) and/or thrombocytopenia (platelet count <50 x 10 9 /L), stop imatinib and do not restart" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "END_DSA" .
+
+rcap:cd715a78d79 a owl:Class ;
+    rdfs:label "Nesting high titer plasma with low titer plasma in the Non-Immune Suppressed strata is intended to reduce the amount of information borrowed from the previous positive result." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:cd7c43ab99a a owl:Class ;
+    rdfs:label "If not specified by a domain, guidance about qualifying microbiological testing will be provided in operational documents." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:cd7c91b15f5 a owl:Class ;
+    rdfs:label "Multi-resistant organisms (MRO) colonization/infection: Isolation of multi-drug resistant (MDR) bacteria from clinical or screening specimens including vancomycin resistant enterococci (VRE), MRSA, extended spectrum beta-lactamase (ESBL)-producing enterobacteriaceae, carbapenem resistant enterobacteriaceae (CRE)." ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:cd7e3bd8fce a owl:Class ;
+    rdfs:label "Serious adverse event (SAE) as defined in Core Protocol" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "AB_DSA;CS_DSA;IIM_DSA;MD_DSA;TAB_DSA" .
+
+rcap:cd89c60e3af a owl:Class ;
+    rdfs:label "The unit-of-analysis for this domain consists of all patients who have received an allocation in this domain, and is further stratified by illness severity state at time of enrollment (defined as either Moderate State or Severe State) and Immune Suppressed Strata." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:cd8acafd0a6 a owl:Class ;
+    rdfs:label "Such decisions will be specified in an amended DSA." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cd9bbfeda6a a owl:Class ;
+    rdfs:label "The approach to a Statistical Trigger for equivalence or noninferiority is different depending on the number of interventions within a domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cd9cb1c9a3b a owl:Class ;
+    rdfs:label "Under such circumstances, discontinuation of baricitinib prior to the end of the 10-day course is not a protocol deviation." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:cd9f81c7ca1 a owl:Class ;
+    rdfs:label "Domain-specific efficacy outcomes, where applicable" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cda45f8b5ea a owl:Class ;
+    rdfs:label "All patients recruited using versions of this DSA prior to Version 3 are classified as members of the No Prior Monoclonal Antibody sub-group." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:cdb0dcd08e1 a owl:Class ;
+    rdfs:label "Patient was receiving imatinib or another tyrosine kinase inhibitor targeting the same pathway as imatinib (i.e. dasatinib, nilotinib, ponatinib) prior to this hospital admission" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "END_DSA" .
+
+rcap:cdb227e9044 a owl:Class ;
+    rdfs:label "Protocolized mechanical ventilation strategy" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:cdb232416a7 a owl:Class ;
+    rdfs:label "Pneumonia, defined in two categories, present or absent, with present defined as radiological evidence of new onset infiltrate consistent with infection (in patients with pre-existing radiological changes, evidence of new infiltrate)" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:cdb38085787 a owl:Class ;
+    rdfs:label "It is noted that interaction with these other domains that include patients with confirmed influenza as part of their unit-of-analysis will be evaluated as post-platform conclusion sub-groups." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:cdb5e5b5b01 a owl:Class ;
+    rdfs:label "DSAs dated before this Core Protocol amendment will additionally report the pre-specified endpoints as indicated in their respective documents and previous versions of the Core Protocol (available on the trial website)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cdb6639ba6e a owl:Class ;
+    rdfs:label "The exact dose of vasopressor that defines septic shock is not set by the protocol but is based on the treating clinician’s judgement." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:cdbae604627 a owl:Class ;
+    rdfs:label "If no local guideline exists, recommendations based on estimated Glomerular Filtration Rate (eGFR) are as follows: Hemo(dia)filtration Hemo(dia)filtration Agent eGFR <30 ml/min (1-1.8 L/hr exchange) (>1.8 L/hr exchange) Oseltamivir 30 mg twice daily 30 mg twice daily 75 mg, twice daily Dosing for children is as per local guidelines." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:cdc78559427 a owl:Class ;
+    rdfs:label "The threshold probability for the statistical trigger of effectiveness will be the same as that applied for superiority." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:cdc7ec59d43 a owl:Class ;
+    rdfs:label "The Moderate State, defined as hospitalized patients who are:" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:cdcbe6d2eed a owl:Class ;
+    rdfs:label "Patient is aged ≥ 18 years old" ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    rcap:occursIn "END_DSA" .
+
+rcap:cdd2be8e9cf a owl:Class ;
+    rdfs:label "Hydrocortisone should be ceased prior to hospital discharge." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:cdd710c464b a owl:Class ;
+    rdfs:label "Patients randomized in early versions of this DSA who did not have confirmed influenza infection are not part of this unit of analysis." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:cdd715af259 a owl:Class ;
+    rdfs:label "tested and not detected) based on clinical assessment and microbiological test results." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:cdd87c4f09f a owl:Class ;
+    rdfs:label "A standard set of secondary endpoints will be evaluated, including the components of the primary endpoint." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:cdd924bb867 a owl:Class ;
+    rdfs:label "Standard course macrolide discontinued between day 3 and day 5 or at hospital discharge, whichever occurs first" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:cde10e40597 a owl:Class ;
+    rdfs:label "For sites that are including the moxifloxacin or levofloxacin intervention it is strongly encouraged that the sites participate in at least one intervention that includes a cephalosporin and one intervention that includes a penicillin so that causal inference by random allocation is possible for patients who have known non-serious intolerance to either cephalosporins or penicillins but not both." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:cde66571e15 a owl:Class ;
+    rdfs:label "If a Platform Conclusion is reached, the ITSC will take responsibility to undertake Public Disclosure as soon as practicable with the dissemination of the research result via presentation or publication or both." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cde67788f7a a owl:Class ;
+    rdfs:label "No corticosteroid (no placebo)" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:cde7d81c44b a owl:Class ;
+    rdfs:label "As such, most patients who receive an allocation within this domain will have already received empiric antibiotic therapy prior to enrollment." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:cdeac60dcf6 a owl:Class ;
+    rdfs:label "Patients will be randomly assigned to receive one of the following open-label antiviral strategies, depending on illness severity." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:cdee1a90648 a owl:Class ;
+    rdfs:label "The timing of the revealing of allocation status and administration of interventions is as specified to be Randomization with Immediate Reveal and Initiation, Delayed Reveal and Initiation, or Deferred Reveal and Initiation." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:cdee655cc92 a owl:Class ;
+    rdfs:label "Meropenem + Macrolide" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "TAB_DSA" .
+
+rcap:cdef3264f84 a owl:Class ;
+    rdfs:label "Additional domain-specific variables are outlined in the relevant DSAs." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cdef6c52c73 a owl:Class ;
+    rdfs:label "Suspected or proven concomitant infection such as meningitis" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:cdf3f3063de a owl:Class ;
+    rdfs:label "Confirmation of qualifying pathogen status may occur through a delayed reveal process if commencement of assigned treatment can reasonably be deferred." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:cdffd88ebc9 a owl:Class ;
+    rdfs:label "The standard dose for oseltamivir for adult patients is 75 mg enterally twice per day." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:ce075d8b7cc a owl:Class ;
+    rdfs:label "An additional endpoint, that will be reported as it becomes available and only from sites where linked data is available, is occurrence of major adverse cardiovascular events." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:ce0a442373c a owl:Class ;
+    rdfs:label "With respect to the adaptation of the domain, the following actions are possible:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:ce0d5a36d2c a owl:Class ;
+    rdfs:label "Immune suppression: Patients who have increased susceptibility to infection due to receipt of immunosuppressive treatment or due an immunosuppressive disease at the time of Platform enrollment are categorized as immune suppressed." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:ce0effacc30 a owl:Class ;
+    rdfs:label "Each DSA will specify which pathogens are relevant to the domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:ce1d999722f a owl:Class ;
+    rdfs:label "not in the Recovering State" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:ce246d5a2ae a owl:Class ;
+    rdfs:label "Statistical Triggers for equivalence in domains with three or more interventions may occur with or without Platform Conclusions and public disclosure of results, as determined by the ITSC and DSMB." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:ce39d43c5e4 a owl:Class ;
+    rdfs:label "Confirmed deep venous thrombosis" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:ce3a7f92a37 a owl:Class ;
+    rdfs:label "Acute Hypoxemic Respiratory Failure is a State defined in two categories, present or absent, with ‘present’ defined as patients with all of the following:" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:ce3b8327b04 a owl:Class ;
+    rdfs:label "Hospitalized, no oxygen" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "moved" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:ce3d8c467cd a owl:Class ;
+    rdfs:label "Survival status at 90 days" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:ce532680788 a owl:Class ;
+    rdfs:label "For example, a domain could include participants with influenza virus infection, exclude patients with confirmed SARS-CoV-2 infection and exclude participants who have confirmed bacterial co-infection." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:ce575914efd a owl:Class ;
+    rdfs:label "There is no nesting of interventions in this domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "END_DSA;TAB_DSA" .
+
+rcap:ce5c526ddb9 a owl:Class ;
+    rdfs:label "Eligibility within these strata may be further constrained by domain-specific eligibility criteria specified below." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA;IAV_DSA;IG_DSA;IIM_DSA" .
+
+rcap:ce5d9618bb0 a owl:Class ;
+    rdfs:label "The following reasons should prompt discontinuation of imatinib therapy:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "END_DSA" .
+
+rcap:ce5e7726301 a owl:Class ;
+    rdfs:label "Clinician-preference mechanical ventilation strategy" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:ce60bf2679f a owl:Class ;
+    rdfs:label "Other confirmed thrombotic events" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:ce697805e1b a owl:Class ;
+    rdfs:label "However, integrating 90-day mortality with a shorter-term outcome is patient-centered and allows continuity with previous versions of the Core protocol and the Pandemic Appendix to the Core Protocol." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:ce6c5856c8f a owl:Class ;
+    rdfs:label "Receipt of organ failure support" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:ce7001d5827 a owl:Class ;
+    rdfs:label "Receiving invasive mechanical ventilation" ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:ce70d7458d7 a owl:Class ;
+    rdfs:label "The primary endpoint, named Survival and Recovery Trajectory, will be a composite of 90-day all-cause mortality and, among survivors, a daily ordinal scale analyzed as a trajectory of illness and recovery to 28 days." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_40" ;
+    rcap:occursIn "CORE40" .
+
+rcap:ce71bb98dce a owl:Class ;
+    rdfs:label "Criteria for extubation, or insertion of a tracheostomy tube, are not specified by the trial and are at the discretion of the treating clinician." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:ce7febd34c0 a owl:Class ;
+    rdfs:label "The interventions in this domain apply up until study day 28 during the index hospitalization, noting that the criteria related to respiratory tract infection and its direct complications still apply." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:ce9865c51f8 a owl:Class ;
+    rdfs:label "Administration of a monoclonal antibody directed against SARS-CoV-2 was an exclusion criteria in all earlier versions of this DSA." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:ce9fbd2a72d a owl:Class ;
+    rdfs:label "The trajectory will be analyzed with a statistical model (Markov longitudinal proportional odds model) that captures how patients move through different health states over time, reported as an odds ratio with covariate adjustment." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:ceb8d951140 a owl:Class ;
+    rdfs:label "Patient has an underlying immunodeficiency or has received recent immunosuppressant therapy, corresponding to the APACHE II definitions (Knaus et al., 1985) , extended to take into account equivalent forms of immunosuppressant therapy that post-date the APACHE II definitions." ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:cebb11ad03d a owl:Class ;
+    rdfs:label "So as to achieve continuity with the initial phase of this domain, a stratum is defined as comprising patients who are immune suppressed." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:cec9be7e972 a owl:Class ;
+    rdfs:label "Aged 28 days or older" ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cecdd35161c a owl:Class ;
+    rdfs:label "There is microbiological confirmation or the clinician strongly suspects Legionella or any other form of atypical pneumonia" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:cecffffb51b a owl:Class ;
+    rdfs:label "Patient is expected to be discharged from hospital within the next 24 hours" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:ced7c375feb a owl:Class ;
+    rdfs:label "This domain is available to patients who are in the Adult Age Stratum, as defined in Core Protocol documents." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;END_DSA;MD_DSA;MV_DSA;TAB_DSA" .
+
+rcap:ceda595c821 a owl:Class ;
+    rdfs:label "Dose adjustment for renal dysfunction in children will be per local guidelines." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:cedb34ad204 a owl:Class ;
+    rdfs:label "Known condition or treatment resulting in ongoing immune suppression, including neutropenia, prior to this hospitalization" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:cedbd214eac a owl:Class ;
+    rdfs:label "Criteria for readiness for a trial of unsupported or minimally supported spontaneous ventilation are not specified by the trial and are at the discretion of the treating clinician." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:cedd28ca5fa a owl:Class ;
+    rdfs:label "The primary endpoint is a composite of 90-day all-cause mortality and, among survivors, the number of days on which the patient was not receiving organ failure support (OFS) during the index hospitalization, up to the end of study day 28; and among survivors who never receive OFS, hospital free days for the index hospitalization up to the end of study day 28." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:cee36dc04d1 a owl:Class ;
+    rdfs:label "Transfusion-transmitted infection occurring at any time during the study" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:cee7d1a66ec a owl:Class ;
+    rdfs:label "The threshold probability of a statistical trigger for futility will be those specified in the Core Protocol." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA;IIM_DSA" .
+
+rcap:cf04bc22981 a owl:Class ;
+    rdfs:label "28-day survival" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cf053b7b727 a owl:Class ;
+    rdfs:label "Increase in AST or ALT to 5 x ULN or bilirubin 3 x ULN" ;
+    rdfs:subClassOf rcap:EndpointSpecification ;
+    rcap:occursIn "END_DSA" .
+
+rcap:cf0778908bc a owl:Class ;
+    rdfs:label "Administration of such a preparation is considered a protocol deviation." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:cf124de0190 a owl:Class ;
+    rdfs:label "More than 48 hours has elapsed since commencement of sustained organ failure support in an ICU" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:cf159a28650 a owl:Class ;
+    rdfs:label "Macrolide therapy will be commenced following reveal of allocation to a macrolide-containing intervention in an Antibiotic Domain of this Platform." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:cf16d68999a a owl:Class ;
+    rdfs:label "This Appendix defines the following disease entity states at the time of randomization:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "PANDA" .
+
+rcap:cf22bf3aed7 a owl:Class ;
+    rdfs:label "Piperacillin-tazobactam ≥4.5 grams administered IV every 8 hours" ;
+    rdfs:subClassOf rcap:InterventionSpecification ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:cf2692d44e7 a owl:Class ;
+    rdfs:label "In children 2 years to <9 years of age, baricitinib will be given at a dose of 1 mg daily if the eGFR is at least 30 and less than 60 mL/min/1.73m 2 ." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:cf3451859c0 a owl:Class ;
+    rdfs:label "Administration of anticoagulation or antiplatelet therapy" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:occursIn "END_DSA" .
+
+rcap:cf380408d29 a owl:Class ;
+    rdfs:label "In children weighing less than 30 kg, the tocilizumab dose will be 12mg/kg." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:cf38c43f5dc a owl:Class ;
+    rdfs:label "unlikely to require or receive a significant escalation in level of organ failure support for the remainder of their hospital admission" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:cf3df6f4af5 a owl:Class ;
+    rdfs:label "Nesting high titer plasma with low titer plasma in the Immune Suppressed strata effectively borrows information from the previous immune suppressed patients randomized to convalescent plasma." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IG_DSA" .
+
+rcap:cf40128f15b a owl:Class ;
+    rdfs:label "If in the Severe State, more than 48 hours has elapsed since commencement of sustained organ failure support" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:cf408836934 a owl:Class ;
+    rdfs:label "The trajectory of patients will be modelled through a Markov longitudinal proportional odds model, using daily ordinal scale categories." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_40" ;
+    rcap:occursIn "CORE40" .
+
+rcap:cf49162b05e a owl:Class ;
+    rdfs:label "Hospital-acquired respiratory tract infection, except where the patient has confirmed influenza infection" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:cf4fb663d1f a owl:Class ;
+    rdfs:label "Known hypersensitivity to carbapenems will result in exclusion from receiving interventions that include meropenem" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "TAB_DSA" .
+
+rcap:cf5572160df a owl:Class ;
+    rdfs:label "Dose adjustment for renal dysfunction will be per local guidelines." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:cf6051db800 a owl:Class ;
+    rdfs:label "In such cases, patients will be randomly allocated a remaining intervention from among those available at that site." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;CS_DSA;END_DSA;IAV_DSA;IIM_DSA" .
+
+rcap:cf670d47a1a a owl:Class ;
+    rdfs:label "Removal of the domain from the Platform" ;
+    rdfs:subClassOf rcap:AllocationSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cf674dd11cd a owl:Class ;
+    rdfs:label "Mortality at 90-days is the worst possible outcome regardless of duration of organ support or hospital stay, and outcomes for survivors are ordered by length of organ failure support and hospital stay." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:coreStatus "only_41" ;
+    rcap:occursIn "CORE41" .
+
+rcap:cf6882128d8 a owl:Class ;
+    rdfs:label "If, after cessation of hydrocortisone, there is redevelopment of septic shock due to CAP (as defined above), then hydrocortisone IV 50 mg every 6 hours is to be recommenced until resolution." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:cf75a7deb88 a owl:Class ;
+    rdfs:label "Administration of a combination of PEEP and FiO 2 that is not specified by the table is a protocol deviation unless the plateau pressure is 30 cm of H 2 O or more." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MV_DSA" .
+
+rcap:cf76cd04abc a owl:Class ;
+    rdfs:label "The threshold probability for statistical triggers for superiority, effectiveness, and inferiority are those specified in the relevant Core Protocol documents." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:cf7a01ea34e a owl:Class ;
+    rdfs:label "The duration of empiric antibiotics will be determined by the treating clinician based on daily reviews of the following criteria:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:cf8d30209fa a owl:Class ;
+    rdfs:label "The choice of macrolide will depend on the availability and acceptability of the agents at each site in the following order of preference;" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:cf96154a40f a owl:Class ;
+    rdfs:label "Vancomycin, linezolid or other antimicrobials active against MRSA may be added if MRSA is suspected at the discretion of the treating clinician, irrespective of the intervention to which the participant is allocated." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;TAB_DSA" .
+
+rcap:cf9f13d39df a owl:Class ;
+    rdfs:label "*High-flow oxygen defined as a fractional inspired oxygen concentration of 0.4 or higher and with flow rate of at least 30 liters per minute (or at least 2 liters per minute per kilogram of bodyweight in children less than 15 kilograms)." ;
+    rdfs:subClassOf rcap:r87900e2424 ;
+    rcap:coreStatus "revised" ;
+    rcap:inVersion "4.0" ;
+    rcap:occursIn "CORE40" ;
+    rcap:revisionOf rcap:r87900e2424 .
+
+rcap:cfaa5fbfd6e a owl:Class ;
+    rdfs:label "Administration of a systemic corticosteroid, including hydrocortisone or dexamethasone, after completion of the 10-day course is permitted only for the treatment of new illnesses that develop in the course of a patient’s hospital stay, such as asthma, airway swelling or treatment of an allergic reaction." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:cfad5121cfc a owl:Class ;
+    rdfs:label "Known or suspected pregnancy will result in exclusion from moxifloxacin or levofloxacin interventions. It is normal clinical practice that women admitted who are in an age group in which pregnancy is possible will have a pregnancy test conducted. The results of such tests will be used to determine interpretation of this exclusion criteria." ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "AB_DSA" .
+
+rcap:cfb4eb163d9 a owl:Class ;
+    rdfs:label "For baloxavir containing interventions, a third dose can be administered on day 7, if, in the opinion of the treating clinician, there has been insufficient clinical improvement." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IAV_DSA" .
+
+rcap:cfb6fc009ea a owl:Class ;
+    rdfs:label "Known hypersensitivity to any corticosteroid" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "CS_DSA" .
+
+rcap:cfbd5d9fa18 a owl:Class ;
+    rdfs:label "Data on the identification of Aspergillus species from respiratory tract specimens is collected at a platform level." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:cfbfe88c56e a owl:Class ;
+    rdfs:label "The Recovering State, defined as hospitalized patients who are:" ;
+    rdfs:subClassOf rcap:CategorySpecification ;
+    rcap:occursIn "PANDA" .
+
+rcap:cfc5e4fa95a a owl:Class ;
+    rdfs:label "Macrolide therapy should be discontinued if there is development of an SAE which, in the opinion of the treating clinician, could be related to participation in this domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "MD_DSA" .
+
+rcap:cfc67fd1c19 a owl:Class ;
+    rdfs:label "The domain-specific secondary outcome measures (occurring during the index hospitalization, censored at 90 days after enrollment) will be:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "AB_DSA;CS_DSA;IG_DSA;MD_DSA;MV_DSA;TAB_DSA" .
+
+rcap:cfccd458a0a a owl:Class ;
+    rdfs:label "After completion of the infusion of active study drug, at least 20 mls of 0.9% saline should be used to flush the drug through the giving set." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "IIM_DSA" .
+
+rcap:cfead389651 a owl:Class ;
+    rdfs:label "Source of hospital admission" ;
+    rdfs:subClassOf rcap:DataCollectionSpecification ;
+    rcap:coreStatus "same" ;
+    rcap:occursIn "CORE40;CORE41" .
+
+rcap:cfef18ad5c3 a owl:Class ;
+    rdfs:label "This will be applied in a one-sided analysis for futility for active interventions specified in this domain." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:occursIn "END_DSA" .
+
+rcap:cff12d8c7ff a owl:Class ;
+    rdfs:label "Receiving strong CYP3A4 inhibitors (e.g. ketoconazole, itraconazole, erythromycin) or inducers (e.g. rifampicin, phenobarbital, carbamazepine, phenytoin) will exclude a patient receiving enteral imatinib" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    rcap:occursIn "END_DSA" .
+
+<https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/components> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/rcap-core> .
+
+rcap:r52076d4ff9 a owl:Class ;
+    rdfs:label "Core 7.8.7 (version-independent): For RAR, allocation proportions will be capped at 75% for two-intervention domains, unless otherwise specified in a DSA." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:note "I-revision parent: Core 4.0 and 4.1 texts differ; the version-independent component is what an unversioned reference can point at." .
+
+rcap:r87900e2424 a owl:Class ;
+    rdfs:label "Core 7.6.1 (version-independent): *High-flow oxygen is defined as a fractional inspired oxygen concentration of 0.4 or higher and with flow rate of at least 30 liters per minute (or at least 2 liters per minute per kilogram of bodyweight in children less than 15 kilograms)." ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:note "I-revision parent: Core 4.0 and 4.1 texts differ; the version-independent component is what an unversioned reference can point at." .
+
+rcap:rcdb4b81960 a owl:Class ;
+    rdfs:label "Core 8.8.2 (version-independent): Collected while participants are admitted to hospital between randomization and Day 28: For participants admitted to ICU at the time of enrollment, or after enrollment: Unless specified otherwise in an RSA or DSA:" ;
+    rdfs:subClassOf rcap:DesignStatement ;
+    rcap:note "I-revision parent: Core 4.0 and 4.1 texts differ; the version-independent component is what an unversioned reference can point at." .
+

@@ -1,0 +1,237 @@
+doc,seq,file,kind,category,item,number,text,page,top
+CPMP,1,NCT05986292_Prot_005.pdf,inclusion,,statement,,Participants are eligible to be included in the study only if the following criteria apply:,31,286.8
+CPMP,2,NCT05986292_Prot_005.pdf,inclusion,Age,heading,,Age,31,307.1
+CPMP,3,NCT05986292_Prot_005.pdf,inclusion,Age,statement,,Age requirements for participation will be specified in the DSA and/or ISAs.,31,326.8
+CPMP,4,NCT05986292_Prot_005.pdf,inclusion,Pain Characteristics,heading,,Pain Characteristics,31,347.2
+CPMP,5,NCT05986292_Prot_005.pdf,inclusion,Pain Characteristics,criterion,1,have a visual analog scale (VAS) pain value >40 and <95 at Visits 1 and 2,31,366.7
+CPMP,6,NCT05986292_Prot_005.pdf,inclusion,Pain Characteristics,criterion,2,have a history of daily pain for at least 12 weeks based on participant report or medical history,31,388.0
+CPMP,7,NCT05986292_Prot_005.pdf,inclusion,Pain Characteristics,criterion,3,have a value of ≤30 on the pain catastrophizing scale,31,423.1
+CPMP,8,NCT05986292_Prot_005.pdf,inclusion,Weight,heading,,Weight,31,444.6
+CPMP,9,NCT05986292_Prot_005.pdf,inclusion,Weight,criterion,4,have a body mass index <40 kg/m2 (inclusive),31,462.6
+CPMP,10,NCT05986292_Prot_005.pdf,inclusion,Gender,heading,,Gender,31,485.7
+CPMP,11,NCT05986292_Prot_005.pdf,inclusion,Gender,criterion,5,"are male or female participants
+Reproductive and contraceptive requirements will be specified in the ISAs.",31,505.4
+CPMP,12,NCT05986292_Prot_005.pdf,inclusion,Informed Consent and Participant Agreements,heading,,Informed Consent and Participant Agreements,31,546.9
+CPMP,13,NCT05986292_Prot_005.pdf,inclusion,Informed Consent and Participant Agreements,criterion,6,"are capable of providing informed consent as described in Appendix 1, which includes compliance with the requirements and restrictions listed in the informed consent form (ICF) and in this protocol",31,566.6
+CPMP,14,NCT05986292_Prot_005.pdf,inclusion,Informed Consent and Participant Agreements,criterion,7,"are reliable, willing, and able to participate in all required protocol procedures for the duration of the study",31,615.6
+CPMP,15,NCT05986292_Prot_005.pdf,inclusion,Informed Consent and Participant Agreements,criterion,8,"are willing to maintain a consistent regimen of any ongoing nonpharmacologic pain-relieving therapies (for example, physical therapy) and will not start any new nonpharmacologic pain-relieving therapies during study participation",31,650.6
+CPMP,16,NCT05986292_Prot_005.pdf,inclusion,Informed Consent and Participant Agreements,criterion,9,"are willing to discontinue all medications taken for chronic pain conditions, except rescue medication permitted per protocol (Section 6.5), for the duration of the study",32,74.6
+CPMP,17,NCT05986292_Prot_005.pdf,inclusion,Informed Consent and Participant Agreements,criterion,10,must enter the required daily assessments during the PDEP for at least 5 of the 7 days prior to randomization,32,123.6
+CPMP,18,NCT05986292_Prot_005.pdf,exclusion,,statement,,Participants are excluded from the study if any of the following criteria apply at screening:,32,185.7
+CPMP,19,NCT05986292_Prot_005.pdf,exclusion,Medical Conditions,heading,,Medical Conditions,32,206.1
+CPMP,20,NCT05986292_Prot_005.pdf,exclusion,Medical Conditions,criterion,11,have second- or third-degree atrioventricular (AV) heart block or AV dissociation or history of ventricular tachycardia,32,225.6
+CPMP,21,NCT05986292_Prot_005.pdf,exclusion,Medical Conditions,criterion,12,"have had a procedure within the past 6 months intended to produce permanent sensory loss in the target area of interest (for example, ablation techniques)",32,260.8
+CPMP,22,NCT05986292_Prot_005.pdf,exclusion,Medical Conditions,criterion,13,"have surgery planned during the study for any reason, related or not to the disease state under evaluation",32,295.9
+CPMP,23,NCT05986292_Prot_005.pdf,exclusion,Medical Conditions,criterion,14,"have, in the judgment of the investigator, an acute, serious, or unstable medical condition or a history or presence of any other medical illness that would preclude study participation",32,330.9
+CPMP,24,NCT05986292_Prot_005.pdf,exclusion,Medical Conditions,criterion,15,there is an inability to rule out other causative or confounding sources of pain in the primary condition under study,32,379.9
+CPMP,25,NCT05986292_Prot_005.pdf,exclusion,Medical Conditions,criterion,16,"have had cancer within 2 years of Visit 3, except for cutaneous basal cell or squamous cell carcinoma resolved by excision",32,415.2
+CPMP,26,NCT05986292_Prot_005.pdf,exclusion,Medical Conditions,criterion,32,have fibromyalgia,32,450.2
+CPMP,27,NCT05986292_Prot_005.pdf,exclusion,Diagnostic Assessments,heading,,Diagnostic Assessments,32,471.7
+CPMP,28,NCT05986292_Prot_005.pdf,exclusion,Diagnostic Assessments,criterion,17,have substance use disorder as defined by the Diagnostic and Statistical Manual of Mental Disorders (5th edition; DSM-5; American Psychiatric Association),32,491.2
+CPMP,29,NCT05986292_Prot_005.pdf,exclusion,Diagnostic Assessments,criterion,18,"have congenital QT prolongation or QT interval corrected for heart rate using Fridericia’s formula (QTcF) interval measurement >450 msec for male participants, >470 msec for female participants, or >480 msec for participants with bundle branch block",32,540.4
+CPMP,30,NCT05986292_Prot_005.pdf,exclusion,Diagnostic Assessments,criterion,19,"have any clinically important abnormality at screening, as determined by investigator, in physical or neurological examination, vital signs, electrocardiogram (ECG), or clinical laboratory test results that could be detrimental to the participant or could compromise the study",32,603.3
+CPMP,31,NCT05986292_Prot_005.pdf,exclusion,Diagnostic Assessments,criterion,20,have a positive human immunodeficiency virus (HIV) test result at screening,32,666.4
+CPMP,32,NCT05986292_Prot_005.pdf,exclusion,Diagnostic Assessments,criterion,21,"have central laboratory hepatic results at screening of
+ alanine aminotransferase (ALT) ≥2 × the upper limit of normal (ULN)
+ aspartate aminotransferase (AST) ≥2 × ULN
+ total bilirubin (TBL) ≥1.5 × ULN, or
+ alkaline phosphatase (ALP) ≥1.5x ULN.
+In asymptomatic individuals with a history of Gilbert’s syndrome, use TBL of > 2 × ULN.",32,687.6
+CPMP,33,NCT05986292_Prot_005.pdf,exclusion,Diagnostic Assessments,criterion,22,"are, in the judgment of the investigator, actively suicidal and therefore deemed to be at significant risk for suicide",33,197.2
+CPMP,34,NCT05986292_Prot_005.pdf,exclusion,Diagnostic Assessments,criterion,23,"have answered ‘yes’ to either Question 4 or Question 5 on the ‘Suicidal Ideation’ portion of the Columbia-Suicide Severity Rating Scale (C-SSRS)
+OR
+have answered ‘yes’ to any of the suicide-related behaviors on the ‘suicidal behavior’ portion of the C-SSRS, and the ideation or behavior occurred within the past 2 months prior to randomization",33,232.3
+CPMP,35,NCT05986292_Prot_005.pdf,exclusion,Prior and Concomitant Therapy/Substance of Abuse,heading,,Prior and Concomitant Therapy/Substance of Abuse,33,336.9
+CPMP,36,NCT05986292_Prot_005.pdf,exclusion,Prior and Concomitant Therapy/Substance of Abuse,criterion,24,have an intolerance to acetaminophen or paracetamol or any of its excipients,33,356.6
+CPMP,37,NCT05986292_Prot_005.pdf,exclusion,Prior and Concomitant Therapy/Substance of Abuse,criterion,25,"have a history of alcohol, illicit drug, analgesic or narcotic use disorder within 2 years prior to Visit 1",33,377.7
+CPMP,38,NCT05986292_Prot_005.pdf,exclusion,Prior or Concurrent Clinical Trial Experience,heading,,Prior or Concurrent Clinical Trial Experience,33,413.2
+CPMP,39,NCT05986292_Prot_005.pdf,exclusion,Prior or Concurrent Clinical Trial Experience,criterion,26,are currently enrolled in any other clinical trial involving an investigational intervention or any other type of medical research judged not to be scientifically or medically compatible with this study by the Medical Monitor,33,432.7
+CPMP,40,NCT05986292_Prot_005.pdf,exclusion,Prior or Concurrent Clinical Trial Experience,criterion,27,"have participated within the past 30 days in a clinical study and received at least one dose of investigational intervention, including prior CPMP ISAs",33,481.9
+CPMP,41,NCT05986292_Prot_005.pdf,exclusion,Prior or Concurrent Clinical Trial Experience,criterion,28,have not completed all prior ISAs within the CPMP master protocol if they received at least one dose of investigational intervention in the assigned ISA,33,516.9
+CPMP,42,NCT05986292_Prot_005.pdf,exclusion,Other Exclusions,heading,,Other Exclusions,33,552.4
+CPMP,43,NCT05986292_Prot_005.pdf,exclusion,Other Exclusions,criterion,29,"are investigator site personnel directly affiliated with this study or their immediate families. Immediate family is defined as a spouse, parent, child, or sibling, whether biological or legally adopted",33,571.9
+CPMP,44,NCT05986292_Prot_005.pdf,exclusion,Other Exclusions,criterion,30,are employees of Eli Lilly and Company (Lilly) or partners of employees of Lilly or employees or partners of any third-party organizations involved in the study,33,621.1
+CPMP,45,NCT05986292_Prot_005.pdf,exclusion,Other Exclusions,criterion,31,"have current or pending worker’s compensation, litigation, disability, or any other monetary settlement regarding the pain condition, or any closed claim",33,670.0
+BP01,1,NCT04529096_Prot_000.pdf,inclusion,,statement,,Participants are eligible to be included in the study only if all of the following criteria apply:,21,176.8
+BP01,2,NCT04529096_Prot_000.pdf,inclusion,,criterion,2000,"are men or women who abide by the reproductive and contraceptive requirements provided in BP01 Section 10.2, Appendix 2",21,196.8
+BP01,3,NCT04529096_Prot_000.pdf,inclusion,,criterion,2001,are willing to discontinue all pain medications for condition under study except rescue medication permitted per protocol until V801 in the follow-up period,21,230.8
+BP01,4,NCT04529096_Prot_000.pdf,inclusion,,criterion,2002,must have venous access in both arms for IV infusion and sample collection.,21,264.7
+BP01,5,NCT04529096_Prot_000.pdf,exclusion,,statement,,Participants are excluded from the study if any of the following criteria apply:,21,312.9
+BP01,6,NCT04529096_Prot_000.pdf,exclusion,Medical Conditions,heading,,Medical Conditions,21,339.0
+BP01,7,NCT04529096_Prot_000.pdf,exclusion,Medical Conditions,criterion,2003,Have an estimated glomerular filtration rate (eGFR) of less than 70 ml/min/1.73m2 based on the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI) formula at Visit 1 or Visit 2,21,357.2
+BP01,8,NCT04529096_Prot_000.pdf,exclusion,Medical Conditions,criterion,2004,"Have any clinically serious or unstable cardiovascular, musculoskeletal disorder, gastrointestinal (GI), endocrinologic, hematologic, hepatic, metabolic, urologic, pulmonary, dermatologic, immunologic, or ophthalmologic disease within 3 months of Visit 3",21,406.8
+BP01,9,NCT04529096_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,heading,,Prior/Concomitant Therapy,21,474.9
+BP01,10,NCT04529096_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,criterion,2005,"have received any antibodies against nerve growth factor (NGF), antibodies against EGFR, or EGFR tyrosine kinase inhibitors (TKI).",21,494.4
+BP01,11,NCT04529096_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,criterion,2006,"have a history of allergic reactions to monoclonal antibodies, or clinically significant multiple or severe drug allergies, including but not limited to erythema multiforme major, linear immunoglobulin A dermatosis, toxic epidermal necrolysis, or exfoliative dermatitis",21,528.4
+BP01,12,NCT04529096_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,criterion,2007,"have a history or presence of uncontrolled asthma, eczema, significant atopy, significant hereditary angio-edema, or common variable immune deficiency, and",21,590.4
+BP01,13,NCT04529096_Prot_000.pdf,exclusion,Reproductive,heading,,Reproductive,21,624.9
+BP01,14,NCT04529096_Prot_000.pdf,exclusion,Reproductive,criterion,2008,women who are pregnant or breastfeeding.,21,644.4
+BP02,1,NCT05086289_Prot_002.pdf,inclusion,,statement,,Participants are eligible to be included in the study only if all of the following criteria apply:,21,167.3
+BP02,2,NCT05086289_Prot_002.pdf,inclusion,,criterion,2050,"Are men or women who abide by the reproductive and contraceptive requirements provided in BP02 Section 10.2, Appendix 2.",21,187.2
+BP02,3,NCT05086289_Prot_002.pdf,exclusion,,statement,,Participants are excluded from the study if any of the following criteria apply:,21,249.1
+BP02,4,NCT05086289_Prot_002.pdf,exclusion,,redaction,,,21,257.7
+BP02,5,NCT05086289_Prot_002.pdf,exclusion,,criterion,2052,Have an eGFR of less than 30 ml/min/1.73 mbased on the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI) formula at Visit 1 or Visit 2.,21,332.1
+BP02,6,NCT05086289_Prot_002.pdf,exclusion,,criterion,2053,Women who are pregnant or breastfeeding.,21,381.3
+BP02,7,NCT05086289_Prot_002.pdf,exclusion,,redaction,,,21,390.7
+BP02,8,NCT05086289_Prot_002.pdf,exclusion,,redaction,,,21,425.7
+BP02,9,NCT05086289_Prot_002.pdf,exclusion,,redaction,,,21,447.0
+BP02,10,NCT05086289_Prot_002.pdf,exclusion,,redaction,,,21,468.0
+BP03,1,NCT04874636_Prot_000.pdf,inclusion,,statement,,Participants are eligible to be included in the study only if all the following criteria apply:,17,158.8
+BP03,2,NCT04874636_Prot_000.pdf,inclusion,,criterion,2025,"are men or women who abide by the reproductive and contraceptive requirements provided in this ISA Section 10.2, Appendix 2.
+Women of childbearing potential (WOCBP) may participate and include those who
+ are completely abstinent or in a same-sex relationship, as part of their preferred and usual lifestyle, and must agree to either remain abstinent or stay in a same-sex relationship without sexual relationships with males, or  must agree to use 1 highly effective method of contraception (less than 1% failure rate), or a combination of 2 effective methods of contraception, for the entirety of the study.
+Women not of childbearing potential may participate and include those who
+ have a congenital anomaly such as Müllerian agenesis  are infertile due to surgical sterilization, or  are postmenopausal.",17,178.8
+BP03,3,NCT04874636_Prot_000.pdf,exclusion,,statement,,Participants are excluded from the study if any of the following criteria apply:,17,450.2
+BP03,4,NCT04874636_Prot_000.pdf,exclusion,Medical Conditions,heading,,Medical Conditions,17,470.8
+BP03,5,NCT04874636_Prot_000.pdf,exclusion,Medical Conditions,criterion,2026,"have a history within 2 years prior to Visit 1 or current evidence of syncope, presyncope, uncontrolled vertigo, or postural dizziness, judged to be clinically significant by the investigator",17,490.3
+BP03,6,NCT04874636_Prot_000.pdf,exclusion,Medical Conditions,criterion,2027,have a QRS interval ≥120 msec at Visit 1 or Visit 2,17,538.3
+BP03,7,NCT04874636_Prot_000.pdf,exclusion,Medical Conditions,criterion,2028,have a non-evaluable PR interval or a PR interval >200 msec at Visit 1 or Visit 2,17,558.2
+BP03,8,NCT04874636_Prot_000.pdf,exclusion,Medical Conditions,criterion,2029,have a heart rate <40 bpm at Visit 1 or Visit 2,17,578.4
+BP03,9,NCT04874636_Prot_000.pdf,exclusion,Medical Conditions,criterion,2030,have an estimated glomerular filtration rate (eGFR) of less than 60 ml/min/1.73 m2 based on the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI) formula at Visit 1 or Visit 2,17,598.3
+BP03,10,NCT04874636_Prot_000.pdf,exclusion,Medical Conditions,criterion,2031,"have clinically significant active thyroid disease, including Hashimoto’s thyroiditis",17,646.3
+BP03,11,NCT04874636_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,heading,,Prior/Concomitant Therapy,18,94.9
+BP03,12,NCT04874636_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,criterion,2032,have been on thyroid replacement therapy or supplements for less than 12 weeks or had a change in thyroid replacement therapy or supplements in the last 12 weeks before Visit 2,18,114.7
+BP03,13,NCT04874636_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,criterion,2033,have had a change in beta blocker therapy in the last 12 weeks before Visit 2. This does not include a discontinuation of therapy.,18,162.7
+BP03,14,NCT04874636_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,criterion,2034,"are taking medications that are known MATE1 or OCT2 substrates with the risk for potentially clinically significant drug-drug interactions, such as metformin, dofetilide and dalfampridine",18,196.5
+BP03,15,NCT04874636_Prot_000.pdf,exclusion,Other Exclusions,heading,,Other Exclusions,18,250.7
+BP03,16,NCT04874636_Prot_000.pdf,exclusion,Other Exclusions,criterion,2035,are pregnant or breastfeeding.,18,270.4
+BP05,1,NCT05630196_Prot_000.pdf,inclusion,,statement,,Participants are eligible to be included in the study only if all of the following criteria apply:,20,165.3
+BP05,2,NCT05630196_Prot_000.pdf,inclusion,Sex and contraceptive/barrier requirements,heading,,Sex and contraceptive/barrier requirements,20,185.5
+BP05,3,NCT05630196_Prot_000.pdf,inclusion,Sex and contraceptive/barrier requirements,criterion,2075,"Males and females may participate in this trial.
+No male contraception is required except in compliance with specific local government study requirements.
+WOCBP and WNOCBP may participate in this trial. See Section 10.4 for definitions and additional requirements related to contraception.
+Contraceptive use by participants should be consistent with local regulations regarding the methods of contraception for those participating in clinical studies.",20,206.3
+BP05,4,NCT05630196_Prot_000.pdf,exclusion,,statement,,Participants are excluded from the study if any of the following criteria apply:,20,363.6
+BP05,5,NCT05630196_Prot_000.pdf,exclusion,,redaction,,,20,380.7
+BP05,6,NCT05630196_Prot_000.pdf,exclusion,,criterion,2077,"Have an eGFR of <30 mL/min/1.73 m2, based on the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI) formula at Visit 1 or Visit 2.",20,459.6
+BP05,7,NCT05630196_Prot_000.pdf,exclusion,,criterion,2078,"Have known allergies to LY3857210, related compounds or any components of the formulation, or history of significant atopy.",20,489.6
+BP05,8,NCT05630196_Prot_000.pdf,exclusion,,criterion,2079,Women who are pregnant or breastfeeding.,20,519.6
+BP05,9,NCT05630196_Prot_000.pdf,exclusion,,redaction,,,20,532.3
+BP05,10,NCT05630196_Prot_000.pdf,exclusion,,redaction,,,21,70.3
+NP01,1,NCT04476108_Prot_000.pdf,inclusion,,statement,,Participants are eligible to be included in the study only if all of the following criteria apply:,21,176.8
+NP01,2,NCT04476108_Prot_000.pdf,inclusion,,criterion,3000,"are men or women who abide by the reproductive and contraceptive requirements provided in NP01 Section 10.2, Appendix 2",21,196.8
+NP01,3,NCT04476108_Prot_000.pdf,inclusion,,criterion,3001,are willing to discontinue all pain medications for condition under study except rescue medication permitted per protocol until V801 in the follow-up period,21,230.8
+NP01,4,NCT04476108_Prot_000.pdf,inclusion,,criterion,3002,must have venous access in both arms for IV infusion and sample collection.,21,264.7
+NP01,5,NCT04476108_Prot_000.pdf,exclusion,,statement,,Participants are excluded from the study if any of the following criteria apply:,21,312.9
+NP01,6,NCT04476108_Prot_000.pdf,exclusion,Medical Conditions,heading,,Medical Conditions,21,339.0
+NP01,7,NCT04476108_Prot_000.pdf,exclusion,Medical Conditions,criterion,3003,Have an eGFR of less than 70 ml/min/1.73m2 based on CKD-EPI formula at Visit 1 or Visit 2,21,358.8
+NP01,8,NCT04476108_Prot_000.pdf,exclusion,Medical Conditions,criterion,3004,"Have any clinically serious or unstable cardiovascular, musculoskeletal disorder, gastrointestinal, endocrinologic, hematologic, hepatic, metabolic, urologic, pulmonary, dermatologic, immunologic, or ophthalmologic disease within 3 months of Visit 3",21,392.6
+NP01,9,NCT04476108_Prot_000.pdf,exclusion,Medical Conditions,criterion,3005,have megaloblastic anemia or combined degeneration of the spinal cord,21,454.8
+NP01,10,NCT04476108_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,heading,,Prior/Concomitant Therapy,21,480.9
+NP01,11,NCT04476108_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,criterion,3006,"have received any antibodies against nerve growth factor (NGF), or antibodies against EGFR, or EGFR tyrosine kinase inhibitors.",21,500.4
+NP01,12,NCT04476108_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,criterion,3007,"have a history of allergic reactions to monoclonal antibodies, or clinically significant multiple or severe drug allergies, including but not limited to erythema multiforme major, linear immunoglobulin A dermatosis, toxic epidermal necrolysis, or exfoliative dermatitis.",21,534.4
+NP01,13,NCT04476108_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,criterion,3008,"have a history or presence of uncontrolled asthma, eczema, significant atopy, significant hereditary angio-edema or common variable immune deficiency, and",21,596.4
+NP01,14,NCT04476108_Prot_000.pdf,exclusion,Reproductive,heading,,Reproductive,21,630.9
+NP01,15,NCT04476108_Prot_000.pdf,exclusion,Reproductive,criterion,3009,are women who are pregnant or breastfeeding.,21,650.4
+NP02,1,NCT05177094_Prot_000.pdf,inclusion,,statement,,Participants are eligible to be included in the study only if all of the following criteria apply:,21,167.3
+NP02,2,NCT05177094_Prot_000.pdf,inclusion,,criterion,3050,"Are men or women who abide by the reproductive and contraceptive requirements provided in NP02 Section 10.2, Appendix 2.",21,187.2
+NP02,3,NCT05177094_Prot_000.pdf,exclusion,,statement,,Participants are excluded from the study if any of the following criteria apply:,21,249.1
+NP02,4,NCT05177094_Prot_000.pdf,exclusion,,redaction,,,21,257.7
+NP02,5,NCT05177094_Prot_000.pdf,exclusion,,criterion,3052,"Have an eGFR of less than 30 ml/min/1.73 m, based on the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI) formula at Visit 1 or Visit 2.",21,332.1
+NP02,6,NCT05177094_Prot_000.pdf,exclusion,,criterion,3053,Women who are pregnant or breastfeeding.,21,381.3
+NP02,7,NCT05177094_Prot_000.pdf,exclusion,,redaction,,,21,390.7
+NP02,8,NCT05177094_Prot_000.pdf,exclusion,,redaction,,,21,425.7
+NP02,9,NCT05177094_Prot_000.pdf,exclusion,,redaction,,,21,447.0
+NP03,1,NCT04707157_Prot_000.pdf,inclusion,,statement,,Participants are eligible to be included in the study only if all the following criteria apply:,19,159.3
+NP03,2,NCT04707157_Prot_000.pdf,inclusion,,criterion,3025,"are men or women who abide by the reproductive and contraceptive requirements provided in this ISA Section 10.2, Appendix 2.
+Women of childbearing potential (WOCBP) may participate and include those who
+are completely abstinent or in a same-sex relationship, as part of their preferred and usual lifestyle, and must agree to either remain abstinent or stay in a same-sex relationship without sexual relationships with males, or must agree to use 1 highly effective method of contraception (less than 1% failure rate), or a combination of 2 effective methods of contraception, for the entirety of the study.
+Women not of childbearing potential may participate and include those who
+have a congenital anomaly such as Müllerian agenesis are infertile due to surgical sterilization, or are postmenopausal.",19,179.3
+NP03,3,NCT04707157_Prot_000.pdf,exclusion,,statement,,Participants are excluded from the study if any of the following criteria apply:,19,443.7
+NP03,4,NCT04707157_Prot_000.pdf,exclusion,Medical Conditions,heading,,Medical Conditions,19,463.8
+NP03,5,NCT04707157_Prot_000.pdf,exclusion,Medical Conditions,criterion,3026,"have a history within 2 years prior to Visit 1 or current evidence of syncope, presyncope, uncontrolled vertigo, or postural dizziness, judged to be clinically significant by the investigator",19,483.6
+NP03,6,NCT04707157_Prot_000.pdf,exclusion,Medical Conditions,criterion,3027,have a QRS interval ≥120 msec at Visit 1 or Visit 2,19,531.7
+NP03,7,NCT04707157_Prot_000.pdf,exclusion,Medical Conditions,criterion,3028,have a non-evaluable PR interval or a PR interval >200 msec at Visit 1 or Visit 2,19,551.7
+NP03,8,NCT04707157_Prot_000.pdf,exclusion,Medical Conditions,criterion,3029,have a heart rate <40 bpm at Visit 1 or Visit 2,19,571.6
+NP03,9,NCT04707157_Prot_000.pdf,exclusion,Medical Conditions,criterion,3030,have an estimated glomerular filtration rate (eGFR) of less than 60 ml/min/1.73 m2 based on the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI) formula at Visit 1 or Visit 2,19,591.7
+NP03,10,NCT04707157_Prot_000.pdf,exclusion,Medical Conditions,criterion,3031,"have clinically significant active thyroid disease, including Hashimoto’s thyroiditis",19,639.9
+NP03,11,NCT04707157_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,heading,,Prior/Concomitant Therapy,19,673.8
+NP03,12,NCT04707157_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,criterion,3032,have been on thyroid replacement therapy or supplements for less than 12 weeks or had a change in thyroid replacement therapy or supplements in the last 12 weeks before Visit 2,20,75.1
+NP03,13,NCT04707157_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,criterion,3033,have had a change in beta blocker therapy in the last 12 weeks before Visit 2. This does not include a discontinuation of therapy,20,123.1
+NP03,14,NCT04707157_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,criterion,3034,"are taking medications that are known MATE1 or OCT2 substrates with the risk for potentially clinically significant drug-drug interactions, such as metformin, dofetilide and dalfampridine Metformin Exception Limited dosages of metformin are allowed in this study.
+Once daily dosing Dose levels up to and including 750 mg extended release and 850 mg immediate release may be administered once daily.
+Twice daily dosing Dose levels up to and including 500 mg of an immediate release formulation may be administered twice daily",20,157.1
+NP03,15,NCT04707157_Prot_000.pdf,exclusion,Prior/Concomitant Therapy / Additional Considerations for Participants Taking Metformin:,heading,,Additional Considerations for Participants Taking Metformin:,20,334.2
+NP03,16,NCT04707157_Prot_000.pdf,exclusion,Prior/Concomitant Therapy / Additional Considerations for Participants Taking Metformin: / Medical Conditions,heading,,Medical Conditions,20,354.2
+NP03,17,NCT04707157_Prot_000.pdf,exclusion,Prior/Concomitant Therapy / Additional Considerations for Participants Taking Metformin: / Medical Conditions,criterion,3036,have a history or presence of lactic acidosis,20,374.0
+NP03,18,NCT04707157_Prot_000.pdf,exclusion,Prior/Concomitant Therapy / Additional Considerations for Participants Taking Metformin: / Medical Conditions,criterion,3037,have history or presence of severe hepatic disease including cirrhosis,20,394.0
+NP03,19,NCT04707157_Prot_000.pdf,exclusion,Prior/Concomitant Therapy / Additional Considerations for Participants Taking Metformin: / Medical Conditions,criterion,3038,have uncontrolled or unstable congestive heart failure,20,414.0
+NP03,20,NCT04707157_Prot_000.pdf,exclusion,Prior/Concomitant Therapy / Additional Considerations for Participants Taking Metformin: / Prior/Concomitant Therapy,heading,,Prior/Concomitant Therapy,20,434.3
+NP03,21,NCT04707157_Prot_000.pdf,exclusion,Prior/Concomitant Therapy / Additional Considerations for Participants Taking Metformin: / Prior/Concomitant Therapy,criterion,3039,are taking carbonic anhydrase inhibitors if also taking metformin,20,454.0
+NP03,22,NCT04707157_Prot_000.pdf,exclusion,Prior/Concomitant Therapy / Additional Considerations for Participants Taking Metformin: / Prior/Concomitant Therapy,criterion,3040,have had a change in metformin therapy in the last 12 weeks before Visit 2.,20,474.0
+NP03,23,NCT04707157_Prot_000.pdf,exclusion,Prior/Concomitant Therapy / Additional Considerations for Participants Taking Metformin: / Prior/Concomitant Therapy,criterion,3041,have not maintained a stable dose of glucose-lowering agents other than metformin for at least 4 weeks prior to Visit 3.,20,493.9
+NP03,24,NCT04707157_Prot_000.pdf,exclusion,Other Exclusions,heading,,Other Exclusions,20,534.0
+NP03,25,NCT04707157_Prot_000.pdf,exclusion,Other Exclusions,criterion,3035,are pregnant or breastfeeding.,20,553.8
+NP05,1,NCT05620576_Prot_000.pdf,inclusion,,statement,,Participants are eligible to be included in the study only if all of the following criteria apply:,21,159.3
+NP05,2,NCT05620576_Prot_000.pdf,inclusion,Sex and contraceptive/barrier requirements,heading,,Sex and contraceptive/barrier requirements,21,179.4
+NP05,3,NCT05620576_Prot_000.pdf,inclusion,Sex and contraceptive/barrier requirements,criterion,3075,"Males and females may participate in this trial.
+No male contraception is required except in compliance with specific local government study requirements.
+WOCBP and WNOCBP may participate in this trial. See Section 10.4 for definitions and additional requirements related to contraception.
+Contraceptive use by participants should be consistent with local regulations regarding the methods of contraception for those participating in clinical studies.",21,200.3
+NP05,4,NCT05620576_Prot_000.pdf,exclusion,,statement,,Participants are excluded from the study if any of the following criteria apply:,21,351.6
+NP05,5,NCT05620576_Prot_000.pdf,exclusion,,redaction,,,21,364.0
+NP05,6,NCT05620576_Prot_000.pdf,exclusion,,criterion,3077,"Have an eGFR of <30 mL/min/1.73 m , based on the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI) formula at Visit 1 or Visit 2.",21,447.6
+NP05,7,NCT05620576_Prot_000.pdf,exclusion,,criterion,3078,"Have known allergies to LY3857210, related compounds or any components of the formulation, or history of significant atopy.",21,477.6
+NP05,8,NCT05620576_Prot_000.pdf,exclusion,,criterion,3079,Women who are pregnant or breastfeeding.,21,507.6
+NP05,9,NCT05620576_Prot_000.pdf,exclusion,,redaction,,,21,518.3
+NP05,10,NCT05620576_Prot_000.pdf,exclusion,,redaction,,,22,61.3
+OA01,1,NCT04456686_Prot_000.pdf,inclusion,,statement,,Participants are eligible to be included in the study only if all the following criteria apply:,22,176.8
+OA01,2,NCT04456686_Prot_000.pdf,inclusion,,criterion,1000,"are men or women who abide by the reproductive and contraceptive requirements provided in OA01 Section 10.2, Appendix 2",22,196.8
+OA01,3,NCT04456686_Prot_000.pdf,inclusion,,criterion,1001,are willing to discontinue all pain medications for condition under study except rescue medication permitted until V801 in the follow-up period,22,230.8
+OA01,4,NCT04456686_Prot_000.pdf,inclusion,,criterion,1002,must have venous access in both arms for IV infusion and sample collection.,22,264.7
+OA01,5,NCT04456686_Prot_000.pdf,exclusion,,statement,,Participants are excluded from the study if any of the following criteria apply:,22,312.9
+OA01,6,NCT04456686_Prot_000.pdf,exclusion,Medical Conditions,heading,,Medical Conditions,22,333.3
+OA01,7,NCT04456686_Prot_000.pdf,exclusion,Medical Conditions,criterion,1003,have had an intra-articular injection of hyaluronic acid within 24 weeks of Visit 2,22,353.0
+OA01,8,NCT04456686_Prot_000.pdf,exclusion,Medical Conditions,criterion,1004,have an eGFR of less than 70 ml/min/1.73m2 based on CKD-EPI formula at Visit 1 or Visit 2,22,372.9
+OA01,9,NCT04456686_Prot_000.pdf,exclusion,Medical Conditions,criterion,1005,"Have any clinically serious or unstable cardiovascular, musculoskeletal disorder, gastrointestinal, endocrinologic, hematologic, hepatic, metabolic, urologic, pulmonary, dermatologic, immunologic, or ophthalmologic disease within 3 months of Visit 3",22,407.0
+OA01,10,NCT04456686_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,heading,,Prior/Concomitant Therapy,22,469.3
+OA01,11,NCT04456686_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,criterion,1006,"have received any antibodies against nerve growth factor (NGF), or antibodies against EGFR, or EGFR tyrosine kinase inhibitors",22,488.8
+OA01,12,NCT04456686_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,criterion,1007,"have a history of allergic reactions to monoclonal antibodies, or clinically significant multiple or severe drug allergies, including but not limited to erythema multiforme major, linear immunoglobulin A dermatosis, toxic epidermal necrolysis, or exfoliative dermatitis",22,522.9
+OA01,13,NCT04456686_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,criterion,1008,"have a history or presence of uncontrolled asthma, eczema, significant atopy, significant hereditary angioedema or common variable immune deficiency, and",22,584.8
+OA01,14,NCT04456686_Prot_000.pdf,exclusion,Reproductive,heading,,Reproductive,22,619.3
+OA01,15,NCT04456686_Prot_000.pdf,exclusion,Reproductive,criterion,1009,are women who are pregnant or breastfeeding.,22,638.8
+OA02,1,NCT05080660_Prot_004.pdf,inclusion,,statement,,Participants are eligible to be included in the study only if all of the following criteria apply:,21,167.3
+OA02,2,NCT05080660_Prot_004.pdf,inclusion,,criterion,1050,"Are men or women who abide by the reproductive and contraceptive requirements provided in OA02 Section 10.2, Appendix 2.",21,187.2
+OA02,3,NCT05080660_Prot_004.pdf,exclusion,,statement,,Participants are excluded from the study if any of the following criteria apply:,21,249.1
+OA02,4,NCT05080660_Prot_004.pdf,exclusion,,redaction,,,21,257.7
+OA02,5,NCT05080660_Prot_004.pdf,exclusion,,criterion,1052,"Have an eGFR of less than 30 ml/min/1.73 m, based on the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI) formula at Visit 1 or Visit 2.",21,332.1
+OA02,6,NCT05080660_Prot_004.pdf,exclusion,,criterion,1053,Women who are pregnant or breastfeeding.,21,381.3
+OA02,7,NCT05080660_Prot_004.pdf,exclusion,,redaction,,,21,390.7
+OA02,8,NCT05080660_Prot_004.pdf,exclusion,,redaction,,,21,425.7
+OA02,9,NCT05080660_Prot_004.pdf,exclusion,,redaction,,,21,447.0
+OA02,10,NCT05080660_Prot_004.pdf,exclusion,,redaction,,,21,468.0
+OA03,1,NCT04627038_Prot_000.pdf,inclusion,,statement,,Participants are eligible to be included in the study only if all the following criteria apply:,20,176.8
+OA03,2,NCT04627038_Prot_000.pdf,inclusion,,criterion,1025,"are men or women who abide by the reproductive and contraceptive requirements provided in OA03 Section 10.2, Appendix 2.
+Women of childbearing potential (WOCBP) may participate and include those who
+ are completely abstinent or in a same-sex relationship, as part of their preferred and usual lifestyle, must agree to either remain abstinent or stay in a same-sex relationship without sexual relationships with males, or  must agree to use 1 highly effective method of contraception (less than 1% failure rate), or a combination of 2 effective methods of contraception, for the entirety of the study.
+Women not of childbearing potential may participate and include those who
+ have a congenital anomaly such as Müllerian agenesis  are infertile due to surgical sterilization, or  are postmenopausal.",20,196.8
+OA03,3,NCT04627038_Prot_000.pdf,exclusion,,statement,,Participants are excluded from the study if any of the following criteria apply:,20,461.0
+OA03,4,NCT04627038_Prot_000.pdf,exclusion,Medical Conditions,heading,,Medical Conditions,20,481.6
+OA03,5,NCT04627038_Prot_000.pdf,exclusion,Medical Conditions,criterion,1026,"have a history within 2 years prior to Visit 1or current evidence of syncope, presyncope, uncontrolled vertigo, or postural dizziness, judged to be clinically significant by the investigator",20,501.1
+OA03,6,NCT04627038_Prot_000.pdf,exclusion,Medical Conditions,criterion,1027,have a QRS interval ≥120 msec at Visit 1 or Visit 2,20,549.1
+OA03,7,NCT04627038_Prot_000.pdf,exclusion,Medical Conditions,criterion,1028,have a non-evaluable PR interval or a PR interval >200 msec at Visit 1 or Visit 2,20,569.0
+OA03,8,NCT04627038_Prot_000.pdf,exclusion,Medical Conditions,criterion,1029,have a heart rate <40 bpm at Visit 1 or Visit 2,20,589.2
+OA03,9,NCT04627038_Prot_000.pdf,exclusion,Medical Conditions,criterion,1030,have an estimated glomerular filtration rate (eGFR) of less than 60 ml/min/1.73 m2 based on the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI) formula at Visit 1 or Visit 2,20,609.1
+OA03,10,NCT04627038_Prot_000.pdf,exclusion,Medical Conditions,criterion,1031,"have clinically significant active thyroid disease, including Hashimoto’s thyroiditis",20,657.1
+OA03,11,NCT04627038_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,heading,,Prior/Concomitant Therapy,21,94.9
+OA03,12,NCT04627038_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,criterion,1032,have been on thyroid replacement therapy or supplements for less than 12 weeks or had a change in thyroid replacement therapy or supplements in the last 12 weeks before Visit 2,21,114.7
+OA03,13,NCT04627038_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,criterion,1033,have had a change in beta blocker therapy in the last 12 weeks before Visit 2. This does not include a discontinuation of therapy.,21,162.7
+OA03,14,NCT04627038_Prot_000.pdf,exclusion,Prior/Concomitant Therapy,criterion,1034,"are taking medications that are known MATE1 or OCT2 substrates with the risk for potentially clinically significant drug-drug interactions, such as metformin, dofetilide and dalfampridine",21,196.5
+OA03,15,NCT04627038_Prot_000.pdf,exclusion,Other Exclusions,heading,,Other Exclusions,21,244.9
+OA03,16,NCT04627038_Prot_000.pdf,exclusion,Other Exclusions,criterion,1035,are pregnant or breastfeeding.,21,264.7
+OA05,1,NCT05620563_Prot_000.pdf,inclusion,,statement,,Participants are eligible to be included in the study only if all of the following criteria apply:,21,167.6
+OA05,2,NCT05620563_Prot_000.pdf,inclusion,Sex and contraceptive/barrier requirements,heading,,Sex and contraceptive/barrier requirements,21,187.6
+OA05,3,NCT05620563_Prot_000.pdf,inclusion,Sex and contraceptive/barrier requirements,criterion,1075,"Males and females may participate in this trial.
+No male contraception is required except in compliance with specific local government study requirements.
+WOCBP and WNOCBP may participate in this trial. See Section 10.4 for definitions and additional requirements related to contraception.
+Contraceptive use by participants should be consistent with local regulations regarding the methods of contraception for those participating in clinical studies.",21,208.6
+OA05,4,NCT05620563_Prot_000.pdf,exclusion,,statement,,Participants are excluded from the study if any of the following criteria apply:,21,359.9
+OA05,5,NCT05620563_Prot_000.pdf,exclusion,,redaction,,,21,369.3
+OA05,6,NCT05620563_Prot_000.pdf,exclusion,,criterion,1077,"Have an eGFR of <30 mL/min/1.73 m, based on the Chronic Kidney Disease Epidemiology Collaboration formula at Visit 1 or Visit 2.",21,455.9
+OA05,7,NCT05620563_Prot_000.pdf,exclusion,,criterion,1078,"Have known allergies to LY3857210, related compounds or any components of the formulation, or history of significant atopy.",21,485.9
+OA05,8,NCT05620563_Prot_000.pdf,exclusion,,criterion,1079,Women who are pregnant or breastfeeding.,21,515.9
+OA05,9,NCT05620563_Prot_000.pdf,exclusion,,redaction,,,21,518.3
+OA05,10,NCT05620563_Prot_000.pdf,exclusion,,redaction,,,22,67.3

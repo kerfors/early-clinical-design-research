@@ -1,0 +1,20 @@
+# CQ6: which master SoA cells are overridden, by which ISAs, and what does an override point at?
+# Target is a master default cell, or the disease-state design (activity not in the master SoA).
+PREFIX cpmp: <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?isa ?target ?target_kind ?activity ?sentence
+WHERE {
+    ?ax owl:annotatedSource ?isa ;
+        owl:annotatedProperty cpmp:overrides ;
+        owl:annotatedTarget ?target ;
+        cpmp:evidenceText ?sentence .
+    OPTIONAL { ?target cpmp:masterDefault ?is_default }
+    OPTIONAL { ?target cpmp:activityKey ?cell_activity }
+    OPTIONAL { ?ax cpmp:activityKey ?ax_activity }
+    BIND (COALESCE(?cell_activity, ?ax_activity) AS ?activity)
+    BIND (IF(BOUND(?is_default), "master default",
+             IF(EXISTS { ?target cpmp:contentStatus "not public" }, "disease state (not public)", "other")) AS ?target_kind)
+}
+ORDER BY ?isa ?activity

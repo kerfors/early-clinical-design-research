@@ -1,0 +1,9 @@
+# R7: DSA statements that resolve to more than one Core version (V-transition: dated before Core 4.1,
+# endpoint targets) and, per DSA, statements on changed Core sections that resolve to 4.1 only.
+PREFIX rcap: <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/>
+SELECT ?dsa ?versions (COUNT(DISTINCT ?r) AS ?n) WHERE {
+  ?r a rcap:InheritanceReading ; rcap:readingOf ?dsa ; rcap:sectionChangedIn41 ?change ;
+     rcap:resolvesToCoreVersions ?versions .
+}
+GROUP BY ?dsa ?versions
+ORDER BY ?dsa ?versions

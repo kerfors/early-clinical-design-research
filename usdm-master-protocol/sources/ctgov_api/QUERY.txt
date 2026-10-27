@@ -1,0 +1,6 @@
+Retrieved 2026-10-24 from https://clinicaltrials.gov/api/v2/studies (full records).
+Queries (union of results): query.term in {"H0P-MC", "CPMP", "Chronic Pain Master Protocol",
+"master protocol chronic pain"} with query.spons="Eli Lilly and Company"; plus query.term="H0P-MC"
+without sponsor filter (same 16 records). Kept: records with a secondary ID starting "H0P-MC-".
+Excluded: NCT00190684 (atomoxetine, matched on free text only).
+PDFs: https://cdn.clinicaltrials.gov/large-docs/<last 2 digits of NCT>/<NCT>/<filename>; byte sizes match the API "size" field.

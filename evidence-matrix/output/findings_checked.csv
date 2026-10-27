@@ -1,0 +1,37 @@
+finding_id,case,requirement,expected,observed,evidence_rows,check
+RC-1,REMAP-CAP,R-COMMON,4 components in all 9 DSAs,4 components in all 9 DSAs,36,pass
+RC-2,REMAP-CAP,R-COMMON,58 components,58 components,116,pass
+RC-3,REMAP-CAP,R-LAYER,0 restated in 9 DSAs,0 restated in 9 DSAs,9,pass
+RC-4,REMAP-CAP,R-GAP,113 in 8 DSAs; 119 in IAV_DSA,113 in 8 DSAs; 119 in IAV_DSA,119,pass
+RC-5,REMAP-CAP,R-GAP,17 unanswered; 6 answered with a pointer back,17 unanswered; 6 answered with a pointer back,46,pass
+RC-6,REMAP-CAP,R-GAP,18 silent (balanced allocation); 9 not evaluated (no control arm),18 silent (balanced allocation); 9 not evaluated (no control arm),54,pass
+RC-7,REMAP-CAP,R-LAYER,2 sentences,2 sentences,2,pass
+RC-8,REMAP-CAP,R-LAYER,*,3 eligibility items,3,first counted here
+RC-9,REMAP-CAP,R-VERSION,0 statements name a Core version,0 statements name a Core version,134,pass
+RC-10,REMAP-CAP,R-VERSION,54 statements; 8 of 9 DSAs before Core 4.1,54 statements; 8 of 9 DSAs before Core 4.1,54,pass
+RC-11,REMAP-CAP,R-VERSION,60% -> 75%,60% -> 75%,3,pass
+RC-12,REMAP-CAP,R-VERSION,identical in 4.0 and 4.1,identical in 4.0 and 4.1,2,pass
+RC-13,REMAP-CAP,R-VERSION,3 revised; 8 moved,3 revised; 8 moved,11,pass
+RC-14,REMAP-CAP,R-ID,141 decisions; 6 tentative,141 decisions; 6 tentative,141,pass
+RC-15,REMAP-CAP,R-ID,1 component,1 component,2,pass
+RC-16,REMAP-CAP,R-DOCSET,9 DSAs; 7-14 statements each,9 DSAs; 7-14 statements each,90,pass
+RC-17,REMAP-CAP,R-DOCSET,9 DSAs,9 DSAs,19,pass
+RC-18,REMAP-CAP,R-DOCSET,"IAV_DSA 14.1;14.2.1;14.2.2; heading unnumbered, inside section 13","IAV_DSA 14.1;14.2.1;14.2.2; heading unnumbered, inside section 13",4,pass
+RC-19,REMAP-CAP,R-DOCSET,all MV_DSA sections reconstructed,all MV_DSA sections reconstructed,110,pass
+RC-20,REMAP-CAP,R-DECISION,11 sections; 0 reasons,11 sections; 0 reasons,11,pass
+CP-1,CPMP,R-COMMON,26 components; 12 ISAs name their compound,26 components; 12 ISAs name their compound,77,pass
+CP-2,CPMP,R-COMMON,22 cells,22 cells,264,pass
+CP-3,CPMP,R-COMMON,12 ISAs; 1 master sentence,12 ISAs; 1 master sentence,13,pass
+CP-4,CPMP,R-LAYER,restated 0-8 of 151 master cells,restated 0-8 of 151 master cells,12,pass
+CP-5,CPMP,R-LAYER,12 cells; 3 on activities not in the master SoA,12 cells; 3 on activities not in the master SoA,12,pass
+CP-6,CPMP,R-LAYER,25 statements; LY3857210 only; DSA named in OA05,25 statements; LY3857210 only; DSA named in OA05,25,pass
+CP-7,CPMP,R-GAP,8 activities; 6 filled as rows; TSH at test level in 3 ISAs; exploratory biomarker samples in none,8 activities; 6 filled as rows; TSH at test level in 3 ISAs; exploratory biomarker samples in none,12,pass
+CP-8,CPMP,R-GAP,8 slots; 117 ISA sentences,8 slots; 117 ISA sentences,125,pass
+CP-9,CPMP,R-GAP,3 ISAs; 51 master components + 8 slots,3 ISAs; 51 master components + 8 slots,4,pass
+CP-10,CPMP,R-ID,12 sentences; TSH under 2 headings,12 sentences; TSH under 2 headings,16,pass
+CP-11a,CPMP,R-ID,115 decisions,115 decisions,115,pass
+CP-11b,CPMP,R-ID,eGFR values 30/60/70,eGFR values 30/60/70,12,pass
+CP-12,CPMP,R-ANCHOR,*,1 master sentences; 4 activities marked at V3 in master and ISA,5,first counted here
+CP-13,CPMP,R-VERSION,2 of 26 amendment texts; 0 of 12 panel sentences,2 of 26 amendment texts; 0 of 12 panel sentences,26,pass
+CP-14,CPMP,R-DECISION,204 changes; 40 shared rationales,204 changes; 40 shared rationales,243,pass
+CP-15,CPMP,R-DOCSET,3 DSAs not posted,3 DSAs not posted,3,pass

@@ -1,0 +1,22 @@
+row,core_section,core_key,kind,topic,primary,topic_pattern,topic_case,takes_pattern,overrides_pattern,secondary,secondary_pattern,conditional,per_state,role,reviewer,source
+1,2.2.6,Domain-specific sampling,delegation,domain-specific sampling,exact:Microbiology,,i,,,title:Domain-specific data collection,sampl|specimen|swab,yes,,paired,,agreed 2026-10-25; primary by title 2026-10-25 (all DSAs)
+2,7.5.2,At initiation of a new domain,default,balanced allocation at domain start,title:Application of Response,balanced|equal proportion|1/K,i,balanced|equal,unbalanced|\d+ ?: ?\d+,title:Domain History,balanced|equal|proportion,,,paired,trial-design,agreed 2026-10-25
+3,7.5.2,when a new intervention is added,default,new intervention at 1/K,title:Application of Response,new intervention|added|1/K,i,balanced|1/K,unbalanced|\d+ ?: ?\d+,title:Domain History,added|balanced,,,paired,trial-design,agreed 2026-10-25
+4,7.5.2,For domains without a control arm,default,no control arm: no min/max,title:Application of Response,minimum|maximum|\bcontrol\b,i,,,num:8.3.1,\bcontrol\b,,control_arm,paired,trial-design,agreed 2026-10-25
+5,7.5.2,only two available interventions,default,two interventions: no RAR,title:Application of Response,Response[- ]Adaptive Randomi[sz]ation|\bRAR\b,i,not be applied,will be applied,,,,two_interventions,paired,trial-design,agreed 2026-10-25
+6,7.6,The primary outcome for this Platform,default,primary outcome applies,title:Primary endpoint,primary,i,core protocol,,,,,,paired,,agreed 2026-10-25
+7,7.7.3,details related to blinding,delegation,blinding details,title:Blinding,,i,,,num:8.3.1,open-label|blind,yes,,paired,,agreed 2026-10-25
+8,7.8.3,The approach to specifying gamma,delegation,gamma and unit of analysis,title:Unit-of-analysis,,i,,,,,,,paired,trial-design,agreed 2026-10-25
+9,7.8.3,The lambda that will be set,delegation,lambda per domain pair,title:Interactions with interventions,,i,,,,,,,paired,trial-design,agreed 2026-10-25
+10,7.8.3,Whether nested analysis will be performed,delegation,nesting,title:Nesting,,i,,,,,,,paired,trial-design,agreed 2026-10-25
+11,7.8.4,If informative priors are used,delegation,informative priors,title:Informative priors,,i,,,,,yes,,paired,trial-design,agreed 2026-10-25
+12,7.8.6,separate set of triggers,delegation,separate triggers,title:Threshold probability;title:Threshold odds ratio,early phase|seamless|phase 2|separate set,i,,,title:Domain-specific stopping rules,early phase|seamless|phase 2|separate set,yes,,paired,trial-design,agreed 2026-10-25
+13,7.8.7,capped at 75%,default,RAR cap for two interventions,title:Application of Response,\bcap\b|capped|maximum or minimum proportion,s,75 ?%|core protocol,\b(?!75)\d{2} ?%,,,,two_interventions,paired,trial-design,agreed 2026-10-25
+14,8,Individual processes for specific domains,delegation,individual processes,prefix:9,,i,,,,,,,umbrella,,agreed 2026-10-25 (Q1: recorded not paired)
+15,8.5,open-label or blinded,delegation,open-label or blinded,title:Blinding,,i,,,num:8.3.1,open-label|blind,,,paired,,agreed 2026-10-25
+16,8.6,criteria for discontinuation specific to each domain,delegation,discontinuation criteria,title:Discontinuation of study intervention,,i,,,title:Criteria for discontinuation,discontinu,,,paired,,agreed 2026-10-25 (Q2: 8.3.x primary)
+17,8.7,Prespecified co-interventions,delegation,co-interventions,title:Concomitant care,,i,,,,,,,paired,,agreed 2026-10-25
+18,8.8.2,Additional domain-specific variables,delegation,additional variables,title:Domain-specific data collection;title:Clinical data collection,,i,,,,,,,paired,,agreed 2026-10-25
+19,8.12.1,established safety profile,delegation,established safety profile and reporting,title:Potential domain-specific adverse,,i,,,prefix:6.2,safety profile,,,paired,,agreed 2026-10-25 (Q4: AB 6.2.5 heading merged; text match)
+20,8.12.3,designed to capture the majority of events,delegation,endpoints capture SAEs,title:Secondary endpoints,\bSAEs?\b|serious adverse,i,,,,,,,descriptive,,agreed 2026-10-25 (Q3: descriptive no slot)
+21,8.12.3,additional clarification of issues,delegation,SAE clarification,title:Potential domain-specific adverse,,i,,,,,yes,,paired,,agreed 2026-10-25

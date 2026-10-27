@@ -1,0 +1,35 @@
+@prefix cpmp: <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cpmp:Compound_LY3526318 a owl:Class ;
+    rdfs:label "CPMP compound design LY3526318" ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( obo:OBI_0500001 [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:obj-db6f457399 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:ep-1e029df562 ] ) ] ;
+    cpmp:moduleRole "compound" ;
+    cpmp:note "No document of its own: components worded the same (Step 5 template) in all three ISAs of this compound." .
+
+<https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/compound-LY3526318> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/cpmp-core> .
+
+cpmp:ep-1e029df562 a owl:Class ;
+    rdfs:label "Measure of plasma concentrations of {compound} to enable PK evaluations." ;
+    rdfs:subClassOf cpmp:EndpointSpecification ;
+    cpmp:occursIn "BP02;NP02;OA02" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical true .
+
+cpmp:obj-db6f457399 a owl:Class ;
+    rdfs:label "Measure the PK of {compound} in participants with {disease}." ;
+    rdfs:subClassOf obo:IAO_0000005 ;
+    cpmp:occursIn "BP02;NP02;OA02" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical false .
+

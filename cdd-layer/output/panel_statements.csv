@@ -1,0 +1,13 @@
+isa,nct_id,pdf_page,text,method
+BP01,NCT04529096,32,The CPMP Master Protocol describes tests that may be performed at additional times noted in the SoA for this ISA. This table describes tests unique for ISA BP01.,text_layer
+BP02,NCT05086289,29,The CPMP Master Protocol describes tests that may be performed at additional times noted in the SoA for this ISA. This table describes tests unique for ISA BP02.,visual_checked_against_text_layer
+BP03,NCT04874636,27,The master protocol describes tests that may be performed at additional times noted in the SoA for this ISA. This table describes tests unique for this ISA.,visual_checked_against_text_layer
+BP05,NCT05630196,33,The Master Protocol CPMP describes tests that may be performed at additional times noted in the SoA for this ISA. This table describes tests unique for ISA BP05.,text_layer
+NP01,NCT04476108,33,The master protocol CPMP describes tests that may be performed at additional times noted in the SoA for this ISA. This table describes tests unique for ISA NP01.,text_layer
+NP02,NCT05177094,29,The CPMP Master Protocol describes tests that may be performed at additional times noted in the SoA for this ISA. This table describes tests unique for ISA NP02.,visual_checked_against_text_layer
+NP03,NCT04707157,31,The master protocol describes tests that may be performed at additional times noted in the SoA for this ISA. This table describes tests unique for ISA NP03.,visual_checked_against_text_layer
+NP05,NCT05620576,34,Master Protocol CPMP describes tests that may be performed at additional times noted in the SoA for this ISA. This table describes tests unique for ISA NP05.,text_layer
+OA01,NCT04456686,34,The master protocol CPMP describes tests that may be performed at additional times noted in the SoA for this ISA. This table describes tests unique for ISA OA01.,text_layer
+OA02,NCT05080660,30,The CPMP Master Protocol describes tests that may be performed at additional times noted in the SoA for this ISA. This table describes tests unique for ISA OA02.,visual_checked_against_text_layer
+OA03,NCT04627038,30,The master protocol CPMP describes tests that may be performed at additional times noted in the SoA for this ISA. This table describes tests unique for ISA OA03.,text_layer
+OA05,NCT05620563,34,The Master Protocol CPMP describes tests that may be performed at additional times noted in the SoA for this ISA. This table describes tests unique for ISA OA05.,visual_unchecked

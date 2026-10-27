@@ -1,0 +1,11 @@
+compound,master,LY3016859,LY3016859,LY3016859,LY3526318,LY3526318,LY3526318,LY3556050,LY3556050,LY3556050,LY3857210,LY3857210,LY3857210
+disease,,CLBP,DPNP,OA,CLBP,DPNP,OA,CLBP,DPNP,OA,CLBP,DPNP,OA
+activity_key,,,,,,,,,,,,,
+Chemistry,"V1, V2, V3, ED","V4, V6, V801, V802, V803","V4, V6, V801, V802, V803","V4, V6, V801, V802, V803","V4, V5, V6, V7","V4, V5, V6, V7","V4, V5, V6, V7","V3, V4, V5, V6, V7, ED","V3, V4, V5, V6, V7, ED","V3, V4, V5, V6, V7, ED","V4, V5, V6, V7, V801","V4, V5, V6, V7, V801","V4, V5, V6, V7, V801"
+ECG,"V1, V2, V3, ED","V5, V7, V803","V5, V7, V803","V5, V7, V803","V5, V7, ED","V5, V7, ED","V5, V7, ED","V3, V4, V5, V6, V7, ED","V3, V4, V5, V6, V7, ED","V3, V4, V5, V6, V7, ED","V5, V7, V801, ED","V5, V7, V801, ED","V5, V7, V801, ED"
+Exploratory biomarker samples,V3,–,–,–,–,–,–,–,–,–,–,–,–
+HbA1c,"V1, V2","V3, V7, V803, ED","V3, V7, V803, ED","V3, V7, V803, ED","V3, V7, ED","V3, V7, ED","V3, V7, ED","V7, ED","V7, ED","V7, ED","V3, V7, ED","V3, V7, ED","V3, V7, ED"
+Hematology,"V1, V2, V3, ED","V801, V802, V803","V801, V802, V803","V801, V802, V803","V4, V5, V6, V7","V4, V5, V6, V7","V4, V5, V6, V7","V3, V4, V5, V6, V7, ED","V3, V4, V5, V6, V7, ED","V3, V4, V5, V6, V7, ED","V4, V5, V6, V7, V801","V4, V5, V6, V7, V801","V4, V5, V6, V7, V801"
+Lipid panel,"V1, V2, V3, ED",–,–,–,"V4, V5, V6, V7","V4, V5, V6, V7","V4, V5, V6, V7","V3, V4, V5, V6, V7, ED","V3, V4, V5, V6, V7, ED","V3, V4, V5, V6, V7, ED","V4, V5, V6, V7, V801","V4, V5, V6, V7, V801","V4, V5, V6, V7, V801"
+TSH,"V1, V2",–,–,–,–,–,–,–,–,–,–,–,–
+Urinalysis,"V1, V2, V3, ED",V803,V803,V803,V7,V7,V7,–,–,–,"V7, V801","V7, V801","V7, V801"

@@ -1,0 +1,426 @@
+doc,number,title,toc_page,title_x,x_level,number_source,check
+IAV_DSA,1,ABBREVIATIONS,9,106.1,1.0,reconstructed,no_child_or_parent_check
+IAV_DSA,2,PROTOCOL APPENDIX STRUCTURE,10,106.7,1.0,reconstructed,no_child_or_parent_check
+IAV_DSA,3,INFLUENZA ANTIVIRAL DOMAIN-SPECIFIC APPENDIX VERSION,11,106.7,1.0,reconstructed,no_child_or_parent_check
+IAV_DSA,3.1,Version history,11,116.2,2.0,printed,x_level_equals_printed
+IAV_DSA,4,INFLUENZA ANTIVIRAL DOMAIN GOVERNANCE,11,106.7,1.0,reconstructed,no_child_or_parent_check
+IAV_DSA,4.1,Domain members,11,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,4.2,Contact Details,12,116.6,2.0,printed,x_level_equals_printed
+IAV_DSA,5,INFLUENZA Antiviral DOMAIN-SPECIFIC WORKING GROUP AUTHORIZATION,13,106.7,1.0,reconstructed,no_child_or_parent_check
+IAV_DSA,6,BACKGROUND AND RATIONALE,13,106.7,1.0,reconstructed,no_child_or_parent_check
+IAV_DSA,6.1,Domain definition,13,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,6.2,Domain-specific background,13,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,6.2.1,Influenza,13,150.0,3.0,printed,x_level_equals_printed
+IAV_DSA,6.2.2,Oseltamivir,14,149.6,3.0,printed,x_level_equals_printed
+IAV_DSA,6.2.3,Baloxavir,15,150.0,3.0,printed,x_level_equals_printed
+IAV_DSA,6.2.4,Evaluation of effectiveness of antivirals,16,150.0,3.0,printed,x_level_equals_printed
+IAV_DSA,6.2.5,Potential interaction between antiviral therapy and immune modulation therapy,16,150.0,3.0,printed,x_level_equals_printed
+IAV_DSA,6.2.6,Domain rationale,16,150.0,3.0,printed,x_level_equals_printed
+IAV_DSA,7,DOMAIN OBJECTIVES,17,106.7,1.0,reconstructed,no_child_or_parent_check
+IAV_DSA,8,TRIAL DESIGN,17,106.0,1.0,reconstructed,no_child_or_parent_check
+IAV_DSA,8.1,Population,17,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,8.1.1,Age Strata,17,149.2,3.0,printed,x_level_equals_printed
+IAV_DSA,8.1.2,Illness Severity State,17,150.0,3.0,printed,x_level_equals_printed
+IAV_DSA,8.1.3,Domain-specific strata,17,150.0,3.0,printed,x_level_equals_printed
+IAV_DSA,8.2,Eligibility criteria,18,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,8.2.1,Domain inclusion criteria,18,150.0,3.0,printed,x_level_equals_printed
+IAV_DSA,8.2.2,Domain exclusion criteria,18,150.0,3.0,printed,x_level_equals_printed
+IAV_DSA,8.2.3,Intervention exclusion criteria,18,150.0,3.0,printed,x_level_equals_printed
+IAV_DSA,8.3,Interventions,19,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,8.3.1,Antiviral interventions,19,149.2,3.0,printed,x_level_equals_printed
+IAV_DSA,8.3.2,Recommended oseltamivir dosing,19,150.0,3.0,printed,x_level_equals_printed
+IAV_DSA,8.3.3,Recommended baloxavir dosing,20,150.0,3.0,printed,x_level_equals_printed
+IAV_DSA,8.3.4,Discontinuation of study intervention,20,150.0,3.0,printed,x_level_equals_printed
+IAV_DSA,8.4,Concomitant care,20,116.6,2.0,printed,x_level_equals_printed
+IAV_DSA,8.5,Endpoints,20,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,8.5.1,Primary endpoint,20,131.7,,printed,x_level_differs
+IAV_DSA,8.5.2,Secondary endpoints,20,131.2,,printed,x_level_differs
+IAV_DSA,9,TRIAL CONDUCT,21,106.0,1.0,reconstructed,no_child_or_parent_check
+IAV_DSA,9.1,Microbiology,21,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,9.2,Domain-specific data collection,21,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,9.2.1,Clinical data collection,21,149.6,3.0,printed,x_level_equals_printed
+IAV_DSA,9.3,Criteria for discontinuation,21,116.6,2.0,printed,x_level_equals_printed
+IAV_DSA,9.4,Blinding,21,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,10,STATISTICAL CONSIDERATIONS,21,106.3,1.0,reconstructed,no_child_or_parent_check
+IAV_DSA,10.1,Domain-specific stopping rules,21,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,10.2,Unit-of-analysis and strata,23,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,10.3,Application of Response-Adaptive Randomization,23,116.2,2.0,printed,x_level_equals_printed
+IAV_DSA,10.4,Timing of revealing of randomization status,23,116.1,2.0,printed,x_level_equals_printed
+IAV_DSA,10.5,Interactions with interventions in other domains,24,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,10.6,Nesting of interventions,24,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,10.7,"Threshold probability for efficacy, superiority, and inferiority",24,116.1,2.0,printed,x_level_equals_printed
+IAV_DSA,10.8,Threshold odds ratio delta for equivalence and futility,24,116.1,2.0,printed,x_level_equals_printed
+IAV_DSA,10.9,Domain History,24,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,10.10,Informative priors,25,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,10.11,Post-trial sub-groups,25,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,11,ETHICAL CONSIDERATIONS,26,106.7,1.0,reconstructed,no_child_or_parent_check
+IAV_DSA,11.1,Data Safety and Monitoring Board,26,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,11.2,Potential domain-specific adverse events,26,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,11.3,Domain risk assessment,26,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,11.4,Domain-specific consent issues,27,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,12,GOVERNANCE ISSUES,28,106.4,1.0,reconstructed,no_child_or_parent_check
+IAV_DSA,12.1,Funding of domain,28,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,12.2,Funding of domain interventions and outcome measures,28,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,12.3,Domain-specific declarations of interest,28,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,13,REFERENCES,29,106.7,1.0,reconstructed,no_child_or_parent_check
+IAV_DSA,,Appendix 1: Region-Specific Modifications for Japan,32,106.1,1.0,back_matter,after_references
+IAV_DSA,14.1,Eligibility Criteria,32,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,14.1.1,Domain Exclusion Criteria,32,150.0,3.0,printed,x_level_equals_printed
+IAV_DSA,14.2,Interventions,32,117.0,2.0,printed,x_level_equals_printed
+IAV_DSA,14.2.1,Oseltamivir dosing,32,149.6,3.0,printed,x_level_equals_printed
+IAV_DSA,14.2.2,Baloxavir dosing,32,150.0,3.0,printed,x_level_equals_printed
+MD_DSA,1,ABBREVIATIONS,7,106.1,1.0,printed,x_level_equals_printed
+MD_DSA,2,PROTOCOL APPENDIX STRUCTURE,8,106.7,1.0,printed,x_level_equals_printed
+MD_DSA,3,MACROLIDE DURATION DOMAIN-SPECIFIC APPENDIX VERSION,9,106.7,1.0,printed,x_level_equals_printed
+MD_DSA,3.1,Version history,9,116.2,2.0,reconstructed,under_parent
+MD_DSA,4,MACROLIDE DURATION DOMAIN GOVERNANCE,9,106.7,1.0,printed,x_level_equals_printed
+MD_DSA,4.1,Domain members,9,117.0,2.0,reconstructed,under_parent
+MD_DSA,4.2,Contact Details,10,116.6,2.0,reconstructed,under_parent
+MD_DSA,5,MACROLIDE DURATION DOMAIN-SPECIFIC WORKING GROUP AUTHORIZATION,10,106.7,1.0,printed,x_level_equals_printed
+MD_DSA,6,BACKGROUND AND RATIONALE,11,106.7,1.0,printed,x_level_equals_printed
+MD_DSA,6.1,Domain definition,11,117.0,2.0,reconstructed,under_parent
+MD_DSA,6.2,Domain-specific background,11,117.0,2.0,reconstructed,under_parent
+MD_DSA,6.2.1,Guidelines recommend either macrolides or quinolones to treat “atypical” respiratory pathogens,11,149.5,3.0,printed,x_level_equals_printed
+MD_DSA,6.2.2,Macrolide antibiotics have anti-inflammatory properties,13,150.0,3.0,printed,x_level_equals_printed
+MD_DSA,6.2.3,Severe CAP is intertwined with the host systemic inflammatory response,13,149.4,3.0,printed,x_level_equals_printed
+MD_DSA,6.2.4,Macrolides have been associated with improved clinical outcomes in inflammatory lung diseases in some studies,14,150.0,3.0,printed,x_level_equals_printed
+MD_DSA,6.2.5,The use of macrolide antibiotics has been associated with improved outcomes in CAP even when the causative organism is resistant to macrolides.,14,149.1,3.0,printed,x_level_equals_printed
+MD_DSA,6.2.6,Macrolide antibiotics safety profile,15,150.0,3.0,printed,x_level_equals_printed
+MD_DSA,7,DOMAIN OBJECTIVES,15,106.7,1.0,printed,x_level_equals_printed
+MD_DSA,8,TRIAL DESIGN,15,106.0,1.0,printed,x_level_equals_printed
+MD_DSA,8.1,Population,15,117.0,2.0,reconstructed,under_parent
+MD_DSA,8.1.1,Age Strata,15,149.2,3.0,printed,x_level_equals_printed
+MD_DSA,8.1.2,Illness Severity State,15,150.0,3.0,printed,x_level_equals_printed
+MD_DSA,8.1.3,Domain-Specific Strata,15,150.0,3.0,printed,x_level_equals_printed
+MD_DSA,8.2,Eligibility criteria,16,117.0,2.0,reconstructed,under_parent
+MD_DSA,8.2.1,Domain inclusion criteria,16,150.0,3.0,printed,x_level_equals_printed
+MD_DSA,8.2.2,Domain exclusion criteria,16,150.0,3.0,printed,x_level_equals_printed
+MD_DSA,8.2.3,Intervention exclusion criteria,16,150.0,3.0,printed,x_level_equals_printed
+MD_DSA,8.3,Interventions,16,117.0,2.0,reconstructed,under_parent
+MD_DSA,8.3.1,Macrolide intervention,16,150.0,3.0,printed,x_level_equals_printed
+MD_DSA,8.3.2,Macrolide administration and dosing,17,150.0,3.0,printed,x_level_equals_printed
+MD_DSA,8.3.3,Duration of administration of macrolide,18,150.0,3.0,printed,x_level_equals_printed
+MD_DSA,8.3.4,Discontinuation of study intervention,18,150.0,3.0,printed,x_level_equals_printed
+MD_DSA,8.4,Concomitant care,18,116.6,2.0,reconstructed,under_parent
+MD_DSA,8.5,Endpoints,19,117.0,2.0,reconstructed,under_parent
+MD_DSA,8.5.1,Primary endpoint,19,150.0,3.0,printed,x_level_equals_printed
+MD_DSA,8.5.2,Secondary endpoints,19,149.4,3.0,printed,x_level_equals_printed
+MD_DSA,9,TRIAL CONDUCT,19,106.0,1.0,printed,x_level_equals_printed
+MD_DSA,9.1,Microbiology,19,117.0,2.0,reconstructed,under_parent
+MD_DSA,9.2,Domain-specific data collection,19,117.0,2.0,reconstructed,under_parent
+MD_DSA,9.2.1,Clinical data collection,19,149.6,3.0,printed,x_level_equals_printed
+MD_DSA,9.3,Criteria for discontinuation,20,116.6,2.0,reconstructed,under_parent
+MD_DSA,9.4,Blinding,20,117.0,2.0,reconstructed,under_parent
+MD_DSA,10,STATISTICAL CONSIDERATIONS,20,106.3,1.0,printed,x_level_equals_printed
+MD_DSA,10.1,Domain-specific stopping rules,20,117.0,2.0,reconstructed,under_parent
+MD_DSA,10.2,Unit-of-analysis and strata,20,117.0,2.0,reconstructed,under_parent
+MD_DSA,10.3,Application of Response-Adaptive Randomization,20,116.2,2.0,reconstructed,under_parent
+MD_DSA,10.4,Timing of revealing of randomization status,20,116.1,2.0,reconstructed,under_parent
+MD_DSA,10.5,Interactions with interventions in other domains,21,117.0,2.0,reconstructed,under_parent
+MD_DSA,10.6,Nesting,21,117.0,2.0,reconstructed,under_parent
+MD_DSA,10.7,"Threshold probability for superiority, inferiority, and futility",21,116.1,2.0,reconstructed,under_parent
+MD_DSA,10.8,Informative priors,21,117.0,2.0,reconstructed,under_parent
+MD_DSA,10.9,Post-trial Sub-groups,21,117.0,2.0,reconstructed,under_parent
+MD_DSA,11,ETHICAL CONSIDERATIONS,22,106.7,1.0,printed,x_level_equals_printed
+MD_DSA,11.1,Data Safety and Monitoring Board,22,117.0,2.0,reconstructed,under_parent
+MD_DSA,11.2,Potential domain-specific adverse events,22,117.0,2.0,reconstructed,under_parent
+MD_DSA,11.3,Domain risk assessment,22,117.0,2.0,reconstructed,under_parent
+MD_DSA,11.4,Domain-specific consent issues,23,117.0,2.0,reconstructed,under_parent
+MD_DSA,12,GOVERNANCE ISSUES,24,106.4,1.0,printed,x_level_equals_printed
+MD_DSA,12.1,Funding of domain,24,117.0,2.0,reconstructed,under_parent
+MD_DSA,12.2,Funding of domain interventions and outcome measures,24,117.0,2.0,reconstructed,under_parent
+MD_DSA,12.3,Domain-specific declarations of interest,24,117.0,2.0,reconstructed,under_parent
+MD_DSA,13,REFERENCES,25,106.7,1.0,printed,x_level_equals_printed
+IG_DSA,1,ABBREVIATIONS,8,106.1,1.0,printed,x_level_equals_printed
+IG_DSA,2,PROTOCOL APPENDIX STRUCTURE,9,106.7,1.0,printed,x_level_equals_printed
+IG_DSA,3,COVID-19 IMMUNOGLOBULIN DOMAIN-SPECIFIC APPENDIX VERSION,10,106.4,1.0,printed,x_level_equals_printed
+IG_DSA,3.1,Version history,10,116.2,2.0,printed,x_level_equals_printed
+IG_DSA,4,COVID-19 IMMUNOGLOBULIN THERAPY DOMAIN GOVERNANCE,11,106.4,1.0,printed,x_level_equals_printed
+IG_DSA,4.1,Domain members,11,117.0,2.0,printed,x_level_equals_printed
+IG_DSA,4.2,Contact Details,12,116.6,2.0,printed,x_level_equals_printed
+IG_DSA,5,COVID-19 IMMUNOGLOBULIN THERAPY DOMAIN-SPECIFIC WORKING GROUP AUTHORIZATION,13,106.4,1.0,printed,x_level_equals_printed
+IG_DSA,6,BACKGROUND AND RATIONALE,13,106.7,1.0,printed,x_level_equals_printed
+IG_DSA,6.1,Domain definition,13,117.0,2.0,printed,x_level_equals_printed
+IG_DSA,6.2,Domain-specific background,13,117.0,2.0,printed,x_level_equals_printed
+IG_DSA,6.2.1,COVID-19 Infection,13,149.6,3.0,printed,x_level_equals_printed
+IG_DSA,6.2.2,Clinical trials for COVID-19,14,149.6,3.0,printed,x_level_equals_printed
+IG_DSA,6.2.3,Convalescent Plasma,14,149.6,3.0,printed,x_level_equals_printed
+IG_DSA,6.2.4,Rationale for evaluation of high-titer convalescent plasma in immunocompromised patients with COVID-19,15,150.0,3.0,printed,x_level_equals_printed
+IG_DSA,6.2.5,Safety profile of convalescent plasma,22,149.4,3.0,printed,x_level_equals_printed
+IG_DSA,6.2.6,Intervention Strategy for this domain,22,150.0,3.0,printed,x_level_equals_printed
+IG_DSA,7,DOMAIN OBJECTIVES,23,106.7,1.0,printed,x_level_equals_printed
+IG_DSA,8,TRIAL DESIGN,24,106.0,1.0,printed,x_level_equals_printed
+IG_DSA,8.1,Population,24,117.0,2.0,printed,x_level_equals_printed
+IG_DSA,8.1.1,Age Strata,24,149.2,3.0,printed,x_level_equals_printed
+IG_DSA,8.1.2,State,24,149.4,3.0,printed,x_level_equals_printed
+IG_DSA,8.2,Eligibility criteria,24,117.0,2.0,printed,x_level_equals_printed
+IG_DSA,8.2.1,Domain inclusion criteria,24,150.0,3.0,printed,x_level_equals_printed
+IG_DSA,8.2.2,Domain exclusion criteria,24,150.0,3.0,printed,x_level_equals_printed
+IG_DSA,8.2.3,Intervention exclusion criteria,25,150.0,3.0,printed,x_level_equals_printed
+IG_DSA,8.3,Interventions,25,117.0,2.0,printed,x_level_equals_printed
+IG_DSA,8.3.1,Immunoglobulin Therapy Interventions,25,150.0,3.0,printed,x_level_equals_printed
+IG_DSA,8.3.2,No immunoglobulin against COVID-19 (no placebo),26,150.0,3.0,printed,x_level_equals_printed
+IG_DSA,8.3.3,High titer plasma,26,150.0,3.0,printed,x_level_equals_printed
+IG_DSA,8.4,Concomitant care,26,116.6,2.0,printed,x_level_equals_printed
+IG_DSA,8.5,Endpoints,26,117.0,2.0,printed,x_level_equals_printed
+IG_DSA,8.5.1,Primary endpoint,26,150.0,3.0,printed,x_level_equals_printed
+IG_DSA,8.5.2,Secondary endpoints,27,149.4,3.0,printed,x_level_equals_printed
+IG_DSA,9,TRIAL CONDUCT,27,106.0,1.0,printed,x_level_equals_printed
+IG_DSA,9.1,Domain-specific data collection,27,117.0,2.0,printed,x_level_equals_printed
+IG_DSA,9.2,Criteria for discontinuation,27,116.6,2.0,printed,x_level_equals_printed
+IG_DSA,9.3,Blinding,28,117.0,2.0,printed,x_level_equals_printed
+IG_DSA,10,STATISTICAL CONSIDERATIONS,28,106.3,1.0,printed,x_level_equals_printed
+IG_DSA,10.1,Domain-specific stopping rules,28,117.0,2.0,printed,x_level_equals_printed
+IG_DSA,10.2,Unit-of-analysis and strata,28,117.0,2.0,printed,x_level_equals_printed
+IG_DSA,10.3,Application of Response-Adaptive Randomization,29,116.2,2.0,printed,x_level_equals_printed
+IG_DSA,10.4,Timing of revealing of randomization status,29,116.1,2.0,printed,x_level_equals_printed
+IG_DSA,10.5,Interactions with interventions in other domains,29,117.0,2.0,printed,x_level_equals_printed
+IG_DSA,10.6,Nesting of interventions,30,117.0,2.0,printed,x_level_equals_printed
+IG_DSA,10.7,Threshold probability for efficacy and futility,30,116.1,2.0,printed,x_level_equals_printed
+IG_DSA,10.8,Informative priors,30,117.0,2.0,printed,x_level_equals_printed
+IG_DSA,10.9,Post-trial Sub-groups,30,117.0,2.0,printed,x_level_equals_printed
+IG_DSA,11,ETHICAL CONSIDERATIONS,31,106.7,1.0,printed,x_level_equals_printed
+IG_DSA,11.1,Data Safety and Monitoring Board,31,117.0,2.0,printed,x_level_equals_printed
+IG_DSA,11.2,Potential domain-specific adverse events,31,117.0,2.0,printed,x_level_equals_printed
+IG_DSA,11.3,Domain risk assessment,32,117.0,2.0,printed,x_level_equals_printed
+IG_DSA,11.4,Domain-specific consent issues,32,117.0,2.0,printed,x_level_equals_printed
+IG_DSA,12,GOVERNANCE ISSUES,33,106.4,1.0,printed,x_level_equals_printed
+IG_DSA,12.1,Funding of domain,33,117.0,2.0,printed,x_level_equals_printed
+IG_DSA,12.2,Funding of domain interventions and outcome measures,33,117.0,2.0,printed,x_level_equals_printed
+IG_DSA,12.3,Domain-specific declarations of interest,33,117.0,2.0,printed,x_level_equals_printed
+IG_DSA,,REFERENCES,34,72.8,,unnumbered,left_margin
+MV_DSA,1,ABBREVIATIONS,8,106.1,1.0,reconstructed,no_child_or_parent_check
+MV_DSA,2,PROTOCOL APPENDIX STRUCTURE,10,106.7,1.0,reconstructed,no_child_or_parent_check
+MV_DSA,3,MECHANICAL VENTILATION DOMAIN-SPECIFIC APPENDIX VERSION,11,106.7,1.0,reconstructed,no_child_or_parent_check
+MV_DSA,3.1,Version history,11,116.2,2.0,reconstructed,under_parent
+MV_DSA,4,MECHANICAL VENTILATION DOMAIN-GOVERNANCE,11,106.7,1.0,reconstructed,no_child_or_parent_check
+MV_DSA,4.1,Domain members,11,117.0,2.0,reconstructed,under_parent
+MV_DSA,4.2,Contact Details,12,116.6,2.0,reconstructed,under_parent
+MV_DSA,5,MECHANICAL VENTILATION DOMAIN-SPECIFIC WORKING GROUP AUTHORIZATION,12,106.7,1.0,reconstructed,no_child_or_parent_check
+MV_DSA,6,BACKGROUND AND RATIONALE,13,106.7,1.0,reconstructed,no_child_or_parent_check
+MV_DSA,6.1,Domain definition,13,117.0,2.0,reconstructed,under_parent
+MV_DSA,6.2,Introduction,13,117.0,2.0,reconstructed,under_parent
+MV_DSA,6.3,Current recommendations and variability among recommendations,14,116.6,2.0,reconstructed,under_parent
+MV_DSA,6.3.1,Current guideline recommendations for mechanical ventilation in patients with CAP,14,150.5,3.0,reconstructed,under_parent
+MV_DSA,6.3.2,Compliance with guidelines and heterogeneity of ventilatory practice,16,150.5,3.0,reconstructed,under_parent
+MV_DSA,6.3.3,Compliance with guidelines and outcome,17,150.5,3.0,reconstructed,under_parent
+MV_DSA,6.3.4,Within unit vs between unit variation,17,150.4,3.0,reconstructed,under_parent
+MV_DSA,6.4,An analytic approach to determining optimal ventilation,18,116.2,2.0,reconstructed,under_parent
+MV_DSA,6.4.1,Scope of the problem,18,150.4,3.0,reconstructed,under_parent
+MV_DSA,6.4.2,Protocolized guideline-recommended versus wild-type as first questions,20,150.9,3.0,reconstructed,under_parent
+MV_DSA,6.4.3,Isolation of testable strategies within heterogeneity of current practice,22,150.9,3.0,reconstructed,under_parent
+MV_DSA,6.4.4,Analytic approaches to heterogeneity of current practice,22,150.2,3.0,reconstructed,under_parent
+MV_DSA,6.4.5,Principles of analysis,23,150.9,3.0,reconstructed,under_parent
+MV_DSA,6.5,Summary of background,24,116.4,2.0,reconstructed,under_parent
+MV_DSA,7,DOMAIN OBJECTIVES,24,106.7,1.0,reconstructed,no_child_or_parent_check
+MV_DSA,8,TRIAL DESIGN,26,106.0,1.0,reconstructed,no_child_or_parent_check
+MV_DSA,8.1,Population,26,117.0,2.0,reconstructed,under_parent
+MV_DSA,8.1.1,Age Strata,26,150.2,3.0,reconstructed,under_parent
+MV_DSA,8.1.2,Illness Severity State,26,150.9,3.0,reconstructed,under_parent
+MV_DSA,8.1.3,Domain-specific strata,26,150.9,3.0,reconstructed,under_parent
+MV_DSA,8.2,Eligibility criteria,26,117.0,2.0,reconstructed,under_parent
+MV_DSA,8.2.1,Domain inclusion criteria,26,150.9,3.0,reconstructed,under_parent
+MV_DSA,8.2.2,Domain exclusion criteria,27,150.9,3.0,reconstructed,under_parent
+MV_DSA,8.3,Interventions,27,117.0,2.0,reconstructed,under_parent
+MV_DSA,8.3.1,Mechanical Ventilation Interventions,27,150.9,3.0,reconstructed,under_parent
+MV_DSA,8.3.2,Physiological targets set prior to reveal of allocation status and common to both interventions,27,150.9,3.0,reconstructed,under_parent
+MV_DSA,8.3.3,Clinician-preferred mechanical ventilation strategy,27,150.5,3.0,reconstructed,under_parent
+MV_DSA,8.3.4,Protocolized mechanical ventilation strategy,28,150.9,3.0,reconstructed,under_parent
+MV_DSA,8.3.5,Duration of administration of domain intervention,30,150.9,3.0,reconstructed,under_parent
+MV_DSA,8.4,Concomitant care,30,116.6,2.0,reconstructed,under_parent
+MV_DSA,8.5,Endpoints,30,117.0,2.0,reconstructed,under_parent
+MV_DSA,8.5.1,Primary endpoint,30,150.9,3.0,reconstructed,under_parent
+MV_DSA,8.5.2,Secondary endpoints,30,150.4,3.0,reconstructed,under_parent
+MV_DSA,8.5.3,Process end-points,31,150.9,3.0,reconstructed,under_parent
+MV_DSA,9,TRIAL CONDUCT,31,106.0,1.0,reconstructed,no_child_or_parent_check
+MV_DSA,9.1,Domain-specific data collection,31,117.0,2.0,reconstructed,under_parent
+MV_DSA,9.1.1,Clinical data collection,31,150.5,3.0,reconstructed,under_parent
+MV_DSA,9.2,Criteria for discontinuation,31,116.6,2.0,reconstructed,under_parent
+MV_DSA,9.3,Blinding,31,117.0,2.0,reconstructed,under_parent
+MV_DSA,9.3.1,Blinding,31,150.9,3.0,reconstructed,under_parent
+MV_DSA,9.3.2,Unblinding,31,150.9,3.0,reconstructed,under_parent
+MV_DSA,10,STATISTICAL CONSIDERATIONS,32,106.3,1.0,reconstructed,no_child_or_parent_check
+MV_DSA,10.1,Domain-specific stopping rules,32,117.0,2.0,reconstructed,under_parent
+MV_DSA,10.2,Categorization of clinician-preferred ventilator strategies,32,116.6,2.0,reconstructed,under_parent
+MV_DSA,10.2.1,Unit-level self-categorization,32,150.9,3.0,reconstructed,under_parent
+MV_DSA,10.2.2,Unit-level observed categorization,32,150.9,3.0,reconstructed,under_parent
+MV_DSA,10.2.3,Patient-level categorization,32,150.9,3.0,reconstructed,under_parent
+MV_DSA,10.2.4,Methods of determination of categorization,33,150.9,3.0,reconstructed,under_parent
+MV_DSA,10.3,Statistical analysis,33,116.4,2.0,reconstructed,under_parent
+MV_DSA,10.3.1,Principles of statistical analysis,33,150.9,3.0,reconstructed,under_parent
+MV_DSA,10.3.2,Strata,33,150.4,3.0,reconstructed,under_parent
+MV_DSA,10.3.3,Primary analysis,34,150.9,3.0,reconstructed,under_parent
+MV_DSA,10.3.4,Descriptive analysis of ventilatory patterns,34,150.9,3.0,reconstructed,under_parent
+MV_DSA,10.3.5,Secondary analyses,34,150.4,3.0,reconstructed,under_parent
+MV_DSA,10.3.6,Identification of variables that may modify treatment effect,36,150.9,3.0,reconstructed,under_parent
+MV_DSA,10.3.7,Evaluation of separation between protocolized and clinician-preferred ventilatory strategies,36,150.9,3.0,reconstructed,under_parent
+MV_DSA,10.3.8,Sample size and statistical power,36,150.4,3.0,reconstructed,under_parent
+MV_DSA,10.4,Timing of revealing of randomization status,37,116.1,2.0,reconstructed,under_parent
+MV_DSA,10.5,Interactions with interventions in other domains,37,117.0,2.0,reconstructed,under_parent
+MV_DSA,10.6,Nesting of interventions,37,117.0,2.0,reconstructed,under_parent
+MV_DSA,11,ETHICAL CONSIDERATIONS,37,106.7,1.0,reconstructed,no_child_or_parent_check
+MV_DSA,11.1,Data Safety and Monitoring Board,37,117.0,2.0,reconstructed,under_parent
+MV_DSA,11.2,Potential domain-specific adverse events,37,117.0,2.0,reconstructed,under_parent
+MV_DSA,11.3,Domain risk assessment,37,117.0,2.0,reconstructed,under_parent
+MV_DSA,11.4,Domain-specific consent issues,38,117.0,2.0,reconstructed,under_parent
+MV_DSA,12,GOVERNANCE ISSUES,38,106.4,1.0,reconstructed,no_child_or_parent_check
+MV_DSA,12.1,Funding of domain,38,117.0,2.0,reconstructed,under_parent
+MV_DSA,12.2,Funding of domain interventions and outcome measures,38,117.0,2.0,reconstructed,under_parent
+MV_DSA,12.3,Domain-specific declarations of interest,39,117.0,2.0,reconstructed,under_parent
+MV_DSA,13,REFERENCES,40,106.7,1.0,reconstructed,no_child_or_parent_check
+MV_DSA,,APPENDIX 1.,47,72.1,,back_matter,after_references
+MV_DSA,,Lung pathology in CAP,47,106.7,1.0,back_matter,after_references
+MV_DSA,,Physiological principles and options available in setting ventilatory strategy,48,106.7,1.0,back_matter,after_references
+MV_DSA,,Introduction,48,117.0,2.0,back_matter,after_references
+MV_DSA,,Lung physiology during invasive mechanical ventilation,49,117.0,2.0,back_matter,after_references
+MV_DSA,,Pressure or volume during inspiration,49,117.0,2.0,back_matter,after_references
+MV_DSA,,Characteristics of inspiration and ventilator induced lung injury,50,116.6,2.0,back_matter,after_references
+MV_DSA,,Expiration and PEEP,50,117.0,2.0,back_matter,after_references
+MV_DSA,,Mandatory and triggered breaths,51,117.0,2.0,back_matter,after_references
+MV_DSA,,Airway Pressure Release Ventilation (APRV),51,116.2,2.0,back_matter,after_references
+MV_DSA,,Recruitment maneuvers,52,117.0,2.0,back_matter,after_references
+MV_DSA,,Prone positioning,52,117.0,2.0,back_matter,after_references
+MV_DSA,,Extracorporeal respiratory support,52,117.0,2.0,back_matter,after_references
+MV_DSA,,Spontaneous ventilation and weaning of ventilation,53,116.4,2.0,back_matter,after_references
+MV_DSA,,Interaction between ventilatory strategy and use of sedative agents and paralysis,53,117.0,2.0,back_matter,after_references
+MV_DSA,,Hypoxemic Rescue therapies,54,117.0,2.0,back_matter,after_references
+MV_DSA,,APPENDIX 2: Evidence for strategies for different components of ventilatory support,55,72.1,,back_matter,after_references
+MV_DSA,,Introduction,55,106.7,1.0,back_matter,after_references
+MV_DSA,,Characteristics of mandatory inspiratory breaths,55,116.6,2.0,back_matter,after_references
+MV_DSA,,Are tidal volumes below 6 ml /Kg beneficial?,56,150.2,3.0,back_matter,after_references
+MV_DSA,,Positive End Expiratory Pressure (PEEP),57,150.9,3.0,back_matter,after_references
+MV_DSA,,Interaction between PEEP and size of inspiration,59,150.9,3.0,back_matter,after_references
+MV_DSA,,Open Lung Strategies incorporating Recruitment maneuvers and elevated PEEP,59,150.5,3.0,back_matter,after_references
+MV_DSA,,Prone positioning,60,150.9,3.0,back_matter,after_references
+MV_DSA,,Neuro Muscular Blocking Drugs (Paralysis),60,150.9,3.0,back_matter,after_references
+MV_DSA,,APRV,61,150.2,3.0,back_matter,after_references
+MV_DSA,,ECMO,62,150.9,3.0,back_matter,after_references
+MV_DSA,,ECCO2R,62,150.9,3.0,back_matter,after_references
+MV_DSA,,Hypoxemic Rescue therapies,63,150.9,3.0,back_matter,after_references
+MV_DSA,,Spontaneous ventilation and weaning from ventilation,63,150.4,3.0,back_matter,after_references
+MV_DSA,,Challenges associated with ventilation trials,63,150.5,3.0,back_matter,after_references
+END_DSA,1,ABBREVIATIONS,7,106.1,1.0,reconstructed,no_child_or_parent_check
+END_DSA,2,PROTOCOL APPENDIX STRUCTURE,9,106.7,1.0,reconstructed,no_child_or_parent_check
+END_DSA,3,ENDOTHELIAL MODULATION DOMAIN-SPECIFIC APPENDIX VERSION,10,106.7,1.0,reconstructed,no_child_or_parent_check
+END_DSA,3.1,Version history,10,116.2,2.0,printed,x_level_equals_printed
+END_DSA,4,ENDOTHELIAL MODULATION DOMAIN GOVERNANCE,10,106.7,1.0,reconstructed,no_child_or_parent_check
+END_DSA,4.1,Domain members,10,117.0,2.0,printed,x_level_equals_printed
+END_DSA,4.2,Contact Details,11,116.6,2.0,printed,x_level_equals_printed
+END_DSA,5,ENDOTHELIAL MODULATION DOMAIN-SPECIFIC WORKING GROUP AUTHORIZATION,12,106.7,1.0,reconstructed,no_child_or_parent_check
+END_DSA,6,BACKGROUND AND RATIONALE,12,106.7,1.0,reconstructed,no_child_or_parent_check
+END_DSA,6.1,Domain definition,12,117.0,2.0,printed,x_level_equals_printed
+END_DSA,6.2,Domain-specific background,12,117.0,2.0,printed,x_level_equals_printed
+END_DSA,6.2.1,COVID-19 infection,12,149.6,3.0,printed,x_level_equals_printed
+END_DSA,6.2.2,Rationale for Endothelial Modulation Domain,14,150.0,3.0,printed,x_level_equals_printed
+END_DSA,6.2.3,Intervention strategy for this domain,17,150.0,3.0,printed,x_level_equals_printed
+END_DSA,6.2.4,Imatinib,17,150.0,3.0,printed,x_level_equals_printed
+END_DSA,7,DOMAIN OBJECTIVES,26,106.7,1.0,reconstructed,no_child_or_parent_check
+END_DSA,8,TRIAL DESIGN,26,106.0,1.0,reconstructed,no_child_or_parent_check
+END_DSA,8.1,Population,26,117.0,2.0,printed,x_level_equals_printed
+END_DSA,8.1.1,Age Strata,26,149.2,3.0,printed,x_level_equals_printed
+END_DSA,8.1.2,State,27,149.4,3.0,printed,x_level_equals_printed
+END_DSA,8.1.3,Domain-specific strata,27,150.0,3.0,printed,x_level_equals_printed
+END_DSA,8.2,Eligibility criteria,27,117.0,2.0,printed,x_level_equals_printed
+END_DSA,8.2.1,Domain inclusion criteria,27,150.0,3.0,printed,x_level_equals_printed
+END_DSA,8.2.2,Domain exclusion criteria,27,150.0,3.0,printed,x_level_equals_printed
+END_DSA,8.2.3,Intervention exclusion criteria,28,150.0,3.0,printed,x_level_equals_printed
+END_DSA,8.3,Interventions,29,117.0,2.0,printed,x_level_equals_printed
+END_DSA,8.3.1,Endothelial Modulation Domain Interventions,29,150.0,3.0,printed,x_level_equals_printed
+END_DSA,8.3.2,No Endothelial modulator therapy,29,150.0,3.0,printed,x_level_equals_printed
+END_DSA,8.3.3,Enteral imatinib,29,150.0,3.0,printed,x_level_equals_printed
+END_DSA,8.3.4,Duration of Endothelial modulator therapy,29,150.0,3.0,printed,x_level_equals_printed
+END_DSA,8.3.5,Monitoring for cytopenias and liver function,29,150.0,3.0,printed,x_level_equals_printed
+END_DSA,8.3.6,Discontinuation of study intervention,29,150.0,3.0,printed,x_level_equals_printed
+END_DSA,8.3.7,Contraception advice,30,149.6,3.0,printed,x_level_equals_printed
+END_DSA,8.4,Concomitant care,30,116.6,2.0,printed,x_level_equals_printed
+END_DSA,8.5,Endpoints,31,117.0,2.0,printed,x_level_equals_printed
+END_DSA,8.5.1,Primary endpoint,31,150.0,3.0,printed,x_level_equals_printed
+END_DSA,8.5.2,Secondary endpoints,31,149.4,3.0,printed,x_level_equals_printed
+END_DSA,9,TRIAL CONDUCT,31,106.0,1.0,reconstructed,no_child_or_parent_check
+END_DSA,9.1,Microbiology,31,117.0,2.0,printed,x_level_equals_printed
+END_DSA,9.2,Domain-specific data collection,32,117.0,2.0,printed,x_level_equals_printed
+END_DSA,9.3,Criteria for discontinuation,32,116.6,2.0,printed,x_level_equals_printed
+END_DSA,9.4,Blinding,32,117.0,2.0,printed,x_level_equals_printed
+END_DSA,10,STATISTICAL CONSIDERATIONS,32,106.3,1.0,reconstructed,no_child_or_parent_check
+END_DSA,10.1,Domain-specific stopping rules,32,117.0,2.0,printed,x_level_equals_printed
+END_DSA,10.2,Unit-of-analysis and strata,33,117.0,2.0,printed,x_level_equals_printed
+END_DSA,10.3,Application of Response-Adaptive Randomization,33,116.2,2.0,printed,x_level_equals_printed
+END_DSA,10.4,Timing of revealing of randomization status,33,116.1,2.0,printed,x_level_equals_printed
+END_DSA,10.5,Interactions with interventions in other domains,33,117.0,2.0,printed,x_level_equals_printed
+END_DSA,10.6,Nesting of interventions,33,117.0,2.0,printed,x_level_equals_printed
+END_DSA,10.7,Threshold probability for efficacy,33,116.1,2.0,printed,x_level_equals_printed
+END_DSA,10.8,Threshold odds ratio delta for futility,34,116.1,2.0,printed,x_level_equals_printed
+END_DSA,10.9,Informative priors,34,117.0,2.0,printed,x_level_equals_printed
+END_DSA,10.10,Post-trial sub-groups,34,117.0,2.0,printed,x_level_equals_printed
+END_DSA,11,ETHICAL CONSIDERATIONS,34,106.7,1.0,reconstructed,no_child_or_parent_check
+END_DSA,11.1,Data Safety and Monitoring Board,34,117.0,2.0,printed,x_level_equals_printed
+END_DSA,11.2,Potential domain-specific adverse events,35,117.0,2.0,printed,x_level_equals_printed
+END_DSA,11.3,Domain risk assessment,35,117.0,2.0,printed,x_level_equals_printed
+END_DSA,11.4,Domain-specific consent issues,35,117.0,2.0,printed,x_level_equals_printed
+END_DSA,12,GOVERNANCE ISSUES,36,106.4,1.0,reconstructed,no_child_or_parent_check
+END_DSA,12.1,Funding of domain,36,117.0,2.0,printed,x_level_equals_printed
+END_DSA,12.2,Funding of domain interventions and outcome measures,36,117.0,2.0,printed,x_level_equals_printed
+END_DSA,12.3,Domain-specific declarations of interest,36,117.0,2.0,printed,x_level_equals_printed
+END_DSA,13,REFERENCES,37,106.7,1.0,reconstructed,no_child_or_parent_check
+IIM_DSA,1,ABBREVIATIONS,8,106.1,1.0,reconstructed,no_child_or_parent_check
+IIM_DSA,2,PROTOCOL APPENDIX STRUCTURE,9,106.7,1.0,reconstructed,no_child_or_parent_check
+IIM_DSA,3,INFLUENZA IMMUNE MODULATION DOMAIN-SPECIFIC APPENDIX VERSION,10,106.7,1.0,reconstructed,no_child_or_parent_check
+IIM_DSA,3.1,Version history,10,116.2,2.0,printed,x_level_equals_printed
+IIM_DSA,4,INFLUENZA IMMUNE MODULATION DOMAIN GOVERNANCE,10,106.7,1.0,reconstructed,no_child_or_parent_check
+IIM_DSA,4.1,Domain members,10,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,4.2,Contact Details,12,116.6,2.0,printed,x_level_equals_printed
+IIM_DSA,5,INFLUENZA IMMUNE MODULATION DOMAIN-SPECIFIC WORKING GROUP AUTHORIZATION,12,106.7,1.0,reconstructed,no_child_or_parent_check
+IIM_DSA,6,BACKGROUND AND RATIONALE,12,106.7,1.0,reconstructed,no_child_or_parent_check
+IIM_DSA,6.1,Domain definition,12,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,6.2,Domain-specific background,12,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,6.2.1,Influenza,12,150.0,3.0,printed,x_level_equals_printed
+IIM_DSA,6.2.2,Intervention strategy for this domain,15,150.0,3.0,printed,x_level_equals_printed
+IIM_DSA,6.2.3,Tocilizumab,15,149.1,3.0,printed,x_level_equals_printed
+IIM_DSA,6.2.4,Baricitinib,21,150.0,3.0,printed,x_level_equals_printed
+IIM_DSA,7,DOMAIN OBJECTIVES,25,106.7,1.0,reconstructed,no_child_or_parent_check
+IIM_DSA,8,TRIAL DESIGN,25,106.0,1.0,reconstructed,no_child_or_parent_check
+IIM_DSA,8.1,Population,25,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,8.1.1,Age Strata,25,149.2,3.0,printed,x_level_equals_printed
+IIM_DSA,8.1.2,Illness Severity State,25,150.0,3.0,printed,x_level_equals_printed
+IIM_DSA,8.1.3,Domain-specific strata,26,150.0,3.0,printed,x_level_equals_printed
+IIM_DSA,8.2,Eligibility criteria,26,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,8.2.1,Domain inclusion criteria,26,150.0,3.0,printed,x_level_equals_printed
+IIM_DSA,8.2.2,Domain exclusion criteria,26,150.0,3.0,printed,x_level_equals_printed
+IIM_DSA,8.2.3,Intervention exclusion criteria,27,150.0,3.0,printed,x_level_equals_printed
+IIM_DSA,8.3,Interventions,28,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,8.3.1,Influenza Immune Modulation Domain Interventions,28,150.0,3.0,printed,x_level_equals_printed
+IIM_DSA,8.3.2,No Influenza Immune Modulation therapy,28,150.0,3.0,printed,x_level_equals_printed
+IIM_DSA,8.3.3,Tocilizumab,28,149.1,3.0,printed,x_level_equals_printed
+IIM_DSA,8.3.4,Baricitinib,29,150.0,3.0,printed,x_level_equals_printed
+IIM_DSA,8.3.5,Discontinuation of study intervention,29,150.0,3.0,printed,x_level_equals_printed
+IIM_DSA,8.4,Concomitant care,30,116.6,2.0,printed,x_level_equals_printed
+IIM_DSA,8.5,Endpoints,30,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,8.5.1,Primary endpoint,30,150.0,3.0,printed,x_level_equals_printed
+IIM_DSA,8.5.2,Secondary endpoints,30,149.4,3.0,printed,x_level_equals_printed
+IIM_DSA,9,TRIAL CONDUCT,31,106.0,1.0,reconstructed,no_child_or_parent_check
+IIM_DSA,9.1,Microbiology,31,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,9.2,Domain-specific data collection,31,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,9.3,Criteria for discontinuation,31,116.6,2.0,printed,x_level_equals_printed
+IIM_DSA,9.4,Blinding,31,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,10,STATISTICAL CONSIDERATIONS,32,106.3,1.0,reconstructed,no_child_or_parent_check
+IIM_DSA,10.1,Domain-specific stopping rules,32,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,10.2,Unit-of-analysis and strata,33,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,10.3,Application of Response-Adaptive Randomization,33,116.2,2.0,printed,x_level_equals_printed
+IIM_DSA,10.4,Timing of revealing of randomization status,33,116.1,2.0,printed,x_level_equals_printed
+IIM_DSA,10.5,Interactions with interventions in other domains,33,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,10.6,Nesting of interventions,34,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,10.7,"Threshold probability for superiority, effectiveness, and inferiority",34,116.1,2.0,printed,x_level_equals_printed
+IIM_DSA,10.8,Threshold odds ratio delta for equivalence and futility,34,116.1,2.0,printed,x_level_equals_printed
+IIM_DSA,10.9,Statistical management of patients with intervention-specific exclusion,34,116.4,2.0,printed,x_level_equals_printed
+IIM_DSA,10.10,Informative priors,35,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,10.11,Post-trial sub-groups,35,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,11,ETHICAL CONSIDERATIONS,35,106.7,1.0,reconstructed,no_child_or_parent_check
+IIM_DSA,11.1,Data Safety and Monitoring Board,35,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,11.2,Potential domain-specific adverse events,36,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,11.3,Domain risk assessment,36,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,11.4,Domain-specific consent issues,36,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,12,GOVERNANCE ISSUES,37,106.4,1.0,reconstructed,no_child_or_parent_check
+IIM_DSA,12.1,Funding of domain,37,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,12.2,Funding of domain interventions and outcome measures,37,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,12.3,Domain-specific declarations of interest,37,117.0,2.0,printed,x_level_equals_printed
+IIM_DSA,13,REFERENCES,38,106.7,1.0,reconstructed,no_child_or_parent_check

@@ -1,0 +1,1534 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rcap: <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/panda> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/core> .
+
+rcap:PandaDesign a owl:Class ;
+    rdfs:label "REMAP-CAP PANDA module" ;
+    rdfs:subClassOf _:N032baab8bec54eaba10d84ddb135909a,
+        _:N03882ca093024207a817d59f63d10e00,
+        _:N04f54cf2761c405cb23d45eb04edd416,
+        _:N08b82cfa5fd540be8dd5b4ed162fc90f,
+        _:N09538b7c72074aac9875e4cb31cf0937,
+        _:N0991f70f713d4f87adafafaddec1bf90,
+        _:N0ad6a5ae2a214fd38b2f3dec3ff93a92,
+        _:N0b1b3c19760e4a89862562c2067813ce,
+        _:N0fc33431968f4cdc97b25796019dcd38,
+        _:N12092353a14d45809b16e0f4f9540118,
+        _:N21aee6a703414af1b69523c840a451f5,
+        _:N2367812d2ea04b17bd65b493fb7ebce6,
+        _:N2413ef50a6514990afb9fd115288a0eb,
+        _:N289af653449c4b419c22c81faf9ded1f,
+        _:N28c776e3ff9f4d85bb209814e226553b,
+        _:N296cbbb3bc214a139f5f552a2f2c8d3a,
+        _:N2b8875593fda4271be276a787fe8912a,
+        _:N2c2ee8661c3a479d9e92bae9292b812e,
+        _:N3173a81522614a80b375b492b038353f,
+        _:N382e1a611ca14ee9a8d6446e119e7b88,
+        _:N39b8f2ed6d00432e8ad5fcf68e39b2e3,
+        _:N3c50be1418134dc4a571a2b3715e7c26,
+        _:N3ec6debd0dfd4742835b88bbc4a0ee97,
+        _:N40eb8f62f11b429ea66080f468082c1c,
+        _:N41113d7f4439400c88a1223c47bd0584,
+        _:N42202d237bf04b6792f20a0c94570f70,
+        _:N42ce01c883cc49d3bf346ab4d9185ab1,
+        _:N4437ec482e37445e9579957d95061aec,
+        _:N44855b73d2bd471d91a9d02bfdd7d1e6,
+        _:N44e716aec86f4f18b1c6b0471a6d4a34,
+        _:N469983c30d9b41e3b0480b5eacc0ab7f,
+        _:N498f63c98e3f4408b05a73f15fa7a119,
+        _:N4b585024a973467ebf1fb421b3114fd2,
+        _:N4c03d52eac7448abb67d186e57470ed6,
+        _:N55abc07dd512466e9193214d7782eefb,
+        _:N56ed7bf789ff401692bb79912f7718ca,
+        _:N5abe7bd809644348b84601ae51dd1d0d,
+        _:N5abf4473adcb40368c68263ed5a34f4b,
+        _:N5bae070719764f348a04f1b36ee60f2a,
+        _:N5d4efedf8660482db1facdeca4ae026c,
+        _:N61c45248b6b5492d81deba062088144f,
+        _:N6414cde95fe040f5a543df6e25c8e65e,
+        _:N657216d0ab3a45c0af946e95daa4ee2b,
+        _:N6840857cdcbb43e2994f8ee10d4104ef,
+        _:N6e94b02f22f446229cb72649856260ac,
+        _:N73d7662dadfd420e94cf35aaaaa1c2a5,
+        _:N76d1eb1c24644b6b8988814b50fc37d8,
+        _:N77586848566242b39ba16d0e2284d81b,
+        _:N8b55977aa0b34e65b8e527d682596a79,
+        _:N8bf44c4f5cec415e8fa013ac7b177f26,
+        _:N8f4d11a52bf14443a0a55b267e7f3785,
+        _:N8f6bd259665e4628bd35378ba81dcbcc,
+        _:N921dfcd41ead4f08b871eb7e3efde9ca,
+        _:N9408e537f64c43028100a7c46b1cd16c,
+        _:N9920f414a0f648d08791c4679e9d47e8,
+        _:N9a0883c2901e4295beec514bd47fe74f,
+        _:Na4231706e75f4a1180a147b0bb3cf6e8,
+        _:Na4dfbb46caa34f81a6a53da3b9824d21,
+        _:Na7ac6e9d7c7348ccb32fe9095fbc6527,
+        _:Na975f094a5a84e9aae91820edb5a411f,
+        _:Nad0279dabc22455b849de8b88cfef11a,
+        _:Naee55e026115434ca5a1d3f448fe6ea1,
+        _:Nb45fdfc4c56c4e88b75cdaa507ad26bf,
+        _:Nb9a4ea44f66448b885e9b3b863d72068,
+        _:Nbaa6bfef8c974f75bbec0d09dd542976,
+        _:Nbc2f8c8dfe934aa881032bde3a36f8db,
+        _:Nc77b419015ab4905b90e358d005d80a8,
+        _:Nc85b59ac9dbd45858bf06d1e8b8ca725,
+        _:Nc8fb1af38ff24a36a8a89aeb753c6459,
+        _:Nc9af01d51504412d91043d3cde0b0ac1,
+        _:Ncbd63991d2ad4dccb6cf4dd9c7c28427,
+        _:Nccc6cf98fe11403fb3977eb620a5b6e9,
+        _:Nce4df14a5cbf45089d2c14e2dbe2fc3b,
+        _:Nd1bb129bcbcd4b148d5ec7214aca70d1,
+        _:Nd3d42647b89f4cb4bda49dc212550fc5,
+        _:Nd3fdcc97dca546b68819d38a700d0d5c,
+        _:Nd851745f1fe844dd866d895075f5520d,
+        _:Nddc34296439c4bb99e9c562729395a35,
+        _:Ne0b2ee375d7a4d29a922f1e1c665e952,
+        _:Ne1519653f29e4c698ec382cc03e7e439,
+        _:Ne247bcc21c67466586e8282fe832de68,
+        _:Ne48f5b3ad912480d9f14c38ac9ac747a,
+        _:Ne506779e4c084186848d77e237041c32,
+        _:Ne54ce1e017794d5496162e4688508c71,
+        _:Ne5ad11d456b6451abbccb4cfa94d05bd,
+        _:Ne799f8b7aa8144a89ed769b309a6c79c,
+        _:Nee2c97d561ce4b2e86af46c53c7b56dc,
+        _:Nef36fb8ee1c94088b9ab8fff41f6dd1c,
+        _:Nf066b7efcb4f4829ba43747e5ffd5e98,
+        _:Nf14f5dbc0ba649d596d466b0c3f169e9,
+        _:Nf4a6fc8c487742a680e1d29944ab29eb,
+        _:Nf7de824259104b59821593eb25fc48e8,
+        _:Nfd667fd5cacd4b0b99d1324167f63968,
+        _:Nfdae2faf25494d4eb529bc1887ade560,
+        obo:OBI_0500001 ;
+    rcap:appendixTo rcap:CoreDesign ;
+    rcap:documentDate "5 Nov 2024" ;
+    rcap:documentTitle "Patient, Pathogen and Disease Appendix 1" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Ne48f5b3ad912480d9f14c38ac9ac747a ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:6" ;
+    rcap:evidenceSection "3.4" ;
+    rcap:evidenceText "Bacterial infection is stratified as bacterial infection diagnosed (comprising cases where infection with a recognized bacterial respiratory pathogen is confirmed or probable) and bacterial infection not diagnosed (comprising cases where infection with a recognized bacterial respiratory pathogen is neither confirmed nor probable i.e., bacterial infection was assessed as only possible or not suspected)." ;
+    rcap:occurrenceKind "category_pathogen_stratum" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N6e94b02f22f446229cb72649856260ac ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:15" ;
+    rcap:evidenceSection "3.1" ;
+    rcap:evidenceText "For some pathogens, clinical features may be sufficiently similar that a domain considers them collectively (e.g., ‘confirmed viral respiratory tract infection’ may be a group defined as the detection of any virus known to cause respiratory tract infection on microbiological testing)." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N657216d0ab3a45c0af946e95daa4ee2b ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "2" ;
+    rcap:evidenceText "Domains may pool income level categories, for example, distinguishing two categories: high-income and non-high income (incorporating upper-middle, lower-middle, and low)." ;
+    rcap:occurrenceKind "category_patient" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Na4231706e75f4a1180a147b0bb3cf6e8 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "4.3" ;
+    rcap:evidenceText "Randomization is only permitted once in each defined disease stage and illness severity analytic strata are always applied for domains that randomize patients in more than one stage of illness severity." ;
+    rcap:occurrenceKind "category_illness_severity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N5abe7bd809644348b84601ae51dd1d0d ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 10 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "4.4" ;
+    rcap:evidenceText "New or worsening respiratory symptoms that developed within 2 weeks prior to the onset of oxygen/respiratory support" ;
+    rcap:occurrenceKind "category_clinical_feature" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N2413ef50a6514990afb9fd115288a0eb ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 10 ;
+    rcap:evidencePosition "9" ;
+    rcap:evidenceSection "4.4" ;
+    rcap:evidenceText "Acute Respiratory Distress Syndrome is a State defined in two categories, present or absent, with ‘present’ defined as patients with all of the following:" ;
+    rcap:occurrenceKind "category_clinical_feature" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Ncbd63991d2ad4dccb6cf4dd9c7c28427 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 11 ;
+    rcap:evidencePosition "13" ;
+    rcap:evidenceSection "4.4" ;
+    rcap:evidenceText "Receiving respiratory support with high-flow nasal oxygen (HFNO) at a flow rate of at least 30 liters per minute (or at least 2 liters per minute per kilogram of bodyweight in children less than 15 kilograms) OR invasive mechanical ventilation (IMV), non-invasive ventilation (NIV) or continuous positive airways pressure (CPAP) with PEEP or CPAP ≥5cm H 2 O. (This criterion is not required in resource-limited settings where none of these modalities are available)" ;
+    rcap:occurrenceKind "category_clinical_feature" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N12092353a14d45809b16e0f4f9540118 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:13" ;
+    rcap:evidenceSection "3.1" ;
+    rcap:evidenceText "Therefore, the population considered to have bacterial infection is defined primarily by clinical assessment plus any microbiological data available at the time of eligibility assessment rather than final microbiological test results." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N77586848566242b39ba16d0e2284d81b ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:12" ;
+    rcap:evidenceSection "3.1" ;
+    rcap:evidenceText "It is acknowledged that, for bacterial infection or co-infection, results from commonly used microbiological testing strategies may take a significant time (e.g., culture) and have low sensitivity." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N8f4d11a52bf14443a0a55b267e7f3785 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "2" ;
+    rcap:evidenceText "Regional income level: Regional income level categories are defined by World Bank Income Classification (high, upper middle, lower middle, low) of the country of patient enrollment." ;
+    rcap:occurrenceKind "category_patient" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N03882ca093024207a817d59f63d10e00 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:9" ;
+    rcap:evidenceSection "3.4" ;
+    rcap:evidenceText "Such participants may be considered to be a separate pathogen analysis stratum." ;
+    rcap:occurrenceKind "category_pathogen_stratum" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Ne506779e4c084186848d77e237041c32 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 4 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "3" ;
+    rcap:evidenceText "Influenza virus" ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Ne0b2ee375d7a4d29a922f1e1c665e952 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "4.4" ;
+    rcap:evidenceText "This Appendix defines the following categories:" ;
+    rcap:occurrenceKind "category_clinical_feature" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nf066b7efcb4f4829ba43747e5ffd5e98 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 8 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "4.2" ;
+    rcap:evidenceText "Respiratory tract infection, defined in two categories, lower or upper, with lower defined as infection of the airways below the level of the larynx (including tracheitis, bronchitis, bronchiolitis, and pneumonia) and upper defined as infection of the airways at the level of the larynx and above, excluding isolated otitis media or mastoiditis" ;
+    rcap:occurrenceKind "category_disease_entity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Na4dfbb46caa34f81a6a53da3b9824d21 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:11" ;
+    rcap:evidenceSection "3.1" ;
+    rcap:evidenceText "Each pathogen status used for analysis is defined as a binary variable at Platform level." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nf7de824259104b59821593eb25fc48e8 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "4.2" ;
+    rcap:evidenceText "This Appendix defines the following disease entity states at the time of randomization:" ;
+    rcap:occurrenceKind "category_disease_entity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nb45fdfc4c56c4e88b75cdaa507ad26bf ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "4.3" ;
+    rcap:evidenceText "Respiratory illness severity can change over time as a patient’s disease progresses and illness severity is an important determinate of both clinical outcome and potential differential treatment effect." ;
+    rcap:occurrenceKind "category_illness_severity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N04f54cf2761c405cb23d45eb04edd416 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:8" ;
+    rcap:evidenceSection "3.1" ;
+    rcap:evidenceText "Domains can select the infection likelihood threshold that is required for eligibility." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N76d1eb1c24644b6b8988814b50fc37d8 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "3.2" ;
+    rcap:evidenceText "For the purposes of eligibility, domains may include patients with differing likelihood thresholds for the same pathogen (e.g., one domain may include patients with suspected or confirmed influenza infection and another may constrain eligibility to confirmed infection only)." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N0991f70f713d4f87adafafaddec1bf90 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 10 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "4.4" ;
+    rcap:evidenceText "Hypoxemic State, defined in 3 categories comprising:" ;
+    rcap:occurrenceKind "category_clinical_feature" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N61c45248b6b5492d81deba062088144f ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:14" ;
+    rcap:evidenceSection "3.1" ;
+    rcap:evidenceText "For other pathogens, the clinical features are non-specific and microbiological tests have a high sensitivity and, in this case, microbiological testing may be more important than clinical suspicion." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N40eb8f62f11b429ea66080f468082c1c ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "3.1" ;
+    rcap:evidenceText "Clinical treatment decisions are often made prior to the availability of microbiological test results and may rely on history, examination and supporting investigations such as inflammatory markers and imaging (“clinical assessment”) to include or exclude potential infecting pathogen(s) relevant to those decisions." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N09538b7c72074aac9875e4cb31cf0937 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:8" ;
+    rcap:evidenceSection "3.4" ;
+    rcap:evidenceText "It is acknowledged that patients hospitalized with respiratory tract infection may not have a causative pathogen diagnosed by clinical assessment or confirmed by microbiological testing." ;
+    rcap:occurrenceKind "category_pathogen_stratum" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N0b1b3c19760e4a89862562c2067813ce ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "3" ;
+    rcap:evidenceText "The following pathogen categories are recognized:" ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nf14f5dbc0ba649d596d466b0c3f169e9 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 9 ;
+    rcap:evidencePosition "12" ;
+    rcap:evidenceSection "4.3" ;
+    rcap:evidenceText "High-flow nasal oxygen with a fractional inspired oxygen concentration of 0.4 or higher and with flow rate of at least 30 liters per minute (or at least 2 liters per minute per kilogram of bodyweight in children less than 15 kilograms)" ;
+    rcap:occurrenceKind "category_illness_severity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N5bae070719764f348a04f1b36ee60f2a ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "trailing:3" ;
+    rcap:evidenceSection "4.3" ;
+    rcap:evidenceText "A patient may transition between moderate, severe, and recovering illness severity stages while remaining potentially eligible within the Platform but is assigned to the Illness Severity State that applies at the time of each randomization." ;
+    rcap:occurrenceKind "category_illness_severity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N28c776e3ff9f4d85bb209814e226553b ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "trailing:1" ;
+    rcap:evidenceSection "4.3" ;
+    rcap:evidenceText "Qualifying organ failure support is defined as: Patients are not eligible for randomization in the Moderate State if they have been previously randomized in the Severe State, if they have previously been randomized in the Recovering State, or if they have received invasive mechanical ventilation at any time during this acute admission." ;
+    rcap:occurrenceKind "category_illness_severity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N8f6bd259665e4628bd35378ba81dcbcc ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 4 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "3" ;
+    rcap:evidenceText "Respiratory syncytial virus (RSV)" ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nc85b59ac9dbd45858bf06d1e8b8ca725 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "3.4" ;
+    rcap:evidenceText "RSV infection is stratified as RSV infection confirmed (RSV detected on microbiological testing with a compatible clinical assessment) and RSV not confirmed." ;
+    rcap:occurrenceKind "category_pathogen_stratum" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Ne247bcc21c67466586e8282fe832de68 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 4 ;
+    rcap:evidencePosition "7" ;
+    rcap:evidenceSection "3" ;
+    rcap:evidenceText "A novel pandemic respiratory pathogen" ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Na7ac6e9d7c7348ccb32fe9095fbc6527 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 4 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "3" ;
+    rcap:evidenceText "MERS-CoV" ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nc9af01d51504412d91043d3cde0b0ac1 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 9 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "4.3" ;
+    rcap:evidenceText "not in the Recovering State" ;
+    rcap:occurrenceKind "category_illness_severity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Naee55e026115434ca5a1d3f448fe6ea1 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 9 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "4.3" ;
+    rcap:evidenceText "The Severe State, defined as hospitalized patients:" ;
+    rcap:occurrenceKind "category_illness_severity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N73d7662dadfd420e94cf35aaaaa1c2a5 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "2" ;
+    rcap:evidenceText "Immune suppression: Patients who have increased susceptibility to infection due to receipt of immunosuppressive treatment or due an immunosuppressive disease at the time of Platform enrollment are categorized as immune suppressed." ;
+    rcap:occurrenceKind "category_patient" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rcap:appendixTo ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget rcap:CoreDesign ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceRule "B-panda" ;
+    rcap:evidenceSection "1.2" ;
+    rcap:evidenceText "The Patient, Pathogen and Disease Appendix (PANDA) is an appendix to the Core Protocol" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nd1bb129bcbcd4b148d5ec7214aca70d1 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "3.4.1" ;
+    rcap:evidenceText "It is acknowledged that a new pandemic pathogen may be completely novel and, in this situation, the default is for a novel pathogen to be considered separate from other pathogens as above." ;
+    rcap:occurrenceKind "category_pathogen_stratum" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nd3d42647b89f4cb4bda49dc212550fc5 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 4 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "3" ;
+    rcap:evidenceText "Any recognized viral respiratory pathogen other than influenza, SARS-CoV-2, MERS-CoV or RSV (grouped together)" ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N469983c30d9b41e3b0480b5eacc0ab7f ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 4 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "3" ;
+    rcap:evidenceText "SARS-CoV-2" ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N08b82cfa5fd540be8dd5b4ed162fc90f ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 9 ;
+    rcap:evidencePosition "9" ;
+    rcap:evidenceSection "4.3" ;
+    rcap:evidenceText "unlikely to require or receive a significant escalation in level of organ failure support for the remainder of their hospital admission" ;
+    rcap:occurrenceKind "category_illness_severity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nb9a4ea44f66448b885e9b3b863d72068 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "3.3" ;
+    rcap:evidenceText "A single statistical model requires pathogen analysis strata to be defined based on information available at eligibility assessment, no later than time of reveal of treatment allocation." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nbaa6bfef8c974f75bbec0d09dd542976 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 9 ;
+    rcap:evidencePosition "8" ;
+    rcap:evidenceSection "4.3" ;
+    rcap:evidenceText "clearly recovering from their acute respiratory tract infection AND" ;
+    rcap:occurrenceKind "category_illness_severity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N0ad6a5ae2a214fd38b2f3dec3ff93a92 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "3.4" ;
+    rcap:evidenceText "SARS-CoV-2 infection is stratified as SARS-CoV-2 infection confirmed (SARS-CoV-2 detected on microbiological testing with a compatible clinical assessment) and SARS-CoV-2 not confirmed." ;
+    rcap:occurrenceKind "category_pathogen_stratum" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N42202d237bf04b6792f20a0c94570f70 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "trailing:1" ;
+    rcap:evidenceSection "3" ;
+    rcap:evidenceText "It is possible that additional defined pathogens may be included in this appendix over time due to the changing epidemiology of respiratory tract infections or due to a changing focus of the Platform." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N9408e537f64c43028100a7c46b1cd16c ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:7" ;
+    rcap:evidenceSection "3.1" ;
+    rcap:evidenceText "For the presence of a pathogen to be ‘confirmed’ or ‘excluded’, there must be supportive microbiological testing." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rcap:appendixTo ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget rcap:CoreDesign ;
+    rcap:evidenceDoc "Core Protocol 4.0" ;
+    rcap:evidenceRule "B-panda" ;
+    rcap:evidenceSection "1.2" ;
+    rcap:evidenceText "The Patient, Pathogen and Disease Appendix (PANDA) is an appendix to the Core Protocol" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nfd667fd5cacd4b0b99d1324167f63968 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 8 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "4.1" ;
+    rcap:evidenceText "Community-acquired, defined as acute infection acquired outside of the hospital and manifesting within 48 hours of hospital admission" ;
+    rcap:occurrenceKind "category_acquisition" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N2c2ee8661c3a479d9e92bae9292b812e ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 8 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "4.1" ;
+    rcap:evidenceText "Hospital-acquired, defined as infection not incubating at the time of hospital admission and manifesting 48 hours or more after hospital admission" ;
+    rcap:occurrenceKind "category_acquisition" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N0fc33431968f4cdc97b25796019dcd38 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "2" ;
+    rcap:evidenceText "Age: Age is defined in three categories, Adult (aged 18 years or older), Adolescent (aged 12 years or older and less than 18 years), or Pediatric (aged 28 days or older and less than 12 years) at the time of Platform enrollment." ;
+    rcap:occurrenceKind "category_patient" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nd3fdcc97dca546b68819d38a700d0d5c ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "4.2" ;
+    rcap:evidenceText "Respiratory tract infection can manifest as a range of disease entities." ;
+    rcap:occurrenceKind "category_disease_entity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Ne54ce1e017794d5496162e4688508c71 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 10 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "4.4" ;
+    rcap:evidenceText "Currently receiving respiratory support (meeting the Severe Illness Severity State organ failure definition) with FiO 2 ≥ 0.40" ;
+    rcap:occurrenceKind "category_clinical_feature" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Ne5ad11d456b6451abbccb4cfa94d05bd ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 10 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "4.4" ;
+    rcap:evidenceText "Acute Hypoxemic Respiratory Failure is a State defined in two categories, present or absent, with ‘present’ defined as patients with all of the following:" ;
+    rcap:occurrenceKind "category_clinical_feature" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N382e1a611ca14ee9a8d6446e119e7b88 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 9 ;
+    rcap:evidencePosition "11" ;
+    rcap:evidenceSection "4.3" ;
+    rcap:evidenceText "Non-invasive ventilation (bilevel positive airway pressure or continuous positive airway pressure by mask or helmet)" ;
+    rcap:occurrenceKind "category_illness_severity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Ne799f8b7aa8144a89ed769b309a6c79c ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "3.4" ;
+    rcap:evidenceText "Respiratory virus infection (influenza, SARS-CoV-2, MERS-CoV, RSV and any other recognized viral respiratory pathogen grouped together) is stratified as viral infection confirmed (a recognized viral respiratory pathogen is detected on microbiological testing with a clinically compatible illness) and respiratory viral infection not confirmed." ;
+    rcap:occurrenceKind "category_pathogen_stratum" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N8bf44c4f5cec415e8fa013ac7b177f26 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:9" ;
+    rcap:evidenceSection "3.1" ;
+    rcap:evidenceText "Domains may also constrain eligibility according to additional criteria related to the nature of the sample undergoing microbiological tests, the time-window in which the sample is collected, or microbiological testing types." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N44855b73d2bd471d91a9d02bfdd7d1e6 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "3.3" ;
+    rcap:evidenceText "These microbiological test results do not influence pathogen strata for the primary analysis but can contribute to the definition of populations for additional safety analyses, secondary analyses or post-platform conclusion subgroups of interest for specific domains." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N3c50be1418134dc4a571a2b3715e7c26 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "3.1" ;
+    rcap:evidenceText "Each DSA will specify which pathogens are relevant to the domain." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N4c03d52eac7448abb67d186e57470ed6 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "trailing:2" ;
+    rcap:evidenceSection "3" ;
+    rcap:evidenceText "As co-infection is a common finding in the respiratory tract, Domains can constrain eligibility and define analysis populations to include or exclude patients with an assigned pathogen status in one or more of these categories." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nfdae2faf25494d4eb529bc1887ade560 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 9 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "4.3" ;
+    rcap:evidenceText "The Moderate State, defined as hospitalized patients who are:" ;
+    rcap:occurrenceKind "category_illness_severity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N289af653449c4b419c22c81faf9ded1f ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "3.1" ;
+    rcap:evidenceText "In this Platform, pathogen status may be assigned based on clinical assessment, microbiological testing, or both." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nd851745f1fe844dd866d895075f5520d ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 10 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "4.4" ;
+    rcap:evidenceText "The hypoxemia is caused by acute respiratory infection (and not primarily due to other causes such as acute heart failure, fluid overload, or pulmonary embolism)" ;
+    rcap:occurrenceKind "category_clinical_feature" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Na975f094a5a84e9aae91820edb5a411f ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 11 ;
+    rcap:evidencePosition "10" ;
+    rcap:evidenceSection "4.4" ;
+    rcap:evidenceText "Pulmonary edema precipitated by respiratory tract infection and not exclusively or primarily attributable to cardiac failure or fluid overload with hypoxemia not primarily attributable to atelectasis" ;
+    rcap:occurrenceKind "category_clinical_feature" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nddc34296439c4bb99e9c562729395a35 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 9 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "4.3" ;
+    rcap:evidenceText "receiving qualifying organ failure support AND" ;
+    rcap:occurrenceKind "category_illness_severity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N5abf4473adcb40368c68263ed5a34f4b ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:10" ;
+    rcap:evidenceSection "3.1" ;
+    rcap:evidenceText "If not specified by a domain, guidance about qualifying microbiological testing will be provided in operational documents." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N6414cde95fe040f5a543df6e25c8e65e ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "3.1" ;
+    rcap:evidenceText "Even after all microbiological and other clinical information is available it may not be possible to identify the pathogen(s) responsible for an episode of infection." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nbc2f8c8dfe934aa881032bde3a36f8db ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 11 ;
+    rcap:evidencePosition "11" ;
+    rcap:evidenceSection "4.4" ;
+    rcap:evidenceText "Within one week of the estimated onset of new or worsening respiratory symptoms" ;
+    rcap:occurrenceKind "category_clinical_feature" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N44e716aec86f4f18b1c6b0471a6d4a34 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "trailing:2" ;
+    rcap:evidenceSection "4.3" ;
+    rcap:evidenceText "A participant is eligible to be randomized in the Severe Illness Severity State if they have previously been randomized in the Moderate Illness Severity State, but not if they have previously been randomized in the Recovering Illness Severity State." ;
+    rcap:occurrenceKind "category_illness_severity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N3ec6debd0dfd4742835b88bbc4a0ee97 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "4.1" ;
+    rcap:evidenceText "Respiratory tract infection can be acquired in the community or in hospital." ;
+    rcap:occurrenceKind "category_acquisition" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Ne1519653f29e4c698ec382cc03e7e439 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "3.4" ;
+    rcap:evidenceText "MERS-CoV infection is stratified as MERS-CoV infection confirmed (MERS-CoV detected on microbiological testing with a compatible clinical assessment) and MERS-CoV not confirmed." ;
+    rcap:occurrenceKind "category_pathogen_stratum" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N21aee6a703414af1b69523c840a451f5 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "4.1" ;
+    rcap:evidenceText "This Appendix defines the following categories at the time of randomization:" ;
+    rcap:occurrenceKind "category_acquisition" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N5d4efedf8660482db1facdeca4ae026c ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "3.4" ;
+    rcap:evidenceText "This Appendix defines pathogen analysis strata that contribute to the unit-of-analysis for the following pathogens: Influenza virus infection is stratified as influenza confirmed (influenza virus detected on microbiological testing with a compatible clinical assessment) and influenza not confirmed." ;
+    rcap:occurrenceKind "category_pathogen_stratum" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nf4a6fc8c487742a680e1d29944ab29eb ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 10 ;
+    rcap:evidencePosition "6" ;
+    rcap:evidenceSection "4.4" ;
+    rcap:evidenceText "patients who are not receiving invasive mechanical ventilation" ;
+    rcap:occurrenceKind "category_clinical_feature" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N3173a81522614a80b375b492b038353f ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 11 ;
+    rcap:evidencePosition "12" ;
+    rcap:evidenceSection "4.4" ;
+    rcap:evidenceText "Bilateral opacities on chest imaging not fully explained by effusions, atelectasis, or nodules/masses" ;
+    rcap:occurrenceKind "category_clinical_feature" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N2367812d2ea04b17bd65b493fb7ebce6 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "3.2" ;
+    rcap:evidenceText "In addition to Platform inclusion and exclusion criteria, a domain can restrict eligibility by specifically including or excluding patients with a specific pathogen status (including co-infection) as domain eligibility criteria." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N921dfcd41ead4f08b871eb7e3efde9ca ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 11 ;
+    rcap:evidencePosition "15" ;
+    rcap:evidenceSection "4.4" ;
+    rcap:evidenceText "Shock State, defined in two categories, present or absent, with ‘present’ defined as patients receiving a continuous infusion of intravenous vasopressor or inotrope medications" ;
+    rcap:occurrenceKind "category_clinical_feature" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N032baab8bec54eaba10d84ddb135909a ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 9 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "4.3" ;
+    rcap:evidenceText "not receiving qualifying organ failure support AND" ;
+    rcap:occurrenceKind "category_illness_severity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N6840857cdcbb43e2994f8ee10d4104ef ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "2" ;
+    rcap:evidenceText "Qualifying immunosuppressive diseases and treatments are defined in an operational document." ;
+    rcap:occurrenceKind "category_patient" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N9a0883c2901e4295beec514bd47fe74f ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 9 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "4.2" ;
+    rcap:evidenceText "Pneumonia, defined in two categories, present or absent, with present defined as radiological evidence of new onset infiltrate consistent with infection (in patients with pre-existing radiological changes, evidence of new infiltrate)" ;
+    rcap:occurrenceKind "category_disease_entity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nc9af01d51504412d91043d3cde0b0ac1 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 9 ;
+    rcap:evidencePosition "6" ;
+    rcap:evidenceSection "4.3" ;
+    rcap:evidenceText "not in the Recovering State" ;
+    rcap:occurrenceKind "category_illness_severity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N2b8875593fda4271be276a787fe8912a ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "3.2" ;
+    rcap:evidenceText "For example, a domain could include participants with influenza virus infection, exclude patients with confirmed SARS-CoV-2 infection and exclude participants who have confirmed bacterial co-infection." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N498f63c98e3f4408b05a73f15fa7a119 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 4 ;
+    rcap:evidencePosition "6" ;
+    rcap:evidenceSection "3" ;
+    rcap:evidenceText "Bacteria known to cause respiratory tract infection" ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N4437ec482e37445e9579957d95061aec ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:6" ;
+    rcap:evidenceSection "3.1" ;
+    rcap:evidenceText "tested and not detected) based on clinical assessment and microbiological test results." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N8b55977aa0b34e65b8e527d682596a79 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "3.3" ;
+    rcap:evidenceText "Pathogen analysis strata allow differential treatment effects to be assessed in participants with specific pathogens (or groups of pathogens) at eligibility assessment and improves covariate balance within pathogen strata." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N296cbbb3bc214a139f5f552a2f2c8d3a ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 9 ;
+    rcap:evidencePosition "7" ;
+    rcap:evidenceSection "4.3" ;
+    rcap:evidenceText "The Recovering State, defined as hospitalized patients who are:" ;
+    rcap:occurrenceKind "category_illness_severity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nce4df14a5cbf45089d2c14e2dbe2fc3b ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:7" ;
+    rcap:evidenceSection "3.4" ;
+    rcap:evidenceText "Pandemic respiratory pathogen infection is stratified as pandemic respiratory pathogen infection confirmed (the pandemic respiratory pathogen is detected on microbiological testing with a clinically compatible illness) and pandemic respiratory pathogen infection not confirmed." ;
+    rcap:occurrenceKind "category_pathogen_stratum" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nee2c97d561ce4b2e86af46c53c7b56dc ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "3.4.1" ;
+    rcap:evidenceText "However, if the pandemic pathogen is considered to be sufficiently similar to an existing pathogen (e.g., pandemic influenza virus and seasonal influenza virus) it will be an operational decision as to whether borrowing, pooling, or an independent analysis occurs in the primary statistical model." ;
+    rcap:occurrenceKind "category_pathogen_stratum" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N56ed7bf789ff401692bb79912f7718ca ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 9 ;
+    rcap:evidencePosition "13" ;
+    rcap:evidenceSection "4.3" ;
+    rcap:evidenceText "Continuous infusion of vasopressors, inotropes or both" ;
+    rcap:occurrenceKind "category_illness_severity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N9920f414a0f648d08791c4679e9d47e8 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "3.3" ;
+    rcap:evidenceText "For some participants, additional microbiological test results which are indicative of infection status at baseline may become available after reveal of treatment allocation." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nef36fb8ee1c94088b9ab8fff41f6dd1c ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "3.2" ;
+    rcap:evidenceText "Confirmation of qualifying pathogen status may occur through a delayed reveal process if commencement of assigned treatment can reasonably be deferred." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N42ce01c883cc49d3bf346ab4d9185ab1 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 10 ;
+    rcap:evidencePosition "7" ;
+    rcap:evidenceSection "4.4" ;
+    rcap:evidenceText "patients who are receiving invasive mechanical ventilation and have a ratio of arterial partial pressure of oxygen to fractional inspired concentration of oxygen (P:F ratio) of ≥ 200 mmHg (or saturation to fractional inspired concentration of oxygen ratio of ≥235) or are receiving invasive mechanical ventilation with the Positive End-Expiratory Pressure (PEEP) set to less than 5 cm of water (irrespective of the P:F ratio), and" ;
+    rcap:occurrenceKind "category_clinical_feature" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nc77b419015ab4905b90e358d005d80a8 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 8 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "4.1" ;
+    rcap:evidenceText "Ventilator-associated, a subcategory of hospital-acquired infection, additionally defined as infection in an invasively ventilated patient manifesting 48 hours or more after endotracheal intubation" ;
+    rcap:occurrenceKind "category_acquisition" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N55abc07dd512466e9193214d7782eefb ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "4.3" ;
+    rcap:evidenceText "This Appendix defines stage of illness in the following three categories of illness severity at the time of randomization:" ;
+    rcap:occurrenceKind "category_illness_severity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N39b8f2ed6d00432e8ad5fcf68e39b2e3 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 9 ;
+    rcap:evidencePosition "10" ;
+    rcap:evidenceSection "4.3" ;
+    rcap:evidenceText "Invasive mechanical ventilation" ;
+    rcap:occurrenceKind "category_illness_severity" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nccc6cf98fe11403fb3977eb620a5b6e9 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "trailing:3" ;
+    rcap:evidenceSection "3" ;
+    rcap:evidenceText "A patient’s pathogen status is defined by the matrix of all relevant pathogen groups." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N4b585024a973467ebf1fb421b3114fd2 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 10 ;
+    rcap:evidencePosition "8" ;
+    rcap:evidenceSection "4.4" ;
+    rcap:evidenceText "patients who are receiving invasive mechanical ventilation with a PEEP of 5 cm of water or more and have a P:F ratio of <200 mmHg (or a S/F < 235)" ;
+    rcap:occurrenceKind "category_clinical_feature" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:N41113d7f4439400c88a1223c47bd0584 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "4.4" ;
+    rcap:evidenceText "Respiratory tract infection can be associated with specific clinical features or syndromes." ;
+    rcap:occurrenceKind "category_clinical_feature" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nc8fb1af38ff24a36a8a89aeb753c6459 ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 11 ;
+    rcap:evidencePosition "14" ;
+    rcap:evidenceSection "4.4" ;
+    rcap:evidenceText "P a O 2 :F I O 2 ratio ≤300 mmHg or S p O 2 /F I O 2 ratio ≤315 with S p O 2 ≤97% (altitude-adjusted if >1000m)" ;
+    rcap:occurrenceKind "category_clinical_feature" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:PandaDesign ;
+    owl:annotatedTarget _:Nad0279dabc22455b849de8b88cfef11a ;
+    rcap:evidenceDoc "Patient, Pathogen and Disease Appendix 1" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "3.1" ;
+    rcap:evidenceText "For each pathogen, a hierarchy of infection likelihood exists consisting of ‘confirmed’, ‘suspected but not confirmed’ (divisible, for bacterial infection, into two subcategories: ‘probable’ and ‘possible’), ‘not suspected’, and ‘excluded’ (i.e." ;
+    rcap:occurrenceKind "category_pathogen" .
+
+_:N032baab8bec54eaba10d84ddb135909a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca33244a322 .
+
+_:N03882ca093024207a817d59f63d10e00 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9dba388002 .
+
+_:N04f54cf2761c405cb23d45eb04edd416 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5652e9a818 .
+
+_:N08b82cfa5fd540be8dd5b4ed162fc90f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf38c43f5dc .
+
+_:N09538b7c72074aac9875e4cb31cf0937 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c381f58d58a .
+
+_:N0991f70f713d4f87adafafaddec1bf90 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c93bcad2a88 .
+
+_:N0ad6a5ae2a214fd38b2f3dec3ff93a92 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c88d652552d .
+
+_:N0b1b3c19760e4a89862562c2067813ce a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2ddec897ec .
+
+_:N0fc33431968f4cdc97b25796019dcd38 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1873c181b7 .
+
+_:N12092353a14d45809b16e0f4f9540118 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0a1453ce8f .
+
+_:N21aee6a703414af1b69523c840a451f5 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca60d0073b2 .
+
+_:N2367812d2ea04b17bd65b493fb7ebce6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc52e0becdf .
+
+_:N2413ef50a6514990afb9fd115288a0eb a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0e05a5a652 .
+
+_:N289af653449c4b419c22c81faf9ded1f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c02c1e22ba9 .
+
+_:N28c776e3ff9f4d85bb209814e226553b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc1810a8322 .
+
+_:N296cbbb3bc214a139f5f552a2f2c8d3a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cfbfe88c56e .
+
+_:N2b8875593fda4271be276a787fe8912a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce532680788 .
+
+_:N2c2ee8661c3a479d9e92bae9292b812e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9b40cb182e .
+
+_:N3173a81522614a80b375b492b038353f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3d46cdf2c3 .
+
+_:N382e1a611ca14ee9a8d6446e119e7b88 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0a964350f0 .
+
+_:N39b8f2ed6d00432e8ad5fcf68e39b2e3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c45bf8da54f .
+
+_:N3c50be1418134dc4a571a2b3715e7c26 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce0effacc30 .
+
+_:N3ec6debd0dfd4742835b88bbc4a0ee97 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6a2bdef4ca .
+
+_:N40eb8f62f11b429ea66080f468082c1c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca2a9916271 .
+
+_:N41113d7f4439400c88a1223c47bd0584 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd236bdcb8b .
+
+_:N42202d237bf04b6792f20a0c94570f70 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0b3c8b79f8 .
+
+_:N42ce01c883cc49d3bf346ab4d9185ab1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c04d371375d .
+
+_:N4437ec482e37445e9579957d95061aec a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdd715af259 .
+
+_:N44855b73d2bd471d91a9d02bfdd7d1e6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c308f0c806e .
+
+_:N44e716aec86f4f18b1c6b0471a6d4a34 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9af5ab3b4d .
+
+_:N469983c30d9b41e3b0480b5eacc0ab7f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4125d3aa63 .
+
+_:N498f63c98e3f4408b05a73f15fa7a119 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6c9dcda960 .
+
+_:N4b585024a973467ebf1fb421b3114fd2 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4bfcda7010 .
+
+_:N4c03d52eac7448abb67d186e57470ed6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7772292f5f .
+
+_:N55abc07dd512466e9193214d7782eefb a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c36608008f9 .
+
+_:N56ed7bf789ff401692bb79912f7718ca a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb34d84e7ea .
+
+_:N5abe7bd809644348b84601ae51dd1d0d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca38602c04e .
+
+_:N5abf4473adcb40368c68263ed5a34f4b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd7c43ab99a .
+
+_:N5bae070719764f348a04f1b36ee60f2a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2cc32f1c28 .
+
+_:N5d4efedf8660482db1facdeca4ae026c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c77c332e823 .
+
+_:N61c45248b6b5492d81deba062088144f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0c776b6b49 .
+
+_:N6414cde95fe040f5a543df6e25c8e65e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c44502bc4c4 .
+
+_:N657216d0ab3a45c0af946e95daa4ee2b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1424395077 .
+
+_:N6840857cdcbb43e2994f8ee10d4104ef a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c63908c2226 .
+
+_:N6e94b02f22f446229cb72649856260ac a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cab49a930cf .
+
+_:N73d7662dadfd420e94cf35aaaaa1c2a5 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce0d5a36d2c .
+
+_:N76d1eb1c24644b6b8988814b50fc37d8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc2ba8bee5c .
+
+_:N77586848566242b39ba16d0e2284d81b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2f468ce689 .
+
+_:N8b55977aa0b34e65b8e527d682596a79 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9e0ae9bd3c .
+
+_:N8bf44c4f5cec415e8fa013ac7b177f26 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c32c4257f26 .
+
+_:N8f4d11a52bf14443a0a55b267e7f3785 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c33f3696e91 .
+
+_:N8f6bd259665e4628bd35378ba81dcbcc a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1bdd74e350 .
+
+_:N921dfcd41ead4f08b871eb7e3efde9ca a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c814b709fb3 .
+
+_:N9408e537f64c43028100a7c46b1cd16c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc28e5ec339 .
+
+_:N9920f414a0f648d08791c4679e9d47e8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0f71d346a0 .
+
+_:N9a0883c2901e4295beec514bd47fe74f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdb232416a7 .
+
+_:Na4231706e75f4a1180a147b0bb3cf6e8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4fc623517c .
+
+_:Na4dfbb46caa34f81a6a53da3b9824d21 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc4b95a9b0a .
+
+_:Na7ac6e9d7c7348ccb32fe9095fbc6527 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca4f15ec584 .
+
+_:Na975f094a5a84e9aae91820edb5a411f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc8e4c6a249 .
+
+_:Nad0279dabc22455b849de8b88cfef11a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1a0b1bcfd0 .
+
+_:Naee55e026115434ca5a1d3f448fe6ea1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2350a9a8ac .
+
+_:Nb45fdfc4c56c4e88b75cdaa507ad26bf a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb93e454359 .
+
+_:Nb9a4ea44f66448b885e9b3b863d72068 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1bdec95f43 .
+
+_:Nbaa6bfef8c974f75bbec0d09dd542976 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6333bb2823 .
+
+_:Nbc2f8c8dfe934aa881032bde3a36f8db a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8c1b7c82a3 .
+
+_:Nc77b419015ab4905b90e358d005d80a8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb7f092fa32 .
+
+_:Nc85b59ac9dbd45858bf06d1e8b8ca725 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb769fefc84 .
+
+_:Nc8fb1af38ff24a36a8a89aeb753c6459 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9b0cdad1f3 .
+
+_:Ncbd63991d2ad4dccb6cf4dd9c7c28427 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cabc9ae0474 .
+
+_:Nccc6cf98fe11403fb3977eb620a5b6e9 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c187cffc67e .
+
+_:Nce4df14a5cbf45089d2c14e2dbe2fc3b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca0bdefd3cd .
+
+_:Nd1bb129bcbcd4b148d5ec7214aca70d1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c08c9ced8d5 .
+
+_:Nd3d42647b89f4cb4bda49dc212550fc5 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc3fd74fe4a .
+
+_:Nd3fdcc97dca546b68819d38a700d0d5c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8e9a8b7596 .
+
+_:Nd851745f1fe844dd866d895075f5520d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ccc13cbc8a7 .
+
+_:Nddc34296439c4bb99e9c562729395a35 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca3c788e844 .
+
+_:Ne0b2ee375d7a4d29a922f1e1c665e952 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5cfc3e893b .
+
+_:Ne1519653f29e4c698ec382cc03e7e439 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc3e5be1718 .
+
+_:Ne247bcc21c67466586e8282fe832de68 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca7233a7d9d .
+
+_:Ne48f5b3ad912480d9f14c38ac9ac747a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca6e134ec22 .
+
+_:Ne506779e4c084186848d77e237041c32 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c25ceebb432 .
+
+_:Ne54ce1e017794d5496162e4688508c71 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4dd673b17d .
+
+_:Ne5ad11d456b6451abbccb4cfa94d05bd a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce3a7f92a37 .
+
+_:Ne799f8b7aa8144a89ed769b309a6c79c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6da44bf065 .
+
+_:Nee2c97d561ce4b2e86af46c53c7b56dc a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4238bd9ab4 .
+
+_:Nef36fb8ee1c94088b9ab8fff41f6dd1c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdf3f3063de .
+
+_:Nf066b7efcb4f4829ba43747e5ffd5e98 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9b95fda8b6 .
+
+_:Nf14f5dbc0ba649d596d466b0c3f169e9 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c07c65fbdc2 .
+
+_:Nf4a6fc8c487742a680e1d29944ab29eb a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8ca25838f1 .
+
+_:Nf7de824259104b59821593eb25fc48e8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf16d68999a .
+
+_:Nfd667fd5cacd4b0b99d1324167f63968 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5fd82fa36d .
+
+_:Nfdae2faf25494d4eb529bc1887ade560 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdc7ec59d43 .
+
+_:Nc9af01d51504412d91043d3cde0b0ac1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce1d999722f .
+

@@ -1,0 +1,57 @@
+{
+ "sources": {
+  "FDA2007": {
+   "file": "fda_tpp_2007.pdf",
+   "url": "https://fda.report/media/72566/Target-Product-Profile----A-Strategic-Development-Process-Tool.pdf"
+  },
+  "WOAH2026": {
+   "file": "woah_tpp_template.pdf",
+   "url": "https://www.woah.org/app/uploads/2026/02/a-202601-ahg-tpp-template.pdf"
+  },
+  "PAVEGT": {
+   "file": "pavegt_tpp_template.docx",
+   "url": "https://pave-gt.ncats.nih.gov/wp-content/uploads/2025/07/PaVe-GT-Target-Product-Profile-Template-508.docx"
+  },
+  "SEED_SMALL_MOLECULE": {
+   "file": "seed_Example-TPP-Small-Molecule-Drug.pdf",
+   "url": "https://seed.nih.gov/sites/default/files/2023-12/Example-TPP-Small-Molecule-Drug.pdf"
+  },
+  "SEED_BIOLOGIC": {
+   "file": "seed_Example-TPP-Biologic.pdf",
+   "url": "https://seed.nih.gov/sites/default/files/2023-12/Example-TPP-Biologic.pdf"
+  },
+  "SEED_VACCINE": {
+   "file": "seed_Example-TPP-Vaccine.pdf",
+   "url": "https://seed.nih.gov/sites/default/files/2023-12/Example-TPP-Vaccine.pdf"
+  },
+  "SEED_CGT": {
+   "file": "seed_Example-TPP-for-Cell-and-Gene-Therapy.pdf",
+   "url": "https://seed.nih.gov/sites/default/files/2023-12/Example-TPP-for-Cell-and-Gene-Therapy.pdf"
+  }
+ },
+ "WOAH2026": {
+  "table_title": "WOAH TPP for a [disease name] vaccine"
+ },
+ "PAVEGT": {
+  "Product name": "[Insert name of vector] vector expressing a functional [insert name of transgene], under control of the [insert name of promoter] promoter ([insert name of gene therapy product])",
+  "Therapeutic Modality": "Gene Therapy"
+ },
+ "SEED": {
+  "SEED_SMALL_MOLECULE": {
+   "Product Type": "Small Molecule Drug",
+   "Indication": "Hypertension"
+  },
+  "SEED_BIOLOGIC": {
+   "Product Type": "Biologic (mAB)",
+   "Indication": "Rheumatoid Arthritis"
+  },
+  "SEED_VACCINE": {
+   "Product Type": "Vaccine",
+   "Indication": "Influenza"
+  },
+  "SEED_CGT": {
+   "Product Type": "Gene Therapy",
+   "Indication": "Muscular Dystrophy"
+  }
+ }
+}

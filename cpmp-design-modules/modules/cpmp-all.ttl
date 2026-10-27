@@ -1,0 +1,28 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/cpmp-all> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/compound-LY3016859>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/compound-LY3526318>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/compound-LY3556050>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/compound-LY3857210>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/cpmp-core>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/disease-CLBP>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/disease-DPNP>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/disease-OA>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/isa-BP01>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/isa-BP02>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/isa-BP03>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/isa-BP05>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/isa-BP07>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/isa-NP01>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/isa-NP02>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/isa-NP03>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/isa-NP05>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/isa-NP07>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/isa-OA01>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/isa-OA02>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/isa-OA03>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/isa-OA05>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/isa-OA07>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/master> .
+

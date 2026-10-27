@@ -1,0 +1,19 @@
+order,pattern,targets,source,title_term
+1,borrow,CORE 7.8.3,agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.2),
+2,cap on the maximum or minimum proportion,CORE 7.8.7,agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.3),
+3,trigger for futility|futility thresholds,CORE 7.8.6,agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.8),
+4,threshold probability for statistical triggers,CORE 7.8.6,agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.7),
+5,stopping rules,CORE 7.8.6;CORE 7.8.7,agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.1),
+6,platform-level inclusion,CORE 7.4.1;CORE 7.4.2,agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.2),
+7,Age Strat,PANDA 2,agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.1.1),
+8,States are defined|Illness Severity State,PANDA 4.3,agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.1.2),
+9,secondary endpoints,CORE 7.6.2,agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.5.2),
+10,primary endpoint|primary outcome,CORE 7.6.1,agreed 2026-10-24 (inherited_from_core.csv CS_DSA 7 and 8.5.1),
+11,discontinuation of participation,CORE 8.6,agreed 2026-10-24 (inherited_from_core.csv CS_DSA 9.3),
+12,DSMB,CORE 8.11,title rule; accepted by Kerstin 2026-10-25,Data safety and monitoring board
+13,Funding,CORE 2.5,title rule; accepted by Kerstin 2026-10-25,Funding
+14,SAEs should be reported,CORE 8.12.3,title rule; accepted by Kerstin 2026-10-25,Serious Adverse Eve
+15,severe state,PANDA 4.3,nine-DSA run; accepted by Kerstin 2026-10-26 (END_DSA and IIM_DSA 8.1.2),Illness severity
+16,immediate reveal|deferred reveal,CORE 7.8.3,nine-DSA run; accepted by Kerstin 2026-10-26 (CS/IG/END/IIM 10.4; Core 7.8.3 defines both terms),
+17,statistical triggers and platform conclusions,CORE 7.8.6;CORE 7.8.7,nine-DSA run; accepted by Kerstin 2026-10-26 (MV_DSA 10.3.1),Statistical Trigger
+18,sae\)? as defined|adverse events? as defined,CORE 8.12.2,nine-DSA run; accepted by Kerstin 2026-10-26 (8.5.2 SAE pointers; MD_DSA 9.2.1),Definitions

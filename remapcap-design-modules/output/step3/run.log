@@ -1,0 +1,95 @@
+occurrences=658 components (exact)=480
+components by number of documents: {1: 321, 2: 146, 3: 8, 4: 5}
+components with more than one kind: 10
+  c0a964350f0 [category_illness_severity;endpoint_primary] Non-invasive ventilation (bilevel positive airway pressure or continuous positive airway p
+  c44479053d2 [endpoint_primary;endpoint_secondary] Participants who have been, and still are, admitted to a healthcare facility 90 days after
+  c45bf8da54f [category_illness_severity;endpoint_primary] Invasive mechanical ventilation
+  c4ea2e1b3d0 [endpoint_exploratory;endpoint_primary] Landmark mortality at Day 90 post-randomization,
+  c876d85ebab [endpoint_exploratory;endpoint_primary] This hierarchical ordinal scale is a composite of:
+  c9f97c0e55a [endpoint_exploratory;endpoint_primary] Among Day-90 survivors, their daily respiratory support level as defined by position on a 
+  c9fd4c2c7f1 [endpoint_primary;endpoint_secondary] The index hospital admission is defined as continuing while the participant is admitted to
+  cb34d84e7ea [category_illness_severity;endpoint_primary] Continuous infusion of vasopressors, inotropes or both
+  cc66e2d09a4 [endpoint_exploratory;endpoint_primary] Hospitalized on low-intensity oxygen
+  ce3b8327b04 [endpoint_exploratory;endpoint_primary] Hospitalized, no oxygen
+components occurring more than once in one document: 1
+  PANDA ce1d999722f x2 not in the Recovering State
+Core 4.0/4.1: {'same': 87, 'only_41': 31, 'only_40': 15, 'moved': 7, 'revised': 3}
+  sections with a change: ['7.6.1', '7.6.2', '7.6.3', '7.8.7', '8.8.2']
+  gate ok: equals step 1 changed sections among mapped Core sections
+  7.6.1 moved 1.0 | 4.0: 'Landmark mortality at Day 90 post-randomization,' | 4.1: 'Landmark mortality at Day 90 post-randomization,'
+  7.6.1 moved 1.0 | 4.0: 'Among Day-90 survivors, their daily respiratory support level as defin' | 4.1: 'Among Day-90 survivors, their daily respiratory support level as defin'
+  7.6.1 moved 1.0 | 4.0: 'Hospitalized on low-intensity oxygen' | 4.1: 'Hospitalized on low-intensity oxygen'
+  7.6.1 moved 1.0 | 4.0: 'Hospitalized, no oxygen' | 4.1: 'Hospitalized, no oxygen'
+  7.6.1 moved 1.0 | 4.0: 'This hierarchical ordinal scale is a composite of:' | 4.1: 'This hierarchical ordinal scale is a composite of:'
+  7.6.1 only_40 0.528 | 4.0: 'Hospitalized on extracorporeal life support (ECLS) or invasive mechani' | 4.1: ''
+  7.6.1 only_40 0.413 | 4.0: 'Hospitalized on non-invasive ventilation or high-flow oxygen*' | 4.1: ''
+  7.6.1 only_40 0.382 | 4.0: 'Discharged from index hospitalization' | 4.1: ''
+  7.6.1 only_40 0.319 | 4.0: 'The primary endpoint, named Survival and Recovery Trajectory, will be ' | 4.1: ''
+  7.6.1 revised 0.994 | 4.0: '*High-flow oxygen defined as a fractional inspired oxygen concentratio' | 4.1: '*High-flow oxygen is defined as a fractional inspired oxygen concentra'
+  7.6.1 only_40 0.477 | 4.0: 'Mortality is defined as death from any cause before the end of study d' | 4.1: ''
+  7.6.1 only_40 0.391 | 4.0: 'The trajectory of patients will be modelled through a Markov longitudi' | 4.1: ''
+  7.6.1 only_40 0.281 | 4.0: 'The estimand is the transition between categories and the relative tim' | 4.1: ''
+  7.6.1 only_40 0.755 | 4.0: 'We acknowledge mortality is tied to a longer time frame than the ordin' | 4.1: ''
+  7.6.1 only_40 0.351 | 4.0: '90-day mortality will be hierarchically integrated with the daily ordi' | 4.1: ''
+  7.6.1 only_41  | 4.0: '' | 4.1: 'Extracorporeal life support (ECLS)'
+  7.6.1 only_41  | 4.0: '' | 4.1: 'Invasive mechanical ventilation'
+  7.6.1 only_41  | 4.0: '' | 4.1: 'Non-invasive ventilation (bilevel positive airway pressure or continuo'
+  7.6.1 only_41  | 4.0: '' | 4.1: 'High-flow nasal oxygen*'
+  7.6.1 only_41  | 4.0: '' | 4.1: 'Continuous infusion of vasopressors, inotropes or both'
+  7.6.1 only_41  | 4.0: '' | 4.1: 'The primary endpoint is a composite of 90-day all-cause mortality and,'
+  7.6.1 only_41  | 4.0: '' | 4.1: 'All participants who die before the end of study day 90 will be coded '
+  7.6.1 only_41  | 4.0: '' | 4.1: 'Days free of organ failure support will be coded as 0-28.'
+  7.6.1 only_41  | 4.0: '' | 4.1: 'Survivors who never receive organ failure support during their index h'
+  7.6.1 only_41  | 4.0: '' | 4.1: 'For the purposes of this primary endpoint, organ failure support is de'
+  7.6.1 only_41  | 4.0: '' | 4.1: 'We acknowledge mortality is tied to a longer time frame than the ordin'
+  7.6.1 only_41  | 4.0: '' | 4.1: 'However, integrating 90-day mortality with a shorter-term outcome is p'
+  7.6.1 only_41  | 4.0: '' | 4.1: 'Mortality at 90-days is the worst possible outcome regardless of durat'
+  7.6.1 only_41  | 4.0: '' | 4.1: 'Organ failure support or hospital stay received prior to the end of st'
+  7.6.2 moved 1.0 | 4.0: 'The index hospital admission is defined as continuing while the partic' | 4.1: 'The index hospital admission is defined as continuing while the partic'
+  7.6.2 moved 1.0 | 4.0: 'Participants who have been, and still are, admitted to a healthcare fa' | 4.1: 'Participants who have been, and still are, admitted to a healthcare fa'
+  7.6.2 only_40 0.381 | 4.0: 'Hospital length-of-stay' | 4.1: ''
+  7.6.2 only_40 0.483 | 4.0: 'Organ-support free days at day 28' | 4.1: ''
+  7.6.2 only_40 0.426 | 4.0: 'Progression to IMV/ECLS/death' | 4.1: ''
+  7.6.2 only_40 0.648 | 4.0: 'A set of generic secondary endpoints will be evaluated in all domains.' | 4.1: ''
+  7.6.2 only_40 0.438 | 4.0: 'The secondary outcomes will have statistical testing performed.' | 4.1: ''
+  7.6.2 only_41  | 4.0: '' | 4.1: 'Days alive and free of organ-failure support to day 28'
+  7.6.2 only_41  | 4.0: '' | 4.1: 'Days alive and out of hospital to day 28'
+  7.6.2 only_41  | 4.0: '' | 4.1: 'Progression to IMV/ECLS/death among those not receiving invasive mecha'
+  7.6.2 only_41  | 4.0: '' | 4.1: 'A standard set of secondary endpoints will be evaluated, including the'
+  7.6.3 only_41  | 4.0: '' | 4.1: 'Hospitalized on ECLS or invasive mechanical ventilation (IMV)'
+  7.6.3 only_41  | 4.0: '' | 4.1: 'Hospitalized on non-invasive ventilation or high-flow oxygen'
+  7.6.3 only_41  | 4.0: '' | 4.1: 'Discharged from index hospitalization Respiratory Infection Ordinal We'
+  7.6.3 only_41  | 4.0: '' | 4.1: 'Two additional exploratory outcome measures will be reported.'
+  7.6.3 only_41  | 4.0: '' | 4.1: 'Survival and Recovery Trajectory Survival and Recovery Trajectory is a'
+  7.6.3 only_41  | 4.0: '' | 4.1: 'The trajectory will be analyzed with a statistical model (Markov longi'
+  7.6.3 only_41  | 4.0: '' | 4.1: 'The Respiratory Infection Ordinal Weighted Score will use the same ord'
+  7.6.3 only_41  | 4.0: '' | 4.1: 'All patients who die on or before day 90 will be assigned a score of ‘'
+  7.6.3 only_41  | 4.0: '' | 4.1: "For patients who survive to day 90, each day's ordinal status is conve"
+  7.6.3 only_41  | 4.0: '' | 4.1: 'This will create a score reflecting whether and how quickly they recov'
+  7.6.3 only_41  | 4.0: '' | 4.1: 'The weights for each daily ordinal status will be derived from existin'
+  7.6.3 only_41  | 4.0: '' | 4.1: 'The ordinal weighted score will be analyzed with a covariate-adjusted '
+  7.6.3 only_41  | 4.0: '' | 4.1: 'As exploratory outcomes, the exact categorizations of respiratory supp'
+  7.8.7 revised 0.983 | 4.0: 'For RAR, allocation proportions will be capped at 60% for two-interven' | 4.1: 'For RAR, allocation proportions will be capped at 75% for two-interven'
+  8.8.2 revised 0.881 | 4.0: 'Collected while participants are admitted to hospital between randomiz' | 4.1: 'Collected while participants are admitted to hospital between randomiz'
+  8.8.2 only_40  | 4.0: 'Hospital readmission within 28 days' | 4.1: ''
+crosswalk review pairs (ratio 0.85-0.999, disjoint documents): 45; case-only: 0
+docs_a                 docs_b        
+AB_DSA                 TAB_DSA           7
+AB_DSA;CS_DSA;IAV_DSA  TAB_DSA           1
+AB_DSA;CS_DSA;TAB_DSA  IAV_DSA           2
+AB_DSA;TAB_DSA         CS_DSA            1
+                       CS_DSA;IAV_DSA    1
+                       IAV_DSA           4
+CORE40                 CORE41            1
+CS_DSA                 AB_DSA;TAB_DSA    4
+                       IAV_DSA           6
+CS_DSA;IAV_DSA         AB_DSA;TAB_DSA    1
+CS_DSA;TAB_DSA         IAV_DSA           1
+IAV_DSA                AB_DSA;TAB_DSA    5
+                       CS_DSA            5
+PANDA                  CORE40            1
+                       CORE41            1
+TAB_DSA                AB_DSA            4
+I-decide: 27 merge pairs -> 22 merged components; components 480 -> 455; open rows: 0
+Core 4.0/4.1 after decisions: {'same': 87, 'only_41': 30, 'only_40': 14, 'moved': 8, 'revised': 3}
+  merged across versions: 7.6.1 -> 7.6.3 moved | 'Hospitalized on non-invasive ventilation or high-flow oxygen' / 'Hospitalized on non-invasive ventilation or high-flow oxygen'

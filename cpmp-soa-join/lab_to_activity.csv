@@ -1,0 +1,30 @@
+level,column_header,subgroup,test_as_printed,activity_key,basis,comment
+column,Chemistry,,,Chemistry,identical,
+column,Hematology and Differential,,,Hematology,heading_variant,
+column,Urinalysis,,,Urinalysis,identical,
+column,Urine Drug Screen,,,Urine drug screen,case_typography,
+column,Urine Chemistries,,,Urine Chemistries,identical,
+column,Additional Thyroid Tests,,,Thyroid panel,proposed,heading vs SoA row name; same ISAs (LY3556050)
+column,Other SST-Regulated Hormones,,,Somatostatin-regulated hormone sample,document_supported,same ISAs; OA03 SoA row name mapped in activity_crosswalk.csv
+subgroup,Chemistry,Lipid Panel,,Lipid panel,case_typography,master: Lipid Panel printed as a sub-header inside Chemistry
+subgroup,Hematology and Differential,Differential (absolute),,Hematology,heading_variant,sub-header inside the Hematology column
+test,,,TSH,TSH,identical,
+test,,,HbA1C,HbA1c,case_typography,
+test,,,HbA1c,HbA1c,identical,
+test,,,"Pregnancy test (serum, urine)",Serum pregnancy,proposed,one test name covers two SoA rows
+test,,,"Pregnancy test (serum, urine)",Urine pregnancy,proposed,one test name covers two SoA rows
+test,,,Serum pregnancy test,Serum pregnancy,heading_variant,
+test,,,Urine pregnancy,Urine pregnancy,identical,
+test,,,FSH,FSH,identical,
+test,,,Estradiol,Estradiol,identical,
+test,,,HIV,HIV,identical,
+test,,,B12,B12,identical,
+test,,,Methylmalonic acid,Methylmalonic acid,identical,
+test,,,Homocysteine,Homocysteine,identical,
+test,,,Cystatin-C,Cystatin C,case_typography,
+test,,,LY3016859 concentration,PK sample,proposed,drug concentration = PK sample
+test,,,LY3526318 concentration,PK sample,proposed,drug concentration = PK sample
+test,,,LY3556050 concentration,PK sample,proposed,drug concentration = PK sample
+test,,,LY3857210 concentration,PK sample,proposed,drug concentration = PK sample (SoA row LY3857210 PK sample)
+test,,,Immunogenicity,Immunogenicity (ADA) sample,heading_variant,
+test,,,Epiregulin,Epiregulin sample,heading_variant,

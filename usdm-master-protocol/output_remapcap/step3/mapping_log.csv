@@ -1,0 +1,100 @@
+object,attribute,status,value,evidence,note
+StudyDefinitionDocument_1,name,mapped,REMAP-CAP Core Protocol,CORE title page,
+StudyDefinitionDocument_1,language,derived,en,CORE text,documents are written in English
+StudyDefinitionDocument_1,type,mapped,Protocol,CORE title page 'CORE PROTOCOL',
+StudyDefinitionDocument_1,templateName,required_not_in_document,,,no template is named in the document
+StudyDefinitionDocumentVersion_1,version,mapped,4.0,CORE cover page 'Version 4.0 dated …',
+StudyDefinitionDocumentVersion_1,status,mapped,Approved,CORE 2.2.9 'Core Protocol Version History' p21,approved by ITSC
+GovernanceDate_1,dateValue,mapped,2024-11-05,CORE 2.2.9 'Core Protocol Version History' p21,
+GovernanceDate_1,geographicScopes,required_not_in_document,,CORE 2.2.9 'Core Protocol Version History' p21,"1..*; approval by the ITSC, no geographic scope stated"
+StudyDefinitionDocument_2,name,mapped,"Patient, Pathogen and Disease Appendix (PANDA) to the Core Protocol",PANDA title page,
+StudyDefinitionDocument_2,language,derived,en,PANDA text,documents are written in English
+StudyDefinitionDocument_2,type,not_expressible,,PANDA title page,type 1..1; value set C215477 has only 'Protocol'; an appendix to a protocol has no value
+StudyDefinitionDocument_2,templateName,required_not_in_document,,,no template is named in the document
+StudyDefinitionDocumentVersion_2,version,mapped,1.0,PANDA cover page 'Version 1.0 dated …',
+StudyDefinitionDocumentVersion_2,status,mapped,Approved,"PANDA p3 authorization page (ITSC, 5 November 2024)",approved by ITSC
+GovernanceDate_2,dateValue,mapped,2024-11-05,"PANDA p3 authorization page (ITSC, 5 November 2024)",
+GovernanceDate_2,geographicScopes,required_not_in_document,,"PANDA p3 authorization page (ITSC, 5 November 2024)","1..*; approval by the ITSC, no geographic scope stated"
+StudyDefinitionDocument_3,name,mapped,Corticosteroid Domain-Specific Appendix,CS_DSA title page,
+StudyDefinitionDocument_3,language,derived,en,CS_DSA text,documents are written in English
+StudyDefinitionDocument_3,type,not_expressible,,CS_DSA title page,type 1..1; value set C215477 has only 'Protocol'; an appendix to a protocol has no value
+StudyDefinitionDocument_3,templateName,required_not_in_document,,,no template is named in the document
+StudyDefinitionDocumentVersion_3,version,mapped,6,CS_DSA cover page 'Version 6 dated …',
+StudyDefinitionDocumentVersion_3,status,mapped,Approved,CS_DSA 3.1 'Version history' p11,approved by Corticosteroid DSWG
+GovernanceDate_3,dateValue,mapped,2024-11-05,CS_DSA 3.1 'Version history' p11,
+GovernanceDate_3,geographicScopes,required_not_in_document,,CS_DSA 3.1 'Version history' p11,"1..*; approval by the Corticosteroid DSWG, no geographic scope stated"
+StudyDefinitionDocument_1,childIds,mapped,"PANDA, CS_DSA",CORE 2.2 'Protocol Structure' p17,Core is parent of PANDA and of each DSA
+NarrativeContent_2,text,not_expressible,Patient Characteristics,PANDA 2 'Patient Characteristics' p4,strata/states kept as narrative only; no USDM class for dynamic analysis strata / illness states (decision 2026-10-24)
+NarrativeContent_12,text,not_expressible,Illness severity,PANDA 4.3 'Illness severity' p9,strata/states kept as narrative only; no USDM class for dynamic analysis strata / illness states (decision 2026-10-24)
+EligibilityCriterion_1,criterionItemId,mapped,Hospitalized patient,CORE 7.4.1 'Platform Inclusion Criteria' p41,platform inclusion criteria
+EligibilityCriterion_2,criterionItemId,mapped,Acute respiratory tract infection,CORE 7.4.1 'Platform Inclusion Criteria' p41,platform inclusion criteria
+EligibilityCriterion_3,criterionItemId,mapped,Aged 28 days or older,CORE 7.4.1 'Platform Inclusion Criteria' p41,platform inclusion criteria
+EligibilityCriterion_4,criterionItemId,mapped,"Death is deemed to be imminent and inevitable during the next 24 hours AND one or more of the patient, substitute decision maker or attending physician are not committed to full active treatment.",CORE 7.4.2 'Platform Exclusion Criteria' p42,platform exclusion criteria
+EligibilityCriterion_5,criterionItemId,mapped,Patient is expected to be discharged from hospital within the next 24 hours,CORE 7.4.2 'Platform Exclusion Criteria' p42,platform exclusion criteria
+EligibilityCriterion_6,criterionItemId,mapped,Previous enrollment in this Platform within the last 90 days,CORE 7.4.2 'Platform Exclusion Criteria' p42,platform exclusion criteria
+EligibilityCriterion_7,criterionItemId,mapped,Patient is aged ≥ 28 days old (corrected gestational age),CS_DSA 8.2.1 'Domain inclusion criteria' p23,domain inclusion criteria
+EligibilityCriterion_8,criterionItemId,mapped,Patient has lower-respiratory tract infection,CS_DSA 8.2.1 'Domain inclusion criteria' p23,domain inclusion criteria
+EligibilityCriterion_9,criterionItemId,mapped,"If in the Severe State, patient has pneumonia",CS_DSA 8.2.1 'Domain inclusion criteria' p23,domain inclusion criteria
+EligibilityCriterion_10,criterionItemId,mapped,"If in the Moderate State, patient is receiving some form of supplemental oxygen (simple facemask, low or high flow nasal oxygen, or non-invasive ventilation)",CS_DSA 8.2.1 'Domain inclusion criteria' p23,domain inclusion criteria
+EligibilityCriterion_11,criterionItemId,mapped,Confirmed SARS-CoV-2 infection,CS_DSA 8.2.2 'Domain exclusion criteria' p23,domain exclusion criteria
+EligibilityCriterion_12,criterionItemId,mapped,"Hospital-acquired respiratory tract infection, except where the patient has confirmed influenza infection",CS_DSA 8.2.2 'Domain exclusion criteria' p23,domain exclusion criteria
+EligibilityCriterion_13,criterionItemId,mapped,Known hypersensitivity to any corticosteroid,CS_DSA 8.2.2 'Domain exclusion criteria' p23,domain exclusion criteria
+EligibilityCriterion_14,criterionItemId,mapped,"Intention to prescribe systemic corticosteroids for a reason that is unrelated to the current respiratory tract infection, such as chronic corticosteroid use before admission, acute severe asthma, or suspected or proven Pneumocystis jiroveci or COVID-19 pneumonia",CS_DSA 8.2.2 'Domain exclusion criteria' p23,domain exclusion criteria
+EligibilityCriterion_15,criterionItemId,mapped,"If in the Severe State, more than 24 hours have elapsed since commencement of sustained organ failure support",CS_DSA 8.2.2 'Domain exclusion criteria' p23,domain exclusion criteria
+EligibilityCriterion_16,criterionItemId,mapped,The treating clinician believes that participation in the domain would not be in the best interests of the patient,CS_DSA 8.2.2 'Domain exclusion criteria' p23,domain exclusion criteria
+-,EligibilityCriterion (intervention level),not_expressible,Patients may also be excluded from receiving one or more interventions within the domain for patient-specific reasons.,CS_DSA 8.2.3 'Intervention exclusion criteria' p23,criterion scoped to one intervention and conditional on site regulatory approval (pregnancy)
+-,EligibilityCriterion (inheritance),not_expressible,Patients are eligible for this domain if they meet all of the platform-level inclusion and none of the platform-level exclusion criteria as specified in relevant Core Protocol documents.,CS_DSA 8.2 'Eligibility criteria' p23,"domain eligibility = platform criteria + domain criteria; USDM gives one flat criteria list per design, the layer is visible only in 'identifier'"
+Objective_1,text,mapped_copy_from_core,"The primary objective of this Platform is, for hospitalized patients with acute respiratory tract infection, to evaluate the effect of a range of interventions on a composite of 90-day all-cause mortality and, among survivors, a daily ordinal scale of trajectory of illness and recovery to 28 days.",CORE 6.1 'Primary objective' p39,
+Endpoint_1,text,mapped_copy_from_core,"The primary endpoint, named Survival and Recovery Trajectory, will be a composite of 90-day all-cause mortality and, among survivors, a daily ordinal scale analyzed as a trajectory of illness and recovery to 28 days.",CORE 7.6.1 'Primary Endpoint' p46,
+Endpoint_1,purpose,required_not_in_document,,CORE 7.6.1 'Primary Endpoint' p46,purpose (efficacy/safety …) not stated
+Objective_2,text,mapped_copy_from_core,"The secondary objectives of this Platform are to determine the effect of interventions on hospital length of stay (LOS) and 90-day mortality, as well as other domain-specific endpoints and, where feasible or specified in a DSA or RSA, survival, health related quality of life (HRQoL), and disability ",CORE 6.2 'Secondary objectives' p40,
+Endpoint_2,text,mapped_copy_from_core,Hospital length-of-stay,CORE 7.6.2 'Secondary Endpoints' p47,
+Endpoint_2,purpose,required_not_in_document,,CORE 7.6.2 'Secondary Endpoints' p47,purpose (efficacy/safety …) not stated
+Endpoint_3,text,mapped_copy_from_core,"Mortality, censored at 90 days",CORE 7.6.2 'Secondary Endpoints' p47,
+Endpoint_3,purpose,required_not_in_document,,CORE 7.6.2 'Secondary Endpoints' p47,purpose (efficacy/safety …) not stated
+Objective_3,level,required_not_in_document,,CS_DSA 7 'DOMAIN OBJECTIVES' p21,objective has no primary/secondary label
+Objective_3,text,mapped,The objective of this domain is to determine the effectiveness of different strategies of corticosteroid utilization for hospitalized patients with severe lower-respiratory tract infection.,CS_DSA 7 'DOMAIN OBJECTIVES' p21,
+Endpoint_4,text,mapped_copy_from_core,"The primary endpoint, named Survival and Recovery Trajectory, will be a composite of 90-day all-cause mortality and, among survivors, a daily ordinal scale analyzed as a trajectory of illness and recovery to 28 days.",CS_DSA 8.5.1 'Primary endpoint' p26 -> CORE 7.6.1 'Primary Endpoint' p46,
+Endpoint_4,purpose,required_not_in_document,,CS_DSA 8.5.1 'Primary endpoint' p26 -> CORE 7.6.1 'Primary Endpoint' p46,purpose (efficacy/safety …) not stated
+Endpoint_5,text,mapped,serious adverse events (SAE) as defined in the Core Protocol,CS_DSA 8.5.2 'Secondary endpoints' p26,
+Endpoint_5,purpose,required_not_in_document,,CS_DSA 8.5.2 'Secondary endpoints' p26,purpose (efficacy/safety …) not stated
+Endpoint_4,inheritance,not_expressible,The primary endpoint for this domain is the primary outcome as specified in Core Protocol documents.,CS_DSA 8.5.1 'Primary endpoint' p26,"Endpoint is a Value (composed) attribute: the inherited Core endpoint can only be copied, not referenced"
+StudyIntervention_1,name,mapped,No corticosteroid (no placebo),CS_DSA 8.3.1 'Corticosteroid strategy interventions' p24,
+StudyIntervention_1,description,mapped,No corticosteroid intervention,CS_DSA 8.3.2 'No corticosteroid intervention' p24,
+StudyIntervention_1,role,required_not_in_document,,CS_DSA 8.3.2 'No corticosteroid intervention' p24,no experimental/comparator/control role stated
+StudyIntervention_1,type,required_not_in_document,,CS_DSA 8.3.2 'No corticosteroid intervention' p24,type 1..1; 'No corticosteroid' has no substance
+StudyArm_1,(arm),derived,No corticosteroid (no placebo),CS_DSA 8.3.1 'Corticosteroid strategy interventions' p24,one arm per randomized intervention
+StudyArm_1,type,required_not_in_document,,CS_DSA 8.3.1 'Corticosteroid strategy interventions' p24,arm type not stated
+StudyIntervention_2,name,mapped,Shock-dependent hydrocortisone while the patient is in septic shock (Severe State only),CS_DSA 8.3.1 'Corticosteroid strategy interventions' p24,
+StudyIntervention_2,description,mapped,Shock-dependent hydrocortisone intervention,CS_DSA 8.3.3 'Shock-dependent hydrocortisone intervention' p25,
+StudyIntervention_2,role,required_not_in_document,,CS_DSA 8.3.3 'Shock-dependent hydrocortisone intervention' p25,no experimental/comparator/control role stated
+StudyIntervention_2,type,required_not_in_document,,CS_DSA 8.3.3 'Shock-dependent hydrocortisone intervention' p25,type 1..1; not stated
+StudyArm_2,(arm),derived,Shock-dependent hydrocortisone while the patient is in septic shock (Severe State only),CS_DSA 8.3.1 'Corticosteroid strategy interventions' p24,one arm per randomized intervention
+StudyArm_2,type,required_not_in_document,,CS_DSA 8.3.1 'Corticosteroid strategy interventions' p24,arm type not stated
+StudyIntervention_3,name,mapped,Fixed duration dexamethasone for 10 days,CS_DSA 8.3.1 'Corticosteroid strategy interventions' p24,
+StudyIntervention_3,description,mapped,Fixed duration dexamethasone,CS_DSA 8.3.4 'Fixed duration dexamethasone' p25,
+StudyIntervention_3,role,required_not_in_document,,CS_DSA 8.3.4 'Fixed duration dexamethasone' p25,no experimental/comparator/control role stated
+StudyIntervention_3,type,required_not_in_document,,CS_DSA 8.3.4 'Fixed duration dexamethasone' p25,type 1..1; not stated
+StudyArm_3,(arm),derived,Fixed duration dexamethasone for 10 days,CS_DSA 8.3.1 'Corticosteroid strategy interventions' p24,one arm per randomized intervention
+StudyArm_3,type,required_not_in_document,,CS_DSA 8.3.1 'Corticosteroid strategy interventions' p24,arm type not stated
+StudyArm_2,(state restriction),not_expressible,Severe State only,CS_DSA 8.3.3 'Shock-dependent hydrocortisone intervention' p25,arm available only to participants in one illness severity state
+StudyDesignPopulation_1,includesHealthySubjects,derived,False,CORE 7.4.1 'Platform Inclusion Criteria' p41,inclusion requires hospitalized patient with acute respiratory tract infection
+StudyDesignPopulation_1,cohorts,not_expressible,,CS_DSA 8.1.1 'Age Strata' p22; PANDA 4.3 'Illness severity' p9,"age strata and illness states are analysis strata/dynamic states, not cohorts (decision 2026-10-24)"
+InterventionalStudyDesign_1,name,mapped,Corticosteroid Domain,CS_DSA 6.1 'Domain definition' p13,
+InterventionalStudyDesign_1,characteristics,mapped_copy_from_core,Randomized; Adaptive,CORE title page,
+InterventionalStudyDesign_1,studyType,derived,Interventional Study,CORE 7.7.1 'Randomization' p48,participants are randomized to interventions
+InterventionalStudyDesign_1,rationale,required_not_in_document,,CS_DSA / CORE,CS_DSA §6 is a long background narrative; no design rationale statement
+InterventionalStudyDesign_1,model,required_not_in_document,,CS_DSA / CORE,platform is 'multifactorial' (Core title); the domain model is not stated
+InterventionalStudyDesign_1,epochs,required_not_in_document,,CS_DSA / CORE,no epochs described
+InterventionalStudyDesign_1,studyCells,required_not_in_document,,CS_DSA / CORE,"no epochs, so no cells"
+InterventionalStudyDesign_1,documentVersionIds,mapped,"Core 4.0, PANDA 1.0, CS_DSA 6",decision 2026-10-24,design draws on three document versions; which Core version the DSA binds to is not stated in the DSA
+Organization_1,name,mapped,ClinicalTrials.gov,CORE 2.4 'Trial registration' p23,
+Organization_1,identifier,required_not_in_document,,CORE 2.4 'Trial registration' p23,organization identifier not stated
+Organization_1,identifierScheme,required_not_in_document,,CORE 2.4 'Trial registration' p23,
+StudyIdentifier_1,text,mapped,NCT02735707,CORE 2.4 'Trial registration' p23,
+-,StudyIdentifier (UTN),required_not_in_document,U1111-1189-1653,CORE 2.4 'Trial registration' p23,"Universal Trial Number stated, but its issuing organization (scopeId 1..1) is not"
+StudyTitle_1,text,mapped,"Randomized, Embedded, Multifactorial Adaptive Platform trial for Community-Acquired Pneumonia",CORE page 1 (remapcap_inventory.csv),
+StudyTitle_2,text,mapped,REMAP-CAP,CORE page 1 (remapcap_inventory.csv),
+StudyVersion_1,versionIdentifier,derived,Core 4.0 / PANDA 1.0 / Corticosteroid DSA 6,decision 2026-10-24,the platform has no single version; StudyVersion is a set of document versions
+StudyVersion_1,rationale,required_not_in_document,,,no version rationale stated
+StudyVersion_1,amendments,required_not_in_document,,CORE 2.2.9 'Core Protocol Version History' p21,"version histories list versions and approval dates only; StudyAmendment needs summary, changes, primaryReason, geographicScopes (Step 5)"

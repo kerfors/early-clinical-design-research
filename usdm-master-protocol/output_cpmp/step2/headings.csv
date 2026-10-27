@@ -1,0 +1,855 @@
+doc,toc_index,toc_number,body_number,title,toc_page,redacted_title,body_page,found,status
+CPMP,0,1,1,Protocol Summary,11,False,12.0,True,found
+CPMP,1,1.1,1.1,Synopsis,11,False,12.0,True,found
+CPMP,2,1.2,1.2,Schema,15,False,16.0,True,found
+CPMP,3,1.3,1.3,Schedule of Activities (SoA),16,False,17.0,True,found
+CPMP,4,2,2,Introduction,23,False,24.0,True,found
+CPMP,5,2.1,2.1,Study Rationale,23,False,24.0,True,found
+CPMP,6,2.2,2.2,Background,23,False,24.0,True,found
+CPMP,7,2.3,2.3,Benefit/Risk Assessment,24,False,25.0,True,found
+CPMP,8,3,3,Objectives and Endpoints,25,False,26.0,True,found
+CPMP,9,4,4,Study Design,27,False,28.0,True,found
+CPMP,10,4.1,4.1,Overall Design,27,False,28.0,True,found
+CPMP,11,4.1.1,4.1.1,Design Outline,27,False,28.0,True,found
+CPMP,12,4.2,4.2,Scientific Rationale for Study Design,28,False,29.0,True,found
+CPMP,13,4.3,4.3,Justification for Dose,29,False,30.0,True,found
+CPMP,14,4.4,4.4,End of Study Definition,29,False,30.0,True,found
+CPMP,15,5,5,Study Population,30,False,31.0,True,found
+CPMP,16,5.1,5.1,Inclusion Criteria,30,False,31.0,True,found
+CPMP,17,5.2,5.2,Exclusion Criteria,31,False,32.0,True,found
+CPMP,18,5.3,5.3,Lifestyle Considerations,33,False,34.0,True,found
+CPMP,19,5.4,5.4,Screen Failures,34,False,35.0,True,found
+CPMP,20,5.4.1,5.4.1,Participation in Multiple ISAs,34,False,35.0,True,found
+CPMP,21,6,6,Study Intervention,36,False,37.0,True,found
+CPMP,22,6.1,6.1,Study Intervention Administered,36,False,37.0,True,found
+CPMP,23,6.2,6.2,Preparation/Handling/Storage/Accountability,36,False,37.0,True,found
+CPMP,24,6.3,6.3,Measures to Minimize Bias: Randomization and Blinding,36,False,37.0,True,found
+CPMP,25,6.3.1,6.3.1,Stratification,37,False,38.0,True,found
+CPMP,26,6.4,6.4,Study Intervention Compliance,37,False,38.0,True,found
+CPMP,27,6.5,6.5,Concomitant Therapy,38,False,39.0,True,found
+CPMP,28,6.6,6.6,Dose Modification,39,False,40.0,True,found
+CPMP,29,6.7,6.7,Intervention after the End of the Study,39,False,40.0,True,found
+CPMP,30,7,7,Discontinuation of Study Intervention and Participant Discontinuation/Withdrawal,40,False,41.0,True,found
+CPMP,31,7.1,7.1,Discontinuation of Study Intervention,40,False,41.0,True,found
+CPMP,32,7.2,7.2,Participant Discontinuation/Withdrawal from the Study,41,False,42.0,True,found
+CPMP,33,7.2.1,7.2.1,Discontinuation of Inadvertently Enrolled Participants,41,False,42.0,True,found
+CPMP,34,7.3,7.3,Lost to Follow-Up,42,False,43.0,True,found
+CPMP,35,8,8,Study Assessments and Procedures,43,False,44.0,True,found
+CPMP,36,8.1,8.1,Efficacy Assessments,43,False,44.0,True,found
+CPMP,37,8.1.1,8.1.1,Screening and Preliminary Data Entry Period,43,False,44.0,True,found
+CPMP,38,8.1.2,8.1.2,Primary Efficacy Outcome Measure–Pain Intensity using Numeric Rating Scale,44,False,45.0,True,found
+CPMP,39,8.1.3,8.1.3,Secondary Efficacy Outcome Measures,44,False,45.0,True,found
+CPMP,40,8.2,8.2,Safety Assessments,45,False,46.0,True,found
+CPMP,41,8.2.1,8.2.1,Physical Examinations,46,False,47.0,True,found
+CPMP,42,8.2.2,8.2.2,Vital Signs,46,False,47.0,True,found
+CPMP,43,8.2.3,8.2.3,Electrocardiograms,46,False,47.0,True,found
+CPMP,44,8.2.4,8.2.4,Clinical Safety Laboratory Assessments,47,False,48.0,True,found
+CPMP,45,8.2.5,8.2.5,Hepatic Safety Monitoring,47,False,48.0,True,found
+CPMP,46,8.2.6,8.2.6,Suicidal Ideation and Behavior Risk Monitoring,50,False,51.0,True,found
+CPMP,47,8.3,8.3,Adverse Events and Serious Adverse Events,51,False,52.0,True,found
+CPMP,48,8.3.1,8.3.1,Time Period and Frequency for Collecting AE and SAE Information,51,False,52.0,True,found
+CPMP,49,8.3.2,8.3.2,Method of Detecting AEs and SAEs,51,False,52.0,True,found
+CPMP,50,8.3.3,8.3.3,Follow-Up of AEs and SAEs,52,False,53.0,True,found
+CPMP,51,8.3.4,8.3.4,Regulatory Reporting Requirements for SAEs,52,False,53.0,True,found
+CPMP,52,8.3.5,8.3.5,Pregnancy,52,False,53.0,True,found
+CPMP,53,8.3.6,8.3.6,Complaint Handling,52,False,53.0,True,found
+CPMP,54,8.4,8.4,Treatment of Overdose,52,False,53.0,True,found
+CPMP,55,8.5,8.5,Pharmacokinetics,53,False,54.0,True,found
+CPMP,56,8.6,8.6,Pharmacodynamics,53,False,54.0,True,found
+CPMP,57,8.7,,Genetics,53,False,,False,redacted
+CPMP,58,8.8,,Biomarkers,53,False,,False,redacted
+CPMP,59,8.9,8.9,Immunogenicity Assessments,54,False,55.0,True,found
+CPMP,60,8.10,8.10,Health Economics,54,False,55.0,True,found
+CPMP,61,9,9,Statistical Considerations,55,False,56.0,True,found
+CPMP,62,9.1,9.1,Statistical Hypotheses,55,False,56.0,True,found
+CPMP,63,9.2,9.2,Sample Size Determination,55,False,56.0,True,found
+CPMP,64,9.3,9.3,Populations for Analyses,56,False,57.0,True,found
+CPMP,65,9.4,9.4,Statistical Analyses,56,False,57.0,True,found
+CPMP,66,9.4.1,9.4.1,General Considerations,56,False,57.0,True,found
+CPMP,67,9.4.2,9.4.2,Primary Endpoint and Analysis,58,False,59.0,True,found
+CPMP,68,9.4.3,9.4.3,Secondary Endpoints and Analysis,60,False,61.0,True,found
+CPMP,69,9.4.4,9.4.4,Tertiary/Exploratory Endpoints,63,False,64.0,True,found
+CPMP,70,9.4.5,9.4.5,Treatment Group Comparability,63,False,64.0,True,found
+CPMP,71,9.4.6,9.4.6,Safety Analyses,63,False,64.0,True,found
+CPMP,72,9.4.7,9.4.7,Subgroup Analyses,65,False,66.0,True,found
+CPMP,73,9.4.8,9.4.8,Sensitivity Analysis,65,False,66.0,True,found
+CPMP,74,9.5,9.5,Interim Analyses,65,False,66.0,True,found
+CPMP,75,9.6,9.6,Data Monitoring Committee,66,False,67.0,True,found
+CPMP,76,10,10,Supporting Documentation and Operational Considerations,67,False,68.0,True,found
+CPMP,77,10.1,10.1,"Appendix 1: Regulatory, Ethical, and Study Oversight Considerations",67,False,68.0,True,found
+CPMP,78,10.1.1,10.1.1,Regulatory and Ethical Considerations,67,False,68.0,True,found
+CPMP,79,10.1.2,10.1.2,Financial Disclosure,67,False,68.0,True,found
+CPMP,80,10.1.3,10.1.3,Informed Consent Process,67,False,68.0,True,found
+CPMP,81,10.1.4,10.1.4,Data Protection,68,False,69.0,True,found
+CPMP,82,10.1.5,10.1.5,Committees Structure,68,False,69.0,True,found
+CPMP,83,10.1.6,10.1.6,Dissemination of Clinical Study Data,69,False,70.0,True,found
+CPMP,84,10.1.7,10.1.7,Data Quality Assurance,69,False,70.0,True,found
+CPMP,85,10.1.8,10.1.8,Source Documents,70,False,71.0,True,found
+CPMP,86,10.1.9,10.1.9,Study and Site Start and Closure,71,False,72.0,True,found
+CPMP,87,10.1.10,10.1.10,Publication Policy,71,False,72.0,True,found
+CPMP,88,10.1.11,10.1.11,Investigator Information,71,False,72.0,True,found
+CPMP,89,10.1.12,10.1.12,Long-Term Sample Retention,72,False,73.0,True,found
+CPMP,90,10.2,10.2,Appendix 2: Clinical Laboratory Tests,73,False,74.0,True,found
+CPMP,91,10.3,10.3,"Appendix 3: Adverse Events: Definitions and Procedures for Recording, Evaluating, Follow-Up, and Reporting",76,False,77.0,True,found
+CPMP,92,10.3.1,10.3.1,Definition of AE,76,False,77.0,True,found
+CPMP,93,10.3.2,10.3.2,Definition of SAE,77,False,78.0,True,found
+CPMP,94,10.3.3,10.3.3,Recording and Follow-Up of AEs and/or SAEs,78,False,79.0,True,found
+CPMP,95,10.3.4,10.3.4,Reporting of SAEs,79,False,80.0,True,found
+CPMP,96,10.4,10.4,Appendix 4: Contraceptive Guidance and Collection of Pregnancy Information,81,False,82.0,True,found
+CPMP,97,10.5,,Appendix 5: Genetics,83,False,,False,redacted
+CPMP,98,10.6,10.6,Appendix 6: Liver Safety: Suggested Actions and Follow-Up Assessments,84,False,85.0,True,found
+CPMP,99,10.7,10.7,Appendix 7: Abbreviations,87,False,88.0,True,found
+CPMP,100,11,11,References,91,False,92.0,True,found
+BP01,101,1,1,Protocol Summary,5,False,6.0,True,found
+BP01,102,1.1,1.1,Synopsis,5,False,6.0,True,found
+BP01,103,1.2,1.2,Schema,7,False,8.0,True,found
+BP01,104,1.3,1.3,Schedule of Activities (SoA),8,False,9.0,True,found
+BP01,105,2,2,Introduction,12,False,13.0,True,found
+BP01,106,2.1,2.1,Study Rationale,12,False,13.0,True,found
+BP01,107,2.2,2.2,Background,13,False,14.0,True,found
+BP01,108,2.3,2.3,Benefit/Risk Assessment,14,False,15.0,True,found
+BP01,109,2.3.1,2.3.1,Risk Assessment,14,False,15.0,True,found
+BP01,110,2.3.2,2.3.2,Benefit Assessment,16,False,17.0,True,found
+BP01,111,2.3.3,2.3.3,Overall Benefit: Risk Conclusion,16,False,17.0,True,found
+BP01,112,3,3,Objectives and Endpoints,17,False,18.0,True,found
+BP01,113,4,4,Study Design,18,False,19.0,True,found
+BP01,114,4.1,4.1,Overall Design,18,False,19.0,True,found
+BP01,115,4.2,4.2,Scientific Rationale for Study Design,19,False,20.0,True,found
+BP01,116,4.3,4.3,Justification for Dose,19,False,20.0,True,found
+BP01,117,4.4,4.4,End of Study Definition,19,False,20.0,True,found
+BP01,118,5,5,Study Population,20,False,21.0,True,found
+BP01,119,5.1,5.1,Inclusion Criteria,20,False,21.0,True,found
+BP01,120,5.2,5.2,Exclusion Criteria,20,False,21.0,True,found
+BP01,121,5.3,5.3,Lifestyle Considerations,21,False,22.0,True,found
+BP01,122,6,6,Study Intervention,22,False,23.0,True,found
+BP01,123,6.1,6.1,Study Intervention(s) Administered,22,False,23.0,True,found
+BP01,124,6.1.1,6.1.1,Special Treatment Considerations,22,False,23.0,True,found
+BP01,125,6.2,6.2,Preparation/Handling/Storage/Accountability,24,False,25.0,True,found
+BP01,126,6.3,6.3,Measures to Minimize Bias: Randomization and Blinding,24,False,25.0,True,found
+BP01,127,6.4,6.4,Study Intervention Compliance,24,False,25.0,True,found
+BP01,128,6.5,6.5,Concomitant Therapy,24,False,25.0,True,found
+BP01,129,7,7,Discontinuation of Study Intervention and Participant Discontinuation/Withdrawal,25,False,26.0,True,found
+BP01,130,7.1,7.1,Discontinuation of Study Intervention,25,False,26.0,True,found
+BP01,131,8,8,Study Assessments and Procedures,26,False,27.0,True,found
+BP01,132,8.1,8.1,Safety Assessments,26,False,27.0,True,found
+BP01,133,8.1.1,8.1.1,Physical Examinations,26,False,27.0,True,found
+BP01,134,8.1.2,8.1.2,Electrocardiograms,26,False,27.0,True,found
+BP01,135,8.1.3,8.1.3,Clinical Safety Laboratory Assessments,26,False,27.0,True,found
+BP01,136,8.2,8.2,Adverse Events and Serious Adverse Events,26,False,27.0,True,found
+BP01,137,8.2.1,8.2.1,Infusion Site Reactions,26,False,27.0,True,found
+BP01,138,8.2.2,8.2.2,Hypersensitivity Reactions and Infusion-related Reactions,26,False,27.0,True,found
+BP01,139,8.2.3,8.2.3,Adverse Events of Special Interest,27,False,28.0,True,found
+BP01,140,8.3,8.3,Treatment of Overdose,27,False,28.0,True,found
+BP01,141,8.4,8.4,Pharmacokinetics,27,False,28.0,True,found
+BP01,142,8.5,8.5,Pharmacodynamics,28,False,29.0,True,found
+BP01,143,8.6,,,28,True,,False,redacted_title
+BP01,144,8.7,8.7,Immunogenicity Assessments,28,False,29.0,True,found
+BP01,145,9,9,Statistical Considerations,29,False,30.0,True,found
+BP01,146,9.1,9.1,Statistical Hypotheses,29,False,30.0,True,found
+BP01,147,9.2,9.2,Sample Size Determination,29,False,30.0,True,found
+BP01,148,9.3,9.3,Populations for Analyses,29,False,30.0,True,found
+BP01,149,9.4,9.4,Statistical Analyses,29,False,30.0,True,found
+BP01,150,9.4.1,9.4.1,General considerations,29,False,30.0,True,found
+BP01,151,9.4.2,9.4.2,Other Analyse(s),30,False,31.0,True,found
+BP01,152,9.5,9.5,Interim Analyses,30,False,31.0,True,found
+BP01,153,10,10,Supporting Documentation and Operational Considerations,31,False,32.0,True,found
+BP01,154,10.1,10.1,Appendix 1: Clinical Laboratory Tests,31,False,32.0,True,found
+BP01,155,10.2,10.2,Appendix 2: Contraceptive Guidance and Collection of Pregnancy Information,32,False,33.0,True,found
+BP01,156,10.3,10.3,Appendix 3: Recommended Laboratory Testing for Hypersensitivity Events,35,False,36.0,True,found
+BP01,157,10.4,10.4,Appendix 9: Abbreviations,36,False,37.0,True,found
+BP01,158,11,11,References,38,False,39.0,True,found
+BP02,159,1,1,Protocol Summary,7,False,8.0,True,found
+BP02,160,1.1,1.1,Synopsis,7,False,8.0,True,found
+BP02,161,1.2,1.2,Schema,9,False,10.0,True,found
+BP02,162,1.3,1.3,Schedule of Activities (SoA),10,False,11.0,True,found
+BP02,163,2,2,Introduction,12,False,13.0,True,found
+BP02,164,2.1,2.1,Study Rationale,12,False,13.0,True,found
+BP02,165,2.2,2.2,Background,12,False,13.0,True,found
+BP02,166,2.3,2.3,Benefit/Risk Assessment,15,False,16.0,True,found
+BP02,167,2.3.1,2.3.1,Risk Assessment,15,False,16.0,True,found
+BP02,168,2.3.2,2.3.2,Benefit Assessment,16,False,17.0,True,found
+BP02,169,2.3.3,2.3.3,Overall Benefit Risk Conclusion,16,False,17.0,True,found
+BP02,170,3,3,Objectives and Endpoints,17,False,18.0,True,found
+BP02,171,4,4,Study Design,18,False,19.0,True,found
+BP02,172,4.1,4.1,Overall Design,18,False,19.0,True,found
+BP02,173,4.2,4.2,Scientific Rationale for Study Design,18,False,19.0,True,found
+BP02,174,4.3,4.3,Justification for Dose,18,False,19.0,True,found
+BP02,175,4.4,4.4,End of Study Definition,19,False,20.0,True,found
+BP02,176,5,5,Study Population,20,False,21.0,True,found
+BP02,177,5.1,5.1,Inclusion Criteria,20,False,21.0,True,found
+BP02,178,5.2,5.2,Exclusion Criteria,20,False,21.0,True,found
+BP02,179,5.3,5.3,Lifestyle Considerations,20,False,21.0,True,found
+BP02,180,5.3.1,5.3.1,Meals and Dietary Restrictions,20,False,21.0,True,found
+BP02,181,5.3.2,5.3.2,Substance Use,20,False,21.0,True,found
+BP02,182,5.3.3,5.3.3,Reproductive and Contraception Requirements,20,False,21.0,True,found
+BP02,183,6,6,Study Intervention(s) and Concomitant Therapy,21,False,22.0,True,found
+BP02,184,6.1,6.1,Study Intervention(s) Administered,21,False,22.0,True,found
+BP02,185,6.2,6.2,"Preparation, Handling, Storage, and Accountability",21,False,22.0,True,found
+BP02,186,6.3,6.3,Measures to Minimize Bias: Randomization and Blinding,21,False,22.0,True,found
+BP02,187,6.4,6.4,Study Intervention Compliance,21,False,22.0,True,found
+BP02,188,6.5,6.5,Treatment of Overdose,21,False,22.0,True,found
+BP02,189,6.6,6.6,Concomitant Therapy,22,False,23.0,True,found
+BP02,190,7,7,Discontinuation of Study Intervention and Participant Discontinuation/Withdrawal,23,False,24.0,True,found
+BP02,191,8,8,Study Assessments and Procedures,24,False,25.0,True,found
+BP02,192,8.1,8.1,Efficacy Assessments,24,False,25.0,True,found
+BP02,193,8.2,8.2,Safety Assessments,24,False,25.0,True,found
+BP02,194,8.2.1,8.2.1,Physical Examinations,24,False,25.0,True,found
+BP02,195,8.2.2,8.2.2,Electrocardiograms,24,False,25.0,True,found
+BP02,196,8.2.3,8.2.3,Clinical Safety Laboratory Tests,24,False,25.0,True,found
+BP02,197,8.3,8.3,"Adverse Events, Serious Adverse Events, and Product Complaints",24,False,25.0,True,found
+BP02,198,8.4,8.4,Pharmacokinetics,24,False,25.0,True,found
+BP02,199,8.5,8.5,Pharmacodynamics,25,False,26.0,True,found
+BP02,200,9,9,Statistical Considerations,26,False,27.0,True,found
+BP02,201,9.1,9.1,Statistical Hypotheses,26,False,27.0,True,found
+BP02,202,9.2,9.2,Analyses Sets,26,False,27.0,True,found
+BP02,203,9.3,9.3,Statistical Analyses,26,False,27.0,True,found
+BP02,204,9.3.1,9.3.1,General Considerations,26,False,27.0,True,found
+BP02,205,9.3.2,9.3.2,Exploratory Endpoint Analysis,26,False,27.0,True,found
+BP02,206,9.3.3,9.3.3,Safety Analyses,27,False,28.0,True,found
+BP02,207,9.3.4,9.3.4,Other Analyses,27,False,28.0,True,found
+BP02,208,9.4,9.4,Interim Analysis,27,False,28.0,True,found
+BP02,209,9.5,9.5,Sample Size Determination,27,False,28.0,True,found
+BP02,210,10,10,Supporting Documentation and Operational Considerations,28,False,29.0,True,found
+BP02,211,10.1,10.1,Appendix 1: Clinical Laboratory Tests,28,False,29.0,True,found
+BP02,212,10.2,10.2,Appendix 2: Contraceptive and Barrier Guidance,29,False,30.0,True,found
+BP02,213,10.2.1,10.2.1,Definitions,29,False,30.0,True,found
+BP02,214,10.2.2,10.2.2,Contraception Guidance,30,False,31.0,True,found
+BP02,215,10.3,10.3,Appendix 3: List of Excluded Concomitant Medications,33,False,34.0,True,found
+BP02,216,10.4,10.4,Appendix 4: Provisions for Changes in Study C onduct During Exceptional Circumstances,36,False,37.0,True,found
+BP02,217,10.5,10.5,Appendix 5: Abbreviations,39,False,40.0,True,found
+BP02,218,11,11,References,42,False,43.0,True,found
+BP03,219,1,1,Protocol Summary,5,False,6.0,True,found
+BP03,220,1.1,1.1,Synopsis,5,False,6.0,True,found
+BP03,221,1.2,,Schema,6,False,,False,redacted
+BP03,222,3,1.3,Schedule of Activities (SoA),7,False,8.0,True,found
+BP03,223,,2,Introduction,11,False,12.0,True,found
+BP03,224,2.1,2.1,Study Rationale,11,False,12.0,True,found
+BP03,225,2.2,2.2,Background,11,False,12.0,True,found
+BP03,226,2.3,2.3,Benefit/Risk Assessment,11,False,12.0,True,found
+BP03,227,2.3.1,2.3.1,Risk Assessment,12,False,13.0,True,found
+BP03,228,2.3.2,2.3.2,Benefit Assessment,12,False,13.0,True,found
+BP03,229,2.3.3,2.3.3,Overall Benefit: Risk Conclusion,12,False,13.0,True,found
+BP03,230,3,3,Objectives and Endpoints,13,False,14.0,True,found
+BP03,231,4,4,Study Design,14,False,15.0,True,found
+BP03,232,4.1,4.1,Overall Design,14,False,15.0,True,found
+BP03,233,4.2,4.2,Scientific Rationale for Study Design,15,False,16.0,True,found
+BP03,234,4.3,4.3,Justification for Dose,15,False,16.0,True,found
+BP03,235,4.4,4.4,End of Study Definition,15,False,16.0,True,found
+BP03,236,5,5,Study Population,16,False,17.0,True,found
+BP03,237,5.1,5.1,Inclusion Criteria,16,False,17.0,True,found
+BP03,238,5.2,5.2,Exclusion Criteria,16,False,17.0,True,found
+BP03,239,5.3,5.3,Lifestyle Considerations,17,False,18.0,True,found
+BP03,240,6,6,Study Intervention,18,False,19.0,True,found
+BP03,241,6.1,6.1,Study Intervention(s) Administered,18,False,19.0,True,found
+BP03,242,6.2,6.2,Preparation/Handling/Storage/Accountability,18,False,19.0,True,found
+BP03,243,6.3,6.3,Measures to Minimize Bias: Randomization and Blinding,19,False,20.0,True,found
+BP03,244,6.4,6.4,Study Intervention Compliance,19,False,20.0,True,found
+BP03,245,6.5,6.5,Concomitant Therapy,19,False,20.0,True,found
+BP03,246,6.6,6.6,Dose Modification,19,False,20.0,True,found
+BP03,247,7,7,Discontinuation of Study Intervention and Participant Discontinuation/Withdrawal,21,False,22.0,True,found
+BP03,248,7.1,7.1,Discontinuation of Study Intervention,21,False,22.0,True,found
+BP03,249,8,8,Study Assessments and Procedures,22,False,23.0,True,found
+BP03,250,8.1,8.1,Safety Assessment s,22,False,23.0,True,found
+BP03,251,8.1.1,8.1.1,Vital Signs,22,False,23.0,True,found
+BP03,252,8.1.2,8.1.2,Electrocardiograms,22,False,23.0,True,found
+BP03,253,8.1.3,8.1.3,Clinical Safety Laboratory Assessments,22,False,23.0,True,found
+BP03,254,8.2,8.2,Adverse Events and Serious Adverse Events,22,False,23.0,True,found
+BP03,255,8.3,8.3,Treatment of Overdose,22,False,23.0,True,found
+BP03,256,8.4,8.4,Pharmacokinetics,22,False,23.0,True,found
+BP03,257,8.5,8.5,Pharmacodynamics,23,False,24.0,True,found
+BP03,258,9,9,Statistical Considerations,24,False,25.0,True,found
+BP03,259,9.1,9.1,Statistical Hypotheses,24,False,25.0,True,found
+BP03,260,9.2,9.2,Sample Size Determination,24,False,25.0,True,found
+BP03,261,9.3,9.3,Populations for Analyses,24,False,25.0,True,found
+BP03,262,9.4,9.4,Statistical Analyses,24,False,25.0,True,found
+BP03,263,9.4.1,9.4.1,General Considerations,24,False,25.0,True,found
+BP03,264,9.4.2,9.4.2,Pharmacokinetics and Pharmacodynamics,25,False,26.0,True,found
+BP03,265,9.4.3,9.4.3,Tertiary/Exploratory,25,False,26.0,True,found
+BP03,266,9.4.4,9.4.4,Biomarkers,25,False,26.0,True,found
+BP03,267,9.5,9.5,Interim Analyses,25,False,26.0,True,found
+BP03,268,10,10,Supporting Documentation and Operational Considerations,26,False,27.0,True,found
+BP03,269,10.1,10.1,Appendix 1: Clinical Laboratory Tests,26,False,27.0,True,found
+BP03,270,10.2,10.2,Appendix 2: Definitions of Reproductive Requirements and Contraceptive Guidance,27,False,28.0,True,found
+BP03,271,10.3,10.3,Appendix 3: Provisions for Changes in Study Conduct During Exceptional Circumstances,31,False,32.0,True,found
+BP03,272,10.4,10.4,Appendix 4: Abbreviations,34,False,35.0,True,found
+BP05,273,1,1,Protocol Summary,7,False,8.0,True,found
+BP05,274,1.1,1.1,Synopsis,7,False,8.0,True,found
+BP05,275,1.2,1.2,Schema,9,False,10.0,True,found
+BP05,276,1.3,1.3,Schedule of Activities (SoA),10,False,11.0,True,found
+BP05,277,2,2,Introduction,14,False,15.0,True,found
+BP05,278,2.1,2.1,Study Rationale,14,False,15.0,True,found
+BP05,279,2.2,2.2,Background,14,False,15.0,True,found
+BP05,280,2.3,2.3,Benefit/Risk Assessment,14,False,15.0,True,found
+BP05,281,2.3.1,2.3.1,Risk Assessment,14,False,15.0,True,found
+BP05,282,2.3.2,2.3.2,Benefit Assessment,15,False,16.0,True,found
+BP05,283,2.3.3,2.3.3,Overall Benefit Risk Conclusion,15,False,16.0,True,found
+BP05,284,3,3,"Objectives, Endpoints, and Estimands",16,False,17.0,True,found
+BP05,285,4,4,Study Design,17,False,18.0,True,found
+BP05,286,4.1,4.1,Overall Design,17,False,18.0,True,found
+BP05,287,4.2,4.2,Scientific Rationale for Study Design,17,False,18.0,True,found
+BP05,288,4.3,4.3,Justification for Dose,18,False,19.0,True,found
+BP05,289,4.4,4.4,End of Study Definition,18,False,19.0,True,found
+BP05,290,5,5,Study Population,19,False,20.0,True,found
+BP05,291,5.1,5.1,Inclusion Criteria,19,False,20.0,True,found
+BP05,292,5.2,5.2,Exclusion Criteria,19,False,20.0,True,found
+BP05,293,5.3,5.3,Lifestyle Considerations,20,False,21.0,True,found
+BP05,294,5.3.1,5.3.1,Substance Use,20,False,21.0,True,found
+BP05,295,5.4,5.4,Screen Failures,20,False,21.0,True,found
+BP05,296,5.5,5.5,"Criteria for Temporarily Delaying Enrollment, Randomization, or Administration of Study Intervention of a Participant",20,False,21.0,True,found
+BP05,297,6,6,Study Intervention(s) and Concomitant Therapy,21,False,22.0,True,found
+BP05,298,6.1,6.1,Study Intervention(s) Administered,21,False,22.0,True,found
+BP05,299,6.2,6.2,"Preparation, Handling, Storage, and Accountability",21,False,22.0,True,found
+BP05,300,6.3,6.3,Measures to Minimize Bias: Randomization and Blinding,21,False,22.0,True,found
+BP05,301,6.3.1,6.3.1,Stratification,21,False,22.0,True,found
+BP05,302,6.4,6.4,Study Intervention Compliance,21,False,22.0,True,found
+BP05,303,6.5,6.5,Dose Modification,21,False,22.0,True,found
+BP05,304,6.6,6.6,Continued Access to Study Intervention after the End of the Study,21,False,22.0,True,found
+BP05,305,6.7,6.7,Treatment of Overdose,22,False,23.0,True,found
+BP05,306,6.8,6.8,Concomitant Therapy,22,False,23.0,True,found
+BP05,307,6.8.1,6.8.1,Permitted Medications,22,False,23.0,True,found
+BP05,308,6.8.2,6.8.2,Prohibited Medications,22,False,23.0,True,found
+BP05,309,7,7,Discontinuation of Study Intervention and Participant Discontinuation/Withdrawal,23,False,24.0,True,found
+BP05,310,7.1,7.1,Discontinuation of Study Intervention,23,False,24.0,True,found
+BP05,311,7.1.1,7.1.1,Liver Chemistry Stopping Criteria,23,False,24.0,True,found
+BP05,312,7.1.2,7.1.2,Hypersensitivity,24,False,25.0,True,found
+BP05,313,7.2,7.2,Participant Discontinuation/Withdrawal from the Study,24,False,25.0,True,found
+BP05,314,7.3,7.3,Lost to Follow-Up,24,False,25.0,True,found
+BP05,315,8,8,Study Assessments and Procedures,25,False,26.0,True,found
+BP05,316,8.1,8.1,Efficacy Assessments,25,False,26.0,True,found
+BP05,317,,,,25,True,,False,redacted_title
+BP05,318,8.2,8.2,Safety Assessments,25,False,26.0,True,found
+BP05,319,8.2.1,8.2.1,Physical Examinations,25,False,26.0,True,found
+BP05,320,8.2.2,8.2.2,Electrocardiograms,25,False,26.0,True,found
+BP05,321,8.2.3,8.2.3,Clinical Safety Laboratory Tests,26,False,27.0,True,found
+BP05,322,8.3,8.3,"Adverse Events, Serious Adverse Events, and Product Complaints",26,False,27.0,True,found
+BP05,323,8.3.1,8.3.1,Pregnancy,26,False,27.0,True,found
+BP05,324,8.3.2,8.3.2,Hypersensitivity Reactions,27,False,28.0,True,found
+BP05,325,8.3.3,8.3.3,Adverse Events of Special Interest,27,False,28.0,True,found
+BP05,326,8.4,8.4,Pharmacokinetics,28,False,29.0,True,found
+BP05,327,8.5,8.5,Pharmacodynamics,28,False,29.0,True,found
+BP05,328,8.6,8.6,Genetics,28,False,29.0,True,found
+BP05,329,,,,28,True,,False,redacted_title
+BP05,330,,,,28,True,,False,redacted_title
+BP05,331,,,,28,True,,False,redacted_title
+BP05,332,9,9,Statistical Considerations,29,False,30.0,True,found
+BP05,333,9.1,9.1,Statistical Hypotheses,29,False,30.0,True,found
+BP05,334,9.2,9.2,Analyses Sets,29,False,30.0,True,found
+BP05,335,9.3,9.3,Statistical Analyses,29,False,30.0,True,found
+BP05,336,9.3.1,9.3.1,General Considerations,29,False,30.0,True,found
+BP05,337,9.3.2,9.3.2,Tertiary Analysis,29,False,30.0,True,found
+BP05,338,9.3.3,9.3.3,Safety Analyses,30,False,31.0,True,found
+BP05,339,9.3.4,9.3.4,Exploratory Pharmacokinetic Analyses,30,False,31.0,True,found
+BP05,340,9.4,9.4,Interim Analysis,30,False,31.0,True,found
+BP05,341,9.5,9.5,Sample Size Determination,30,False,31.0,True,found
+BP05,342,10,10,Supporting Documentation and Operational Considerations,31,False,32.0,True,found
+BP05,343,10.1,10.1,"Appendix 1: Regulatory, Ethical, and Study Oversight Considerations",31,False,32.0,True,found
+BP05,344,10.2,10.2,Appendix 2: Clinical Laboratory Tests,32,False,33.0,True,found
+BP05,345,10.2.1,10.2.1,Laboratory Samples to be Obtained at the Time of a Systemic Hypersensitivity Event,32,False,33.0,True,found
+BP05,346,10.3,10.3,"Appendix 3: Adverse Events and Serious Adverse Events: Definitions and Procedures for Recording, Evaluating, Follow-up, and Reporting",34,False,35.0,True,found
+BP05,347,10.4,10.4,Appendix 4: Contraceptive and Barrier Guidance,35,False,36.0,True,found
+BP05,348,10.4.1,10.4.1,Definitions,35,False,36.0,True,found
+BP05,349,10.4.2,10.4.2,Contraception Guidance,36,False,37.0,True,found
+BP05,350,10.5,10.5,Appendix 5: Liver Safety: Suggested Actions and Follow-up Assessments,38,False,39.0,True,found
+BP05,351,10.6,10.6,Appendix 9: Provisions for Changes in Study Conduct During Exceptional Circumstances,39,False,40.0,True,found
+BP05,352,10.7,10.7,Appendix 10: Abbreviations and Definitions,42,False,43.0,True,found
+BP05,353,11,11,References,44,False,45.0,True,found
+NP01,354,1,1,Protocol Summary,7,False,8.0,True,found
+NP01,355,1.1,1.1,Synopsis,7,False,8.0,True,found
+NP01,356,1.2,1.2,Schema,9,False,10.0,True,found
+NP01,357,1.3,1.3,Schedule of Activities (SoA),9,False,10.0,True,found
+NP01,358,2,2,Introduction,13,False,14.0,True,found
+NP01,359,2.1,2.1,Study Rationale,13,False,14.0,True,found
+NP01,360,2.2,2.2,Background,13,False,14.0,True,found
+NP01,361,2.3,2.3,Benefit/Risk Assessment,14,False,15.0,True,found
+NP01,362,2.3.1,2.3.1,Risk Assessment,15,False,16.0,True,found
+NP01,363,2.3.2,2.3.2,Benefit Assessment,16,False,17.0,True,found
+NP01,364,2.3.3,2.3.3,Overall Benefit: Risk Conclusion,16,False,17.0,True,found
+NP01,365,3,3,Objectives and Endpoints,17,False,18.0,True,found
+NP01,366,4,4,Study Design,18,False,19.0,True,found
+NP01,367,4.1,4.1,Scientific Rationale for Study Design,19,False,20.0,True,found
+NP01,368,4.2,4.2,Justification for Dose,19,False,20.0,True,found
+NP01,369,4.3,4.3,End of Study Definition,19,False,20.0,True,found
+NP01,370,5,5,Study Population,20,False,21.0,True,found
+NP01,371,5.1,5.1,Inclusion Criteria,20,False,21.0,True,found
+NP01,372,5.2,5.2,Exclusion Criteria,20,False,21.0,True,found
+NP01,373,5.3,5.3,Lifestyle Considerations,21,False,22.0,True,found
+NP01,374,6,6,Study Intervention,22,False,23.0,True,found
+NP01,375,6.1,6.1,Study Intervention(s) Administered,22,False,23.0,True,found
+NP01,376,6.1.1,6.1.1,Special Treatment Considerations,23,False,24.0,True,found
+NP01,377,6.2,6.2,Preparation/Handling/Storage/Accountability,24,False,25.0,True,found
+NP01,378,6.3,6.3,Measures to Minimize Bias: Randomization and Blinding,24,False,25.0,True,found
+NP01,379,6.4,6.4,Study Intervention Compliance,24,False,25.0,True,found
+NP01,380,6.5,6.5,Concomitant Therapy,24,False,25.0,True,found
+NP01,381,7,7,Discontinuation of Study Intervention and Participant Discontinuation/Withdrawal,25,False,26.0,True,found
+NP01,382,7.1,7.1,Discontinuation of Study Intervention,25,False,26.0,True,found
+NP01,383,8,8,Study Assessments and Procedures,26,False,27.0,True,found
+NP01,384,8.1,8.1,Safety Assessments,26,False,27.0,True,found
+NP01,385,8.1.1,8.1.1,Physical Examinations,26,False,27.0,True,found
+NP01,386,8.1.2,8.1.2,Electrocardiograms,26,False,27.0,True,found
+NP01,387,8.1.3,8.1.3,Clinical Safety Laboratory Assessments,26,False,27.0,True,found
+NP01,388,8.2,8.2,Adverse Events and Serious Adverse Events,26,False,27.0,True,found
+NP01,389,8.2.1,8.2.1,Infusion Site Reactions,26,False,27.0,True,found
+NP01,390,8.2.2,8.2.2,Hypersensitivity Reactions and Infusion-related Reactions,26,False,27.0,True,found
+NP01,391,8.2.3,8.2.3,Adverse Events of Special Interest,28,False,29.0,True,found
+NP01,392,8.3,8.3,Treatment of Overdose,28,False,29.0,True,found
+NP01,393,8.4,8.4,Pharmacokinetics,28,False,29.0,True,found
+NP01,394,8.5,8.5,Pharmacodynamics,29,False,30.0,True,found
+NP01,395,8.6,,,29,True,,False,redacted_title
+NP01,396,8.7,8.7,Immunogenicity Assessments,29,False,30.0,True,found
+NP01,397,9,9,Statistical Considerations,30,False,31.0,True,found
+NP01,398,9.1,9.1,Statistical Hypotheses,30,False,31.0,True,found
+NP01,399,9.2,9.2,Sample Size Determination,30,False,31.0,True,found
+NP01,400,9.3,9.3,Populations for Analyses,30,False,31.0,True,found
+NP01,401,9.4,9.4,Statistical Analyses,30,False,31.0,True,found
+NP01,402,9.4.1,9.4.1,General considerations,30,False,31.0,True,found
+NP01,403,9.4.2,9.4.2,Other Analyses,31,False,32.0,True,found
+NP01,404,9.5,9.5,Interim Analyses,31,False,32.0,True,found
+NP01,405,10,10,Supporting Documentation and Operational Considerations,32,False,33.0,True,found
+NP01,406,10.1,10.1,Appendix 1: Clinical Laboratory Tests,32,False,33.0,True,found
+NP01,407,10.2,10.2,Appendix 2: Definitions of Reproductive Requirements and Contraceptive Guidance,33,False,34.0,True,found
+NP01,408,10.3,10.3,Appendix 3: Recommended Laboratory Testing for Hypersensitivity Events and Infusion-related Reactions,35,False,36.0,True,found
+NP01,409,11,11,References,36,False,37.0,True,found
+NP02,410,1,1,Protocol Summary,7,False,8.0,True,found
+NP02,411,1.1,1.1,Synopsis,7,False,8.0,True,found
+NP02,412,1.2,1.2,Schema,9,False,10.0,True,found
+NP02,413,1.3,1.3,Schedule of Activities (SoA),10,False,11.0,True,found
+NP02,414,2,2,Introduction,12,False,13.0,True,found
+NP02,415,2.1,2.1,Study Rationale,12,False,13.0,True,found
+NP02,416,2.2,2.2,Background,12,False,13.0,True,found
+NP02,417,2.3,2.3,Benefit/Risk Assessment,14,False,15.0,True,found
+NP02,418,2.3.1,2.3.1,Risk Assessment,15,False,16.0,True,found
+NP02,419,2.3.2,2.3.2,Benefit Assessment,15,False,16.0,True,found
+NP02,420,2.3.3,2.3.3,Overall Benefit Risk Conclusion,16,False,17.0,True,found
+NP02,421,3,3,Objectives and Endpoints,17,False,18.0,True,found
+NP02,422,4,4,Study Design,18,False,19.0,True,found
+NP02,423,4.1,4.1,Overall Design,18,False,19.0,True,found
+NP02,424,4.2,4.2,Scientific Rationale for Study Design,18,False,19.0,True,found
+NP02,425,4.3,4.3,Justification for Dose,18,False,19.0,True,found
+NP02,426,4.4,4.4,End of Study Definition,19,False,20.0,True,found
+NP02,427,5,5,Study Population,20,False,21.0,True,found
+NP02,428,5.1,5.1,Inclusion Criteria,20,False,21.0,True,found
+NP02,429,5.2,5.2,Exclusion Criteria,20,False,21.0,True,found
+NP02,430,5.3,5.3,Lifestyle Considerations,20,False,21.0,True,found
+NP02,431,5.3.1,5.3.1,Meals and Dietary Restrictions,20,False,21.0,True,found
+NP02,432,5.3.2,5.3.2,Substance Use,20,False,21.0,True,found
+NP02,433,5.3.3,5.3.3,Reproductive and Contraception Requirements,20,False,21.0,True,found
+NP02,434,6,6,Study Intervention(s) and Concomitant Therapy,21,False,22.0,True,found
+NP02,435,6.1,6.1,Study Intervention(s) Administered,21,False,22.0,True,found
+NP02,436,6.2,6.2,"Preparation, Handling, Storage, and Accountability",21,False,22.0,True,found
+NP02,437,6.3,6.3,Measures to Minimize Bias: Randomization and Blinding,21,False,22.0,True,found
+NP02,438,6.4,6.4,Study Intervention Compliance,21,False,22.0,True,found
+NP02,439,6.5,6.5,Treatment of Overdose,22,False,23.0,True,found
+NP02,440,6.6,6.6,Concomitant Therapy,22,False,23.0,True,found
+NP02,441,7,7,Discontinuation of Study Intervention and Participant Discontinuation/Withdrawal,23,False,24.0,True,found
+NP02,442,8,8,Study Assessments and Procedures,24,False,25.0,True,found
+NP02,443,8.1,8.1,Efficacy Assessments,24,False,25.0,True,found
+NP02,444,8.2,8.2,Safety Assessments,24,False,25.0,True,found
+NP02,445,8.2.1,8.2.1,Physical Examinations,24,False,25.0,True,found
+NP02,446,8.2.2,8.2.2,Electrocardiograms,24,False,25.0,True,found
+NP02,447,8.2.3,8.2.3,Clinical Safety Laboratory Tests,24,False,25.0,True,found
+NP02,448,8.3,8.3,"Adverse Events, Serious Adverse Events, and Product Complaints",24,False,25.0,True,found
+NP02,449,8.4,8.4,Pharmacokinetics,24,False,25.0,True,found
+NP02,450,8.5,8.5,Pharmacodynamics,25,False,26.0,True,found
+NP02,451,9,9,Statistical Considerations,26,False,27.0,True,found
+NP02,452,9.1,9.1,Statistical Hypotheses,26,False,27.0,True,found
+NP02,453,9.2,9.2,Analyses Sets,26,False,27.0,True,found
+NP02,454,9.3,9.3,Statistical Analyses,26,False,27.0,True,found
+NP02,455,9.3.1,9.3.1,General Considerations,26,False,27.0,True,found
+NP02,456,9.3.2,9.3.2,Exploratory Endpoint(s) Analysis,26,False,27.0,True,found
+NP02,457,9.3.3,9.3.3,Safety Analyses,26,False,27.0,True,found
+NP02,458,9.3.4,9.3.4,Other Analyses,26,False,27.0,True,found
+NP02,459,9.4,9.4,Interim Analysis,27,False,28.0,True,found
+NP02,460,9.5,9.5,Sample Size Determination,27,False,28.0,True,found
+NP02,461,10,10,Supporting Documentation and Operational Considerations,28,False,29.0,True,found
+NP02,462,10.1,10.1,Appendix 1: Clinical Laboratory Tests,28,False,29.0,True,found
+NP02,463,10.2,10.2,Appendix 2: Contraceptive and Barrier Guidance,29,False,30.0,True,found
+NP02,464,10.2.1,10.2.1,Definitions,29,False,30.0,True,found
+NP02,465,10.2.2,10.2.2,Contraception Guidance,30,False,31.0,True,found
+NP02,466,10.3,10.3,Appendix 3: List of Excluded Concomitant Medications,33,False,34.0,True,found
+NP02,467,10.4,10.4,Appendix 4: Provisions for Changes in Study C onduct During Exceptional Circumstances,36,False,37.0,True,found
+NP02,468,10.5,10.5,Appendix 5: Abbreviations,39,False,40.0,True,found
+NP02,469,11,11,References,42,False,43.0,True,found
+NP03,470,1,1,Protocol Summary,6,False,7.0,True,found
+NP03,471,1.1,1.1,Synopsis,6,False,7.0,True,found
+NP03,472,1.2,,Schema,7,False,,False,redacted
+NP03,473,1.3,1.3,Schedule of Activities (SoA),8,False,9.0,True,found
+NP03,474,2,2,Introduction,13,False,14.0,True,found
+NP03,475,2.1,2.1,Study Rationale,13,False,14.0,True,found
+NP03,476,2.2,2.2,Back ground,13,False,14.0,True,found
+NP03,477,2.3,2.3,Benefit/Risk Assessment,13,False,14.0,True,found
+NP03,478,2.3.1,2.3.1,Risk Assessment,14,False,15.0,True,found
+NP03,479,2.3.2,2.3.2,BenefitAssessment,14,False,15.0,True,found
+NP03,480,2.3.3,2.3.3,Overall Benefit: Risk Conclusion,14,False,15.0,True,found
+NP03,481,3,3,Objectives and Endpoints,15,False,16.0,True,found
+NP03,482,4,4,Study Design,16,False,17.0,True,found
+NP03,483,4.1,4.1,Overall Design,16,False,17.0,True,found
+NP03,484,4.2,4.2,Scientific Rationale for Study Design,17,False,18.0,True,found
+NP03,485,4.3,4.3,Justification for Dose,17,False,18.0,True,found
+NP03,486,4.4,4.4,End of Study Definition,17,False,18.0,True,found
+NP03,487,5,5,Study Population,18,False,19.0,True,found
+NP03,488,5.1,5.1,Inclusion Criteria,18,False,19.0,True,found
+NP03,489,5.2,5.2,Exclusion Criteria,18,False,19.0,True,found
+NP03,490,5.3,5.3,Lifestyle Considerations,20,False,21.0,True,found
+NP03,491,6,6,Study Intervention,21,False,22.0,True,found
+NP03,492,6.1,6.1,Study Intervention(s) Administered,21,False,22.0,True,found
+NP03,493,6.2,6.2,Preparation/Handling/Storage/Accountability,21,False,22.0,True,found
+NP03,494,6.3,6.3,Measures to Minimize Bias: Randomization and Blinding,22,False,23.0,True,found
+NP03,495,6.4,6.4,Study Intervention Compliance,22,False,23.0,True,found
+NP03,496,6.5,6.5,Concomitant Therapy,22,False,23.0,True,found
+NP03,497,6.6,6.6,Dose Modification,22,False,23.0,True,found
+NP03,498,7,7,Discontinuation of Study Intervention and Participant Discontinuation/Withdrawal,25,False,26.0,True,found
+NP03,499,7.1,7.1,Discontinuation of Study Intervention,25,False,26.0,True,found
+NP03,500,7.2,7.2,Participant Discontinuation/Withdrawal from the Study,25,False,26.0,True,found
+NP03,501,8,8,Study Assessments and Procedures,26,False,27.0,True,found
+NP03,502,8.1,8.1,Safety Assessment s,26,False,27.0,True,found
+NP03,503,8.1.1,8.1.1,Vital Signs,26,False,27.0,True,found
+NP03,504,8.1.2,8.1.2,Electrocardio grams,26,False,27.0,True,found
+NP03,505,8.1.3,8.1.3,Clinical Safety Laboratory Assessment s,26,False,27.0,True,found
+NP03,506,8.2,8.2,Adverse Events and Serious Adverse Event s,26,False,27.0,True,found
+NP03,507,8.3,8.3,Treatment of Overdose,26,False,27.0,True,found
+NP03,508,8.4,8.4,Pharmacokinetics,26,False,27.0,True,found
+NP03,509,8.5,8.5,Pharmacodynamic s,27,False,28.0,True,found
+NP03,510,9,9,Statistical Considerations,28,False,29.0,True,found
+NP03,511,9.1,9.1,Statistical Hypotheses,28,False,29.0,True,found
+NP03,512,9.2,9.2,Sample Size Determination,28,False,29.0,True,found
+NP03,513,9.3,9.3,Populations for Analyses,28,False,29.0,True,found
+NP03,514,9.4,9.4,Statistical Analyses,28,False,29.0,True,found
+NP03,515,9.4.1,9.4.1,General Considerations,28,False,29.0,True,found
+NP03,516,9.4.2,9.4.2,Pharmacokinetics and Pharmacodynamics,29,False,30.0,True,found
+NP03,517,9.4.3,9.4.3,Tertiary/Exploratory,29,False,30.0,True,found
+NP03,518,9.4.4,9.4.4,Biomarkers,29,False,30.0,True,found
+NP03,519,9.5,9.5,Interim Analyses,29,False,30.0,True,found
+NP03,520,10,10,Supporting Documentation and Operational Considerations,30,False,31.0,True,found
+NP03,521,10.1,10.1,Appendix 1: Clinical Laboratory Tests,30,False,31.0,True,found
+NP03,522,10.2,10.2,Appendix 2: Definitions of Reproductive Requirements and Contraceptive Guidance,32,False,33.0,True,found
+NP03,523,10.3,10.3,Appendix 3: Provisions for Changes in Study Conduct During Exceptional Circumstances,36,False,37.0,True,found
+NP03,524,10.4,10.4,Appendix 4: Abbreviations,39,False,40.0,True,found
+NP03,525,10.5,10.5,Appendix 5: Protocol Amendment History,40,False,41.0,True,found
+NP03,526,11,11,References,42,False,43.0,True,found
+NP05,527,1,1,Protocol Summary,8,False,9.0,True,found
+NP05,528,1.1,1.1,Synopsis,8,False,9.0,True,found
+NP05,529,1.2,1.2,Schema,10,False,11.0,True,found
+NP05,530,1.3,1.3,Schedule of Activities (SoA),11,False,12.0,True,found
+NP05,531,2,2,Introduction,15,False,16.0,True,found
+NP05,532,2.1,2.1,Study Rationale,15,False,16.0,True,found
+NP05,533,2.2,2.2,Background,15,False,16.0,True,found
+NP05,534,2.3,2.3,Benefit/Risk Assessment,15,False,16.0,True,found
+NP05,535,2.3.1,2.3.1,Risk Assessment,15,False,16.0,True,found
+NP05,536,2.3.2,2.3.2,Benefit Assessment,16,False,17.0,True,found
+NP05,537,2.3.3,2.3.3,Overall Benefit Risk Conclusion,16,False,17.0,True,found
+NP05,538,3,3,"Objectives, Endpoints, and Estimands",17,False,18.0,True,found
+NP05,539,4,4,Study Design,18,False,19.0,True,found
+NP05,540,4.1,4.1,Overall Design,18,False,19.0,True,found
+NP05,541,4.2,4.2,Scientific Rationale for Study Design,18,False,19.0,True,found
+NP05,542,4.3,4.3,Justification for Dose,18,False,19.0,True,found
+NP05,543,4.4,4.4,End of Study Definition,19,False,20.0,True,found
+NP05,544,5,5,Study Population,20,False,21.0,True,found
+NP05,545,5.1,5.1,Inclusion Criteria,20,False,21.0,True,found
+NP05,546,5.2,5.2,Exclusion Criteria,20,False,21.0,True,found
+NP05,547,5.3,5.3,Lifestyle Considerations,21,False,22.0,True,found
+NP05,548,5.3.1,5.3.1,Substance Use,21,False,22.0,True,found
+NP05,549,5.4,5.4,Screen Failures,21,False,22.0,True,found
+NP05,550,5.5,5.5,"Criteria for Temporarily Delaying Enrollment, Randomization, or Administration of Study Intervention of a Participant",21,False,22.0,True,found
+NP05,551,6,6,Study Intervention(s) and Concomitant Therapy,22,False,23.0,True,found
+NP05,552,6.1,6.1,Study Intervention(s) Administered,22,False,23.0,True,found
+NP05,553,6.2,6.2,"Preparation, Handling, Storage, and Accountability",22,False,23.0,True,found
+NP05,554,6.3,6.3,Measures to Minimize Bias: Randomization and Blinding,22,False,23.0,True,found
+NP05,555,6.3.1,6.3.1,Stratification,22,False,23.0,True,found
+NP05,556,6.4,6.4,Study Intervention Compliance,22,False,23.0,True,found
+NP05,557,6.5,6.5,Dose Modification,22,False,23.0,True,found
+NP05,558,6.6,6.6,Continued Access to Study Intervention after the End of the Study,22,False,23.0,True,found
+NP05,559,6.7,6.7,Treatment of Overdose,23,False,24.0,True,found
+NP05,560,6.8,6.8,Concomitant Therapy,23,False,24.0,True,found
+NP05,561,6.8.1,6.8.1,Permitted Medications,23,False,24.0,True,found
+NP05,562,6.8.2,6.8.2,Prohibited Medications,23,False,24.0,True,found
+NP05,563,7,7,Discontinuation of Study Intervention and Participant Discontinuation/Withdrawal,24,False,25.0,True,found
+NP05,564,7.1,7.1,Discontinuation of Study Intervention,24,False,25.0,True,found
+NP05,565,7.1.1,7.1.1,Liver Chemistry Stopping Criteria,24,False,25.0,True,found
+NP05,566,7.1.2,7.1.2,Hypersensitivity,25,False,26.0,True,found
+NP05,567,7.2,7.2,Participant Discontinuation/Withdrawal from the Study,25,False,26.0,True,found
+NP05,568,7.3,7.3,Lost to Follow-Up,25,False,26.0,True,found
+NP05,569,8,8,Study Assessments and Procedures,26,False,27.0,True,found
+NP05,570,8.1,8.1,Efficacy Assessments,26,False,27.0,True,found
+NP05,571,8.2,8.2,Safety Assessments,26,False,27.0,True,found
+NP05,572,8.2.1,8.2.1,Physical Examinations,26,False,27.0,True,found
+NP05,573,8.2.2,8.2.2,Electrocardiograms,26,False,27.0,True,found
+NP05,574,8.2.3,8.2.3,Clinical Safety Laboratory Tests,27,False,28.0,True,found
+NP05,575,8.3,8.3,"Adverse Events, Serious Adverse Events, and Product Complaints",27,False,28.0,True,found
+NP05,576,8.3.1,8.3.1,Pregnancy,27,False,28.0,True,found
+NP05,577,8.3.2,8.3.2,Hypersensitivity Reactions,28,False,29.0,True,found
+NP05,578,8.3.3,8.3.3,Adverse Events of Special Interest,28,False,29.0,True,found
+NP05,579,8.4,8.4,Pharmacokinetics,29,False,30.0,True,found
+NP05,580,8.5,8.5,Pharmacodynamics,29,False,30.0,True,found
+NP05,581,9,9,Statistical Considerations,30,False,31.0,True,found
+NP05,582,9.1,9.1,Statistical Hypotheses,30,False,31.0,True,found
+NP05,583,9.2,9.2,Analyses Sets,30,False,31.0,True,found
+NP05,584,9.3,9.3,Statistical Analyses,30,False,31.0,True,found
+NP05,585,9.3.1,9.3.1,General Considerations,30,False,31.0,True,found
+NP05,586,9.3.2,9.3.2,Tertiary Analysis,30,False,31.0,True,found
+NP05,587,9.3.3,9.3.3,Safety Analyses,30,False,31.0,True,found
+NP05,588,9.3.4,9.3.4,Exploratory Pharmacokinetic Analyses,31,False,32.0,True,found
+NP05,589,9.4,9.4,Interim Analysis,31,False,32.0,True,found
+NP05,590,9.5,9.5,Sample Size Determination,31,False,32.0,True,found
+NP05,591,10,10,Supporting Documentation and Operational Considerations,32,False,33.0,True,found
+NP05,592,10.1,10.1,"Appendix 1: Regulatory, Ethical, and Study Oversight Considerations",32,False,33.0,True,found
+NP05,593,10.2,10.2,Appendix 2: Clinical Laboratory Tests,33,False,34.0,True,found
+NP05,594,10.2.1,10.2.1,Laboratory Samples to be Obtained at the Time of a Systemic Hypersensitivity Event,33,False,34.0,True,found
+NP05,595,10.3,10.3,"Appendix 3: Adverse Events and Serious Adverse Events: Definitions and Procedures for Recording, Evaluating, Follow-up, and Reporting",35,False,36.0,True,found
+NP05,596,10.4,10.4,Appendix 4: Contraceptive and Barrier Guidance,36,False,37.0,True,found
+NP05,597,10.4.1,10.4.1,Definitions,36,False,37.0,True,found
+NP05,598,10.4.2,10.4.2,Contraception Guidance,37,False,38.0,True,found
+NP05,599,10.5,10.5,Appendix 5: Liver Safety: Suggested Actions and Follow-up Assessments,39,False,40.0,True,found
+NP05,600,10.6,10.6,Appendix 6: Provisions for Changes in Study Conduct During Exceptional Circumstances,40,False,41.0,True,found
+NP05,601,10.7,10.7,Appendix 7: Abbreviations and Definitions,43,False,44.0,True,found
+NP05,602,11,11,References,45,False,46.0,True,found
+OA01,603,1,1,Protocol Summary,7,False,8.0,True,found
+OA01,604,1.1,1.1,Synopsis,7,False,8.0,True,found
+OA01,605,1.2,1.2,Schema,9,False,10.0,True,found
+OA01,606,1.3,1.3,Schedule of Activities (SoA),10,False,11.0,True,found
+OA01,607,2,2,Introduction,14,False,15.0,True,found
+OA01,608,2.1,2.1,Study Rationale,14,False,15.0,True,found
+OA01,609,2.2,2.2,Background,15,False,16.0,True,found
+OA01,610,2.3,2.3,Benefit/Risk Assessment,16,False,17.0,True,found
+OA01,611,2.3.1,2.3.1,Risk Assessment,16,False,17.0,True,found
+OA01,612,2.3.2,2.3.2,Benefit Assessment,17,False,18.0,True,found
+OA01,613,2.3.3,2.3.3,Overall Benefit: Risk Conclusion,17,False,18.0,True,found
+OA01,614,3,3,Objectives and Endpoints,18,False,19.0,True,found
+OA01,615,4,4,Study Design,19,False,20.0,True,found
+OA01,616,4.1,4.1,Scientific Rationale for Study Design,20,False,21.0,True,found
+OA01,617,4.2,4.2,Justification for Dose,20,False,21.0,True,found
+OA01,618,4.3,4.3,End of Study Definition,20,False,21.0,True,found
+OA01,619,5,5,Study Population,21,False,22.0,True,found
+OA01,620,5.1,5.1,Inclusion Criteria,21,False,22.0,True,found
+OA01,621,5.2,5.2,Exclusion Criteria,21,False,22.0,True,found
+OA01,622,5.3,5.3,Lifestyle Considerations,22,False,23.0,True,found
+OA01,623,6,6,Study Intervention,23,False,24.0,True,found
+OA01,624,6.1,6.1,Study Intervention(s) Administered,23,False,24.0,True,found
+OA01,625,6.1.1,6.1.1,Special Treatment Considerations,24,False,25.0,True,found
+OA01,626,6.2,6.2,Preparation/Handling/Storage/Accountability,25,False,26.0,True,found
+OA01,627,6.3,6.3,Measures to Minimize Bias: Randomization and Blinding,25,False,26.0,True,found
+OA01,628,6.4,6.4,Study Intervention Compliance,25,False,26.0,True,found
+OA01,629,6.5,6.5,Concomitant Therapy,25,False,26.0,True,found
+OA01,630,7,7,Discontinuation of Study Intervention and Participant Discontinuation/Withdrawal,26,False,27.0,True,found
+OA01,631,7.1,7.1,Discontinuation of Study Intervention,26,False,27.0,True,found
+OA01,632,8,8,Study Assessments and Procedures,27,False,28.0,True,found
+OA01,633,8.1,8.1,Safety Assessments,27,False,28.0,True,found
+OA01,634,8.1.1,8.1.1,Physical Examinations,27,False,28.0,True,found
+OA01,635,8.1.2,8.1.2,Electrocardiograms,27,False,28.0,True,found
+OA01,636,8.1.3,8.1.3,Clinical Safety Laboratory Assessments,27,False,28.0,True,found
+OA01,637,8.2,8.2,Adverse Events and Serious Adverse Events,27,False,28.0,True,found
+OA01,638,8.2.1,8.2.1,Infusion Site Reactions,27,False,28.0,True,found
+OA01,639,8.2.2,8.2.2,Hypersensitivity Reactions and Infusion-related Reactions,27,False,28.0,True,found
+OA01,640,8.2.3,8.2.3,Adverse Events of Special Interest,28,False,29.0,True,found
+OA01,641,8.3,8.3,Treatment of Overdose,28,False,29.0,True,found
+OA01,642,8.4,8.4,Pharmacokinetics,28,False,29.0,True,found
+OA01,643,8.5,8.5,Pharmacodynamics,29,False,30.0,True,found
+OA01,644,8.6,,,29,True,,False,redacted_title
+OA01,645,8.7,8.7,Immunogenicity Assessments,29,False,30.0,True,found
+OA01,646,9,9,Statistical Considerations,30,False,31.0,True,found
+OA01,647,9.1,9.1,Statistical Hypotheses,30,False,31.0,True,found
+OA01,648,9.2,9.2,Sample Size Determination,30,False,31.0,True,found
+OA01,649,9.3,9.3,Populations for Analyses,30,False,31.0,True,found
+OA01,650,9.4,9.4,Statistical Analyses,30,False,31.0,True,found
+OA01,651,9.4.1,9.4.1,General considerations,31,False,32.0,True,found
+OA01,652,9.4.2,9.4.2,Other Analyses,31,False,32.0,True,found
+OA01,653,9.5,9.5,Interim Analyses,32,False,33.0,True,found
+OA01,654,10,10,Supporting Documentation and Operational Considerations,33,False,34.0,True,found
+OA01,655,10.1,10.1,Appendix 1: Clinical Laboratory Tests,33,False,34.0,True,found
+OA01,656,10.2,10.2,Appendix 2: Definitions of Reproductive Requirements and Contraception Guidance,34,False,35.0,True,found
+OA01,657,10.3,10.3,Appendix 3: Recommended Laboratory Testing for Hypersensitivity Events and Infusion-related Reactions,37,False,38.0,True,found
+OA01,658,11,11,References,38,False,39.0,True,found
+OA02,659,1,1,Protocol Summary,7,False,8.0,True,found
+OA02,660,1.1,1.1,Synopsis,7,False,8.0,True,found
+OA02,661,1.2,1.2,Schema,9,False,10.0,True,found
+OA02,662,1.3,1.3,Schedule of Activities (SoA),10,False,11.0,True,found
+OA02,663,2,2,Introduction,12,False,13.0,True,found
+OA02,664,2.1,2.1,Study Rationale,12,False,13.0,True,found
+OA02,665,2.2,2.2,Background,12,False,13.0,True,found
+OA02,666,2.3,2.3,Benefit/Risk Assessment,15,False,16.0,True,found
+OA02,667,2.3.1,2.3.1,Risk Assessment,15,False,16.0,True,found
+OA02,668,2.3.2,2.3.2,Benefit Assessment,16,False,17.0,True,found
+OA02,669,2.3.3,2.3.3,Overall Benefit Risk Conclusion,16,False,17.0,True,found
+OA02,670,3,3,Objectives and Endpoints,17,False,18.0,True,found
+OA02,671,4,4,Study Design,18,False,19.0,True,found
+OA02,672,4.1,4.1,Overall Design,18,False,19.0,True,found
+OA02,673,4.2,4.2,Scientific Rationale for Study Design,18,False,19.0,True,found
+OA02,674,4.3,4.3,Justification for Dose,18,False,19.0,True,found
+OA02,675,4.4,4.4,End of Study Definition,19,False,20.0,True,found
+OA02,676,5,5,Study Population,20,False,21.0,True,found
+OA02,677,5.1,5.1,Inclusion Criteria,20,False,21.0,True,found
+OA02,678,5.2,5.2,Exclusion Criteria,20,False,21.0,True,found
+OA02,679,5.3,5.3,Lifestyle Considerations,20,False,21.0,True,found
+OA02,680,5.3.1,5.3.1,Meals and Dietary Restrictions,20,False,21.0,True,found
+OA02,681,5.3.2,5.3.2,Substance Use,20,False,21.0,True,found
+OA02,682,5.3.3,5.3.3,Reproductive and Contraception Requirements,21,False,22.0,True,found
+OA02,683,6,6,Study Intervention(s) and Concomitant Therapy,22,False,23.0,True,found
+OA02,684,6.1,6.1,Study Intervention(s) Administered,22,False,23.0,True,found
+OA02,685,6.2,6.2,"Preparation, Handling, Storage, and Accountability",22,False,23.0,True,found
+OA02,686,6.3,6.3,Measures to Minimize Bias: Randomization and Blinding,22,False,23.0,True,found
+OA02,687,6.4,6.4,Study Intervention Compliance,22,False,23.0,True,found
+OA02,688,6.5,6.5,Treatment of Overdose,22,False,23.0,True,found
+OA02,689,6.6,6.6,Concomitant Therapy,23,False,24.0,True,found
+OA02,690,7,7,Discontinuation of Study Intervention and Participant Discontinuation/Withdrawal,24,False,25.0,True,found
+OA02,691,8,8,Study Assessments and Procedures,25,False,26.0,True,found
+OA02,692,8.1,8.1,Efficacy Assessments,25,False,26.0,True,found
+OA02,693,8.2,8.2,Safety Assessments,25,False,26.0,True,found
+OA02,694,8.2.1,8.2.1,Physical Examinations,25,False,26.0,True,found
+OA02,695,8.2.2,8.2.2,Electrocardiograms,25,False,26.0,True,found
+OA02,696,8.2.3,8.2.3,Clinical Safety Laboratory Tests,25,False,26.0,True,found
+OA02,697,8.3,8.3,"Adverse Events, Serious Adverse Events, and Product Complaints",25,False,26.0,True,found
+OA02,698,8.4,8.4,Pharmacokinetics,25,False,26.0,True,found
+OA02,699,8.5,8.5,Pharmacodynamics,26,False,27.0,True,found
+OA02,700,9,9,Statistical Considerations,27,False,28.0,True,found
+OA02,701,9.1,9.1,Statistical Hypotheses,27,False,28.0,True,found
+OA02,702,9.2,9.2,Analyses Sets,27,False,28.0,True,found
+OA02,703,9.3,9.3,Statistical Analyses,27,False,28.0,True,found
+OA02,704,9.3.1,9.3.1,General Considerations,27,False,28.0,True,found
+OA02,705,9.3.2,9.3.2,Exploratory Endpoint Analysis,27,False,28.0,True,found
+OA02,706,9.3.3,9.3.3,Safety Analyses,27,False,28.0,True,found
+OA02,707,9.3.4,9.3.4,Other Analyses,28,False,29.0,True,found
+OA02,708,9.4,9.4,Interim Analysis,28,False,29.0,True,found
+OA02,709,9.5,9.5,Sample Size Determination,28,False,29.0,True,found
+OA02,710,10,10,Supporting Documentation and Operational Considerations,29,False,30.0,True,found
+OA02,711,10.1,10.1,Appendix 1: Clinical Laboratory Tests,29,False,30.0,True,found
+OA02,712,10.2,10.2,Appendix 2: Contraceptive and Barrier Guidance,30,False,31.0,True,found
+OA02,713,10.2.1,10.2.1,Definitions,30,False,31.0,True,found
+OA02,714,10.2.2,10.2.2,Contraception Guidance,31,False,32.0,True,found
+OA02,715,10.3,10.3,Appendix 3: List of Excluded Concomitant Medications,34,False,35.0,True,found
+OA02,716,10.4,10.4,Appendix 4: Provisions for Changes in Study C onduct During Exceptional Circumstances,37,False,38.0,True,found
+OA02,717,10.5,10.5,Appendix 5: Abbreviations,40,False,41.0,True,found
+OA02,718,11,11,References,43,False,44.0,True,found
+OA03,719,1,1,Protocol Summary,7,False,8.0,True,found
+OA03,720,,,Synopsis,7,False,8.0,True,found
+OA03,721,,,Schema,8,False,,False,redacted
+OA03,722,,,Schedule of Activities (SoA),9,False,10.0,True,found
+OA03,723,2,2,Introduction,13,False,14.0,True,found
+OA03,724,,,Study Rationale,13,False,14.0,True,found
+OA03,725,,,Background,13,False,14.0,True,found
+OA03,726,,,Benefit/Risk Assessment,14,False,15.0,True,found
+OA03,727,2.3.1,2.3.1,Risk Assessment,14,False,15.0,True,found
+OA03,728,2.3.2,2.3.2,Benefit Assessment,14,False,15.0,True,found
+OA03,729,2.3.3,2.3.3,Overall Benefit: Risk Conclusion,15,False,16.0,True,found
+OA03,730,3,3,Objectives and Endpoints,16,False,17.0,True,found
+OA03,731,4,4,Study Design,17,False,18.0,True,found
+OA03,732,,,Overall Design,17,False,18.0,True,found
+OA03,733,,,Scientific Rationale for Study Design,18,False,19.0,True,found
+OA03,734,,,Justification for Dose,18,False,19.0,True,found
+OA03,735,,,End of Study Definition,18,False,19.0,True,found
+OA03,736,5,5,Study Population,19,False,20.0,True,found
+OA03,737,,,Inclusion Criteria,19,False,20.0,True,found
+OA03,738,,,Exclusion Criteria,19,False,20.0,True,found
+OA03,739,,,Lifestyle Considerations,20,False,21.0,True,found
+OA03,740,6,6,Study Intervention,21,False,22.0,True,found
+OA03,741,,,Study Intervention(s) Administered,21,False,22.0,True,found
+OA03,742,,,Preparation/Handling/Storage/Accountability,21,False,22.0,True,found
+OA03,743,,,Measures to Minimize Bias: Randomization and Blinding,22,False,23.0,True,found
+OA03,744,,,Study Intervention Compliance,22,False,23.0,True,found
+OA03,745,,,Concomitant Therapy,22,False,23.0,True,found
+OA03,746,,,Dose Modification,22,False,23.0,True,found
+OA03,747,7,7,Discontinuation of Study Intervention and Participant Discontinuation/Withdrawal,24,False,25.0,True,found
+OA03,748,,,Discontinuation of Study Intervention,24,False,25.0,True,found
+OA03,749,8,8,Study Assessments and Procedures,25,False,26.0,True,found
+OA03,750,,,Safety Assessments,25,False,26.0,True,found
+OA03,751,8.1.1,8.1.1,Vital Signs,25,False,26.0,True,found
+OA03,752,8.1.2,8.1.2,Electrocardiograms,25,False,26.0,True,found
+OA03,753,8.1.3,8.1.3,Clinical Safety Laboratory Assessments,25,False,26.0,True,found
+OA03,754,,,Adverse Events and Serious Adverse Events,25,False,26.0,True,found
+OA03,755,,,Treatment of Overdose,25,False,26.0,True,found
+OA03,756,,,Pharmacokinetics,25,False,26.0,True,found
+OA03,757,,,Pharmacodynamics,26,False,27.0,True,found
+OA03,758,,,,26,True,,False,redacted_title
+OA03,759,9,9,Statistical Considerations,27,False,28.0,True,found
+OA03,760,,,Statistical Hypotheses,27,False,28.0,True,found
+OA03,761,,,Sample Size Determination,27,False,28.0,True,found
+OA03,762,,,Populations for Analyses,27,False,28.0,True,found
+OA03,763,,,Statistical Analyses,27,False,28.0,True,found
+OA03,764,9.4.1,9.4.1,General Considerations,28,False,29.0,True,found
+OA03,765,9.4.2,9.4.2,Pharmacokinetics and Pharmacodynamics,28,False,29.0,True,found
+OA03,766,9.4.3,9.4.3,Tertiary/Exploratory,28,False,29.0,True,found
+OA03,767,9.4.4,9.4.4,Biomarkers,28,False,29.0,True,found
+OA03,768,,,Interim Analyses,28,False,29.0,True,found
+OA03,769,10,10,Supporting Documentation and Operational Considerations,29,False,30.0,True,found
+OA03,770,,,Appendix 1: Clinical Laboratory Tests,29,False,30.0,True,found
+OA03,771,,,Appendix 2: Definitions of Reproductive Requirements and Contraceptive Guidance,30,False,31.0,True,found
+OA03,772,,,Appendix 3: Provisions for Changes in Study Conduct During Exceptional Circumstances,34,False,35.0,True,found
+OA03,773,,,Appendix 4: Abbreviations,37,False,38.0,True,found
+OA05,774,1,1,Protocol Summary,8,False,9.0,True,found
+OA05,775,1.1,1.1,Synopsis,8,False,9.0,True,found
+OA05,776,1.2,1.2,Schema,10,False,11.0,True,found
+OA05,777,1.3,1.3,Schedule of Activities (SoA),11,False,12.0,True,found
+OA05,778,2,2,Introduction,15,False,16.0,True,found
+OA05,779,2.1,2.1,Study Rationale,15,False,16.0,True,found
+OA05,780,2.2,2.2,Background,15,False,16.0,True,found
+OA05,781,2.3,2.3,Benefit/Risk Assessment,15,False,16.0,True,found
+OA05,782,2.3.1,2.3.1,Risk Assessment,15,False,16.0,True,found
+OA05,783,2.3.2,2.3.2,Benefit Assessment,16,False,17.0,True,found
+OA05,784,2.3.3,2.3.3,Overall Benefit Risk Conclusion,16,False,17.0,True,found
+OA05,785,3,3,"Objectives, Endpoints, and Estimands",17,False,18.0,True,found
+OA05,786,4,4,Study Design,18,False,19.0,True,found
+OA05,787,4.1,4.1,Overall Design,18,False,19.0,True,found
+OA05,788,4.2,4.2,Scientific Rationale for Study Design,18,False,19.0,True,found
+OA05,789,4.3,4.3,Justification for Dose,18,False,19.0,True,found
+OA05,790,4.4,4.4,End of Study Definition,19,False,20.0,True,found
+OA05,791,5,5,Study Population,20,False,21.0,True,found
+OA05,792,5.1,5.1,Inclusion Criteria,20,False,21.0,True,found
+OA05,793,5.2,5.2,Exclusion Criteria,20,False,21.0,True,found
+OA05,794,5.3,5.3,Lifestyle Considerations,21,False,22.0,True,found
+OA05,795,5.3.1,5.3.1,Substance Use,21,False,22.0,True,found
+OA05,796,5.4,5.4,Screen Failures,21,False,22.0,True,found
+OA05,797,5.5,5.5,"Criteria for Temporarily Delaying Enrollment, Randomization, or Administration of Study Intervention of a Participant",21,False,22.0,True,found
+OA05,798,6,6,Study Intervention(s) and Concomitant Therapy,22,False,23.0,True,found
+OA05,799,6.1,6.1,Study Intervention(s) Administered,22,False,23.0,True,found
+OA05,800,6.2,6.2,"Preparation, Handling, Storage, and Accountability",22,False,23.0,True,found
+OA05,801,6.3,6.3,Measures to Minimize Bias: Randomization and Blinding,22,False,23.0,True,found
+OA05,802,6.3.1,6.3.1,Stratification,22,False,23.0,True,found
+OA05,803,6.4,6.4,Study Intervention Compliance,22,False,23.0,True,found
+OA05,804,6.5,6.5,Dose Modification,22,False,23.0,True,found
+OA05,805,6.6,6.6,Continued Access to Study Intervention after the End of the Study,22,False,23.0,True,found
+OA05,806,6.7,6.7,Treatment of Overdose,23,False,24.0,True,found
+OA05,807,6.8,6.8,Concomitant Therapy,23,False,24.0,True,found
+OA05,808,6.8.1,6.8.1,Permitted Medications,23,False,24.0,True,found
+OA05,809,6.8.2,6.8.2,Prohibited Medications,23,False,24.0,True,found
+OA05,810,7,7,Discontinuation of Study Intervention and Participant Discontinuation/Withdrawal,24,False,25.0,True,found
+OA05,811,7.1,7.1,Discontinuation of Study Intervention,24,False,25.0,True,found
+OA05,812,7.1.1,7.1.1,Liver Chemistry Stopping Criteria,24,False,25.0,True,found
+OA05,813,7.1.2,7.1.2,Hypersensitivity,25,False,26.0,True,found
+OA05,814,7.2,7.2,Participant Discontinuation/Withdrawal from the Study,25,False,26.0,True,found
+OA05,815,7.3,7.3,Lost to Follow- Up,25,False,26.0,True,found
+OA05,816,8,8,Study Assessments and Procedures,26,False,27.0,True,found
+OA05,817,8.1,8.1,Efficacy Assessments,26,False,27.0,True,found
+OA05,818,8.2,8.2,Safety Assessment s,26,False,27.0,True,found
+OA05,819,8.2.1,8.2.1,Physical Examinations,26,False,27.0,True,found
+OA05,820,8.2.2,8.2.2,Electrocardio grams,26,False,27.0,True,found
+OA05,821,8.2.3,8.2.3,Clinical Safety Laboratory Tests,27,False,28.0,True,found
+OA05,822,8.3,8.3,"Adverse Events, Serious Adverse Events, and Product Complaints",27,False,28.0,True,found
+OA05,823,8.3.1,8.3.1,Pregnancy,27,False,28.0,True,found
+OA05,824,8.3.2,8.3.2,Hypersensitivity Reactions,28,False,29.0,True,found
+OA05,825,8.3.3,8.3.3,Adverse Events of Special Interest,28,False,29.0,True,found
+OA05,826,8.4,8.4,Pharmacokinetics,29,False,30.0,True,found
+OA05,827,8.5,8.5,Pharmacodynamics,29,False,30.0,True,found
+OA05,828,8.6,,Genetics,29,False,,False,redacted
+OA05,829,8.7,,Biomarkers,29,False,,False,redacted
+OA05,830,8.8,,Immunogenicity Assessments,29,False,,False,redacted
+OA05,831,8.9,,Medical Resource Utilization and Health Economics,29,False,,False,redacted
+OA05,832,9,9,Statistical Considerations,30,False,31.0,True,found
+OA05,833,9.1,9.1,Statistical Hypotheses,30,False,31.0,True,found
+OA05,834,9.2,9.2,Analyses Sets,30,False,31.0,True,found
+OA05,835,9.3,9.3,Statistical Analyses,30,False,31.0,True,found
+OA05,836,9.3.1,9.3.1,General Considerations,30,False,31.0,True,found
+OA05,837,9.3.2,9.3.2,Tertiary Analysis,30,False,31.0,True,found
+OA05,838,9.3.3,9.3.3,Safety Analyses,31,False,32.0,True,found
+OA05,839,9.3.4,9.3.4,Exploratory Pharmacokinetic Analyses,31,False,32.0,True,found
+OA05,840,9.4,9.4,InterimAnalysis,31,False,32.0,True,found
+OA05,841,9.5,9.5,Sample Size Determination,31,False,32.0,True,found
+OA05,842,10,10,Supporting Documentation and Operational Considerations,32,False,33.0,True,found
+OA05,843,10.1,10.1,"Appendix 1: Regulatory, Ethical, and Study Oversight Considerations",32,False,33.0,True,found
+OA05,844,10.2,10.2,Appendix 2: Clinical Laboratory Tests,33,False,34.0,True,found
+OA05,845,10.2.1,10.2.1,Laboratory Samples to be Obtained at the Time of a Systemic Hypersensitivity Event,33,False,34.0,True,found
+OA05,846,10.3,10.3,"Appendix 3: Adverse Events and Serious Adverse Events: Definitions and Procedures for Recording, Evaluating, Follow- up,and Reporting",34,False,35.0,True,found
+OA05,847,10.4,10.4,Appendix 4: Contraceptive and Barrier Guidance,35,False,36.0,True,found
+OA05,848,10.4.1,10.4.1,Definitions,35,False,36.0,True,found
+OA05,849,10.4.2,10.4.2,Contraception Guidance,35,False,36.0,True,found
+OA05,850,10.5,10.5,Appendix 5: Liver Safety: Suggested Actions and Follow-up Assessments,38,False,39.0,True,found
+OA05,851,10.6,10.6,Appendix 6: Provisions for Changes in Study Conduct During Exceptional Circumstances,39,False,40.0,True,found
+OA05,852,10.7,10.7,Appendix 7: Abbreviations and Definitions,42,False,43.0,True,found
+OA05,853,11,11,References,44,False,45.0,True,found

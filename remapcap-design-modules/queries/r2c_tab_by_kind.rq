@@ -1,0 +1,34 @@
+# R2c: Tropical Antibiotic 1 against what it inherits, per occurrence kind:
+#   states_own     components TAB states that no Core 4.1 or PANDA text states (shared: also in another DSA)
+#   restates       components TAB states that Core 4.1 or PANDA also state
+#   points_at      Core 4.1 / PANDA components in the sections TAB's inheritance statements resolve to
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rcap: <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/>
+SELECT ?kind ?how (COUNT(DISTINCT ?c) AS ?n) WHERE {
+  {
+    ?ax owl:annotatedSource rcap:DomainDesign_TAB ; owl:annotatedProperty rdfs:subClassOf ; owl:annotatedTarget ?r ;
+        rcap:occurrenceKind ?kind .
+    ?r owl:someValuesFrom ?c .
+    OPTIONAL {
+      VALUES ?up { rcap:CoreDesign_4_1 rcap:PandaDesign }
+      ?up rdfs:subClassOf [ owl:someValuesFrom ?c ] .
+      BIND (1 AS ?inUp)
+    }
+    OPTIONAL {
+      VALUES ?od { rcap:DomainDesign_CS rcap:DomainDesign_AB rcap:DomainDesign_IAV }
+      ?od rdfs:subClassOf [ owl:someValuesFrom ?c ] .
+      BIND (1 AS ?inOther)
+    }
+    BIND (IF(BOUND(?inUp), "restates", IF(BOUND(?inOther), "states_own_shared", "states_own_TAB_only")) AS ?how)
+  } UNION {
+    ?reading a rcap:InheritanceReading ; rcap:readingOf rcap:DomainDesign_TAB ; rcap:dependsOn ?c .
+    VALUES ?up { rcap:CoreDesign_4_1 rcap:PandaDesign }
+    ?ax owl:annotatedSource ?up ; owl:annotatedProperty rdfs:subClassOf ; owl:annotatedTarget ?r ;
+        rcap:occurrenceKind ?kind .
+    ?r owl:someValuesFrom ?c .
+    BIND ("points_at" AS ?how)
+  }
+}
+GROUP BY ?kind ?how
+ORDER BY ?kind ?how

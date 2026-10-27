@@ -1,0 +1,177 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rcap: <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+rcap:SharedDSA_AB_MD a owl:Class ;
+    rdfs:label "Shared by Antibiotic Domain-Specific Appendix 4, Macrolide Duration Domain-Specific Appendix 4 (no Core, no PANDA)" ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( obo:OBI_0500001 [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c93d0ed0860 ] ) ] ;
+    rcap:note "B-shared: derived from the documents' shared components; no document states this grouping." .
+
+rcap:SharedDSA_AB_TAB a owl:Class ;
+    rdfs:label "Shared by Antibiotic Domain-Specific Appendix 4, Tropical Antibiotic Domain-Specific Appendix 1 (no Core, no PANDA)" ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( obo:OBI_0500001 [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c024c5c7541 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c0a14a0953a ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c1465e48eba ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c15f4b96ff8 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c23237d2b0f ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c2d16af401c ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c3a328f808d ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c3f97b8968e ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c45c4bf1083 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c52c26d1d8a ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c535284f31d ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c53bb58e5f4 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c55d9a5de16 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c57419c1d38 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c6591df809e ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c7b592a7e46 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c7bbb84cd18 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c7c759a1608 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c94270b8f05 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c969a345043 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:ca35d9ae3e3 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:ca58ce41d12 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cb0ae4a3b67 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cbac53fc942 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cbd968086d6 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:ccbc477aff8 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cd52a12348a ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cd7c91b15f5 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cde7d81c44b ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cdef6c52c73 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cf7a01ea34e ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cf8d30209fa ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cf96154a40f ] ) ] ;
+    rcap:note "B-shared: derived from the documents' shared components; no document states this grouping." .
+
+rcap:SharedDSA_CS_AB_TAB_IAV_MD_IG_MV_END_IIM a owl:Class ;
+    rdfs:label "Shared by Antibiotic Domain-Specific Appendix 4, Corticosteroid Domain-Specific Appendix 6, Endothelial Modulation Domain-Specific Appendix 2, Influenza Antiviral Domain-Specific Appendix 4, COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4, Influenza Immune Modulation Domain-Specific Appendix 2.1, Macrolide Duration Domain-Specific Appendix 4, Mechanical Ventilation Domain-Specific Appendix 2, Tropical Antibiotic Domain-Specific Appendix 1 (no Core, no PANDA)" ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( obo:OBI_0500001 [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c324186f8e2 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c85858c8378 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cc4a3982cda ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cc4efc1a692 ] ) ] ;
+    rcap:note "B-shared: derived from the documents' shared components; no document states this grouping." .
+
+rcap:SharedDSA_CS_IAV a owl:Class ;
+    rdfs:label "Shared by Corticosteroid Domain-Specific Appendix 6, Influenza Antiviral Domain-Specific Appendix 4 (no Core, no PANDA)" ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( obo:OBI_0500001 [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c49cafec9f1 ] ) ] ;
+    rcap:note "B-shared: derived from the documents' shared components; no document states this grouping." .
+
+rcap:SharedDSA_CS_IIM a owl:Class ;
+    rdfs:label "Shared by Corticosteroid Domain-Specific Appendix 6, Influenza Immune Modulation Domain-Specific Appendix 2.1 (no Core, no PANDA)" ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( obo:OBI_0500001 [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cee7d1a66ec ] ) ] ;
+    rcap:note "B-shared: derived from the documents' shared components; no document states this grouping." .
+
+rcap:SharedDSA_CS_TAB a owl:Class ;
+    rdfs:label "Shared by Corticosteroid Domain-Specific Appendix 6, Tropical Antibiotic Domain-Specific Appendix 1 (no Core, no PANDA)" ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( obo:OBI_0500001 [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c30b25c536b ] ) ] ;
+    rcap:note "B-shared: derived from the documents' shared components; no document states this grouping." .
+
+rcap:SharedDSA_END_IIM a owl:Class ;
+    rdfs:label "Shared by Endothelial Modulation Domain-Specific Appendix 2, Influenza Immune Modulation Domain-Specific Appendix 2.1 (no Core, no PANDA)" ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( obo:OBI_0500001 [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c62d08e12d8 ] ) ] ;
+    rcap:note "B-shared: derived from the documents' shared components; no document states this grouping." .
+
+rcap:SharedDSA_IAV_IIM a owl:Class ;
+    rdfs:label "Shared by Influenza Antiviral Domain-Specific Appendix 4, Influenza Immune Modulation Domain-Specific Appendix 2.1 (no Core, no PANDA)" ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( obo:OBI_0500001 [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c9e40a2b775 ] ) ] ;
+    rcap:note "B-shared: derived from the documents' shared components; no document states this grouping." .
+
+rcap:SharedDSA_IG_END a owl:Class ;
+    rdfs:label "Shared by Endothelial Modulation Domain-Specific Appendix 2, COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4 (no Core, no PANDA)" ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( obo:OBI_0500001 [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c37a3fade76 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c486a11a14d ] ) ] ;
+    rcap:note "B-shared: derived from the documents' shared components; no document states this grouping." .
+
+rcap:SharedDSA_IG_IIM a owl:Class ;
+    rdfs:label "Shared by COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4, Influenza Immune Modulation Domain-Specific Appendix 2.1 (no Core, no PANDA)" ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( obo:OBI_0500001 [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c4ee594ef26 ] ) ] ;
+    rcap:note "B-shared: derived from the documents' shared components; no document states this grouping." .
+
+rcap:SharedDSA_TAB_END a owl:Class ;
+    rdfs:label "Shared by Endothelial Modulation Domain-Specific Appendix 2, Tropical Antibiotic Domain-Specific Appendix 1 (no Core, no PANDA)" ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( obo:OBI_0500001 [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:ce575914efd ] ) ] ;
+    rcap:note "B-shared: derived from the documents' shared components; no document states this grouping." .
+
+rcap:SharedDSA_TAB_IG a owl:Class ;
+    rdfs:label "Shared by COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4, Tropical Antibiotic Domain-Specific Appendix 1 (no Core, no PANDA)" ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( obo:OBI_0500001 [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cc905bfb5f1 ] ) ] ;
+    rcap:note "B-shared: derived from the documents' shared components; no document states this grouping." .
+
+<https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-shared> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/components> .
+

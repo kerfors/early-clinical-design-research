@@ -1,0 +1,38 @@
+doc,para_idx,section_path,label,inline_value,variable_spans
+MPT,52,Title Page,Protocol Title,,
+MPT,104,Title Page,Study Phase,[study phase],[study phase]
+MPT,114,Title Page,[Acronym],,[Acronym]:
+MPT,116,Title Page,Sponsor Name,,
+MPT,119,Title Page,Legal Registered Address,,
+MPT,122,Title Page,Regulatory Agency Identifier Number(s),,
+MPT,127,Title Page,Sponsor Signatory,,
+MPT,129,Title Page,Medical Monitor Name and Contact Information [will be provided separately OR can be found in XX],,[will be provided separately OR can be found in XX]
+MPT,179,Title Page > Protocol Amendment Summary of Changes Table,Amendment [X] (Day-Month-Year),,[X] (Day-Month-Year)
+MPT,185,Title Page > Protocol Amendment Summary of Changes Table,Overall Rationale for the Amendment,,
+MPT,320,1 Protocol Summary > 1.1 Synopsis,Protocol Title,,
+MPT,322,1 Protocol Summary > 1.1 Synopsis,Brief Title,,
+MPT,324,1 Protocol Summary > 1.1 Synopsis,Rationale,,
+MPT,327,1 Protocol Summary > 1.1 Synopsis,"Objectives, Endpoints, and Estimands",,
+MPT,332,1 Protocol Summary > 1.1 Synopsis,Overall Design,,
+MPT,382,1 Protocol Summary > 1.1 Synopsis,Number of Participants,,
+MPT,397,1 Protocol Summary > 1.1 Synopsis,Intervention Groups and Duration,,
+MPT,399,1 Protocol Summary > 1.1 Synopsis,Data Monitoring/Other Committee,[Yes/No],[Yes/No]
+MPT,1744,10 Supporting Documentation and Operational Considerations > 10.5 Appendix 5: Genetics,Use/Analysis of DNA,,
+MPT,1809,10 Supporting Documentation and Operational Considerations > 10.10 Appendix 10: Protocol Amendment History,Amendment [amendment number],([date]),[date]
+ISA,49,Title Page,Intervention Specific Appendix Title,,
+ISA,96,Title Page,Brief Title,,
+ISA,109,Title Page,Study Phase,[study phase],[study phase]
+ISA,119,Title Page,[Acronym],,[Acronym]:
+ISA,121,Title Page,Intervention Owner Name,,
+ISA,122,Title Page,Legal Registered Address,,
+ISA,130,Title Page,Intervention owner Signatory,,
+ISA,144,Title Page,Medical Monitor Name and Contact Information [will be provided separately OR can be found in XX],,[will be provided separately OR can be found in XX]
+ISA,193,Title Page > ISA Protocol Amendment Summary of Changes Table,Amendment [X] (Day-Month-Year),,[X] (Day-Month-Year)
+ISA,198,Title Page > ISA Protocol Amendment Summary of Changes Table,Overall Rationale for the Amendment,,
+ISA,304,1 Protocol Summary > 1.1 Synopsis,Protocol Title,,
+ISA,308,1 Protocol Summary > 1.1 Synopsis,Rationale,,
+ISA,310,1 Protocol Summary > 1.1 Synopsis,"Objectives, Endpoints, and Estimands",,"Endpoints, and Estimands:"
+ISA,314,1 Protocol Summary > 1.1 Synopsis,Overall Design,,
+ISA,322,1 Protocol Summary > 1.1 Synopsis,Number of Participants,,
+ISA,332,1 Protocol Summary > 1.1 Synopsis,Intervention Groups and Duration,,
+ISA,1047,10 Supporting Documentation and Operational Considerations > 10.9 Appendix 9: ISA Protocol Amendment History,Amendment [amendment number],([date]),[date]

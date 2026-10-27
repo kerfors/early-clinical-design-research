@@ -1,0 +1,13 @@
+# R2a: what a DSA inherits before it states anything: the components of Core 4.1 (V-current) and of
+# PANDA 1.0, per occurrence kind. A component with occurrences of two kinds is counted under each.
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rcap: <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/>
+SELECT ?kind (COUNT(DISTINCT ?c) AS ?n) WHERE {
+  VALUES ?d { rcap:CoreDesign_4_1 rcap:PandaDesign }
+  ?ax owl:annotatedSource ?d ; owl:annotatedProperty rdfs:subClassOf ; owl:annotatedTarget ?r ;
+      rcap:occurrenceKind ?kind .
+  ?r owl:someValuesFrom ?c .
+}
+GROUP BY ?kind
+ORDER BY ?kind

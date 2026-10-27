@@ -1,0 +1,7 @@
+test,pattern,meaning,source
+backref,core protocol,the sentence points at the Core Protocol or the Core Protocol documents,agreed 2026-10-25
+defers_only,^(please )?(refer to|see)\b,the sentence only refers the reader to another document,agreed 2026-10-25
+negation,not applicable|no additional|not considered possible|will not be incorporated|no domain-specific|there are no|not required,the section states that nothing is specified,agreed 2026-10-25
+modal,\bmay\b,permission not decision (default rows),agreed 2026-10-25
+state,\b(Moderate|Severe)\b,illness-severity state named in 8.1.2 or an arm qualifier,agreed 2026-10-25
+state_only,\((Moderate|Severe) State only\),arm restricted to one state in 8.3.1,agreed 2026-10-25

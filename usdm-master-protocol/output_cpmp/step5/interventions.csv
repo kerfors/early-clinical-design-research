@@ -1,0 +1,147 @@
+doc,intervention,attribute,attribute_key,value,redacted,page,value_template
+BP01,LY3016859,Type,type,Biologic,False,23,Biologic
+BP01,Placebo,Type,type,Not applicable,False,23,Not applicable
+BP01,LY3016859,Dose Formulation,doseformulation,Lyophilized powder,False,23,Lyophilized powder
+BP01,Placebo,Dose Formulation,doseformulation,0.9% Sodium chloride solution,False,23,0.9% Sodium chloride solution
+BP01,LY3016859,Unit Dose Strength(s),unitdosestrength(s),75 mg/vial,False,23,75 mg/vial
+BP01,Placebo,Unit Dose Strength(s),unitdosestrength(s),Not applicable,False,23,Not applicable
+BP01,LY3016859,Dosage Level(s),dosagelevel(s),750 mg starting dose 500 mg subsequent doses,False,23,750 mg starting dose 500 mg subsequent doses
+BP01,Placebo,Dosage Level(s),dosagelevel(s),Not applicable,False,23,Not applicable
+BP01,LY3016859,Route of Administration,routeofadministration,1-hour IV infusion,False,23,1-hour IV infusion
+BP01,Placebo,Route of Administration,routeofadministration,1-hour IV infusion,False,23,1-hour IV infusion
+BP01,LY3016859,Use,use,experimental,False,23,experimental
+BP01,Placebo,Use,use,placebo,False,23,placebo
+BP01,LY3016859,IMP and NIMP,impandnimp,IMP,False,23,IMP
+BP01,Placebo,IMP and NIMP,impandnimp,NIMP,False,23,NIMP
+BP02,LY3526318,DoseFormulation,doseformulation,Capsule,False,22,Capsule
+BP02,Placebo,DoseFormulation,doseformulation,Capsule,False,22,Capsule
+BP02,LY3526318,UnitDoseStrength(s),unitdosestrength(s),,True,22,
+BP02,Placebo,UnitDoseStrength(s),unitdosestrength(s),,True,22,
+BP02,LY3526318,DosageLevel(s),dosagelevel(s),,True,22,
+BP02,Placebo,DosageLevel(s),dosagelevel(s),,True,22,
+BP02,LY3526318,RouteofAdministration,routeofadministration,PO,False,22,PO
+BP02,Placebo,RouteofAdministration,routeofadministration,PO,False,22,PO
+BP02,LY3526318,Use,use,experimental,False,22,experimental
+BP02,Placebo,Use,use,placebo,False,22,placebo
+BP02,LY3526318,IMPandNIMP,impandnimp,IMP,False,22,IMP
+BP02,Placebo,IMPandNIMP,impandnimp,NIMP,False,22,NIMP
+BP03,LY3556050,Dose Formulation,doseformulation,capsule,False,19,capsule
+BP03,Placebo,Dose Formulation,doseformulation,capsule,False,19,capsule
+BP03,LY3556050,Unit Dose Strength(s),unitdosestrength(s),,True,19,
+BP03,Placebo,Unit Dose Strength(s),unitdosestrength(s),notapplicable,False,19,notapplicable
+BP03,LY3556050,Dosage Level(s),dosagelevel(s),"600 mg BID, approximately every 12 hours",True,19,"600 mg BID, approximately every 12 hours"
+BP03,Placebo,Dosage Level(s),dosagelevel(s),placebo to match BID,False,19,placebo to match BID
+BP03,LY3556050,Route of Administration,routeofadministration,oral,False,19,oral
+BP03,Placebo,Route of Administration,routeofadministration,or al,False,19,or al
+BP03,LY3556050,Use,use,experimental,False,19,experimental
+BP03,Placebo,Use,use,placebo,False,19,placebo
+BP03,LY3556050,IMP and NIMP,impandnimp,IMP,False,19,IMP
+BP03,Placebo,IMP and NIMP,impandnimp,IMP and NIMP,False,19,IMP and NIMP
+BP03,LY3556050,Sourcing,sourcing,LY3556050 fromLilly,False,19,{compound} fromLilly
+BP03,Placebo,Sourcing,sourcing,"Placebo will be packaged, labeled, distributed, and dispensed as IMP by Lilly.",False,19,"Placebo will be packaged, labeled, distributed, and dispensed as IMP by Lilly."
+BP03,LY3556050,Packaging and Labeling,packagingandlabeling,in bottles,False,19,in bottles
+BP03,Placebo,Packaging and Labeling,packagingandlabeling,in bottles,False,19,in bottles
+BP05,LY3857210,Dosage Level(s),dosagelevel(s),45 mg daily,False,22,45 mg daily
+BP05,Placebo,Dosage Level(s),dosagelevel(s),,False,22,
+BP05,LY3857210,Route of Administration,routeofadministration,PO,False,22,PO
+BP05,Placebo,Route of Administration,routeofadministration,PO,False,22,PO
+NP01,LY3016859,Type,type,Biologic,False,23,Biologic
+NP01,Placebo,Type,type,Not applicable,False,23,Not applicable
+NP01,LY3016859,Dose Formulation,doseformulation,Lyophilized powder reconstituted with sterile water,False,23,Lyophilized powder reconstituted with sterile water
+NP01,Placebo,Dose Formulation,doseformulation,0.9% Sodium chloride solution,False,23,0.9% Sodium chloride solution
+NP01,LY3016859,Unit Dose Strength(s),unitdosestrength(s),75 mg/vial,False,23,75 mg/vial
+NP01,Placebo,Unit Dose Strength(s),unitdosestrength(s),Not applicable,False,23,Not applicable
+NP01,LY3016859,Dosage Level(s),dosagelevel(s),750 mg starting dose 500 mg subsequent doses,False,23,750 mg starting dose 500 mg subsequent doses
+NP01,Placebo,Dosage Level(s),dosagelevel(s),Not applicable,False,23,Not applicable
+NP01,LY3016859,Route of Administration,routeofadministration,1 hour IV infusion,False,23,1 hour IV infusion
+NP01,Placebo,Route of Administration,routeofadministration,1 hour IV infusion,False,23,1 hour IV infusion
+NP01,LY3016859,Use,use,experimental,False,23,experimental
+NP01,Placebo,Use,use,placebo,False,23,placebo
+NP01,LY3016859,IMP and NIMP,impandnimp,IMP and NIMP,False,23,IMP and NIMP
+NP01,Placebo,IMP and NIMP,impandnimp,IMP and NIMP,False,23,IMP and NIMP
+NP01,LY3016859,Sourcing,sourcing,"LY3016859 from Lilly If needed, saline for reconstitution of IMP will be site sourced",False,23,"{compound} from Lilly If needed, saline for reconstitution of IMP will be site sourced"
+NP01,Placebo,Sourcing,sourcing,"Placebo will be procured, packaged, labeled, distributed and dispensed as IMP by Lilly",False,23,"Placebo will be procured, packaged, labeled, distributed and dispensed as IMP by Lilly"
+NP01,LY3016859,Packaging and Labeling,packagingandlabeling,The lyophilized powder and sterile diluent for infusion will be provided in separate glass vials. Each vial will be labeled as required per country requirement,False,23,The lyophilized powder and sterile diluent for infusion will be provided in separate glass vials. Each vial will be labeled as required per country requirement
+NP01,Placebo,Packaging and Labeling,packagingandlabeling,Placebo will be provided in a glass vial. Each vial will be labeled as required per country requirement,False,23,Placebo will be provided in a glass vial. Each vial will be labeled as required per country requirement
+NP02,LY3526318,DoseFormulation,doseformulation,Capsule,False,22,Capsule
+NP02,Placebo,DoseFormulation,doseformulation,Capsule,False,22,Capsule
+NP02,LY3526318,UnitDoseStrength(s),unitdosestrength(s),,True,22,
+NP02,Placebo,UnitDoseStrength(s),unitdosestrength(s),,True,22,
+NP02,LY3526318,DosageLevel(s),dosagelevel(s),,True,22,
+NP02,Placebo,DosageLevel(s),dosagelevel(s),,True,22,
+NP02,LY3526318,Route of Administration,routeofadministration,PO,False,22,PO
+NP02,Placebo,Route of Administration,routeofadministration,PO,False,22,PO
+NP02,LY3526318,Use,use,experimental,False,22,experimental
+NP02,Placebo,Use,use,placebo,False,22,placebo
+NP02,LY3526318,IMPandNIMP,impandnimp,IMP,False,22,IMP
+NP02,Placebo,IMPandNIMP,impandnimp,NIMP,False,22,NIMP
+NP03,LY3556050,Dose Formulation,doseformulation,capsule,False,22,capsule
+NP03,Placebo,Dose Formulation,doseformulation,capsule,False,22,capsule
+NP03,LY3556050,Unit Dose Strength(s),unitdosestrength(s),200 mg/capsule,False,22,200 mg/capsule
+NP03,Placebo,Unit Dose Strength(s),unitdosestrength(s),not applicable,False,22,not applicable
+NP03,LY3556050,Dosage Level(s),dosagelevel(s),"mg BID, approximately C every 12 hours",True,22,"mg BID, approximately C every 12 hours"
+NP03,Placebo,Dosage Level(s),dosagelevel(s),placebo to match BID,False,22,placebo to match BID
+NP03,LY3556050,Route of Administration,routeofadministration,oral,False,22,oral
+NP03,Placebo,Route of Administration,routeofadministration,or al,False,22,or al
+NP03,LY3556050,Use,use,experimental,False,22,experimental
+NP03,Placebo,Use,use,placebo,False,22,placebo
+NP03,LY3556050,IMPandNIMP,impandnimp,IMP,False,22,IMP
+NP03,Placebo,IMPandNIMP,impandnimp,IMPandNIMP,False,22,IMPandNIMP
+NP03,LY3556050,Sourcing,sourcing,LY3556050 from Lilly,False,22,{compound} from Lilly
+NP03,Placebo,Sourcing,sourcing,"Placebo will be packaged, labeled, distributed, and dispensed as IMP by Lilly.",False,22,"Placebo will be packaged, labeled, distributed, and dispensed as IMP by Lilly."
+NP03,LY3556050,Packaging and Labeling,packagingandlabeling,inbottles,False,22,inbottles
+NP03,Placebo,Packaging and Labeling,packagingandlabeling,inbottles,False,22,inbottles
+NP05,LY3857210,Dosage Level(s),dosagelevel(s),45 mg daily,False,23,45 mg daily
+NP05,Placebo,Dosage Level(s),dosagelevel(s),,False,23,
+NP05,LY3857210,Route of Administration,routeofadministration,PO,False,23,PO
+NP05,Placebo,Route of Administration,routeofadministration,PO,False,23,PO
+OA01,LY3016859,Type,type,Biologic,False,24,Biologic
+OA01,Placebo,Type,type,Not applicable,False,24,Not applicable
+OA01,LY3016859,Dose Formulation,doseformulation,Lyophilized powder reconstituted with sterile water,False,24,Lyophilized powder reconstituted with sterile water
+OA01,Placebo,Dose Formulation,doseformulation,0.9% Sodium chloride solution,False,24,0.9% Sodium chloride solution
+OA01,LY3016859,Unit Dose Strength(s),unitdosestrength(s),75 mg/vial,False,24,75 mg/vial
+OA01,Placebo,Unit Dose Strength(s),unitdosestrength(s),Not applicable,False,24,Not applicable
+OA01,LY3016859,Dosage Level(s),dosagelevel(s),750 mg starting dose 500 mg subsequent doses,False,24,750 mg starting dose 500 mg subsequent doses
+OA01,Placebo,Dosage Level(s),dosagelevel(s),Not applicable,False,24,Not applicable
+OA01,LY3016859,Route of Administration,routeofadministration,1 hour IV infusion,False,24,1 hour IV infusion
+OA01,Placebo,Route of Administration,routeofadministration,1 hour IV infusion,False,24,1 hour IV infusion
+OA01,LY3016859,Use,use,experimental,False,24,experimental
+OA01,Placebo,Use,use,placebo,False,24,placebo
+OA01,LY3016859,IMP and NIMP,impandnimp,IMP and NIMP,False,24,IMP and NIMP
+OA01,Placebo,IMP and NIMP,impandnimp,IMP and NIMP,False,24,IMP and NIMP
+OA01,LY3016859,Sourcing,sourcing,"LY3016859 from Lilly If needed, saline for reconstitution of IMP will be site sourced.",False,24,"{compound} from Lilly If needed, saline for reconstitution of IMP will be site sourced."
+OA01,Placebo,Sourcing,sourcing,"Placebo will be procured, packaged, labeled, distributed and dispensed as IMP by Lilly",False,24,"Placebo will be procured, packaged, labeled, distributed and dispensed as IMP by Lilly"
+OA01,LY3016859,Packaging and Labeling,packagingandlabeling,The lyophilized powder and sterile diluent for infusion will be provided in separate glass vials. Each vial will be labeled as required per country requirement,False,24,The lyophilized powder and sterile diluent for infusion will be provided in separate glass vials. Each vial will be labeled as required per country requirement
+OA01,Placebo,Packaging and Labeling,packagingandlabeling,Placebo will be provided in a glass vial. Each vial will be labeled as required per country requirement,False,24,Placebo will be provided in a glass vial. Each vial will be labeled as required per country requirement
+OA02,LY3526318,DoseFormulation,doseformulation,Capsule,False,23,Capsule
+OA02,Placebo,DoseFormulation,doseformulation,Capsule,False,23,Capsule
+OA02,LY3526318,UnitDoseStrength(s),unitdosestrength(s),,True,23,
+OA02,Placebo,UnitDoseStrength(s),unitdosestrength(s),,True,23,
+OA02,LY3526318,DosageLevel(s),dosagelevel(s),,True,23,
+OA02,Placebo,DosageLevel(s),dosagelevel(s),,True,23,
+OA02,LY3526318,Route of Administration,routeofadministration,PO,False,23,PO
+OA02,Placebo,Route of Administration,routeofadministration,PO,False,23,PO
+OA02,LY3526318,Use,use,experimental,False,23,experimental
+OA02,Placebo,Use,use,placebo,False,23,placebo
+OA02,LY3526318,IMPandNIMP,impandnimp,IMP,False,23,IMP
+OA02,Placebo,IMPandNIMP,impandnimp,NIMP,False,23,NIMP
+OA03,LY3556050,Dose Formulation,doseformulation,capsule,False,22,capsule
+OA03,Placebo,Dose Formulation,doseformulation,capsule,False,22,capsule
+OA03,LY3556050,Unit Dose Strength(s),unitdosestrength(s),/capsule,True,22,/capsule
+OA03,Placebo,Unit Dose Strength(s),unitdosestrength(s),Not applicable,False,22,Not applicable
+OA03,LY3556050,Dosage Level(s),dosagelevel(s),"mg BID, approximately every 12 hours",True,22,"mg BID, approximately every 12 hours"
+OA03,Placebo,Dosage Level(s),dosagelevel(s),Placebo match BID,False,22,Placebo match BID
+OA03,LY3556050,Route of Administration,routeofadministration,oral,False,22,oral
+OA03,Placebo,Route of Administration,routeofadministration,oral,False,22,oral
+OA03,LY3556050,Use,use,experimental,False,22,experimental
+OA03,Placebo,Use,use,placebo,False,22,placebo
+OA03,LY3556050,IMP and NIMP,impandnimp,IMP,False,22,IMP
+OA03,Placebo,IMP and NIMP,impandnimp,IMP and NIMP,False,22,IMP and NIMP
+OA03,LY3556050,Sourcing,sourcing,LY3556050 from Lilly,False,22,{compound} from Lilly
+OA03,Placebo,Sourcing,sourcing,"Placebo will be packaged, labeled, distributed, and dispensed as IMP by Lilly",False,22,"Placebo will be packaged, labeled, distributed, and dispensed as IMP by Lilly"
+OA03,LY3556050,Packaging and Labeling,packagingandlabeling,In bottles,False,22,In bottles
+OA03,Placebo,Packaging and Labeling,packagingandlabeling,In bottles,False,22,In bottles
+OA05,LY3857210,Dosage Level(s),dosagelevel(s),45 mg daily,False,23,45 mg daily
+OA05,Placebo,Dosage Level(s),dosagelevel(s),,False,23,
+OA05,LY3857210,Route of Administration,routeofadministration,PO,False,23,PO
+OA05,Placebo,Route of Administration,routeofadministration,PO,False,23,PO

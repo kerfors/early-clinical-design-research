@@ -1,0 +1,97 @@
+compound,disease,isa,delegated,in_isa
+LY3016859,CLBP,BP01,Chemistry,"own row: V4, V6, V801, V802, V803 (ISA lab table: 1)"
+LY3016859,CLBP,BP01,ECG,"own row: V5, V7, V803"
+LY3016859,CLBP,BP01,Exploratory biomarker samples,–
+LY3016859,CLBP,BP01,HbA1c,"own row: V3, V7, V803, ED"
+LY3016859,CLBP,BP01,Hematology,"own row: V801, V802, V803"
+LY3016859,CLBP,BP01,Lipid panel,–
+LY3016859,CLBP,BP01,TSH,–
+LY3016859,CLBP,BP01,Urinalysis,own row: V803
+LY3016859,DPNP,NP01,Chemistry,"own row: V4, V6, V801, V802, V803 (ISA lab table: 1)"
+LY3016859,DPNP,NP01,ECG,"own row: V5, V7, V803"
+LY3016859,DPNP,NP01,Exploratory biomarker samples,–
+LY3016859,DPNP,NP01,HbA1c,"own row: V3, V7, V803, ED"
+LY3016859,DPNP,NP01,Hematology,"own row: V801, V802, V803"
+LY3016859,DPNP,NP01,Lipid panel,–
+LY3016859,DPNP,NP01,TSH,–
+LY3016859,DPNP,NP01,Urinalysis,own row: V803
+LY3016859,OA,OA01,Chemistry,"own row: V4, V6, V801, V802, V803 (ISA lab table: 1)"
+LY3016859,OA,OA01,ECG,"own row: V5, V7, V803"
+LY3016859,OA,OA01,Exploratory biomarker samples,–
+LY3016859,OA,OA01,HbA1c,"own row: V3, V7, V803, ED"
+LY3016859,OA,OA01,Hematology,"own row: V801, V802, V803"
+LY3016859,OA,OA01,Lipid panel,–
+LY3016859,OA,OA01,TSH,–
+LY3016859,OA,OA01,Urinalysis,own row: V803
+LY3526318,CLBP,BP02,Chemistry,"own row: V4, V5, V6, V7"
+LY3526318,CLBP,BP02,ECG,"own row: V5, V7, ED"
+LY3526318,CLBP,BP02,Exploratory biomarker samples,–
+LY3526318,CLBP,BP02,HbA1c,"own row: V3, V7, ED"
+LY3526318,CLBP,BP02,Hematology,"own row: V4, V5, V6, V7"
+LY3526318,CLBP,BP02,Lipid panel,"own row: V4, V5, V6, V7"
+LY3526318,CLBP,BP02,TSH,–
+LY3526318,CLBP,BP02,Urinalysis,own row: V7
+LY3526318,DPNP,NP02,Chemistry,"own row: V4, V5, V6, V7"
+LY3526318,DPNP,NP02,ECG,"own row: V5, V7, ED"
+LY3526318,DPNP,NP02,Exploratory biomarker samples,–
+LY3526318,DPNP,NP02,HbA1c,"own row: V3, V7, ED"
+LY3526318,DPNP,NP02,Hematology,"own row: V4, V5, V6, V7"
+LY3526318,DPNP,NP02,Lipid panel,"own row: V4, V5, V6, V7"
+LY3526318,DPNP,NP02,TSH,–
+LY3526318,DPNP,NP02,Urinalysis,own row: V7
+LY3526318,OA,OA02,Chemistry,"own row: V4, V5, V6, V7"
+LY3526318,OA,OA02,ECG,"own row: V5, V7, ED"
+LY3526318,OA,OA02,Exploratory biomarker samples,–
+LY3526318,OA,OA02,HbA1c,"own row: V3, V7, ED"
+LY3526318,OA,OA02,Hematology,"own row: V4, V5, V6, V7"
+LY3526318,OA,OA02,Lipid panel,"own row: V4, V5, V6, V7"
+LY3526318,OA,OA02,TSH,–
+LY3526318,OA,OA02,Urinalysis,own row: V7
+LY3556050,CLBP,BP03,Chemistry,"own row: V3, V4, V5, V6, V7, ED (ISA lab table: 2)"
+LY3556050,CLBP,BP03,ECG,"own row: V3, V4, V5, V6, V7, ED"
+LY3556050,CLBP,BP03,Exploratory biomarker samples,–
+LY3556050,CLBP,BP03,HbA1c,"own row: V7, ED (ISA lab table: 1)"
+LY3556050,CLBP,BP03,Hematology,"own row: V3, V4, V5, V6, V7, ED"
+LY3556050,CLBP,BP03,Lipid panel,"own row: V3, V4, V5, V6, V7, ED"
+LY3556050,CLBP,BP03,TSH,"TSH inside Chemistry: V3, V4, V5, V6, V7, ED"
+LY3556050,CLBP,BP03,Urinalysis,–
+LY3556050,DPNP,NP03,Chemistry,"own row: V3, V4, V5, V6, V7, ED (ISA lab table: 5)"
+LY3556050,DPNP,NP03,ECG,"own row: V3, V4, V5, V6, V7, ED"
+LY3556050,DPNP,NP03,Exploratory biomarker samples,–
+LY3556050,DPNP,NP03,HbA1c,"own row: V7, ED (ISA lab table: 1)"
+LY3556050,DPNP,NP03,Hematology,"own row: V3, V4, V5, V6, V7, ED"
+LY3556050,DPNP,NP03,Lipid panel,"own row: V3, V4, V5, V6, V7, ED"
+LY3556050,DPNP,NP03,TSH,"TSH inside Chemistry: V3, V4, V5, V6, V7, ED"
+LY3556050,DPNP,NP03,Urinalysis,–
+LY3556050,OA,OA03,Chemistry,"own row: V3, V4, V5, V6, V7, ED (ISA lab table: 2)"
+LY3556050,OA,OA03,ECG,"own row: V3, V4, V5, V6, V7, ED"
+LY3556050,OA,OA03,Exploratory biomarker samples,–
+LY3556050,OA,OA03,HbA1c,"own row: V7, ED (ISA lab table: 1)"
+LY3556050,OA,OA03,Hematology,"own row: V3, V4, V5, V6, V7, ED"
+LY3556050,OA,OA03,Lipid panel,"own row: V3, V4, V5, V6, V7, ED"
+LY3556050,OA,OA03,TSH,"TSH inside Chemistry: V3, V4, V5, V6, V7, ED"
+LY3556050,OA,OA03,Urinalysis,–
+LY3857210,CLBP,BP05,Chemistry,"own row: V4, V5, V6, V7, V801"
+LY3857210,CLBP,BP05,ECG,"own row: V5, V7, V801, ED"
+LY3857210,CLBP,BP05,Exploratory biomarker samples,–
+LY3857210,CLBP,BP05,HbA1c,"own row: V3, V7, ED"
+LY3857210,CLBP,BP05,Hematology,"own row: V4, V5, V6, V7, V801"
+LY3857210,CLBP,BP05,Lipid panel,"own row: V4, V5, V6, V7, V801"
+LY3857210,CLBP,BP05,TSH,–
+LY3857210,CLBP,BP05,Urinalysis,"own row: V7, V801"
+LY3857210,DPNP,NP05,Chemistry,"own row: V4, V5, V6, V7, V801"
+LY3857210,DPNP,NP05,ECG,"own row: V5, V7, V801, ED"
+LY3857210,DPNP,NP05,Exploratory biomarker samples,–
+LY3857210,DPNP,NP05,HbA1c,"own row: V3, V7, ED"
+LY3857210,DPNP,NP05,Hematology,"own row: V4, V5, V6, V7, V801"
+LY3857210,DPNP,NP05,Lipid panel,"own row: V4, V5, V6, V7, V801"
+LY3857210,DPNP,NP05,TSH,–
+LY3857210,DPNP,NP05,Urinalysis,"own row: V7, V801"
+LY3857210,OA,OA05,Chemistry,"own row: V4, V5, V6, V7, V801"
+LY3857210,OA,OA05,ECG,"own row: V5, V7, V801, ED"
+LY3857210,OA,OA05,Exploratory biomarker samples,–
+LY3857210,OA,OA05,HbA1c,"own row: V3, V7, ED"
+LY3857210,OA,OA05,Hematology,"own row: V4, V5, V6, V7, V801"
+LY3857210,OA,OA05,Lipid panel,"own row: V4, V5, V6, V7, V801"
+LY3857210,OA,OA05,TSH,–
+LY3857210,OA,OA05,Urinalysis,"own row: V7, V801"

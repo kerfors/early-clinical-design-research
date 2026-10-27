@@ -1,0 +1,16 @@
+section,title,in_v40_toc,in_v41_toc,similarity,sentences_removed,sentences_added,first_change
+2.1,Synopsis,True,True,0.981,2,2,"-The primary outcome is a composite of 90-day all-cause mortality and, among survivors, a daily ordinal scale analyzed as a trajectory of illness and recovery to 28-days."
+2.2.9,Core Protocol Version History,True,True,0.919,2,3,-Approved by the ITSC on 9 November 2022 (UK-specific) Version 4:
+4,INTERNATIONAL TRIAL STEERING COMMITTEE AUTHORIZATION,True,True,0.957,1,1,"-Signed by the ITSC Chair, on behalf of the ITSC ITSC Chair Date 5 th November, 2024 Dr."
+6.1,Primary objective,True,True,0.596,1,3,"-The primary objective of this Platform is, for hospitalized patients with acute respiratory tract infection, to evaluate the effect of a range of interventions on a composite of 90-day all-cause mort"
+6.2,Secondary objectives,True,True,0.894,1,1,"-The secondary objectives of this Platform are to determine the effect of interventions on hospital length of stay (LOS) and 90-day mortality, as well as other domain-specific endpoints and, where fea"
+7.6,Endpoints,True,True,0.978,1,1,-Secondary Platform outcomes are provided in this Core Protocol below.
+7.6.1,Primary Endpoint,True,True,0.462,9,13,"-The primary endpoint, named Survival and Recovery Trajectory, will be a composite of 90-day all-cause mortality and, among survivors, a daily ordinal scale analyzed as a trajectory of illness and rec"
+7.6.2,Secondary Endpoints,True,True,0.815,6,3,-A set of generic secondary endpoints will be evaluated in all domains.
+7.6.3,Exploratory outcomes,False,False,0.0,0,17,+Two additional exploratory outcome measures will be reported.
+7.6.4,Adaptations to the primary endpoint in the event of a pandemic,False,False,0.0,0,3,"+In the event of a future pandemic, operating characteristics of the above primary endpoint may be modified, which will inform both response adaptive randomization, where relevant, and adaptive analys"
+7.8.3,Target populations (strata and states) and implications for evaluation of treatment-by-treatment and treatment-by-strata interactions,True,True,0.954,12,11,-Gamma may also be set to a defined number between zero and infinity.
+7.8.6,Statistical Triggers,True,True,0.957,1,3,"+The posterior probability for the inferiority trigger will be evaluated at each adaptive analysis, and a statistical trigger for inferiority may be declared, irrespective of any minimum sample size s"
+7.8.7,Action when a Statistical Trigger is achieved,True,True,1.0,1,1,"-For RAR, allocation proportions will be capped at 60% for two-intervention domains, unless otherwise specified in a DSA."
+8.4.2,Transfer of participants between locations and protocol adherence,True,True,0.75,3,11,"-The receiving location may or may not be participating in this trial, and if they are, may be participating in different domains and interventions from the randomizing location."
+8.8.2,Variables to be collected,True,True,0.977,2,2,-• Date and time of ICU admission and discharge • Dates of ICU readmission and discharge during the index hospitalization Hospital outcome data • Date and time of hospital admission and discharge • Su

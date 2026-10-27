@@ -1,0 +1,2657 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix ns2: <http://purl.obolibrary.org/obo/> .
+@prefix ns3: <http://purl.obolibrary.org/obo/mondo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns2:BFO_0000051 a owl:ObjectProperty ;
+    rdfs:label "has part"@en ;
+    ns2:IAO_0000115 "a core relation that holds between a whole and its part"@en .
+
+ns2:IAO_0000005 a owl:Class ;
+    rdfs:label "objective specification"@en ;
+    ns2:IAO_0000115 "A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved."@en ;
+    rdfs:subClassOf ns2:IAO_0000033 .
+
+ns2:IAO_0000007 a owl:Class ;
+    rdfs:label "action specification"@en ;
+    ns2:IAO_0000115 "A directive information entity that describes an action the bearer will take."@en ;
+    rdfs:subClassOf ns2:IAO_0000033 .
+
+ns2:IAO_0000111 a owl:AnnotationProperty ;
+    rdfs:label "editor preferred label",
+        "editor preferred term",
+        "editor preferred term~editor preferred label",
+        "editor preferred label"@en,
+        "editor preferred term"@en ;
+    ns2:IAO_0000111 "editor preferred label",
+        "editor preferred term",
+        "editor preferred term~editor preferred label",
+        "editor preferred label"@en,
+        "editor preferred term"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000122 ;
+    ns2:IAO_0000115 "The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)"@en ;
+    ns2:IAO_0000117 "PERSON:Daniel Schober"@en ;
+    ns2:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en .
+
+ns2:IAO_0000112 a owl:AnnotationProperty ;
+    rdfs:label "example of usage"@en ;
+    ns2:IAO_0000111 "example of usage"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000122 ;
+    ns2:IAO_0000115 "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."@en ;
+    ns2:IAO_0000117 "PERSON:Daniel Schober"@en ;
+    ns2:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en .
+
+ns2:IAO_0000114 a owl:AnnotationProperty ;
+    rdfs:label "has curation status"@en ;
+    ns2:IAO_0000111 "has curation status"@en ;
+    ns2:IAO_0000117 "PERSON:Alan Ruttenberg"@en,
+        "PERSON:Bill Bug"@en,
+        "PERSON:Melanie Courtot"@en .
+
+ns2:IAO_0000116 a owl:AnnotationProperty ;
+    rdfs:label "editor note"@en ;
+    ns2:IAO_0000111 "editor note"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000122 ;
+    ns2:IAO_0000115 "An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology."@en ;
+    ns2:IAO_0000117 "PERSON:Daniel Schober"@en ;
+    ns2:IAO_0000119 "GROUP:OBI:<http://purl.obofoundry.org/obo/obi>"@en .
+
+ns2:IAO_0000117 a owl:AnnotationProperty ;
+    rdfs:label "term editor"@en ;
+    ns2:IAO_0000111 "term editor"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000122 ;
+    ns2:IAO_0000115 "Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people"@en ;
+    ns2:IAO_0000116 "20110707, MC: label update to term editor and definition modified accordingly. See https://github.com/information-artifact-ontology/IAO/issues/115."@en ;
+    ns2:IAO_0000117 "PERSON:Daniel Schober"@en ;
+    ns2:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en .
+
+ns2:IAO_0000118 a owl:AnnotationProperty ;
+    rdfs:label "alternative label"@en ;
+    ns2:IAO_0000111 "alternative label"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000125 ;
+    ns2:IAO_0000115 "A label for a class or property that can be used to refer to the class or property instead of the preferred rdfs:label. Alternative labels should be used to indicate community- or context-specific labels, abbreviations, shorthand forms and the like."@en ;
+    ns2:IAO_0000117 "OBO Operations committee",
+        "PERSON:Daniel Schober"@en ;
+    ns2:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
+    rdfs:comment "Consider re-defing to: An alternative name for a class or property which can mean the same thing as the preferred name (semantically equivalent, narrow, broad or related)." .
+
+ns2:IAO_0000119 a owl:AnnotationProperty ;
+    rdfs:label "definition source"@en ;
+    ns2:IAO_0000111 "definition source"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000122 ;
+    ns2:IAO_0000115 "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"@en ;
+    ns2:IAO_0000117 "PERSON:Daniel Schober"@en ;
+    ns2:IAO_0000119 "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"@en,
+        "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en .
+
+ns2:IAO_0000136 a owl:ObjectProperty ;
+    rdfs:label "is about"@en ;
+    ns2:IAO_0000115 "A (currently) primitive relation that relates an information artifact to an entity."@en .
+
+ns2:IAO_0000232 a owl:AnnotationProperty ;
+    rdfs:label "curator note"@en ;
+    ns2:IAO_0000111 "curator note"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000122 ;
+    ns2:IAO_0000115 "An administrative note of use for a curator but of no use for a user"@en ;
+    ns2:IAO_0000117 "PERSON:Alan Ruttenberg"@en .
+
+ns2:IAO_0000233 a owl:AnnotationProperty ;
+    rdfs:label "term tracker item"@en ;
+    ns2:IAO_0000111 "term tracker item"@en ;
+    ns2:IAO_0000112 "the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000125 ;
+    ns2:IAO_0000115 "An IRI or similar locator for a request or discussion of an ontology term."@en ;
+    ns2:IAO_0000117 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en ;
+    ns2:IAO_0000119 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en ;
+    rdfs:comment "The 'tracker item' can associate a tracker with a specific ontology term."@en .
+
+ns2:IAO_0000412 a owl:AnnotationProperty ;
+    rdfs:label "imported from"@en ;
+    ns2:IAO_0000111 "imported from"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000125 ;
+    ns2:IAO_0000115 "For external terms/classes, the ontology from which the term was imported"@en ;
+    ns2:IAO_0000117 "PERSON:Alan Ruttenberg"@en,
+        "PERSON:Melanie Courtot"@en ;
+    ns2:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en .
+
+ns2:OBI_0500001 a owl:Class ;
+    rdfs:label "clinical study design" ;
+    ns2:IAO_0000111 "clinical study design" ;
+    ns2:IAO_0000112 "PMID: 17655677.J Cardiovasc Electrophysiol. 2007 Aug;18(9):965-71.Biventricular versus right ventricular pacing in patients with AV block (BLOCK HF): clinical study design and rationale." ;
+    ns2:IAO_0000114 ns2:IAO_0000125 ;
+    ns2:IAO_0000115 "Plan for the precise procedure to be followed in a clinical trial, including planned and actual timing of events, choice of control group, method of allocating treatments, blinding methods; assigns a subject to pass through one or more epochs in the course of a trial. Specific design elements, e.g., crossover, parallel; dose-escalation [Modified from Pocock, Clinical Trials: A Practical Approach]"@en ;
+    ns2:IAO_0000116 "The definition needs to be extended to other things than simply patients" ;
+    ns2:IAO_0000117 "PlanAndPlannedProcess Branch" ;
+    ns2:IAO_0000119 "Clinical Research Glossary Version 4.0 CDICS glossary group" ;
+    rdfs:subClassOf ns2:OBI_0500000 .
+
+ns2:OBI_0500027 a owl:Class ;
+    rdfs:label "inclusion criterion"@en ;
+    ns2:IAO_0000111 "inclusion criterion"@en ;
+    ns2:IAO_0000112 "PMID: 23979341-The major inclusion criterion was patients in whom severe cerebral embolism was diagnosed at age 75 or younger (more than 9 in the NIHSS score on day 7 after the onset of stroke) ."@en ;
+    ns2:IAO_0000114 ns2:IAO_0000125 ;
+    ns2:IAO_0000115 "an inclusion criterion (rule) is_a *eligibility criterion*  which defines and states a condition which, if met, makes an entity suitable for a given task or participation in a given process. For instance, in a study protocol, inclusion criteria indicate the conditions that prospective subjects MUST meet to be eligible for participation in a study."@en ;
+    ns2:IAO_0000117 "Person: Philippe Rocca-Serra"@en ;
+    ns2:IAO_0000118 "inclusion condition"@en,
+        "inclusion rule"@en ;
+    ns2:IAO_0000119 "Adapted from Clinical Research Glossary Version 4.0 CDICS glossary group"@en ;
+    rdfs:subClassOf ns2:OBI_0500026 .
+
+ns2:OBI_0500028 a owl:Class ;
+    rdfs:label "exclusion criterion"@en ;
+    ns2:IAO_0000111 "exclusion rule"@en ;
+    ns2:IAO_0000112 "PMID: 17600285-Exclusion criteria included the use of any topical ophthalmic or topical oral medication and/or history of ocular or oral surgery within the past six months."@en ;
+    ns2:IAO_0000114 ns2:IAO_0000125 ;
+    ns2:IAO_0000115 "an exclusion criterion (rule) is_a *eligibility criterion*  which defines and states a condition which, if met, makes an entity unsuitable for a given task or participation in a given process. For instance, in a study protocol, exclusion criteria indicate the conditions that prospective subjects SHOULD NOT meet to be eligible for participation in a study"@en ;
+    ns2:IAO_0000117 "Person: Philippe Rocca-Serra"@en ;
+    ns2:IAO_0000119 "Adapted from Clinical Research Glossary Version 4.0 CDICS glossary group"@en ;
+    rdfs:subClassOf ns2:OBI_0500026 .
+
+ns2:RO_0002175 a owl:AnnotationProperty .
+
+ns2:hp.owl a owl:Ontology ;
+    owl:versionIRI <http://purl.obolibrary.org/obo/hp/releases/2026-09-01/hp.owl> .
+
+ns2:mondo.owl a owl:Ontology ;
+    owl:versionIRI <http://purl.obolibrary.org/obo/mondo/releases/2026-10-06/mondo.owl> .
+
+ns2:obi.owl a owl:Ontology ;
+    owl:versionIRI <http://purl.obolibrary.org/obo/obi/2026-07-27/obi.owl> .
+
+dcterms:conformsTo a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:date a owl:AnnotationProperty .
+
+ns1:hasSynonymType a owl:AnnotationProperty .
+
+ns1:id a owl:AnnotationProperty ;
+    rdfs:label "id" .
+
+ns1:is_class_level a owl:AnnotationProperty .
+
+ns1:is_metadata_tag a owl:AnnotationProperty .
+
+ns1:source a owl:AnnotationProperty .
+
+rdfs:comment a owl:AnnotationProperty .
+
+rdfs:label a owl:AnnotationProperty ;
+    rdfs:label "label",
+        "label"@en ;
+    ns2:IAO_0000111 "label",
+        "label"@en ;
+    ns2:IAO_0000115 "A human readable name for this class." .
+
+skos:broadMatch a owl:AnnotationProperty .
+
+skos:closeMatch a owl:AnnotationProperty .
+
+skos:exactMatch a owl:AnnotationProperty .
+
+<https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/imports/upstream_import> a owl:Ontology .
+
+ns2:BFO_0000001 a owl:Class ;
+    rdfs:label "entity"@en ;
+    ns2:IAO_0000116 "BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81"@en ;
+    rdfs:subClassOf owl:Thing .
+
+ns2:BFO_0000002 a owl:Class ;
+    rdfs:label "continuant"@en ;
+    ns2:IAO_0000116 "BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240"@en ;
+    rdfs:subClassOf ns2:BFO_0000001 .
+
+ns2:BFO_0000016 a owl:Class ;
+    rdfs:label "disposition"@en ;
+    ns2:IAO_0000116 "BFO 2 Reference: Dispositions exist along a strength continuum. Weaker forms of disposition are realized in only a fraction of triggering cases. These forms occur in a significant number of cases of a similar type."@en ;
+    rdfs:subClassOf ns2:BFO_0000017 .
+
+ns2:BFO_0000017 a owl:Class ;
+    rdfs:label "realizable entity"@en ;
+    rdfs:subClassOf ns2:BFO_0000020 .
+
+ns2:BFO_0000020 a owl:Class ;
+    rdfs:label "specifically dependent continuant"@en ;
+    rdfs:subClassOf ns2:BFO_0000002 .
+
+ns2:HP_0000001 a owl:Class ;
+    rdfs:label "All" ;
+    ns1:id "HP:0000001" ;
+    rdfs:comment "Root of all terms in the Human Phenotype Ontology." ;
+    rdfs:subClassOf owl:Thing .
+
+ns2:HP_0003419 a owl:Class ;
+    rdfs:label "Low back pain" ;
+    ns2:IAO_0000115 "An unpleasant sensation characterized by physical discomfort (such as pricking, throbbing, or aching) localized to the lower back." ;
+    ns1:hasExactSynonym "Lower back pain",
+        "Lumbago" ;
+    ns1:id "HP:0003419" ;
+    rdfs:subClassOf ns2:HP_0003418 .
+
+ns2:HP_0025142 a owl:Class ;
+    rdfs:label "Constitutional symptom" ;
+    ns2:IAO_0000115 "A symptom or manifestation indicating a systemic or general effect of a disease and that may affect the general well-being or status of an individual." ;
+    dcterms:creator <https://orcid.org/0000-0002-0736-9199> ;
+    dcterms:date "2016-11-29T11:02:54+00:00"^^xsd:dateTime ;
+    rdfs:comment "Note that we use the preferred term label constitutional symptom because this reflects common usage, but we do not restrict the term or its descendents to the narrow meaning of symptom, i.e., a complaint related by a patient to a physician. There is no generally accepted classification of what defines a constitutional symptom, but examples include weight loss, fatigue, general weakness, night sweats, shaking, chills, fever, and vomiting." ;
+    rdfs:subClassOf ns2:HP_0000118 .
+
+ns2:HP_0033127 a owl:Class ;
+    rdfs:label "Abnormality of the musculoskeletal system" ;
+    ns2:IAO_0000115 "An anomaly of the musculoskeletal system, which consists of the bones of the skeleton, muscles, cartilage, tendons, ligaments, joints, and other connective tissue. The musculoskeletal system supports the weight of the body, maintains body position and produces movements of the body or of parts of the body." ;
+    dcterms:creator <https://orcid.org/0000-0002-0736-9199> ;
+    dcterms:date "2020-09-05T13:35:03+00:00"^^xsd:dateTime ;
+    rdfs:subClassOf ns2:HP_0000118 .
+
+ns2:IAO_0000030 a owl:Class ;
+    rdfs:label "information content entity"@en ;
+    ns2:IAO_0000111 "information content entity"@en ;
+    ns2:IAO_0000115 "A generically dependent continuant that is about some thing."@en ;
+    ns2:IAO_0000116 "Pier: 'data, information or knowledge'. OR 'representation'"@en ;
+    ns2:IAO_0000412 ns2:ogms.owl ;
+    rdfs:subClassOf owl:Thing .
+
+ns2:IAO_0000104 a owl:Class ;
+    rdfs:label "plan specification"@en ;
+    ns2:IAO_0000115 "A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified."@en ;
+    rdfs:subClassOf ns2:IAO_0000033 .
+
+ns2:OBI_0001755 a owl:Class ;
+    rdfs:label "selection criterion"@en ;
+    ns2:IAO_0000111 "selection criterion"@en ;
+    ns2:IAO_0000112 "rats should be aged between 6 and 8 weeks and weight between 180-250grams"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000122 ;
+    ns2:IAO_0000115 "A directive information entity which defines and states a principle of standard by which selection process may take place."@en ;
+    ns2:IAO_0000117 "Person: Philippe Rocca-Serra"@en ;
+    ns2:IAO_0000118 "selection rule"@en ;
+    ns2:IAO_0000119 "OBI discussion summarized under the following tracker item : http://sourceforge.net/p/obi/obi-terms/678/"@en ;
+    rdfs:subClassOf ns2:IAO_0000033 .
+
+ns2:OBI_0500000 a owl:Class ;
+    rdfs:label "study design"@en ;
+    ns2:IAO_0000111 "study design"@en ;
+    ns2:IAO_0000112 "a matched pairs study design describes criteria by which subjects are identified as pairs which then undergo the same protocols, and the data generated is analyzed by comparing the differences between the paired subjects, which constitute the results of the executed study design."@en ;
+    ns2:IAO_0000114 ns2:IAO_0000122 ;
+    ns2:IAO_0000115 "A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution."@en ;
+    ns2:IAO_0000116 "Editor note: there is at least an implicit restriction on the kind of data transformations that can be done based on the measured data available." ;
+    ns2:IAO_0000117 "PERSON: Chris Stoeckert" ;
+    ns2:IAO_0000118 "experimental design"@en ;
+    ns2:IAO_0000232 "rediscussed at length (MC/JF/BP). 12/9/08). The definition was clarified to differentiate it from protocol."@en ;
+    rdfs:subClassOf ns2:IAO_0000104 .
+
+ns1:hasRelatedSynonym a owl:AnnotationProperty ;
+    rdfs:label "has_related_synonym" .
+
+ns2:HP_0003418 a owl:Class ;
+    rdfs:label "Back pain" ;
+    ns2:IAO_0000115 "An unpleasant sensation characterized by physical discomfort (such as pricking, throbbing, or aching) localized to the back." ;
+    ns1:hasExactSynonym "Back pain" ;
+    ns1:id "HP:0003418" ;
+    rdfs:subClassOf ns2:HP_0000925,
+        ns2:HP_0012531 .
+
+ns2:HP_0009121 a owl:Class ;
+    rdfs:label "Abnormal axial skeleton morphology" ;
+    ns2:IAO_0000115 "An abnormality of the axial skeleton, which comprises the skull, the vertebral column, the ribs and the sternum." ;
+    dcterms:creator <https://orcid.org/0000-0002-0736-9199> ;
+    dcterms:date "2008-04-05T11:16:00+00:00"^^xsd:dateTime ;
+    ns1:hasRelatedSynonym "Abnormality of the axial skeleton" ;
+    ns1:id "HP:0009121" ;
+    rdfs:subClassOf ns2:HP_0011842 .
+
+ns2:MONDO_7770007 a owl:Class ;
+    rdfs:label "disease by developmental or physiological process" ;
+    ns2:IAO_0000115 "A grouping class for human diseases classified by the molecular, biochemical, cellular, anatomic, developmental or physiological process that is disrupted." ;
+    ns1:id "MONDO:7770007" ;
+    rdfs:comment "This term is intended solely for classification purposes and should not be used for direct data annotation." ;
+    rdfs:subClassOf ns2:MONDO_0700096 .
+
+ns2:OBI_0500026 a owl:Class ;
+    rdfs:label "eligibility criterion"@en ;
+    ns2:IAO_0000111 "eligibility criterion"@en ;
+    ns2:IAO_0000112 "PMID: 17579629 -Eligibility criteria included: untreated ED-SCLC; age >/=70 and performance status 0-2, or age <70 and PS 3."@en ;
+    ns2:IAO_0000114 ns2:IAO_0000122 ;
+    ns2:IAO_0000115 """an eligibility criterion (rule) is_a selection criterion which 
+defines and states the requirements (positive or negative) for an entity to be considered as suitable for a given task or participation in a process."""@en ;
+    ns2:IAO_0000117 "Person: Philippe Rocca-Serra"@en ;
+    ns2:IAO_0000118 "eligibility rule"@en ;
+    ns2:IAO_0000119 "Adapted from Clinical Research Glossary Version 4.0 CDICS glossary group"@en ;
+    rdfs:subClassOf ns2:OBI_0001755 .
+
+ns2:HP_0000118 a owl:Class ;
+    rdfs:label "Phenotypic abnormality" ;
+    ns2:IAO_0000115 "A phenotypic abnormality." ;
+    ns1:hasExactSynonym "Organ abnormality" ;
+    ns1:id "HP:0000118" ;
+    rdfs:comment "This is the root of the phenotypic abnormality subontology of the HPO." ;
+    rdfs:subClassOf ns2:HP_0000001 .
+
+ns2:HP_0011842 a owl:Class ;
+    rdfs:label "Abnormal skeletal morphology" ;
+    ns2:IAO_0000115 "An abnormality of the form, structure, or size of the skeletal system." ;
+    dcterms:creator <https://orcid.org/0000-0002-0736-9199> ;
+    dcterms:date "2012-05-07T08:08:37+00:00"^^xsd:dateTime ;
+    ns1:hasExactSynonym "Abnormality of skeletal morphology",
+        "Abnormally shaped skeletal" ;
+    ns1:id "HP:0011842" ;
+    rdfs:subClassOf ns2:HP_0000924 .
+
+ns2:HP_0012531 a owl:Class ;
+    rdfs:label "Pain" ;
+    ns2:IAO_0000115 "An unpleasant sensory and emotional experience associated with actual or potential tissue damage, or described in terms of such damage." ;
+    dcterms:creator <https://orcid.org/0000-0002-0736-9199> ;
+    dcterms:date "2013-12-15T09:38:08+00:00"^^xsd:dateTime ;
+    ns1:hasExactSynonym "Pain" ;
+    ns1:id "HP:0012531" ;
+    rdfs:subClassOf ns2:HP_0025142 .
+
+ns2:MONDO_7770006 a owl:Class ;
+    rdfs:label "disease by body system or component" ;
+    ns2:IAO_0000115 "A grouping class for human diseases classified by the body system or anatomical component primarily affected." ;
+    ns1:id "MONDO:7770006" ;
+    rdfs:comment "This term is intended solely for classification purposes and should not be used for direct data annotation." ;
+    rdfs:subClassOf ns2:MONDO_0700096 .
+
+ns3:excluded_subClassOf a owl:AnnotationProperty ;
+    rdfs:label "excluded subClassOf" ;
+    ns1:id "excluded_subClassOf" ;
+    ns1:is_metadata_tag true .
+
+ns2:IAO_0000033 a owl:Class ;
+    rdfs:label "directive information entity"@en ;
+    ns2:IAO_0000115 "An information content entity whose concretizations indicate to their bearer how to realize them in a process."@en ;
+    rdfs:subClassOf ns2:IAO_0000030 .
+
+ns2:HP_0000924 a owl:Class ;
+    rdfs:label "Abnormality of the skeletal system" ;
+    ns2:IAO_0000115 "An abnormality of the skeletal system." ;
+    ns1:hasExactSynonym "Abnormality of the skeletal system",
+        "Skeletal abnormalities",
+        "Skeletal anomalies" ;
+    ns1:id "HP:0000924" ;
+    rdfs:subClassOf ns2:HP_0033127 .
+
+ns2:MONDO_0700096 a owl:Class ;
+    rdfs:label "human disease" ;
+    ns2:IAO_0000233 "https://github.com/monarch-initiative/mondo/issues/5858"^^xsd:anyURI ;
+    ns2:RO_0002175 ns2:NCBITaxon_9606 ;
+    dcterms:creator <https://orcid.org/0000-0002-4142-7153> ;
+    ns1:hasExactSynonym "human disease or disorder" ;
+    ns1:id "MONDO:0700096" ;
+    ns1:inSubset ns3:rare_grouping ;
+    rdfs:subClassOf ns2:MONDO_0000001 .
+
+ns2:HP_0000925 a owl:Class ;
+    rdfs:label "Abnormality of the vertebral column" ;
+    ns2:IAO_0000115 "Any abnormality of the vertebral column." ;
+    ns1:hasExactSynonym "Abnormal spine",
+        "Abnormal vertebral column",
+        "Abnormality of the spine",
+        "Abnormality of the vertebral column" ;
+    ns1:hasRelatedSynonym "Abnormality of the backbone" ;
+    ns1:id "HP:0000925" ;
+    rdfs:subClassOf ns2:HP_0009121 .
+
+ns1:hasNarrowSynonym a owl:AnnotationProperty ;
+    rdfs:label "has_narrow_synonym" .
+
+ns2:MONDO_0021166 a owl:Class ;
+    rdfs:label "inflammatory disease" ;
+    ns2:IAO_0000115 "A disease involving a pathogenic inflammatory response in the anatomical structure." ;
+    dcterms:conformsTo <http://purl.obolibrary.org/obo/mondo/patterns/specific_infectious_disease_by_location.yaml>,
+        <http://purl.obolibrary.org/obo/mondo/patterns/specific_inflammatory_disease_by_site.yaml> ;
+    ns1:hasDbXref "ICD9:799.89",
+        "MEDGEN:452939",
+        "NCIT:C93210",
+        "SCTID:128139000",
+        "UMLS:C1290884" ;
+    ns1:hasExactSynonym "anatomical structure inflammation",
+        "inflammation of anatomical structure",
+        "inflammatory disease",
+        "inflammatory disorder" ;
+    ns1:id "MONDO:0021166" ;
+    ns1:inSubset ns3:harrisons_view,
+        ns3:rare_grouping ;
+    rdfs:subClassOf ns2:MONDO_0700096,
+        ns2:MONDO_7770007 ;
+    skos:exactMatch <http://identifiers.org/medgen/452939>,
+        <http://identifiers.org/snomedct/128139000>,
+        <http://linkedlifedata.com/resource/umls/id/C1290884>,
+        ns2:NCIT_C93210 .
+
+ns2:MONDO_0002614 a owl:Class ;
+    rdfs:label "bone inflammation disease" ;
+    ns2:IAO_0000115 "Inflammation of the bone." ;
+    ns3:curated_content_resource "https://www.malacards.org/card/bone_inflammation_disease"^^xsd:anyURI ;
+    ns1:hasDbXref "DOID:3342",
+        "MEDGEN:10492",
+        "MESH:D010000",
+        "SCTID:274144001",
+        "UMLS:C0029400" ;
+    ns1:id "MONDO:0002614" ;
+    ns1:inSubset ns3:otar ;
+    rdfs:subClassOf ns2:MONDO_0005381 ;
+    skos:exactMatch <http://identifiers.org/medgen/10492>,
+        <http://identifiers.org/mesh/D010000>,
+        <http://identifiers.org/snomedct/274144001>,
+        <http://linkedlifedata.com/resource/umls/id/C0029400>,
+        ns2:DOID_3342 .
+
+ns2:MONDO_0006626 a owl:Class ;
+    rdfs:label "diabetic neuropathy" ;
+    ns2:IAO_0000115 "A chronic, pathological complication associated with diabetes mellitus, where nerve damages are incurred due to diabetic microvascular injury involving small blood vessels that supply these nerves, resulting in peripheral and/or autonomic nerve dysfunction." ;
+    ns3:curated_content_resource "https://www.malacards.org/card/diabetic_neuropathy"^^xsd:anyURI ;
+    ns1:hasDbXref "DOID:9743",
+        "EFO:1000783",
+        "ICD9:250.6",
+        "MEDGEN:8353",
+        "MESH:D003929",
+        "NCIT:C26748",
+        "SCTID:230572002",
+        "UMLS:C0011882" ;
+    ns1:id "MONDO:0006626" ;
+    ns1:inSubset ns3:otar ;
+    rdfs:subClassOf ns2:MONDO_0005244 ;
+    skos:exactMatch <http://identifiers.org/medgen/8353>,
+        <http://identifiers.org/mesh/D003929>,
+        <http://identifiers.org/snomedct/230572002>,
+        <http://linkedlifedata.com/resource/umls/id/C0011882>,
+        ns2:DOID_9743,
+        ns2:NCIT_C26748,
+        <http://www.ebi.ac.uk/efo/EFO_1000783> .
+
+ns3:curated_content_resource a owl:AnnotationProperty ;
+    rdfs:label "curated content resource" ;
+    ns2:IAO_0000115 "A curated content resource is a web-resource that contains curated content about the ontology term." ;
+    ns1:id "curated_content_resource" ;
+    ns1:is_class_level true ;
+    ns1:is_metadata_tag true ;
+    rdfs:comment "This property is likely to change the ID. Please do not use in production systems." .
+
+ns2:MONDO_0005172 a owl:Class ;
+    rdfs:label "skeletal system disorder" ;
+    ns2:IAO_0000115 "A disease involving the skeletal system." ;
+    dcterms:conformsTo <http://purl.obolibrary.org/obo/mondo/patterns/location.yaml>,
+        <http://purl.obolibrary.org/obo/mondo/patterns/location_top.yaml> ;
+    ns1:hasDbXref "EFO:0002461",
+        "MEDGEN:538042",
+        "SCTID:88230002",
+        "UMLS:C0263661" ;
+    ns1:hasExactSynonym "disease of skeletal system",
+        "disease or disorder of skeletal system",
+        "disorder of skeletal system",
+        "skeletal system disease",
+        "skeletal system disease or disorder" ;
+    ns1:id "MONDO:0005172" ;
+    ns1:inSubset ns3:otar,
+        ns3:rare_grouping ;
+    rdfs:subClassOf ns2:MONDO_0000001,
+        ns2:MONDO_0002081 ;
+    skos:exactMatch <http://identifiers.org/medgen/538042>,
+        <http://identifiers.org/snomedct/88230002>,
+        <http://linkedlifedata.com/resource/umls/id/C0263661>,
+        <http://www.ebi.ac.uk/efo/EFO_0002461> .
+
+ns2:MONDO_0005178 a owl:Class ;
+    rdfs:label "osteoarthritis" ;
+    ns2:IAO_0000115 "A noninflammatory degenerative joint disease occurring chiefly in older persons, characterized by degeneration of the articular cartilage, hypertrophy of bone at the margins and changes in the synovial membrane. It is accompanied by pain and stiffness, particularly after prolonged activity." ;
+    ns2:IAO_0000233 "https://github.com/monarch-initiative/mondo/issues/1395"^^xsd:anyURI ;
+    ns3:curated_content_resource "https://www.malacards.org/card/osteoarthritis"^^xsd:anyURI ;
+    ns1:hasDbXref "DOID:8398",
+        "HP:0002758",
+        "ICD10CM:M15-M19",
+        "ICD10CM:M19",
+        "ICD9:715.3",
+        "MEDGEN:45244",
+        "MESH:D010003",
+        "NCIT:C3293",
+        "SCTID:396275006",
+        "UMLS:C0029408",
+        "icd11.foundation:558562409" ;
+    ns1:hasExactSynonym "degenerative joint disease" ;
+    ns1:id "MONDO:0005178" ;
+    ns1:inSubset ns3:otar ;
+    rdfs:subClassOf ns2:MONDO_0005578 ;
+    skos:exactMatch <http://id.who.int/icd/entity/558562409>,
+        <http://identifiers.org/medgen/45244>,
+        <http://identifiers.org/mesh/D010003>,
+        <http://identifiers.org/snomedct/396275006>,
+        <http://linkedlifedata.com/resource/umls/id/C0029408>,
+        <http://purl.bioontology.org/ontology/ICD10CM/M15-M19>,
+        <http://purl.bioontology.org/ontology/ICD10CM/M19>,
+        ns2:DOID_8398,
+        ns2:NCIT_C3293 .
+
+ns2:MONDO_0005578 a owl:Class ;
+    rdfs:label "arthritic joint disease" ;
+    ns2:IAO_0000115 "An inflammatory process affecting a joint. Causes include infection, autoimmune processes, degenerative processes, and trauma. Signs and symptoms may include swelling around the affected joint and pain." ;
+    ns3:curated_content_resource "https://www.malacards.org/card/arthritis"^^xsd:anyURI ;
+    ns3:excluded_subClassOf ns2:MONDO_0005554 ;
+    dcterms:conformsTo <http://purl.obolibrary.org/obo/mondo/patterns/inflammatory_disease_by_site.yaml>,
+        <http://purl.obolibrary.org/obo/mondo/patterns/specific_infectious_disease_by_location.yaml>,
+        <http://purl.obolibrary.org/obo/mondo/patterns/specific_inflammatory_disease_by_site.yaml> ;
+    ns1:hasDbXref "DOID:848",
+        "EFO:0005856",
+        "MEDGEN:2043",
+        "MESH:D001168",
+        "NCIT:C2883",
+        "SCTID:3723001",
+        "UMLS:C0003864",
+        "Wikipedia:Arthritis" ;
+    ns1:hasExactSynonym "arthritis",
+        "inflammation of skeletal joint",
+        "skeletal joint inflammation" ;
+    ns1:hasNarrowSynonym "inflammatory disorder of joint" ;
+    ns1:id "MONDO:0005578" ;
+    ns1:inSubset ns3:otar ;
+    rdfs:comment "Editor note: osteoarthritis is primarily non-inflammatory which causes issues if we classify arthritis as inflammatory." ;
+    rdfs:subClassOf ns2:MONDO_0000001,
+        ns2:MONDO_0002614,
+        ns2:MONDO_0006816,
+        ns2:MONDO_0021166 ;
+    skos:exactMatch <http://identifiers.org/medgen/2043>,
+        <http://identifiers.org/mesh/D001168>,
+        <http://identifiers.org/snomedct/3723001>,
+        <http://linkedlifedata.com/resource/umls/id/C0003864>,
+        ns2:DOID_848,
+        ns2:NCIT_C2883,
+        <http://www.ebi.ac.uk/efo/EFO_0005856> .
+
+ns1:inSubset a owl:AnnotationProperty ;
+    rdfs:label "in_subset" .
+
+ns2:MONDO_0002081 a owl:Class ;
+    rdfs:label "musculoskeletal system disorder" ;
+    ns2:IAO_0000115 "A disease involving the musculoskeletal system." ;
+    dcterms:conformsTo <http://purl.obolibrary.org/obo/mondo/patterns/location.yaml> ;
+    ns1:hasDbXref "DOID:17",
+        "EFO:0009676",
+        "ICD9:729.99",
+        "MEDGEN:6471",
+        "MESH:D009140",
+        "NCIT:C107377",
+        "SCTID:928000",
+        "UMLS:C0026857" ;
+    ns1:hasExactSynonym "disease of musculoskeletal system",
+        "disease or disorder of musculoskeletal system",
+        "disorder of musculoskeletal system",
+        "musculoskeletal disease",
+        "musculoskeletal system disease",
+        "musculoskeletal system disease or disorder",
+        "musculoskeletal system disorder" ;
+    ns1:id "MONDO:0002081" ;
+    ns1:inSubset ns3:harrisons_view,
+        ns3:otar,
+        ns3:rare_grouping ;
+    rdfs:subClassOf ns2:MONDO_0700096,
+        ns2:MONDO_7770006 ;
+    skos:exactMatch <http://identifiers.org/medgen/6471>,
+        <http://identifiers.org/mesh/D009140>,
+        <http://identifiers.org/snomedct/928000>,
+        <http://linkedlifedata.com/resource/umls/id/C0026857>,
+        ns2:DOID_17,
+        ns2:NCIT_C107377,
+        <http://www.ebi.ac.uk/efo/EFO_0009676> .
+
+ns2:MONDO_0005244 a owl:Class ;
+    rdfs:label "peripheral neuropathy" ;
+    ns2:IAO_0000115 "A disorder affecting the peripheral nervous system. It manifests with pain, tingling, numbness, and muscle weakness. It may be the result of physical injury, toxic substances, viral diseases, diabetes, renal failure, cancer, and drugs." ;
+    ns2:IAO_0000233 "https://github.com/monarch-initiative/mondo/issues/10008"^^xsd:anyURI ;
+    ns3:curated_content_resource "https://www.malacards.org/card/neuropathy"^^xsd:anyURI ;
+    ns1:hasDbXref "DOID:870",
+        "EFO:0003100",
+        "MEDGEN:18386",
+        "MedDRA:10034606",
+        "NCIT:C119734",
+        "NCIT:C4731",
+        "SCTID:302226006",
+        "SCTID:386033004",
+        "UMLS:C0031117" ;
+    ns1:hasExactSynonym "neuropathy",
+        "peripheral nerve disorder",
+        "peripheral neuropathy" ;
+    ns1:id "MONDO:0005244" ;
+    ns1:inSubset ns3:otar ;
+    rdfs:comment "Editor note: NCIT draws a distinction between neuropathy and peripheral neuropathy see https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues/20. Also, location of occurrence may also include optic nerve which is not PNS." ;
+    rdfs:subClassOf ns2:MONDO_0003620,
+        ns2:MONDO_0019056 ;
+    skos:broadMatch <http://identifiers.org/snomedct/386033004> ;
+    skos:closeMatch <http://identifiers.org/meddra/10034606> ;
+    skos:exactMatch <http://identifiers.org/medgen/18386>,
+        <http://identifiers.org/snomedct/302226006>,
+        <http://linkedlifedata.com/resource/umls/id/C0031117>,
+        ns2:DOID_870,
+        ns2:NCIT_C119734,
+        ns2:NCIT_C4731,
+        <http://www.ebi.ac.uk/efo/EFO_0003100> .
+
+ns2:MONDO_0005381 a owl:Class ;
+    rdfs:label "bone disorder" ;
+    ns2:IAO_0000115 "Diseases of bones." ;
+    ns3:curated_content_resource "https://www.malacards.org/card/bone_disease"^^xsd:anyURI ;
+    ns3:excluded_subClassOf ns2:MONDO_0003900 ;
+    dcterms:conformsTo <http://purl.obolibrary.org/obo/mondo/patterns/location.yaml>,
+        <http://purl.obolibrary.org/obo/mondo/patterns/location_top.yaml> ;
+    ns1:hasDbXref "DOID:0080001",
+        "EFO:0004260",
+        "ICD10CM:M80-M85",
+        "ICD9:731.8",
+        "ICD9:733.99",
+        "MEDGEN:14182",
+        "MESH:D001847",
+        "NANDO:2100291",
+        "NANDO:2100293",
+        "SCTID:76069003",
+        "UMLS:C0005940" ;
+    ns1:hasExactSynonym "bone element disease",
+        "bone element disease or disorder",
+        "disease of bone element",
+        "disease or disorder of bone element",
+        "disorder of bone element" ;
+    ns1:id "MONDO:0005381" ;
+    ns1:inSubset ns3:disease_grouping,
+        ns3:otar ;
+    rdfs:subClassOf ns2:MONDO_0000001,
+        ns2:MONDO_0005172 ;
+    skos:exactMatch <http://identifiers.org/medgen/14182>,
+        <http://identifiers.org/mesh/D001847>,
+        <http://identifiers.org/snomedct/76069003>,
+        <http://linkedlifedata.com/resource/umls/id/C0005940>,
+        <http://purl.bioontology.org/ontology/ICD10CM/M80-M85>,
+        ns2:DOID_0080001,
+        <http://www.ebi.ac.uk/efo/EFO_0004260> .
+
+ns2:MONDO_0019056 a owl:Class ;
+    rdfs:label "neuromuscular disease" ;
+    ns2:IAO_0000115 "Any disease that impairs the functioning of the muscles, either directly, being pathologies of the voluntary muscle, or indirectly, being pathologies of nerves or neuromuscular junctions." ;
+    ns2:IAO_0000233 "https://github.com/monarch-initiative/mondo/issues/10487"^^xsd:anyURI ;
+    ns3:curated_content_resource <https://search.clinicalgenome.org/kb/conditions/MONDO:0019056>,
+        "https://www.malacards.org/card/neuromuscular_disease"^^xsd:anyURI ;
+    ns1:hasDbXref "DOID:440",
+        "EFO:1001902",
+        "ICD9:358",
+        "ICD9:358.9",
+        "MEDGEN:10323",
+        "MESH:D009468",
+        "MedDRA:10029323",
+        "NANDO:1100001",
+        "NANDO:2100214",
+        "Orphanet:68381",
+        "UMLS:C0027868" ;
+    ns1:hasExactSynonym "nerve and muscle disorder",
+        "neuromuscular disease" ;
+    ns1:id "MONDO:0019056" ;
+    ns1:inSubset ns3:clingen,
+        ns3:disease_grouping,
+        ns3:ordo_group_of_disorders,
+        ns3:otar ;
+    rdfs:subClassOf ns2:MONDO_0005071 ;
+    skos:closeMatch <http://identifiers.org/meddra/10029323> ;
+    skos:exactMatch <http://identifiers.org/medgen/10323>,
+        <http://identifiers.org/mesh/D009468>,
+        <http://linkedlifedata.com/resource/umls/id/C0027868>,
+        ns2:DOID_440,
+        <http://www.ebi.ac.uk/efo/EFO_1001902>,
+        <http://www.orpha.net/ORDO/Orphanet_68381> .
+
+ns2:IAO_0000115 a owl:AnnotationProperty ;
+    rdfs:label "definition",
+        "textual definition",
+        "definition"@en ;
+    ns2:IAO_0000111 "definition",
+        "textual definition",
+        "definition"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000122 ;
+    ns2:IAO_0000115 "A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition's source and attribution in a form that can easily be interpreted by software.",
+        "English language definitions of what NCI means by the concept. These are limited to 1024 characters. They may also include information about the definition's source and attribution in a form that can easily be interpreted by software.",
+        "The official definition.",
+        "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en,
+        "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en ;
+    ns2:IAO_0000116 """2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with."""@en,
+        """2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  """@en ;
+    ns2:IAO_0000117 "PERSON:Daniel Schober"@en ;
+    ns2:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en .
+
+ns2:MONDO_0005071 a owl:Class ;
+    rdfs:label "nervous system disorder" ;
+    ns2:IAO_0000115 "A non-neoplastic or neoplastic disorder that affects the brain, spinal cord, or peripheral nerves." ;
+    ns3:curated_content_resource "https://www.malacards.org/card/nervous_system_disease"^^xsd:anyURI ;
+    dcterms:conformsTo <http://purl.obolibrary.org/obo/mondo/patterns/location.yaml> ;
+    ns1:hasDbXref "DOID:863",
+        "EFO:0000618",
+        "ICD10CM:G00-G99",
+        "ICD9:349.89",
+        "ICD9:349.9",
+        "MEDGEN:14336",
+        "MESH:D009422",
+        "NCIT:C26835",
+        "SCTID:118940003",
+        "UMLS:C0027765",
+        "Wikipedia:Nervous_system_disease" ;
+    ns1:hasExactSynonym "disease of nervous system",
+        "disease or disorder of nervous system",
+        "disorder of nervous system",
+        "nervous system disease",
+        "nervous system disease or disorder",
+        "nervous system disorder",
+        "neurologic disease",
+        "neurologic disorder",
+        "neurological disease",
+        "neurological disorder" ;
+    ns1:id "MONDO:0005071" ;
+    ns1:inSubset ns3:harrisons_view,
+        ns3:otar,
+        ns3:rare_grouping ;
+    rdfs:comment "'psychiatric disorder' is not classified as a 'nervous system disorder' in Mondo (though it is often as such): the hallmarks of psychiatric disorders are based in behavior and emotional state, and the relation with nervous system malfunction or damage is not always clearly determined." ;
+    rdfs:subClassOf ns2:MONDO_0700096,
+        ns2:MONDO_7770006 ;
+    skos:exactMatch <http://identifiers.org/medgen/14336>,
+        <http://identifiers.org/mesh/D009422>,
+        <http://identifiers.org/snomedct/118940003>,
+        <http://linkedlifedata.com/resource/umls/id/C0027765>,
+        <http://purl.bioontology.org/ontology/ICD10CM/G00-G99>,
+        ns2:DOID_863,
+        ns2:NCIT_C26835,
+        <http://www.ebi.ac.uk/efo/EFO_0000618> .
+
+ns2:MONDO_0000001 a owl:Class ;
+    rdfs:label "disease" ;
+    ns2:IAO_0000115 "A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism." ;
+    ns1:hasDbXref "DOID:4",
+        "ICD9:799.9",
+        "MEDGEN:4347",
+        "MESH:D004194",
+        "NCIT:C2991",
+        "OGMS:0000031",
+        "Orphanet:377788",
+        "SCTID:64572001",
+        "UMLS:C0012634" ;
+    ns1:hasExactSynonym "condition",
+        "disease",
+        "disease or disorder",
+        "disease or disorder, non-neoplastic",
+        "diseases",
+        "diseases and disorders",
+        "disorder",
+        "disorders",
+        "medical condition",
+        "other disease" ;
+    ns1:id "MONDO:0000001" ;
+    ns1:inSubset ns3:ordo_disorder ;
+    rdfs:subClassOf ns2:BFO_0000016 ;
+    skos:exactMatch <http://identifiers.org/medgen/4347>,
+        <http://identifiers.org/mesh/D004194>,
+        <http://identifiers.org/snomedct/64572001>,
+        <http://linkedlifedata.com/resource/umls/id/C0012634>,
+        ns2:DOID_4,
+        ns2:NCIT_C2991,
+        <http://www.orpha.net/ORDO/Orphanet_377788> .
+
+ns2:MONDO_0003620 a owl:Class ;
+    rdfs:label "peripheral nervous system disorder" ;
+    ns2:IAO_0000115 "A disease involving the peripheral nervous system." ;
+    ns3:curated_content_resource "https://www.malacards.org/card/peripheral_nervous_system_disease"^^xsd:anyURI ;
+    dcterms:conformsTo <http://purl.obolibrary.org/obo/mondo/patterns/location.yaml>,
+        <http://purl.obolibrary.org/obo/mondo/patterns/location_top.yaml> ;
+    ns1:hasDbXref "DOID:574",
+        "EFO:0009387",
+        "ICD9:350-359",
+        "ICD9:356.9",
+        "MEDGEN:892389",
+        "MESH:D010523",
+        "NCIT:C27580",
+        "SCTID:42658009",
+        "UMLS:C4025831" ;
+    ns1:hasExactSynonym "PNS (peripheral nervous system) diseases",
+        "PNS disease",
+        "PNS diseases",
+        "disease of peripheral nervous system",
+        "disease or disorder of peripheral nervous system",
+        "disorder of peripheral nervous system",
+        "disorder of the peripheral nervous system",
+        "peripheral nervous system disease",
+        "peripheral nervous system disease or disorder",
+        "peripheral nervous system disorder",
+        "peripheral nervous system disorders" ;
+    ns1:hasNarrowSynonym "nerve disease, peripheral",
+        "nerve diseases, peripheral",
+        "neuropathy, peripheral",
+        "peripheral Neuropathies",
+        "peripheral nerve disease",
+        "peripheral nerve diseases",
+        "peripheral neuropathy" ;
+    ns1:id "MONDO:0003620" ;
+    ns1:inSubset ns3:otar,
+        ns3:rare_grouping ;
+    rdfs:subClassOf ns2:MONDO_0000001,
+        ns2:MONDO_0005071 ;
+    skos:exactMatch <http://identifiers.org/medgen/892389>,
+        <http://identifiers.org/mesh/D010523>,
+        <http://identifiers.org/snomedct/42658009>,
+        <http://linkedlifedata.com/resource/umls/id/C4025831>,
+        ns2:DOID_574,
+        ns2:NCIT_C27580,
+        <http://www.ebi.ac.uk/efo/EFO_0009387> .
+
+ns2:MONDO_0006816 a owl:Class ;
+    rdfs:label "arthropathy" ;
+    ns2:IAO_0000115 "Any disorder of the joints." ;
+    ns3:curated_content_resource "https://www.malacards.org/card/arthropathy"^^xsd:anyURI ;
+    ns3:excluded_subClassOf ns2:MONDO_0002614 ;
+    dcterms:conformsTo <http://purl.obolibrary.org/obo/mondo/patterns/location.yaml>,
+        <http://purl.obolibrary.org/obo/mondo/patterns/location_top.yaml> ;
+    ns1:hasDbXref "DOID:381",
+        "EFO:1000999",
+        "ICD9:711",
+        "ICD9:716.80",
+        "ICD9:716.88",
+        "ICD9:716.9",
+        "ICD9:716.90",
+        "ICD9:716.98",
+        "ICD9:719.80",
+        "ICD9:719.88",
+        "ICD9:719.89",
+        "ICD9:719.9",
+        "ICD9:719.90",
+        "ICD9:719.98",
+        "MEDGEN:7190",
+        "MESH:D007592",
+        "MedDRA:10003285",
+        "NCIT:C35760",
+        "SCTID:399269003",
+        "UMLS:C0022408" ;
+    ns1:hasExactSynonym "Joint disorder",
+        "arthropathy",
+        "disease of skeletal joint",
+        "disease or disorder of skeletal joint",
+        "disorder of skeletal joint",
+        "disorder, Joint",
+        "skeletal joint disease",
+        "skeletal joint disease or disorder" ;
+    ns1:hasNarrowSynonym "Joint ankylosis of the ankle and foot",
+        "Joint ankylosis of the forearm",
+        "Joint ankylosis of the hand",
+        "Joint ankylosis of the lower leg",
+        "Joint ankylosis of the pelvic region and thigh",
+        "Joint ankylosis of the shoulder region",
+        "Joint ankylosis of the upper arm",
+        "ankylosis of ankle and foot joint",
+        "ankylosis of forearm joint",
+        "ankylosis of hand joint",
+        "ankylosis of joint of multiple sites",
+        "ankylosis of joint of pelvic region and thigh",
+        "ankylosis of joint of shoulder region",
+        "ankylosis of lower leg joint",
+        "ankylosis of multiple joints",
+        "ankylosis of upper arm joint",
+        "infectious arthropathy" ;
+    ns1:id "MONDO:0006816" ;
+    ns1:inSubset ns3:otar ;
+    rdfs:subClassOf ns2:MONDO_0000001,
+        ns2:MONDO_0005172 ;
+    skos:closeMatch <http://identifiers.org/meddra/10003285> ;
+    skos:exactMatch <http://identifiers.org/medgen/7190>,
+        <http://identifiers.org/mesh/D007592>,
+        <http://identifiers.org/snomedct/399269003>,
+        <http://linkedlifedata.com/resource/umls/id/C0022408>,
+        ns2:DOID_381,
+        ns2:NCIT_C35760,
+        <http://www.ebi.ac.uk/efo/EFO_1000999> .
+
+ns1:hasExactSynonym a owl:AnnotationProperty ;
+    rdfs:label "has_exact_synonym" .
+
+ns1:hasDbXref a owl:AnnotationProperty ;
+    rdfs:label "database_cross_reference" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "OGMS:0000031" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism." .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C2991" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "disorders" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:538042",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005172 ;
+    owl:annotatedTarget "UMLS:C0263661" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/location_top" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005172 ;
+    owl:annotatedTarget "disease of skeletal system" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/location_top" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005172 ;
+    owl:annotatedTarget "disorder of skeletal system" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C3293" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0005178 ;
+    owl:annotatedTarget "A noninflammatory degenerative joint disease occurring chiefly in older persons, characterized by degeneration of the articular cartilage, hypertrophy of bone at the margins and changes in the synovial membrane. It is accompanied by pain and stiffness, particularly after prolonged activity." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MalaCards" ;
+    owl:annotatedProperty ns3:curated_content_resource ;
+    owl:annotatedSource ns2:MONDO_0005178 ;
+    owl:annotatedTarget "https://www.malacards.org/card/osteoarthritis"^^xsd:anyURI .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0002506",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005178 ;
+    owl:annotatedTarget "DOID:8398" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0002506",
+        "MONDO:otherHierarchy" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005178 ;
+    owl:annotatedTarget "HP:0002758" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo",
+        "https://github.com/monarch-initiative/mondo/issues/4536",
+        "https://orcid.org/0000-0001-5208-3432",
+        "https://orcid.org/0000-0002-4142-7153" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005178 ;
+    owl:annotatedTarget "ICD10CM:M15-M19" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005178 ;
+    owl:annotatedTarget "ICD10CM:M19" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:8398" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005178 ;
+    owl:annotatedTarget "ICD9:715.3" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C2991" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "other disease" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005178 ;
+    owl:annotatedTarget "MEDGEN:45244" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0002506",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005178 ;
+    owl:annotatedTarget "MESH:D010003" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0002506",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005178 ;
+    owl:annotatedTarget "NCIT:C3293" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0002506",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005178 ;
+    owl:annotatedTarget "SCTID:396275006" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:45244",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005178 ;
+    owl:annotatedTarget "UMLS:C0029408" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005178 ;
+    owl:annotatedTarget "icd11.foundation:558562409" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "DOID:8398",
+        "NCIT:C3293" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005178 ;
+    owl:annotatedTarget "degenerative joint disease" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:OTAR" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0005178 ;
+    owl:annotatedTarget ns3:otar .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C119734" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0005244 ;
+    owl:annotatedTarget "A disorder affecting the peripheral nervous system. It manifests with pain, tingling, numbness, and muscle weakness. It may be the result of physical injury, toxic substances, viral diseases, diabetes, renal failure, cancer, and drugs." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MalaCards" ;
+    owl:annotatedProperty ns3:curated_content_resource ;
+    owl:annotatedSource ns2:MONDO_0005244 ;
+    owl:annotatedTarget "https://www.malacards.org/card/neuropathy"^^xsd:anyURI .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000408",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "DOID:4" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0004149",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005244 ;
+    owl:annotatedTarget "DOID:870" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:EFO",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005244 ;
+    owl:annotatedTarget "EFO:0003100" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005244 ;
+    owl:annotatedTarget "MEDGEN:18386" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0003100" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005244 ;
+    owl:annotatedTarget "MedDRA:10034606" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0003100",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005244 ;
+    owl:annotatedTarget "NCIT:C119734" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:870",
+        "EFO:0004149",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005244 ;
+    owl:annotatedTarget "NCIT:C4731" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo",
+        "https://orcid.org/0000-0001-5208-3432" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005244 ;
+    owl:annotatedTarget "SCTID:302226006" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:870",
+        "EFO:0004149",
+        "MONDO:mondoIsNarrowerThanSource" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005244 ;
+    owl:annotatedTarget "SCTID:386033004" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:18386",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005244 ;
+    owl:annotatedTarget "UMLS:C0031117" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "DOID:870",
+        "MONDO:0005337",
+        "NCIT:C4731" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005244 ;
+    owl:annotatedTarget "neuropathy" .
+
+[] a owl:Axiom ;
+    ns1:source "Orphanet:377788" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget ns3:ordo_disorder .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C119734" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005244 ;
+    owl:annotatedTarget "peripheral nerve disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "DOID:870",
+        "NCIT:C119734",
+        "https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues/20" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005244 ;
+    owl:annotatedTarget "peripheral neuropathy" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:OTAR" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0005244 ;
+    owl:annotatedTarget ns3:otar .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D001847" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0005381 ;
+    owl:annotatedTarget "Diseases of bones." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MalaCards" ;
+    owl:annotatedProperty ns3:curated_content_resource ;
+    owl:annotatedSource ns2:MONDO_0005381 ;
+    owl:annotatedTarget "https://www.malacards.org/card/bone_disease"^^xsd:anyURI .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:0080001",
+        "https://orcid.org/0000-0001-5208-3432" ;
+    owl:annotatedProperty ns3:excluded_subClassOf ;
+    owl:annotatedSource ns2:MONDO_0005381 ;
+    owl:annotatedTarget ns2:MONDO_0003900 .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0004260",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005381 ;
+    owl:annotatedTarget "DOID:0080001" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:EFO",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005381 ;
+    owl:annotatedTarget "EFO:0004260" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo",
+        "https://github.com/monarch-initiative/mondo/issues/4536",
+        "https://orcid.org/0000-0001-5208-3432",
+        "https://orcid.org/0000-0002-4142-7153" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005381 ;
+    owl:annotatedTarget "ICD10CM:M80-M85" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005381 ;
+    owl:annotatedTarget "ICD9:731.8" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "ICD9:799.9" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005381 ;
+    owl:annotatedTarget "ICD9:733.99" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005381 ;
+    owl:annotatedTarget "MEDGEN:14182" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:0080001",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005381 ;
+    owl:annotatedTarget "MESH:D001847" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:NANDO",
+        "https://orcid.org/0000-0002-0170-9172",
+        "https://orcid.org/0000-0003-0011-764X" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005381 ;
+    owl:annotatedTarget "NANDO:2100291" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:NANDO",
+        "https://orcid.org/0000-0002-0170-9172",
+        "https://orcid.org/0000-0003-0011-764X" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005381 ;
+    owl:annotatedTarget "NANDO:2100293" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:0080001",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005381 ;
+    owl:annotatedTarget "SCTID:76069003" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:14182",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005381 ;
+    owl:annotatedTarget "UMLS:C0005940" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/location" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005381 ;
+    owl:annotatedTarget "bone element disease" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:design_pattern",
+        "MONDO:patterns/location" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005381 ;
+    owl:annotatedTarget "bone element disease or disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/location_top" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005381 ;
+    owl:annotatedTarget "disease of bone element" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "MEDGEN:4347" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/location_top" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005381 ;
+    owl:annotatedTarget "disorder of bone element" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:OTAR" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0005381 ;
+    owl:annotatedTarget ns3:otar .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C2883" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0005578 ;
+    owl:annotatedTarget "An inflammatory process affecting a joint. Causes include infection, autoimmune processes, degenerative processes, and trauma. Signs and symptoms may include swelling around the affected joint and pain." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MalaCards" ;
+    owl:annotatedProperty ns3:curated_content_resource ;
+    owl:annotatedSource ns2:MONDO_0005578 ;
+    owl:annotatedTarget "https://www.malacards.org/card/arthritis"^^xsd:anyURI .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0005856",
+        "https://orcid.org/0000-0001-5208-3432" ;
+    owl:annotatedProperty ns3:excluded_subClassOf ;
+    owl:annotatedSource ns2:MONDO_0005578 ;
+    owl:annotatedTarget ns2:MONDO_0005554 .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0005856",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005578 ;
+    owl:annotatedTarget "DOID:848" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:EFO",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005578 ;
+    owl:annotatedTarget "EFO:0005856" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005578 ;
+    owl:annotatedTarget "MEDGEN:2043" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:848",
+        "EFO:0005856",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005578 ;
+    owl:annotatedTarget "MESH:D001168" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:848",
+        "EFO:0005856",
+        "MONDO:equivalentTo",
+        "MONDO:exact-label-match" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005578 ;
+    owl:annotatedTarget "NCIT:C2883" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:4",
+        "EFO:0000408",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "MESH:D004194" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:848",
+        "EFO:0005856",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005578 ;
+    owl:annotatedTarget "SCTID:3723001" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:2043",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005578 ;
+    owl:annotatedTarget "UMLS:C0003864" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0005856" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005578 ;
+    owl:annotatedTarget "Wikipedia:Arthritis" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "DOID:848",
+        "NCIT:C2883" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005578 ;
+    owl:annotatedTarget "arthritis" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/inflammatory_disease_by_site" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005578 ;
+    owl:annotatedTarget "skeletal joint inflammation" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:OTAR" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0005578 ;
+    owl:annotatedTarget ns3:otar .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:P378" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0006626 ;
+    owl:annotatedTarget "A chronic, pathological complication associated with diabetes mellitus, where nerve damages are incurred due to diabetic microvascular injury involving small blood vessels that supply these nerves, resulting in peripheral and/or autonomic nerve dysfunction." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MalaCards" ;
+    owl:annotatedProperty ns3:curated_content_resource ;
+    owl:annotatedSource ns2:MONDO_0006626 ;
+    owl:annotatedTarget "https://www.malacards.org/card/diabetic_neuropathy"^^xsd:anyURI .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006626 ;
+    owl:annotatedTarget "DOID:9743" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:EFO",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006626 ;
+    owl:annotatedTarget "EFO:1000783" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:4",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "NCIT:C2991" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:9743" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006626 ;
+    owl:annotatedTarget "ICD9:250.6" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006626 ;
+    owl:annotatedTarget "MEDGEN:8353" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:9743",
+        "EFO:1000783",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006626 ;
+    owl:annotatedTarget "MESH:D003929" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:9743",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006626 ;
+    owl:annotatedTarget "NCIT:C26748" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:9743",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006626 ;
+    owl:annotatedTarget "SCTID:230572002" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:8353",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006626 ;
+    owl:annotatedTarget "UMLS:C0011882" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:OTAR" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0006626 ;
+    owl:annotatedTarget ns3:otar .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C35760" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "Any disorder of the joints." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MalaCards" ;
+    owl:annotatedProperty ns3:curated_content_resource ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "https://www.malacards.org/card/arthropathy"^^xsd:anyURI .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:381",
+        "https://orcid.org/0000-0001-5208-3432" ;
+    owl:annotatedProperty ns3:excluded_subClassOf ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget ns2:MONDO_0002614 .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "OGMS:0000031" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:1000999",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "DOID:381" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:EFO",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "EFO:1000999" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:381" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "ICD9:711" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "ICD9:716.80" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "ICD9:716.88" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:381" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "ICD9:716.9" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:381",
+        "MONDO:equivalentTo",
+        "MONDO:i2s" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "ICD9:716.90" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "ICD9:716.98" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "ICD9:719.80" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "ICD9:719.88" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "Orphanet:377788" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "ICD9:719.89" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:381" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "ICD9:719.9" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:381",
+        "MONDO:equivalentTo",
+        "MONDO:i2s" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "ICD9:719.90" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "ICD9:719.98" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "MEDGEN:7190" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:381",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "MESH:D007592" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:1000999" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "MedDRA:10003285" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:381",
+        "EFO:1000999",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "NCIT:C35760" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:381",
+        "EFO:1000999",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "SCTID:399269003" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:7190",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "UMLS:C0022408" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:4347",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "UMLS:C0012634" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:4",
+        "EFO:0000408",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "SCTID:64572001" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C35760" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "Joint disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "DOID:381",
+        "NCIT:C35760" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "arthropathy" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/location_top" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "disease of skeletal joint" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/location_top" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "disorder of skeletal joint" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/location" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "skeletal joint disease" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:design_pattern",
+        "MONDO:patterns/location" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget "skeletal joint disease or disorder" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:OTAR" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0006816 ;
+    owl:annotatedTarget ns3:otar .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "Wikipedia:Neuromuscular_disease" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0019056 ;
+    owl:annotatedTarget "Any disease that impairs the functioning of the muscles, either directly, being pathologies of the voluntary muscle, or indirectly, being pathologies of nerves or neuromuscular junctions." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:CLINGEN" ;
+    owl:annotatedProperty ns3:curated_content_resource ;
+    owl:annotatedSource ns2:MONDO_0019056 ;
+    owl:annotatedTarget <https://search.clinicalgenome.org/kb/conditions/MONDO:0019056> .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MalaCards" ;
+    owl:annotatedProperty ns3:curated_content_resource ;
+    owl:annotatedSource ns2:MONDO_0019056 ;
+    owl:annotatedTarget "https://www.malacards.org/card/neuromuscular_disease"^^xsd:anyURI .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "https://orcid.org/0000-0002-6601-2165" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0002081 ;
+    owl:annotatedTarget "A disease involving the musculoskeletal system." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0019056 ;
+    owl:annotatedTarget "DOID:440" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:EFO",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0019056 ;
+    owl:annotatedTarget "EFO:1001902" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:440" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0019056 ;
+    owl:annotatedTarget "ICD9:358" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:440" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0019056 ;
+    owl:annotatedTarget "ICD9:358.9" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0019056 ;
+    owl:annotatedTarget "MEDGEN:10323" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:440",
+        "MONDO:equivalentTo",
+        "Orphanet:68381",
+        "Orphanet:68381/e" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0019056 ;
+    owl:annotatedTarget "MESH:D009468" .
+
+[] a owl:Axiom ;
+    ns1:source "Orphanet:68381",
+        "Orphanet:68381/e" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0019056 ;
+    owl:annotatedTarget "MedDRA:10029323" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:NANDO",
+        "https://orcid.org/0000-0002-0170-9172",
+        "https://orcid.org/0000-0003-0011-764X" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0019056 ;
+    owl:annotatedTarget "NANDO:1100001" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:NANDO",
+        "https://orcid.org/0000-0002-0170-9172",
+        "https://orcid.org/0000-0003-0011-764X" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0019056 ;
+    owl:annotatedTarget "NANDO:2100214" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0019056 ;
+    owl:annotatedTarget "Orphanet:68381" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0002081 ;
+    owl:annotatedTarget "DOID:17" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:10323",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0019056 ;
+    owl:annotatedTarget "UMLS:C0027868" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "ISBN-13:978-1-259-64403-0" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0019056 ;
+    owl:annotatedTarget "nerve and muscle disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "DOID:440",
+        "MONDO:0002986",
+        "Orphanet:68381" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0019056 ;
+    owl:annotatedTarget "neuromuscular disease" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:CLINGEN" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0019056 ;
+    owl:annotatedTarget ns3:clingen .
+
+[] a owl:Axiom ;
+    ns1:source "Orphanet:68381" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0019056 ;
+    owl:annotatedTarget ns3:ordo_group_of_disorders .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:OTAR" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0019056 ;
+    owl:annotatedTarget ns3:otar .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/inflammatory_disease_by_site" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0021166 ;
+    owl:annotatedTarget "A disease involving a pathogenic inflammatory response in the anatomical structure." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0021166 ;
+    owl:annotatedTarget "ICD9:799.89" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0021166 ;
+    owl:annotatedTarget "MEDGEN:452939" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0021166 ;
+    owl:annotatedTarget "NCIT:C93210" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:EFO",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0002081 ;
+    owl:annotatedTarget "EFO:0009676" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0021166 ;
+    owl:annotatedTarget "SCTID:128139000" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:452939",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0021166 ;
+    owl:annotatedTarget "UMLS:C1290884" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/inflammatory_disease_by_site" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0021166 ;
+    owl:annotatedTarget "anatomical structure inflammation" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C93210" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0021166 ;
+    owl:annotatedTarget "inflammatory disease" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C93210" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0021166 ;
+    owl:annotatedTarget "inflammatory disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "https://orcid.org/0000-0001-5208-3432" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0700096 ;
+    owl:annotatedTarget "human disease or disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "https://orcid.org/0000-0003-2360-2664" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_7770006 ;
+    owl:annotatedTarget "A grouping class for human diseases classified by the body system or anatomical component primarily affected." .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "https://orcid.org/0000-0003-2360-2664" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_7770007 ;
+    owl:annotatedTarget "A grouping class for human diseases classified by the molecular, biochemical, cellular, anatomic, developmental or physiological process that is disrupted." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0002081 ;
+    owl:annotatedTarget "ICD9:729.99" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0002081 ;
+    owl:annotatedTarget "MEDGEN:6471" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:17",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0002081 ;
+    owl:annotatedTarget "MESH:D009140" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:17",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0002081 ;
+    owl:annotatedTarget "NCIT:C107377" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:17",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0002081 ;
+    owl:annotatedTarget "SCTID:928000" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:6471",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0002081 ;
+    owl:annotatedTarget "UMLS:C0026857" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C2991" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "condition" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/location_top" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0002081 ;
+    owl:annotatedTarget "disease of musculoskeletal system" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/location_top",
+        "NCIT:C107377" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0002081 ;
+    owl:annotatedTarget "disorder of musculoskeletal system" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "DOID:17",
+        "MONDO:patterns/location" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0002081 ;
+    owl:annotatedTarget "musculoskeletal system disease" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:design_pattern",
+        "MONDO:patterns/location" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0002081 ;
+    owl:annotatedTarget "musculoskeletal system disease or disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C107377" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0002081 ;
+    owl:annotatedTarget "musculoskeletal system disorder" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:OTAR" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0002081 ;
+    owl:annotatedTarget ns3:otar .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D010000" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0002614 ;
+    owl:annotatedTarget "Inflammation of the bone." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MalaCards" ;
+    owl:annotatedProperty ns3:curated_content_resource ;
+    owl:annotatedSource ns2:MONDO_0002614 ;
+    owl:annotatedTarget "https://www.malacards.org/card/bone_inflammation_disease"^^xsd:anyURI .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0002614 ;
+    owl:annotatedTarget "DOID:3342" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0002614 ;
+    owl:annotatedTarget "MEDGEN:10492" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "DOID:4",
+        "NCIT:C2991",
+        "Orphanet:377788" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "disease" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:3342",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0002614 ;
+    owl:annotatedTarget "MESH:D010000" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:3342",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0002614 ;
+    owl:annotatedTarget "SCTID:274144001" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:10492",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0002614 ;
+    owl:annotatedTarget "UMLS:C0029400" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:OTAR" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0002614 ;
+    owl:annotatedTarget ns3:otar .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "https://orcid.org/0000-0002-6601-2165" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "A disease involving the peripheral nervous system." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MalaCards" ;
+    owl:annotatedProperty ns3:curated_content_resource ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "https://www.malacards.org/card/peripheral_nervous_system_disease"^^xsd:anyURI .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "DOID:574" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:EFO",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "EFO:0009387" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:574" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "ICD9:350-359" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "ICD9:356.9" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C2991" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "disease or disorder" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "MEDGEN:892389" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:574",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "MESH:D010523" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:574",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "NCIT:C27580" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:574",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "SCTID:42658009" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:892389",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "UMLS:C4025831" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D010523" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "PNS (peripheral nervous system) diseases" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D010523" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "PNS disease" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D010523" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "PNS diseases" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/location_top" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "disease of peripheral nervous system" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/location_top",
+        "NCIT:C27580" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "disorder of peripheral nervous system" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C2991" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "disease or disorder, non-neoplastic" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "DOID:574",
+        "MESH:D010523",
+        "MONDO:patterns/location",
+        "NCIT:C27580" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "peripheral nervous system disease" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:design_pattern",
+        "MONDO:patterns/location" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "peripheral nervous system disease or disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C27580" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "peripheral nervous system disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D010523" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "peripheral nervous system disorders" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D010523" ;
+    owl:annotatedProperty ns1:hasNarrowSynonym ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "nerve disease, peripheral" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D010523" ;
+    owl:annotatedProperty ns1:hasNarrowSynonym ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "nerve diseases, peripheral" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D010523" ;
+    owl:annotatedProperty ns1:hasNarrowSynonym ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "neuropathy, peripheral" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D010523" ;
+    owl:annotatedProperty ns1:hasNarrowSynonym ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "peripheral Neuropathies" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D010523",
+        "MTH:516" ;
+    owl:annotatedProperty ns1:hasNarrowSynonym ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "peripheral nerve disease" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D010523" ;
+    owl:annotatedProperty ns1:hasNarrowSynonym ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "peripheral nerve diseases" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C2991" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "diseases" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D010523" ;
+    owl:annotatedProperty ns1:hasNarrowSynonym ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget "peripheral neuropathy" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:OTAR" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0003620 ;
+    owl:annotatedTarget ns3:otar .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C26835" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0005071 ;
+    owl:annotatedTarget "A non-neoplastic or neoplastic disorder that affects the brain, spinal cord, or peripheral nerves." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MalaCards" ;
+    owl:annotatedProperty ns3:curated_content_resource ;
+    owl:annotatedSource ns2:MONDO_0005071 ;
+    owl:annotatedTarget "https://www.malacards.org/card/nervous_system_disease"^^xsd:anyURI .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000618",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005071 ;
+    owl:annotatedTarget "DOID:863" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:EFO",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005071 ;
+    owl:annotatedTarget "EFO:0000618" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:863",
+        "MONDO:equivalentTo",
+        "https://github.com/monarch-initiative/mondo/issues/4536",
+        "https://orcid.org/0000-0001-5208-3432",
+        "https://orcid.org/0000-0002-4142-7153" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005071 ;
+    owl:annotatedTarget "ICD10CM:G00-G99" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005071 ;
+    owl:annotatedTarget "ICD9:349.89" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:863",
+        "MONDO:equivalentTo",
+        "MONDO:i2s" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005071 ;
+    owl:annotatedTarget "ICD9:349.9" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005071 ;
+    owl:annotatedTarget "MEDGEN:14336" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C2991" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "diseases and disorders" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:863",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005071 ;
+    owl:annotatedTarget "MESH:D009422" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:863",
+        "MONDO:equivalentTo",
+        "NCIT:C26835" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005071 ;
+    owl:annotatedTarget "NCIT:C26835" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:863",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005071 ;
+    owl:annotatedTarget "SCTID:118940003" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:14336",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005071 ;
+    owl:annotatedTarget "UMLS:C0027765" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000618" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005071 ;
+    owl:annotatedTarget "Wikipedia:Nervous_system_disease" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/location_top" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005071 ;
+    owl:annotatedTarget "disease of nervous system" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/location_top",
+        "NCIT:C26835" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005071 ;
+    owl:annotatedTarget "disorder of nervous system" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "DOID:863",
+        "MONDO:patterns/location" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005071 ;
+    owl:annotatedTarget "nervous system disease" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:design_pattern",
+        "MONDO:patterns/location" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005071 ;
+    owl:annotatedTarget "nervous system disease or disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C26835" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005071 ;
+    owl:annotatedTarget "nervous system disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C2991" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "ISBN-13:978-1-259-64403-0",
+        "NCIT:C26835" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005071 ;
+    owl:annotatedTarget "neurologic disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C26835" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005071 ;
+    owl:annotatedTarget "neurological disorder" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:OTAR" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0005071 ;
+    owl:annotatedTarget ns3:otar .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/location" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005172 ;
+    owl:annotatedTarget "skeletal system disease" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:design_pattern",
+        "MONDO:patterns/location" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005172 ;
+    owl:annotatedTarget "skeletal system disease or disorder" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:OTAR" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0005172 ;
+    owl:annotatedTarget ns3:otar .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "https://orcid.org/0000-0002-6601-2165" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0005172 ;
+    owl:annotatedTarget "A disease involving the skeletal system." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:EFO",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005172 ;
+    owl:annotatedTarget "EFO:0002461" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005172 ;
+    owl:annotatedTarget "MEDGEN:538042" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005172 ;
+    owl:annotatedTarget "SCTID:88230002" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref <https://orcid.org/0000-0002-0736-9199> ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:HP_0000118 ;
+    owl:annotatedTarget "A phenotypic abnormality." .
+
+[] a owl:Axiom ;
+    ns1:hasSynonymType <http://purl.obolibrary.org/obo/hp#layperson> ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:HP_0000925 ;
+    owl:annotatedTarget "Abnormal vertebral column" .
+
+[] a owl:Axiom ;
+    ns1:hasSynonymType <http://purl.obolibrary.org/obo/hp#layperson> ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:HP_0000925 ;
+    owl:annotatedTarget "Abnormality of the spine" .
+
+[] a owl:Axiom ;
+    ns1:hasSynonymType <http://purl.obolibrary.org/obo/hp#layperson> ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:HP_0003418 ;
+    owl:annotatedTarget "Back pain" .
+
+[] a owl:Axiom ;
+    ns1:hasSynonymType <http://purl.obolibrary.org/obo/hp#layperson> ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:HP_0003419 ;
+    owl:annotatedTarget "Lumbago" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref <https://orcid.org/0000-0002-0736-9199> ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:HP_0009121 ;
+    owl:annotatedTarget "An abnormality of the axial skeleton, which comprises the skull, the vertebral column, the ribs and the sternum." .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref <https://orcid.org/0000-0002-0736-9199> ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:HP_0011842 ;
+    owl:annotatedTarget "An abnormality of the form, structure, or size of the skeletal system." .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref <https://orcid.org/0000-0001-5208-3432> ;
+    ns1:hasSynonymType <http://purl.obolibrary.org/obo/hp#layperson> ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:HP_0011842 ;
+    owl:annotatedTarget "Abnormally shaped skeletal" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref <https://orcid.org/0000-0001-5208-3432> ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:HP_0012531 ;
+    owl:annotatedTarget "An unpleasant sensory and emotional experience associated with actual or potential tissue damage, or described in terms of such damage." .
+
+[] a owl:Axiom ;
+    ns1:hasSynonymType <http://purl.obolibrary.org/obo/hp#layperson> ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:HP_0012531 ;
+    owl:annotatedTarget "Pain" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref <https://orcid.org/0000-0002-0736-9199> ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:HP_0000924 ;
+    owl:annotatedTarget "An abnormality of the skeletal system." .
+
+[] a owl:Axiom ;
+    ns1:hasSynonymType <http://purl.obolibrary.org/obo/hp#layperson> ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:HP_0000924 ;
+    owl:annotatedTarget "Abnormality of the skeletal system" .
+
+[] a owl:Axiom ;
+    ns1:hasSynonymType <http://purl.obolibrary.org/obo/hp#layperson> ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:HP_0000924 ;
+    owl:annotatedTarget "Skeletal abnormalities" .
+
+[] a owl:Axiom ;
+    ns1:hasSynonymType <http://purl.obolibrary.org/obo/hp#layperson> ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:HP_0000924 ;
+    owl:annotatedTarget "Skeletal anomalies" .
+
+[] a owl:Axiom ;
+    ns1:hasSynonymType <http://purl.obolibrary.org/obo/hp#layperson> ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:HP_0000925 ;
+    owl:annotatedTarget "Abnormality of the vertebral column" .
+
+[] a owl:Axiom ;
+    ns1:hasSynonymType <http://purl.obolibrary.org/obo/hp#layperson> ;
+    owl:annotatedProperty ns1:hasRelatedSynonym ;
+    owl:annotatedSource ns2:HP_0000925 ;
+    owl:annotatedTarget "Abnormality of the backbone" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref <https://orcid.org/0000-0002-0736-9199> ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:HP_0000925 ;
+    owl:annotatedTarget "Any abnormality of the vertebral column." .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref <https://orcid.org/0000-0002-5316-1399> ;
+    ns1:hasSynonymType <http://purl.obolibrary.org/obo/hp#layperson> ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:HP_0000925 ;
+    owl:annotatedTarget "Abnormal spine" .
+

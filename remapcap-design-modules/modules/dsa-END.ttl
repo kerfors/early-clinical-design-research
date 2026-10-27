@@ -1,0 +1,1279 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rcap: <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-END> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/about>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/core> .
+
+rcap:Domain_END a owl:Class ;
+    rdfs:label "Endothelial Modulation domain" ;
+    rdfs:subClassOf _:N32d7ae8f780d4edf80bc9ea4d5a6f820,
+        _:N6b03860debcb46b5972e2c8e804c66ac,
+        rcap:Domain .
+
+rcap:DomainDesign_END a owl:Class ;
+    rdfs:label "REMAP-CAP Endothelial Modulation Domain-Specific Appendix 2 design" ;
+    rdfs:subClassOf _:N021758e770944a8183495740a7970b0c,
+        _:N027aaa4d93a2414fbffff5985a6c948a,
+        _:N090931cdedba4da39350b0ea451ec8ca,
+        _:N098f52204fda4886a806b43d79978155,
+        _:N12c6ecbe01904ea49e325c3988989a01,
+        _:N13654656326547b595e55e10401bb179,
+        _:N137ef513c7b444629d98dbdfbd4825fd,
+        _:N156e05bc29214470acf0516d4308835f,
+        _:N17a78783160a4d208a2c4b1548e13365,
+        _:N238a566d480243baad98fc7087eb3e26,
+        _:N23b08d4385a241da8b47d3cf5b10c63f,
+        _:N26c67537e5c44dcf8a3820e11174c35d,
+        _:N29014e7e7d864b139dec513992d6df3e,
+        _:N297dd5f87b574870ab6be2f61236dc89,
+        _:N2a3d894db13d495e9d0288fc30a7818f,
+        _:N2bd4988c6f2042b19738571ca3e05021,
+        _:N2c6968ba90884625a4511b2dd06d3ba3,
+        _:N2d5544967c9546cbb576c3b2745689d7,
+        _:N316f86d8c95945debe44905de88a9040,
+        _:N31f743f99f594ce7931c9c09f4097949,
+        _:N326e7413bc7340349e9e663e3447ceba,
+        _:N386619cdcaa2427ab96202b670ec0c68,
+        _:N3c8c7375dac247439f34a4b870e2ca4c,
+        _:N472fb3a895154ec9b5eea1f0f0ff4958,
+        _:N4bdc7feabca8422bbe56a85c8b1e6608,
+        _:N4f3083e84a6d4b0ba0aaec0e6562d22d,
+        _:N50d1a8f981494d9d909125418d0ffdb6,
+        _:N5ca2912aafc94abdabdc5c2616845ac7,
+        _:N5daddffe614b4e50b0e0f925fb344839,
+        _:N5ee835fbed254e40b0f0d447a7d2ba5f,
+        _:N5fa671d2774c449683bdf5ed954fd6db,
+        _:N605f24a5fe7f428593b83d6f3cda3e2a,
+        _:N613b0833a9f94904aa061e920b872622,
+        _:N631ca32f99c44f45afbb0bfc7a9744d6,
+        _:N647817ab01fe4142941171d866ca086b,
+        _:N6b22844aa42c48958acd67f495fb7132,
+        _:N6cdfb7af58f64645ac15ab5a97ed86c5,
+        _:N6e456f634dc04f7aa835350e77ef3269,
+        _:N75b730a0abfe43789e7d8ad064bcf0c2,
+        _:N79f61b09528b49789866e17dc55fa50e,
+        _:N7ce6999edcb54f8c87bf1749ec4ae220,
+        _:N8294081eb8334052a8f9ff6c11ed6395,
+        _:N84b4db23d6f04a83a3350ed5f23719f3,
+        _:N8a3efbbcdd05434d8c3eebcafa793acf,
+        _:N8fe9b8c1bc8c42adb24b18be8cb73be7,
+        _:N922300921aaf417aa939ad039d3eac46,
+        _:N944f73ac572c47bb942893d866a3c345,
+        _:N978b5beaf3364f1e8bd87ac3a4ddcf96,
+        _:N97b3735ded17441fa0a351bdd09379be,
+        _:N9a2d1b598dfa4c5eb4bc9acf05cc3bdd,
+        _:N9d74572defb3472e8bfe2fae59def444,
+        _:N9da5842118c343c3a498aaaa67328f72,
+        _:Na1099cf1c54d469793db70202dc511a6,
+        _:Na1d9fded0dd748838d9c57e96c41717f,
+        _:Na80ed1c287c24936886caf0b262b600e,
+        _:Nb1d50598e91c424ab70d009c6c85d8d8,
+        _:Nb1de737903ce4996838b4b620e921184,
+        _:Nb3bb0cc917f843be95c2c2fa3ffe3606,
+        _:Nb47a0c1b03a34d408be48d449de557f0,
+        _:Nbae209949e724512a635c4ddec70a738,
+        _:Nbf7365cefb784705b26c62628ff0c992,
+        _:Nc1d46515dc354a909351884d70526a3a,
+        _:Nc3f1cbdd2f40407fb228a5eb7240d462,
+        _:Nc7c8ce91744b4b549b04914d263e3a4f,
+        _:Ncca37d8d0b39422496f54d70e5fd47f8,
+        _:Nce31aa7ed4be4ee4b49fa14314b5d52f,
+        _:Ncf7f2f77fc16420094431df0f49aa76b,
+        _:Nd3e783b8ac5f4f42ae525dbfe1452e72,
+        _:Nd4fd5604ca6542ed9c2ecdf005f3ffd0,
+        _:Nd5c05563bce44677a468c2a1d443ba4b,
+        _:Nda1709d335464d949d5e72f8ef79a576,
+        _:Ndc7a654ab8194d449d85510779fdfe98,
+        _:Ndc87fbfdec644d2b944023dce6e9aa7f,
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000051 ;
+            owl:someValuesFrom rcap:Domain_END ],
+        _:Ndf7487872969425e969948f1a6fb6ce5,
+        _:Ndfc58408ebe34ed5a4c815c062e36435,
+        _:Ne2a8cf07ad884e6bbd6e264e9a136f88,
+        rcap:CoreDesign ;
+    rcap:documentDate "5 Nov 2024" ;
+    rcap:documentTitle "Endothelial Modulation Domain-Specific Appendix 2" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N978b5beaf3364f1e8bd87ac3a4ddcf96 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.5" ;
+    rcap:evidenceText "A full blood count (to monitor for cytopenias) and liver function tests (bilirubin, ALT +/- AST) should be performed, as part of usual care, at least twice weekly whilst receiving enteral imatinib." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N6e456f634dc04f7aa835350e77ef3269 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.4" ;
+    rcap:evidenceText "The timing of the revealing of allocation status and administration of interventions is specified to be Randomization with Immediate Reveal and Initiation or Randomization with Deferred Reveal and Initiation (see relevant Core Protocol documents)." ;
+    rcap:occurrenceKind "allocation_reveal" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N238a566d480243baad98fc7087eb3e26 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "all other interventions are contraindicated) are not eligible for this domain." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N5daddffe614b4e50b0e0f925fb344839 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.5" ;
+    rcap:evidenceText "If an interaction is specified with a future domain, it is sufficient for the interaction to be specified only in the DSA of such a future domain." ;
+    rcap:occurrenceKind "allocation_interactions" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N326e7413bc7340349e9e663e3447ceba ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "Enteral imatinib will be administered for a total of 14 days or until hospital discharge, whichever occurs first." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N4f3083e84a6d4b0ba0aaec0e6562d22d ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Patients will be randomly assigned to receive either of the following open-label strategies." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N027aaa4d93a2414fbffff5985a6c948a ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "dasatinib, nilotinib) unless for an accepted clinical indication (e.g." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Nd3e783b8ac5f4f42ae525dbfe1452e72 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "In such cases, patients will be randomly allocated to a remaining intervention from among those available at that site." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N944f73ac572c47bb942893d866a3c345 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Patient is aged ≥ 18 years old" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget rcap:CoreDesign ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePage 9 ;
+    rcap:evidenceRule "B-dsa" ;
+    rcap:evidenceText "The Core Protocol contains all information that is generic to the trial …" ;
+    rcap:note "Core Protocol 4.0 1.2: Domain-Specific Appendix is an appendix to the Core Protocol.",
+        "Core Protocol 4.1 1.2: Domain-Specific Appendix is an appendix to the Core Protocol." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N472fb3a895154ec9b5eea1f0f0ff4958 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Patients in whom all interventions are contraindicated will be treated according to the current standard of care at the clinician’s discretion." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Nda1709d335464d949d5e72f8ef79a576 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.5.1" ;
+    rcap:evidenceText "The primary endpoint for this domain is the primary outcome specified in the Core Protocol." ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N316f86d8c95945debe44905de88a9040 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.7" ;
+    rcap:evidenceText "Highly effective contraception includes combined (estrogen and progestogen containing) hormonal contraception associated with inhibition of ovulation, progesterone-only contraception association with inhibition of ovulation, intrauterine device, intrauterine hormone-releasing system, bilateral tubal occlusion, vasectomised partner and sexual abstinence." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N75b730a0abfe43789e7d8ad064bcf0c2 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 31 ;
+    rcap:evidencePosition "10" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Serious adverse events as defined in relevant core protocol documents and this DSA" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N647817ab01fe4142941171d866ca086b ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "trailing:1" ;
+    rcap:evidenceSection "8.3.6" ;
+    rcap:evidenceText "The study interventions can be discontinued at any time by the treating clinician if doing so is regarded as being in the best interests of the patient." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N5ee835fbed254e40b0f0d447a7d2ba5f ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Patients who are eligible for only a single intervention at a site (i.e." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Nc1d46515dc354a909351884d70526a3a ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.3" ;
+    rcap:evidenceText "Response Adaptive Randomization may be applied." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N26c67537e5c44dcf8a3820e11174c35d ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.3" ;
+    rcap:evidenceText "If RAR is applied, the cap on the maximum or minimum proportion of patients assigned to an intervention that is specified in core protocol documents may be modified by the Statistical Analysis Committee (SAC) if needed to reduce the likelihood of sites being unblinded or to improve power." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N605f24a5fe7f428593b83d6f3cda3e2a ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 31 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Severe thrombocytopenia (defined as platelet count <50 x 10 9 /L)" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Ncf7f2f77fc16420094431df0f49aa76b ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "The unit of analysis for this domain corresponds to all patients who receive an allocation in this domain." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N386619cdcaa2427ab96202b670ec0c68 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 28 ;
+    rcap:evidencePosition "6" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "A baseline platelet count <50 x10 9 /L will exclude a patient from receiving enteral imatinib" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Ndf7487872969425e969948f1a6fb6ce5 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 31 ;
+    rcap:evidencePosition "6" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Confirmed pulmonary embolism" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N2c6968ba90884625a4511b2dd06d3ba3 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 29 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.3.6" ;
+    rcap:evidenceText "If a patient develops neutropenia (neutrophil count <1.0 x 10 9 /L) and/or thrombocytopenia (platelet count <50 x 10 9 /L), stop imatinib and do not restart" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N50d1a8f981494d9d909125418d0ffdb6 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.6" ;
+    rcap:evidenceText "The following reasons should prompt discontinuation of imatinib therapy:" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N17a78783160a4d208a2c4b1548e13365 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Patients may also be excluded from receiving one or more interventions within the domain for patient-specific reasons." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N79f61b09528b49789866e17dc55fa50e ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 28 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Known or suspected pregnancy or breast-feeding will exclude a patient from receiving enteral imatinib. It is normal practice that women admitted who are in an age group in which pregnancy is considered possible will have a pregnancy test conducted. The results of such tests will be used to determine interpretation of this exclusion criteria" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Nd5c05563bce44677a468c2a1d443ba4b ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "10.3" ;
+    rcap:evidenceText "If required, any such modifications will be an operational decision of the Design Team specified in the Current State document and applied by the SAC." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Nb1d50598e91c424ab70d009c6c85d8d8 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Patient was receiving imatinib or another tyrosine kinase inhibitor targeting the same pathway as imatinib (i.e. dasatinib, nilotinib, ponatinib) prior to this hospital admission" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Nb1de737903ce4996838b4b620e921184 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 32 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "9.2" ;
+    rcap:evidenceText "Administration of immune modulatory agents intended to influence host response to infection" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N2d5544967c9546cbb576c3b2745689d7 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 32 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "9.2" ;
+    rcap:evidenceText "Administration of anticoagulation or antiplatelet therapy" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N29014e7e7d864b139dec513992d6df3e ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "Enteral imatinib will be administered as a 800mg loading dose (study day 1) followed by 400mg once daily (study day 2-14) while the patient remains in hospital." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Nb47a0c1b03a34d408be48d449de557f0 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "This domain is available for patients who are in the Severe State, as defined in Core Protocol documents." ;
+    rcap:occurrenceKind "applicability_state" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Ncca37d8d0b39422496f54d70e5fd47f8 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.7" ;
+    rcap:evidenceText "Participants assigned to imatinib who are women of childbearing potential (that is fertile, following menarche and until becoming post-menopausal unless permanently sterile, such as following hysterectomy, bilateral salpingectomy and bilateral oophorectomy) must be advised to use highly effective contraception for 15 days following the last dose of imatinib." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Na1099cf1c54d469793db70202dc511a6 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 31 ;
+    rcap:evidencePosition "9" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Other thrombotic events" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N2bd4988c6f2042b19738571ca3e05021 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.6" ;
+    rcap:evidenceText "There is no nesting of interventions in this domain." ;
+    rcap:occurrenceKind "allocation_nesting" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N23b08d4385a241da8b47d3cf5b10c63f ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Patient has community-acquired respiratory tract infection" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Ndc87fbfdec644d2b944023dce6e9aa7f ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.8" ;
+    rcap:evidenceText "The same odds ratio delta as specified in the relevant Core Protocol documents for equivalence will be used for futility." ;
+    rcap:occurrenceKind "allocation_threshold" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N297dd5f87b574870ab6be2f61236dc89 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 28 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Severe renal impairment (eGFR <30 mL/min/1.73m 2 ) and/or receipt of renal replacement therapy (including long-term renal replacement therapy) at baseline will result in exclusion from receiving imatinib" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Ndfc58408ebe34ed5a4c815c062e36435 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "The treating clinician believes that participation in the domain would not be in the best interests of the patient" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N5fa671d2774c449683bdf5ed954fd6db ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 28 ;
+    rcap:evidencePosition "7" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "A baseline neutrophil count <1.0 x 10 9 /L will exclude a patient from receiving enteral imatinib" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Nbf7365cefb784705b26c62628ff0c992 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 30 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.3.6" ;
+    rcap:evidenceText "If a patient develops elevation in bilirubin 3 times the upper limit of normal or ALT/AST 5 times the upper limit of normal, imatinib should be discontinued and not restarted" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N84b4db23d6f04a83a3350ed5f23719f3 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "9.3" ;
+    rcap:evidenceText "Refer to relevant core protocol documents for criteria for discontinuation of participation in this trial." ;
+    rcap:occurrenceKind "discontinuation" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N156e05bc29214470acf0516d4308835f ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 31 ;
+    rcap:evidencePosition "8" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Confirmed ischemic cerebrovascular event" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N9d74572defb3472e8bfe2fae59def444 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "The domain-specific secondary outcome measures will be: From randomization in this domain, during the index hospitalization until the end of study day 15:" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N6cdfb7af58f64645ac15ab5a97ed86c5 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "trailing:1" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "From randomization in this domain, during the index hospitalization unless otherwise specified, censored 90 days after enrollment:" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N631ca32f99c44f45afbb0bfc7a9744d6 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 28 ;
+    rcap:evidencePosition "8" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Receiving strong CYP3A4 inhibitors (e.g. ketoconazole, itraconazole, erythromycin) or inducers (e.g. rifampicin, phenobarbital, carbamazepine, phenytoin) will exclude a patient receiving enteral imatinib" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N7ce6999edcb54f8c87bf1749ec4ae220 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Patient has pneumonia" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N2a3d894db13d495e9d0288fc30a7818f ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 31 ;
+    rcap:evidencePosition "7" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Acute myocardial infarction" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N090931cdedba4da39350b0ea451ec8ca ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "The interventions will be commenced immediately after allocation status is revealed." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Nce31aa7ed4be4ee4b49fa14314b5d52f ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 28 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Known hypersensitivity to an agent specified as an intervention in this domain will exclude a patient from receiving that agent." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N137ef513c7b444629d98dbdfbd4825fd ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "new diagnosis of chronic myeloid leukemia) until the end of study day 14 or until hospital discharge, whichever occurs first." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N8a3efbbcdd05434d8c3eebcafa793acf ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 28 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Known severe liver disease or an alanine aminotransferase (ALT) or an aspartate aminotransferase (AST) that is more than five times the upper limit of normal or bilirubin more than three times the upper limit of normal will exclude a patient from receiving enteral imatinib" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N021758e770944a8183495740a7970b0c ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "☐" ;
+    rcap:evidencePage 29 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Enteral imatinib" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:Domain_END ;
+    owl:annotatedTarget _:N32d7ae8f780d4edf80bc9ea4d5a6f820 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "☐" ;
+    rcap:evidencePage 29 ;
+    rcap:evidenceRule "B-domain" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "No Endothelial modulator therapy" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N922300921aaf417aa939ad039d3eac46 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Patients are eligible for this domain if:" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Nbae209949e724512a635c4ddec70a738 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "9.2" ;
+    rcap:evidenceText "Additional domain-specific data will be collected." ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Nb3bb0cc917f843be95c2c2fa3ffe3606 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 31 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Severe neutropenia (defined as neutrophil count <1.0 x 10 9 /L)" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N97b3735ded17441fa0a351bdd09379be ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "This domain is available to patients who are in the Adult Age Stratum, as defined in Core Protocol documents." ;
+    rcap:occurrenceKind "applicability_age" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N6b22844aa42c48958acd67f495fb7132 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:6" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Criteria that exclude a patient from one or more interventions are:" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:Domain_END ;
+    owl:annotatedTarget _:N6b03860debcb46b5972e2c8e804c66ac ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "☐" ;
+    rcap:evidencePage 29 ;
+    rcap:evidenceRule "B-domain" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Enteral imatinib" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N13654656326547b595e55e10401bb179 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "☐" ;
+    rcap:evidencePage 29 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "No Endothelial modulator therapy" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N613b0833a9f94904aa061e920b872622 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 32 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "9.2" ;
+    rcap:evidenceText "Administration of imatinib" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Ndc7a654ab8194d449d85510779fdfe98 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "Patients assigned to this intervention are not to receive imatinib or another tyrosine kinase inhibitor targeting the same pathway as imatinib (i.e." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N31f743f99f594ce7931c9c09f4097949 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.3" ;
+    rcap:evidenceText "Domain-specific strata are not applied to patients at the time of assessment for this domain." ;
+    rcap:occurrenceKind "domain_strata" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N3c8c7375dac247439f34a4b870e2ca4c ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "All secondary endpoints as specified in Core Protocol documents." ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N8fe9b8c1bc8c42adb24b18be8cb73be7 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.8" ;
+    rcap:evidenceText "This will be applied in a one-sided analysis for futility for active interventions specified in this domain." ;
+    rcap:occurrenceKind "allocation_threshold" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Nd4fd5604ca6542ed9c2ecdf005f3ffd0 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 30 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.3.6" ;
+    rcap:evidenceText "If a patient develops a severe adverse reaction, imatinib should be discontinued and not restarted" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Na80ed1c287c24936886caf0b262b600e ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "More than 48 hours has elapsed since commencement of sustained organ failure support." ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Nc3f1cbdd2f40407fb228a5eb7240d462 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.5" ;
+    rcap:evidenceText "Interactions with all other domains are either not evaluable or not considered possible and will not be incorporated into the statistical model or models in which this domain is evaluated." ;
+    rcap:occurrenceKind "allocation_interactions" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Nc7c8ce91744b4b549b04914d263e3a4f ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 31 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Increase in AST or ALT to 5 x ULN or bilirubin 3 x ULN" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N9a2d1b598dfa4c5eb4bc9acf05cc3bdd ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 32 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "9.2" ;
+    rcap:evidenceText "Baseline and nadir platelet and neutrophil counts (between randomization and day 15) and date of nadir result" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N12c6ecbe01904ea49e325c3988989a01 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 31 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Major bleeding (as defined by the ISTH criteria)" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N5ca2912aafc94abdabdc5c2616845ac7 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.7" ;
+    rcap:evidenceText "The threshold probability for statistical triggers forefficacy are those specified in the relevant Core Protocol documents." ;
+    rcap:occurrenceKind "allocation_threshold" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Na1d9fded0dd748838d9c57e96c41717f ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 32 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "9.2" ;
+    rcap:evidenceText "Baseline and peak AST, ALT and bilirubin (between randomization and day 15)" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N8294081eb8334052a8f9ff6c11ed6395 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 31 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Confirmed proximal deep venous thrombosis" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:Ne2a8cf07ad884e6bbd6e264e9a136f88 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 28 ;
+    rcap:evidencePosition "9" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Receiving immune suppressive therapy with a calcineurin inhibitor (e.g. cyclosporine, tacrolimus), everolimus or sirolimus will exclude a patient from receiving enteral imatinib" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N098f52204fda4886a806b43d79978155 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Patients will be excluded from this domain if they have any of the following:" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N9da5842118c343c3a498aaaa67328f72 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 28 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Known viral hepatitis B or hepatitis C will exclude a patient from receiving imatinib" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_END ;
+    owl:annotatedTarget _:N4bdc7feabca8422bbe56a85c8b1e6608 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Patient is already receiving or a clinical decision has been made to commence imatinib or another tyrosine kinase inhibitor targeting the same pathway as imatinib (i.e. dasatinib, nilotinib, ponatinib)" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+_:N021758e770944a8183495740a7970b0c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c63e7da15e3 .
+
+_:N027aaa4d93a2414fbffff5985a6c948a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9988e71abb .
+
+_:N090931cdedba4da39350b0ea451ec8ca a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c29662860b2 .
+
+_:N098f52204fda4886a806b43d79978155 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc4a3982cda .
+
+_:N12c6ecbe01904ea49e325c3988989a01 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c31bd59df7c .
+
+_:N13654656326547b595e55e10401bb179 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ccddbe3fd4b .
+
+_:N137ef513c7b444629d98dbdfbd4825fd a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2cefafea4f .
+
+_:N156e05bc29214470acf0516d4308835f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3be69c8391 .
+
+_:N17a78783160a4d208a2c4b1548e13365 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2ca322189f .
+
+_:N238a566d480243baad98fc7087eb3e26 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c20d2fa4a96 .
+
+_:N23b08d4385a241da8b47d3cf5b10c63f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cba8b5376a9 .
+
+_:N26c67537e5c44dcf8a3820e11174c35d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ccdc64e11f3 .
+
+_:N29014e7e7d864b139dec513992d6df3e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c223310e85c .
+
+_:N297dd5f87b574870ab6be2f61236dc89 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c66f12cc92f .
+
+_:N2a3d894db13d495e9d0288fc30a7818f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc60d05ae13 .
+
+_:N2bd4988c6f2042b19738571ca3e05021 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce575914efd .
+
+_:N2c6968ba90884625a4511b2dd06d3ba3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd6c006ce42 .
+
+_:N2d5544967c9546cbb576c3b2745689d7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf3451859c0 .
+
+_:N316f86d8c95945debe44905de88a9040 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9bfd7a0eed .
+
+_:N31f743f99f594ce7931c9c09f4097949 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c206b9c5488 .
+
+_:N326e7413bc7340349e9e663e3447ceba a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c955a3279e8 .
+
+_:N32d7ae8f780d4edf80bc9ea4d5a6f820 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ccddbe3fd4b .
+
+_:N386619cdcaa2427ab96202b670ec0c68 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c02716df73b .
+
+_:N3c8c7375dac247439f34a4b870e2ca4c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c37a3fade76 .
+
+_:N472fb3a895154ec9b5eea1f0f0ff4958 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5b61229d68 .
+
+_:N4bdc7feabca8422bbe56a85c8b1e6608 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c38a6a4fdb6 .
+
+_:N4f3083e84a6d4b0ba0aaec0e6562d22d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb26af16384 .
+
+_:N50d1a8f981494d9d909125418d0ffdb6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce5d9618bb0 .
+
+_:N5ca2912aafc94abdabdc5c2616845ac7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c08f5b718bc .
+
+_:N5daddffe614b4e50b0e0f925fb344839 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c168c834f5a .
+
+_:N5ee835fbed254e40b0f0d447a7d2ba5f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0096438fef .
+
+_:N5fa671d2774c449683bdf5ed954fd6db a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ccc10ee88ac .
+
+_:N605f24a5fe7f428593b83d6f3cda3e2a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cca301735af .
+
+_:N613b0833a9f94904aa061e920b872622 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cbe129064a8 .
+
+_:N631ca32f99c44f45afbb0bfc7a9744d6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cff12d8c7ff .
+
+_:N647817ab01fe4142941171d866ca086b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2fd0baa5ef .
+
+_:N6b03860debcb46b5972e2c8e804c66ac a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c63e7da15e3 .
+
+_:N6b22844aa42c48958acd67f495fb7132 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4c7e690055 .
+
+_:N6cdfb7af58f64645ac15ab5a97ed86c5 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c304206ce4e .
+
+_:N6e456f634dc04f7aa835350e77ef3269 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7c5d9e9c31 .
+
+_:N75b730a0abfe43789e7d8ad064bcf0c2 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1d4445d53f .
+
+_:N79f61b09528b49789866e17dc55fa50e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c49640af252 .
+
+_:N7ce6999edcb54f8c87bf1749ec4ae220 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3e253b26d2 .
+
+_:N8294081eb8334052a8f9ff6c11ed6395 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cac352d8efe .
+
+_:N84b4db23d6f04a83a3350ed5f23719f3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c85858c8378 .
+
+_:N8a3efbbcdd05434d8c3eebcafa793acf a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0f39507184 .
+
+_:N8fe9b8c1bc8c42adb24b18be8cb73be7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cfef18ad5c3 .
+
+_:N922300921aaf417aa939ad039d3eac46 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8bc517a21d .
+
+_:N944f73ac572c47bb942893d866a3c345 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdcbe6d2eed .
+
+_:N978b5beaf3364f1e8bd87ac3a4ddcf96 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cce99450a79 .
+
+_:N97b3735ded17441fa0a351bdd09379be a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ced7c375feb .
+
+_:N9a2d1b598dfa4c5eb4bc9acf05cc3bdd a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c90847b31b4 .
+
+_:N9d74572defb3472e8bfe2fae59def444 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c27cacd94ff .
+
+_:N9da5842118c343c3a498aaaa67328f72 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6959a0587f .
+
+_:Na1099cf1c54d469793db70202dc511a6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2bb8052454 .
+
+_:Na1d9fded0dd748838d9c57e96c41717f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cbde5b937d8 .
+
+_:Na80ed1c287c24936886caf0b262b600e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c62d08e12d8 .
+
+_:Nb1d50598e91c424ab70d009c6c85d8d8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdb0dcd08e1 .
+
+_:Nb1de737903ce4996838b4b620e921184 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd0ec3ba25a .
+
+_:Nb3bb0cc917f843be95c2c2fa3ffe3606 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8cab22acf8 .
+
+_:Nb47a0c1b03a34d408be48d449de557f0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7fd21cde5f .
+
+_:Nbae209949e724512a635c4ddec70a738 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4c016e4e79 .
+
+_:Nbf7365cefb784705b26c62628ff0c992 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c224ee6f9f0 .
+
+_:Nc1d46515dc354a909351884d70526a3a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c129e610700 .
+
+_:Nc3f1cbdd2f40407fb228a5eb7240d462 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc4efc1a692 .
+
+_:Nc7c8ce91744b4b549b04914d263e3a4f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf053b7b727 .
+
+_:Ncca37d8d0b39422496f54d70e5fd47f8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2b10bf304c .
+
+_:Nce31aa7ed4be4ee4b49fa14314b5d52f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c03a44f4e7e .
+
+_:Ncf7f2f77fc16420094431df0f49aa76b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb1dfbad5c4 .
+
+_:Nd3e783b8ac5f4f42ae525dbfe1452e72 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf6051db800 .
+
+_:Nd4fd5604ca6542ed9c2ecdf005f3ffd0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c02c7c3c4db .
+
+_:Nd5c05563bce44677a468c2a1d443ba4b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5195342be2 .
+
+_:Nda1709d335464d949d5e72f8ef79a576 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5770ae5285 .
+
+_:Ndc7a654ab8194d449d85510779fdfe98 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c04bf744260 .
+
+_:Ndc87fbfdec644d2b944023dce6e9aa7f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7a203272b8 .
+
+_:Ndf7487872969425e969948f1a6fb6ce5 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c486a11a14d .
+
+_:Ndfc58408ebe34ed5a4c815c062e36435 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c324186f8e2 .
+
+_:Ne2a8cf07ad884e6bbd6e264e9a136f88 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc3ec0b825c .
+

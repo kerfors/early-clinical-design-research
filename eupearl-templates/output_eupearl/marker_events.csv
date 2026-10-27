@@ -1,0 +1,16 @@
+doc,para_idx,event,marker,open_blocks,text,section_number,section_title,section_path,h1_title,section_key
+MPT,40,inline_marker,,,Common Text: Black font preceded by <Start of common text> and followed by <End of common text> is common language inten,,,,,
+MPT,41,inline_marker,,,Suggested Text: Black text preceded by <Start of suggested text> and followed by <End of suggested text> is suggested la,,,,,
+MPT,43,inline_marker,,,Example Text: Green italicized text preceded by <Start of example text> and followed by <End of example text> should be ,,,,,
+ISA,42,inline_marker,,,Common Text: Black font preceded by <Start of common text> and followed by <End of common text> is common language inten,,,,,
+ISA,43,inline_marker,,,Suggested Text: Black textpreceded by <Start of suggested text> and followed by <End of suggested text> is suggested lan,,,,,
+ISA,45,inline_marker,,,Example Text: Green italicized text preceded by < Start of example text> and followed by < End of example text > should ,,,,,
+ISA,459,malformed_marker,,,Start of example text>,4.3,Justification for Dose,4 Study Design > 4.3 Justification for Dose,Study Design,ISA:450
+ISA,465,end_without_start,example,,<End of example text>,4.3,Justification for Dose,4 Study Design > 4.3 Justification for Dose,Study Design,ISA:450
+ISA,920,malformed_marker,,,Start of suggested text>,9.3.3,Secondary Endpoint(s),9 Statistical Considerations > 9.3 Statistical Analyses > 9.3.3 Secondary Endpoint(s),Statistical Considerations,ISA:912
+ISA,924,end_without_start,suggested,,<End of suggested text>,9.3.3,Secondary Endpoint(s),9 Statistical Considerations > 9.3 Statistical Analyses > 9.3.3 Secondary Endpoint(s),Statistical Considerations,ISA:912
+ISA,963,unclosed_at_end,suggested,suggested@963,,,,,,
+SAP,76,inline_marker,,,Common Text: Black font preceded by <Start of common text> and followed by <End of common text> is common language inten,,,,,
+SAP,77,inline_marker,,,Suggested Text: Black text preceded by <Start of suggested text> and followed by <End of suggested text> is suggested la,,,,,
+SAP,79,inline_marker,,,Example Text: Green italicized text preceded by <Start of example text> and followed by <End of example text> should be ,,,,,
+SAP,437,end_without_start,suggested,example@434,<End of suggested text>,4.5.3.5,Suicidal Ideation and Behavior Risk Monitoring,4 Statistical Analyses > 4.5 [Other] Safety Analyses > 4.5.3 Additional Safety Assessments (if applicable) > 4.5.3.5 Suicidal Ideation and Behavior Risk Monitoring,Statistical Analyses,SAP:432

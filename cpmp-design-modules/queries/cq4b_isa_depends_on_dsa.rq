@@ -1,0 +1,15 @@
+# CQ4b: ISA sentences that refer to the non-public disease-state addendum (one row per sentence).
+PREFIX cpmp: <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+
+SELECT ?isa ?target ?section ?page ?sentence
+WHERE {
+    ?ax owl:annotatedSource ?isa ;
+        owl:annotatedProperty cpmp:dependsOn ;
+        owl:annotatedTarget ?target ;
+        cpmp:evidenceSection ?section ;
+        cpmp:evidencePage ?page ;
+        cpmp:evidenceText ?sentence .
+    ?target cpmp:contentStatus "not public" .
+}
+ORDER BY ?isa ?page

@@ -1,0 +1,67 @@
+disease,activity_key,isas,n_isas,n_disease_states
+CLBP,Confirm ISA inclusion and exclusion criteria,BP05,1,3
+CLBP,Cystatin C,BP03,1,3
+CLBP,Dispense study intervention to participant,BP05,1,3
+CLBP,Epiregulin sample,BP01,1,3
+CLBP,Evaluate all I/E criteria,BP03,1,3
+CLBP,Immunogenicity (ADA) sample,BP01,1,3
+CLBP,Intervention compliance,"BP02, BP03, BP05",3,3
+CLBP,Neurological assessment,BP05,1,3
+CLBP,PK sample,"BP01, BP02, BP03, BP05",4,3
+CLBP,Participant returns device,"BP02, BP03",2,3
+CLBP,Participant returns unused study intervention,BP05,1,3
+CLBP,Placebo response video training (participant),BP05,1,3
+CLBP,Prespecified CLBP medical history,BP05,1,1
+CLBP,RMDQ,BP01,1,1
+CLBP,Reinforce pain assessment guidelines,BP05,1,3
+CLBP,Somatostatin-regulated hormone sample,BP03,1,3
+CLBP,Study intervention,"BP02, BP03",2,3
+CLBP,Study intervention IV infusion,BP01,1,3
+CLBP,Study intervention administration,BP05,1,3
+CLBP,Thyroid panel,BP03,1,3
+CLBP,Urine Chemistries,BP01,1,3
+CLBP,Urine pregnancy,"BP01, BP02, BP03, BP05",4,3
+DPNP,BPI,NP01,1,1
+DPNP,Confirm ISA inclusion and exclusion criteria,NP05,1,3
+DPNP,Cystatin C,NP03,1,3
+DPNP,Dispense study intervention to participant,NP05,1,3
+DPNP,Epiregulin sample,NP01,1,3
+DPNP,Evaluate all I/E criteria,NP03,1,3
+DPNP,Immunogenicity (ADA) sample,NP01,1,3
+DPNP,Intervention compliance,"NP02, NP03, NP05",3,3
+DPNP,Neurological assessment,NP05,1,3
+DPNP,PK sample,"NP01, NP02, NP03, NP05",4,3
+DPNP,Participant returns device,"NP02, NP03",2,3
+DPNP,Participant returns unused study intervention,NP05,1,3
+DPNP,Placebo response video training (participant),NP05,1,3
+DPNP,Prespecified DPNP medical history,NP05,1,1
+DPNP,Reinforce pain assessment guidelines,NP05,1,3
+DPNP,Somatostatin-regulated hormone sample,NP03,1,3
+DPNP,Study intervention,"NP02, NP03",2,3
+DPNP,Study intervention IV infusion,NP01,1,3
+DPNP,Study intervention administration,NP05,1,3
+DPNP,Thyroid panel,NP03,1,3
+DPNP,Urine Chemistries,NP01,1,3
+DPNP,Urine pregnancy,"NP01, NP02, NP03, NP05",4,3
+OA,Confirm ISA inclusion and exclusion criteria,OA05,1,3
+OA,Cystatin C,OA03,1,3
+OA,Dispense study intervention to participant,OA05,1,3
+OA,Epiregulin sample,OA01,1,3
+OA,Evaluate all I/E criteria,OA03,1,3
+OA,Immunogenicity (ADA) sample,OA01,1,3
+OA,Intervention compliance,"OA02, OA03, OA05",3,3
+OA,Neurological assessment,OA05,1,3
+OA,PK sample,"OA01, OA02, OA03, OA05",4,3
+OA,Participant returns device,"OA02, OA03",2,3
+OA,Participant returns unused study intervention,OA05,1,3
+OA,Placebo response video training (participant),OA05,1,3
+OA,Prespecified OA medical history,OA05,1,1
+OA,Reinforce pain assessment guidelines,OA05,1,3
+OA,Somatostatin-regulated hormone sample,OA03,1,3
+OA,Study intervention,"OA02, OA03",2,3
+OA,Study intervention IV infusion,OA01,1,3
+OA,Study intervention administration,OA05,1,3
+OA,Thyroid panel,OA03,1,3
+OA,Urine Chemistries,OA01,1,3
+OA,Urine pregnancy,"OA01, OA02, OA03, OA05",4,3
+OA,WOMAC,"OA01, OA05",2,1

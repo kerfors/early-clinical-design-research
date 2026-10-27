@@ -1,0 +1,9 @@
+compound,disease,activity_key,visit
+LY3016859,CLBP,RMDQ,V801
+LY3016859,DPNP,BPI,V801
+LY3016859,OA,WOMAC,V801
+LY3556050,DPNP,Adverse events,V801
+LY3857210,CLBP,Prespecified CLBP medical history,V3
+LY3857210,DPNP,Prespecified DPNP medical history,V3
+LY3857210,OA,Prespecified OA medical history,V3
+LY3857210,OA,WOMAC,V801

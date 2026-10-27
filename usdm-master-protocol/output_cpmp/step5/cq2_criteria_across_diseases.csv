@@ -1,0 +1,22 @@
+template,docs,diseases,compounds,identical
+are willing to discontinue all pain medications for condition under study except rescue medication permitted per protocol until V801 in the follow-up period,BP01;NP01,CLBP;DPNP,LY3016859,True
+must have venous access in both arms for IV infusion and sample collection.,BP01;NP01;OA01,CLBP;DPNP;OA,LY3016859,True
+"are men or women who abide by the reproductive and contraceptive requirements provided in {isa} Section 10.2, Appendix 2",BP01;NP01;OA01,CLBP;DPNP;OA,LY3016859,False
+"have a history of allergic reactions to monoclonal antibodies, or clinically significant multiple or severe drug allergies, including but not limited to erythema multiforme major, linear immunoglobulin A dermatosis, toxic epidermal necrolysis, or exfoliative dermatitis",BP01;OA01,CLBP;OA,LY3016859,True
+Women who are pregnant or breastfeeding.,BP02;BP05;NP02;NP05;OA02;OA05,CLBP;DPNP;OA,LY3526318;LY3857210,True
+"Are men or women who abide by the reproductive and contraceptive requirements provided in {isa} Section 10.2, Appendix 2.",BP02;NP02;OA02,CLBP;DPNP;OA,LY3526318,False
+"have a history within 2 years prior to Visit 1 or current evidence of syncope, presyncope, uncontrolled vertigo, or postural dizziness, judged to be clinically significant by the investigator",BP03;NP03,CLBP;DPNP,LY3556050,True
+are pregnant or breastfeeding.,BP03;NP03;OA03,CLBP;DPNP;OA,LY3556050,True
+have a QRS interval ≥120 msec at Visit 1 or Visit 2,BP03;NP03;OA03,CLBP;DPNP;OA,LY3556050,True
+have a heart rate <40 bpm at Visit 1 or Visit 2,BP03;NP03;OA03,CLBP;DPNP;OA,LY3556050,True
+have a non-evaluable PR interval or a PR interval >200 msec at Visit 1 or Visit 2,BP03;NP03;OA03,CLBP;DPNP;OA,LY3556050,True
+have an estimated glomerular filtration rate (eGFR) of less than 60 ml/min/1.73 m2 based on the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI) formula at Visit 1 or Visit 2,BP03;NP03;OA03,CLBP;DPNP;OA,LY3556050,True
+have been on thyroid replacement therapy or supplements for less than 12 weeks or had a change in thyroid replacement therapy or supplements in the last 12 weeks before Visit 2,BP03;NP03;OA03,CLBP;DPNP;OA,LY3556050,True
+"have clinically significant active thyroid disease, including Hashimoto’s thyroiditis",BP03;NP03;OA03,CLBP;DPNP;OA,LY3556050,True
+"are taking medications that are known MATE1 or OCT2 substrates with the risk for potentially clinically significant drug-drug interactions, such as metformin, dofetilide and dalfampridine",BP03;OA03,CLBP;OA,LY3556050,True
+have had a change in beta blocker therapy in the last 12 weeks before Visit 2. This does not include a discontinuation of therapy.,BP03;OA03,CLBP;OA,LY3556050,True
+"Have known allergies to {compound}, related compounds or any components of the formulation, or history of significant atopy.",BP05;NP05;OA05,CLBP;DPNP;OA,LY3857210,True
+Males and females may participate in this trial. ¶ No male contraception is required except in compliance with specific local government study requirements. ¶ WOCBP and WNOCBP may participate in this trial. See Section 10.4 for definitions and additional requirements related to contraception. ¶ Contraceptive use by participants should be consistent with local regulations regarding the methods of contraception for those participating in clinical studies.,BP05;NP05;OA05,CLBP;DPNP;OA,LY3857210,True
+"Have any clinically serious or unstable cardiovascular, musculoskeletal disorder, gastrointestinal, endocrinologic, hematologic, hepatic, metabolic, urologic, pulmonary, dermatologic, immunologic, or ophthalmologic disease within 3 months of Visit 3",NP01;OA01,DPNP;OA,LY3016859,True
+are women who are pregnant or breastfeeding.,NP01;OA01,DPNP;OA,LY3016859,True
+"Have an eGFR of less than 30 ml/min/1.73 m, based on the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI) formula at Visit 1 or Visit 2.",NP02;OA02,DPNP;OA,LY3526318,True

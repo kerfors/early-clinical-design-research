@@ -1,0 +1,46 @@
+@prefix cpmp: <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+cpmp:DiseaseState_OA a owl:Class ;
+    rdfs:label "CPMP disease-state design OA" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000051 ;
+            owl:someValuesFrom cpmp:slot-6a4140896d ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000051 ;
+            owl:someValuesFrom cpmp:slot-7be4eedb58 ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000051 ;
+            owl:someValuesFrom cpmp:slot-158849b4a5 ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000051 ;
+            owl:someValuesFrom cpmp:slot-888f88c695 ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000051 ;
+            owl:someValuesFrom cpmp:slot-125308344a ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000051 ;
+            owl:someValuesFrom cpmp:slot-2ae9ae9913 ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000051 ;
+            owl:someValuesFrom cpmp:slot-069f37ce9b ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000051 ;
+            owl:someValuesFrom cpmp:slot-8799343bfa ] ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( obo:OBI_0500001 [ a owl:Restriction ;
+                        owl:onProperty obo:IAO_0000136 ;
+                        owl:someValuesFrom obo:MONDO_0005178 ] ) ] ;
+    cpmp:contentStatus "not public" ;
+    cpmp:diseaseStated "OA" ;
+    cpmp:evidenceText "CPMP 1.1 (section start p12): The chronic pain disease states of interest currently include osteoarthritis, chronic low back pain, and diabetic peripheral neuropathic pain.",
+        "CPMP 2.2 (section start p24): The chronic pain disease states of interest currently are osteoarthritis, chronic low back pain, and diabetic peripheral neuropathic pain." ;
+    cpmp:moduleRole "disease state" ;
+    cpmp:note "DSA CPMP(1) is cited by the ISAs but not posted publicly." .
+
+<https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/disease-OA> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/master> .
+

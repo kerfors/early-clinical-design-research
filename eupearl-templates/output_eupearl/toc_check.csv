@@ -1,0 +1,309 @@
+doc,number,title,status,toc_numbers
+MPT,1,Protocol Summary,ok,1
+MPT,1.1,Synopsis,ok,1.1
+MPT,1.2,Schema,ok,1.2
+MPT,1.3,Schedule of Activities (SoA),ok,1.3
+MPT,2,Introduction,ok,2
+MPT,2.1,Study Rationale,ok,2.1
+MPT,2.2,Background,ok,2.2
+MPT,2.3,Benefit/Risk Assessment,ok,2.3
+MPT,2.3.1,Risk Assessment,ok,2.3.1
+MPT,2.3.2,Benefit Assessment,ok,2.3.2
+MPT,2.3.3,Overall Benefit Risk Conclusion,ok,2.3.3
+MPT,3,"Objectives, Endpoints, and Estimands",ok,3
+MPT,4,Study Design,ok,4
+MPT,4.1,Overall Design,ok,4.1
+MPT,4.2,Scientific Rationale for Study Design,ok,4.2
+MPT,4.2.1,Participant Input into Design,ok,4.2.1
+MPT,4.3,Justification for Dose,ok,4.3
+MPT,4.4,End of Study Definition,ok,4.4
+MPT,5,Study Population,ok,5
+MPT,5.1,Inclusion Criteria,ok,5.1
+MPT,5.2,Exclusion Criteria,ok,5.2
+MPT,5.3,Lifestyle Considerations,ok,5.3
+MPT,5.3.1,Meals and Dietary Restrictions,ok,5.3.1
+MPT,5.3.2,"Caffeine, Alcohol, and Tobacco",ok,5.3.2
+MPT,5.3.3,Activity,ok,5.3.3
+MPT,5.4,Screen Failures,ok,5.4
+MPT,5.5,Criteria for Temporarily Delaying [Enrollment/Randomization/Administration of Study Intervention],ok,5.5
+MPT,6,Study Intervention(s) and Concomitant Therapy,ok,6
+MPT,6.1,Study Intervention(s) Administered,ok,6.1
+MPT,6.1.1,Medical Devices,ok,6.1.1
+MPT,6.2,"Preparation, Handling, Storage, and Accountability",ok,6.2
+MPT,6.3,Measures to Minimize Bias: Randomization and Blinding,ok,6.3
+MPT,6.4,Study Intervention Compliance,ok,6.4
+MPT,6.5,Dose Modification,ok,6.5
+MPT,6.5.1,Retreatment Criteria,ok,6.5.1
+MPT,6.6,Continued Access to Study Intervention after the End of the Study,ok,6.6
+MPT,6.7,Treatment of Overdose,ok,6.7
+MPT,6.8,Concomitant Therapy,ok,6.8
+MPT,6.8.1,Rescue Medicine,ok,6.8.1
+MPT,7,Discontinuation of Study Intervention and Participant Discontinuation/Withdrawal,ok,7
+MPT,7.1,Discontinuation of Study Intervention,ok,7.1
+MPT,7.1.1,Liver Chemistry Stopping Criteria,ok,7.1.1
+MPT,7.1.2,QTc Stopping Criteria,ok,7.1.2
+MPT,7.1.3,Temporary Discontinuation,ok,7.1.3
+MPT,7.1.4,Rechallenge,ok,7.1.4
+MPT,7.1.4.1,Study Intervention Restart or Rechallenge After Liver Stopping Criteria Are Met,below_toc_depth,
+MPT,7.2,Participant Discontinuation/Withdrawal from the Study,ok,7.2
+MPT,7.3,Lost to Follow up,ok,7.3
+MPT,8,Study Assessments and Procedures,ok,8
+MPT,8.1,[Efficacy and/or Immunogenicity] Assessments,ok,8.1
+MPT,8.2,Safety Assessments,ok,8.2
+MPT,8.2.1,Physical Examinations,ok,8.2.1
+MPT,8.2.2,Vital Signs,ok,8.2.2
+MPT,8.2.3,Electrocardiograms,ok,8.2.3
+MPT,8.2.4,Clinical Safety Laboratory Tests,ok,8.2.4
+MPT,8.2.5,Pregnancy Testing,ok,8.2.5
+MPT,8.2.6,Suicidal Ideation and Behavior Risk Monitoring,ok,8.2.6
+MPT,8.3,"Adverse Events (AEs) Serious Adverse Events (SAEs), and Other Safety Reporting",ok,8.3
+MPT,8.3.1,Time Period and Frequency for Collecting AE and SAE Information,ok,8.3.1
+MPT,8.3.2,Method of Detecting AEs and SAEs,ok,8.3.2
+MPT,8.3.3,Follow-up of AEs and SAEs,ok,8.3.3
+MPT,8.3.4,Regulatory Reporting Requirements for SAEs,ok,8.3.4
+MPT,8.3.5,Pregnancy,ok,8.3.5
+MPT,8.3.6,Cardiovascular and Death Events,ok,8.3.6
+MPT,8.3.7,Disease-related Events and/or Disease-related Outcomes Not Qualifying as AEs or SAEs,ok,8.3.7
+MPT,8.3.8,Adverse Events of Special Interest,ok,8.3.8
+MPT,8.3.9,"Overdose, medication errors, misuses or abuses of medicinal product",ok,8.3.9
+MPT,8.3.10,Medical Device Deficiencies,ok,8.3.10
+MPT,8.3.10.1,Time Period for Detecting Medical Device Deficiencies,below_toc_depth,
+MPT,8.3.10.2,Follow-up of Medical Device Deficiencies,below_toc_depth,
+MPT,8.3.10.3,Prompt Reporting of Device Deficiencies to the Sponsor,below_toc_depth,
+MPT,8.3.10.4,Regulatory Reporting Requirements for Device Deficiencies,below_toc_depth,
+MPT,8.4,Pharmacokinetics,ok,8.4
+MPT,8.5,Genetics,ok,8.5
+MPT,8.6,Biomarkers,ok,8.6
+MPT,8.7,Immunogenicity Assessments,ok,8.7
+MPT,8.8,[Health Economics OR Medical Resource Utilization and Health Economics],ok,8.8
+MPT,9,Statistical Considerations,ok,9
+MPT,9.1,Statistical Hypotheses,ok,9.1
+MPT,9.1.1,Multiplicity Adjustment,ok,9.1.1
+MPT,9.2,Analysis Sets,ok,9.2
+MPT,9.3,Statistical Analyses,ok,9.3
+MPT,9.3.1,General Considerations,ok,9.3.1
+MPT,9.3.2,Primary Endpoint(s)/Estimand(s) Analysis,ok,9.3.2
+MPT,9.3.3,Secondary [Endpoint(s)/Estimand(s)] Analysis,ok,9.3.3
+MPT,9.3.4,[Tertiary/Exploratory/Other] [Endpoint(s)/Estimand(s)] Analysis,ok,9.3.4
+MPT,9.3.5,[Other] Safety Analyses,ok,9.3.5
+MPT,9.3.6,Other Analyses,ok,9.3.6
+MPT,9.4,Interim Analysis,ok,9.4
+MPT,9.5,Sample Size Determination,ok,9.5
+MPT,10,Supporting Documentation and Operational Considerations,ok,10
+MPT,10.1,"Appendix 1: Regulatory, Ethical, and Study Oversight Considerations",ok,10.1
+MPT,10.1.1,Regulatory and Ethical Considerations,ok,10.1.1
+MPT,10.1.2,Financial Disclosure,ok,10.1.2
+MPT,10.1.3,Informed Consent Process,ok,10.1.3
+MPT,10.1.4,Data Protection,ok,10.1.4
+MPT,10.1.5,Committees Structure,ok,10.1.5
+MPT,10.1.5.1,[Early Safety Data Review AND/OR Committee],below_toc_depth,
+MPT,10.1.6,Dissemination of Clinical Study Data,ok,10.1.6
+MPT,10.1.7,Data Quality Assurance,ok,10.1.7
+MPT,10.1.8,Source Documents,ok,10.1.8
+MPT,10.1.9,Study and Site Start and Closure,ok,10.1.9
+MPT,10.1.10,Publication Policy,ok,10.1.10
+MPT,10.2,Appendix 2: Clinical Laboratory Tests,ok,10.2
+MPT,10.3,"Appendix 3: AEs and SAEs: Definitions and Procedures for Recording, Evaluating, Follow-up, and Reporting",ok,10.3
+MPT,10.3.1,Definition of AE,ok,10.3.1
+MPT,10.3.2,Definition of SAE,ok,10.3.2
+MPT,10.3.3,Recording and Follow-Up of AE and/or SAE,ok,10.3.3
+MPT,10.3.4,Reporting of SAEs,ok,"10.3.4, 10.7.5"
+MPT,10.4,Appendix 4: Contraceptive and Barrier Guidance,ok,10.4
+MPT,10.4.1,Definitions,ok,10.4.1
+MPT,10.4.2,Contraception Guidance,ok,10.4.2
+MPT,10.5,Appendix 5: Genetics,ok,10.5
+MPT,10.6,Appendix 6: Liver Safety: Suggested Actions and Follow-up Assessments [and Study Intervention Restart/Rechallenge Guidelines],ok,10.6
+MPT,10.7,"Appendix 7: AEs, ADEs, SAEs, SADEs, USADEs and Device Deficiencies: Definitions and Procedures for Recording, Evaluating, Follow-up, and Reporting in Medical Device Studies",ok,10.7
+MPT,10.7.1,Definition of Medical Device AE and ADE,ok,10.7.1
+MPT,10.7.2,"Definition of Medical Device SAE, SADE and USADE",ok,10.7.2
+MPT,10.7.3,Definition of Device Deficiency,ok,10.7.3
+MPT,10.7.4,Recording and Follow-Up of AE and/or SAE and Device Deficiencies,ok,10.7.4
+MPT,10.7.5,Reporting of SAEs,ok,"10.3.4, 10.7.5"
+MPT,10.7.6,Reporting of SADEs,ok,10.7.6
+MPT,10.8,Appendix 8: Country-specific Requirements,ok,10.8
+MPT,10.9,Appendix 9: Abbreviations [and Definitions],ok,10.9
+MPT,10.10,Appendix 10: Protocol Amendment History,ok,10.10
+MPT,10.11,"APPENDIX 10: Collection, storage and future use of data and human biological samples",ok,10.11
+MPT,10.11.1,"Compliance with Member State applicable rules for the collection, storage and future use of human biological samples (Article 7.1h)",ok,10.11.1
+MPT,10.11.2,"Compliance with Member State applicable rules for the collection, storage and future use of (personal) data (article 7 (1 d) of EU Regulation 536/2014)",ok,10.11.2
+MPT,10.12,Appendix 11: Additional Appendices (if needed),ok,10.12
+MPT,11,References,ok,11
+ISA,1,Protocol Summary,ok,1
+ISA,1.1,Synopsis,ok,1.1
+ISA,1.2,Schema,ok,1.2
+ISA,1.3,Schedule of Activities (SoA),ok,1.3
+ISA,2,Introduction,ok,2
+ISA,2.1,Study Rationale,ok,2.1
+ISA,2.2,Background,ok,2.2
+ISA,2.3,Benefit/Risk Assessment,ok,2.3
+ISA,2.3.1,Risk Assessment,ok,2.3.1
+ISA,2.3.2,Benefit Assessment,ok,2.3.2
+ISA,2.3.3,Overall Benefit: Risk Conclusion,ok,2.3.3
+ISA,3,"Objectives, Endpoints and Estimands",ok,3
+ISA,4,Study Design,ok,4
+ISA,4.1,Overall Design,ok,4.1
+ISA,4.2,Scientific Rationale for Study Design,ok,4.2
+ISA,4.2.1,Participant Input into Design,ok,4.2.1
+ISA,4.3,Justification for Dose,ok,4.3
+ISA,4.4,End of Study Definition,ok,4.4
+ISA,5,Study Population,ok,5
+ISA,5.1,Inclusion Criteria,ok,5.1
+ISA,5.2,Exclusion Criteria,ok,5.2
+ISA,5.3,Lifestyle Considerations,ok,5.3
+ISA,5.3.1,Meals and Dietary Restrictions,ok,5.3.1
+ISA,5.3.2,"Caffeine, Alcohol, and Tobacco",ok,5.3.2
+ISA,5.3.3,Activity,ok,5.3.3
+ISA,5.4,Screen Failures,ok,5.4
+ISA,5.5,Criteria for Temporarily Delaying [Enrollment/Randomization/Administration of Study Intervention],ok,5.5
+ISA,6,Study Intervention(s) and Concomitant Therapy,ok,6
+ISA,6.1,Study Intervention(s) Administered,ok,6.1
+ISA,6.2,"Preparation, Handling, Storage, and Accountability",ok,6.2
+ISA,6.3,Measures to Minimize Bias: Randomization and Blinding,ok,6.3
+ISA,6.4,Study Intervention Compliance,ok,6.4
+ISA,6.5,Dose Modification,ok,6.5
+ISA,6.5.1,Retreatment Criteria,ok,6.5.1
+ISA,6.6,Continued Access to Study Intervention after the End of the Study,ok,6.6
+ISA,6.7,Treatment of Overdose,ok,6.7
+ISA,6.8,Concomitant Therapy,ok,6.8
+ISA,6.8.1,Rescue Medicine,ok,6.8.1
+ISA,7,Discontinuation of Study Intervention and Participant Discontinuation/Withdrawal,ok,7
+ISA,7.1,Discontinuation of Study Intervention,ok,7.1
+ISA,7.1.1,Liver Chemistry Stopping Criteria,ok,7.1.1
+ISA,7.1.2,QTc Stopping Criteria,ok,7.1.2
+ISA,7.1.3,Temporary Discontinuation,ok,7.1.3
+ISA,7.1.4,Rechallenge,ok,7.1.4
+ISA,7.1.4.1,Study Intervention Restart or Rechallenge After Liver Stopping Criteria Are Met,below_toc_depth,
+ISA,7.2,Participant Discontinuation/Withdrawal from the Study,ok,7.2
+ISA,7.3,Lost to Follow-up,ok,7.3
+ISA,8,Study Assessments and Procedures,ok,8
+ISA,8.1,[Efficacy and/or Immunogenicity] Assessments,ok,8.1
+ISA,8.2,Safety Assessments,ok,8.2
+ISA,8.2.1,Physical Examinations,ok,8.2.1
+ISA,8.2.2,Vital Signs,ok,8.2.2
+ISA,8.2.3,Electrocardiograms,ok,8.2.3
+ISA,8.2.4,Clinical Safety Laboratory Assessments,ok,8.2.4
+ISA,8.2.5,Pregnancy Testing,ok,8.2.5
+ISA,8.2.6,Suicidal Ideation and Behavior Risk Monitoring,ok,8.2.6
+ISA,8.3,"Adverse Events (AEs), Serious Adverse Events (SAEs), and Other Safety Reporting",ok,8.3
+ISA,8.3.1,Time Period and Frequency for Collecting AE and SAE Information,ok,8.3.1
+ISA,8.3.2,Method of Detecting AEs and SAEs,ok,8.3.2
+ISA,8.3.3,Follow-up of AEs and SAEs,ok,8.3.3
+ISA,8.3.4,Regulatory Reporting Requirements for SAEs,ok,8.3.4
+ISA,8.3.5,Pregnancy,ok,8.3.5
+ISA,8.3.6,Cardiovascular and Death Events,ok,8.3.6
+ISA,8.3.7,Disease-related Events and/or Disease-related Outcomes Not Qualifying as AEs or SAEs,ok,8.3.7
+ISA,8.3.8,Adverse Events of Special Interest,ok,8.3.8
+ISA,8.3.9,"Overdose, medication errors, misuses or abuse of medicinal product",not_in_toc,
+ISA,8.4,Pharmacokinetics,ok,8.4
+ISA,8.5,Genetics,ok,8.5
+ISA,8.6,Biomarkers,ok,8.6
+ISA,8.7,Immunogenicity Assessments,ok,8.7
+ISA,8.8,[Health Economics OR Medical Resource Utilization and Health Economics],ok,8.8
+ISA,9,Statistical Considerations,ok,9
+ISA,9.1,Statistical Hypotheses,ok,9.1
+ISA,9.1.1,Multiplicity Adjustment,ok,9.1.1
+ISA,9.2,Analysis Sets,ok,9.2
+ISA,9.3,Statistical Analyses,ok,9.3
+ISA,9.3.1,General Considerations,ok,9.3.1
+ISA,9.3.2,Primary Endpoint(s),ok,9.3.2
+ISA,9.3.3,Secondary Endpoint(s),ok,9.3.3
+ISA,9.3.4,Tertiary/Exploratory Endpoint(s),ok,9.3.4
+ISA,9.3.5,[Other/safety] Analysis,ok,9.3.5
+ISA,9.3.6,Other Analysis,ok,9.3.6
+ISA,9.4,Interim Analysis,ok,9.4
+ISA,9.5,Sample Size Determination,ok,9.5
+ISA,10,Supporting Documentation and Operational Considerations,ok,10
+ISA,10.1,"Appendix 1: Regulatory, Ethical, and Study Oversight Considerations",ok,10.1
+ISA,10.2,Appendix 2: Clinical Laboratory Tests,ok,10.2
+ISA,10.3,"Appendix 3: AEs and SAEs: Definitions and Procedures for Recording, Evaluating, Follow-up, and Reporting",ok,10.3
+ISA,10.4,Appendix 4: Contraceptive and Barrier Guidance,ok,10.4
+ISA,10.4.1,Definitions,ok,10.4.1
+ISA,10.4.2,Contraception Guidance,ok,10.4.2
+ISA,10.5,Appendix 5: Genetics,ok,10.5
+ISA,10.6,Appendix 6: Liver Safety: Suggested Actions and Follow-up Assessments [and Study Intervention Restart/Rechallenge Guidelines],ok,10.6
+ISA,10.7,Appendix 7: Country-specific Requirements,ok,10.7
+ISA,10.8,Appendix 8: Abbreviations [and Definitions],ok,10.8
+ISA,10.9,Appendix 9: ISA Protocol Amendment History,ok,10.9
+ISA,11,References,ok,11
+SAP,1,Introduction,ok,1
+SAP,1.1,"Objectives, Endpoints, and Estimands",ok,1.1
+SAP,1.2,Study Design,ok,1.2
+SAP,2,Statistical Hypotheses,ok,2
+SAP,2.1,Multiplicity Adjustment,ok,2.1
+SAP,3,Analysis Sets,ok,3
+SAP,4,Statistical Analyses,ok,4
+SAP,4.1,General Considerations,ok,4.1
+SAP,4.2,Primary [Endpoint(s)/Estimand(s)] Analysis,ok,4.2
+SAP,4.2.1,Definition of Endpoint(s),ok,4.2.1
+SAP,4.2.2,Main Analytical Approach,ok,4.2.2
+SAP,4.2.3,Sensitivity [Analysis/ Analyses],ok,4.2.3
+SAP,4.2.4,Supplementary Analyses,ok,4.2.4
+SAP,4.3,Secondary [Endpoint(s)/Estimand(s)] Analysis,ok,4.3
+SAP,4.3.1,[Key/Confirmatory] Secondary [Endpoint(s)/Estimand(s)],ok,4.3.1
+SAP,4.3.1.1,Definition of Endpoint(s),below_toc_depth,4.2.1
+SAP,4.3.1.2,Main Analytical Approach,below_toc_depth,4.2.2
+SAP,4.3.1.3,Sensitivity [Analysis/Analyses],below_toc_depth,4.2.3
+SAP,4.3.1.4,Supplementary Analyses,below_toc_depth,4.2.4
+SAP,4.3.2,Supportive Secondary [Endpoint(s)/Estimand(s)],ok,4.3.2
+SAP,4.4,[Tertiary/Exploratory/Other] [Endpoint(s)/Estimand(s)] Analysis,ok,4.4
+SAP,4.5,[Other] Safety Analyses,ok,4.5
+SAP,4.5.1,Extent of Exposure,ok,4.5.1
+SAP,4.5.2,Adverse Events,ok,4.5.2
+SAP,4.5.3,Additional Safety Assessments (if applicable),ok,4.5.3
+SAP,4.5.3.1,Clinical Laboratory Tests,below_toc_depth,
+SAP,4.5.3.2,Electrocardiogram,below_toc_depth,
+SAP,4.5.3.3,Vital Signs,below_toc_depth,
+SAP,4.5.3.4,Physical Examination,below_toc_depth,
+SAP,4.5.3.5,Suicidal Ideation and Behavior Risk Monitoring,below_toc_depth,
+SAP,4.6,Other Analyses,ok,4.6
+SAP,4.6.1,Other Variables and/or Parameters,ok,4.6.1
+SAP,4.6.2,Subgroup Analyses,ok,4.6.2
+SAP,4.7,Interim Analysis,ok,4.7
+SAP,4.8,Changes to Protocol-planned Analyses,ok,4.8
+SAP,5,Sample Size Determination,ok,5
+SAP,6,Supporting Documentation,ok,6
+SAP,6.1,Appendix 1: List of Abbreviations,ok,6.1
+SAP,7,References,ok,7
+DMC,1,PURPOSE OF THE DATA MONITORING COMMITTEE CHARTER,ok,1
+DMC,2,BACKGROUND,ok,2
+DMC,3,PURPOSE OF THE DATA MONITORING COMMITTEE,ok,3
+DMC,3.1,Data Monitoring Committee,number_differs,4.1
+DMC,3.1.1,Data Monitoring Committee Members,number_differs,"4.1.1, 5.1.1"
+DMC,3.1.2,"Confidentiality Agreement, Financial and Non-financial Disclosure, and Conflict of Interest",number_differs,4.1.2
+DMC,3.1.3,Insider Trading,number_differs,4.1.3
+DMC,3.1.4,Duration of Data Monitoring Committee Membership,number_differs,4.1.4
+DMC,3.2,Statistical Support Group,number_differs,"4.2, 5.2.3"
+DMC,3.3,Steering Committee,number_differs,4.3
+DMC,3.4,Trial Management Group,number_differs,4.4
+DMC,3.5,Interim Analysis Group,not_in_toc,
+DMC,4,ROLES AND RESPONSIBILITIES,number_differs,5
+DMC,4.1,Roles and Responsibilities of Data Monitoring Committee Members,number_differs,5.1
+DMC,4.1.1,Data Monitoring Committee Members,ok,"4.1.1, 5.1.1"
+DMC,4.1.2,Overruling pre-planned adaptation,not_in_toc,
+DMC,4.1.3,Data Monitoring Committee Chairperson,number_differs,5.1.2
+DMC,4.2,Roles and Responsibilities of the Statistical Support Group,number_differs,5.2
+DMC,4.2.1,Statistical Support Group,number_differs,"4.2, 5.2.3"
+DMC,4.2.2,Statistical Support Group Statistician,number_differs,5.2.2
+DMC,4.3,Roles and Responsibilities of the Interim Analysis Group (IAG),number_differs,5.3
+DMC,4.4,Roles and Responsibilities of the Steering Committee with respect to the DMC,number_differs,5.4
+DMC,4.5,Roles and Responsibilities of the Trial Management Group(s) with respect to the DMC,number_differs,5.5
+DMC,4.5.1,Study Statistician,number_differs,5.2.1
+DMC,5,DATA MONITORING COMMITTEE MEETINGS,number_differs,6
+DMC,5.1,Decision Making,not_in_toc,
+DMC,5.2,Initial Meeting,number_differs,6.2
+DMC,5.3,Scheduled Meetings,number_differs,6.3
+DMC,5.4,New Intervention Meetings,not_in_toc,
+DMC,5.5,Unscheduled Meetings,number_differs,6.4
+DMC,5.6,Meeting Report/Minutes,number_differs,6.5
+DMC,6,STATISTICAL GUIDELINE FOR PROTOCOL SPECIFIED INTERIM ANALYSIS,number_differs,7
+DMC,6.1,Pre-planned Interim Analysis,number_differs,7.1
+DMC,6.2,Protection of Study Integrity and Control of Operational Bias,number_differs,7.2
+DMC,7,DATA REVIEWS AND COMMUNICATIONS,number_differs,8
+DMC,7.1,DMC Statistical Analysis Plan,number_differs,8.1
+DMC,7.2,Data Reviews,number_differs,8.2
+DMC,7.2.1,Data Monitoring Committee Recommendations,number_differs,8.2.1
+DMC,7.2.2,Steering Committee Communications and Decisions,number_differs,8.2.2
+DMC,7.2.3,Concerns about Subjects’ Safety,not_in_toc,
+DMC,8,PROJECTED TIME TABLE FOR DATA MONITORING COMMITTEE MEETINGS AND DATA PACKAGES,number_differs,9
+DMC,9,DOCUMENTATION,number_differs,10
+DMC,10,DATA AND COMMUNICATION FLOWCHART,number_differs,11

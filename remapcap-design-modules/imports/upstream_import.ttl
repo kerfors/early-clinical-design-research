@@ -1,0 +1,2235 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix ns2: <http://purl.obolibrary.org/obo/> .
+@prefix ns3: <http://purl.obolibrary.org/obo/mondo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns2:BFO_0000051 a owl:ObjectProperty ;
+    rdfs:label "has part"@en ;
+    ns2:IAO_0000115 "a core relation that holds between a whole and its part"@en .
+
+ns2:IAO_0000005 a owl:Class ;
+    rdfs:label "objective specification"@en ;
+    ns2:IAO_0000115 "A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved."@en ;
+    rdfs:subClassOf ns2:IAO_0000033 .
+
+ns2:IAO_0000007 a owl:Class ;
+    rdfs:label "action specification"@en ;
+    ns2:IAO_0000115 "A directive information entity that describes an action the bearer will take."@en ;
+    rdfs:subClassOf ns2:IAO_0000033 .
+
+ns2:IAO_0000111 a owl:AnnotationProperty ;
+    rdfs:label "editor preferred label",
+        "editor preferred term",
+        "editor preferred term~editor preferred label",
+        "editor preferred label"@en,
+        "editor preferred term"@en ;
+    ns2:IAO_0000111 "editor preferred label",
+        "editor preferred term",
+        "editor preferred term~editor preferred label",
+        "editor preferred label"@en,
+        "editor preferred term"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000122 ;
+    ns2:IAO_0000115 "The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)"@en ;
+    ns2:IAO_0000117 "PERSON:Daniel Schober"@en ;
+    ns2:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en .
+
+ns2:IAO_0000112 a owl:AnnotationProperty ;
+    rdfs:label "example of usage"@en ;
+    ns2:IAO_0000111 "example of usage"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000122 ;
+    ns2:IAO_0000115 "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."@en ;
+    ns2:IAO_0000117 "PERSON:Daniel Schober"@en ;
+    ns2:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en .
+
+ns2:IAO_0000114 a owl:AnnotationProperty ;
+    rdfs:label "has curation status"@en ;
+    ns2:IAO_0000111 "has curation status"@en ;
+    ns2:IAO_0000117 "PERSON:Alan Ruttenberg"@en,
+        "PERSON:Bill Bug"@en,
+        "PERSON:Melanie Courtot"@en .
+
+ns2:IAO_0000116 a owl:AnnotationProperty ;
+    rdfs:label "editor note"@en ;
+    ns2:IAO_0000111 "editor note"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000122 ;
+    ns2:IAO_0000115 "An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology."@en ;
+    ns2:IAO_0000117 "PERSON:Daniel Schober"@en ;
+    ns2:IAO_0000119 "GROUP:OBI:<http://purl.obofoundry.org/obo/obi>"@en .
+
+ns2:IAO_0000117 a owl:AnnotationProperty ;
+    rdfs:label "term editor"@en ;
+    ns2:IAO_0000111 "term editor"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000122 ;
+    ns2:IAO_0000115 "Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people"@en ;
+    ns2:IAO_0000116 "20110707, MC: label update to term editor and definition modified accordingly. See https://github.com/information-artifact-ontology/IAO/issues/115."@en ;
+    ns2:IAO_0000117 "PERSON:Daniel Schober"@en ;
+    ns2:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en .
+
+ns2:IAO_0000118 a owl:AnnotationProperty ;
+    rdfs:label "alternative label"@en ;
+    ns2:IAO_0000111 "alternative label"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000125 ;
+    ns2:IAO_0000115 "A label for a class or property that can be used to refer to the class or property instead of the preferred rdfs:label. Alternative labels should be used to indicate community- or context-specific labels, abbreviations, shorthand forms and the like."@en ;
+    ns2:IAO_0000117 "OBO Operations committee",
+        "PERSON:Daniel Schober"@en ;
+    ns2:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
+    rdfs:comment "Consider re-defing to: An alternative name for a class or property which can mean the same thing as the preferred name (semantically equivalent, narrow, broad or related)." .
+
+ns2:IAO_0000119 a owl:AnnotationProperty ;
+    rdfs:label "definition source"@en ;
+    ns2:IAO_0000111 "definition source"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000122 ;
+    ns2:IAO_0000115 "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"@en ;
+    ns2:IAO_0000117 "PERSON:Daniel Schober"@en ;
+    ns2:IAO_0000119 "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"@en,
+        "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en .
+
+ns2:IAO_0000136 a owl:ObjectProperty ;
+    rdfs:label "is about"@en ;
+    ns2:IAO_0000115 "A (currently) primitive relation that relates an information artifact to an entity."@en .
+
+ns2:IAO_0000232 a owl:AnnotationProperty ;
+    rdfs:label "curator note"@en ;
+    ns2:IAO_0000111 "curator note"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000122 ;
+    ns2:IAO_0000115 "An administrative note of use for a curator but of no use for a user"@en ;
+    ns2:IAO_0000117 "PERSON:Alan Ruttenberg"@en .
+
+ns2:IAO_0000233 a owl:AnnotationProperty ;
+    rdfs:label "term tracker item"@en ;
+    ns2:IAO_0000111 "term tracker item"@en ;
+    ns2:IAO_0000112 "the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000125 ;
+    ns2:IAO_0000115 "An IRI or similar locator for a request or discussion of an ontology term."@en ;
+    ns2:IAO_0000117 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en ;
+    ns2:IAO_0000119 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en ;
+    rdfs:comment "The 'tracker item' can associate a tracker with a specific ontology term."@en .
+
+ns2:IAO_0000412 a owl:AnnotationProperty ;
+    rdfs:label "imported from"@en ;
+    ns2:IAO_0000111 "imported from"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000125 ;
+    ns2:IAO_0000115 "For external terms/classes, the ontology from which the term was imported"@en ;
+    ns2:IAO_0000117 "PERSON:Alan Ruttenberg"@en,
+        "PERSON:Melanie Courtot"@en ;
+    ns2:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en .
+
+ns2:OBI_0000750 a owl:Class ;
+    rdfs:label "study design independent variable"@en ;
+    ns2:IAO_0000111 "independent variable specification" ;
+    ns2:IAO_0000112 "In a study in which gene expression is measured in patients between 8 month to 4 years old that have mild or severe malaria and in which the hypothesis is that gene expression in that age group is a function of disease status, disease status is the independent variable." ;
+    ns2:IAO_0000114 ns2:IAO_0000122 ;
+    ns2:IAO_0000115 "a directive information entity that is part of a study design. Independent variables are entities whose values are selected to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled"@en ;
+    ns2:IAO_0000116 "In the Philly 2013 workshop the label was chosen to distinguish it from \"dependent variable\" as used in statistical modelling. See: http://en.wikipedia.org/wiki/Statistical_modeling",
+        "2/2/2009 Original definition - In the design of experiments, independent variables are those whose values are controlled or selected by the person experimenting (experimenter) to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled."@en ;
+    ns2:IAO_0000117 "PERSON: Alan Ruttenberg",
+        "PERSON: Bjoern Peters",
+        "PERSON: Chris Stoeckert" ;
+    ns2:IAO_0000118 "experimental factor",
+        "independent variable" ;
+    ns2:IAO_0000119 "Web: http://en.wikipedia.org/wiki/Dependent_and_independent_variables" ;
+    ns2:IAO_0000232 "2009-03-16: work has been done on this term during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify thisdefinition please notify OBI." ;
+    ns2:OBI_0001847 "study factor" ;
+    rdfs:subClassOf ns2:IAO_0000033 .
+
+ns2:OBI_0001847 a owl:AnnotationProperty ;
+    rdfs:label "ISA alternative term"@en ;
+    ns2:IAO_0000111 "ISA alternative term"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000122 ;
+    ns2:IAO_0000115 "An alternative term used by the ISA tools project (http://isa-tools.org)."@en ;
+    ns2:IAO_0000116 """Requested by Alejandra Gonzalez-Beltran
+https://sourceforge.net/tracker/?func=detail&aid=3603413&group_id=177891&atid=886178""" ;
+    ns2:IAO_0000117 "Person: Alejandra Gonzalez-Beltran",
+        "Person: Philippe Rocca-Serra" ;
+    ns2:IAO_0000119 "ISA tools project (http://isa-tools.org)" .
+
+ns2:OBI_0500001 a owl:Class ;
+    rdfs:label "clinical study design" ;
+    ns2:IAO_0000111 "clinical study design" ;
+    ns2:IAO_0000112 "PMID: 17655677.J Cardiovasc Electrophysiol. 2007 Aug;18(9):965-71.Biventricular versus right ventricular pacing in patients with AV block (BLOCK HF): clinical study design and rationale." ;
+    ns2:IAO_0000114 ns2:IAO_0000125 ;
+    ns2:IAO_0000115 "Plan for the precise procedure to be followed in a clinical trial, including planned and actual timing of events, choice of control group, method of allocating treatments, blinding methods; assigns a subject to pass through one or more epochs in the course of a trial. Specific design elements, e.g., crossover, parallel; dose-escalation [Modified from Pocock, Clinical Trials: A Practical Approach]"@en ;
+    ns2:IAO_0000116 "The definition needs to be extended to other things than simply patients" ;
+    ns2:IAO_0000117 "PlanAndPlannedProcess Branch" ;
+    ns2:IAO_0000119 "Clinical Research Glossary Version 4.0 CDICS glossary group" ;
+    rdfs:subClassOf ns2:OBI_0500000 .
+
+ns2:OBI_0500027 a owl:Class ;
+    rdfs:label "inclusion criterion"@en ;
+    ns2:IAO_0000111 "inclusion criterion"@en ;
+    ns2:IAO_0000112 "PMID: 23979341-The major inclusion criterion was patients in whom severe cerebral embolism was diagnosed at age 75 or younger (more than 9 in the NIHSS score on day 7 after the onset of stroke) ."@en ;
+    ns2:IAO_0000114 ns2:IAO_0000125 ;
+    ns2:IAO_0000115 "an inclusion criterion (rule) is_a *eligibility criterion*  which defines and states a condition which, if met, makes an entity suitable for a given task or participation in a given process. For instance, in a study protocol, inclusion criteria indicate the conditions that prospective subjects MUST meet to be eligible for participation in a study."@en ;
+    ns2:IAO_0000117 "Person: Philippe Rocca-Serra"@en ;
+    ns2:IAO_0000118 "inclusion condition"@en,
+        "inclusion rule"@en ;
+    ns2:IAO_0000119 "Adapted from Clinical Research Glossary Version 4.0 CDICS glossary group"@en ;
+    rdfs:subClassOf ns2:OBI_0500026 .
+
+ns2:OBI_0500028 a owl:Class ;
+    rdfs:label "exclusion criterion"@en ;
+    ns2:IAO_0000111 "exclusion rule"@en ;
+    ns2:IAO_0000112 "PMID: 17600285-Exclusion criteria included the use of any topical ophthalmic or topical oral medication and/or history of ocular or oral surgery within the past six months."@en ;
+    ns2:IAO_0000114 ns2:IAO_0000125 ;
+    ns2:IAO_0000115 "an exclusion criterion (rule) is_a *eligibility criterion*  which defines and states a condition which, if met, makes an entity unsuitable for a given task or participation in a given process. For instance, in a study protocol, exclusion criteria indicate the conditions that prospective subjects SHOULD NOT meet to be eligible for participation in a study"@en ;
+    ns2:IAO_0000117 "Person: Philippe Rocca-Serra"@en ;
+    ns2:IAO_0000119 "Adapted from Clinical Research Glossary Version 4.0 CDICS glossary group"@en ;
+    rdfs:subClassOf ns2:OBI_0500026 .
+
+ns2:RO_0002175 a owl:AnnotationProperty .
+
+ns2:mondo.owl a owl:Ontology ;
+    owl:versionIRI <http://purl.obolibrary.org/obo/mondo/releases/2026-10-06/mondo.owl> .
+
+ns2:obi.owl a owl:Ontology ;
+    owl:versionIRI <http://purl.obolibrary.org/obo/obi/2026-07-27/obi.owl> .
+
+dcterms:conformsTo a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty .
+
+ns1:id a owl:AnnotationProperty ;
+    rdfs:label "id" .
+
+ns1:is_class_level a owl:AnnotationProperty .
+
+ns1:is_metadata_tag a owl:AnnotationProperty .
+
+ns1:source a owl:AnnotationProperty .
+
+rdfs:label a owl:AnnotationProperty ;
+    rdfs:label "label",
+        "label"@en ;
+    ns2:IAO_0000111 "label",
+        "label"@en ;
+    ns2:IAO_0000115 "A human readable name for this class." .
+
+skos:exactMatch a owl:AnnotationProperty .
+
+skos:relatedMatch a owl:AnnotationProperty .
+
+<https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/imports/upstream_import> a owl:Ontology .
+
+ns2:BFO_0000001 a owl:Class ;
+    rdfs:label "entity"@en ;
+    ns2:IAO_0000116 "BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81"@en ;
+    rdfs:subClassOf owl:Thing .
+
+ns2:BFO_0000002 a owl:Class ;
+    rdfs:label "continuant"@en ;
+    ns2:IAO_0000116 "BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240"@en ;
+    rdfs:subClassOf ns2:BFO_0000001 .
+
+ns2:BFO_0000016 a owl:Class ;
+    rdfs:label "disposition"@en ;
+    ns2:IAO_0000116 "BFO 2 Reference: Dispositions exist along a strength continuum. Weaker forms of disposition are realized in only a fraction of triggering cases. These forms occur in a significant number of cases of a similar type."@en ;
+    rdfs:subClassOf ns2:BFO_0000017 .
+
+ns2:BFO_0000017 a owl:Class ;
+    rdfs:label "realizable entity"@en ;
+    rdfs:subClassOf ns2:BFO_0000020 .
+
+ns2:BFO_0000020 a owl:Class ;
+    rdfs:label "specifically dependent continuant"@en ;
+    rdfs:subClassOf ns2:BFO_0000002 .
+
+ns2:IAO_0000030 a owl:Class ;
+    rdfs:label "information content entity"@en ;
+    ns2:IAO_0000111 "information content entity"@en ;
+    ns2:IAO_0000115 "A generically dependent continuant that is about some thing."@en ;
+    ns2:IAO_0000116 "Pier: 'data, information or knowledge'. OR 'representation'"@en ;
+    ns2:IAO_0000412 ns2:ogms.owl ;
+    rdfs:subClassOf owl:Thing .
+
+ns2:IAO_0000104 a owl:Class ;
+    rdfs:label "plan specification"@en ;
+    ns2:IAO_0000115 "A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified."@en ;
+    rdfs:subClassOf ns2:IAO_0000033 .
+
+ns2:OBI_0001755 a owl:Class ;
+    rdfs:label "selection criterion"@en ;
+    ns2:IAO_0000111 "selection criterion"@en ;
+    ns2:IAO_0000112 "rats should be aged between 6 and 8 weeks and weight between 180-250grams"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000122 ;
+    ns2:IAO_0000115 "A directive information entity which defines and states a principle of standard by which selection process may take place."@en ;
+    ns2:IAO_0000117 "Person: Philippe Rocca-Serra"@en ;
+    ns2:IAO_0000118 "selection rule"@en ;
+    ns2:IAO_0000119 "OBI discussion summarized under the following tracker item : http://sourceforge.net/p/obi/obi-terms/678/"@en ;
+    rdfs:subClassOf ns2:IAO_0000033 .
+
+ns2:OBI_0500000 a owl:Class ;
+    rdfs:label "study design"@en ;
+    ns2:IAO_0000111 "study design"@en ;
+    ns2:IAO_0000112 "a matched pairs study design describes criteria by which subjects are identified as pairs which then undergo the same protocols, and the data generated is analyzed by comparing the differences between the paired subjects, which constitute the results of the executed study design."@en ;
+    ns2:IAO_0000114 ns2:IAO_0000122 ;
+    ns2:IAO_0000115 "A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution."@en ;
+    ns2:IAO_0000116 "Editor note: there is at least an implicit restriction on the kind of data transformations that can be done based on the measured data available." ;
+    ns2:IAO_0000117 "PERSON: Chris Stoeckert" ;
+    ns2:IAO_0000118 "experimental design"@en ;
+    ns2:IAO_0000232 "rediscussed at length (MC/JF/BP). 12/9/08). The definition was clarified to differentiate it from protocol."@en ;
+    rdfs:subClassOf ns2:IAO_0000104 .
+
+rdfs:comment a owl:AnnotationProperty .
+
+ns2:MONDO_0100329 a owl:Class ;
+    rdfs:label "primary viral infectious disease" ;
+    ns2:IAO_0000115 "The initial viral infectious disase that causes illness." ;
+    ns2:IAO_0000233 "https://github.com/monarch-initiative/mondo/issues/2950"^^xsd:anyURI ;
+    dcterms:creator <https://orcid.org/0000-0001-5208-3432> ;
+    ns1:id "MONDO:0100329" ;
+    rdfs:subClassOf ns2:MONDO_0005108,
+        ns2:MONDO_0005550 .
+
+ns2:MONDO_7770006 a owl:Class ;
+    rdfs:label "disease by body system or component" ;
+    ns2:IAO_0000115 "A grouping class for human diseases classified by the body system or anatomical component primarily affected." ;
+    ns1:id "MONDO:7770006" ;
+    rdfs:comment "This term is intended solely for classification purposes and should not be used for direct data annotation." ;
+    rdfs:subClassOf ns2:MONDO_0700096 .
+
+ns2:MONDO_7770007 a owl:Class ;
+    rdfs:label "disease by developmental or physiological process" ;
+    ns2:IAO_0000115 "A grouping class for human diseases classified by the molecular, biochemical, cellular, anatomic, developmental or physiological process that is disrupted." ;
+    ns1:id "MONDO:7770007" ;
+    rdfs:comment "This term is intended solely for classification purposes and should not be used for direct data annotation." ;
+    rdfs:subClassOf ns2:MONDO_0700096 .
+
+ns2:MONDO_7770008 a owl:Class ;
+    rdfs:label "disease by etiologic mechanism" ;
+    ns2:IAO_0000115 "A grouping class for human diseases classified by their etiologic mechanism, encompassing primarily intrinsic (genetic, genomic), primarily extrinsic (e.g., infections, toxins, radiation), and complex multifactorial (e.g. nutritional) causes." ;
+    ns1:id "MONDO:7770008" ;
+    rdfs:comment "This term is intended solely for classification purposes and should not be used for direct data annotation." ;
+    rdfs:subClassOf ns2:MONDO_0700096 .
+
+ns2:MONDO_7770010 a owl:Class ;
+    rdfs:label "disease of primarily extrinsic mechanism" ;
+    ns2:IAO_0000115 "A grouping class for human diseases caused primarily by extrinsic factors, including infections, toxins, nutritional deficiencies, iatrogenic causes, and environmental exposures." ;
+    ns1:id "MONDO:7770010" ;
+    rdfs:comment "This term is intended solely for classification purposes and should not be used for direct data annotation." ;
+    rdfs:subClassOf ns2:MONDO_7770008 .
+
+ns2:OBI_0500026 a owl:Class ;
+    rdfs:label "eligibility criterion"@en ;
+    ns2:IAO_0000111 "eligibility criterion"@en ;
+    ns2:IAO_0000112 "PMID: 17579629 -Eligibility criteria included: untreated ED-SCLC; age >/=70 and performance status 0-2, or age <70 and PS 3."@en ;
+    ns2:IAO_0000114 ns2:IAO_0000122 ;
+    ns2:IAO_0000115 """an eligibility criterion (rule) is_a selection criterion which 
+defines and states the requirements (positive or negative) for an entity to be considered as suitable for a given task or participation in a process."""@en ;
+    ns2:IAO_0000117 "Person: Philippe Rocca-Serra"@en ;
+    ns2:IAO_0000118 "eligibility rule"@en ;
+    ns2:IAO_0000119 "Adapted from Clinical Research Glossary Version 4.0 CDICS glossary group"@en ;
+    rdfs:subClassOf ns2:OBI_0001755 .
+
+ns1:hasNarrowSynonym a owl:AnnotationProperty ;
+    rdfs:label "has_narrow_synonym" .
+
+ns2:IAO_0000033 a owl:Class ;
+    rdfs:label "directive information entity"@en ;
+    ns2:IAO_0000115 "An information content entity whose concretizations indicate to their bearer how to realize them in a process."@en ;
+    rdfs:subClassOf ns2:IAO_0000030 .
+
+ns3:curated_content_resource a owl:AnnotationProperty ;
+    rdfs:label "curated content resource" ;
+    ns2:IAO_0000115 "A curated content resource is a web-resource that contains curated content about the ontology term." ;
+    ns1:id "curated_content_resource" ;
+    ns1:is_class_level true ;
+    ns1:is_metadata_tag true ;
+    rdfs:comment "This property is likely to change the ID. Please do not use in production systems." .
+
+ns2:MONDO_0700096 a owl:Class ;
+    rdfs:label "human disease" ;
+    ns2:IAO_0000233 "https://github.com/monarch-initiative/mondo/issues/5858"^^xsd:anyURI ;
+    ns2:RO_0002175 ns2:NCBITaxon_9606 ;
+    dcterms:creator <https://orcid.org/0000-0002-4142-7153> ;
+    ns1:hasExactSynonym "human disease or disorder" ;
+    ns1:id "MONDO:0700096" ;
+    ns1:inSubset ns3:rare_grouping ;
+    rdfs:subClassOf ns2:MONDO_0000001 .
+
+ns1:hasRelatedSynonym a owl:AnnotationProperty ;
+    rdfs:label "has_related_synonym" .
+
+ns2:MONDO_0024352 a owl:Class ;
+    rdfs:label "viral respiratory tract infection" ;
+    ns2:IAO_0000115 "A respiratory tract infection caused by a virus. Viruses represent the most common causes of upper and lower respiratory tract infections and include rhinoviruses, influenza viruses, parainfluenza viruses, and respiratory syncytial virus." ;
+    dcterms:conformsTo <http://purl.obolibrary.org/obo/mondo/patterns/location.yaml> ;
+    ns1:hasDbXref "ICD9:519.8",
+        "MEDGEN:163755",
+        "NCIT:C27219",
+        "SCTID:312133006",
+        "UMLS:C0877203" ;
+    ns1:hasExactSynonym "viral respiratory tract infection" ;
+    ns1:id "MONDO:0024352" ;
+    ns1:inSubset ns3:otar ;
+    rdfs:subClassOf ns2:MONDO_0005108,
+        ns2:MONDO_0024355 ;
+    skos:exactMatch <http://identifiers.org/medgen/163755>,
+        <http://identifiers.org/snomedct/312133006>,
+        <http://linkedlifedata.com/resource/umls/id/C0877203>,
+        ns2:NCIT_C27219 .
+
+ns2:MONDO_0021166 a owl:Class ;
+    rdfs:label "inflammatory disease" ;
+    ns2:IAO_0000115 "A disease involving a pathogenic inflammatory response in the anatomical structure." ;
+    dcterms:conformsTo <http://purl.obolibrary.org/obo/mondo/patterns/specific_infectious_disease_by_location.yaml>,
+        <http://purl.obolibrary.org/obo/mondo/patterns/specific_inflammatory_disease_by_site.yaml> ;
+    ns1:hasDbXref "ICD9:799.89",
+        "MEDGEN:452939",
+        "NCIT:C93210",
+        "SCTID:128139000",
+        "UMLS:C1290884" ;
+    ns1:hasExactSynonym "anatomical structure inflammation",
+        "inflammation of anatomical structure",
+        "inflammatory disease",
+        "inflammatory disorder" ;
+    ns1:id "MONDO:0021166" ;
+    ns1:inSubset ns3:harrisons_view,
+        ns3:rare_grouping ;
+    rdfs:subClassOf ns2:MONDO_0700096,
+        ns2:MONDO_7770007 ;
+    skos:exactMatch <http://identifiers.org/medgen/452939>,
+        <http://identifiers.org/snomedct/128139000>,
+        <http://linkedlifedata.com/resource/umls/id/C1290884>,
+        ns2:NCIT_C93210 .
+
+ns2:MONDO_0043905 a owl:Class ;
+    rdfs:label "pneumonitis" ;
+    ns2:IAO_0000115 "An inflammatory process affecting the lung parenchyma. It is a milder form of lung inflammation compared to pneumonia." ;
+    dcterms:conformsTo <http://purl.obolibrary.org/obo/mondo/patterns/inflammatory_disease_by_site.yaml>,
+        <http://purl.obolibrary.org/obo/mondo/patterns/specific_infectious_disease_by_location.yaml>,
+        <http://purl.obolibrary.org/obo/mondo/patterns/specific_inflammatory_disease_by_site.yaml> ;
+    ns1:hasDbXref "EFO:1001991",
+        "MEDGEN:811420",
+        "NCIT:C113159",
+        "SCTID:205237003",
+        "UMLS:C3714636",
+        "icd11.foundation:1324545867" ;
+    ns1:hasExactSynonym "inflammation of lung parenchyma",
+        "lung parenchyma inflammation",
+        "pneumonitis" ;
+    ns1:id "MONDO:0043905" ;
+    ns1:inSubset ns3:otar ;
+    rdfs:comment "Pneumonitis typically refers to non-infectious inflammation, whereas pneumonia refers to infectious" ;
+    rdfs:subClassOf ns2:MONDO_0000001,
+        ns2:MONDO_0005275,
+        ns2:MONDO_0021166 ;
+    skos:exactMatch <http://id.who.int/icd/entity/1324545867>,
+        <http://identifiers.org/medgen/811420>,
+        <http://identifiers.org/snomedct/205237003>,
+        <http://linkedlifedata.com/resource/umls/id/C3714636>,
+        ns2:NCIT_C113159,
+        <http://www.ebi.ac.uk/efo/EFO_1001991> .
+
+ns1:inSubset a owl:AnnotationProperty ;
+    rdfs:label "in_subset" .
+
+ns2:MONDO_0000270 a owl:Class ;
+    rdfs:label "lower respiratory tract disorder" ;
+    ns2:IAO_0000115 "A disease involving the lower respiratory tract." ;
+    dcterms:conformsTo <http://purl.obolibrary.org/obo/mondo/patterns/location.yaml>,
+        <http://purl.obolibrary.org/obo/mondo/patterns/location_top.yaml> ;
+    ns1:hasDbXref "DOID:0050161",
+        "EFO:0009433",
+        "ICD9:478.1",
+        "ICD9:478.19",
+        "MEDGEN:712703",
+        "SCTID:128272009",
+        "UMLS:C1290325",
+        "icd11.foundation:1582386590" ;
+    ns1:hasExactSynonym "disease of lower respiratory tract",
+        "disease or disorder of lower respiratory tract",
+        "disorder of lower respiratory tract",
+        "lower respiratory tract disease",
+        "lower respiratory tract disease or disorder" ;
+    ns1:id "MONDO:0000270" ;
+    ns1:inSubset ns3:otar ;
+    rdfs:subClassOf ns2:MONDO_0000001,
+        ns2:MONDO_0005087 ;
+    skos:exactMatch <http://id.who.int/icd/entity/1582386590>,
+        <http://identifiers.org/medgen/712703>,
+        <http://identifiers.org/snomedct/128272009>,
+        <http://linkedlifedata.com/resource/umls/id/C1290325>,
+        ns2:DOID_0050161,
+        <http://www.ebi.ac.uk/efo/EFO_0009433> .
+
+ns2:IAO_0000115 a owl:AnnotationProperty ;
+    rdfs:label "definition",
+        "textual definition",
+        "definition"@en ;
+    ns2:IAO_0000111 "definition",
+        "textual definition",
+        "definition"@en ;
+    ns2:IAO_0000114 ns2:IAO_0000122 ;
+    ns2:IAO_0000115 "A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition's source and attribution in a form that can easily be interpreted by software.",
+        "English language definitions of what NCI means by the concept. These are limited to 1024 characters. They may also include information about the definition's source and attribution in a form that can easily be interpreted by software.",
+        "The official definition.",
+        "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en,
+        "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en ;
+    ns2:IAO_0000116 """2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with."""@en,
+        """2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  """@en ;
+    ns2:IAO_0000117 "PERSON:Daniel Schober"@en ;
+    ns2:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en .
+
+ns2:MONDO_0005249 a owl:Class ;
+    rdfs:label "pneumonia" ;
+    ns2:IAO_0000115 "An acute, acute and chronic, or chronic inflammation focally or diffusely affecting the lung parenchyma, caused by an infection in one or both of the lungs (by bacteria, viruses, fungi, or mycoplasma.). Symptoms include cough, shortness of breath, fevers, chills, chest pain, headache, sweating, and weakness." ;
+    ns2:IAO_0000233 "https://github.com/monarch-initiative/mondo/issues/3790"^^xsd:anyURI,
+        "https://github.com/monarch-initiative/mondo/issues/9285"^^xsd:anyURI ;
+    ns3:curated_content_resource "https://www.malacards.org/card/pneumonia"^^xsd:anyURI ;
+    ns1:hasDbXref "DOID:552",
+        "EFO:0003106",
+        "ICD10CM:J15",
+        "ICD10CM:J18.9",
+        "ICD9:483",
+        "ICD9:483.8",
+        "ICD9:484.8",
+        "ICD9:486",
+        "MEDGEN:10813",
+        "MESH:D011014",
+        "NCIT:C3333",
+        "SCTID:233604007",
+        "UMLS:C0032285",
+        "icd11.foundation:142052508" ;
+    ns1:hasNarrowSynonym "acute pneumonia" ;
+    ns1:id "MONDO:0005249" ;
+    ns1:inSubset ns3:otar ;
+    rdfs:subClassOf ns2:MONDO_0024355,
+        ns2:MONDO_0043905 ;
+    skos:exactMatch <http://id.who.int/icd/entity/142052508>,
+        <http://identifiers.org/medgen/10813>,
+        <http://identifiers.org/mesh/D011014>,
+        <http://identifiers.org/snomedct/233604007>,
+        <http://linkedlifedata.com/resource/umls/id/C0032285>,
+        <http://purl.bioontology.org/ontology/ICD10CM/J18.9>,
+        ns2:DOID_552,
+        ns2:NCIT_C3333,
+        <http://www.ebi.ac.uk/efo/EFO_0003106> ;
+    skos:relatedMatch <http://purl.bioontology.org/ontology/ICD10CM/J15> .
+
+ns2:MONDO_0024355 a owl:Class ;
+    rdfs:label "respiratory tract infectious disorder" ;
+    ns2:IAO_0000115 "Invasion of the host RESPIRATORY SYSTEM by microorganisms, usually leading to pathological processes or diseases." ;
+    dcterms:conformsTo <http://purl.obolibrary.org/obo/mondo/patterns/location.yaml> ;
+    ns1:hasDbXref "ICD9:519.8",
+        "MESH:D012141",
+        "SCTID:275498002" ;
+    ns1:hasNarrowSynonym "respiratory infection, upper",
+        "upper respiratory infections",
+        "upper respiratory tract infections" ;
+    ns1:hasRelatedSynonym "infection, respiratory tract",
+        "infections, respiratory",
+        "infections, respiratory tract",
+        "infections, upper respiratory",
+        "infections, upper respiratory tract",
+        "respiratory infections",
+        "respiratory tract infection" ;
+    ns1:id "MONDO:0024355" ;
+    ns1:inSubset ns3:otar ;
+    rdfs:subClassOf ns2:MONDO_0005087,
+        ns2:MONDO_0005550 ;
+    skos:exactMatch <http://identifiers.org/mesh/D012141>,
+        <http://identifiers.org/snomedct/275498002> .
+
+ns2:MONDO_0005812 a owl:Class ;
+    rdfs:label "influenza" ;
+    ns2:IAO_0000115 "An acute viral infection of the respiratory tract, occurring in isolated cases, in epidemics, or in pandemics; it is caused by serologically different strains of viruses (influenzaviruses) designated A, B, and C, has a 3-day incubation period, and usually lasts for 3 to 10 days. It is marked by inflammation of the nasal mucosa, pharynx, and conjunctiva; headache; myalgia; often fever, chills, and prostration; and occasionally involvement of the myocardium or central nervous system." ;
+    ns3:curated_content_resource "https://www.malacards.org/card/influenza"^^xsd:anyURI ;
+    ns1:hasDbXref "DOID:8469",
+        "EFO:0007328",
+        "ICD9:487",
+        "ICD9:487.8",
+        "MEDGEN:9466",
+        "MESH:D007251",
+        "MESH:D009976",
+        "NCIT:C53482",
+        "SCTID:61700007",
+        "UMLS:C0021400",
+        "icd11.foundation:145723401" ;
+    ns1:hasExactSynonym "Influenza with other manifestations",
+        "flu",
+        "influenza infection",
+        "orthomyxoviridae caused disease or disorder",
+        "orthomyxoviridae disease or disorder",
+        "orthomyxoviridae infectious disease" ;
+    ns1:id "MONDO:0005812" ;
+    ns1:inSubset ns3:otar ;
+    rdfs:subClassOf ns2:MONDO_0005550,
+        ns2:MONDO_0024352,
+        ns2:MONDO_0100329 ;
+    skos:exactMatch <http://id.who.int/icd/entity/145723401>,
+        <http://identifiers.org/medgen/9466>,
+        <http://identifiers.org/mesh/D007251>,
+        <http://identifiers.org/mesh/D009976>,
+        <http://identifiers.org/snomedct/61700007>,
+        <http://linkedlifedata.com/resource/umls/id/C0021400>,
+        ns2:DOID_8469,
+        ns2:NCIT_C53482,
+        <http://www.ebi.ac.uk/efo/EFO_0007328> .
+
+ns2:MONDO_0005108 a owl:Class ;
+    rdfs:label "viral infectious disease" ;
+    ns2:IAO_0000115 "Any disease caused by a virus." ;
+    ns3:curated_content_resource "https://www.malacards.org/card/viral_infectious_disease"^^xsd:anyURI ;
+    ns1:hasDbXref "DOID:934",
+        "EFO:0000763",
+        "ICD9:060-066",
+        "ICD9:066.9",
+        "ICD9:078.89",
+        "ICD9:079.99",
+        "MESH:D014777",
+        "NCIT:C3439",
+        "SCTID:34014006" ;
+    ns1:hasExactSynonym "Viruses caused disease or disorder",
+        "Viruses disease or disorder",
+        "Viruses infection",
+        "Viruses infectious disease",
+        "infection, viral",
+        "viral disease",
+        "viral disorder",
+        "viral infection" ;
+    ns1:hasRelatedSynonym "infections, Viruses" ;
+    ns1:id "MONDO:0005108" ;
+    ns1:inSubset ns3:otar ;
+    rdfs:subClassOf ns2:MONDO_0005550,
+        ns2:MONDO_0700096 ;
+    skos:exactMatch <http://identifiers.org/mesh/D014777>,
+        <http://identifiers.org/snomedct/34014006>,
+        ns2:DOID_934,
+        ns2:NCIT_C3439,
+        <http://www.ebi.ac.uk/efo/EFO_0000763> .
+
+ns2:MONDO_0005275 a owl:Class ;
+    rdfs:label "lung disorder" ;
+    ns2:IAO_0000115 "A disease involving the lung." ;
+    ns3:curated_content_resource "https://www.malacards.org/card/lung_disease"^^xsd:anyURI ;
+    dcterms:conformsTo <http://purl.obolibrary.org/obo/mondo/patterns/location.yaml>,
+        <http://purl.obolibrary.org/obo/mondo/patterns/location_top.yaml> ;
+    ns1:hasDbXref "DOID:850",
+        "EFO:0003818",
+        "ICD9:518.89",
+        "MEDGEN:7399",
+        "MESH:D008171",
+        "NCIT:C3198",
+        "SCTID:19829001",
+        "UMLS:C0024115" ;
+    ns1:hasExactSynonym "disease of lung",
+        "disease or disorder of lung",
+        "disorder of lung",
+        "lung disease",
+        "lung disease or disorder",
+        "lung disorder",
+        "lung disorders",
+        "pulmonary disease",
+        "pulmonary diseases",
+        "pulmonary disorder",
+        "pulmonary disorders" ;
+    ns1:id "MONDO:0005275" ;
+    ns1:inSubset ns3:otar ;
+    rdfs:subClassOf ns2:MONDO_0000001,
+        ns2:MONDO_0000270 ;
+    skos:exactMatch <http://identifiers.org/medgen/7399>,
+        <http://identifiers.org/mesh/D008171>,
+        <http://identifiers.org/snomedct/19829001>,
+        <http://linkedlifedata.com/resource/umls/id/C0024115>,
+        ns2:DOID_850,
+        ns2:NCIT_C3198,
+        <http://www.ebi.ac.uk/efo/EFO_0003818> .
+
+ns2:MONDO_0000001 a owl:Class ;
+    rdfs:label "disease" ;
+    ns2:IAO_0000115 "A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism." ;
+    ns1:hasDbXref "DOID:4",
+        "ICD9:799.9",
+        "MEDGEN:4347",
+        "MESH:D004194",
+        "NCIT:C2991",
+        "OGMS:0000031",
+        "Orphanet:377788",
+        "SCTID:64572001",
+        "UMLS:C0012634" ;
+    ns1:hasExactSynonym "condition",
+        "disease",
+        "disease or disorder",
+        "disease or disorder, non-neoplastic",
+        "diseases",
+        "diseases and disorders",
+        "disorder",
+        "disorders",
+        "medical condition",
+        "other disease" ;
+    ns1:id "MONDO:0000001" ;
+    ns1:inSubset ns3:ordo_disorder ;
+    rdfs:subClassOf ns2:BFO_0000016 ;
+    skos:exactMatch <http://identifiers.org/medgen/4347>,
+        <http://identifiers.org/mesh/D004194>,
+        <http://identifiers.org/snomedct/64572001>,
+        <http://linkedlifedata.com/resource/umls/id/C0012634>,
+        ns2:DOID_4,
+        ns2:NCIT_C2991,
+        <http://www.orpha.net/ORDO/Orphanet_377788> .
+
+ns2:MONDO_0005550 a owl:Class ;
+    rdfs:label "infectious disease" ;
+    ns2:IAO_0000115 "A disorder directly resulting from the presence and activity of a microbial, viral, or parasitic agent in humans. It can be transmitted by direct or indirect contact." ;
+    ns1:hasDbXref "DOID:0050117",
+        "EFO:0005741",
+        "ICD10CM:A00-B99",
+        "ICD9:079.0",
+        "ICD9:136.8",
+        "ICD9:136.9",
+        "IDO:0000436",
+        "MEDGEN:1057",
+        "MESH:D003141",
+        "NCIT:C26726",
+        "SCTID:40733004",
+        "UMLS:C0009450" ;
+    ns1:hasExactSynonym "communicable disease",
+        "infection",
+        "infectious",
+        "infectious disease",
+        "infectious diseases and manifestations",
+        "infectious disorder",
+        "transmissible disease" ;
+    ns1:hasNarrowSynonym "clinical infection" ;
+    ns1:id "MONDO:0005550" ;
+    ns1:inSubset ns3:harrisons_view,
+        ns3:otar,
+        ns3:rare_grouping ;
+    rdfs:comment "Replaces 'infection' in disease hierarchy. OBI imported term infection is moved to pathologic process. This class is a container class for infectious diseases, not the process of infection itself." ;
+    rdfs:subClassOf ns2:MONDO_0700096,
+        ns2:MONDO_7770010 ;
+    skos:exactMatch <http://identifiers.org/medgen/1057>,
+        <http://identifiers.org/mesh/D003141>,
+        <http://identifiers.org/snomedct/40733004>,
+        <http://linkedlifedata.com/resource/umls/id/C0009450>,
+        <http://purl.bioontology.org/ontology/ICD10CM/A00-B99>,
+        ns2:DOID_0050117,
+        ns2:NCIT_C26726,
+        <http://www.ebi.ac.uk/efo/EFO_0005741> .
+
+ns2:MONDO_0005087 a owl:Class ;
+    rdfs:label "respiratory system disorder" ;
+    ns2:IAO_0000115 "A non-neoplastic or neoplastic disorder that affects the respiratory system. Representative examples include pneumonia, chronic obstructive pulmonary disease, pulmonary failure, lung adenoma, lung carcinoma, and tracheal carcinoma." ;
+    ns3:curated_content_resource "https://www.malacards.org/card/respiratory_system_disease"^^xsd:anyURI ;
+    dcterms:conformsTo <http://purl.obolibrary.org/obo/mondo/patterns/location.yaml> ;
+    ns1:hasDbXref "DOID:1579",
+        "EFO:0000684",
+        "ICD10CM:J00-J99",
+        "ICD9:460-519",
+        "ICD9:500-508",
+        "ICD9:503",
+        "ICD9:508",
+        "ICD9:508.1",
+        "ICD9:508.8",
+        "ICD9:508.9",
+        "ICD9:510-519",
+        "ICD9:516",
+        "ICD9:516.8",
+        "ICD9:516.9",
+        "ICD9:517",
+        "ICD9:517.8",
+        "ICD9:519",
+        "ICD9:519.1",
+        "ICD9:519.3",
+        "ICD9:519.8",
+        "ICD9:519.9",
+        "ICD9:V12.60",
+        "ICD9:V47.2",
+        "MEDGEN:48421",
+        "MESH:D012140",
+        "NANDO:1100010",
+        "NCIT:C26871",
+        "SCTID:50043002",
+        "UMLS:C0035204" ;
+    ns1:hasExactSynonym "disease of respiratory system",
+        "disease or disorder of respiratory system",
+        "disorder of respiratory system",
+        "respiratory disease",
+        "respiratory disorder",
+        "respiratory system disease",
+        "respiratory system disease or disorder",
+        "respiratory system disorder" ;
+    ns1:id "MONDO:0005087" ;
+    ns1:inSubset ns3:harrisons_view,
+        ns3:otar,
+        ns3:rare_grouping ;
+    rdfs:subClassOf ns2:MONDO_0700096,
+        ns2:MONDO_7770006 ;
+    skos:exactMatch <http://identifiers.org/medgen/48421>,
+        <http://identifiers.org/mesh/D012140>,
+        <http://identifiers.org/snomedct/50043002>,
+        <http://linkedlifedata.com/resource/umls/id/C0035204>,
+        <http://purl.bioontology.org/ontology/ICD10CM/J00-J99>,
+        ns2:DOID_1579,
+        ns2:NCIT_C26871,
+        <http://www.ebi.ac.uk/efo/EFO_0000684> .
+
+ns1:hasExactSynonym a owl:AnnotationProperty ;
+    rdfs:label "has_exact_synonym" .
+
+ns1:hasDbXref a owl:AnnotationProperty ;
+    rdfs:label "database_cross_reference" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "OGMS:0000031" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism." .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C2991" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "disorders" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MalaCards" ;
+    owl:annotatedProperty ns3:curated_content_resource ;
+    owl:annotatedSource ns2:MONDO_0005249 ;
+    owl:annotatedTarget "https://www.malacards.org/card/pneumonia"^^xsd:anyURI .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0003106",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005249 ;
+    owl:annotatedTarget "DOID:552" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:EFO",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005249 ;
+    owl:annotatedTarget "EFO:0003106" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005249 ;
+    owl:annotatedTarget "ICD10CM:J15" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005249 ;
+    owl:annotatedTarget "ICD10CM:J18.9" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0003106" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005249 ;
+    owl:annotatedTarget "ICD9:483" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0003106" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005249 ;
+    owl:annotatedTarget "ICD9:483.8" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005249 ;
+    owl:annotatedTarget "ICD9:484.8" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "https://orcid.org/0000-0002-6601-2165" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0005275 ;
+    owl:annotatedTarget "A disease involving the lung." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MalaCards" ;
+    owl:annotatedProperty ns3:curated_content_resource ;
+    owl:annotatedSource ns2:MONDO_0005275 ;
+    owl:annotatedTarget "https://www.malacards.org/card/lung_disease"^^xsd:anyURI .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C2991" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "other disease" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0003818",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005275 ;
+    owl:annotatedTarget "DOID:850" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:EFO",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005275 ;
+    owl:annotatedTarget "EFO:0003818" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005275 ;
+    owl:annotatedTarget "ICD9:518.89" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005275 ;
+    owl:annotatedTarget "MEDGEN:7399" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:850",
+        "EFO:0003818",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005275 ;
+    owl:annotatedTarget "MESH:D008171" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:850",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005275 ;
+    owl:annotatedTarget "NCIT:C3198" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:850",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005275 ;
+    owl:annotatedTarget "SCTID:19829001" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:7399",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005275 ;
+    owl:annotatedTarget "UMLS:C0024115" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/location_top" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005275 ;
+    owl:annotatedTarget "disease of lung" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/location_top",
+        "NCIT:C3198" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005275 ;
+    owl:annotatedTarget "disorder of lung" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000408",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "DOID:4" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "DOID:850",
+        "MONDO:patterns/location" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005275 ;
+    owl:annotatedTarget "lung disease" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:design_pattern",
+        "MONDO:patterns/location" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005275 ;
+    owl:annotatedTarget "lung disease or disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C3198" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005275 ;
+    owl:annotatedTarget "lung disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C3198" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005275 ;
+    owl:annotatedTarget "lung disorders" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C3198" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005275 ;
+    owl:annotatedTarget "pulmonary disease" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C3198" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005275 ;
+    owl:annotatedTarget "pulmonary diseases" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C3198" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005275 ;
+    owl:annotatedTarget "pulmonary disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C3198" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005275 ;
+    owl:annotatedTarget "pulmonary disorders" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:OTAR" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0005275 ;
+    owl:annotatedTarget ns3:otar .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C26726" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0005550 ;
+    owl:annotatedTarget "A disorder directly resulting from the presence and activity of a microbial, viral, or parasitic agent in humans. It can be transmitted by direct or indirect contact." .
+
+[] a owl:Axiom ;
+    ns1:source "Orphanet:377788" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget ns3:ordo_disorder .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0005741",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005550 ;
+    owl:annotatedTarget "DOID:0050117" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:EFO",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005550 ;
+    owl:annotatedTarget "EFO:0005741" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo",
+        "https://github.com/monarch-initiative/mondo/issues/4536",
+        "https://orcid.org/0000-0001-5208-3432",
+        "https://orcid.org/0000-0002-4142-7153" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005550 ;
+    owl:annotatedTarget "ICD10CM:A00-B99" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:0050117" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005550 ;
+    owl:annotatedTarget "ICD9:079.0" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005550 ;
+    owl:annotatedTarget "ICD9:136.8" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005550 ;
+    owl:annotatedTarget "ICD9:136.9" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0005741" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005550 ;
+    owl:annotatedTarget "IDO:0000436" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005550 ;
+    owl:annotatedTarget "MEDGEN:1057" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005550 ;
+    owl:annotatedTarget "MESH:D003141" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005550 ;
+    owl:annotatedTarget "NCIT:C26726" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "ICD9:799.9" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0005741",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005550 ;
+    owl:annotatedTarget "SCTID:40733004" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:1057",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005550 ;
+    owl:annotatedTarget "UMLS:C0009450" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "doi:10.1007/978-1-4020-5614-7_3557",
+        "https://www.merriam-webster.com/medical/communicable%20disease" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005550 ;
+    owl:annotatedTarget "communicable disease" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C26726" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005550 ;
+    owl:annotatedTarget "infection" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C26726" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005550 ;
+    owl:annotatedTarget "infectious" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "DOID:0050117",
+        "NCIT:C26726" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005550 ;
+    owl:annotatedTarget "infectious disease" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C26726" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005550 ;
+    owl:annotatedTarget "infectious diseases and manifestations" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C26726" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005550 ;
+    owl:annotatedTarget "infectious disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "doi:10.1007/978-1-4020-5614-7_3557" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005550 ;
+    owl:annotatedTarget "transmissible disease" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:OTAR" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0005550 ;
+    owl:annotatedTarget ns3:otar .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "MEDGEN:4347" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0005741" ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns2:MONDO_0005550 ;
+    owl:annotatedTarget "Replaces 'infection' in disease hierarchy. OBI imported term infection is moved to pathologic process. This class is a container class for infectious diseases, not the process of infection itself." .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:P378" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0005812 ;
+    owl:annotatedTarget "An acute viral infection of the respiratory tract, occurring in isolated cases, in epidemics, or in pandemics; it is caused by serologically different strains of viruses (influenzaviruses) designated A, B, and C, has a 3-day incubation period, and usually lasts for 3 to 10 days. It is marked by inflammation of the nasal mucosa, pharynx, and conjunctiva; headache; myalgia; often fever, chills, and prostration; and occasionally involvement of the myocardium or central nervous system." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MalaCards" ;
+    owl:annotatedProperty ns3:curated_content_resource ;
+    owl:annotatedSource ns2:MONDO_0005812 ;
+    owl:annotatedTarget "https://www.malacards.org/card/influenza"^^xsd:anyURI .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0001669",
+        "EFO:0007328",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005812 ;
+    owl:annotatedTarget "DOID:8469" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:EFO",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005812 ;
+    owl:annotatedTarget "EFO:0007328" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:8469",
+        "EFO:0001669" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005812 ;
+    owl:annotatedTarget "ICD9:487" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005812 ;
+    owl:annotatedTarget "ICD9:487.8" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005812 ;
+    owl:annotatedTarget "MEDGEN:9466" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:8469",
+        "EFO:0007328",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005812 ;
+    owl:annotatedTarget "MESH:D007251" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0007411",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005812 ;
+    owl:annotatedTarget "MESH:D009976" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:4",
+        "EFO:0000408",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "MESH:D004194" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:8469",
+        "EFO:0001669",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005812 ;
+    owl:annotatedTarget "NCIT:C53482" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005812 ;
+    owl:annotatedTarget "SCTID:61700007" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:9466",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005812 ;
+    owl:annotatedTarget "UMLS:C0021400" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005812 ;
+    owl:annotatedTarget "icd11.foundation:145723401" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "DOID:8469",
+        "ICD9CM:487.8" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005812 ;
+    owl:annotatedTarget "Influenza with other manifestations" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "DOID:8469",
+        "NCIT:C53482" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005812 ;
+    owl:annotatedTarget "flu" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:0005162" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005812 ;
+    owl:annotatedTarget "influenza infection" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/specific_infectious_disease_by_agent" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005812 ;
+    owl:annotatedTarget "orthomyxoviridae caused disease or disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:0005889" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005812 ;
+    owl:annotatedTarget "orthomyxoviridae infectious disease" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:OTAR" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0005812 ;
+    owl:annotatedTarget ns3:otar .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:4",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "NCIT:C2991" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/inflammatory_disease_by_site" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0021166 ;
+    owl:annotatedTarget "A disease involving a pathogenic inflammatory response in the anatomical structure." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0021166 ;
+    owl:annotatedTarget "ICD9:799.89" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0021166 ;
+    owl:annotatedTarget "MEDGEN:452939" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0021166 ;
+    owl:annotatedTarget "NCIT:C93210" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0021166 ;
+    owl:annotatedTarget "SCTID:128139000" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:452939",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0021166 ;
+    owl:annotatedTarget "UMLS:C1290884" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/inflammatory_disease_by_site" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0021166 ;
+    owl:annotatedTarget "anatomical structure inflammation" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C93210" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0021166 ;
+    owl:annotatedTarget "inflammatory disease" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C93210" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0021166 ;
+    owl:annotatedTarget "inflammatory disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C27219" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0024352 ;
+    owl:annotatedTarget "A respiratory tract infection caused by a virus. Viruses represent the most common causes of upper and lower respiratory tract infections and include rhinoviruses, influenza viruses, parainfluenza viruses, and respiratory syncytial virus." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "OGMS:0000031" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0024352 ;
+    owl:annotatedTarget "ICD9:519.8" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0024352 ;
+    owl:annotatedTarget "MEDGEN:163755" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0024352 ;
+    owl:annotatedTarget "NCIT:C27219" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0024352 ;
+    owl:annotatedTarget "SCTID:312133006" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:163755",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0024352 ;
+    owl:annotatedTarget "UMLS:C0877203" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C27219" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0024352 ;
+    owl:annotatedTarget "viral respiratory tract infection" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:OTAR" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0024352 ;
+    owl:annotatedTarget ns3:otar .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D012141" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0024355 ;
+    owl:annotatedTarget "Invasion of the host RESPIRATORY SYSTEM by microorganisms, usually leading to pathological processes or diseases." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0024355 ;
+    owl:annotatedTarget "ICD9:519.8" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0024355 ;
+    owl:annotatedTarget "MESH:D012141" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "Orphanet:377788" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0024355 ;
+    owl:annotatedTarget "SCTID:275498002" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D012141" ;
+    owl:annotatedProperty ns1:hasNarrowSynonym ;
+    owl:annotatedSource ns2:MONDO_0024355 ;
+    owl:annotatedTarget "respiratory infection, upper" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D012141" ;
+    owl:annotatedProperty ns1:hasNarrowSynonym ;
+    owl:annotatedSource ns2:MONDO_0024355 ;
+    owl:annotatedTarget "upper respiratory infections" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D012141" ;
+    owl:annotatedProperty ns1:hasNarrowSynonym ;
+    owl:annotatedSource ns2:MONDO_0024355 ;
+    owl:annotatedTarget "upper respiratory tract infections" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D012141" ;
+    owl:annotatedProperty ns1:hasRelatedSynonym ;
+    owl:annotatedSource ns2:MONDO_0024355 ;
+    owl:annotatedTarget "infection, respiratory tract" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D012141" ;
+    owl:annotatedProperty ns1:hasRelatedSynonym ;
+    owl:annotatedSource ns2:MONDO_0024355 ;
+    owl:annotatedTarget "infections, respiratory" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D012141" ;
+    owl:annotatedProperty ns1:hasRelatedSynonym ;
+    owl:annotatedSource ns2:MONDO_0024355 ;
+    owl:annotatedTarget "infections, respiratory tract" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D012141" ;
+    owl:annotatedProperty ns1:hasRelatedSynonym ;
+    owl:annotatedSource ns2:MONDO_0024355 ;
+    owl:annotatedTarget "infections, upper respiratory" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D012141" ;
+    owl:annotatedProperty ns1:hasRelatedSynonym ;
+    owl:annotatedSource ns2:MONDO_0024355 ;
+    owl:annotatedTarget "infections, upper respiratory tract" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D012141" ;
+    owl:annotatedProperty ns1:hasRelatedSynonym ;
+    owl:annotatedSource ns2:MONDO_0024355 ;
+    owl:annotatedTarget "respiratory infections" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:4347",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "UMLS:C0012634" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:4",
+        "EFO:0000408",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "SCTID:64572001" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MESH:D012141" ;
+    owl:annotatedProperty ns1:hasRelatedSynonym ;
+    owl:annotatedSource ns2:MONDO_0024355 ;
+    owl:annotatedTarget "respiratory tract infection" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:OTAR" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0024355 ;
+    owl:annotatedTarget ns3:otar .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C113159" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0043905 ;
+    owl:annotatedTarget "An inflammatory process affecting the lung parenchyma. It is a milder form of lung inflammation compared to pneumonia." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:EFO",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0043905 ;
+    owl:annotatedTarget "EFO:1001991" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0043905 ;
+    owl:annotatedTarget "MEDGEN:811420" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0043905 ;
+    owl:annotatedTarget "NCIT:C113159" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0043905 ;
+    owl:annotatedTarget "SCTID:205237003" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:811420",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0043905 ;
+    owl:annotatedTarget "UMLS:C3714636" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0043905 ;
+    owl:annotatedTarget "icd11.foundation:1324545867" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/inflammatory_disease_by_site" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0043905 ;
+    owl:annotatedTarget "lung parenchyma inflammation" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "https://orcid.org/0000-0002-6601-2165" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0000270 ;
+    owl:annotatedTarget "A disease involving the lower respiratory tract." .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C113159",
+        "icd11.foundation:1324545867" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0043905 ;
+    owl:annotatedTarget "pneumonitis" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:OTAR" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0043905 ;
+    owl:annotatedTarget ns3:otar .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "https://medical-dictionary.thefreedictionary.com/primary+infection" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0100329 ;
+    owl:annotatedTarget "The initial viral infectious disase that causes illness." .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "https://orcid.org/0000-0001-5208-3432" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0700096 ;
+    owl:annotatedTarget "human disease or disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "https://orcid.org/0000-0003-2360-2664" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_7770006 ;
+    owl:annotatedTarget "A grouping class for human diseases classified by the body system or anatomical component primarily affected." .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "https://orcid.org/0000-0003-2360-2664" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_7770007 ;
+    owl:annotatedTarget "A grouping class for human diseases classified by the molecular, biochemical, cellular, anatomic, developmental or physiological process that is disrupted." .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "https://orcid.org/0000-0003-2360-2664" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_7770008 ;
+    owl:annotatedTarget "A grouping class for human diseases classified by their etiologic mechanism, encompassing primarily intrinsic (genetic, genomic), primarily extrinsic (e.g., infections, toxins, radiation), and complex multifactorial (e.g. nutritional) causes." .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "https://orcid.org/0000-0003-2360-2664" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_7770010 ;
+    owl:annotatedTarget "A grouping class for human diseases caused primarily by extrinsic factors, including infections, toxins, nutritional deficiencies, iatrogenic causes, and environmental exposures." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000270 ;
+    owl:annotatedTarget "DOID:0050161" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:EFO",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000270 ;
+    owl:annotatedTarget "EFO:0009433" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:0050161" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000270 ;
+    owl:annotatedTarget "ICD9:478.1" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:0050161" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000270 ;
+    owl:annotatedTarget "ICD9:478.19" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000270 ;
+    owl:annotatedTarget "MEDGEN:712703" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000270 ;
+    owl:annotatedTarget "SCTID:128272009" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:712703",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000270 ;
+    owl:annotatedTarget "UMLS:C1290325" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0000270 ;
+    owl:annotatedTarget "icd11.foundation:1582386590" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C2991" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "condition" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/location_top" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0000270 ;
+    owl:annotatedTarget "disease of lower respiratory tract" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/location_top" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0000270 ;
+    owl:annotatedTarget "disorder of lower respiratory tract" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "DOID:0050161",
+        "MONDO:patterns/location" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0000270 ;
+    owl:annotatedTarget "lower respiratory tract disease" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:design_pattern",
+        "MONDO:patterns/location" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0000270 ;
+    owl:annotatedTarget "lower respiratory tract disease or disorder" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:OTAR" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0000270 ;
+    owl:annotatedTarget ns3:otar .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C26871" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "A non-neoplastic or neoplastic disorder that affects the respiratory system. Representative examples include pneumonia, chronic obstructive pulmonary disease, pulmonary failure, lung adenoma, lung carcinoma, and tracheal carcinoma." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MalaCards" ;
+    owl:annotatedProperty ns3:curated_content_resource ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "https://www.malacards.org/card/respiratory_system_disease"^^xsd:anyURI .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000684",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "DOID:1579" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:EFO",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "EFO:0000684" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo",
+        "https://github.com/monarch-initiative/mondo/issues/4536",
+        "https://orcid.org/0000-0001-5208-3432",
+        "https://orcid.org/0000-0002-4142-7153" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "ICD10CM:J00-J99" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "DOID:4",
+        "NCIT:C2991",
+        "Orphanet:377788" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "disease" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000684" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "ICD9:460-519" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000684" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "ICD9:500-508" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000684" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "ICD9:503" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000684" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "ICD9:508" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000684" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "ICD9:508.1" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000684" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "ICD9:508.8" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000684" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "ICD9:508.9" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:1579",
+        "EFO:0000684" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "ICD9:510-519" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000684" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "ICD9:516" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000684" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "ICD9:516.8" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C2991" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "disease or disorder" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000684" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "ICD9:516.9" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000684" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "ICD9:517" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000684" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "ICD9:517.8" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:1579",
+        "EFO:0000684" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "ICD9:519" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000684" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "ICD9:519.1" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000684" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "ICD9:519.3" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000684",
+        "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "ICD9:519.8" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000684",
+        "MONDO:equivalentTo",
+        "MONDO:i2s" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "ICD9:519.9" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo",
+        "MONDO:i2s" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "ICD9:V12.60" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "ICD9:V47.2" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C2991" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "disease or disorder, non-neoplastic" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "MEDGEN:48421" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "MESH:D012140" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:NANDO",
+        "https://orcid.org/0000-0002-0170-9172",
+        "https://orcid.org/0000-0003-0011-764X" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "NANDO:1100010" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000684",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "NCIT:C26871" .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000684",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "SCTID:50043002" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:48421",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "UMLS:C0035204" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/location_top" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "disease of respiratory system" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/location_top",
+        "NCIT:C26871" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "disorder of respiratory system" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C26871" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "respiratory disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "DOID:1579",
+        "MONDO:patterns/location" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "respiratory system disease" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C2991" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "diseases" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:design_pattern",
+        "MONDO:patterns/location" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "respiratory system disease or disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C26871" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget "respiratory system disorder" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:OTAR" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0005087 ;
+    owl:annotatedTarget ns3:otar .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:P378" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0005108 ;
+    owl:annotatedTarget "Any disease caused by a virus." .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MalaCards" ;
+    owl:annotatedProperty ns3:curated_content_resource ;
+    owl:annotatedSource ns2:MONDO_0005108 ;
+    owl:annotatedTarget "https://www.malacards.org/card/viral_infectious_disease"^^xsd:anyURI .
+
+[] a owl:Axiom ;
+    ns1:source "EFO:0000763",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005108 ;
+    owl:annotatedTarget "DOID:934" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:EFO",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005108 ;
+    owl:annotatedTarget "EFO:0000763" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:934" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005108 ;
+    owl:annotatedTarget "ICD9:060-066" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:934" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005108 ;
+    owl:annotatedTarget "ICD9:066.9" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:i2s",
+        "MONDO:relatedTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005108 ;
+    owl:annotatedTarget "ICD9:078.89" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C2991" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "diseases and disorders" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo",
+        "MONDO:i2s" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005108 ;
+    owl:annotatedTarget "ICD9:079.99" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:934",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005108 ;
+    owl:annotatedTarget "MESH:D014777" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:934",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005108 ;
+    owl:annotatedTarget "NCIT:C3439" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:934",
+        "EFO:0000763",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005108 ;
+    owl:annotatedTarget "SCTID:34014006" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/specific_infectious_disease_by_agent" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005108 ;
+    owl:annotatedTarget "Viruses caused disease or disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/infectious_disease_by_agent" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005108 ;
+    owl:annotatedTarget "Viruses infection" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "DOID:934",
+        "NCIT:C3439" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005108 ;
+    owl:annotatedTarget "viral disease" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C3439" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005108 ;
+    owl:annotatedTarget "viral disorder" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "DOID:934",
+        "NCIT:C3439" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0005108 ;
+    owl:annotatedTarget "viral infection" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "MONDO:patterns/infectious_disease_by_agent" ;
+    owl:annotatedProperty ns1:hasRelatedSynonym ;
+    owl:annotatedSource ns2:MONDO_0005108 ;
+    owl:annotatedTarget "infections, Viruses" .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:C2991" ;
+    owl:annotatedProperty ns1:hasExactSynonym ;
+    owl:annotatedSource ns2:MONDO_0000001 ;
+    owl:annotatedTarget "disorder" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:OTAR" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0005108 ;
+    owl:annotatedTarget ns3:otar .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo",
+        "MONDO:i2s" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005249 ;
+    owl:annotatedTarget "ICD9:486" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005249 ;
+    owl:annotatedTarget "MEDGEN:10813" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:552",
+        "EFO:0003106",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005249 ;
+    owl:annotatedTarget "MESH:D011014" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:552",
+        "EFO:0003106",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005249 ;
+    owl:annotatedTarget "NCIT:C3333" .
+
+[] a owl:Axiom ;
+    ns1:source "DOID:552",
+        "EFO:0003106",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005249 ;
+    owl:annotatedTarget "SCTID:233604007" .
+
+[] a owl:Axiom ;
+    ns1:source "MEDGEN:10813",
+        "MONDO:MEDGEN",
+        "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005249 ;
+    owl:annotatedTarget "UMLS:C0032285" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:equivalentTo" ;
+    owl:annotatedProperty ns1:hasDbXref ;
+    owl:annotatedSource ns2:MONDO_0005249 ;
+    owl:annotatedTarget "icd11.foundation:142052508" .
+
+[] a owl:Axiom ;
+    ns1:source "MONDO:OTAR" ;
+    owl:annotatedProperty ns1:inSubset ;
+    owl:annotatedSource ns2:MONDO_0005249 ;
+    owl:annotatedTarget ns3:otar .
+
+[] a owl:Axiom ;
+    ns1:hasDbXref "NCIT:P378" ;
+    owl:annotatedProperty ns2:IAO_0000115 ;
+    owl:annotatedSource ns2:MONDO_0005249 ;
+    owl:annotatedTarget "An acute, acute and chronic, or chronic inflammation focally or diffusely affecting the lung parenchyma, caused by an infection in one or both of the lungs (by bacteria, viruses, fungi, or mycoplasma.). Symptoms include cough, shortness of breath, fevers, chills, chest pain, headache, sweating, and weakness." .
+

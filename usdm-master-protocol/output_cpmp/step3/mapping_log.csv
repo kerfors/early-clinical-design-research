@@ -1,0 +1,241 @@
+object,attribute,status,value,evidence,note
+StudyDefinitionDocument_1,name,mapped,H0P-MC-CPMP,CPMP p2 title page,
+StudyDefinitionDocument_1,description,mapped,"A Master Protocol for Randomized, Placebo-Controlled, Phase 2 Clinical Trials of Multiple Interventions for the Treatment of Chronic Pain",CPMP p2 title page,
+StudyDefinitionDocument_1,language,derived,en,CPMP text,documents are written in English
+StudyDefinitionDocument_1,templateName,required_not_in_document,,,no template is named in the document
+StudyDefinitionDocument_1,type,mapped,Protocol,CPMP p2 title page 'Master Protocol',
+StudyDefinitionDocumentVersion_1,version,mapped,original,CPMP Document History,
+StudyDefinitionDocumentVersion_1,status,required_not_in_document,,CPMP Document History,earlier version; status not stated
+StudyDefinitionDocumentVersion_1,dateValues,not_expressible,2020-01-30,CPMP Document History,"table column 'Date'; not stated to be an approval, effective or issued date (GovernanceDate types C207413)"
+StudyDefinitionDocumentVersion_2,version,mapped,a,CPMP p2 title page 'Amendment Number: a',
+StudyDefinitionDocumentVersion_2,status,mapped,Approved,CPMP p2 title page,electronically signed and approved by Lilly
+GovernanceDate_1,dateValue,mapped,2020-12-11,CPMP p2 title page (Step 1 inventory),
+GovernanceDate_1,geographicScopes,required_not_in_document,,CPMP p2 title page,1..*; no geographic scope stated
+StudyDefinitionDocument_2,name,mapped,H0P-MC-BP01,BP01 p2 title page,
+StudyDefinitionDocument_2,description,mapped,"Randomized, Placebo-Controlled, Phase 2 Clinical Trial to Evaluate LY3016859 for the Treatment of Chronic Low Back Pain",BP01 p2 title page,
+StudyDefinitionDocument_2,language,derived,en,BP01 text,documents are written in English
+StudyDefinitionDocument_2,templateName,required_not_in_document,,,no template is named in the document
+StudyDefinitionDocument_2,type,not_expressible,,BP01 p2 title page,type 1..1; an intervention-specific appendix to the master protocol; value set C215477 has only 'Protocol'
+StudyDefinitionDocumentVersion_3,version,mapped,original,BP01 p2 title page 'Amendment Number: Thisistheoriginalprotocol.',
+StudyDefinitionDocumentVersion_3,status,mapped,Approved,BP01 p2 title page,electronically signed and approved by Lilly
+GovernanceDate_2,dateValue,mapped,2020-05-11,BP01 p2 title page (Step 1 inventory),
+GovernanceDate_2,geographicScopes,required_not_in_document,,BP01 p2 title page,1..*; no geographic scope stated
+StudyDefinitionDocument_3,name,mapped,H0P-MC-BP02,BP02 p2 title page,
+StudyDefinitionDocument_3,description,mapped,"Randomized, Placebo-Controlled, Phase 2 Clinical Trial to Evaluate LY3526318 for the Treatment of Chronic Low Back Pain",BP02 p2 title page,
+StudyDefinitionDocument_3,language,derived,en,BP02 text,documents are written in English
+StudyDefinitionDocument_3,templateName,required_not_in_document,,,no template is named in the document
+StudyDefinitionDocument_3,type,not_expressible,,BP02 p2 title page,type 1..1; an intervention-specific appendix to the master protocol; value set C215477 has only 'Protocol'
+StudyDefinitionDocumentVersion_4,version,mapped,original,BP02 Document History,
+StudyDefinitionDocumentVersion_4,status,required_not_in_document,,BP02 Document History,earlier version; status not stated
+StudyDefinitionDocumentVersion_4,dateValues,not_expressible,2021-06-23,BP02 Document History,"table column 'Date'; not stated to be an approval, effective or issued date (GovernanceDate types C207413)"
+StudyDefinitionDocumentVersion_5,version,mapped,a,BP02 p2 title page 'Amendment Number: a',
+StudyDefinitionDocumentVersion_5,status,mapped,Approved,BP02 p2 title page,electronically signed and approved by Lilly
+GovernanceDate_3,dateValue,mapped,2021-08-10,BP02 p2 title page (Step 1 inventory),
+GovernanceDate_3,geographicScopes,required_not_in_document,,BP02 p2 title page,1..*; no geographic scope stated
+StudyDefinitionDocument_4,name,mapped,H0P-MC-BP03,BP03 p2 title page,
+StudyDefinitionDocument_4,description,mapped,"Randomized, Placebo-Controlled, Phase 2 Clinical Trial to Evaluate LY3556050 for the Treatment of Chronic Low Back Pain",BP03 p2 title page,
+StudyDefinitionDocument_4,language,derived,en,BP03 text,documents are written in English
+StudyDefinitionDocument_4,templateName,required_not_in_document,,,no template is named in the document
+StudyDefinitionDocument_4,type,not_expressible,,BP03 p2 title page,type 1..1; an intervention-specific appendix to the master protocol; value set C215477 has only 'Protocol'
+StudyDefinitionDocumentVersion_6,version,mapped,original,BP03 p2 title page 'Amendment Number: ThisistheoriginalISA',
+StudyDefinitionDocumentVersion_6,status,mapped,Approved,BP03 p2 title page,electronically signed and approved by Lilly
+GovernanceDate_4,dateValue,mapped,2021-03-17,BP03 p2 title page (Step 1 inventory),
+GovernanceDate_4,geographicScopes,required_not_in_document,,BP03 p2 title page,1..*; no geographic scope stated
+StudyDefinitionDocument_5,name,mapped,H0P-MC-BP05,BP05 p2 title page,
+StudyDefinitionDocument_5,description,mapped,"Randomized, Placebo-Controlled, Phase 2 Clinical Trial to Evaluate LY3857210 for the Treatment of Chronic Low Back Pain",BP05 p2 title page,
+StudyDefinitionDocument_5,language,derived,en,BP05 text,documents are written in English
+StudyDefinitionDocument_5,templateName,required_not_in_document,,,no template is named in the document
+StudyDefinitionDocument_5,type,not_expressible,,BP05 p2 title page,type 1..1; an intervention-specific appendix to the master protocol; value set C215477 has only 'Protocol'
+StudyDefinitionDocumentVersion_7,version,mapped,original,BP05 Document History,
+StudyDefinitionDocumentVersion_7,status,required_not_in_document,,BP05 Document History,earlier version; status not stated
+StudyDefinitionDocumentVersion_7,dateValues,not_expressible,2022-09-21,BP05 Document History,"table column 'Date'; not stated to be an approval, effective or issued date (GovernanceDate types C207413)"
+StudyDefinitionDocumentVersion_8,version,mapped,a,BP05 p2 title page 'Amendment Number: a',
+StudyDefinitionDocumentVersion_8,status,mapped,Approved,BP05 p2 title page,electronically signed and approved by Lilly
+GovernanceDate_5,dateValue,mapped,2022-10-13,BP05 p2 title page (Step 1 inventory),
+GovernanceDate_5,geographicScopes,required_not_in_document,,BP05 p2 title page,1..*; no geographic scope stated
+StudyDefinitionDocument_6,name,mapped,H0P-MC-NP01,NP01 p2 title page,
+StudyDefinitionDocument_6,description,mapped,"Randomized, Placebo-Controlled, Phase 2 Clinical Trial to Evaluate LY3016859 for the Treatment of Diabetic Peripheral Neuropathic Pain.",NP01 p2 title page,
+StudyDefinitionDocument_6,language,derived,en,NP01 text,documents are written in English
+StudyDefinitionDocument_6,templateName,required_not_in_document,,,no template is named in the document
+StudyDefinitionDocument_6,type,not_expressible,,NP01 p2 title page,type 1..1; an intervention-specific appendix to the master protocol; value set C215477 has only 'Protocol'
+StudyDefinitionDocumentVersion_9,version,mapped,original,NP01 Document History,
+StudyDefinitionDocumentVersion_9,status,required_not_in_document,,NP01 Document History,earlier version; status not stated
+StudyDefinitionDocumentVersion_9,dateValues,not_expressible,2020-01-30,NP01 Document History,"table column 'Date'; not stated to be an approval, effective or issued date (GovernanceDate types C207413)"
+StudyDefinitionDocumentVersion_10,version,mapped,a,NP01 p2 title page 'Amendment Number: (a)',
+StudyDefinitionDocumentVersion_10,status,mapped,Approved,NP01 p2 title page,electronically signed and approved by Lilly
+GovernanceDate_6,dateValue,mapped,2020-03-27,NP01 p2 title page (Step 1 inventory),
+GovernanceDate_6,geographicScopes,required_not_in_document,,NP01 p2 title page,1..*; no geographic scope stated
+StudyDefinitionDocument_7,name,mapped,H0P-MC-NP02,NP02 p2 title page,
+StudyDefinitionDocument_7,description,mapped,"Randomized, Placebo-Controlled, Phase 2 Clinical Trial to Evaluate LY3526318 for the Treatment of Diabetic Peripheral Neuropathic Pain",NP02 p2 title page,
+StudyDefinitionDocument_7,language,derived,en,NP02 text,documents are written in English
+StudyDefinitionDocument_7,templateName,required_not_in_document,,,no template is named in the document
+StudyDefinitionDocument_7,type,not_expressible,,NP02 p2 title page,type 1..1; an intervention-specific appendix to the master protocol; value set C215477 has only 'Protocol'
+StudyDefinitionDocumentVersion_11,version,mapped,original,NP02 Document History,
+StudyDefinitionDocumentVersion_11,status,required_not_in_document,,NP02 Document History,earlier version; status not stated
+StudyDefinitionDocumentVersion_11,dateValues,not_expressible,2021-06-04,NP02 Document History,"table column 'Date'; not stated to be an approval, effective or issued date (GovernanceDate types C207413)"
+StudyDefinitionDocumentVersion_12,version,mapped,a,NP02 p2 title page 'Amendment Number: [a]',
+StudyDefinitionDocumentVersion_12,status,mapped,Approved,NP02 p2 title page,electronically signed and approved by Lilly
+GovernanceDate_7,dateValue,mapped,2021-09-30,NP02 p2 title page (Step 1 inventory),
+GovernanceDate_7,geographicScopes,required_not_in_document,,NP02 p2 title page,1..*; no geographic scope stated
+StudyDefinitionDocument_8,name,mapped,H0P-MC-NP03,NP03 p2 title page,
+StudyDefinitionDocument_8,description,mapped,"Randomized, Placebo-Controlled, Phase 2 Clinical Trial to Evaluate LY3556050 for the Treatment of Diabetic Peripheral Neuropathic Pain",NP03 p2 title page,
+StudyDefinitionDocument_8,language,derived,en,NP03 text,documents are written in English
+StudyDefinitionDocument_8,templateName,required_not_in_document,,,no template is named in the document
+StudyDefinitionDocument_8,type,not_expressible,,NP03 p2 title page,type 1..1; an intervention-specific appendix to the master protocol; value set C215477 has only 'Protocol'
+StudyDefinitionDocumentVersion_13,version,mapped,original,NP03 Document History,
+StudyDefinitionDocumentVersion_13,status,required_not_in_document,,NP03 Document History,earlier version; status not stated
+StudyDefinitionDocumentVersion_13,dateValues,not_expressible,2020-09-23,NP03 Document History,"table column 'Date'; not stated to be an approval, effective or issued date (GovernanceDate types C207413)"
+StudyDefinitionDocumentVersion_14,version,mapped,a,NP03 Document History,
+StudyDefinitionDocumentVersion_14,status,required_not_in_document,,NP03 Document History,earlier version; status not stated
+StudyDefinitionDocumentVersion_14,dateValues,not_expressible,2021-03-12,NP03 Document History,"table column 'Date'; not stated to be an approval, effective or issued date (GovernanceDate types C207413)"
+StudyDefinitionDocumentVersion_15,version,mapped,b,NP03 p2 title page 'Amendment Number: b',
+StudyDefinitionDocumentVersion_15,status,mapped,Approved,NP03 p2 title page,electronically signed and approved by Lilly
+GovernanceDate_8,dateValue,mapped,2021-10-01,NP03 p2 title page (Step 1 inventory),
+GovernanceDate_8,geographicScopes,required_not_in_document,,NP03 p2 title page,1..*; no geographic scope stated
+StudyDefinitionDocument_9,name,mapped,H0P-MC-NP05,NP05 p2 title page,
+StudyDefinitionDocument_9,description,mapped,"Randomized, Placebo-Controlled, Phase 2 Clinical Trial to Evaluate LY3857210 for the Treatment of Diabetic Peripheral Neuropathic Pain",NP05 p2 title page,
+StudyDefinitionDocument_9,language,derived,en,NP05 text,documents are written in English
+StudyDefinitionDocument_9,templateName,required_not_in_document,,,no template is named in the document
+StudyDefinitionDocument_9,type,not_expressible,,NP05 p2 title page,type 1..1; an intervention-specific appendix to the master protocol; value set C215477 has only 'Protocol'
+StudyDefinitionDocumentVersion_16,version,mapped,original,NP05 Document History,
+StudyDefinitionDocumentVersion_16,status,required_not_in_document,,NP05 Document History,earlier version; status not stated
+StudyDefinitionDocumentVersion_16,dateValues,not_expressible,2022-08-25,NP05 Document History,"table column 'Date'; not stated to be an approval, effective or issued date (GovernanceDate types C207413)"
+StudyDefinitionDocumentVersion_17,version,mapped,a,NP05 p2 title page 'Amendment Number: a',
+StudyDefinitionDocumentVersion_17,status,mapped,Approved,NP05 p2 title page,electronically signed and approved by Lilly
+GovernanceDate_9,dateValue,mapped,2022-10-13,NP05 p2 title page (Step 1 inventory),
+GovernanceDate_9,geographicScopes,required_not_in_document,,NP05 p2 title page,1..*; no geographic scope stated
+StudyDefinitionDocument_10,name,mapped,H0P-MC-OA01,OA01 p2 title page,
+StudyDefinitionDocument_10,description,mapped,"Randomized, Placebo-Controlled, Phase 2 Clinical Trial to Evaluate LY3016859 for the Treatment of Osteoarthritis",OA01 p2 title page,
+StudyDefinitionDocument_10,language,derived,en,OA01 text,documents are written in English
+StudyDefinitionDocument_10,templateName,required_not_in_document,,,no template is named in the document
+StudyDefinitionDocument_10,type,not_expressible,,OA01 p2 title page,type 1..1; an intervention-specific appendix to the master protocol; value set C215477 has only 'Protocol'
+StudyDefinitionDocumentVersion_18,version,mapped,original,OA01 Document History,
+StudyDefinitionDocumentVersion_18,status,required_not_in_document,,OA01 Document History,earlier version; status not stated
+StudyDefinitionDocumentVersion_18,dateValues,not_expressible,2020-01-30,OA01 Document History,"table column 'Date'; not stated to be an approval, effective or issued date (GovernanceDate types C207413)"
+StudyDefinitionDocumentVersion_19,version,mapped,a,OA01 p2 title page 'Amendment Number: (a)',
+StudyDefinitionDocumentVersion_19,status,mapped,Approved,OA01 p2 title page,electronically signed and approved by Lilly
+GovernanceDate_10,dateValue,mapped,2020-03-27,OA01 p2 title page (Step 1 inventory),
+GovernanceDate_10,geographicScopes,required_not_in_document,,OA01 p2 title page,1..*; no geographic scope stated
+StudyDefinitionDocument_11,name,mapped,H0P-MC-OA02,OA02 p2 title page,
+StudyDefinitionDocument_11,description,mapped,"Randomized, Placebo-Controlled, Phase 2 Clinical Trial to Evaluate LY3526318 for the Treatment of Osteoarthritis Pain",OA02 p2 title page,
+StudyDefinitionDocument_11,language,derived,en,OA02 text,documents are written in English
+StudyDefinitionDocument_11,templateName,required_not_in_document,,,no template is named in the document
+StudyDefinitionDocument_11,type,not_expressible,,OA02 p2 title page,type 1..1; an intervention-specific appendix to the master protocol; value set C215477 has only 'Protocol'
+StudyDefinitionDocumentVersion_20,version,mapped,original,OA02 Document History,
+StudyDefinitionDocumentVersion_20,status,required_not_in_document,,OA02 Document History,earlier version; status not stated
+StudyDefinitionDocumentVersion_20,dateValues,not_expressible,2021-06-04,OA02 Document History,"table column 'Date'; not stated to be an approval, effective or issued date (GovernanceDate types C207413)"
+StudyDefinitionDocumentVersion_21,version,mapped,a,OA02 p2 title page 'Amendment Number: a',
+StudyDefinitionDocumentVersion_21,status,mapped,Approved,OA02 p2 title page,electronically signed and approved by Lilly
+GovernanceDate_11,dateValue,mapped,2021-08-10,OA02 p2 title page (Step 1 inventory),
+GovernanceDate_11,geographicScopes,required_not_in_document,,OA02 p2 title page,1..*; no geographic scope stated
+StudyDefinitionDocument_12,name,mapped,H0P-MC-OA03,OA03 p2 title page,
+StudyDefinitionDocument_12,description,mapped,"Randomized, Placebo-Controlled, Phase 2 Clinical Trial to Evaluate LY3556050 for the Treatment of Osteoarthritis Pain",OA03 p2 title page,
+StudyDefinitionDocument_12,language,derived,en,OA03 text,documents are written in English
+StudyDefinitionDocument_12,templateName,required_not_in_document,,,no template is named in the document
+StudyDefinitionDocument_12,type,not_expressible,,OA03 p2 title page,type 1..1; an intervention-specific appendix to the master protocol; value set C215477 has only 'Protocol'
+StudyDefinitionDocumentVersion_22,version,mapped,original,OA03 Document History,
+StudyDefinitionDocumentVersion_22,status,required_not_in_document,,OA03 Document History,earlier version; status not stated
+StudyDefinitionDocumentVersion_22,dateValues,not_expressible,2020-08-25,OA03 Document History,"table column 'Date'; not stated to be an approval, effective or issued date (GovernanceDate types C207413)"
+StudyDefinitionDocumentVersion_23,version,mapped,a,OA03 p2 title page 'Amendment Number: a',
+StudyDefinitionDocumentVersion_23,status,mapped,Approved,OA03 p2 title page,electronically signed and approved by Lilly
+GovernanceDate_12,dateValue,mapped,2021-03-03,OA03 p2 title page (Step 1 inventory),
+GovernanceDate_12,geographicScopes,required_not_in_document,,OA03 p2 title page,1..*; no geographic scope stated
+StudyDefinitionDocument_13,name,mapped,H0P-MC-OA05,OA05 p2 title page,
+StudyDefinitionDocument_13,description,mapped,"Randomized, Placebo-Controlled, Phase 2 Clinical Trial to Evaluate LY3857210 for the Treatment of Osteoarthritis Pain",OA05 p2 title page,
+StudyDefinitionDocument_13,language,derived,en,OA05 text,documents are written in English
+StudyDefinitionDocument_13,templateName,required_not_in_document,,,no template is named in the document
+StudyDefinitionDocument_13,type,not_expressible,,OA05 p2 title page,type 1..1; an intervention-specific appendix to the master protocol; value set C215477 has only 'Protocol'
+StudyDefinitionDocumentVersion_24,version,mapped,original,OA05 Document History,
+StudyDefinitionDocumentVersion_24,status,required_not_in_document,,OA05 Document History,earlier version; status not stated
+StudyDefinitionDocumentVersion_24,dateValues,not_expressible,2022-08-26,OA05 Document History,"table column 'Date'; not stated to be an approval, effective or issued date (GovernanceDate types C207413)"
+StudyDefinitionDocumentVersion_25,version,mapped,a,OA05 p2 title page 'Amendment Number: a',
+StudyDefinitionDocumentVersion_25,status,mapped,Approved,OA05 p2 title page,electronically signed and approved by Lilly
+GovernanceDate_13,dateValue,mapped,2022-10-14,OA05 p2 title page (Step 1 inventory),
+GovernanceDate_13,geographicScopes,required_not_in_document,,OA05 p2 title page,1..*; no geographic scope stated
+StudyDefinitionDocument_2,(parent),mapped,child of H0P-MC-CPMP,BP01 2 p13,is an appendix to the H0P-MC-CPMP (CPMP) Master Protocol
+StudyDefinitionDocument_3,(parent),mapped,child of H0P-MC-CPMP,BP02 2 p13,is an appendix to the H0P- MC-CPMP (CPMP) Master Protocol
+StudyDefinitionDocument_4,(parent),mapped,child of H0P-MC-CPMP,BP03 2 p12,is an appendix to the master protocol
+StudyDefinitionDocument_5,(parent),mapped,child of H0P-MC-CPMP,BP05 2 p15,is an appendix to the Master Protocol
+StudyDefinitionDocument_6,(parent),mapped,child of H0P-MC-CPMP,NP01 2 p14,is an appendix to the master protocol
+StudyDefinitionDocument_7,(parent),mapped,child of H0P-MC-CPMP,NP02 2 p13,is an appendix to the H0P- MC-CPMP (CPMP) Master Protocol
+StudyDefinitionDocument_8,(parent),mapped,child of H0P-MC-CPMP,NP03 2 p14,is an appendix to the master protocol
+StudyDefinitionDocument_9,(parent),mapped,child of H0P-MC-CPMP,NP05 2 p16,is an appendix to Master Protocol
+StudyDefinitionDocument_10,(parent),mapped,child of H0P-MC-CPMP,OA01 2 p15,is an appendix to the master protocol
+StudyDefinitionDocument_11,(parent),mapped,child of H0P-MC-CPMP,OA02 2 p13,is an appendix to the H0P- MC-CPMP (CPMP) Master Protocol
+StudyDefinitionDocument_12,(parent),mapped,child of H0P-MC-CPMP,OA03 2 p14,is an appendix to the master protocol
+StudyDefinitionDocument_13,(parent),mapped,child of H0P-MC-CPMP,OA05 2 p16,is an appendix to the Master Protocol
+-,StudyDefinitionDocument (DSA H0P-MC-CPMP(1)),not_expressible,H0P-MC-CPMP(1),ISA text,"disease-state addendum cited in the ISAs; not public, so not represented. The master -> DSA -> ISA layering is reduced to master -> ISA"
+-,StudyDefinitionDocument (DSA H0P-MC-CPMP(2)),not_expressible,H0P-MC-CPMP(2),ISA text,"disease-state addendum cited in the ISAs; not public, so not represented. The master -> DSA -> ISA layering is reduced to master -> ISA"
+-,StudyDefinitionDocument (DSA H0P-MC-CPMP(3)),not_expressible,H0P-MC-CPMP(3),ISA text,"disease-state addendum cited in the ISAs; not public, so not represented. The master -> DSA -> ISA layering is reduced to master -> ISA"
+NarrativeContent_709,sectionNumber,not_in_document,,OA03 p8,no section number printed in TOC or body
+NarrativeContent_710,sectionNumber,not_in_document,,OA03 p10,no section number printed in TOC or body
+NarrativeContent_712,sectionNumber,not_in_document,,OA03 p14,no section number printed in TOC or body
+NarrativeContent_713,sectionNumber,not_in_document,,OA03 p14,no section number printed in TOC or body
+NarrativeContent_714,sectionNumber,not_in_document,,OA03 p15,no section number printed in TOC or body
+NarrativeContent_720,sectionNumber,not_in_document,,OA03 p18,no section number printed in TOC or body
+NarrativeContent_721,sectionNumber,not_in_document,,OA03 p19,no section number printed in TOC or body
+NarrativeContent_722,sectionNumber,not_in_document,,OA03 p19,no section number printed in TOC or body
+NarrativeContent_723,sectionNumber,not_in_document,,OA03 p19,no section number printed in TOC or body
+NarrativeContent_725,sectionNumber,not_in_document,,OA03 p20,no section number printed in TOC or body
+NarrativeContent_726,sectionNumber,not_in_document,,OA03 p20,no section number printed in TOC or body
+NarrativeContent_727,sectionNumber,not_in_document,,OA03 p21,no section number printed in TOC or body
+NarrativeContent_729,sectionNumber,not_in_document,,OA03 p22,no section number printed in TOC or body
+NarrativeContent_730,sectionNumber,not_in_document,,OA03 p22,no section number printed in TOC or body
+NarrativeContent_731,sectionNumber,not_in_document,,OA03 p23,no section number printed in TOC or body
+NarrativeContent_732,sectionNumber,not_in_document,,OA03 p23,no section number printed in TOC or body
+NarrativeContent_733,sectionNumber,not_in_document,,OA03 p23,no section number printed in TOC or body
+NarrativeContent_734,sectionNumber,not_in_document,,OA03 p23,no section number printed in TOC or body
+NarrativeContent_736,sectionNumber,not_in_document,,OA03 p25,no section number printed in TOC or body
+NarrativeContent_738,sectionNumber,not_in_document,,OA03 p26,no section number printed in TOC or body
+NarrativeContent_742,sectionNumber,not_in_document,,OA03 p26,no section number printed in TOC or body
+NarrativeContent_743,sectionNumber,not_in_document,,OA03 p26,no section number printed in TOC or body
+NarrativeContent_744,sectionNumber,not_in_document,,OA03 p26,no section number printed in TOC or body
+NarrativeContent_745,sectionNumber,not_in_document,,OA03 p27,no section number printed in TOC or body
+NarrativeContent_747,sectionNumber,not_in_document,,OA03 p28,no section number printed in TOC or body
+NarrativeContent_748,sectionNumber,not_in_document,,OA03 p28,no section number printed in TOC or body
+NarrativeContent_749,sectionNumber,not_in_document,,OA03 p28,no section number printed in TOC or body
+NarrativeContent_750,sectionNumber,not_in_document,,OA03 p28,no section number printed in TOC or body
+NarrativeContent_755,sectionNumber,not_in_document,,OA03 p29,no section number printed in TOC or body
+NarrativeContent_757,sectionNumber,not_in_document,,OA03 p30,no section number printed in TOC or body
+NarrativeContent_758,sectionNumber,not_in_document,,OA03 p31,no section number printed in TOC or body
+NarrativeContent_759,sectionNumber,not_in_document,,OA03 p35,no section number printed in TOC or body
+NarrativeContent_760,sectionNumber,not_in_document,,OA03 p38,no section number printed in TOC or body
+NarrativeContent_715,(parent),not_in_document,2.3,OA03 2.3.1,parent section number not printed
+NarrativeContent_716,(parent),not_in_document,2.3,OA03 2.3.2,parent section number not printed
+NarrativeContent_717,(parent),not_in_document,2.3,OA03 2.3.3,parent section number not printed
+NarrativeContent_739,(parent),not_in_document,8.1,OA03 8.1.1,parent section number not printed
+NarrativeContent_740,(parent),not_in_document,8.1,OA03 8.1.2,parent section number not printed
+NarrativeContent_741,(parent),not_in_document,8.1,OA03 8.1.3,parent section number not printed
+NarrativeContent_751,(parent),not_in_document,9.4,OA03 9.4.1,parent section number not printed
+NarrativeContent_752,(parent),not_in_document,9.4,OA03 9.4.2,parent section number not printed
+NarrativeContent_753,(parent),not_in_document,9.4,OA03 9.4.3,parent section number not printed
+NarrativeContent_754,(parent),not_in_document,9.4,OA03 9.4.4,parent section number not printed
+Organization_1,name,mapped,Eli Lilly and Company,CPMP p2 title page 'Sponsor Name',
+Organization_1,type,derived,Pharmaceutical Company,CPMP p2 title page,sponsor is Eli Lilly and Company
+Organization_2,name,derived,ClinicalTrials.gov,CPMP p1 cover sheet,NCT numbers are ClinicalTrials.gov identifiers
+Organization_1,identifier,required_not_in_document,,,organization identifier not stated
+Organization_1,identifierScheme,required_not_in_document,,,
+Organization_2,identifier,required_not_in_document,,,organization identifier not stated
+Organization_2,identifierScheme,required_not_in_document,,,
+StudyIdentifier_1,text,mapped,NCT05986292,CPMP p1 cover sheet,
+StudyIdentifier_2,text,mapped,H0P-MC-CPMP,CPMP p2 title page 'Protocol Number',
+-,StudyIdentifier (IND),required_not_in_document,144915,CPMP p2 title page,"IND number stated, issuing organization (scopeId 1..1) not named"
+StudyDefinitionDocument_2,(identifier),not_expressible,NCT04529096,BP01 p1 cover sheet,"each ISA is registered with its own NCT number; USDM identifiers belong to the study version, not to a document"
+StudyDefinitionDocument_3,(identifier),not_expressible,NCT05086289,BP02 p1 cover sheet,"each ISA is registered with its own NCT number; USDM identifiers belong to the study version, not to a document"
+StudyDefinitionDocument_4,(identifier),not_expressible,NCT04874636,BP03 p1 cover sheet,"each ISA is registered with its own NCT number; USDM identifiers belong to the study version, not to a document"
+StudyDefinitionDocument_5,(identifier),not_expressible,NCT05630196,BP05 p1 cover sheet,"each ISA is registered with its own NCT number; USDM identifiers belong to the study version, not to a document"
+StudyDefinitionDocument_6,(identifier),not_expressible,NCT04476108,NP01 p1 cover sheet,"each ISA is registered with its own NCT number; USDM identifiers belong to the study version, not to a document"
+StudyDefinitionDocument_7,(identifier),not_expressible,NCT05177094,NP02 p1 cover sheet,"each ISA is registered with its own NCT number; USDM identifiers belong to the study version, not to a document"
+StudyDefinitionDocument_8,(identifier),not_expressible,NCT04707157,NP03 p1 cover sheet,"each ISA is registered with its own NCT number; USDM identifiers belong to the study version, not to a document"
+StudyDefinitionDocument_9,(identifier),not_expressible,NCT05620576,NP05 p1 cover sheet,"each ISA is registered with its own NCT number; USDM identifiers belong to the study version, not to a document"
+StudyDefinitionDocument_10,(identifier),not_expressible,NCT04456686,OA01 p1 cover sheet,"each ISA is registered with its own NCT number; USDM identifiers belong to the study version, not to a document"
+StudyDefinitionDocument_11,(identifier),not_expressible,NCT05080660,OA02 p1 cover sheet,"each ISA is registered with its own NCT number; USDM identifiers belong to the study version, not to a document"
+StudyDefinitionDocument_12,(identifier),not_expressible,NCT04627038,OA03 p1 cover sheet,"each ISA is registered with its own NCT number; USDM identifiers belong to the study version, not to a document"
+StudyDefinitionDocument_13,(identifier),not_expressible,NCT05620563,OA05 p1 cover sheet,"each ISA is registered with its own NCT number; USDM identifiers belong to the study version, not to a document"
+StudyTitle_1,text,mapped,"A Master Protocol for Randomized, Placebo-Controlled, Phase 2 Clinical Trials of Multiple Interventions for the Treatment of Chronic Pain",CPMP p2 title page 'Protocol Title',
+StudyTitle_2,type,derived,Brief Study Title,CPMP p2 title page 'Short Title','Short Title' read as brief title
+StudyTitle_3,text,mapped,CPMP,CPMP p2 title page 'Acronym',
+StudyVersion_1,versionIdentifier,derived,CPMP (a) / BP01 (original) / BP02 (a) / BP03 (original) / BP05 (a) / NP01 (a) / NP02 (a) / NP03 (b) / NP05 (a) / OA01 (a) / OA02 (a) / OA03 (a) / OA05 (a),decision 2026-10-25 (structure A),the programme has no single version; StudyVersion = the set of current document versions
+StudyVersion_1,rationale,required_not_in_document,,,no rationale for the set of document versions is stated
+StudyVersion_1,studyDesigns,deferred,,decision 2026-10-25,one StudyDesign per ISA in a later pass
+StudyVersion_1,amendments,deferred,"CPMP, BP02, BP05, NP01, NP02, NP03, NP05, OA01, OA02, OA03, OA05",Protocol Amendment Summary of Changes Tables,"11 documents have a summary-of-changes table (section, description of change, brief rationale per change); StudyAmendment in a later pass"

@@ -1,0 +1,14 @@
+term,iri,source,kind,label
+OBI_0500001,http://purl.obolibrary.org/obo/OBI_0500001,obi.owl,class,clinical study design
+OBI_0500026,http://purl.obolibrary.org/obo/OBI_0500026,obi.owl,class,eligibility criterion
+OBI_0500027,http://purl.obolibrary.org/obo/OBI_0500027,obi.owl,class,inclusion criterion
+OBI_0500028,http://purl.obolibrary.org/obo/OBI_0500028,obi.owl,class,exclusion criterion
+IAO_0000005,http://purl.obolibrary.org/obo/IAO_0000005,obi.owl,class,objective specification
+IAO_0000033,http://purl.obolibrary.org/obo/IAO_0000033,obi.owl,class,directive information entity
+IAO_0000007,http://purl.obolibrary.org/obo/IAO_0000007,obi.owl,class,action specification
+OBI_0000750,http://purl.obolibrary.org/obo/OBI_0000750,obi.owl,class,study design independent variable
+BFO_0000051,http://purl.obolibrary.org/obo/BFO_0000051,obi.owl,property,has part
+IAO_0000136,http://purl.obolibrary.org/obo/IAO_0000136,obi.owl,property,is about
+MONDO_0024355,http://purl.obolibrary.org/obo/MONDO_0024355,mondo.owl,class,respiratory tract infectious disorder
+MONDO_0005249,http://purl.obolibrary.org/obo/MONDO_0005249,mondo.owl,class,pneumonia
+MONDO_0005812,http://purl.obolibrary.org/obo/MONDO_0005812,mondo.owl,class,influenza

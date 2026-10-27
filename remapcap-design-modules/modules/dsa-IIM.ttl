@@ -1,0 +1,1583 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rcap: <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-IIM> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/about>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/core> .
+
+rcap:Domain_IIM a owl:Class ;
+    rdfs:label "Influenza Immune Modulation domain" ;
+    rdfs:subClassOf _:N2371139fd5314a2cb2818b1c22fd0665,
+        _:Na613ed8f4408458e841c658513a7eaa1,
+        _:Ned771a27bcdc4a40a16c5a32fb3af51a,
+        rcap:Domain .
+
+rcap:DomainDesign_IIM a owl:Class ;
+    rdfs:label "REMAP-CAP Influenza Immune Modulation Domain-Specific Appendix 2.1 design" ;
+    rdfs:subClassOf _:N006ad4462d2c42daa9684af7c4d9d9e9,
+        _:N00dff527a898474cbed01d23ec055f9d,
+        _:N0ac04b3f43c44f9ba4e0979be2208b6a,
+        _:N0c9d297c44cb49869ac1dc7d0602bfac,
+        _:N0daee57b03904e42aa2a97c4ddb07bad,
+        _:N0fd52bb65ebc437fa12e92aecd6e7e7b,
+        _:N1116f3a61a4746a8af6dc1636fa3d46f,
+        _:N1334484ad3e748f4be86585c3826fcd3,
+        _:N1459a7e5e9674fa6b11cb77e6e3f9221,
+        _:N14c78107cbdb4096b0c8ff652d3a4f49,
+        _:N1853e7e662c0465e85839a65471117a7,
+        _:N1eb16ffdfb5c4f5ab4623c3fe3785fdb,
+        _:N22f36f7f70b744c39af6f64a270ade08,
+        _:N25f03e8a724d4524895c7df3bdd4581f,
+        _:N2735116bc6644f89a1840db06d4f0612,
+        _:N2d55fdc34b194e63a94b152425cab9c8,
+        _:N2ec1e3940998452fb4b927c8589f296c,
+        _:N2f7024cb2dd441098cb7d905817c4b5c,
+        _:N35808b8e467b4cfaafdd3f61220d28a3,
+        _:N35a012e415374e2da69bb2551decc9b1,
+        _:N37aa3187f5b546f39c82accb78791902,
+        _:N39c664e05157487595a67bfd1fcbaf8f,
+        _:N3a375a18e73b42a98e5d68537705b05d,
+        _:N4046ca3d24764b1ca3b4d7312da5c6c0,
+        _:N4133527b36f14a9aab206d4b6573b9e4,
+        _:N4194f5af1fa64cc4892ea5319b726559,
+        _:N452f17f16f894c66984e7a7f520d639b,
+        _:N486a84acfdf84f1fa768bbbbb644911f,
+        _:N4935ef99b1b14307b10c0ff18dde2746,
+        _:N4aa583db956f4db3b3752d825037af39,
+        _:N4c8dff4931de487eb9f98780a1dc1a24,
+        _:N4cab9c7782ce4d2ba91ac757328cc71c,
+        _:N4f60d0681067427c85cf5c2a90b9021b,
+        _:N4f9eb7ac92504a2380b5f031a51742d9,
+        _:N56b62cb3fa924b7e96c5d9e4206bbc5f,
+        _:N58937d5bc27e4465a2d842e3c17f4826,
+        _:N58acca566d164f478842f19f09532d34,
+        _:N5bcd17df627946baa43c6c548873ae9c,
+        _:N5c9c01ec19fe4e33b63b6d915ddaad09,
+        _:N68a6bd2916f04d9b9159e9931436a629,
+        _:N6ff04d5189324a0eac8449d10ba03abd,
+        _:N731d1b0e37e5421f9c87e3f565a15607,
+        _:N7460612c174041c6bfb0a00d830c8a9c,
+        _:N751e0931429e44949ed781d35c3cb7b0,
+        _:N77fd1cb152354aba9b7c6cffc464e451,
+        _:N7cf7b6dfdc8744af9e25d6cd2e9e2c83,
+        _:N7ece651c469b45fdb805542076d0f5c8,
+        _:N7f250a693bf34a1aabdb9b4e749346fc,
+        _:N81782efc98014042b264ceea5aa1903f,
+        _:N82998408759440a58cc30c509876c707,
+        _:N8504ccb0cf9f4d158fbf68a76b2bb565,
+        _:N86f87e0f3c824304bab2742ea279ad4d,
+        _:N892343f8f8214a8ab8347a659cb5b114,
+        _:N89acbe3ec758494a955ccef6fa24eb79,
+        _:N89fffae85b06461f87f550affb4bb937,
+        _:N8a1b2de5b28b4083a7eeefab462df6b0,
+        _:N8c1509f3a5ab4de6b4bb63cdc4c7009c,
+        _:N8ce8e464f09d456ea9c4964cc431f02c,
+        _:N94c5791cdd854d61a458d5eef0411ab0,
+        _:N974c4797652b4c90bfd390240c04a22a,
+        _:N9992e876837a4863b80ed7f822bd2ea1,
+        _:N9ecd54d5c2fe46c9808281e8a543e08b,
+        _:N9f7692abc8644d36b2ff8314cbf136ed,
+        _:Na723c0522616450e9ac3ecb83b2c8980,
+        _:Nabf87d7599bb410d84e5336f057b04a9,
+        _:Nadc1ffcb7dfb45438875f8ed26cb3212,
+        _:Nadd08077a0064690b3ac41b2d8baf65a,
+        _:Nae285e6f29024f70a21cc37b74799785,
+        _:Naf9ae2c36b9d4a66bc7746a4a01945c8,
+        _:Nb12d3d029c124588986bdcd720ffa31c,
+        _:Nb1350236fad74f2e89d9cb88dcc55227,
+        _:Nb2bfbe3555d54337b0794c4e7cbc9f2e,
+        _:Nb4d3b4989d4c45cba19e5d97b5b22d86,
+        _:Nb637cd8c08ac4e4bb2e72dcc2bb4f3bf,
+        _:Nb69ce1220dc04888ac3a1177156a41f2,
+        _:Nb817643f71c24166a1fe741b252ed729,
+        _:Nb844d5432db8406d99446e7adb9f2125,
+        _:Nbcfd71e96e4b450d85e83ac9383d8346,
+        _:Nc25311a76b4b45748308d5fe08939bf6,
+        _:Nce89cf539d244fe0a3698400460229d8,
+        _:Nd329ab1cfd4a4c6d9213fb6b09a5ec23,
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000051 ;
+            owl:someValuesFrom rcap:Domain_IIM ],
+        _:Ne28af9344a7c4869b6796680de0b8504,
+        _:Ne49d0338df9c45c79e9fa73ad98b06ce,
+        _:Nec20b8d651ed40248d6a1e9b057c8302,
+        _:Nec31977b9a1c40b3a8946b32598ab8c7,
+        _:Ned35df00609549af8e6e2e8f36800ea6,
+        _:Nefa63c4a411b4285ae55feefc0374143,
+        _:Nf2e8e9b74e2342eb87bc0fa1000c36d1,
+        _:Nf3e6476e6a7643f1952a3e3474b554a6,
+        _:Nf74df41521f64521a54323878c617cc2,
+        _:Nf8194e4ac0334bcaac0fd67298c8c686,
+        _:Nfa51f91ef98f48c89ee2bbc4dea4dade,
+        _:Nfb9dced2f9b5410591f670a2496779b7,
+        _:Nfc4f4d5a60a94cc0b05bc3797790bff9,
+        _:Nfe3310045d114ce4acdb401580490b1a,
+        _:Nff57e957bd324535a44d9d94fa13b8d0,
+        rcap:CoreDesign ;
+    rcap:documentDate "9 May 2025" ;
+    rcap:documentTitle "Influenza Immune Modulation Domain-Specific Appendix 2.1" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N0fd52bb65ebc437fa12e92aecd6e7e7b ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "10.3" ;
+    rcap:evidenceText "If required, any such modifications will be an operational decision of the Design Team specified in the Current State document and applied by the SAC." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nae285e6f29024f70a21cc37b74799785 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "9.3" ;
+    rcap:evidenceText "Refer to relevant Core Protocol documents for criteria for discontinuation of participation in this trial." ;
+    rcap:occurrenceKind "discontinuation" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nce89cf539d244fe0a3698400460229d8 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "10.8" ;
+    rcap:evidenceText "The threshold probability of a statistical trigger for futility will be those specified in the Core Protocol." ;
+    rcap:occurrenceKind "allocation_threshold" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N56b62cb3fa924b7e96c5d9e4206bbc5f ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 30 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Positive blood culture for pathogenic bacteria and/or fungus during this hospitalization and more than 48 hours following randomization" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N35a012e415374e2da69bb2551decc9b1 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "10.5" ;
+    rcap:evidenceText "Interactions with all other domains are either not evaluable or not considered possible and will not be incorporated into the statistical model or models in which this domain is evaluated." ;
+    rcap:occurrenceKind "allocation_interactions" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N452f17f16f894c66984e7a7f520d639b ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 26 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "In the opinion of the treating clinician, the primary contributor to the patient’s Severe Illness State is a respiratory tract infection" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N4c8dff4931de487eb9f98780a1dc1a24 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Patients are eligible for this domain if:" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N7460612c174041c6bfb0a00d830c8a9c ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "microbiological testing-confirmed influenza) and the Severe Illness Severity State." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N1459a7e5e9674fa6b11cb77e6e3f9221 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Patients may also be excluded from receiving one or more interventions within the domain for patient-specific reasons." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N6ff04d5189324a0eac8449d10ba03abd ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "The appropriate dose of drug will be mixed in a 100 ml bag of 0.9% saline, after removing an equivalent volume of saline, 0.4ml/kg, to match the added drug, so that the total volume is 100 mls." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N0ac04b3f43c44f9ba4e0979be2208b6a ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "10.5" ;
+    rcap:evidenceText "If an interaction is specified with a future domain, it is sufficient for the interaction to be specified only in the DSA of such a future domain." ;
+    rcap:occurrenceKind "allocation_interactions" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N5bcd17df627946baa43c6c548873ae9c ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 26 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "More than 48 hours has elapsed since commencement of sustained organ failure support" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N0daee57b03904e42aa2a97c4ddb07bad ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "The dose of baricitinib administered will depend on the most recent eGFR, including modification of dose for change in renal function during the treatment period." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nb637cd8c08ac4e4bb2e72dcc2bb4f3bf ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 31 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "9.2" ;
+    rcap:evidenceText "Virologic endpoints, at selected sites:" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget rcap:CoreDesign ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePage 9 ;
+    rcap:evidenceRule "B-dsa" ;
+    rcap:evidenceText "The Core Protocol contains all information that is generic to the trial …" ;
+    rcap:note "Core Protocol 4.0 1.2: Domain-Specific Appendix is an appendix to the Core Protocol.",
+        "Core Protocol 4.1 1.2: Domain-Specific Appendix is an appendix to the Core Protocol." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N9ecd54d5c2fe46c9808281e8a543e08b ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "The dose of tocilizumab is dependent on age and weight." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nc25311a76b4b45748308d5fe08939bf6 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "Participating sites may chose to offer this domain to patients in one or more (or all) of these Age Strata" ;
+    rcap:occurrenceKind "applicability_age" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N82998408759440a58cc30c509876c707 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "This domain is available for patients who are in the Severe State, as defined in Core Protocol documents." ;
+    rcap:occurrenceKind "applicability_state" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N4cab9c7782ce4d2ba91ac757328cc71c ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "The interventions will be commenced immediately after allocation status is revealed." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N77fd1cb152354aba9b7c6cffc464e451 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.5" ;
+    rcap:evidenceText "The study interventions can be discontinued at any time by the treating clinician if doing so is regarded as being in the best interests of the patient." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Naf9ae2c36b9d4a66bc7746a4a01945c8 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:14" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "However, continued administration of the course of baricitinib after discharge from the participating clinical area is a clinical decision that is at the discretion of the treating clinician." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Ned35df00609549af8e6e2e8f36800ea6 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 26 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Known condition or treatment resulting in ongoing immune suppression, including neutropenia, prior to this hospitalization" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N68a6bd2916f04d9b9159e9931436a629 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "Tocilizumab will be administered as a single dose of 8mg/kg based on measured body weight (or estimated body weight in adults if measured body weight is unavailable) with the total dose not exceeding 800mg." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nefa63c4a411b4285ae55feefc0374143 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.7" ;
+    rcap:evidenceText "The threshold probability for statistical triggers for superiority, effectiveness, and inferiority are those specified in the relevant Core Protocol documents." ;
+    rcap:occurrenceKind "allocation_threshold" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N5c9c01ec19fe4e33b63b6d915ddaad09 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.3" ;
+    rcap:evidenceText "Response Adaptive Randomization may be applied." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N1334484ad3e748f4be86585c3826fcd3 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:7" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "In children 2 years to <9 years of age, baricitinib will be given at a dose of 1 mg daily if the eGFR is at least 30 and less than 60 mL/min/1.73m 2 ." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N1116f3a61a4746a8af6dc1636fa3d46f ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 30 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Serious adverse event (SAE) as defined in Core Protocol" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N9f7692abc8644d36b2ff8314cbf136ed ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.3" ;
+    rcap:evidenceText "If RAR is applied, the cap on the maximum or minimum proportion of patients assigned to an intervention that is specified in core protocol documents may be modified by the Statistical Analysis Committee (SAC) if needed to reduce the likelihood of sites being unblinded or to improve power." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N58acca566d164f478842f19f09532d34 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.6" ;
+    rcap:evidenceText "Nesting is not applicable to this domain." ;
+    rcap:occurrenceKind "allocation_nesting" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N2ec1e3940998452fb4b927c8589f296c ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "7" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "The treating clinician believes that participation in the domain would not be in the best interests of the patient" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nfe3310045d114ce4acdb401580490b1a ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 26 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Patient has pneumonia" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N14c78107cbdb4096b0c8ff652d3a4f49 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 26 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Influenza virus infection has been confirmed by microbiological testing" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N4194f5af1fa64cc4892ea5319b726559 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.5" ;
+    rcap:evidenceText "An immune modulation intervention for influenza should be discontinued if there is development of a SAE which, in the opinion of the treating clinician, could be related to participation in this domain." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N2d55fdc34b194e63a94b152425cab9c8 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Patients who are eligible for only a single intervention at a site (i.e." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N1853e7e662c0465e85839a65471117a7 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "o" ;
+    rcap:evidencePage 31 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "9.2" ;
+    rcap:evidenceText "Change from baseline in influenza virus levels, measured from upper or lower respiratory tract specimens taken while the patient remains in hospital at baseline, D3 and at D7 ." ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nec20b8d651ed40248d6a1e9b057c8302 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 26 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Patient is aged ≥2 years" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nf74df41521f64521a54323878c617cc2 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Patients will be randomly assigned to receive either of the following open-label strategies." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:Domain_IIM ;
+    owl:annotatedTarget _:N2371139fd5314a2cb2818b1c22fd0665 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "☐" ;
+    rcap:evidencePage 28 ;
+    rcap:evidenceRule "B-domain" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Baricitinib" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N25f03e8a724d4524895c7df3bdd4581f ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "☐" ;
+    rcap:evidencePage 28 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Baricitinib" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N8a1b2de5b28b4083a7eeefab462df6b0 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:6" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "Baricitinib will be withheld if the eGFR is less than 15 mL/min/1.73m 2 and in patients who are receiving intermittent or continuous renal replacement therapy In children 2 years to <9 years of age, the baricitinib dose will be 2mg daily if the eGFR is at least 60 mL/min/1.73m 2 ." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N39c664e05157487595a67bfd1fcbaf8f ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "In children weighing less than 30 kg, the tocilizumab dose will be 12mg/kg." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N94c5791cdd854d61a458d5eef0411ab0 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 26 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "A neutrophil count <1.0 x 10 9 / L" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nadc1ffcb7dfb45438875f8ed26cb3212 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:10" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "Alternatively, 2 mg of baricitinib can be given every second day." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N22f36f7f70b744c39af6f64a270ade08 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "Baricitinib will be given at a dose of 2 mg daily if the eGFR is at least 30 and less than 60." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N86f87e0f3c824304bab2742ea279ad4d ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "A platelet count < 50 x 10 9 / L will result in exclusion from receiving tocilizumab" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:Domain_IIM ;
+    owl:annotatedTarget _:Ned771a27bcdc4a40a16c5a32fb3af51a ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "☐" ;
+    rcap:evidencePage 28 ;
+    rcap:evidenceRule "B-domain" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "No immune modulation (no placebo)" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N7cf7b6dfdc8744af9e25d6cd2e9e2c83 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Patients will be excluded from this domain if they have any of the following:" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nb2bfbe3555d54337b0794c4e7cbc9f2e ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:6" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "The infusion speed must be 10 mls per hour for 15 minutes and then increased to 130 mls per hour for the next 45 minutes." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nadd08077a0064690b3ac41b2d8baf65a ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.8" ;
+    rcap:evidenceText "The size of the pre-specified odds ratio delta is 0.10." ;
+    rcap:occurrenceKind "allocation_threshold" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N0c9d297c44cb49869ac1dc7d0602bfac ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "trailing:1" ;
+    rcap:evidenceSection "9.2" ;
+    rcap:evidenceText "Data on the identification of Aspergillus species from respiratory tract specimens is collected at a platform level." ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N4aa583db956f4db3b3752d825037af39 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "Patients assigned to this intervention are not to receive any additional targeted immune modulation therapy until the end of study day 28 or hospital discharge, whichever occurs first." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nff57e957bd324535a44d9d94fa13b8d0 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 30 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Pulmonary aspergillosis, during this hopsitalization and more than 48 hours following randomization, defined as culture of Aspergillus species from tracheal aspirate or bronchoalveolar lavage or invasive pulmonary aspergillosis diagnosed and treated with one or more systemic antifungal agent" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nf2e8e9b74e2342eb87bc0fa1000c36d1 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.5" ;
+    rcap:evidenceText "It is noted that interaction with these other domains that include patients with confirmed influenza as part of their unit-of-analysis will be evaluated as post-platform conclusion sub-groups." ;
+    rcap:occurrenceKind "allocation_interactions" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nfb9dced2f9b5410591f670a2496779b7 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:13" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "discharged from ICU to a ward) before completion of the 10-day course of baricitinib, it is the responsibility of the randomizing team to prescribe any doses of baricitinib to complete the 10-day course." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N89fffae85b06461f87f550affb4bb937 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Known hypersensitivity to an agent specified as an intervention in this domain will exclude a patient from receiving that agent." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N892343f8f8214a8ab8347a659cb5b114 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:15" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "Under such circumstances, discontinuation of baricitinib prior to the end of the 10-day course is not a protocol deviation." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Ne49d0338df9c45c79e9fa73ad98b06ce ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:7" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "After completion of the infusion of active study drug, at least 20 mls of 0.9% saline should be used to flush the drug through the giving set." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nf3e6476e6a7643f1952a3e3474b554a6 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "The eligibility criteria for this domain correspond to the Influenza Infection Confirmed Stratum (i.e." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N37aa3187f5b546f39c82accb78791902 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "An alanine aminotransferase or an aspartate aminotransferase that is more than five times the upper limit of normal will result in exclusion from receiving tocilizumab" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N8ce8e464f09d456ea9c4964cc431f02c ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:6" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Criteria that exclude a patient from a one or more interventions are:" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nec31977b9a1c40b3a8946b32598ab8c7 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 26 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "SARS-CoV-2 infection has been confirmed by microbiological testing" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N89acbe3ec758494a955ccef6fa24eb79 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "Borrowing is permitted between strata." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N2735116bc6644f89a1840db06d4f0612 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.3" ;
+    rcap:evidenceText "Domain-specific strata are not applied to patients at the time of assessment for this domain." ;
+    rcap:occurrenceKind "domain_strata" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N4f60d0681067427c85cf5c2a90b9021b ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 31 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "9.2" ;
+    rcap:evidenceText "Hospitalization or death due to major adverse cardiovascular events (at sites where linked data are available)" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N9992e876837a4863b80ed7f822bd2ea1 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Patients in whom all interventions are contraindicated will be treated according to the current standard of care at the clinician’s discretion." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N7f250a693bf34a1aabdb9b4e749346fc ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Known or suspected pregnancy will result in exclusion from the baricitinib intervention. It is normal clinical practice that women admitted who are in an age group in which pregnancy is possible will have a pregnancy test conducted. The results of such tests will be used to determine interpretation of this exclusion criteria." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N1eb16ffdfb5c4f5ab4623c3fe3785fdb ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 31 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "9.2" ;
+    rcap:evidenceText "Pregnancy outcomes will be collected for patients who are pregnant at the time of randomization to this domain." ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nb1350236fad74f2e89d9cb88dcc55227 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:11" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "Baricitinib will be commenced as soon as possible following reveal of allocation and will be administered for 10 days or until hospital discharge, whichever occurs first." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Ne28af9344a7c4869b6796680de0b8504 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "In adults and in children 9 years of age and older, baricitinib will be administered enterally at a dose of 4 mg daily if the eGFR is at least 60 mL/min/1.73m 2 ." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N486a84acfdf84f1fa768bbbbb644911f ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "It is recognised that there is a wide range of regulatory approaches and attitudes to the evaluation of interventions in pregnant trial participants across participating regions and sites. Known or suspected pregnancy is not an intervention-level exclusion for the tocilizumab intervention by default; however, if a site does not have regulatory approval to enrol pregnant patients to the tocilizumab intervention, known or suspected pregnancy will be applied as an intervention-specific exclusion and will result in exclusion from the tocilizumab intervention." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N58937d5bc27e4465a2d842e3c17f4826 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 26 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Patient has community-acquired respiratory tract infection" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nf8194e4ac0334bcaac0fd67298c8c686 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "Corticosteroids can be administered, either by enrolment in the Corticosteroid Domain of REMAP-CAP or as determined by the treating clinician." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nd329ab1cfd4a4c6d9213fb6b09a5ec23 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:9" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "If 1 mg tablets are not available, a 2 mg tablet can be split using a tablet splitter that has a razor blade to administer half a 2 mg tablet once daily." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nb69ce1220dc04888ac3a1177156a41f2 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "All secondary endpoints as specified in the Core Protocol The domain-specific secondary outcome measures (from randomization, during the index hospitalization, censored 90 days after enrollment) will be:" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nb817643f71c24166a1fe741b252ed729 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "☐" ;
+    rcap:evidencePage 28 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "No immune modulation (no placebo)" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N974c4797652b4c90bfd390240c04a22a ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.5.1" ;
+    rcap:evidenceText "The primary endpoint for this domain is the primary outcome specified in the Core Protocol." ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nfa51f91ef98f48c89ee2bbc4dea4dade ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 26 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Confirmed or strongly-suspected active mycobacterial infection or invasive fungal infection" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N4f9eb7ac92504a2380b5f031a51742d9 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.7" ;
+    rcap:evidenceText "The threshold probability for the statistical trigger of effectiveness will be the same as that applied for superiority." ;
+    rcap:occurrenceKind "allocation_threshold" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nb12d3d029c124588986bdcd720ffa31c ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "9.2" ;
+    rcap:evidenceText "Additional domain-specific data will be collected." ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N35808b8e467b4cfaafdd3f61220d28a3 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "No other strata will contribute to the unit-of-analysis, although this may be modified as an operational decision as specified in the Current State document." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N7ece651c469b45fdb805542076d0f5c8 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:12" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "For patients who are discharged or transferred from the participating clinical area (e.g." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nbcfd71e96e4b450d85e83ac9383d8346 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 31 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "9.2" ;
+    rcap:evidenceText "Results of culture of blood for pathogenic bacteria and/or fungus during this hospitalization" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N751e0931429e44949ed781d35c3cb7b0 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "This domain is available to patients in the Pediatric, Adolescent, or Adult Age Stratum, as defined in Core Protocol documents." ;
+    rcap:occurrenceKind "applicability_age" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:Domain_IIM ;
+    owl:annotatedTarget _:Na613ed8f4408458e841c658513a7eaa1 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "☐" ;
+    rcap:evidencePage 28 ;
+    rcap:evidenceRule "B-domain" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Tocilizumab" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N006ad4462d2c42daa9684af7c4d9d9e9 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "Within this stratum and state, the unit-of-analysis is defined by the Bacterial Infection Diagnosed Strata (defined as Bacterial Infection Diagnosed or Bacterial Infection Not Diagnosed)." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nfc4f4d5a60a94cc0b05bc3797790bff9 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.8" ;
+    rcap:evidenceText "If two interventions within this domain, for a unit-of-analysis, have at least a 0.90 probability of being within a pre-specified delta for the primary endpoint then these interventions will be deemed as being equivalent." ;
+    rcap:occurrenceKind "allocation_threshold" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N4935ef99b1b14307b10c0ff18dde2746 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "all other interventions are contraindicated) are not eligible for this domain." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nb4d3b4989d4c45cba19e5d97b5b22d86 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "☐" ;
+    rcap:evidencePage 28 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Tocilizumab" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N8c1509f3a5ab4de6b4bb63cdc4c7009c ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.5" ;
+    rcap:evidenceText "An a priori interaction with the Corticosteroid Domain or Influenza Antiviral Domain are considered possible but will only be investigated in post-trial subgroup analyses." ;
+    rcap:occurrenceKind "allocation_interactions" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nabf87d7599bb410d84e5336f057b04a9 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "Eligibility within these strata may be further constrained by domain-specific eligibility criteria specified below." ;
+    rcap:occurrenceKind "applicability_age" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N2f7024cb2dd441098cb7d905817c4b5c ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 26 ;
+    rcap:evidencePosition "6" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Patient has already received any dose of one or more of any form of tocilizumab or another IL-6 receptor antagonist (e.g. sarilumab), baricitinib or another JAK inhibitor (e.g. tofacitinib, ruxolitinib or upadacitinib) during this hospitalization or is on long-term therapy with any of these agents prior to this hospital admission." ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N8504ccb0cf9f4d158fbf68a76b2bb565 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "In such cases, patients will be randomly allocated a remaining intervention from among those available at that site." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N00dff527a898474cbed01d23ec055f9d ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "Baricitinib will be given at a dose of 1 mg daily if the eGFR is at least 15 and less than 30 mL/min/1.73m 2 ." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Nb844d5432db8406d99446e7adb9f2125 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:8" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "In children 2 years to <9 years of age, baricitinib will be withheld if the eGFR is <30 mL/min/1.73m 2 or the patient is receiving renal replacement therapy For patients who are unable to swallow whole tablets, baricitinib may be dispersed in water and delivered via an enteral feeding tube." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N81782efc98014042b264ceea5aa1903f ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 28 ;
+    rcap:evidencePosition "7" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "In children aged >2 years and <9 years, a baseline eGFR <30 mL/min/1.73m 2 and/or receipt of renal replacement therapy (including long-term renal replacement therapy) at baseline will result in exclusion from receiving baricitinib" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:Na723c0522616450e9ac3ecb83b2c8980 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "The dose of baricitinib is dependent on age and renal function." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N4046ca3d24764b1ca3b4d7312da5c6c0 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "trailing:1" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "An additional endpoint, that will be reported as it becomes available and only from sites where linked data is available, is occurrence of major adverse cardiovascular events." ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N731d1b0e37e5421f9c87e3f565a15607 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "6" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "In adults and in children ≥ 9 years of age, a baseline eGFR <15 mL/min/1.73m 2 and/or receipt of renal replacement therapy (including long-term renal replacement therapy) at baseline will result in exclusion from receiving baricitinib" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N3a375a18e73b42a98e5d68537705b05d ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "Tocilizumab will be commenced as soon as possible following reveal of allocation and administered as an intravenous infusion via a central or peripheral line over a one-hour period." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IIM ;
+    owl:annotatedTarget _:N4133527b36f14a9aab206d4b6573b9e4 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.4" ;
+    rcap:evidenceText "The timing of the revealing of allocation status and administration of interventions is specified to be Randomization with Immediate Reveal and Initiation or Randomization with Deferred Reveal and Initiation if prospective agreement to participate is required for this domain (see relevant Core Protocol documents) or if the results of microbiological testing for influenza or SARS-CoV-2 or both are unavailable at the time of eligibility." ;
+    rcap:occurrenceKind "allocation_reveal" .
+
+_:N006ad4462d2c42daa9684af7c4d9d9e9 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca041d3b3e0 .
+
+_:N00dff527a898474cbed01d23ec055f9d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c766b87cc4e .
+
+_:N0ac04b3f43c44f9ba4e0979be2208b6a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c168c834f5a .
+
+_:N0c9d297c44cb49869ac1dc7d0602bfac a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cfbd5d9fa18 .
+
+_:N0daee57b03904e42aa2a97c4ddb07bad a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1e17f524e4 .
+
+_:N0fd52bb65ebc437fa12e92aecd6e7e7b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5195342be2 .
+
+_:N1116f3a61a4746a8af6dc1636fa3d46f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd7e3bd8fce .
+
+_:N1334484ad3e748f4be86585c3826fcd3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf2692d44e7 .
+
+_:N1459a7e5e9674fa6b11cb77e6e3f9221 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2ca322189f .
+
+_:N14c78107cbdb4096b0c8ff652d3a4f49 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9e40a2b775 .
+
+_:N1853e7e662c0465e85839a65471117a7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4bdde963ff .
+
+_:N1eb16ffdfb5c4f5ab4623c3fe3785fdb a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c151c19e49b .
+
+_:N22f36f7f70b744c39af6f64a270ade08 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c36b0150e31 .
+
+_:N2371139fd5314a2cb2818b1c22fd0665 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c49b78eb6d0 .
+
+_:N25f03e8a724d4524895c7df3bdd4581f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c49b78eb6d0 .
+
+_:N2735116bc6644f89a1840db06d4f0612 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c206b9c5488 .
+
+_:N2d55fdc34b194e63a94b152425cab9c8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0096438fef .
+
+_:N2ec1e3940998452fb4b927c8589f296c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c324186f8e2 .
+
+_:N2f7024cb2dd441098cb7d905817c4b5c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca5d0396f02 .
+
+_:N35808b8e467b4cfaafdd3f61220d28a3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c80882e3170 .
+
+_:N35a012e415374e2da69bb2551decc9b1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc4efc1a692 .
+
+_:N37aa3187f5b546f39c82accb78791902 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5cecd99a5f .
+
+_:N39c664e05157487595a67bfd1fcbaf8f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf380408d29 .
+
+_:N3a375a18e73b42a98e5d68537705b05d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c89d09ee65a .
+
+_:N4046ca3d24764b1ca3b4d7312da5c6c0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce075d8b7cc .
+
+_:N4133527b36f14a9aab206d4b6573b9e4 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c97191d8ecd .
+
+_:N4194f5af1fa64cc4892ea5319b726559 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9c2969bd8c .
+
+_:N452f17f16f894c66984e7a7f520d639b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c40e386d490 .
+
+_:N486a84acfdf84f1fa768bbbbb644911f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c945e1d2493 .
+
+_:N4935ef99b1b14307b10c0ff18dde2746 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c20d2fa4a96 .
+
+_:N4aa583db956f4db3b3752d825037af39 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c927d647e14 .
+
+_:N4c8dff4931de487eb9f98780a1dc1a24 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8bc517a21d .
+
+_:N4cab9c7782ce4d2ba91ac757328cc71c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c29662860b2 .
+
+_:N4f60d0681067427c85cf5c2a90b9021b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c587f017b4f .
+
+_:N4f9eb7ac92504a2380b5f031a51742d9 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdc78559427 .
+
+_:N56b62cb3fa924b7e96c5d9e4206bbc5f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c93f429f76c .
+
+_:N58937d5bc27e4465a2d842e3c17f4826 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cba8b5376a9 .
+
+_:N58acca566d164f478842f19f09532d34 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6e4a622d7b .
+
+_:N5bcd17df627946baa43c6c548873ae9c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c62d08e12d8 .
+
+_:N5c9c01ec19fe4e33b63b6d915ddaad09 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c129e610700 .
+
+_:N68a6bd2916f04d9b9159e9931436a629 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc40460369d .
+
+_:N6ff04d5189324a0eac8449d10ba03abd a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c58d3c964c9 .
+
+_:N731d1b0e37e5421f9c87e3f565a15607 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca8098dc8a3 .
+
+_:N7460612c174041c6bfb0a00d830c8a9c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1c0f1e7b50 .
+
+_:N751e0931429e44949ed781d35c3cb7b0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c404c1328e4 .
+
+_:N77fd1cb152354aba9b7c6cffc464e451 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2fd0baa5ef .
+
+_:N7cf7b6dfdc8744af9e25d6cd2e9e2c83 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc4a3982cda .
+
+_:N7ece651c469b45fdb805542076d0f5c8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c56e57f1ead .
+
+_:N7f250a693bf34a1aabdb9b4e749346fc a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8b63ca6c9c .
+
+_:N81782efc98014042b264ceea5aa1903f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c64d13396b5 .
+
+_:N82998408759440a58cc30c509876c707 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7fd21cde5f .
+
+_:N8504ccb0cf9f4d158fbf68a76b2bb565 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf6051db800 .
+
+_:N86f87e0f3c824304bab2742ea279ad4d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3563d09427 .
+
+_:N892343f8f8214a8ab8347a659cb5b114 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd9cb1c9a3b .
+
+_:N89acbe3ec758494a955ccef6fa24eb79 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c27bd7ad6c4 .
+
+_:N89fffae85b06461f87f550affb4bb937 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c03a44f4e7e .
+
+_:N8a1b2de5b28b4083a7eeefab462df6b0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2cebf0c070 .
+
+_:N8c1509f3a5ab4de6b4bb63cdc4c7009c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c367ebe39ce .
+
+_:N8ce8e464f09d456ea9c4964cc431f02c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4c7e690055 .
+
+_:N94c5791cdd854d61a458d5eef0411ab0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8427635eb7 .
+
+_:N974c4797652b4c90bfd390240c04a22a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5770ae5285 .
+
+_:N9992e876837a4863b80ed7f822bd2ea1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5b61229d68 .
+
+_:N9ecd54d5c2fe46c9808281e8a543e08b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd3b3a61b4c .
+
+_:N9f7692abc8644d36b2ff8314cbf136ed a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ccdc64e11f3 .
+
+_:Na613ed8f4408458e841c658513a7eaa1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cbdec051bf7 .
+
+_:Na723c0522616450e9ac3ecb83b2c8980 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd0dc3a1b8d .
+
+_:Nabf87d7599bb410d84e5336f057b04a9 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce5c526ddb9 .
+
+_:Nadc1ffcb7dfb45438875f8ed26cb3212 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c20585797b1 .
+
+_:Nadd08077a0064690b3ac41b2d8baf65a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cbf7925c08d .
+
+_:Nae285e6f29024f70a21cc37b74799785 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c85858c8378 .
+
+_:Naf9ae2c36b9d4a66bc7746a4a01945c8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c96f99cecfd .
+
+_:Nb12d3d029c124588986bdcd720ffa31c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4c016e4e79 .
+
+_:Nb1350236fad74f2e89d9cb88dcc55227 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6434a3b7ee .
+
+_:Nb2bfbe3555d54337b0794c4e7cbc9f2e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9109c66618 .
+
+_:Nb4d3b4989d4c45cba19e5d97b5b22d86 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cbdec051bf7 .
+
+_:Nb637cd8c08ac4e4bb2e72dcc2bb4f3bf a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd2a29aeec5 .
+
+_:Nb69ce1220dc04888ac3a1177156a41f2 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c81b67d784e .
+
+_:Nb817643f71c24166a1fe741b252ed729 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c445ffd4093 .
+
+_:Nb844d5432db8406d99446e7adb9f2125 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2de2c66180 .
+
+_:Nbcfd71e96e4b450d85e83ac9383d8346 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca7dd1a0df3 .
+
+_:Nc25311a76b4b45748308d5fe08939bf6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9c4ee896ea .
+
+_:Nce89cf539d244fe0a3698400460229d8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cee7d1a66ec .
+
+_:Nd329ab1cfd4a4c6d9213fb6b09a5ec23 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3a886e5212 .
+
+_:Ne28af9344a7c4869b6796680de0b8504 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8fb4c49cb7 .
+
+_:Ne49d0338df9c45c79e9fa73ad98b06ce a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cfccd458a0a .
+
+_:Nec20b8d651ed40248d6a1e9b057c8302 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6d1c3df7f2 .
+
+_:Nec31977b9a1c40b3a8946b32598ab8c7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4ee594ef26 .
+
+_:Ned35df00609549af8e6e2e8f36800ea6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cedb34ad204 .
+
+_:Ned771a27bcdc4a40a16c5a32fb3af51a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c445ffd4093 .
+
+_:Nefa63c4a411b4285ae55feefc0374143 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf76cd04abc .
+
+_:Nf2e8e9b74e2342eb87bc0fa1000c36d1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdb38085787 .
+
+_:Nf3e6476e6a7643f1952a3e3474b554a6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:caf1c7e456b .
+
+_:Nf74df41521f64521a54323878c617cc2 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb26af16384 .
+
+_:Nf8194e4ac0334bcaac0fd67298c8c686 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8f73b85657 .
+
+_:Nfa51f91ef98f48c89ee2bbc4dea4dade a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c412779c2ab .
+
+_:Nfb9dced2f9b5410591f670a2496779b7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c554b463214 .
+
+_:Nfc4f4d5a60a94cc0b05bc3797790bff9 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c715f02f8d2 .
+
+_:Nfe3310045d114ce4acdb401580490b1a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3e253b26d2 .
+
+_:Nff57e957bd324535a44d9d94fa13b8d0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c164a6e965d .
+

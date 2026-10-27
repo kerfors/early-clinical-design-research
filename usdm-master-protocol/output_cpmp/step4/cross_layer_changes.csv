@@ -1,0 +1,27 @@
+amendment,change,field,text,names_version,section
+H0P-MC-BP02(a),H0P-MC-BP02(a) row 5,rationale,To align with master protocol and ISA numbering system.,False,5.1 Study Population
+H0P-MC-BP05(a),H0P-MC-BP05(a) row 5,summary,"Removed, “…to physical examinations described in the Master Protocol CPMP…”",False,8.2.1 Physical Examinations
+H0P-MC-CPMP(a),H0P-MC-CPMP(a) row 9,rationale,Vital sign procedures for these visits will be detailed in the ISAs,False,1.3 Schedule of Activities
+H0P-MC-CPMP(a),H0P-MC-CPMP(a) row 35,summary,Removed “case report form” from last bullet of unblinding table. The date and reason that the blind was broken must be recorded in the source documentation of the appropriate ISA.,False,6.3 Measures to Minimize Bias: Randomization and Blinding
+H0P-MC-NP01(a),H0P-MC-NP01(a) row 9,rationale,Covered by the master Protocol H0P-MC-CPMP,False,5.2 Exclusion Criteria
+H0P-MC-NP02(a),H0P-MC-NP02(a) row 5,rationale,Toalign with master protocol andISA numbering system.,False,5 StudyPopulation
+H0P-MC-NP03(a),H0P-MC-NP03(a) row 1,rationale,Sample size and study intervention text updated for new dose titration scheme “Data monitoring committee” changed to “Assessment committee” for consistency with master CPMP protocol,False,1.1 Synopsis
+H0P-MC-NP03(a),H0P-MC-NP03(a) row 12,summary,Removed text that is already in the master CPMP,False,5.3 Lifestyle Considerations
+H0P-MC-NP03(a),H0P-MC-NP03(a) row 12,rationale,Master protocol updates for CPMP amendment (a),True,5.3 Lifestyle Considerations
+H0P-MC-NP03(a),H0P-MC-NP03(a) row 14,summary,Removed text that is duplicated in CPMP Added sub-header for drug-drug interactions,False,6.5 Concomitant Therapy
+H0P-MC-NP03(a),H0P-MC-NP03(a) row 14,rationale,Consistency across ISAs,False,6.5 Concomitant Therapy
+H0P-MC-NP03(a),H0P-MC-NP03(a) row 16,summary,Added text to refer to the master,False,8.2 Adverse Events and Serious Adverse Events
+H0P-MC-NP03(a),H0P-MC-NP03(a) row 16,rationale,Master protocol contains AE and SAE information,False,8.2 Adverse Events and Serious Adverse Events
+H0P-MC-NP03(a),H0P-MC-NP03(a) row 18,rationale,The master protocol defines the populations for analyses,False,9.3 Populations for Analyses
+H0P-MC-NP03(b),H0P-MC-NP03(b) row 2,rationale,Adding a telephone follow-up visit for AE check AEs for the rest of the study are covered in the master CPMP SoA,False,1.3 Schedule of Activities (SoA)
+H0P-MC-NP05(a),H0P-MC-NP05(a) row 7,summary,"Removed, “…to physical examinations (described in Master Protocol CPMP)…”",False,8.2.1 Physical Examinations
+H0P-MC-OA02(a),H0P-MC-OA02(a) row 5,rationale,To align with master protocol and ISA numbering system.,False,5.1 Study Population
+H0P-MC-OA03(a),H0P-MC-OA03(a) row 1,rationale,Sample size and study intervention text updated for new dose titration scheme “Data monitoring committee” changed to “Assessment committee” for consistency with master CPMP protocol,False,1.1 Synopsis
+H0P-MC-OA03(a),H0P-MC-OA03(a) row 12,summary,Removed text that is already in the master CPMP,False,5.3 Lifestyle Considerations
+H0P-MC-OA03(a),H0P-MC-OA03(a) row 12,rationale,Master protocol updates for CPMP amendment (a),True,5.3 Lifestyle Considerations
+H0P-MC-OA03(a),H0P-MC-OA03(a) row 14,summary,Removed text that is duplicated in CPMP Added text for drug-drug interactions,False,6.5 Concomitant Therapy
+H0P-MC-OA03(a),H0P-MC-OA03(a) row 14,rationale,Consistency across ISAs,False,6.5 Concomitant Therapy
+H0P-MC-OA03(a),H0P-MC-OA03(a) row 16,summary,Added text to refer to the master,False,8.2 Adverse Events and Serious Adverse Events
+H0P-MC-OA03(a),H0P-MC-OA03(a) row 16,rationale,Master protocol contains AE and SAE information,False,8.2 Adverse Events and Serious Adverse Events
+H0P-MC-OA03(a),H0P-MC-OA03(a) row 18,rationale,The master protocol defines the populations for analyses,False,9.3 Populations for Analyses
+H0P-MC-OA05(a),H0P-MC-OA05(a) row 6,summary,"Removed, “…to physical examinations (described in the Master Protocol CPMP)…”",False,8.2.1 Physical Examinations

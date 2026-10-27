@@ -1,0 +1,390 @@
+doc,section,section_title,kind,seq,item,level,glyph,group,page,rule,text
+CORE40,7.4.1,Platform Inclusion Criteria,platform_inclusion,1,1,1,,,42,R-number,Hospitalized patient
+CORE40,7.4.1,Platform Inclusion Criteria,platform_inclusion,2,2,1,,,42,R-number,Acute respiratory tract infection
+CORE40,7.4.1,Platform Inclusion Criteria,platform_inclusion,3,3,1,,,42,R-number,Aged 28 days or older
+CORE40,7.4.2,Platform Exclusion Criteria,platform_exclusion,1,1,1,,,42,R-number+R-cont,"Death is deemed to be imminent and inevitable during the next 24 hours AND one or more of the patient, substitute decision maker or attending physician are not committed to full active treatment."
+CORE40,7.4.2,Platform Exclusion Criteria,platform_exclusion,2,2,1,,,42,R-number,Patient is expected to be discharged from hospital within the next 24 hours
+CORE40,7.4.2,Platform Exclusion Criteria,platform_exclusion,3,3,1,,,42,R-number,Previous enrollment in this Platform within the last 90 days
+CORE40,7.6.1,Primary Endpoint,endpoint_primary,1,1,1,•,,46,R-glyph,"Landmark mortality at Day 90 post-randomization,"
+CORE40,7.6.1,Primary Endpoint,endpoint_primary,2,2,1,•,,46,R-glyph+R-cont,"Among Day-90 survivors, their daily respiratory support level as defined by position on a five-category ordinal scale:"
+CORE40,7.6.1,Primary Endpoint,endpoint_primary,3,2.1,2,o,,46,R-glyph+R-cont,Hospitalized on extracorporeal life support (ECLS) or invasive mechanical ventilation (IMV)
+CORE40,7.6.1,Primary Endpoint,endpoint_primary,4,2.2,2,o,,46,R-glyph,Hospitalized on non-invasive ventilation or high-flow oxygen*
+CORE40,7.6.1,Primary Endpoint,endpoint_primary,5,2.3,2,o,,46,R-glyph,Hospitalized on low-intensity oxygen
+CORE40,7.6.1,Primary Endpoint,endpoint_primary,6,2.4,2,o,,46,R-glyph,"Hospitalized, no oxygen"
+CORE40,7.6.1,Primary Endpoint,endpoint_primary,7,2.5,2,o,,46,R-glyph,Discharged from index hospitalization
+CORE40,7.6.2,Secondary Endpoints,endpoint_secondary,1,1,1,•,,47,R-glyph,Hospital length-of-stay
+CORE40,7.6.2,Secondary Endpoints,endpoint_secondary,2,2,1,•,,47,R-glyph,"Mortality, censored at 90 days"
+CORE40,7.6.2,Secondary Endpoints,endpoint_secondary,3,3,1,•,,47,R-glyph,"Domain-specific efficacy outcomes, where applicable"
+CORE40,7.6.2,Secondary Endpoints,endpoint_secondary,4,4,1,•,,47,R-glyph,"Domain-specific safety outcomes, where applicable"
+CORE40,7.6.2,Secondary Endpoints,endpoint_secondary,5,5,1,•,,47,R-glyph,Hospital survival
+CORE40,7.6.2,Secondary Endpoints,endpoint_secondary,6,6,1,•,,47,R-glyph,28-day survival
+CORE40,7.6.2,Secondary Endpoints,endpoint_secondary,7,7,1,•,,47,R-glyph,Organ-support free days at day 28
+CORE40,7.6.2,Secondary Endpoints,endpoint_secondary,8,8,1,•,,47,R-glyph,Vasopressor-free days at day 28
+CORE40,7.6.2,Secondary Endpoints,endpoint_secondary,9,9,1,•,,47,R-glyph,Ventilator-free days at day 28
+CORE40,7.6.2,Secondary Endpoints,endpoint_secondary,10,10,1,•,,47,R-glyph,Progression to IMV/ECLS/death
+CORE40,7.6.2,Secondary Endpoints,endpoint_secondary,11,11,1,•,,48,R-glyph,"Survival at 180 days after enrollment (where feasible, refer to relevant regional RSA)"
+CORE40,7.6.2,Secondary Endpoints,endpoint_secondary,12,12,1,•,,48,R-glyph+R-cont,"HRQoL at 180 days after enrollment using the EQ5D-5L or EQ-5D-Y and PedsQL-SF15 in participants aged less than 18 years (where feasible, refer to relevant regional RSA)"
+CORE40,7.6.2,Secondary Endpoints,endpoint_secondary,13,13,1,•,,48,R-glyph+R-cont,"Disability status measured at 180 days after enrollment using the WHODAS 2.0, 12-item instrument (where feasible, refer to relevant regional RSA) in those aged 18 or older"
+CORE40,7.8.7,Action when a Statistical Trigger is achieved,allocation_rar,1,1,1,●,"Actions following Statistical Trigger for equivalence, or noninferiority",66,R-glyph,Removal of the domain from the Platform
+CORE40,7.8.7,Action when a Statistical Trigger is achieved,allocation_rar,2,2,1,●,"Actions following Statistical Trigger for equivalence, or noninferiority",66,R-glyph+R-cont,"No change to the interventions within the domain with continuation of RAR. This could be to further evaluate secondary endpoints, a smaller delta, or interest in interactions with other interventions."
+CORE40,7.8.7,Action when a Statistical Trigger is achieved,allocation_rar,3,3,1,●,"Actions following Statistical Trigger for equivalence, or noninferiority",66,R-glyph+R-cont,"Adapt the domain to better refine the optimal characteristics of interventions (i.e., duration or dose)"
+CORE40,7.8.7,Action when a Statistical Trigger is achieved,allocation_rar,4,4,1,●,"Actions following Statistical Trigger for equivalence, or noninferiority",66,R-glyph+R-cont,"A pair of equivalent interventions may be compressed into a single group for the purposes of ongoing analyses. Both interventions continue to be interventions that are available within the domain for allocation, but the primary analysis considers the effect of the two interventions as a single group, where a balanced randomization will be assigned to each of the intervention pair within this compressed group. Secondary analyses can continue to be conducted to determine if equivalence is maintained, with the possibility of the intervention being restored as individual interventions if results no longer support equivalence. It is acknowledged that re-analysis of the domain immediately following compression of one (or more) pairs of equivalent interventions may result in the occurrence of other Statistical Triggers (e.g., a compressed pair may be superior or inferior to all remaining interventions). Any Statistical Trigger that results from compression of one or more pairs will be responded to as outlined in this section with reporting of the cascade of Statistical Triggers. Compression of a pair of interventions can occur with or without reporting of a Platform Conclusion."
+CORE40,7.8.7,Action when a Statistical Trigger is achieved,allocation_rar,5,5,1,●,"Actions following Statistical Trigger for equivalence, or noninferiority",67,R-glyph+R-cont,"Removal of one of the pair of equivalent interventions from the domain, for example the more burdensome or more expensive intervention, which will result in a reporting of a Platform Conclusion."
+CORE40,7.8.7,Action when a Statistical Trigger is achieved,allocation_rar,6,6,1,●,"Actions following Statistical Trigger for equivalence, or noninferiority",67,R-glyph+R-cont,"No change to the interventions within the domain with continuation of RAR. This could be to further evaluate secondary endpoints, a smaller delta of equivalence, or interest in interactions with other interventions. Such changes would require amendment to the DSA. This could occur with or without reporting a Platform Conclusion."
+CORE40,8.8.2,Variables to be collected,data_collection,1,1,1,•,Baseline and Eligibility data,77,R-glyph,Demographic data
+CORE40,8.8.2,Variables to be collected,data_collection,2,2,1,•,Baseline and Eligibility data,77,R-glyph,"Screening information, including Platform, domain and intervention eligibility criteria"
+CORE40,8.8.2,Variables to be collected,data_collection,3,3,1,•,Baseline and Eligibility data,77,R-glyph,Date and time of hospital admission
+CORE40,8.8.2,Variables to be collected,data_collection,4,4,1,•,Baseline and Eligibility data,77,R-glyph,Date and time of ICU admission(s) (where applicable)
+CORE40,8.8.2,Variables to be collected,data_collection,5,5,1,•,Baseline and Eligibility data,77,R-glyph,Status for all applicable states and strata
+CORE40,8.8.2,Variables to be collected,data_collection,6,6,1,•,Baseline and Eligibility data,77,R-glyph,Receipt of organ failure support
+CORE40,8.8.2,Variables to be collected,data_collection,7,7,1,•,Baseline and Eligibility data,77,R-glyph,Co-existing illnesses and risk factors for respiratory tract infection
+CORE40,8.8.2,Variables to be collected,data_collection,8,8,1,•,Baseline and Eligibility data,77,R-glyph,Source of hospital admission
+CORE40,8.8.2,Variables to be collected,data_collection,9,9,1,•,Baseline and Eligibility data,77,R-glyph,Physiologic and laboratory results indicative of severity of illness and organ dysfunction
+CORE40,8.8.2,Variables to be collected,data_collection,10,10,1,•,Baseline and Eligibility data,77,R-glyph,Results of microbiological testing
+CORE40,8.8.2,Variables to be collected,data_collection,11,11,1,●,Inpatient data,77,R-glyph,Hypotension and administration of vasopressors/inotropes
+CORE40,8.8.2,Variables to be collected,data_collection,12,12,1,●,Inpatient data,78,R-glyph,Administration of renal replacement therapy
+CORE40,8.8.2,Variables to be collected,data_collection,13,13,1,●,Inpatient data,78,R-glyph,Administration of oxygen support including ECLS
+CORE40,8.8.2,Variables to be collected,data_collection,14,14,1,•,ICU Outcome data,78,R-glyph,Date and time of ICU admission and discharge
+CORE40,8.8.2,Variables to be collected,data_collection,15,15,1,•,ICU Outcome data,78,R-glyph,Dates of ICU readmission and discharge during the index hospitalization
+CORE40,8.8.2,Variables to be collected,data_collection,16,16,1,•,Hospital outcome data,78,R-glyph,Date and time of hospital admission and discharge
+CORE40,8.8.2,Variables to be collected,data_collection,17,17,1,•,Hospital outcome data,78,R-glyph,Survival status at hospital discharge
+CORE40,8.8.2,Variables to be collected,data_collection,18,18,1,•,Hospital outcome data,78,R-glyph,Hospital discharge destination
+CORE40,8.8.2,Variables to be collected,data_collection,19,19,1,•,Medication Administration,78,R-glyph,Administration of allocated medications
+CORE40,8.8.2,Variables to be collected,data_collection,20,20,1,•,Medication Administration,78,R-glyph,Administration of relevant concomitant medications
+CORE40,8.8.2,Variables to be collected,data_collection,21,21,1,•,Post-discharge outcome data,78,R-glyph,Survival status at 28 days
+CORE40,8.8.2,Variables to be collected,data_collection,22,22,1,•,Post-discharge outcome data,78,R-glyph,Survival status at 90 days
+CORE40,8.8.2,Variables to be collected,data_collection,23,23,1,•,Post-discharge outcome data,78,R-glyph,Survival status at 180 days
+CORE40,8.8.2,Variables to be collected,data_collection,24,24,1,•,Post-discharge outcome data,78,R-glyph,Hospital readmission within 28 days
+CORE40,8.8.2,Variables to be collected,data_collection,25,25,1,•,Post-discharge outcome data,78,R-glyph+R-cont,HRQoL measured by EQ-5D or EQ-5D-Y and PedsQL-SF15 in participants aged less than 18 years at 180 days
+CORE40,8.8.2,Variables to be collected,data_collection,26,26,1,•,Post-discharge outcome data,78,R-glyph+R-cont,Disability status measured by WHODAS at 180 days and baseline information to interpret disability (adults)
+CORE40,8.8.2,Variables to be collected,data_collection,27,27,1,•,Post-discharge outcome data,78,R-glyph,Opinions and beliefs regarding participation in research (reported at 180 days)
+CORE41,7.4.1,Platform Inclusion Criteria,platform_inclusion,1,1,1,,,42,R-number,Hospitalized patient
+CORE41,7.4.1,Platform Inclusion Criteria,platform_inclusion,2,2,1,,,42,R-number,Acute respiratory tract infection
+CORE41,7.4.1,Platform Inclusion Criteria,platform_inclusion,3,3,1,,,42,R-number,Aged 28 days or older
+CORE41,7.4.2,Platform Exclusion Criteria,platform_exclusion,1,1,1,,,42,R-number+R-cont,"Death is deemed to be imminent and inevitable during the next 24 hours AND one or more of the patient, substitute decision maker or attending physician are not committed to full active treatment."
+CORE41,7.4.2,Platform Exclusion Criteria,platform_exclusion,2,2,1,,,42,R-number,Patient is expected to be discharged from hospital within the next 24 hours
+CORE41,7.4.2,Platform Exclusion Criteria,platform_exclusion,3,3,1,,,42,R-number,Previous enrollment in this Platform within the last 90 days
+CORE41,7.6.1,Primary Endpoint,endpoint_primary,1,1,1,•,,46,R-glyph,Extracorporeal life support (ECLS)
+CORE41,7.6.1,Primary Endpoint,endpoint_primary,2,2,1,•,,46,R-glyph,Invasive mechanical ventilation
+CORE41,7.6.1,Primary Endpoint,endpoint_primary,3,3,1,•,,46,R-glyph+R-cont,Non-invasive ventilation (bilevel positive airway pressure or continuous positive airway pressure by mask or helmet)
+CORE41,7.6.1,Primary Endpoint,endpoint_primary,4,4,1,•,,46,R-glyph,High-flow nasal oxygen*
+CORE41,7.6.1,Primary Endpoint,endpoint_primary,5,5,1,•,,46,R-glyph,"Continuous infusion of vasopressors, inotropes or both"
+CORE41,7.6.2,Secondary Endpoints,endpoint_secondary,1,1,1,•,,47,R-glyph,"Mortality, censored at 90 days"
+CORE41,7.6.2,Secondary Endpoints,endpoint_secondary,2,2,1,•,,47,R-glyph,Days alive and free of organ-failure support to day 28
+CORE41,7.6.2,Secondary Endpoints,endpoint_secondary,3,3,1,•,,47,R-glyph,Days alive and out of hospital to day 28
+CORE41,7.6.2,Secondary Endpoints,endpoint_secondary,4,4,1,•,,47,R-glyph,"Domain-specific efficacy outcomes, where applicable"
+CORE41,7.6.2,Secondary Endpoints,endpoint_secondary,5,5,1,•,,47,R-glyph,"Domain-specific safety outcomes, where applicable"
+CORE41,7.6.2,Secondary Endpoints,endpoint_secondary,6,6,1,•,,47,R-glyph,Hospital survival
+CORE41,7.6.2,Secondary Endpoints,endpoint_secondary,7,7,1,•,,47,R-glyph,28-day survival
+CORE41,7.6.2,Secondary Endpoints,endpoint_secondary,8,8,1,•,,47,R-glyph,Vasopressor-free days at day 28
+CORE41,7.6.2,Secondary Endpoints,endpoint_secondary,9,9,1,•,,47,R-glyph,Ventilator-free days at day 28
+CORE41,7.6.2,Secondary Endpoints,endpoint_secondary,10,10,1,•,,48,R-glyph+R-cont,Progression to IMV/ECLS/death among those not receiving invasive mechanical ventilation or ECLS at baseline
+CORE41,7.6.2,Secondary Endpoints,endpoint_secondary,11,11,1,•,,48,R-glyph,"Survival at 180 days after enrollment (where feasible, refer to relevant regional RSA)"
+CORE41,7.6.2,Secondary Endpoints,endpoint_secondary,12,12,1,•,,48,R-glyph+R-cont,"HRQoL at 180 days after enrollment using the EQ5D-5L or EQ-5D-Y and PedsQL-SF15 in participants aged less than 18 years (where feasible, refer to relevant regional RSA)"
+CORE41,7.6.2,Secondary Endpoints,endpoint_secondary,13,13,1,•,,48,R-glyph+R-cont,"Disability status measured at 180 days after enrollment using the WHODAS 2.0, 12-item instrument (where feasible, refer to relevant regional RSA) in those aged 18 or older"
+CORE41,7.6.3,Exploratory outcomes,endpoint_exploratory,1,1,1,•,,48,R-glyph,"Landmark mortality at Day 90 post-randomization,"
+CORE41,7.6.3,Exploratory outcomes,endpoint_exploratory,2,2,1,•,,48,R-glyph+R-cont,"Among Day-90 survivors, their daily respiratory support level as defined by position on a five-category ordinal scale:"
+CORE41,7.6.3,Exploratory outcomes,endpoint_exploratory,3,1,1,,,48,R-number,Hospitalized on ECLS or invasive mechanical ventilation (IMV)
+CORE41,7.6.3,Exploratory outcomes,endpoint_exploratory,4,2,1,,,48,R-number,Hospitalized on non-invasive ventilation or high-flow oxygen
+CORE41,7.6.3,Exploratory outcomes,endpoint_exploratory,5,3,1,,,48,R-number,Hospitalized on low-intensity oxygen
+CORE41,7.6.3,Exploratory outcomes,endpoint_exploratory,6,4,1,,,48,R-number,"Hospitalized, no oxygen"
+CORE41,7.6.3,Exploratory outcomes,endpoint_exploratory,7,5,1,,,48,R-number+R-cont,Discharged from index hospitalization Respiratory Infection Ordinal Weighted Score
+CORE41,7.8.7,Action when a Statistical Trigger is achieved,allocation_rar,1,1,1,●,"Actions following Statistical Trigger for equivalence, or noninferiority",68,R-glyph,Removal of the domain from the Platform
+CORE41,7.8.7,Action when a Statistical Trigger is achieved,allocation_rar,2,2,1,●,"Actions following Statistical Trigger for equivalence, or noninferiority",68,R-glyph+R-cont,"No change to the interventions within the domain with continuation of RAR. This could be to further evaluate secondary endpoints, a smaller delta, or interest in interactions with other interventions."
+CORE41,7.8.7,Action when a Statistical Trigger is achieved,allocation_rar,3,3,1,●,"Actions following Statistical Trigger for equivalence, or noninferiority",68,R-glyph+R-cont,"Adapt the domain to better refine the optimal characteristics of interventions (i.e., duration or dose)"
+CORE41,7.8.7,Action when a Statistical Trigger is achieved,allocation_rar,4,4,1,●,"Actions following Statistical Trigger for equivalence, or noninferiority",68,R-glyph+R-cont,"A pair of equivalent interventions may be compressed into a single group for the purposes of ongoing analyses. Both interventions continue to be interventions that are available within the domain for allocation, but the primary analysis considers the effect of the two interventions as a single group, where a balanced randomization will be assigned to each of the intervention pair within this compressed group. Secondary analyses can continue to be conducted to determine if equivalence is maintained, with the possibility of the intervention being restored as individual interventions if results no longer support equivalence. It is acknowledged that re-analysis of the domain immediately following compression of one (or more) pairs of equivalent interventions may result in the occurrence of other Statistical Triggers (e.g., a compressed pair may be superior or inferior to all remaining interventions). Any Statistical Trigger that results from compression of one or more pairs will be responded to as outlined in this section with reporting of the cascade of Statistical Triggers. Compression of a pair of interventions can occur with or without reporting of a Platform Conclusion."
+CORE41,7.8.7,Action when a Statistical Trigger is achieved,allocation_rar,5,5,1,●,"Actions following Statistical Trigger for equivalence, or noninferiority",69,R-glyph+R-cont,"Removal of one of the pair of equivalent interventions from the domain, for example the more burdensome or more expensive intervention, which will result in a reporting of a Platform Conclusion."
+CORE41,7.8.7,Action when a Statistical Trigger is achieved,allocation_rar,6,6,1,●,"Actions following Statistical Trigger for equivalence, or noninferiority",69,R-glyph+R-cont,"No change to the interventions within the domain with continuation of RAR. This could be to further evaluate secondary endpoints, a smaller delta of equivalence, or interest in interactions with other interventions. Such changes would require amendment to the DSA. This could occur with or without reporting a Platform Conclusion."
+CORE41,8.8.2,Variables to be collected,data_collection,1,1,1,•,Baseline and Eligibility data,79,R-glyph,Demographic data
+CORE41,8.8.2,Variables to be collected,data_collection,2,2,1,•,Baseline and Eligibility data,79,R-glyph,"Screening information, including Platform, domain and intervention eligibility criteria"
+CORE41,8.8.2,Variables to be collected,data_collection,3,3,1,•,Baseline and Eligibility data,79,R-glyph,Date and time of hospital admission
+CORE41,8.8.2,Variables to be collected,data_collection,4,4,1,•,Baseline and Eligibility data,79,R-glyph,Date and time of ICU admission(s) (where applicable)
+CORE41,8.8.2,Variables to be collected,data_collection,5,5,1,•,Baseline and Eligibility data,79,R-glyph,Status for all applicable states and strata
+CORE41,8.8.2,Variables to be collected,data_collection,6,6,1,•,Baseline and Eligibility data,79,R-glyph,Receipt of organ failure support
+CORE41,8.8.2,Variables to be collected,data_collection,7,7,1,•,Baseline and Eligibility data,79,R-glyph,Co-existing illnesses and risk factors for respiratory tract infection
+CORE41,8.8.2,Variables to be collected,data_collection,8,8,1,•,Baseline and Eligibility data,80,R-glyph,Source of hospital admission
+CORE41,8.8.2,Variables to be collected,data_collection,9,9,1,•,Baseline and Eligibility data,80,R-glyph,Physiologic and laboratory results indicative of severity of illness and organ dysfunction
+CORE41,8.8.2,Variables to be collected,data_collection,10,10,1,•,Baseline and Eligibility data,80,R-glyph,Results of microbiological testing
+CORE41,8.8.2,Variables to be collected,data_collection,11,11,1,●,Inpatient data,80,R-glyph,Hypotension and administration of vasopressors/inotropes
+CORE41,8.8.2,Variables to be collected,data_collection,12,12,1,●,Inpatient data,80,R-glyph,Administration of renal replacement therapy
+CORE41,8.8.2,Variables to be collected,data_collection,13,13,1,●,Inpatient data,80,R-glyph,Administration of oxygen support including ECLS
+CORE41,8.8.2,Variables to be collected,data_collection,14,14,1,•,ICU Outcome data,80,R-glyph,Date and time of ICU admission and discharge
+CORE41,8.8.2,Variables to be collected,data_collection,15,15,1,•,ICU Outcome data,80,R-glyph,Dates of ICU readmission and discharge during the index hospitalization
+CORE41,8.8.2,Variables to be collected,data_collection,16,16,1,•,Hospital outcome data,80,R-glyph,Date and time of hospital admission and discharge
+CORE41,8.8.2,Variables to be collected,data_collection,17,17,1,•,Hospital outcome data,80,R-glyph,Survival status at hospital discharge
+CORE41,8.8.2,Variables to be collected,data_collection,18,18,1,•,Hospital outcome data,80,R-glyph,Hospital discharge destination
+CORE41,8.8.2,Variables to be collected,data_collection,19,19,1,•,Medication Administration,80,R-glyph,Administration of allocated medications
+CORE41,8.8.2,Variables to be collected,data_collection,20,20,1,•,Medication Administration,80,R-glyph,Administration of relevant concomitant medications
+CORE41,8.8.2,Variables to be collected,data_collection,21,21,1,•,Post-discharge outcome data,80,R-glyph,Survival status at 28 days
+CORE41,8.8.2,Variables to be collected,data_collection,22,22,1,•,Post-discharge outcome data,80,R-glyph,Survival status at 90 days
+CORE41,8.8.2,Variables to be collected,data_collection,23,23,1,•,Post-discharge outcome data,80,R-glyph,Survival status at 180 days
+CORE41,8.8.2,Variables to be collected,data_collection,24,24,1,•,Post-discharge outcome data,80,R-glyph+R-cont,HRQoL measured by EQ-5D or EQ-5D-Y and PedsQL-SF15 in participants aged less than 18 years at 180 days
+CORE41,8.8.2,Variables to be collected,data_collection,25,25,1,•,Post-discharge outcome data,80,R-glyph+R-cont,Disability status measured by WHODAS at 180 days and baseline information to interpret disability (adults)
+CORE41,8.8.2,Variables to be collected,data_collection,26,26,1,•,Post-discharge outcome data,81,R-glyph,Opinions and beliefs regarding participation in research (reported at 180 days)
+PANDA,3,Pathogens,category_pathogen,1,1,1,•,,4,R-glyph,Influenza virus
+PANDA,3,Pathogens,category_pathogen,2,2,1,•,,4,R-glyph,SARS-CoV-2
+PANDA,3,Pathogens,category_pathogen,3,3,1,•,,4,R-glyph,MERS-CoV
+PANDA,3,Pathogens,category_pathogen,4,4,1,•,,4,R-glyph,Respiratory syncytial virus (RSV)
+PANDA,3,Pathogens,category_pathogen,5,5,1,•,,4,R-glyph+R-cont,"Any recognized viral respiratory pathogen other than influenza, SARS-CoV-2, MERS-CoV or RSV (grouped together)"
+PANDA,3,Pathogens,category_pathogen,6,6,1,•,,4,R-glyph,Bacteria known to cause respiratory tract infection
+PANDA,3,Pathogens,category_pathogen,7,7,1,•,,4,R-glyph,A novel pandemic respiratory pathogen
+PANDA,4.1,Acquisition of infection,category_acquisition,1,1,1,•,,8,R-glyph+R-cont,"Community-acquired, defined as acute infection acquired outside of the hospital and manifesting within 48 hours of hospital admission"
+PANDA,4.1,Acquisition of infection,category_acquisition,2,2,1,•,,8,R-glyph+R-cont,"Hospital-acquired, defined as infection not incubating at the time of hospital admission and manifesting 48 hours or more after hospital admission"
+PANDA,4.1,Acquisition of infection,category_acquisition,3,3,1,•,,8,R-glyph+R-cont,"Ventilator-associated, a subcategory of hospital-acquired infection, additionally defined as infection in an invasively ventilated patient manifesting 48 hours or more after endotracheal intubation"
+PANDA,4.2,Disease entity,category_disease_entity,1,1,1,•,,8,R-glyph+R-cont,"Respiratory tract infection, defined in two categories, lower or upper, with lower defined as infection of the airways below the level of the larynx (including tracheitis, bronchitis, bronchiolitis, and pneumonia) and upper defined as infection of the airways at the level of the larynx and above, excluding isolated otitis media or mastoiditis"
+PANDA,4.2,Disease entity,category_disease_entity,2,2,1,•,,9,R-glyph+R-cont,"Pneumonia, defined in two categories, present or absent, with present defined as radiological evidence of new onset infiltrate consistent with infection (in patients with pre-existing radiological changes, evidence of new infiltrate)"
+PANDA,4.3,Illness severity,category_illness_severity,1,1,1,•,,9,R-glyph,"The Moderate State, defined as hospitalized patients who are:"
+PANDA,4.3,Illness severity,category_illness_severity,2,1.1,2,o,,9,R-glyph,not receiving qualifying organ failure support AND
+PANDA,4.3,Illness severity,category_illness_severity,3,1.2,2,o,,9,R-glyph,not in the Recovering State
+PANDA,4.3,Illness severity,category_illness_severity,4,2,1,•,,9,R-glyph,"The Severe State, defined as hospitalized patients:"
+PANDA,4.3,Illness severity,category_illness_severity,5,2.1,2,o,,9,R-glyph,receiving qualifying organ failure support AND
+PANDA,4.3,Illness severity,category_illness_severity,6,2.2,2,o,,9,R-glyph,not in the Recovering State
+PANDA,4.3,Illness severity,category_illness_severity,7,3,1,•,,9,R-glyph,"The Recovering State, defined as hospitalized patients who are:"
+PANDA,4.3,Illness severity,category_illness_severity,8,3.1,2,o,,9,R-glyph,clearly recovering from their acute respiratory tract infection AND
+PANDA,4.3,Illness severity,category_illness_severity,9,3.2,2,o,,9,R-glyph+R-cont,unlikely to require or receive a significant escalation in level of organ failure support for the remainder of their hospital admission
+PANDA,4.3,Illness severity,category_illness_severity,10,4,1,•,,9,R-glyph,Invasive mechanical ventilation
+PANDA,4.3,Illness severity,category_illness_severity,11,5,1,•,,9,R-glyph+R-cont,Non-invasive ventilation (bilevel positive airway pressure or continuous positive airway pressure by mask or helmet)
+PANDA,4.3,Illness severity,category_illness_severity,12,6,1,•,,9,R-glyph+R-cont,High-flow nasal oxygen with a fractional inspired oxygen concentration of 0.4 or higher and with flow rate of at least 30 liters per minute (or at least 2 liters per minute per kilogram of bodyweight in children less than 15 kilograms)
+PANDA,4.3,Illness severity,category_illness_severity,13,7,1,•,,9,R-glyph,"Continuous infusion of vasopressors, inotropes or both"
+PANDA,4.4,Specific clinical features or syndromes,category_clinical_feature,1,1,1,•,,10,R-glyph+R-cont,"Acute Hypoxemic Respiratory Failure is a State defined in two categories, present or absent, with ‘present’ defined as patients with all of the following:"
+PANDA,4.4,Specific clinical features or syndromes,category_clinical_feature,2,1.1,2,o,,10,R-glyph+R-cont,New or worsening respiratory symptoms that developed within 2 weeks prior to the onset of oxygen/respiratory support
+PANDA,4.4,Specific clinical features or syndromes,category_clinical_feature,3,1.2,2,o,,10,R-glyph+R-cont,Currently receiving respiratory support (meeting the Severe Illness Severity State organ failure definition) with FiO 2 ≥ 0.40
+PANDA,4.4,Specific clinical features or syndromes,category_clinical_feature,4,1.3,2,o,,10,R-glyph+R-cont,"The hypoxemia is caused by acute respiratory infection (and not primarily due to other causes such as acute heart failure, fluid overload, or pulmonary embolism)"
+PANDA,4.4,Specific clinical features or syndromes,category_clinical_feature,5,2,1,•,,10,R-glyph,"Hypoxemic State, defined in 3 categories comprising:"
+PANDA,4.4,Specific clinical features or syndromes,category_clinical_feature,6,2.1,2,o,,10,R-glyph,patients who are not receiving invasive mechanical ventilation
+PANDA,4.4,Specific clinical features or syndromes,category_clinical_feature,7,2.2,2,o,,10,R-glyph+R-cont,"patients who are receiving invasive mechanical ventilation and have a ratio of arterial partial pressure of oxygen to fractional inspired concentration of oxygen (P:F ratio) of ≥ 200 mmHg (or saturation to fractional inspired concentration of oxygen ratio of ≥235) or are receiving invasive mechanical ventilation with the Positive End-Expiratory Pressure (PEEP) set to less than 5 cm of water (irrespective of the P:F ratio), and"
+PANDA,4.4,Specific clinical features or syndromes,category_clinical_feature,8,2.3,2,o,,10,R-glyph+R-cont,patients who are receiving invasive mechanical ventilation with a PEEP of 5 cm of water or more and have a P:F ratio of <200 mmHg (or a S/F < 235)
+PANDA,4.4,Specific clinical features or syndromes,category_clinical_feature,9,3,1,•,,10,R-glyph+R-cont,"Acute Respiratory Distress Syndrome is a State defined in two categories, present or absent, with ‘present’ defined as patients with all of the following:"
+PANDA,4.4,Specific clinical features or syndromes,category_clinical_feature,10,3.1,2,o,,11,R-glyph+R-cont,Pulmonary edema precipitated by respiratory tract infection and not exclusively or primarily attributable to cardiac failure or fluid overload with hypoxemia not primarily attributable to atelectasis
+PANDA,4.4,Specific clinical features or syndromes,category_clinical_feature,11,3.2,2,o,,11,R-glyph,Within one week of the estimated onset of new or worsening respiratory symptoms
+PANDA,4.4,Specific clinical features or syndromes,category_clinical_feature,12,3.3,2,o,,11,R-glyph+R-cont,"Bilateral opacities on chest imaging not fully explained by effusions, atelectasis, or nodules/masses"
+PANDA,4.4,Specific clinical features or syndromes,category_clinical_feature,13,3.4,2,o,,11,R-glyph+R-cont,"Receiving respiratory support with high-flow nasal oxygen (HFNO) at a flow rate of at least 30 liters per minute (or at least 2 liters per minute per kilogram of bodyweight in children less than 15 kilograms) OR invasive mechanical ventilation (IMV), non-invasive ventilation (NIV) or continuous positive airways pressure (CPAP) with PEEP or CPAP ≥5cm H 2 O. (This criterion is not required in resource-limited settings where none of these modalities are available)"
+PANDA,4.4,Specific clinical features or syndromes,category_clinical_feature,14,3.5,2,o,,11,R-glyph+R-cont,P a O 2 :F I O 2 ratio ≤300 mmHg or S p O 2 /F I O 2 ratio ≤315 with S p O 2 ≤97% (altitude-adjusted if >1000m)
+PANDA,4.4,Specific clinical features or syndromes,category_clinical_feature,15,4,1,•,,11,R-glyph+R-cont,"Shock State, defined in two categories, present or absent, with ‘present’ defined as patients receiving a continuous infusion of intravenous vasopressor or inotrope medications"
+CS_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,1,1,1,•,,23,R-glyph,Patient is aged ≥ 28 days old (corrected gestational age)
+CS_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,2,2,1,•,,23,R-glyph,Patient has lower-respiratory tract infection
+CS_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,3,3,1,•,,23,R-glyph,"If in the Severe State, patient has pneumonia"
+CS_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,4,4,1,•,,23,R-glyph+R-cont,"If in the Moderate State, patient is receiving some form of supplemental oxygen (simple facemask, low or high flow nasal oxygen, or non-invasive ventilation)"
+CS_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,1,1,1,•,,23,R-glyph,Confirmed SARS-CoV-2 infection
+CS_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,2,2,1,•,,23,R-glyph+R-cont,"Hospital-acquired respiratory tract infection, except where the patient has confirmed influenza infection"
+CS_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,3,3,1,•,,23,R-glyph,Known hypersensitivity to any corticosteroid
+CS_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,4,4,1,•,,23,R-glyph+R-cont,"Intention to prescribe systemic corticosteroids for a reason that is unrelated to the current respiratory tract infection, such as chronic corticosteroid use before admission, acute severe asthma, or suspected or proven Pneumocystis jiroveci or COVID-19 pneumonia"
+CS_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,5,5,1,•,,23,R-glyph+R-cont,"If in the Severe State, more than 24 hours have elapsed since commencement of sustained organ failure support"
+CS_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,6,6,1,•,,23,R-glyph+R-cont,The treating clinician believes that participation in the domain would not be in the best interests of the patient
+CS_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,1,1,1,•,,24,R-glyph+R-cont,"It is recognized that there is a wide range of regulatory approaches and attitudes to the evaluation of interventions in pregnant trial participants across participating regions and sites. Known or suspected pregnancy is not an intervention-level exclusion for the fixed-course dexamethasone intervention by default; however, if a site does not have regulatory approval to enroll pregnant patients to the fixed-course dexamethasone intervention, known or suspected pregnancy will be applied as an intervention-specific exclusion and will result in exclusion from the fixed course dexamethasone intervention."
+CS_DSA,8.3.1,Corticosteroid strategy interventions,intervention,1,1,1,☐,,24,R-glyph,No corticosteroid (no placebo)
+CS_DSA,8.3.1,Corticosteroid strategy interventions,intervention,2,2,1,☐,,24,R-glyph,Shock-dependent hydrocortisone while the patient is in septic shock (Severe State only)
+CS_DSA,8.3.1,Corticosteroid strategy interventions,intervention,3,3,1,☐,,24,R-glyph,Fixed duration dexamethasone for 10 days
+CS_DSA,8.5.2,Secondary endpoints,endpoint_secondary,1,1,1,•,,27,R-glyph,serious adverse events (SAE) as defined in the Core Protocol
+CS_DSA,9.2.1,Clinical data collection,data_collection,1,1,1,•,,27,R-glyph,Administration of systemic corticosteroids
+CS_DSA,9.2.1,Clinical data collection,data_collection,2,2,1,•,,27,R-glyph+R-cont,"Administration of etomidate between index hospital admission and randomization, and between randomization and the end of study day 8"
+AB_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,1,1,1,•,,19,R-glyph,Patient has community-acquired respiratory tract infection
+AB_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,2,2,1,•,,19,R-glyph,Patient has pneumonia
+AB_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,3,3,1,•,,19,R-glyph,Empiric antibiotic therapy for bacterial pneumonia is considered appropriate
+AB_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,1,1,1,•,,19,R-glyph,Received more than 48 hours of intravenous antibiotic treatment for this index illness
+AB_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,2,2,1,•,,19,R-glyph,More than 24 hours has elapsed since commencement of sustained organ failure support
+AB_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,3,3,1,•,,19,R-glyph,"A specific antibiotic choice is indicated, for example:"
+AB_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,4,3.1,2,o,,19,R-glyph,Suspected or proven concomitant infection such as meningitis
+AB_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,5,3.2,2,o,,20,R-glyph+R-cont,"Suspected or proven infection with resistant bacteria where agents being trialed would not be expected to be active. This includes cystic fibrosis, bronchiectasis or other chronic suppurative lung disease where infection with Pseudomonas may be suspected but does not include patients with suspected methicillin-resistant staphylococcus aureus (MRSA) infection*."
+AB_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,6,3.3,2,o,,20,R-glyph+R-cont,"Febrile neutropenia or significant immunosuppression (including organ or bone marrow transplantation, human immunodeficiency virus (HIV) Infection with CD4 cell count <200 cells/µL, systemic immunosuppressive, systemic corticosteroids comprising prednisolone, or equivalent, ≥20mg/day for > 4 preceding weeks)."
+AB_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,7,3.4,2,o,,20,R-glyph,Suspected melioidosis ǂ
+AB_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,8,3.5,2,o,,20,R-glyph,There is sufficient microbiological information to guide specific antibacterial therapy
+AB_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,9,4,1,•,,20,R-glyph+R-cont,The treating clinician believes that participation in the domain would not be in the best interests of the patient
+AB_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,1,1,1,•,,21,R-glyph+R-cont,Known non-serious hypersensitivity to penicillins will result in exclusion from receiving interventions that include piperacillin and amoxicillin
+AB_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,2,2,1,•,,21,R-glyph+R-cont,Known non-serious hypersensitivity to cephalosporins will result in exclusion from receiving interventions that include ceftriaxone
+AB_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,3,3,1,•,,21,R-glyph+R-cont,"Known serious hypersensitivity to beta-lactams, including penicillins or cephalosporins, will result in exclusion from interventions that include piperacillin, amoxicillin, and ceftriaxone"
+AB_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,4,4,1,•,,21,R-glyph+R-cont,Known hypersensitivity to moxifloxacin or levofloxacin will result in exclusion from moxifloxacin or levofloxacin intervention
+AB_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,5,5,1,•,,21,R-glyph+R-cont,"Known serious hypersensitivity to the macrolide will result in exclusion from interventions that include piperacillin, amoxicillin, and ceftriaxone"
+AB_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,6,6,1,•,,21,R-glyph+R-cont,Known or suspected pregnancy will result in exclusion from moxifloxacin or levofloxacin interventions. It is normal clinical practice that women admitted who are in an age group in which pregnancy is possible will have a pregnancy test conducted. The results of such tests will be used to determine interpretation of this exclusion criteria.
+AB_DSA,8.3.1,Antibiotic interventions,intervention,1,1,1,•,,21,R-glyph,Ceftriaxone + Macrolide
+AB_DSA,8.3.1,Antibiotic interventions,intervention,2,2,1,•,,21,R-glyph,Moxifloxacin or Levofloxacin
+AB_DSA,8.3.1,Antibiotic interventions,intervention,3,3,1,•,,21,R-glyph,Piperacillin-tazobactam + Macrolide
+AB_DSA,8.3.1,Antibiotic interventions,intervention,4,4,1,•,,21,R-glyph,Amoxicillin-clavulanate + Macrolide
+AB_DSA,8.3.2,Recommended antibiotic dosing,intervention,1,1,1,•,,22,R-glyph,Ceftriaxone ≥1 gram administered intravenously (IV) once daily
+AB_DSA,8.3.2,Recommended antibiotic dosing,intervention,2,2,1,•,,22,R-glyph,"Moxifloxacin 400mg administered IV once daily, or Levofloxacin 750mg IV q24h"
+AB_DSA,8.3.2,Recommended antibiotic dosing,intervention,3,3,1,•,,22,R-glyph,Piperacillin-tazobactam ≥4.5 grams administered IV every 8 hours
+AB_DSA,8.3.2,Recommended antibiotic dosing,intervention,4,4,1,•,,22,R-glyph,Amoxicillin-clavulanate ≥1200mg administered IV every 8 hours
+AB_DSA,8.3.4,Duration of administration of antibiotics,intervention,1,1,1,•,,23,R-glyph,Change to enteral antibiotics once patient is clinically stable
+AB_DSA,8.3.4,Duration of administration of antibiotics,intervention,2,2,1,•,,23,R-glyph,Change to a targeted antibiotic therapy if a microbiological diagnosis has been made
+AB_DSA,8.3.4,Duration of administration of antibiotics,intervention,3,3,1,•,,23,R-glyph,Cease antibiotics if an alternative diagnosis is made
+AB_DSA,8.3.4,Duration of administration of antibiotics,intervention,4,4,1,•,,23,R-glyph+R-cont,"Cease antibiotics when there is evidence of sufficient clinical improvement, no microbiological diagnosis has been made and no clinical evidence of deep infection (e.g. empyema or lung abscess). The duration of antibiotic therapy will be decided by the treating clinician and local guidelines."
+AB_DSA,8.3.4,Duration of administration of antibiotics,intervention,5,5,1,•,,23,R-glyph+R-cont,Discontinuation if the patient experiences a serious adverse event (SAE) that is thought to be related to a study drug
+AB_DSA,8.3.5,Choice of macrolide,intervention,1,1,1,,,23,R-number,"IV azithromycin, with switch to enteral azithromycin when appropriate"
+AB_DSA,8.3.5,Choice of macrolide,intervention,2,2,1,,,23,R-number,"IV clarithromycin, with switch to enteral azithromycin when appropriate"
+AB_DSA,8.3.5,Choice of macrolide,intervention,3,3,1,,,23,R-number,Enteral azithromycin
+AB_DSA,8.3.5,Choice of macrolide,intervention,4,4,1,,,23,R-number,Enteral clarithromycin or roxithromycin
+AB_DSA,8.3.5,Choice of macrolide,intervention,5,5,1,,,23,R-number+R-cont,IV or enteral erythromycin. Sites in which only erythromycin is available are not able to participate in the Macrolide Duration Domain.
+AB_DSA,8.5.2,Secondary endpoints,endpoint_secondary,1,1,1,•,,24,R-glyph+R-cont,"Multi-resistant organisms (MRO) colonization/infection: Isolation of multi-drug resistant (MDR) bacteria from clinical or screening specimens including vancomycin resistant enterococci (VRE), MRSA, extended spectrum beta-lactamase (ESBL)-producing enterobacteriaceae, carbapenem resistant enterobacteriaceae (CRE)."
+AB_DSA,8.5.2,Secondary endpoints,endpoint_secondary,2,2,1,•,,25,R-glyph+R-cont,C. difficile illness based on detection from feces using current standard of care diagnostics used at site
+AB_DSA,8.5.2,Secondary endpoints,endpoint_secondary,3,3,1,•,,25,R-glyph,Serious adverse event (SAE) as defined in Core Protocol
+AB_DSA,9.2,Domain-specific data collection,data_collection,1,1,1,•,,25,R-glyph,Isolation or detection of MROs
+AB_DSA,9.2,Domain-specific data collection,data_collection,2,2,1,•,,25,R-glyph,C. difficile isolation from feces
+TAB_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,1,1,1,•,,19,R-glyph,Patient has community-acquired respiratory tract infection
+TAB_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,2,2,1,•,,19,R-glyph,Patient has pneumonia
+TAB_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,3,3,1,•,,19,R-glyph+R-cont,Empiric antibiotic therapy for bacterial pneumonia including melioidosis is considered appropriate
+TAB_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,1,1,1,•,,19,R-glyph,Received more than 48 hours of intravenous antibiotic treatment for this index illness
+TAB_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,2,2,1,•,,19,R-glyph,More than 24 hours has elapsed since commencement of sustained organ failure support
+TAB_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,3,3,1,•,,19,R-glyph,"A specific antibiotic choice is indicated, for example:"
+TAB_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,4,3.1,2,o,,19,R-glyph,Suspected or proven concomitant infection such as meningitis
+TAB_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,5,3.2,2,o,,19,R-glyph+R-cont,"Suspected or proven infection with resistant bacteria where agents being trialed would not be expected to be active. This includes cystic fibrosis, bronchiectasis or other chronic suppurative lung disease where infection with Pseudomonas may be suspected but does not include patients with suspected methicillin-resistant staphylococcus aureus (MRSA) infection*."
+TAB_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,6,3.3,2,o,,19,R-glyph+R-cont,"Febrile neutropenia or significant immunosuppression (including organ or bone marrow transplantation, human immunodeficiency virus infection with CD4 cell count <200 cells/µL, systemic immunosuppressive, systemic corticosteroids comprising prednisolone, or equivalent, ≥20mg/day for > 4 preceding weeks)."
+TAB_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,7,3.4,2,o,,19,R-glyph,There is sufficient microbiological information to guide specific antibacterial therapy
+TAB_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,8,4,1,•,,19,R-glyph+R-cont,The treating clinician believes that participation in the domain would not be in the best interests of the patient
+TAB_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,1,1,1,•,,20,R-glyph+R-cont,Known hypersensitivity to carbapenems will result in exclusion from receiving interventions that include meropenem
+TAB_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,2,2,1,•,,20,R-glyph+R-cont,"Known serious hypersensitivity to beta-lactams, including penicillins or cephalosporins, will result in exclusion from interventions that include amoxicillin and ceftazidime"
+TAB_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,3,3,1,•,,20,R-glyph+R-cont,Known serious hypersensitivity to macrolides will result in exclusion from interventions that include macrolides
+TAB_DSA,8.3.1,Antibiotic interventions,intervention,1,1,1,•,,20,R-glyph,Amoxicillin-clavulanate + Ceftazidime + Macrolide
+TAB_DSA,8.3.1,Antibiotic interventions,intervention,2,2,1,•,,20,R-glyph,Meropenem + Macrolide
+TAB_DSA,8.3.2,Recommended antibiotic dosing,intervention,1,1,1,•,,20,R-glyph,Ceftazidime 2 grams administered intravenously (IV) every 8 hours
+TAB_DSA,8.3.2,Recommended antibiotic dosing,intervention,2,2,1,•,,20,R-glyph,Amoxicillin-clavulanate 1.2 grams administered IV every 8 hours
+TAB_DSA,8.3.2,Recommended antibiotic dosing,intervention,3,3,1,•,,20,R-glyph,Meropenem 1 gram administered IV every 8 hours
+TAB_DSA,8.3.4,Duration of administration of antibiotics,intervention,1,1,1,•,,22,R-glyph+R-cont,"Change to targeted antibiotic therapy if a causative microbiological diagnosis has been made, and continue assigned melioidosis-specific treatment (ceftazidime or meropenem) if melioidosis is confirmed, and transition to oral eradication therapy based on local practices and guidelines (usually trimethoprim-sulfamethoxazole for 3-6 months)."
+TAB_DSA,8.3.4,Duration of administration of antibiotics,intervention,2,2,1,•,,22,R-glyph,Change to enteral antibiotics once the patient is clinically stable.
+TAB_DSA,8.3.4,Duration of administration of antibiotics,intervention,3,3,1,•,,22,R-glyph,Cease antibiotics if an alternative diagnosis is made.
+TAB_DSA,8.3.4,Duration of administration of antibiotics,intervention,4,4,1,•,,22,R-glyph+R-cont,"Cease antibiotics when there is evidence of sufficient clinical improvement, no microbiological diagnosis has been made and no clinical evidence of deep infection (e.g., empyema or lung abscess). The duration of antibiotic therapy will be decided by the treating clinician and local guidelines."
+TAB_DSA,8.3.4,Duration of administration of antibiotics,intervention,5,5,1,•,,22,R-glyph+R-cont,Discontinuation if the patient experiences a serious adverse event (SAE) that is thought to be related to a study drug.
+TAB_DSA,8.3.5,Choice of macrolide,intervention,1,1,1,,,22,R-number,"IV azithromycin, with switch to enteral azithromycin when appropriate"
+TAB_DSA,8.3.5,Choice of macrolide,intervention,2,2,1,,,22,R-number,"IV clarithromycin, with switch to enteral azithromycin when appropriate"
+TAB_DSA,8.3.5,Choice of macrolide,intervention,3,3,1,,,22,R-number,Enteral azithromycin
+TAB_DSA,8.3.5,Choice of macrolide,intervention,4,4,1,,,22,R-number,Enteral clarithromycin or roxithromycin
+TAB_DSA,8.3.5,Choice of macrolide,intervention,5,5,1,,,22,R-number+R-cont,IV or enteral erythromycin. Sites in which only erythromycin is available are not able to participate in the Macrolide Duration Domain.
+TAB_DSA,8.5.2,Secondary endpoints,endpoint_secondary,1,1,1,•,,23,R-glyph+R-cont,"Multi-resistant organisms (MRO) colonization/infection: Isolation of multi-drug resistant bacteria from clinical or screening specimens including vancomycin resistant enterococci (VRE), MRSA, extended spectrum beta-lactamase (ESBL)-producing Enterobacteriaceae, carbapenem resistant Enterobacteriaceae."
+TAB_DSA,8.5.2,Secondary endpoints,endpoint_secondary,2,2,1,•,,23,R-glyph+R-cont,C. difficile illness based on detection from feces using current standard of care diagnostics used at site
+TAB_DSA,8.5.2,Secondary endpoints,endpoint_secondary,3,3,1,•,,23,R-glyph,Serious adverse event (SAE) as defined in Core Protocol
+TAB_DSA,9.2,Domain-specific data collection,data_collection,1,1,1,•,,24,R-glyph,Isolation or detection of MROs
+TAB_DSA,9.2,Domain-specific data collection,data_collection,2,2,1,•,,24,R-glyph,C. difficile detection from feces
+IAV_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,1,1,1,•,,18,R-glyph,Patient is aged ≥ 28 days old
+IAV_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,2,2,1,•,,18,R-glyph,Influenza infection has been confirmed by microbiological testing.
+IAV_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,1,1,1,•,,18,R-glyph,"If in the Moderate State, more than 96 hours has elapsed since hospital admission"
+IAV_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,2,2,1,•,,18,R-glyph+R-cont,"If in the Severe State, more than 48 hours has elapsed since commencement of sustained organ failure support"
+IAV_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,3,3,1,•,,18,R-glyph+R-cont,Patient has already received two or more doses of oseltamivir or other neuraminidase inhibitors
+IAV_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,4,4,1,•,,18,R-glyph,Patient has already received one or more doses of baloxavir
+IAV_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,5,5,1,•,,18,R-glyph+R-cont,"Patient is already receiving, or a clinical decision has been made to commence, an antiviral active against influenza other than oseltamivir or baloxavir."
+IAV_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,6,6,1,•,,18,R-glyph+R-cont,The treating clinician believes that participation in the domain would not be in the best interests of the patient
+IAV_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,1,1,1,•,,19,R-glyph+R-cont,Known hypersensitivity to an agent specified as an intervention in this domain will exclude a patient from receiving that agent
+IAV_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,2,2,1,•,,19,R-glyph+R-cont,Known or suspected pregnancy will result in exclusion from interventions that include baloxavir
+IAV_DSA,8.3.1,Antiviral interventions,intervention,1,1,1,☒,,19,R-glyph,No antiviral agent (no placebo)
+IAV_DSA,8.3.1,Antiviral interventions,intervention,2,2,1,☐,,19,R-glyph,Oseltamivir twice daily for five days
+IAV_DSA,8.3.1,Antiviral interventions,intervention,3,3,1,☐,,19,R-glyph,Baloxavir on days 1 and 4 after reveal of randomized treatment assignment
+IAV_DSA,8.3.1,Antiviral interventions,intervention,4,4,1,☐,,19,R-glyph+R-cont,Oseltamivir twice daily for 5 days + baloxavir on days 1 and 4 after reveal of randomized treatment assignment
+IAV_DSA,9.2.1,Clinical data collection,data_collection,1,1,1,•,,21,R-glyph,Administration of antiviral medications active against influenza
+MD_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,1,1,1,•,,16,R-glyph+R-cont,There is microbiological confirmation or the clinician strongly suspects Legionella or any other form of atypical pneumonia
+MD_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,2,2,1,•,,16,R-glyph,Macrolide antibiotics have already been discontinued for more than 36 hours
+MD_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,3,3,1,•,,16,R-glyph+R-cont,The treating clinician believes that participation in the domain would not be in the best interests of the patient
+MD_DSA,8.3.1,Macrolide intervention,intervention,1,1,1,•,,17,R-glyph+R-cont,"Standard course macrolide discontinued between day 3 and day 5 or at hospital discharge, whichever occurs first"
+MD_DSA,8.3.1,Macrolide intervention,intervention,2,2,1,•,,17,R-glyph,"Extended course macrolide for 14 days or hospital discharge, whichever occurs first"
+MD_DSA,8.3.2,Macrolide administration and dosing,intervention,1,1,1,•,,17,R-glyph,Initial intravenous (IV) administration of a macrolide is strongly preferred
+MD_DSA,8.3.2,Macrolide administration and dosing,intervention,2,2,1,•,,17,R-glyph,"The preferred IV macrolide is azithromycin, but IV clarithromycin may be substituted."
+MD_DSA,8.3.2,Macrolide administration and dosing,intervention,3,3,1,•,,17,R-glyph+R-cont,"The preferred enteral macrolide is azithromycin, but enteral clarithromycin or roxithromycin may be substituted."
+MD_DSA,8.3.2,Macrolide administration and dosing,intervention,4,4,1,•,,17,R-glyph+R-cont,Sites where erythromycin is the only available macrolide will not be able to participate in this domain.
+MD_DSA,8.5.2,Secondary endpoints,endpoint_secondary,1,1,1,•,,19,R-glyph+R-cont,Serious ventricular arrhythmia (including ventricular fibrillation) or sudden unexpected death in hospital
+MD_DSA,8.5.2,Secondary endpoints,endpoint_secondary,2,2,1,•,,19,R-glyph,Serious Adverse Events (SAE) as defined in Core Protocol
+MD_DSA,9.2.1,Clinical data collection,data_collection,1,1,1,•,,19,R-glyph+R-cont,Serious ventricular arrhythmia (including ventricular fibrillation) or sudden unexpected death in hospital.
+MD_DSA,9.2.1,Clinical data collection,data_collection,2,2,1,•,,19,R-glyph,SAE as defined in Core Protocol
+IG_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,1,1,1,•,,24,R-glyph,Patient is aged ≥ 16 years old
+IG_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,2,2,1,•,,24,R-glyph,SARS-CoV-2 infection is confirmed by microbiological testing
+IG_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,3,3,1,•,,24,R-glyph+R-cont,"Patient has an underlying immunodeficiency or has received recent immunosuppressant therapy, corresponding to the APACHE II definitions (Knaus et al., 1985) , extended to take into account equivalent forms of immunosuppressant therapy that post-date the APACHE II definitions."
+IG_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,1,1,1,•,,25,R-glyph+R-cont,More than 48 hours has elapsed since commencement of sustained organ failure support in an ICU
+IG_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,2,2,1,•,,25,R-glyph+R-cont,"Patient has already received treatment with any non-trial prescribed polyclonal antibody therapy (hyperimmune immunoglobulin, or convalescent plasma) intended to be active against COVID-19 during this acute illness."
+IG_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,3,3,1,•,,25,R-glyph,More than 14 days have elapsed since hospital admission
+IG_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,4,4,1,•,,25,R-glyph+R-cont,The treating clinician believes that participation in the domain would not be in the best interests of the patient
+IG_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,1,1,1,•,,25,R-glyph+R-cont,Known hypersensitivity/allergy to an agent specified as an intervention in this domain will exclude a patient from receiving that agent
+IG_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,2,2,1,•,,25,R-glyph+R-cont,Known previous history of transfusion-related acute lung injury will exclude a patient from receiving high titer plasma
+IG_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,3,3,1,•,,25,R-glyph+R-cont,Known objection to receiving plasma products will exclude a patient from receiving any plasma components
+IG_DSA,8.3.1,Immunoglobulin Therapy Interventions,intervention,1,1,1,•,,25,R-glyph,No immunoglobulin against COVID-19 (no placebo)
+IG_DSA,8.3.1,Immunoglobulin Therapy Interventions,intervention,2,2,1,•,,25,R-glyph,High titer convalescent plasma
+IG_DSA,8.5.2,Secondary endpoints,endpoint_secondary,1,1,1,•,,27,R-glyph,All-cause mortality at 28 days censored at hospital discharge
+IG_DSA,8.5.2,Secondary endpoints,endpoint_secondary,2,2,1,•,,27,R-glyph,Confirmed deep venous thrombosis
+IG_DSA,8.5.2,Secondary endpoints,endpoint_secondary,3,3,1,•,,27,R-glyph,Confirmed pulmonary embolism
+IG_DSA,8.5.2,Secondary endpoints,endpoint_secondary,4,4,1,•,,27,R-glyph,Confirmed ischemic stroke
+IG_DSA,8.5.2,Secondary endpoints,endpoint_secondary,5,5,1,•,,27,R-glyph,Confirmed acute myocardial infarction
+IG_DSA,8.5.2,Secondary endpoints,endpoint_secondary,6,6,1,•,,27,R-glyph,Other confirmed thrombotic events
+IG_DSA,8.5.2,Secondary endpoints,endpoint_secondary,7,7,1,•,,27,R-glyph+R-cont,Serious Adverse Events (SAE) as defined in Core Protocol documents and qualified in this DSA
+IG_DSA,9.1,Domain-specific data collection,data_collection,1,1,1,•,,27,R-glyph,SARS-CoV-2 antibody status at baseline
+IG_DSA,9.1,Domain-specific data collection,data_collection,2,2,1,•,,27,R-glyph,Cause of immunosuppression at baseline
+IG_DSA,9.1,Domain-specific data collection,data_collection,3,3,1,•,,27,R-glyph,Transfusion-transmitted infection occurring at any time during the study
+IG_DSA,9.1,Domain-specific data collection,data_collection,4,4,1,•,,27,R-glyph+R-cont,"Serious clinically diagnosed arterial (e.g. myocardial infarction (MI), cerebrovascular accident (CVA), mesenteric arterial thrombosis) or venous thrombotic events (e.g. deep vein thrombosis (DVT), pulmonary embolism (PE), portal or mesenteric venous thrombosis, or cortical venous sinus thrombosis) occurring during the index hospitalization censored at day 90 after enrolment."
+IG_DSA,9.1,Domain-specific data collection,data_collection,5,5,1,•,,27,R-glyph+R-cont,Viral variants. Method of viral testing and analysis will vary from country to country and will be within country-specific testing guidance document.
+MV_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,1,1,1,•,,26,R-glyph,Receiving invasive mechanical ventilation
+MV_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,2,2,1,•,,26,R-glyph+R-cont,The most recent PaO 2 :FiO 2 ratio obtained within the preceding 6 hours is less than 200 mmHg
+MV_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,3,3,1,•,,26,R-glyph+R-cont,Treating clinician expects the patient to still require invasive mechanical ventilation tomorrow.
+MV_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,4,4,1,•,,27,R-glyph+R-cont,Treating clinician regards Protocolized Mechanical Ventilation Strategy or their preferred mechanical ventilation strategy as (equally) appropriate for this patient.
+MV_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,1,1,1,•,,27,R-glyph+R-cont,More than 48 hours has elapsed since commencement of invasive mechanical ventilation
+MV_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,2,2,1,•,,27,R-glyph+R-cont,The treating clinician believes that participation in this domain is not in the best interests of the patient.
+MV_DSA,8.3.1,Mechanical Ventilation Interventions,intervention,1,1,1,•,,27,R-glyph,Protocolized mechanical ventilation strategy
+MV_DSA,8.3.1,Mechanical Ventilation Interventions,intervention,2,2,1,•,,27,R-glyph,Clinician-preference mechanical ventilation strategy
+MV_DSA,8.5.2,Secondary endpoints,endpoint_secondary,1,1,1,•,,30,R-glyph,Administration of rescue therapies
+MV_DSA,8.5.2,Secondary endpoints,endpoint_secondary,2,2,1,•,,30,R-glyph,Occurrence of barotrauma
+MV_DSA,8.5.2,Secondary endpoints,endpoint_secondary,3,3,1,•,,30,R-glyph,SAE as defined in the core protocol documents and qualified in this DSA
+MV_DSA,9.1.1,Clinical data collection,data_collection,1,1,1,•,,31,R-glyph,"Baseline ventilatory, physiological parameters and arterial blood gas parameters"
+MV_DSA,9.1.1,Clinical data collection,data_collection,2,2,1,•,,31,R-glyph,Daily ventilatory and physiological parameters and arterial blood gas parameters
+MV_DSA,9.1.1,Clinical data collection,data_collection,3,3,1,•,,31,R-glyph,"Daily targets for physiological parameters, if specified"
+MV_DSA,9.1.1,Clinical data collection,data_collection,4,4,1,•,,31,R-glyph,Occurrence and duration of prone ventilation
+MV_DSA,9.1.1,Clinical data collection,data_collection,5,5,1,•,,31,R-glyph,Administration of rescue therapies
+MV_DSA,9.1.1,Clinical data collection,data_collection,6,6,1,•,,31,R-glyph,Occurrence of barotrauma
+END_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,1,1,1,•,,27,R-glyph,Patient is aged ≥ 18 years old
+END_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,2,2,1,•,,27,R-glyph,Patient has community-acquired respiratory tract infection
+END_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,3,3,1,•,,27,R-glyph,Patient has pneumonia
+END_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,1,1,1,•,,27,R-glyph,More than 48 hours has elapsed since commencement of sustained organ failure support.
+END_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,2,2,1,•,,27,R-glyph+R-cont,"Patient is already receiving or a clinical decision has been made to commence imatinib or another tyrosine kinase inhibitor targeting the same pathway as imatinib (i.e. dasatinib, nilotinib, ponatinib)"
+END_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,3,3,1,•,,27,R-glyph+R-cont,"Patient was receiving imatinib or another tyrosine kinase inhibitor targeting the same pathway as imatinib (i.e. dasatinib, nilotinib, ponatinib) prior to this hospital admission"
+END_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,4,4,1,•,,27,R-glyph+R-cont,The treating clinician believes that participation in the domain would not be in the best interests of the patient
+END_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,1,1,1,•,,28,R-glyph+R-cont,Known hypersensitivity to an agent specified as an intervention in this domain will exclude a patient from receiving that agent.
+END_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,2,2,1,•,,28,R-glyph+R-cont,Known or suspected pregnancy or breast-feeding will exclude a patient from receiving enteral imatinib. It is normal practice that women admitted who are in an age group in which pregnancy is considered possible will have a pregnancy test conducted. The results of such tests will be used to determine interpretation of this exclusion criteria
+END_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,3,3,1,•,,28,R-glyph,Known viral hepatitis B or hepatitis C will exclude a patient from receiving imatinib
+END_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,4,4,1,•,,28,R-glyph+R-cont,Severe renal impairment (eGFR <30 mL/min/1.73m 2 ) and/or receipt of renal replacement therapy (including long-term renal replacement therapy) at baseline will result in exclusion from receiving imatinib
+END_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,5,5,1,•,,28,R-glyph+R-cont,Known severe liver disease or an alanine aminotransferase (ALT) or an aspartate aminotransferase (AST) that is more than five times the upper limit of normal or bilirubin more than three times the upper limit of normal will exclude a patient from receiving enteral imatinib
+END_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,6,6,1,•,,28,R-glyph,A baseline platelet count <50 x10 9 /L will exclude a patient from receiving enteral imatinib
+END_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,7,7,1,•,,28,R-glyph+R-cont,A baseline neutrophil count <1.0 x 10 9 /L will exclude a patient from receiving enteral imatinib
+END_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,8,8,1,•,,28,R-glyph+R-cont,"Receiving strong CYP3A4 inhibitors (e.g. ketoconazole, itraconazole, erythromycin) or inducers (e.g. rifampicin, phenobarbital, carbamazepine, phenytoin) will exclude a patient receiving enteral imatinib"
+END_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,9,9,1,•,,28,R-glyph+R-cont,"Receiving immune suppressive therapy with a calcineurin inhibitor (e.g. cyclosporine, tacrolimus), everolimus or sirolimus will exclude a patient from receiving enteral imatinib"
+END_DSA,8.3.1,Endothelial Modulation Domain Interventions,intervention,1,1,1,☐,,29,R-glyph,No Endothelial modulator therapy
+END_DSA,8.3.1,Endothelial Modulation Domain Interventions,intervention,2,2,1,☐,,29,R-glyph,Enteral imatinib
+END_DSA,8.3.6,Discontinuation of study intervention,intervention,1,1,1,•,,29,R-glyph+R-cont,"If a patient develops neutropenia (neutrophil count <1.0 x 10 9 /L) and/or thrombocytopenia (platelet count <50 x 10 9 /L), stop imatinib and do not restart"
+END_DSA,8.3.6,Discontinuation of study intervention,intervention,2,2,1,•,,30,R-glyph+R-cont,"If a patient develops elevation in bilirubin 3 times the upper limit of normal or ALT/AST 5 times the upper limit of normal, imatinib should be discontinued and not restarted"
+END_DSA,8.3.6,Discontinuation of study intervention,intervention,3,3,1,•,,30,R-glyph+R-cont,"If a patient develops a severe adverse reaction, imatinib should be discontinued and not restarted"
+END_DSA,8.5.2,Secondary endpoints,endpoint_secondary,1,1,1,•,,31,R-glyph,Severe thrombocytopenia (defined as platelet count <50 x 10 9 /L)
+END_DSA,8.5.2,Secondary endpoints,endpoint_secondary,2,2,1,•,,31,R-glyph,Severe neutropenia (defined as neutrophil count <1.0 x 10 9 /L)
+END_DSA,8.5.2,Secondary endpoints,endpoint_secondary,3,3,1,•,,31,R-glyph,Major bleeding (as defined by the ISTH criteria)
+END_DSA,8.5.2,Secondary endpoints,endpoint_secondary,4,4,1,•,,31,R-glyph,Increase in AST or ALT to 5 x ULN or bilirubin 3 x ULN
+END_DSA,8.5.2,Secondary endpoints,endpoint_secondary,5,5,1,•,,31,R-glyph,Confirmed proximal deep venous thrombosis
+END_DSA,8.5.2,Secondary endpoints,endpoint_secondary,6,6,1,•,,31,R-glyph,Confirmed pulmonary embolism
+END_DSA,8.5.2,Secondary endpoints,endpoint_secondary,7,7,1,•,,31,R-glyph,Acute myocardial infarction
+END_DSA,8.5.2,Secondary endpoints,endpoint_secondary,8,8,1,•,,31,R-glyph,Confirmed ischemic cerebrovascular event
+END_DSA,8.5.2,Secondary endpoints,endpoint_secondary,9,9,1,•,,31,R-glyph,Other thrombotic events
+END_DSA,8.5.2,Secondary endpoints,endpoint_secondary,10,10,1,•,,31,R-glyph,Serious adverse events as defined in relevant core protocol documents and this DSA
+END_DSA,9.2,Domain-specific data collection,data_collection,1,1,1,•,,32,R-glyph+R-cont,Baseline and nadir platelet and neutrophil counts (between randomization and day 15) and date of nadir result
+END_DSA,9.2,Domain-specific data collection,data_collection,2,2,1,•,,32,R-glyph,"Baseline and peak AST, ALT and bilirubin (between randomization and day 15)"
+END_DSA,9.2,Domain-specific data collection,data_collection,3,3,1,•,,32,R-glyph,Administration of imatinib
+END_DSA,9.2,Domain-specific data collection,data_collection,4,4,1,•,,32,R-glyph+R-cont,Administration of immune modulatory agents intended to influence host response to infection
+END_DSA,9.2,Domain-specific data collection,data_collection,5,5,1,•,,32,R-glyph,Administration of anticoagulation or antiplatelet therapy
+IIM_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,1,1,1,•,,26,R-glyph,Patient is aged ≥2 years
+IIM_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,2,2,1,•,,26,R-glyph,Influenza virus infection has been confirmed by microbiological testing
+IIM_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,3,3,1,•,,26,R-glyph+R-cont,"In the opinion of the treating clinician, the primary contributor to the patient’s Severe Illness State is a respiratory tract infection"
+IIM_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,4,4,1,•,,26,R-glyph,Patient has community-acquired respiratory tract infection
+IIM_DSA,8.2.1,Domain inclusion criteria,domain_inclusion,5,5,1,•,,26,R-glyph,Patient has pneumonia
+IIM_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,1,1,1,•,,26,R-glyph,SARS-CoV-2 infection has been confirmed by microbiological testing
+IIM_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,2,2,1,•,,26,R-glyph,More than 48 hours has elapsed since commencement of sustained organ failure support
+IIM_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,3,3,1,•,,26,R-glyph+R-cont,"Known condition or treatment resulting in ongoing immune suppression, including neutropenia, prior to this hospitalization"
+IIM_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,4,4,1,•,,26,R-glyph,A neutrophil count <1.0 x 10 9 / L
+IIM_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,5,5,1,•,,26,R-glyph,Confirmed or strongly-suspected active mycobacterial infection or invasive fungal infection
+IIM_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,6,6,1,•,,26,R-glyph+R-cont,"Patient has already received any dose of one or more of any form of tocilizumab or another IL-6 receptor antagonist (e.g. sarilumab), baricitinib or another JAK inhibitor (e.g. tofacitinib, ruxolitinib or upadacitinib) during this hospitalization or is on long-term therapy with any of these agents prior to this hospital admission."
+IIM_DSA,8.2.2,Domain exclusion criteria,domain_exclusion,7,7,1,•,,27,R-glyph+R-cont,The treating clinician believes that participation in the domain would not be in the best interests of the patient
+IIM_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,1,1,1,•,,27,R-glyph+R-cont,Known hypersensitivity to an agent specified as an intervention in this domain will exclude a patient from receiving that agent.
+IIM_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,2,2,1,•,,27,R-glyph+R-cont,Known or suspected pregnancy will result in exclusion from the baricitinib intervention. It is normal clinical practice that women admitted who are in an age group in which pregnancy is possible will have a pregnancy test conducted. The results of such tests will be used to determine interpretation of this exclusion criteria.
+IIM_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,3,3,1,•,,27,R-glyph+R-cont,"It is recognised that there is a wide range of regulatory approaches and attitudes to the evaluation of interventions in pregnant trial participants across participating regions and sites. Known or suspected pregnancy is not an intervention-level exclusion for the tocilizumab intervention by default; however, if a site does not have regulatory approval to enrol pregnant patients to the tocilizumab intervention, known or suspected pregnancy will be applied as an intervention-specific exclusion and will result in exclusion from the tocilizumab intervention."
+IIM_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,4,4,1,•,,27,R-glyph+R-cont,An alanine aminotransferase or an aspartate aminotransferase that is more than five times the upper limit of normal will result in exclusion from receiving tocilizumab
+IIM_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,5,5,1,•,,27,R-glyph,A platelet count < 50 x 10 9 / L will result in exclusion from receiving tocilizumab
+IIM_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,6,6,1,•,,27,R-glyph+R-cont,"In adults and in children ≥ 9 years of age, a baseline eGFR <15 mL/min/1.73m 2 and/or receipt of renal replacement therapy (including long-term renal replacement therapy) at baseline will result in exclusion from receiving baricitinib"
+IIM_DSA,8.2.3,Intervention exclusion criteria,intervention_exclusion,7,7,1,•,,28,R-glyph+R-cont,"In children aged >2 years and <9 years, a baseline eGFR <30 mL/min/1.73m 2 and/or receipt of renal replacement therapy (including long-term renal replacement therapy) at baseline will result in exclusion from receiving baricitinib"
+IIM_DSA,8.3.1,Influenza Immune Modulation Domain Interventions,intervention,1,1,1,☐,,28,R-glyph,No immune modulation (no placebo)
+IIM_DSA,8.3.1,Influenza Immune Modulation Domain Interventions,intervention,2,2,1,☐,,28,R-glyph,Tocilizumab
+IIM_DSA,8.3.1,Influenza Immune Modulation Domain Interventions,intervention,3,3,1,☐,,28,R-glyph,Baricitinib
+IIM_DSA,8.5.2,Secondary endpoints,endpoint_secondary,1,1,1,•,,30,R-glyph+R-cont,Positive blood culture for pathogenic bacteria and/or fungus during this hospitalization and more than 48 hours following randomization
+IIM_DSA,8.5.2,Secondary endpoints,endpoint_secondary,2,2,1,•,,30,R-glyph+R-cont,"Pulmonary aspergillosis, during this hopsitalization and more than 48 hours following randomization, defined as culture of Aspergillus species from tracheal aspirate or bronchoalveolar lavage or invasive pulmonary aspergillosis diagnosed and treated with one or more systemic antifungal agent"
+IIM_DSA,8.5.2,Secondary endpoints,endpoint_secondary,3,3,1,•,,30,R-glyph,Serious adverse event (SAE) as defined in Core Protocol
+IIM_DSA,9.2,Domain-specific data collection,data_collection,1,1,1,•,,31,R-glyph,"Virologic endpoints, at selected sites:"
+IIM_DSA,9.2,Domain-specific data collection,data_collection,2,1.1,2,o,,31,R-glyph+R-cont,"Change from baseline in influenza virus levels, measured from upper or lower respiratory tract specimens taken while the patient remains in hospital at baseline, D3 and at D7 ."
+IIM_DSA,9.2,Domain-specific data collection,data_collection,3,2,1,•,,31,R-glyph,Results of culture of blood for pathogenic bacteria and/or fungus during this hospitalization
+IIM_DSA,9.2,Domain-specific data collection,data_collection,4,3,1,•,,31,R-glyph+R-cont,Hospitalization or death due to major adverse cardiovascular events (at sites where linked data are available)
+IIM_DSA,9.2,Domain-specific data collection,data_collection,5,4,1,•,,31,R-glyph+R-cont,Pregnancy outcomes will be collected for patients who are pregnant at the time of randomization to this domain.

@@ -1,0 +1,11 @@
+q_id,question,requirements
+Q1,When are two occurrences in different documents the same component?,R-ID
+Q2,Which content is shared across sub-studies but stated as shared in no document?,R-COMMON
+Q3,What does a new sub-study inherit before anything is written for it?,R-LAYER;R-GAP
+Q4,What is specific to one sub-study only?,R-LAYER
+Q5,"Which hand-overs to a child are never answered, or point at content that is not available?",R-GAP
+Q6,"Which defaults does a child take, override or stay silent on?",R-LAYER;R-GAP
+Q7,Which child statements are affected when a parent document changes?,R-VERSION
+Q8,"Which documents make up the set a sub-study depends on, and is that set stated?",R-DOCSET
+Q9,Where does a schedule depend on an event inside a visit?,R-ANCHOR
+Q10,"Why was a design choice made, and what else was considered?",R-DECISION

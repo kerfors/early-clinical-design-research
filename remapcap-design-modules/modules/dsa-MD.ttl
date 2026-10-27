@@ -1,0 +1,873 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rcap: <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-MD> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/about>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/core> .
+
+rcap:Domain_MD a owl:Class ;
+    rdfs:label "Macrolide Duration domain" ;
+    rdfs:subClassOf _:N82b4798827ca4e51ac8e52cedf5c0060,
+        _:Nab99b582d8ea4e15971b29e1abae6130,
+        rcap:Domain .
+
+rcap:DomainDesign_MD a owl:Class ;
+    rdfs:label "REMAP-CAP Macrolide Duration Domain-Specific Appendix 4 design" ;
+    rdfs:subClassOf _:N07affc6dc00e4f9381ce92530664c069,
+        _:N0a56604ccfbe4bfeb1a590736897af57,
+        _:N25a25d6b1ce64aeea42d679fbad57727,
+        _:N26f5a54f848a4ba3b09c5cc03224b195,
+        _:N2c2e55e24e48428a880c9f93f038eb40,
+        _:N2cd0278e560345f08fcb25c8d13ed4fc,
+        _:N2fbd9ac7c37f4955a5a76ad2df962631,
+        _:N3887e2822628490aa5aaad742d33ade5,
+        _:N390e55bd897f4ef8b2504920c67cb98f,
+        _:N49fe077847804818bab2ee369c52e73f,
+        _:N4fecf8d854f64af9ad72874234d7671b,
+        _:N50ee0c5360fa4739a95760f01ae4904f,
+        _:N518fad71b6874c609f4dbfa854e7ae4b,
+        _:N52e2267b1e0f452db5f6cfb6c51aa90c,
+        _:N5f3c6ee655fb43b899f9b639b2d4a5ff,
+        _:N6599b036e7f8450caade16066cf20161,
+        _:N669171b46701490a909ef5e325a82a65,
+        _:N67c69e394d124ba8aa62decad77c3abf,
+        _:N6bbffd8424ed4858978f283bd5f9fa38,
+        _:N6e81c9d28a7d4e9c8492c73802b9a747,
+        _:N7545d990903c467cb48166ff1d0eb084,
+        _:N7990ad003bc348f9a936196d0ff24d30,
+        _:N8394a39d55b2476a9435a35660cb9fbd,
+        _:N86195bd8086a4838b8ac989563696cf6,
+        _:N8a825c909b514f4090eb7026fdbf7ced,
+        _:N8e60587b73004e16a3033b89673ac9b4,
+        _:N8e9a2a4d70724fdcaa2c2db9e8ad41ea,
+        _:N96598122527c462dbb71a5d314b4bc6d,
+        _:N983ac27f245542a0b650863ccfe95c0f,
+        _:N9b41cf2d36294995acc14ebfa18cba39,
+        _:N9f0387f2bb20451787eae7ff922768ec,
+        _:Na0ebad92dab741e996c50941d922b64e,
+        _:Nab319cb34a5d441e940017b31dd3674c,
+        _:Nb097d69dd669412a840fd2bf1ae416b3,
+        _:Nb34b860f35594565a1207dc1ea0fe534,
+        _:Nb455405ba27548b0b9853c3aa289fb25,
+        _:Nb4ce850e5db94ecbbdadf71650b21c04,
+        _:Nc51d13abe6ba42ab9ff1c48a7e5ac97b,
+        _:Ncc0ea454abbc4cdc9826420a9309ff1a,
+        _:Nd57498bea9bf483ea175b39ad7d8ece2,
+        _:Nd8941b257f8849e9b864c74a4ac8e090,
+        _:Nda40157ac3da47bc9cd1098e761ce20d,
+        _:Ne1c9c5125f48407994e1a040f4433736,
+        _:Ne2f0340ce43e49d9a6edb2c1300076b3,
+        _:Ne456cb78fb9d4b44a374adda181043fd,
+        _:Ne54109ce77344c71b79e456731695b1c,
+        _:Ne893da4c95e949208ab97c86c4bf7bcf,
+        _:Neba44778b2d540fea40d8858ed90f43f,
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000051 ;
+            owl:someValuesFrom rcap:Domain_MD ],
+        _:Nf41c8f4486604175a6ddab8cbed24b68,
+        _:Nf7eb539861ba4f55971da34fbea6bd37,
+        _:Nf89f45c471284d25a798cde28d0d774b,
+        _:Nfd731772e2344b7a95a80eecd676cd1e,
+        rcap:CoreDesign ;
+    rcap:documentDate "5 Nov 2024" ;
+    rcap:documentTitle "Macrolide Duration Domain-Specific Appendix 4" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:Neba44778b2d540fea40d8858ed90f43f ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 19 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "9.2.1" ;
+    rcap:evidenceText "Serious ventricular arrhythmia (including ventricular fibrillation) or sudden unexpected death in hospital." ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:Domain_MD ;
+    owl:annotatedTarget _:Nab99b582d8ea4e15971b29e1abae6130 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 17 ;
+    rcap:evidenceRule "B-domain" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Extended course macrolide for 14 days or hospital discharge, whichever occurs first" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:Nd8941b257f8849e9b864c74a4ac8e090 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "For participants discharged from hospital before the end of the allocated course of macrolide therapy, macrolides should be discontinued at hospital discharge." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:Nb455405ba27548b0b9853c3aa289fb25 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.7" ;
+    rcap:evidenceText "The threshold probability for statistical triggers for superiority, inferiority, and futility are those specified in the Core Protocol." ;
+    rcap:occurrenceKind "allocation_threshold" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:Nb097d69dd669412a840fd2bf1ae416b3 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "The duration of macrolide therapy will then be determined by allocation in this domain." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N6bbffd8424ed4858978f283bd5f9fa38 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "trailing:2" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "The dose of all macrolides is the same for IV and enteral administration and no dose adjustment is required for alterations in renal function including if the patient is receiving renal replacement therapy." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:Nf7eb539861ba4f55971da34fbea6bd37 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 17 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "The preferred IV macrolide is azithromycin, but IV clarithromycin may be substituted." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N2fbd9ac7c37f4955a5a76ad2df962631 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 17 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Standard course macrolide discontinued between day 3 and day 5 or at hospital discharge, whichever occurs first" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N49fe077847804818bab2ee369c52e73f ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 19 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Serious Adverse Events (SAE) as defined in Core Protocol" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:Nb4ce850e5db94ecbbdadf71650b21c04 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Patients will be randomly assigned to receive one of the following open-label study interventions." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N6e81c9d28a7d4e9c8492c73802b9a747 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "The unit-of-analysis for this domain is all patients who receive an allocation status in this domain." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N07affc6dc00e4f9381ce92530664c069 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 17 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "Initial intravenous (IV) administration of a macrolide is strongly preferred" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N2cd0278e560345f08fcb25c8d13ed4fc ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 19 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Serious ventricular arrhythmia (including ventricular fibrillation) or sudden unexpected death in hospital" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:Ne456cb78fb9d4b44a374adda181043fd ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Macrolide therapy will be commenced following reveal of allocation to a macrolide-containing intervention in an Antibiotic Domain of this Platform." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N8e60587b73004e16a3033b89673ac9b4 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.5" ;
+    rcap:evidenceText "If an interaction is specified with a future domain, it is sufficient for the interaction to be specified only in the DSA of such a future domain." ;
+    rcap:occurrenceKind "allocation_interactions" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:Domain_MD ;
+    owl:annotatedTarget _:N82b4798827ca4e51ac8e52cedf5c0060 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 17 ;
+    rcap:evidenceRule "B-domain" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Standard course macrolide discontinued between day 3 and day 5 or at hospital discharge, whichever occurs first" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N4fecf8d854f64af9ad72874234d7671b ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.6" ;
+    rcap:evidenceText "Nesting is not applicable to this domain." ;
+    rcap:occurrenceKind "allocation_nesting" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:Nd57498bea9bf483ea175b39ad7d8ece2 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "trailing:1" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "The following doses (Table 2) are provided as guidance and may be modified according to local guidelines or practice." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:Nfd731772e2344b7a95a80eecd676cd1e ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 16 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "There is microbiological confirmation or the clinician strongly suspects Legionella or any other form of atypical pneumonia" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N67c69e394d124ba8aa62decad77c3abf ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "Reveal of allocation status can occur at any time before the end of Study Day 5 after randomization to a macrolide-containing intervention within an Antibiotic Domain of this Platform, as soon as sufficient information is available to confirm eligibility." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:Ne54109ce77344c71b79e456731695b1c ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "Macrolide therapy should be discontinued if there is development of an SAE which, in the opinion of the treating clinician, could be related to participation in this domain." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N390e55bd897f4ef8b2504920c67cb98f ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "The study interventions can be temporarily or permanently discontinued at any time by the treating clinician if doing so is regarded as being in the best interests of the patient." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:Nda40157ac3da47bc9cd1098e761ce20d ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 17 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Extended course macrolide for 14 days or hospital discharge, whichever occurs first" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N7990ad003bc348f9a936196d0ff24d30 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "The domain-specific secondary outcome measures (occurring during the index hospitalization, censored at 90 days after enrollment) will be:" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N9f0387f2bb20451787eae7ff922768ec ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "If the patient is allocated to extended course macrolide, macrolide therapy should be prescribed to Study Day 14, irrespective of the timing of reveal." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:Ne1c9c5125f48407994e1a040f4433736 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "If, at any time after reveal of allocation, there is confirmed diagnosis (or a strong clinical suspicion) of legionellosis or other microbiological diagnosis of an ‘atypical’ organism, then effective treatment for ‘atypical’ organisms must be provided." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N25a25d6b1ce64aeea42d679fbad57727 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.5" ;
+    rcap:evidenceText "Interactions with all other domains are either not evaluable or not considered possible and will not be incorporated into the statistical model or models in which this domain is evaluated." ;
+    rcap:occurrenceKind "allocation_interactions" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N518fad71b6874c609f4dbfa854e7ae4b ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "All secondary endpoints as specified in the Core Protocol." ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N2c2e55e24e48428a880c9f93f038eb40 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "trailing:1" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Reveal of allocation in the Macrolide Duration Domain is only possible before the end of Study Day 5 after randomization to a macrolide-containing intervention within an Antibiotic Domain of this Platform." ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:Nb34b860f35594565a1207dc1ea0fe534 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 16 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Macrolide antibiotics have already been discontinued for more than 36 hours" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N96598122527c462dbb71a5d314b4bc6d ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "9.3" ;
+    rcap:evidenceText "Refer to Core Protocol documents for criteria for the discontinuation of participation in this trial." ;
+    rcap:occurrenceKind "discontinuation" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N3887e2822628490aa5aaad742d33ade5 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 16 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "The treating clinician believes that participation in the domain would not be in the best interests of the patient" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N26f5a54f848a4ba3b09c5cc03224b195 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "The dosing of and route of administration of macrolide antibiotics are not specified in the protocol but the following guidance is provided:" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget rcap:CoreDesign ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePage 8 ;
+    rcap:evidenceRule "B-dsa" ;
+    rcap:evidenceText "The Core Protocol contains all information that is generic to the trial …" ;
+    rcap:note "Core Protocol 4.0 1.2: Domain-Specific Appendix is an appendix to the Core Protocol.",
+        "Core Protocol 4.1 1.2: Domain-Specific Appendix is an appendix to the Core Protocol." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N9b41cf2d36294995acc14ebfa18cba39 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 17 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "The preferred enteral macrolide is azithromycin, but enteral clarithromycin or roxithromycin may be substituted." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:Na0ebad92dab741e996c50941d922b64e ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Patients are eligible for this domain only if they have been allocated a macrolide-containing intervention within an Antibiotic Domain of this Platform." ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:Ncc0ea454abbc4cdc9826420a9309ff1a ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "This domain is available for patients who are in the Severe Illness Severity State, as defined in Core Protocol Documents." ;
+    rcap:occurrenceKind "applicability_state" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N86195bd8086a4838b8ac989563696cf6 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.5.1" ;
+    rcap:evidenceText "The primary endpoint for this domain is the primary outcome specified in Core Protocol." ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N7545d990903c467cb48166ff1d0eb084 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "This domain is available to patients who are in the Adult Age Stratum, as defined in Core Protocol Documents." ;
+    rcap:occurrenceKind "applicability_age" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N8394a39d55b2476a9435a35660cb9fbd ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "If reveal of allocation occurs after Study Day 3, and the patient is allocated to standard course macrolide, discontinued immediately." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N669171b46701490a909ef5e325a82a65 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:6" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "In this regard, consideration should be given to the development of ventricular dysrhythmias and evaluation of the QT interval during the intervention period and prior to discontinuation of continuous ECG monitoring." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:Nf89f45c471284d25a798cde28d0d774b ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "9.2.1" ;
+    rcap:evidenceText "In addition to Domain-specific data required as a consequence of participation in the Antibiotic Domain, patients who are randomized in this domain will have the following data collected:" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N5f3c6ee655fb43b899f9b639b2d4a5ff ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "No strata are applied, although this may be modified as an operational decision as specified in the Current State document." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:Nf41c8f4486604175a6ddab8cbed24b68 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.3" ;
+    rcap:evidenceText "Domain-specific strata are not applied to patients at the time of assessment for this domain." ;
+    rcap:occurrenceKind "domain_strata" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N6599b036e7f8450caade16066cf20161 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "trailing:3" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "A switch from IV to enteral macrolide is permitted as directed by the treating clinician." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:Nab319cb34a5d441e940017b31dd3674c ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.4" ;
+    rcap:evidenceText "The timing of the revealing of allocation status and administration of interventions is specified to be Randomization with Deferred Reveal once the results of microbiological testing to establish domain eligibility are available, or if prospective agreement to participate is required for this domain." ;
+    rcap:occurrenceKind "allocation_reveal" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:Ne2f0340ce43e49d9a6edb2c1300076b3 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.3" ;
+    rcap:evidenceText "Response-adaptive randomization will be applied for this domain." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N0a56604ccfbe4bfeb1a590736897af57 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "Any patient randomized to standard course macrolide, in whom legionellosis or another ‘atypical’ organism is diagnosed after cessation of macrolide, must commence treatment that is effective against the organisms such as a macrolide or fluoroquinolone." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N983ac27f245542a0b650863ccfe95c0f ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.3" ;
+    rcap:evidenceText "If reveal of allocation occurs before Study Day 3, and the patient is allocated to standard course macrolide, the intervention should be ceased on Study Day 3." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:Nc51d13abe6ba42ab9ff1c48a7e5ac97b ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 19 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "9.2.1" ;
+    rcap:evidenceText "SAE as defined in Core Protocol" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N8a825c909b514f4090eb7026fdbf7ced ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 17 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "Sites where erythromycin is the only available macrolide will not be able to participate in this domain." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N52e2267b1e0f452db5f6cfb6c51aa90c ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "There are no intervention-specific exclusion criteria for this domain." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N50ee0c5360fa4739a95760f01ae4904f ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Patients will be excluded from this domain if they have any of the following:" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:Ne893da4c95e949208ab97c86c4bf7bcf ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.4" ;
+    rcap:evidenceText "This can be either prolonged macrolide treatment or substitution with a fluoroquinolone or other active agent." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_MD ;
+    owl:annotatedTarget _:N8e9a2a4d70724fdcaa2c2db9e8ad41ea ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "In this regard, the Macrolide Duration Domain sits within the macrolide-containing interventions of Antibiotic Domain(s) within this Platform." ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+_:N07affc6dc00e4f9381ce92530664c069 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb09bcf457d .
+
+_:N0a56604ccfbe4bfeb1a590736897af57 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7e5aa8a12c .
+
+_:N25a25d6b1ce64aeea42d679fbad57727 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc4efc1a692 .
+
+_:N26f5a54f848a4ba3b09c5cc03224b195 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc94f676f8f .
+
+_:N2c2e55e24e48428a880c9f93f038eb40 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cbe8e555e2e .
+
+_:N2cd0278e560345f08fcb25c8d13ed4fc a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c502d29f324 .
+
+_:N2fbd9ac7c37f4955a5a76ad2df962631 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdd924bb867 .
+
+_:N3887e2822628490aa5aaad742d33ade5 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c324186f8e2 .
+
+_:N390e55bd897f4ef8b2504920c67cb98f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2fd0baa5ef .
+
+_:N49fe077847804818bab2ee369c52e73f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd7e3bd8fce .
+
+_:N4fecf8d854f64af9ad72874234d7671b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6e4a622d7b .
+
+_:N50ee0c5360fa4739a95760f01ae4904f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc4a3982cda .
+
+_:N518fad71b6874c609f4dbfa854e7ae4b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c494ee9cfa6 .
+
+_:N52e2267b1e0f452db5f6cfb6c51aa90c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb3f54800eb .
+
+_:N5f3c6ee655fb43b899f9b639b2d4a5ff a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0a159d07c6 .
+
+_:N6599b036e7f8450caade16066cf20161 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1287fb9829 .
+
+_:N669171b46701490a909ef5e325a82a65 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c712552cb85 .
+
+_:N67c69e394d124ba8aa62decad77c3abf a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6a8feb5659 .
+
+_:N6bbffd8424ed4858978f283bd5f9fa38 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c64daa4653d .
+
+_:N6e81c9d28a7d4e9c8492c73802b9a747 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb1dfbad5c4 .
+
+_:N7545d990903c467cb48166ff1d0eb084 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ced7c375feb .
+
+_:N7990ad003bc348f9a936196d0ff24d30 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cfc67fd1c19 .
+
+_:N82b4798827ca4e51ac8e52cedf5c0060 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdd924bb867 .
+
+_:N8394a39d55b2476a9435a35660cb9fbd a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c43da49de59 .
+
+_:N86195bd8086a4838b8ac989563696cf6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5770ae5285 .
+
+_:N8a825c909b514f4090eb7026fdbf7ced a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cbe7e2bf784 .
+
+_:N8e60587b73004e16a3033b89673ac9b4 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c168c834f5a .
+
+_:N8e9a2a4d70724fdcaa2c2db9e8ad41ea a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5dc5cbaa4f .
+
+_:N96598122527c462dbb71a5d314b4bc6d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c85858c8378 .
+
+_:N983ac27f245542a0b650863ccfe95c0f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cad81daa211 .
+
+_:N9b41cf2d36294995acc14ebfa18cba39 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd4e923874a .
+
+_:N9f0387f2bb20451787eae7ff922768ec a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c04aca4d5c7 .
+
+_:Na0ebad92dab741e996c50941d922b64e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cbf77e1f709 .
+
+_:Nab319cb34a5d441e940017b31dd3674c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ccd4355519f .
+
+_:Nab99b582d8ea4e15971b29e1abae6130 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c56da4f7386 .
+
+_:Nb097d69dd669412a840fd2bf1ae416b3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca37e9eebf6 .
+
+_:Nb34b860f35594565a1207dc1ea0fe534 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca581855e50 .
+
+_:Nb455405ba27548b0b9853c3aa289fb25 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c194af0dab6 .
+
+_:Nb4ce850e5db94ecbbdadf71650b21c04 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb26af16384 .
+
+_:Nc51d13abe6ba42ab9ff1c48a7e5ac97b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2fc6c76dfa .
+
+_:Ncc0ea454abbc4cdc9826420a9309ff1a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7fd21cde5f .
+
+_:Nd57498bea9bf483ea175b39ad7d8ece2 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6c3b3de8ef .
+
+_:Nd8941b257f8849e9b864c74a4ac8e090 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1ba4c77056 .
+
+_:Nda40157ac3da47bc9cd1098e761ce20d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c56da4f7386 .
+
+_:Ne1c9c5125f48407994e1a040f4433736 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7d9db91aab .
+
+_:Ne2f0340ce43e49d9a6edb2c1300076b3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c93d0ed0860 .
+
+_:Ne456cb78fb9d4b44a374adda181043fd a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf159a28650 .
+
+_:Ne54109ce77344c71b79e456731695b1c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cfc5e4fa95a .
+
+_:Ne893da4c95e949208ab97c86c4bf7bcf a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c93fb75134e .
+
+_:Neba44778b2d540fea40d8858ed90f43f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9710c0df45 .
+
+_:Nf41c8f4486604175a6ddab8cbed24b68 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c206b9c5488 .
+
+_:Nf7eb539861ba4f55971da34fbea6bd37 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c44fce0b79e .
+
+_:Nf89f45c471284d25a798cde28d0d774b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8ce90776ba .
+
+_:Nfd731772e2344b7a95a80eecd676cd1e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cecdd35161c .
+

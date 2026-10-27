@@ -1,0 +1,25 @@
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Third-party documents and whole-document text extracted from them.
+# Not redistributed; re-created by the scripts from the URLs in the manifests and READMEs.
+# Kept: section-, sentence- and component-level analysis (cross-references, components,
+# criteria, readings, evidence matrix).
+eupearl-templates/templates/
+tpp-templates/tpp_sources/
+eupearl-templates/output_eupearl/paragraphs.csv
+eupearl-templates/output_eupearl/tables.csv
+remapcap-design-modules/output/step1/sections.csv
+remapcap-design-modules/output/step2/section_text.csv
+usdm-master-protocol/output_cpmp/step2/page_text.csv
+usdm-master-protocol/output_cpmp/step2/sections.csv
+usdm-master-protocol/output_remapcap/step2/sections.csv
+usdm-master-protocol/output_cpmp/**/*.json
+usdm-master-protocol/output_remapcap/**/*.json
+literature/shortlist.json
+
+# Internal working notes and draft writing (kept locally, not published yet)
+/docs/
+/archive/

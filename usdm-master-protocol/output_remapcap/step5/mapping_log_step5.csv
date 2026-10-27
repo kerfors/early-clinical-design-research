@@ -1,0 +1,85 @@
+object,attribute,status,value,evidence,note
+StudyDefinitionDocumentVersion_1_v41,version,mapped,4.1,CORE_41 cover page,
+GovernanceDate_1_v41,dateValue,mapped,2026-05-29,CORE_41 2.2.9 'Core Protocol Version History',
+GovernanceDate_1_v41,geographicScopes,required_not_in_document,,CORE_41 2.2.9,"approval by the ITSC, no geographic scope stated"
+StudyVersion_1_v41,versionIdentifier,derived,Core 4.1 / PANDA 1.0 / Corticosteroid DSA 6,decision 2026-10-24,set of document versions
+StudyVersion_1_v41,(copy),not_expressible,,,"a new Core version needs a full new StudyVersion; unchanged DSA content (criteria, interventions, arms) is copied, not shared"
+Objective_1_v41,text,mapped_copy_from_core,"The primary objective of this Platform is, for hospitalized patients with acute respiratory tract infection, to evaluate the effect of a range of interventions on an ordinal scale that is a composite of 90-day all-cause mortality; among survivors, the number of days for which the patient did not rec",CORE_41 6.1 'Primary objective',
+Objective_2_v41,text,mapped_copy_from_core,"The secondary objectives of this Platform are to determine the effect of interventions on hospital length of stay (LOS) and 90-day mortality, as well as all components of the primary endpoint, other domain-specific endpoints, platform-wide exploratory endpoints and, where feasible or specified in a ",CORE_41 6.2 'Secondary objectives',
+Endpoint_1_v41,text,mapped_copy_from_core,"The primary endpoint is a composite of 90-day all-cause mortality and, among survivors, the number of days on which the patient was not receiving organ failure support (OFS) during the index hospitalization, up to the end of study day 28; and among survivors who never receive OFS, hospital free days",CORE_41 7.6.1 'Primary Endpoint',
+Endpoint_v41_sec1,text,mapped_copy_from_core,"Mortality, censored at 90 days",CORE_41 7.6.2 'Secondary Endpoints',
+Endpoint_v41_sec1,purpose,required_not_in_document,,CORE_41 7.6.2,purpose not stated
+Endpoint_v41_sec2,text,mapped_copy_from_core,Days alive and free of organ-failure support to day 28,CORE_41 7.6.2 'Secondary Endpoints',
+Endpoint_v41_sec2,purpose,required_not_in_document,,CORE_41 7.6.2,purpose not stated
+Endpoint_v41_sec3,text,mapped_copy_from_core,Days alive and out of hospital to day 28,CORE_41 7.6.2 'Secondary Endpoints',
+Endpoint_v41_sec3,purpose,required_not_in_document,,CORE_41 7.6.2,purpose not stated
+Endpoint_4_v41,text,derived,"The primary endpoint is a composite of 90-day all-cause mortality and, among survivors, the number of days on which the patient was not receiving organ failure support (OFS) during the index hospitalization, up to the end of study day 28; and among survivors who never receive OFS, hospital free days",CS_DSA 8.5.1 -> CORE_41 7.6.1,unversioned 'Core Protocol documents' resolved to the Core in force (4.1)
+Endpoint_v41_additional,text,derived,"The primary endpoint, named Survival and Recovery Trajectory, will be a composite of 90-day all-cause mortality and, among survivors, a daily ordinal scale analyzed as a trajectory of illness and recovery to 28 days.",CORE_41 7.6.2 transition rule; CORE 7.6.1 (V4.0),DSA dated before Core 4.1 additionally reports the pre-specified endpoint of the earlier Core version
+Endpoint_v41_additional,level,ambiguous_in_document,,CORE_41 7.6.2; CORE_41 7.6.3,V4.1 lists Survival and Recovery Trajectory as exploratory; for a pre-V4.1 DSA the level is not stated
+Endpoint_v41_additional,purpose,required_not_in_document,,CORE_41 7.6.2,purpose not stated
+StudyChange_1,changedSections,derived,2.1 Synopsis,Core 4.0 vs 4.1 text comparison,change found by comparing the two versions; not stated in V4.1
+StudyChange_1,summary,required_not_in_document,,CORE_41,V4.1 has no summary of changes
+StudyChange_1,rationale,required_not_in_document,,CORE_41,no rationale stated
+DocumentContentReference_1,appliesToId,not_expressible,StudyDefinitionDocument_1,,"points to the Core document, not to version 4.0 or 4.1"
+StudyChange_2,changedSections,derived,2.2.9 Core Protocol Version History,Core 4.0 vs 4.1 text comparison,change found by comparing the two versions; not stated in V4.1
+StudyChange_2,summary,required_not_in_document,,CORE_41,V4.1 has no summary of changes
+StudyChange_2,rationale,required_not_in_document,,CORE_41,no rationale stated
+DocumentContentReference_2,appliesToId,not_expressible,StudyDefinitionDocument_1,,"points to the Core document, not to version 4.0 or 4.1"
+StudyChange_3,changedSections,derived,4 INTERNATIONAL TRIAL STEERING COMMITTEE AUTHORIZATION,Core 4.0 vs 4.1 text comparison,change found by comparing the two versions; not stated in V4.1
+StudyChange_3,summary,required_not_in_document,,CORE_41,V4.1 has no summary of changes
+StudyChange_3,rationale,required_not_in_document,,CORE_41,no rationale stated
+DocumentContentReference_3,appliesToId,not_expressible,StudyDefinitionDocument_1,,"points to the Core document, not to version 4.0 or 4.1"
+StudyChange_4,changedSections,derived,6.1 Primary objective,Core 4.0 vs 4.1 text comparison,change found by comparing the two versions; not stated in V4.1
+StudyChange_4,summary,required_not_in_document,,CORE_41,V4.1 has no summary of changes
+StudyChange_4,rationale,required_not_in_document,,CORE_41,no rationale stated
+DocumentContentReference_4,appliesToId,not_expressible,StudyDefinitionDocument_1,,"points to the Core document, not to version 4.0 or 4.1"
+StudyChange_5,changedSections,derived,6.2 Secondary objectives,Core 4.0 vs 4.1 text comparison,change found by comparing the two versions; not stated in V4.1
+StudyChange_5,summary,required_not_in_document,,CORE_41,V4.1 has no summary of changes
+StudyChange_5,rationale,required_not_in_document,,CORE_41,no rationale stated
+DocumentContentReference_5,appliesToId,not_expressible,StudyDefinitionDocument_1,,"points to the Core document, not to version 4.0 or 4.1"
+StudyChange_6,changedSections,derived,7.6 Endpoints,Core 4.0 vs 4.1 text comparison,change found by comparing the two versions; not stated in V4.1
+StudyChange_6,summary,required_not_in_document,,CORE_41,V4.1 has no summary of changes
+StudyChange_6,rationale,required_not_in_document,,CORE_41,no rationale stated
+DocumentContentReference_6,appliesToId,not_expressible,StudyDefinitionDocument_1,,"points to the Core document, not to version 4.0 or 4.1"
+StudyChange_7,changedSections,derived,7.6.1 Primary Endpoint,Core 4.0 vs 4.1 text comparison,change found by comparing the two versions; not stated in V4.1
+StudyChange_7,summary,required_not_in_document,,CORE_41,V4.1 has no summary of changes
+StudyChange_7,rationale,required_not_in_document,,CORE_41,no rationale stated
+DocumentContentReference_7,appliesToId,not_expressible,StudyDefinitionDocument_1,,"points to the Core document, not to version 4.0 or 4.1"
+StudyChange_8,changedSections,derived,7.6.2 Secondary Endpoints,Core 4.0 vs 4.1 text comparison,change found by comparing the two versions; not stated in V4.1
+StudyChange_8,summary,required_not_in_document,,CORE_41,V4.1 has no summary of changes
+StudyChange_8,rationale,required_not_in_document,,CORE_41,no rationale stated
+DocumentContentReference_8,appliesToId,not_expressible,StudyDefinitionDocument_1,,"points to the Core document, not to version 4.0 or 4.1"
+StudyChange_9,changedSections,derived,7.6.3 Exploratory outcomes,Core 4.0 vs 4.1 text comparison,change found by comparing the two versions; not stated in V4.1
+StudyChange_9,summary,required_not_in_document,,CORE_41,V4.1 has no summary of changes
+StudyChange_9,rationale,required_not_in_document,,CORE_41,no rationale stated
+DocumentContentReference_9,appliesToId,not_expressible,StudyDefinitionDocument_1,,"points to the Core document, not to version 4.0 or 4.1"
+StudyChange_10,changedSections,derived,7.6.4 Adaptations to the primary endpoint in the event of a pandemic,Core 4.0 vs 4.1 text comparison,change found by comparing the two versions; not stated in V4.1
+StudyChange_10,summary,required_not_in_document,,CORE_41,V4.1 has no summary of changes
+StudyChange_10,rationale,required_not_in_document,,CORE_41,no rationale stated
+DocumentContentReference_10,appliesToId,not_expressible,StudyDefinitionDocument_1,,"points to the Core document, not to version 4.0 or 4.1"
+StudyChange_11,changedSections,derived,7.8.3 Target populations (strata and states) and implications for evaluation of treatment-by-treatment and treatment-by-strata interactions,Core 4.0 vs 4.1 text comparison,change found by comparing the two versions; not stated in V4.1
+StudyChange_11,summary,required_not_in_document,,CORE_41,V4.1 has no summary of changes
+StudyChange_11,rationale,required_not_in_document,,CORE_41,no rationale stated
+DocumentContentReference_11,appliesToId,not_expressible,StudyDefinitionDocument_1,,"points to the Core document, not to version 4.0 or 4.1"
+StudyChange_12,changedSections,derived,7.8.6 Statistical Triggers,Core 4.0 vs 4.1 text comparison,change found by comparing the two versions; not stated in V4.1
+StudyChange_12,summary,required_not_in_document,,CORE_41,V4.1 has no summary of changes
+StudyChange_12,rationale,required_not_in_document,,CORE_41,no rationale stated
+DocumentContentReference_12,appliesToId,not_expressible,StudyDefinitionDocument_1,,"points to the Core document, not to version 4.0 or 4.1"
+StudyChange_13,changedSections,derived,7.8.7 Action when a Statistical Trigger is achieved,Core 4.0 vs 4.1 text comparison,change found by comparing the two versions; not stated in V4.1
+StudyChange_13,summary,required_not_in_document,,CORE_41,V4.1 has no summary of changes
+StudyChange_13,rationale,required_not_in_document,,CORE_41,no rationale stated
+DocumentContentReference_13,appliesToId,not_expressible,StudyDefinitionDocument_1,,"points to the Core document, not to version 4.0 or 4.1"
+StudyChange_14,changedSections,derived,8.4.2 Transfer of participants between locations and protocol adherence,Core 4.0 vs 4.1 text comparison,change found by comparing the two versions; not stated in V4.1
+StudyChange_14,summary,required_not_in_document,,CORE_41,V4.1 has no summary of changes
+StudyChange_14,rationale,required_not_in_document,,CORE_41,no rationale stated
+DocumentContentReference_14,appliesToId,not_expressible,StudyDefinitionDocument_1,,"points to the Core document, not to version 4.0 or 4.1"
+StudyChange_15,changedSections,derived,8.8.2 Variables to be collected,Core 4.0 vs 4.1 text comparison,change found by comparing the two versions; not stated in V4.1
+StudyChange_15,summary,required_not_in_document,,CORE_41,V4.1 has no summary of changes
+StudyChange_15,rationale,required_not_in_document,,CORE_41,no rationale stated
+DocumentContentReference_15,appliesToId,not_expressible,StudyDefinitionDocument_1,,"points to the Core document, not to version 4.0 or 4.1"
+StudyAmendment_1,number,derived,4.1,CORE_41 2.2.9; CORE_41 7.6.2 'this Core Protocol amendment',
+StudyAmendment_1,summary,required_not_in_document,,CORE_41,not stated
+StudyAmendment_1,primaryReason,required_not_in_document,,CORE_41,not stated
+StudyAmendment_1,geographicScopes,required_not_in_document,,CORE_41,not stated
+GovernanceDate_amendment_1,geographicScopes,required_not_in_document,,CORE_41 2.2.9,not stated
+StudyAmendment_1,(scope),not_expressible,,CS_DSA 8.5.1; CORE_41 7.6.2,"the amendment changes the Core only, but changes the effective endpoint of an unchanged DSA; StudyChange can only point at Core sections"

@@ -1,0 +1,737 @@
+object,attribute,status,value,evidence,note
+StudyAmendment_1,name,derived,H0P-MC-BP02(a),BP02 p4 'Amendment [a]',"document number + amendment letter, as on the title page"
+StudyAmendment_1,number,mapped,a,BP02 p4 'Amendment [a]',
+StudyAmendment_1,summary,mapped,This amendment addresses changes in the exclusion criteria in response to FDA feedback based on in vitro data currently available.,BP02 p4 'Overall Rationale for the Amendment',
+GovernanceDate_14,dateValue,mapped,2021-08-10,BP02 p2 title page (Step 3 StudyDefinitionDocumentVersion_5),approval date of the document version produced by this amendment
+GovernanceDate_14,geographicScopes,required_not_in_document,,BP02 p2 title page,1..*; no geographic scope stated
+StudyAmendment_1,primaryReason,required_not_in_document,,BP02 p4 'Amendment [a]',1..1 coded StudyAmendmentReason (C207415); the document gives the reason as text only (summary); decision D2
+StudyAmendment_1,geographicScopes,required_not_in_document,,BP02 p4 'Amendment [a]',1..*; no geographic scope stated
+StudyAmendment_1,(amended document version),not_expressible,H0P-MC-BP02 version a,BP02 p4 'Amendment [a]',StudyAmendment has no reference to the StudyDefinitionDocument or the document version it produces; only StudyChange.changedSections.appliesToId points to the document (not the version)
+StudyChange_1,summary,mapped,Added sub-section headers.,BP02(a) p4 summary-of-changes row 1,Description of Change
+StudyChange_1,rationale,mapped,For clarity.,BP02(a) p4 summary-of-changes row 1,Brief Rationale
+DocumentContentReference_1,sectionNumber,mapped,2.3,BP02(a) p4 summary-of-changes row 1,Section # and Name '2.3. Benefit/Risk Assessment'; toc_match
+StudyChange_2,summary,mapped,"In first paragraph, added text for the effect of LY3526318 on other drugs.",BP02(a) p4 summary-of-changes row 2,Description of Change
+StudyChange_2,rationale,mapped,Clarification of the potential of LY3526318 exposure to affect metabolism of other drugs.,BP02(a) p4 summary-of-changes row 2,Brief Rationale
+DocumentContentReference_2,sectionNumber,mapped,2.3.1,BP02(a) p4 summary-of-changes row 2,Section # and Name '2.3.1. Risk Assessment'; toc_match
+StudyChange_3,summary,mapped,"Updated first bullet to specify CYP3A4, plus minor editorial changes.",BP02(a) p4 summary-of-changes row 3,Description of Change
+StudyChange_3,rationale,mapped,For clarity.,BP02(a) p4 summary-of-changes row 3,Brief Rationale
+DocumentContentReference_3,sectionNumber,mapped,2.3.1,BP02(a) p4 summary-of-changes row 3,Section # and Name '2.3.1. Risk Assessment'; toc_match
+StudyChange_4,summary,mapped,Added a bullet for CYP3A4 and p-glycoprotein (P-gp) substrates.,BP02(a) p4 summary-of-changes row 4,Description of Change
+StudyChange_4,rationale,mapped,Based on in vitro data suggesting a potential for PK interactions.,BP02(a) p4 summary-of-changes row 4,Brief Rationale
+DocumentContentReference_4,sectionNumber,mapped,2.3.1,BP02(a) p4 summary-of-changes row 4,Section # and Name '2.3.1. Risk Assessment'; toc_match
+StudyChange_5,summary,mapped,Updated numbers for inclusion and exclusion criteria.,BP02(a) p4 summary-of-changes row 5,Description of Change
+StudyChange_5,rationale,mapped,To align with master protocol and ISA numbering system.,BP02(a) p4 summary-of-changes row 5,Brief Rationale
+DocumentContentReference_5,sectionNumber,mapped,5.1,BP02(a) p4 summary-of-changes row 5,Section # and Name '5.1. Study Population'; toc_number_only (TOC: Inclusion Criteria)
+StudyChange_6,summary,mapped,Updated criterion #2051 to specify drugs taken orally or intravenously.,BP02(a) p4 summary-of-changes row 6 [section_from_merged_cell],Description of Change
+StudyChange_6,rationale,mapped,Topical drugs are allowed.,BP02(a) p4 summary-of-changes row 6 [section_from_merged_cell],Brief Rationale
+DocumentContentReference_6,sectionNumber,mapped,5.1,BP02(a) p4 summary-of-changes row 6 [section_from_merged_cell],Section # and Name '5.1. Study Population'; toc_number_only (TOC: Inclusion Criteria)
+StudyChange_7,summary,mapped,Added exclusion criterion #2054 for participants that are taking drugs that are sensitive CYP3A4 substrates with a narrow therapeutic index.,BP02(a) p4 summary-of-changes row 7 [section_from_merged_cell],Description of Change
+StudyChange_7,rationale,mapped,Based on in vitro data suggesting potential CYP3A4 inhibition at the proposed LY3526318 dose.,BP02(a) p4 summary-of-changes row 7 [section_from_merged_cell],Brief Rationale
+DocumentContentReference_7,sectionNumber,mapped,5.1,BP02(a) p4 summary-of-changes row 7 [section_from_merged_cell],Section # and Name '5.1. Study Population'; toc_number_only (TOC: Inclusion Criteria)
+StudyChange_8,summary,mapped,Added exclusion criterion #2055 for participants that are taking simvastatin at doses greater than 20 mg/day.,BP02(a) p4 summary-of-changes row 8 [section_from_merged_cell],Description of Change
+StudyChange_8,rationale,mapped,"Simvastatin is a sensitive CYP3A4 substrate, with a projected maximal increase in exposure <2-fold in combination with LY3526318. Therefore, doses of 20 mg or less are considered safe.",BP02(a) p4 summary-of-changes row 8 [section_from_merged_cell],Brief Rationale
+DocumentContentReference_8,sectionNumber,mapped,5.1,BP02(a) p4 summary-of-changes row 8 [section_from_merged_cell],Section # and Name '5.1. Study Population'; toc_number_only (TOC: Inclusion Criteria)
+StudyChange_9,summary,mapped,Added exclusion criterion #2056 for participants that are taking metformin at doses greater than 1000 mg/day.,BP02(a) p4 summary-of-changes row 9 [section_from_merged_cell],Description of Change
+StudyChange_9,rationale,mapped,Based on limited data related to inhibition of renal transporters.,BP02(a) p4 summary-of-changes row 9 [section_from_merged_cell],Brief Rationale
+DocumentContentReference_9,sectionNumber,mapped,5.1,BP02(a) p4 summary-of-changes row 9 [section_from_merged_cell],Section # and Name '5.1. Study Population'; toc_number_only (TOC: Inclusion Criteria)
+StudyChange_10,summary,mapped,Added exclusion criterion #2057 for participants that are taking digoxin.,BP02(a) p4 summary-of-changes row 10 [section_from_merged_cell],Description of Change
+StudyChange_10,rationale,mapped,Based on in vitro data suggesting a potential for LY3526318 to inhibit P-gp.,BP02(a) p4 summary-of-changes row 10 [section_from_merged_cell],Brief Rationale
+DocumentContentReference_10,sectionNumber,mapped,5.1,BP02(a) p4 summary-of-changes row 10 [section_from_merged_cell],Section # and Name '5.1. Study Population'; toc_number_only (TOC: Inclusion Criteria)
+StudyChange_11,summary,mapped,"Under Potential Drug-Drug Interactions with LY3526318, added reference to Section 5.2 for concomitant medication restrictions.",BP02(a) p4 summary-of-changes row 11,Description of Change
+StudyChange_11,rationale,mapped,Reference to added exclusion criteria.,BP02(a) p4 summary-of-changes row 11,Brief Rationale
+DocumentContentReference_11,sectionNumber,mapped,6.6,BP02(a) p4 summary-of-changes row 11,Section # and Name '6.6. Concomitant Therapy'; toc_match
+StudyChange_12,summary,mapped,Added reference to Section 5.2 and the Manual of Operations for additional information.,BP02(a) p5 summary-of-changes row 12,Description of Change
+StudyChange_12,rationale,mapped,Additional information for excluded concomitant medications are listed in Section 5.2 and the Manual of Operations.,BP02(a) p5 summary-of-changes row 12,Brief Rationale
+DocumentContentReference_12,sectionNumber,mapped,10.3,BP02(a) p5 summary-of-changes row 12,Section # and Name '10.3. Appendix 3: List of Excluded Concomitant Medications'; toc_match
+StudyChange_13,summary,mapped,Minor editorial and format changes.,BP02(a) p5 summary-of-changes row 13,Description of Change
+StudyChange_13,rationale,mapped,"Minor, therefore not described.",BP02(a) p5 summary-of-changes row 13,Brief Rationale
+DocumentContentReference_13,sectionNumber,required_not_in_document,,BP02(a) p5 summary-of-changes row 13,'Throughout the protocol' names no section; decision D4
+DocumentContentReference_13,sectionTitle,derived,Throughout the protocol,BP02(a) p5 summary-of-changes row 13,the table's Section # and Name text; not a section title
+StudyAmendment_2,name,derived,H0P-MC-BP05(a),BP05 p4 'Amendment a',"document number + amendment letter, as on the title page"
+StudyAmendment_2,number,mapped,a,BP05 p4 'Amendment a',
+StudyAmendment_2,summary,mapped,This amendment adds additional physical examinations and exclusion criteria to address regulatory feedback.,BP05 p4 'Overall Rationale for the Amendment',
+GovernanceDate_15,dateValue,mapped,2022-10-13,BP05 p2 title page (Step 3 StudyDefinitionDocumentVersion_8),approval date of the document version produced by this amendment
+GovernanceDate_15,geographicScopes,required_not_in_document,,BP05 p2 title page,1..*; no geographic scope stated
+StudyAmendment_2,primaryReason,required_not_in_document,,BP05 p4 'Amendment a',1..1 coded StudyAmendmentReason (C207415); the document gives the reason as text only (summary); decision D2
+StudyAmendment_2,geographicScopes,required_not_in_document,,BP05 p4 'Amendment a',1..*; no geographic scope stated
+StudyAmendment_2,(amended document version),not_expressible,H0P-MC-BP05 version a,BP05 p4 'Amendment a',StudyAmendment has no reference to the StudyDefinitionDocument or the document version it produces; only StudyChange.changedSections.appliesToId points to the document (not the version)
+StudyChange_14,summary,mapped,"Added Physical examinations at Visits 5 and 7. Added note, “Complete physical examination, including targeted physical examination specified below, should be performed at V3 and V801 or ED. Targeted examinations for skin, gastrointestinal tract, mammary gland in males, and lymph nodes should also be",BP05(a) p4 summary-of-changes row 1,Description of Change
+StudyChange_14,rationale,mapped,Per regulatory feedback.,BP05(a) p4 summary-of-changes row 1,Brief Rationale
+DocumentContentReference_14,sectionNumber,mapped,1.3,BP05(a) p4 summary-of-changes row 1,Section # and Name '1.3. Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_15,summary,mapped,"Modified criterion [2085], “have completed participated in…”.",BP05(a) p4 summary-of-changes row 2,Description of Change
+StudyChange_15,rationale,mapped,Clarification.,BP05(a) p4 summary-of-changes row 2,Brief Rationale
+StudyChange_15,summary,not_expressible,struck: completed; underlined: participated in,BP05(a) p4 summary-of-changes row 2,tracked-change markup in the cell; a string carries no markup
+DocumentContentReference_15,sectionNumber,mapped,5.2,BP05(a) p4 summary-of-changes row 2,Section # and Name '5.2. Exclusion Criteria'; toc_match
+StudyChange_16,summary,required_not_in_document,,BP05(a) p4 summary-of-changes row 3,description cell hidden by a redaction bar
+StudyChange_16,rationale,mapped,Per regulatory feedback.,BP05(a) p4 summary-of-changes row 3,Brief Rationale
+DocumentContentReference_16,sectionNumber,required_not_in_document,,BP05(a) p4 summary-of-changes row 3,'' names no section; decision D4
+DocumentContentReference_16,sectionTitle,derived,,BP05(a) p4 summary-of-changes row 3,the table's Section # and Name text; not a section title
+StudyChange_17,summary,mapped,"Added, “Complete physical examination, including targeted examination specified below, should be performed at V3 and Visit 801 or ED. Targeted physical examinations of skin, gastrointestinal tract, mammary gland in males, and lymph nodes will also be performed at Visits V5 and V7 as described in the",BP05(a) p4 summary-of-changes row 4,Description of Change
+StudyChange_17,rationale,mapped,Per regulatory feedback.,BP05(a) p4 summary-of-changes row 4,Brief Rationale
+DocumentContentReference_17,sectionNumber,mapped,8.2.1,BP05(a) p4 summary-of-changes row 4,Section # and Name '8.2.1. Physical Examinations'; toc_match
+StudyChange_18,summary,mapped,"Removed, “…to physical examinations described in the Master Protocol CPMP…”",BP05(a) p4 summary-of-changes row 5 [section_from_merged_cell],Description of Change
+StudyChange_18,rationale,mapped,Editorial.,BP05(a) p4 summary-of-changes row 5 [section_from_merged_cell],Brief Rationale
+DocumentContentReference_18,sectionNumber,mapped,8.2.1,BP05(a) p4 summary-of-changes row 5 [section_from_merged_cell],Section # and Name '8.2.1. Physical Examinations'; toc_match
+StudyAmendment_3,name,derived,H0P-MC-CPMP(a),CPMP p4 'Amendment [a]',"document number + amendment letter, as on the title page"
+StudyAmendment_3,number,mapped,a,CPMP p4 'Amendment [a]',
+StudyAmendment_3,summary,mapped,"This amendment addresses FDA feedback changes to the schedule of activities clarification of use of medications for chronic pain and rescue medication guidelines sponsor protocol template updates to provide more trial execution flexibility statistical analyses updates, and other clarifications",CPMP p4 'Overall Rationale for the Amendment',
+StudyAmendment_3,summary,redacted_in_document,1,CPMP p4,1 redaction bar(s) in the Overall Rationale; hidden text not in the text layer
+GovernanceDate_16,dateValue,mapped,2020-12-11,CPMP p2 title page (Step 3 StudyDefinitionDocumentVersion_2),approval date of the document version produced by this amendment
+GovernanceDate_16,geographicScopes,required_not_in_document,,CPMP p2 title page,1..*; no geographic scope stated
+StudyAmendment_3,primaryReason,required_not_in_document,,CPMP p4 'Amendment [a]',1..1 coded StudyAmendmentReason (C207415); the document gives the reason as text only (summary); decision D2
+StudyAmendment_3,geographicScopes,required_not_in_document,,CPMP p4 'Amendment [a]',1..*; no geographic scope stated
+StudyAmendment_3,(amended document version),not_expressible,H0P-MC-CPMP version a,CPMP p4 'Amendment [a]',StudyAmendment has no reference to the StudyDefinitionDocument or the document version it produces; only StudyChange.changedSections.appliesToId points to the document (not the version)
+StudyChange_19,summary,mapped,Secondary objectives –Other Efficacy - change in several endpoints from “greater than” to “greater than or equal to”...,CPMP(a) p4 summary-of-changes row 1,Description of Change
+StudyChange_19,rationale,mapped,Statistician decision,CPMP(a) p4 summary-of-changes row 1,Brief Rationale
+DocumentContentReference_19,sectionNumber,mapped,1.1,CPMP(a) p4 summary-of-changes row 1,Section # and Name '1.1 Synopsis'; toc_match
+StudyChange_20,summary,mapped,Secondary objectives –Other Efficacy - change in several endpoints from “2-point reduction” to “at least 2-point reduction”...,CPMP(a) p4 summary-of-changes row 2,Description of Change
+StudyChange_20,rationale,mapped,Statistician decision,CPMP(a) p4 summary-of-changes row 2,Brief Rationale
+DocumentContentReference_20,sectionNumber,mapped,1.1,CPMP(a) p4 summary-of-changes row 2,Section # and Name '1.1 Synopsis'; toc_match
+StudyChange_21,summary,mapped,"Secondary objectives –Other Efficacy - change in several endpoints from “treatment response with a 30%, 50%, and 70% reduction” to “first pain reduction of at least 30%, 50%, and 70%”...",CPMP(a) p4 summary-of-changes row 3,Description of Change
+StudyChange_21,rationale,mapped,Statistician decision,CPMP(a) p4 summary-of-changes row 3,Brief Rationale
+DocumentContentReference_21,sectionNumber,mapped,1.1,CPMP(a) p4 summary-of-changes row 3,Section # and Name '1.1 Synopsis'; toc_match
+StudyChange_22,summary,mapped,Secondary objectives –Other Efficacy - change in several endpoints from “Time to 2-point reduction” to “Time to first pain reduction of at least 2 points”...,CPMP(a) p4 summary-of-changes row 4,Description of Change
+StudyChange_22,rationale,mapped,Statistician decision,CPMP(a) p4 summary-of-changes row 4,Brief Rationale
+DocumentContentReference_22,sectionNumber,mapped,1.1,CPMP(a) p4 summary-of-changes row 4,Section # and Name '1.1 Synopsis'; toc_match
+StudyChange_23,summary,mapped,"Updated Overall Design, Visit 2 to clarify the washout period should begin at Visit 2, and the recommended minimum washout is 2 days.",CPMP(a) p4 summary-of-changes row 5,Description of Change
+StudyChange_23,rationale,mapped,Clarification,CPMP(a) p4 summary-of-changes row 5,Brief Rationale
+DocumentContentReference_23,sectionNumber,mapped,1.1,CPMP(a) p4 summary-of-changes row 5,Section # and Name '1.1 Synopsis'; toc_match
+StudyChange_24,summary,mapped,ChangedDataMonitoringCommittee (DMC) to Assessment Committee (AC),CPMP(a) p4 summary-of-changes row 6,Description of Change
+StudyChange_24,rationale,mapped,Correction tomore accurately describe committee,CPMP(a) p4 summary-of-changes row 6,Brief Rationale
+DocumentContentReference_24,sectionNumber,mapped,1.1,CPMP(a) p4 summary-of-changes row 6,Section # and Name '1.1 Synopsis'; toc_match
+StudyChange_25,summary,mapped,"Updated notes for pain medication washout to specify the ‘recommended minimum washout duration is 2 days’, and if participants are not taking medication for chronic pain at screening, awashoutisnotrequired .",CPMP(a) p4 summary-of-changes row 7 [continued_on_p5],Description of Change
+StudyChange_25,rationale,mapped,Clarification,CPMP(a) p4 summary-of-changes row 7 [continued_on_p5],Brief Rationale
+DocumentContentReference_25,sectionNumber,mapped,1.3,CPMP(a) p4 summary-of-changes row 7 [continued_on_p5],Section # and Name '1.3 Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_26,summary,mapped,Added footnote ‘d’ to appropriate Visit 2 procedures and removed redundant text from notes,CPMP(a) p5 summary-of-changes row 8,Description of Change
+StudyChange_26,rationale,mapped,clarification,CPMP(a) p5 summary-of-changes row 8,Brief Rationale
+DocumentContentReference_26,sectionNumber,mapped,1.3,CPMP(a) p5 summary-of-changes row 8,Section # and Name '1.3 Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_27,summary,mapped,Removed vital signs procedures on Visits 3 through 7,CPMP(a) p5 summary-of-changes row 9,Description of Change
+StudyChange_27,rationale,mapped,Vital sign procedures for these visits will be detailed in the ISAs,CPMP(a) p5 summary-of-changes row 9,Brief Rationale
+DocumentContentReference_27,sectionNumber,mapped,1.3,CPMP(a) p5 summary-of-changes row 9,Section # and Name '1.3 Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_28,summary,mapped,Added respiratoryratetovital signs notes,CPMP(a) p5 summary-of-changes row 10,Description of Change
+StudyChange_28,rationale,mapped,BasedonFDAfeedback.,CPMP(a) p5 summary-of-changes row 10,Brief Rationale
+DocumentContentReference_28,sectionNumber,mapped,1.3,CPMP(a) p5 summary-of-changes row 10,Section # and Name '1.3 Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_29,summary,mapped,Removed footnote “d” and added guidance in notes section,CPMP(a) p5 summary-of-changes row 11,Description of Change
+StudyChange_29,rationale,mapped,Visit 2 procedure should be repeated if >60 days from Visit,CPMP(a) p5 summary-of-changes row 11,Brief Rationale
+DocumentContentReference_29,sectionNumber,mapped,1.3,CPMP(a) p5 summary-of-changes row 11,Section # and Name '1.3 Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_30,summary,mapped,Updated notes for rescue medication usage reporting to clarify total quantity from any source,CPMP(a) p5 summary-of-changes row 12,Description of Change
+StudyChange_30,rationale,mapped,clarification,CPMP(a) p5 summary-of-changes row 12,Brief Rationale
+DocumentContentReference_30,sectionNumber,mapped,1.3,CPMP(a) p5 summary-of-changes row 12,Section # and Name '1.3 Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_31,summary,mapped,Added C-SSRSand associated Self-harmform procedures at Visit 2,CPMP(a) p5 summary-of-changes row 13,Description of Change
+StudyChange_31,rationale,mapped,correction,CPMP(a) p5 summary-of-changes row 13,Brief Rationale
+DocumentContentReference_31,sectionNumber,mapped,1.3,CPMP(a) p5 summary-of-changes row 13,Section # and Name '1.3 Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_32,summary,mapped,"Added B12,methylmalonic acidand homocysteine to labs for Visit 1",CPMP(a) p5 summary-of-changes row 14,Description of Change
+StudyChange_32,rationale,mapped,Medical decision,CPMP(a) p5 summary-of-changes row 14,Brief Rationale
+DocumentContentReference_32,sectionNumber,mapped,1.3,CPMP(a) p5 summary-of-changes row 14,Section # and Name '1.3 Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_33,summary,mapped,Added alcoholconsumption collected at all Visits,CPMP(a) p5 summary-of-changes row 15,Description of Change
+StudyChange_33,rationale,mapped,Medical decision,CPMP(a) p5 summary-of-changes row 15,Brief Rationale
+DocumentContentReference_33,sectionNumber,mapped,1.3,CPMP(a) p5 summary-of-changes row 15,Section # and Name '1.3 Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_34,summary,mapped,Added recreational drug use collected at Visit 1,CPMP(a) p5 summary-of-changes row 16,Description of Change
+StudyChange_34,rationale,mapped,Forscreening purposes,CPMP(a) p5 summary-of-changes row 16,Brief Rationale
+DocumentContentReference_34,sectionNumber,mapped,1.3,CPMP(a) p5 summary-of-changes row 16,Section # and Name '1.3 Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_35,summary,mapped,Added Self-Pain Positioning Questionnaire at Visit 2,CPMP(a) p5 summary-of-changes row 17,Description of Change
+StudyChange_35,rationale,mapped,Part of the digital biomarkers analysis,CPMP(a) p5 summary-of-changes row 17,Brief Rationale
+DocumentContentReference_35,sectionNumber,mapped,1.3,CPMP(a) p5 summary-of-changes row 17,Section # and Name '1.3 Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyAmendment_3,changes,redacted_in_document,,CPMP(a) p5 summary-of-changes row 18 [empty_row_redacted],table row hidden by a redaction bar
+StudyChange_36,summary,mapped,Secondary objectives –Other Efficacy - change in several endpoints from “greater than” to “greater than or equal to”...,CPMP(a) p5 summary-of-changes row 19,Description of Change
+StudyChange_36,rationale,mapped,Statistician decision,CPMP(a) p5 summary-of-changes row 19,Brief Rationale
+DocumentContentReference_36,sectionNumber,mapped,3.0,CPMP(a) p5 summary-of-changes row 19,Section # and Name '3.0 Objectives and Endpoints'; not_in_toc
+StudyChange_37,summary,derived,Secondary objectives — Other Efficacy - change in several endpoints from “2-point reduction” to “at least 2-point reduction”...,CPMP(a) p5 summary-of-changes row 20,"first part from OCR (text layer lacks it), rest text layer; checked visually 2026-10-25"
+StudyChange_37,rationale,mapped,Statistician decision,CPMP(a) p5 summary-of-changes row 20,Brief Rationale
+DocumentContentReference_37,sectionNumber,derived,3.0,CPMP(a) p5 summary-of-changes row 20,Section # and Name '3.0 Objectives and Endpoints'; not_in_toc
+DocumentContentReference_37,sectionTitle,derived,Objectives and Endpoints,CPMP(a) p5 summary-of-changes row 20,from OCR (text layer lacks the cell); checked visually 2026-10-25
+StudyChange_38,summary,derived,"Secondary objectives — Other Efficacy - change in several endpoints from “treatment response with a 30%, 50%, and 70% reduction” to “first pain reduction of at least 30%, 50%, and 70%”...",CPMP(a) p5 summary-of-changes row 21,"first part from OCR (text layer lacks it), rest text layer; checked visually 2026-10-25"
+StudyChange_38,rationale,mapped,Statistician decision,CPMP(a) p5 summary-of-changes row 21,Brief Rationale
+DocumentContentReference_38,sectionNumber,derived,3.0,CPMP(a) p5 summary-of-changes row 21,Section # and Name '3.0 Objectives and Endpoints'; not_in_toc
+DocumentContentReference_38,sectionTitle,derived,Objectives and Endpoints,CPMP(a) p5 summary-of-changes row 21,from OCR (text layer lacks the cell); checked visually 2026-10-25
+StudyChange_39,summary,mapped,Secondary objectives –Other Efficacy - change in several endpoints from “Time to 2-point reduction” to “Time to first pain reduction of at,CPMP(a) p5 summary-of-changes row 22,Description of Change
+StudyChange_39,rationale,mapped,Statistician decision,CPMP(a) p5 summary-of-changes row 22,Brief Rationale
+StudyChange_39,(row),redacted_in_document,,CPMP(a) p5 summary-of-changes row 22,a redaction bar overlaps this row
+DocumentContentReference_39,sectionNumber,mapped,3.0,CPMP(a) p5 summary-of-changes row 22,Section # and Name '3.0 Objectives and Endpoints'; not_in_toc
+StudyAmendment_3,changes,redacted_in_document,,CPMP(a) p5 summary-of-changes row 23 [empty_row_redacted],table row hidden by a redaction bar
+StudyChange_40,summary,mapped,Updated Visit 2 to clarify the washout period should begin at Visit 2.,CPMP(a) p5 summary-of-changes row 24,Description of Change
+StudyChange_40,rationale,mapped,clarification,CPMP(a) p5 summary-of-changes row 24,Brief Rationale
+StudyChange_40,(row),redacted_in_document,,CPMP(a) p5 summary-of-changes row 24,a redaction bar overlaps this row
+DocumentContentReference_40,sectionNumber,mapped,4.1.1,CPMP(a) p5 summary-of-changes row 24,Section # and Name '4.1.1DesignOutline'; toc_match
+StudyChange_41,summary,mapped,Added recommendedminimumwashout duration is 2 days to Visit 2.,CPMP(a) p5 summary-of-changes row 25,Description of Change
+StudyChange_41,rationale,mapped,clarification,CPMP(a) p5 summary-of-changes row 25,Brief Rationale
+DocumentContentReference_41,sectionNumber,mapped,4.1.1,CPMP(a) p5 summary-of-changes row 25,Section # and Name '4.1.1DesignOutline'; toc_match
+StudyChange_42,summary,mapped,Updated Criterion #9 to say…all medications taken for chronic pain conditions…,CPMP(a) p5 summary-of-changes row 26 [continued_on_p6],Description of Change
+StudyChange_42,rationale,mapped,"Clarification that all medications taken for chronic pain conditions, not just for condition under study will be discontinued",CPMP(a) p5 summary-of-changes row 26 [continued_on_p6],Brief Rationale
+DocumentContentReference_42,sectionNumber,mapped,5.1,CPMP(a) p5 summary-of-changes row 26 [continued_on_p6],Section # and Name '5.1Inclusion Criteria'; toc_match
+StudyChange_43,summary,mapped,Updated Criterion #23 to say…ideation or behavior occurred within the past 2 months prior to randomization,CPMP(a) p6 summary-of-changes row 27,Description of Change
+StudyChange_43,rationale,mapped,Clarification of 2 month window prior to randomization,CPMP(a) p6 summary-of-changes row 27,Brief Rationale
+DocumentContentReference_43,sectionNumber,mapped,5.2,CPMP(a) p6 summary-of-changes row 27,Section # and Name '5.2 Exclusion Criteria'; toc_match
+StudyChange_44,summary,mapped,Updated criteria #27 and #28 to specify when a participant received at least one dose of investigational intervention,CPMP(a) p6 summary-of-changes row 28,Description of Change
+StudyChange_44,rationale,mapped,Clarification of situations where a participant may not have received intervention in a study,CPMP(a) p6 summary-of-changes row 28,Brief Rationale
+DocumentContentReference_44,sectionNumber,mapped,5.2,CPMP(a) p6 summary-of-changes row 28,Section # and Name '5.2 Exclusion Criteria'; toc_match
+StudyChange_45,summary,mapped,Medical Conditions. Added criterion #32 have fibromyalgia,CPMP(a) p6 summary-of-changes row 29,Description of Change
+StudyChange_45,rationale,mapped,Medical decision,CPMP(a) p6 summary-of-changes row 29,Brief Rationale
+DocumentContentReference_45,sectionNumber,mapped,5.2,CPMP(a) p6 summary-of-changes row 29,Section # and Name '5.2 Exclusion Criteria'; toc_match
+StudyChange_46,summary,mapped,Added sub-header Study Restrictions. Updated the first bullet to say use of medications for chronic pain conditions. Removed second bullet about modification of pharmacologic therapies for conditions other than chronic pain.,CPMP(a) p6 summary-of-changes row 30,Description of Change
+StudyChange_46,rationale,mapped,Clarification of information and removal of repeated information already stated in Section 6.5,CPMP(a) p6 summary-of-changes row 30,Brief Rationale
+DocumentContentReference_46,sectionNumber,mapped,5.3,CPMP(a) p6 summary-of-changes row 30,Section # and Name '5.3 Lifestyle Considerations'; toc_match
+StudyChange_47,summary,mapped,"Added information for caffeine, alcohol and activities",CPMP(a) p6 summary-of-changes row 31,Description of Change
+StudyChange_47,rationale,required_not_in_document,,CPMP(a) p6 summary-of-changes row 31,Brief Rationale cell empty
+DocumentContentReference_47,sectionNumber,mapped,5.3,CPMP(a) p6 summary-of-changes row 31,Section # and Name '5.3 Lifestyle Considerations'; toc_match
+StudyChange_48,summary,mapped,Replaced “operations manual” with the “schedule of activities” in the table,CPMP(a) p6 summary-of-changes row 32,Description of Change
+StudyChange_48,rationale,mapped,Correction,CPMP(a) p6 summary-of-changes row 32,Brief Rationale
+DocumentContentReference_48,sectionNumber,mapped,5.4,CPMP(a) p6 summary-of-changes row 32,Section # and Name '5.4 Screen Failures'; toc_match
+StudyChange_49,summary,mapped,Moved one bullet up and added exceptions to 2 other bullets for participants that did not receive intervention,CPMP(a) p6 summary-of-changes row 33,Description of Change
+StudyChange_49,rationale,mapped,Clarification for participants that were randomized but did not receive intervention,CPMP(a) p6 summary-of-changes row 33,Brief Rationale
+DocumentContentReference_49,sectionNumber,mapped,5.4.1,CPMP(a) p6 summary-of-changes row 33,Section # and Name '5.4.1 Participation in Multiple ISAs'; toc_match
+StudyChange_50,summary,mapped,Updates to provide additional flexibility for study conduct,CPMP(a) p6 summary-of-changes row 34,Description of Change
+StudyChange_50,rationale,mapped,Sponsor protocol template updates,CPMP(a) p6 summary-of-changes row 34,Brief Rationale
+DocumentContentReference_50,sectionNumber,mapped,6.2,CPMP(a) p6 summary-of-changes row 34,Section # and Name '6.2 Preparation/Handling/ Storage/Accountability'; toc_match
+StudyChange_51,summary,mapped,Removed “case report form” from last bullet of unblinding table. The date and reason that the blind was broken must be recorded in the source documentation of the appropriate ISA.,CPMP(a) p6 summary-of-changes row 35,Description of Change
+StudyChange_51,rationale,mapped,Correction,CPMP(a) p6 summary-of-changes row 35,Brief Rationale
+DocumentContentReference_51,sectionNumber,mapped,6.3,CPMP(a) p6 summary-of-changes row 35,Section # and Name '6.3 Measures to Minimize Bias: Randomization and Blinding'; toc_match
+StudyChange_52,summary,mapped,Updates to provide additional flexibility for study conduct,CPMP(a) p6 summary-of-changes row 36,Description of Change
+StudyChange_52,rationale,mapped,Sponsor protocol template updates,CPMP(a) p6 summary-of-changes row 36,Brief Rationale
+DocumentContentReference_52,sectionNumber,mapped,6.3,CPMP(a) p6 summary-of-changes row 36,Section # and Name '6.3 Measures to Minimize Bias: Randomization and Blinding'; toc_match
+StudyChange_53,summary,mapped,Updates to provide additional flexibility for study conduct,CPMP(a) p6 summary-of-changes row 37,Description of Change
+StudyChange_53,rationale,mapped,Sponsor protocol template updates,CPMP(a) p6 summary-of-changes row 37,Brief Rationale
+DocumentContentReference_53,sectionNumber,mapped,6.4,CPMP(a) p6 summary-of-changes row 37,Section # and Name '6.4 Study Intervention Compliance'; toc_match
+StudyChange_54,summary,mapped,Entire section updated,CPMP(a) p6 summary-of-changes row 38,Description of Change
+StudyChange_54,rationale,mapped,"To provide more clarity for permitted, prohibited, and rescue medication",CPMP(a) p6 summary-of-changes row 38,Brief Rationale
+DocumentContentReference_54,sectionNumber,mapped,6.5,CPMP(a) p6 summary-of-changes row 38,Section # and Name '6.5 Concomitant Therapy'; toc_match
+StudyChange_55,summary,mapped,Changed DMC to AC,CPMP(a) p6 summary-of-changes row 39,Description of Change
+StudyChange_55,rationale,mapped,Corrected throughout protocol,CPMP(a) p6 summary-of-changes row 39,Brief Rationale
+DocumentContentReference_55,sectionNumber,mapped,7.1,CPMP(a) p6 summary-of-changes row 39,Section # and Name '7.1 Discontinuation of Study Intervention'; toc_match
+StudyChange_56,summary,mapped,Removed “clinical research physician” (CRP) from…the investigator must obtain documented approval from the sponsor…,CPMP(a) p6 summary-of-changes row 40,Description of Change
+StudyChange_56,rationale,mapped,Documented approval from the sponsor does not need to be from a CRP,CPMP(a) p6 summary-of-changes row 40,Brief Rationale
+DocumentContentReference_56,sectionNumber,mapped,7.2.1,CPMP(a) p6 summary-of-changes row 40,Section # and Name '7.2.1 Discontinuation of Inadvertently Enrolled Participants'; toc_match
+StudyChange_57,summary,mapped,Updates to provide additional flexibility for study conduct,CPMP(a) p6 summary-of-changes row 41,Description of Change
+StudyChange_57,rationale,mapped,Sponsor protocol template updates,CPMP(a) p6 summary-of-changes row 41,Brief Rationale
+DocumentContentReference_57,sectionNumber,mapped,7.3,CPMP(a) p6 summary-of-changes row 41,Section # and Name '7.3 Lost to Follow-up'; toc_match
+StudyChange_58,summary,mapped,Numeric Rating Scale. Replaced “Exclusion” with “Inclusion” criteria for the PDEP… And updated link to Section 5.1,CPMP(a) p6 summary-of-changes row 42,Description of Change
+StudyChange_58,rationale,mapped,Correction,CPMP(a) p6 summary-of-changes row 42,Brief Rationale
+DocumentContentReference_58,sectionNumber,mapped,8.1.1,CPMP(a) p6 summary-of-changes row 42,Section # and Name '8.1.1 Screening and Preliminary Data Entry Period'; toc_match
+StudyChange_59,summary,mapped,Updated the MOS sleep scale description,CPMP(a) p6 summary-of-changes row 43,Description of Change
+StudyChange_59,rationale,mapped,Scale update,CPMP(a) p6 summary-of-changes row 43,Brief Rationale
+DocumentContentReference_59,sectionNumber,mapped,8.1.3.4,CPMP(a) p6 summary-of-changes row 43,Section # and Name '8.1.3.4 Sleep Quality'; not_in_toc
+StudyChange_60,summary,mapped,EvaluatingECGs.Changed “sitting”to “supine”,CPMP(a) p7 summary-of-changes row 44,Description of Change
+StudyChange_60,rationale,mapped,Collection shouldoccurwhile participant is supine.,CPMP(a) p7 summary-of-changes row 44,Brief Rationale
+DocumentContentReference_60,sectionNumber,mapped,8.2.3,CPMP(a) p7 summary-of-changes row 44,Section # and Name '8.2.3Electrocardiograms'; toc_match
+StudyChange_61,summary,mapped,Updates to provide additional flexibility for study conduct,CPMP(a) p7 summary-of-changes row 45,Description of Change
+StudyChange_61,rationale,mapped,Sponsor protocol template updates,CPMP(a) p7 summary-of-changes row 45,Brief Rationale
+DocumentContentReference_61,sectionNumber,mapped,8.2.4,CPMP(a) p7 summary-of-changes row 45,Section # and Name '8.2.4 Clinical Safety L aboratory Assessments'; toc_match
+StudyAmendment_3,changes,redacted_in_document,,CPMP(a) p7 summary-of-changes row 46 [empty_row_redacted],table row hidden by a redaction bar
+StudyChange_62,summary,mapped,"Updated population description table for Enrolled, Modified ITT, Safety, and Enhanced ITT populations",CPMP(a) p7 summary-of-changes row 47,Description of Change
+StudyChange_62,rationale,mapped,Based on feedback from the FDA,CPMP(a) p7 summary-of-changes row 47,Brief Rationale
+DocumentContentReference_62,sectionNumber,mapped,9.3,CPMP(a) p7 summary-of-changes row 47,Section # and Name '9.3 Populations for Analyses'; toc_match
+StudyChange_63,summary,mapped,Updated ISASAPinformation for borrowing,CPMP(a) p7 summary-of-changes row 48,Description of Change
+StudyChange_63,rationale,mapped,Statistician decision,CPMP(a) p7 summary-of-changes row 48,Brief Rationale
+DocumentContentReference_63,sectionNumber,mapped,9.4.1,CPMP(a) p7 summary-of-changes row 48,Section # and Name '9.4.1General Considerations'; toc_match
+StudyChange_64,summary,mapped,"Updated the population for the primary efficacy analysis, updated the outcome variable, and removed the continuous fixed covariates in model",CPMP(a) p7 summary-of-changes row 49,Description of Change
+StudyChange_64,rationale,mapped,"Per updates in Section 9.3, feedback from the FDA, and statistician decision, respectively",CPMP(a) p7 summary-of-changes row 49,Brief Rationale
+DocumentContentReference_64,sectionNumber,mapped,9.4.2,CPMP(a) p7 summary-of-changes row 49,Section # and Name '9.4.2 Primary Endpoint and Analysis'; toc_match
+StudyChange_65,summary,mapped,Added sub-header for Borrowing Strategy and updated text for the decisions on borrowing of placebo and treatment-effect information,CPMP(a) p7 summary-of-changes row 50,Description of Change
+StudyChange_65,rationale,mapped,Clarification,CPMP(a) p7 summary-of-changes row 50,Brief Rationale
+DocumentContentReference_65,sectionNumber,mapped,9.4.2.1,CPMP(a) p7 summary-of-changes row 50,Section # and Name '9.4.2.1 Key Features of the Bayesian Primary Efficacy Analysis Model'; not_in_toc
+StudyChange_66,summary,mapped,Updated outcome variable and removed continuous fixed covariates in model,CPMP(a) p7 summary-of-changes row 51,Description of Change
+StudyChange_66,rationale,mapped,Per FDA feedback and sponsor decision,CPMP(a) p7 summary-of-changes row 51,Brief Rationale
+DocumentContentReference_66,sectionNumber,mapped,9.4.3,CPMP(a) p7 summary-of-changes row 51,Section # and Name '9.4.3 Secondary Endpoints and Analysis'; toc_match
+StudyChange_67,summary,mapped,"Moved the table to Section 9.4.3.1. In the table, updated the outcome variable, removed the continuous fixed covariates in the model, and updated the fixed categorical effects",CPMP(a) p7 summary-of-changes row 52,Description of Change
+StudyChange_67,rationale,mapped,Statistician decision,CPMP(a) p7 summary-of-changes row 52,Brief Rationale
+DocumentContentReference_67,sectionNumber,mapped,9.4.3,CPMP(a) p7 summary-of-changes row 52,Section # and Name '9.4.3 Secondary Endpoints and Analysis'; toc_match
+StudyChange_68,summary,mapped,Table from 9.4.3. moved to this section and content updated.,CPMP(a) p7 summary-of-changes row 53,Description of Change
+StudyChange_68,rationale,mapped,Statistician decision,CPMP(a) p7 summary-of-changes row 53,Brief Rationale
+DocumentContentReference_68,sectionNumber,mapped,9.4.3.1,CPMP(a) p7 summary-of-changes row 53,Section # and Name '9.4.3.1 Continuous Efficacy Analyses'; not_in_toc
+StudyChange_69,summary,mapped,Change in several endpoints from “greater than” to “greater than or equal to”... and from “2-point reduction…” to “at least 2-point reduction…”,CPMP(a) p7 summary-of-changes row 54,Description of Change
+StudyChange_69,rationale,mapped,Statistician decision,CPMP(a) p7 summary-of-changes row 54,Brief Rationale
+DocumentContentReference_69,sectionNumber,mapped,9.4.3.2,CPMP(a) p7 summary-of-changes row 54,Section # and Name '9.4.3.2 Categorical Efficacy Analyses'; not_in_toc
+StudyChange_70,summary,mapped,Updated the outcomes from “greater than” to “greater than or equal to…”. Updated the outcomes from “a 2-point reduction from baseline” to “at least a 2-point reduction from baseline”. Added the model covariates,CPMP(a) p7 summary-of-changes row 55,Description of Change
+StudyChange_70,rationale,mapped,Statistician decision,CPMP(a) p7 summary-of-changes row 55,Brief Rationale
+DocumentContentReference_70,sectionNumber,mapped,9.4.3.2,CPMP(a) p7 summary-of-changes row 55,Section # and Name '9.4.3.2 Categorical Efficacy Analyses'; not_in_toc
+StudyChange_71,summary,mapped,"Updated l ast 2bulletstosay,“time to firstpain reduction of at least 2-points”…",CPMP(a) p7 summary-of-changes row 56,Description of Change
+StudyChange_71,rationale,mapped,Parallelsentencestructureof outcomes,CPMP(a) p7 summary-of-changes row 56,Brief Rationale
+DocumentContentReference_71,sectionNumber,mapped,9.4.3.3,CPMP(a) p7 summary-of-changes row 56,Section # and Name '9.4.3.3Time to Event Efficacy Analyses'; not_in_toc
+StudyChange_72,summary,mapped,Added the “time to event” analyses based on daily NRS score,CPMP(a) p7 summary-of-changes row 57,Description of Change
+StudyChange_72,rationale,mapped,Statistician decision,CPMP(a) p7 summary-of-changes row 57,Brief Rationale
+DocumentContentReference_72,sectionNumber,mapped,9.4.3.3,CPMP(a) p7 summary-of-changes row 57,Section # and Name '9.4.3.3Time to Event Efficacy Analyses'; not_in_toc
+StudyChange_73,summary,mapped,Added biomarkeranalysis,CPMP(a) p7 summary-of-changes row 58,Description of Change
+StudyChange_73,rationale,mapped,Sponsor ’sdecision,CPMP(a) p7 summary-of-changes row 58,Brief Rationale
+DocumentContentReference_73,sectionNumber,mapped,9.4.4,CPMP(a) p7 summary-of-changes row 58,Section # and Name '9.4.4Tertiary/Exploratory Endpoints'; toc_match
+StudyChange_74,summary,mapped,Subgroupanalyses model covariates are updated,CPMP(a) p7 summary-of-changes row 59,Description of Change
+StudyChange_74,rationale,mapped,Statistician decision,CPMP(a) p7 summary-of-changes row 59,Brief Rationale
+DocumentContentReference_74,sectionNumber,mapped,9.4.7,CPMP(a) p7 summary-of-changes row 59,Section # and Name '9.4.7SubgroupAnalyses'; toc_match
+StudyChange_75,summary,mapped,Changed DMC to AC and added information for the AC and AC charter.,CPMP(a) p7 summary-of-changes row 60,Description of Change
+StudyChange_75,rationale,mapped,Correction to more accurately describe committee and its responsibilities,CPMP(a) p7 summary-of-changes row 60,Brief Rationale
+DocumentContentReference_75,sectionNumber,mapped,9.6,CPMP(a) p7 summary-of-changes row 60,Section # and Name '9.6 Data Monitoring Committee'; toc_match
+StudyChange_76,summary,mapped,"Updates to provide additional flexibility for study conduct. Fourth bullet, …”oversight of study conduct for participants under their responsibility…”",CPMP(a) p7 summary-of-changes row 61 [continued_on_p8],Description of Change
+StudyChange_76,rationale,mapped,Sponsor protocol template updates,CPMP(a) p7 summary-of-changes row 61 [continued_on_p8],Brief Rationale
+DocumentContentReference_76,sectionNumber,mapped,10.1.1,CPMP(a) p7 summary-of-changes row 61 [continued_on_p8],Section # and Name '10.1.1 Regulatory and Ethical Considerations'; toc_match
+StudyChange_77,summary,mapped,Changed DMC to AC and updated responsibilities of the SASC,CPMP(a) p8 summary-of-changes row 62,Description of Change
+StudyChange_77,rationale,mapped,Correction to more accurately describe committee and its responsibilities,CPMP(a) p8 summary-of-changes row 62,Brief Rationale
+DocumentContentReference_77,sectionNumber,mapped,10.1.5,CPMP(a) p8 summary-of-changes row 62,Section # and Name '10.1.5 Committees Structure'; toc_match
+StudyChange_78,summary,mapped,Updates to provide additional flexibility for study conduct,CPMP(a) p8 summary-of-changes row 63,Description of Change
+StudyChange_78,rationale,mapped,Sponsor protocol template updates,CPMP(a) p8 summary-of-changes row 63,Brief Rationale
+DocumentContentReference_78,sectionNumber,mapped,10.1.7,CPMP(a) p8 summary-of-changes row 63,Section # and Name '10.1.7 Data Quality Assurance'; toc_match
+StudyChange_79,summary,mapped,Added digital biomarker data information,CPMP(a) p8 summary-of-changes row 64,Description of Change
+StudyChange_79,rationale,mapped,"If available, digital biomarker devices will be used in the study",CPMP(a) p8 summary-of-changes row 64,Brief Rationale
+DocumentContentReference_79,sectionNumber,mapped,10.1.7,CPMP(a) p8 summary-of-changes row 64,Section # and Name '10.1.7 Data Quality Assurance'; toc_match
+StudyChange_80,summary,mapped,Updated terminology in table and changed sample retention from 15 to 7 years for exploratory biomarker sample.,CPMP(a) p8 summary-of-changes row 65,Description of Change
+StudyChange_80,rationale,mapped,Per updated sponsor guidelines,CPMP(a) p8 summary-of-changes row 65,Brief Rationale
+DocumentContentReference_80,sectionNumber,mapped,10.1.12,CPMP(a) p8 summary-of-changes row 65,Section # and Name '10.1.12 Long-term Sample Retention'; toc_match
+StudyChange_81,summary,mapped,Added new text for local laboratory testing,CPMP(a) p8 summary-of-changes row 66,Description of Change
+StudyChange_81,rationale,mapped,Sponsor protocol template updates,CPMP(a) p8 summary-of-changes row 66,Brief Rationale
+DocumentContentReference_81,sectionNumber,mapped,10.2,CPMP(a) p8 summary-of-changes row 66,Section # and Name '10.2 Appendix 2: Clinical Laboratory Tests'; toc_match
+StudyChange_82,summary,mapped,"Added B12, methylmalonic acid and homocysteine",CPMP(a) p8 summary-of-changes row 67,Description of Change
+StudyChange_82,rationale,mapped,Per schedule of activities update,CPMP(a) p8 summary-of-changes row 67,Brief Rationale
+DocumentContentReference_82,sectionNumber,mapped,10.2,CPMP(a) p8 summary-of-changes row 67,Section # and Name '10.2 Appendix 2: Clinical Laboratory Tests'; toc_match
+StudyChange_83,summary,mapped,"Pharmacogenetic and Exploratory Biomarker Sample Collection table, updated terminology and changed plasma to whole blood",CPMP(a) p8 summary-of-changes row 68,Description of Change
+StudyChange_83,rationale,mapped,Correction per updated sponsor guidelines.,CPMP(a) p8 summary-of-changes row 68,Brief Rationale
+DocumentContentReference_83,sectionNumber,mapped,10.2,CPMP(a) p8 summary-of-changes row 68,Section # and Name '10.2 Appendix 2: Clinical Laboratory Tests'; toc_match
+StudyChange_84,summary,mapped,"Added Liang, Zeger 2000 reference",CPMP(a) p8 summary-of-changes row 69,Description of Change
+StudyChange_84,rationale,mapped,Used in Section 9.4.2.,CPMP(a) p8 summary-of-changes row 69,Brief Rationale
+DocumentContentReference_84,sectionNumber,mapped,11,CPMP(a) p8 summary-of-changes row 69,Section # and Name '11 References'; toc_match
+StudyChange_85,summary,mapped,Minor editorial and formatting changes,CPMP(a) p8 summary-of-changes row 70,Description of Change
+StudyChange_85,rationale,mapped,"Minor, therefore not described",CPMP(a) p8 summary-of-changes row 70,Brief Rationale
+DocumentContentReference_85,sectionNumber,required_not_in_document,,CPMP(a) p8 summary-of-changes row 70,'Throughout the protocol' names no section; decision D4
+DocumentContentReference_85,sectionTitle,derived,Throughout the protocol,CPMP(a) p8 summary-of-changes row 70,the table's Section # and Name text; not a section title
+StudyAmendment_4,name,derived,H0P-MC-NP01(a),NP01 p4 'Amendment (a)',"document number + amendment letter, as on the title page"
+StudyAmendment_4,number,mapped,a,NP01 p4 'Amendment (a)',
+StudyAmendment_4,summary,mapped,This amendment addresses Food and Drug Administration (FDA) feedback.,NP01 p4 'Overall Rationale for the Amendment',
+GovernanceDate_17,dateValue,mapped,2020-03-27,NP01 p2 title page (Step 3 StudyDefinitionDocumentVersion_10),approval date of the document version produced by this amendment
+GovernanceDate_17,geographicScopes,required_not_in_document,,NP01 p2 title page,1..*; no geographic scope stated
+StudyAmendment_4,primaryReason,required_not_in_document,,NP01 p4 'Amendment (a)',1..1 coded StudyAmendmentReason (C207415); the document gives the reason as text only (summary); decision D2
+StudyAmendment_4,geographicScopes,required_not_in_document,,NP01 p4 'Amendment (a)',1..*; no geographic scope stated
+StudyAmendment_4,(amended document version),not_expressible,H0P-MC-NP01 version a,NP01 p4 'Amendment (a)',StudyAmendment has no reference to the StudyDefinitionDocument or the document version it produces; only StudyChange.changedSections.appliesToId points to the document (not the version)
+StudyChange_86,summary,mapped,Addition of visit window for post-randomization visits,NP01(a) p4 summary-of-changes row 1,Description of Change
+StudyChange_86,rationale,mapped,Allows flexibility for participants,NP01(a) p4 summary-of-changes row 1,Brief Rationale
+DocumentContentReference_86,sectionNumber,mapped,1.3,NP01(a) p4 summary-of-changes row 1,Section # and Name 'Section 1.3. Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_87,summary,mapped,Included details for vital signs and targeted physical examination,NP01(a) p4 summary-of-changes row 2,Description of Change
+StudyChange_87,rationale,mapped,Per regulatory feedback,NP01(a) p4 summary-of-changes row 2,Brief Rationale
+DocumentContentReference_87,sectionNumber,mapped,1.3,NP01(a) p4 summary-of-changes row 2,Section # and Name 'Section 1.3. Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_88,summary,mapped,Included additional urine pregnancy sample collection and updated description of those who would be tested,NP01(a) p4 summary-of-changes row 3,Description of Change
+StudyChange_88,rationale,mapped,Per new toxicology data,NP01(a) p4 summary-of-changes row 3,Brief Rationale
+DocumentContentReference_88,sectionNumber,mapped,1.3,NP01(a) p4 summary-of-changes row 3,Section # and Name 'Section 1.3. Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_89,summary,mapped,Included additional sample collection time for hemoglobin A1c,NP01(a) p4 summary-of-changes row 4,Description of Change
+StudyChange_89,rationale,mapped,Sample collection time missed in the original version,NP01(a) p4 summary-of-changes row 4,Brief Rationale
+DocumentContentReference_89,sectionNumber,mapped,1.3,NP01(a) p4 summary-of-changes row 4,Section # and Name 'Section 1.3. Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_90,summary,mapped,Removed language for women of childbearing potential and added language for fetal exposure,NP01(a) p4 summary-of-changes row 5,Description of Change
+StudyChange_90,rationale,mapped,Women of childbearing potential are now allowed in the study; pregnant or breastfeeding women are not allowed,NP01(a) p4 summary-of-changes row 5,Brief Rationale
+DocumentContentReference_90,sectionNumber,mapped,2.3.1,NP01(a) p4 summary-of-changes row 5,Section # and Name 'Section 2.3.1. Risk Assessment'; toc_match
+StudyChange_91,summary,mapped,Amended post-treatment follow-up period instructions,NP01(a) p4 summary-of-changes row 6,Description of Change
+StudyChange_91,rationale,mapped,Updated to maximize data collection in the follow-up period,NP01(a) p4 summary-of-changes row 6,Brief Rationale
+DocumentContentReference_91,sectionNumber,mapped,4,NP01(a) p4 summary-of-changes row 6,Section # and Name 'Section 4 Study Design'; toc_match
+StudyChange_92,summary,mapped,Removed criterion related to women not of childbearing potential,NP01(a) p4 summary-of-changes row 7,Description of Change
+StudyChange_92,rationale,mapped,To account for the addition of women of childbearing potential to the study per toxicology data,NP01(a) p4 summary-of-changes row 7,Brief Rationale
+DocumentContentReference_92,sectionNumber,mapped,5.1,NP01(a) p4 summary-of-changes row 7,Section # and Name 'Section 5.1. Inclusion Criteria'; toc_match
+StudyChange_93,summary,mapped,Addition of language related to ophthalmologic disease,NP01(a) p4 summary-of-changes row 8,Description of Change
+StudyChange_93,rationale,mapped,Per regulatory feedback,NP01(a) p4 summary-of-changes row 8,Brief Rationale
+DocumentContentReference_93,sectionNumber,mapped,5.2,NP01(a) p4 summary-of-changes row 8,Section # and Name 'Section 5.2. Exclusion Criteria'; toc_match
+StudyChange_94,summary,mapped,Removed criterion related to abnormal thyroid stimulating hormone levels,NP01(a) p4 summary-of-changes row 9,Description of Change
+StudyChange_94,rationale,mapped,Covered by the master Protocol H0P-MC-CPMP,NP01(a) p4 summary-of-changes row 9,Brief Rationale
+DocumentContentReference_94,sectionNumber,mapped,5.2,NP01(a) p4 summary-of-changes row 9,Section # and Name 'Section 5.2. Exclusion Criteria'; toc_match
+StudyChange_95,summary,mapped,Addition of criterion related to women who are pregnant or breastfeeding,NP01(a) p4 summary-of-changes row 10,Description of Change
+StudyChange_95,rationale,mapped,Per regulatory feedback,NP01(a) p4 summary-of-changes row 10,Brief Rationale
+DocumentContentReference_95,sectionNumber,mapped,5.2,NP01(a) p4 summary-of-changes row 10,Section # and Name 'Section 5.2. Exclusion Criteria'; toc_match
+StudyChange_96,summary,mapped,Removed language about local regulations for contraception use by men,NP01(a) p4 summary-of-changes row 11,Description of Change
+StudyChange_96,rationale,mapped,This language is intended for global studies. This study will be conducted in the United States only.,NP01(a) p4 summary-of-changes row 11,Brief Rationale
+DocumentContentReference_96,sectionNumber,mapped,5.3,NP01(a) p4 summary-of-changes row 11,Section # and Name 'Section 5.3. Lifestyle Considerations'; toc_match
+StudyChange_97,summary,mapped,Addition of special treatment considerations,NP01(a) p4 summary-of-changes row 12,Description of Change
+StudyChange_97,rationale,mapped,Per regulatory feedback,NP01(a) p4 summary-of-changes row 12,Brief Rationale
+DocumentContentReference_97,sectionNumber,mapped,6.1.1,NP01(a) p4 summary-of-changes row 12,Section # and Name 'Section 6.1.1. Special Treatment Considerations'; toc_match
+StudyChange_98,summary,mapped,New section to include details on targeted physical examination,NP01(a) p4 summary-of-changes row 13 [section_continued_on_p5],Description of Change
+StudyChange_98,rationale,mapped,Per regulatory feedback,NP01(a) p4 summary-of-changes row 13 [section_continued_on_p5],Brief Rationale
+DocumentContentReference_98,sectionNumber,mapped,8.1.1,NP01(a) p4 summary-of-changes row 13 [section_continued_on_p5],Section # and Name 'Section 8.1.1. Physical Examinations'; toc_match
+StudyChange_99,summary,mapped,Addition of definitions and contraceptive guidance related to women of childbearing potential,NP01(a) p5 summary-of-changes row 14,Description of Change
+StudyChange_99,rationale,mapped,To account for the addition of women of childbearing potential to the study per toxicology data,NP01(a) p5 summary-of-changes row 14,Brief Rationale
+DocumentContentReference_99,sectionNumber,mapped,10.2,NP01(a) p5 summary-of-changes row 14,"Section # and Name 'Section 10.2, Appendix 2'; toc_number_only (TOC: Appendix 2: Definitions of Reproductive Requirements and Contraceptive Guidance)"
+StudyChange_100,summary,mapped,Minor editorial and formatting changes,NP01(a) p5 summary-of-changes row 15,Description of Change
+StudyChange_100,rationale,mapped,"Minor, therefore not described",NP01(a) p5 summary-of-changes row 15,Brief Rationale
+DocumentContentReference_100,sectionNumber,required_not_in_document,,NP01(a) p5 summary-of-changes row 15,'Throughout the protocol' names no section; decision D4
+DocumentContentReference_100,sectionTitle,derived,Throughout the protocol,NP01(a) p5 summary-of-changes row 15,the table's Section # and Name text; not a section title
+StudyAmendment_5,name,derived,H0P-MC-NP02(a),NP02 p4 'Amendment [a]',"document number + amendment letter, as on the title page"
+StudyAmendment_5,number,mapped,a,NP02 p4 'Amendment [a]',
+StudyAmendment_5,summary,mapped,This amendment addresses changes in the exclusion criteria in response to FDA feedback based on in vitro data currently available.,NP02 p4 'Overall Rationale for the Amendment',
+GovernanceDate_18,dateValue,mapped,2021-09-30,NP02 p2 title page (Step 3 StudyDefinitionDocumentVersion_12),approval date of the document version produced by this amendment
+GovernanceDate_18,geographicScopes,required_not_in_document,,NP02 p2 title page,1..*; no geographic scope stated
+StudyAmendment_5,primaryReason,required_not_in_document,,NP02 p4 'Amendment [a]',1..1 coded StudyAmendmentReason (C207415); the document gives the reason as text only (summary); decision D2
+StudyAmendment_5,geographicScopes,required_not_in_document,,NP02 p4 'Amendment [a]',1..*; no geographic scope stated
+StudyAmendment_5,(amended document version),not_expressible,H0P-MC-NP02 version a,NP02 p4 'Amendment [a]',StudyAmendment has no reference to the StudyDefinitionDocument or the document version it produces; only StudyChange.changedSections.appliesToId points to the document (not the version)
+StudyChange_101,summary,mapped,Added sub-section headers.,NP02(a) p4 summary-of-changes row 1,Description of Change
+StudyChange_101,rationale,mapped,For clarity.,NP02(a) p4 summary-of-changes row 1,Brief Rationale
+DocumentContentReference_101,sectionNumber,mapped,2.3,NP02(a) p4 summary-of-changes row 1,Section # and Name '2.3.Benefit/Risk Assessment'; toc_match
+StudyChange_102,summary,mapped,"In first paragraph, added text for the effect of LY3526318 on other drugs.",NP02(a) p4 summary-of-changes row 2,Description of Change
+StudyChange_102,rationale,mapped,Clarification of the potential of LY3526318 exposure to affect metabolism of other drugs.,NP02(a) p4 summary-of-changes row 2,Brief Rationale
+DocumentContentReference_102,sectionNumber,mapped,2.3.1,NP02(a) p4 summary-of-changes row 2,Section # and Name '2.3.1. Risk Assessment'; toc_match
+StudyChange_103,summary,mapped,"Updated first bullet to specify CYP3A4, plus minor editorial changes.",NP02(a) p4 summary-of-changes row 3 [section_from_merged_cell],Description of Change
+StudyChange_103,rationale,mapped,For clarity.,NP02(a) p4 summary-of-changes row 3 [section_from_merged_cell],Brief Rationale
+DocumentContentReference_103,sectionNumber,mapped,2.3.1,NP02(a) p4 summary-of-changes row 3 [section_from_merged_cell],Section # and Name '2.3.1. Risk Assessment'; toc_match
+StudyChange_104,summary,mapped,Added a bullet for CYP3A4 and p- glycoprotein (P-gp) substrates.,NP02(a) p4 summary-of-changes row 4 [section_from_merged_cell],Description of Change
+StudyChange_104,rationale,mapped,Based on in vitro data suggesting a potential for PK interactions.,NP02(a) p4 summary-of-changes row 4 [section_from_merged_cell],Brief Rationale
+DocumentContentReference_104,sectionNumber,mapped,2.3.1,NP02(a) p4 summary-of-changes row 4 [section_from_merged_cell],Section # and Name '2.3.1. Risk Assessment'; toc_match
+StudyChange_105,summary,mapped,Updated numbersfor inclusion and exclusion criteria.,NP02(a) p4 summary-of-changes row 5,Description of Change
+StudyChange_105,rationale,mapped,Toalign with master protocol andISA numbering system.,NP02(a) p4 summary-of-changes row 5,Brief Rationale
+DocumentContentReference_105,sectionNumber,mapped,5,NP02(a) p4 summary-of-changes row 5,Section # and Name '5.StudyPopulation'; toc_match
+StudyChange_106,summary,mapped,Updated Exclusion Criterion #3051 to specify drugs taken orally or intravenously.,NP02(a) p4 summary-of-changes row 6,Description of Change
+StudyChange_106,rationale,mapped,Topical drugs are allowed.,NP02(a) p4 summary-of-changes row 6,Brief Rationale
+DocumentContentReference_106,sectionNumber,mapped,5.2,NP02(a) p4 summary-of-changes row 6,Section # and Name '5.2. Exclusion Criteria'; toc_match
+StudyChange_107,summary,mapped,Added Exclusion Criterion #3054 for participants that are taking drugs that are sensitive CYP3A4 substrates with a narrow therapeutic index.,NP02(a) p4 summary-of-changes row 7 [section_from_merged_cell],Description of Change
+StudyChange_107,rationale,mapped,Based on in vitro data suggesting potential CYP3A4 inhibition at the proposed LY3526318 dose.,NP02(a) p4 summary-of-changes row 7 [section_from_merged_cell],Brief Rationale
+DocumentContentReference_107,sectionNumber,mapped,5.2,NP02(a) p4 summary-of-changes row 7 [section_from_merged_cell],Section # and Name '5.2. Exclusion Criteria'; toc_match
+StudyChange_108,summary,mapped,Added Exclusion Criterion #3055 for participants that are taking simvastatin at doses greater than 20 mg/day.,NP02(a) p4 summary-of-changes row 8 [section_from_merged_cell],Description of Change
+StudyChange_108,rationale,mapped,"Simvastatin is a sensitive CYP3A4 substrate, with a projected maximal increase in exposure <2-fold in combination with LY3526318. Therefore, doses of 20 mg or less are considered safe.",NP02(a) p4 summary-of-changes row 8 [section_from_merged_cell],Brief Rationale
+DocumentContentReference_108,sectionNumber,mapped,5.2,NP02(a) p4 summary-of-changes row 8 [section_from_merged_cell],Section # and Name '5.2. Exclusion Criteria'; toc_match
+StudyChange_109,summary,mapped,Added Exclusion Criterion #3056 for participants that are taking digoxin.,NP02(a) p4 summary-of-changes row 9 [section_from_merged_cell],Description of Change
+StudyChange_109,rationale,mapped,Based on in vitro data suggesting a potential for LY3526318 to inhibit P-gp.,NP02(a) p4 summary-of-changes row 9 [section_from_merged_cell],Brief Rationale
+DocumentContentReference_109,sectionNumber,mapped,5.2,NP02(a) p4 summary-of-changes row 9 [section_from_merged_cell],Section # and Name '5.2. Exclusion Criteria'; toc_match
+StudyChange_110,summary,mapped,"Under Potential Drug-Drug Interactions with LY3526318, added reference to Section 5.2 for concomitant medication restrictions.",NP02(a) p5 summary-of-changes row 10,Description of Change
+StudyChange_110,rationale,mapped,Reference to add exclusion criteria.,NP02(a) p5 summary-of-changes row 10,Brief Rationale
+StudyChange_110,(row),redacted_in_document,,NP02(a) p5 summary-of-changes row 10,a redaction bar overlaps this row
+DocumentContentReference_110,sectionNumber,mapped,6.6,NP02(a) p5 summary-of-changes row 10,Section # and Name '6.6. Concomitant Therapy'; toc_match
+StudyAmendment_5,changes,redacted_in_document,,NP02(a) p5 summary-of-changes row 11 [empty_row_redacted],table row hidden by a redaction bar
+StudyChange_111,summary,mapped,Added reference to Section 5.2 and the Manual of Operations for additional information.,NP02(a) p5 summary-of-changes row 12,Description of Change
+StudyChange_111,rationale,mapped,For clarity.,NP02(a) p5 summary-of-changes row 12,Brief Rationale
+DocumentContentReference_111,sectionNumber,mapped,10.3,NP02(a) p5 summary-of-changes row 12,Section # and Name '10.3. Appendix 3: List of Excluded Concomitant Medications'; toc_match
+StudyChange_112,summary,mapped,Minor editorial and format changes.,NP02(a) p5 summary-of-changes row 13,Description of Change
+StudyChange_112,rationale,mapped,"Minor, therefore not described.",NP02(a) p5 summary-of-changes row 13,Brief Rationale
+DocumentContentReference_112,sectionNumber,required_not_in_document,,NP02(a) p5 summary-of-changes row 13,'Throughoutthe protocol' names no section; decision D4
+DocumentContentReference_112,sectionTitle,derived,Throughoutthe protocol,NP02(a) p5 summary-of-changes row 13,the table's Section # and Name text; not a section title
+StudyAmendment_6,name,derived,H0P-MC-NP03(a),NP03 p41 'Amendment [a] 12 March 2021',"document number + amendment letter, as on the title page"
+StudyAmendment_6,number,mapped,a,NP03 p41 'Amendment [a] 12 March 2021',
+StudyAmendment_6,summary,mapped,"This amendment introduces a dose titration scheme for participants. The starting dose level is 200 mg and decisions to change the dose level will be made by the investigator, in discussion with the participants, based on adverse events reported for tolerability. The changes for dose titration affect",NP03 p41 'Overall Rationale for the Amendment',
+StudyAmendment_6,dateValues,not_expressible,2021-03-12,NP03 p41 'Amendment [a] 12 March 2021',"date in the Appendix 5 heading and the Document History 'Date' column; not stated to be an approval, effective or issued date"
+StudyAmendment_6,primaryReason,required_not_in_document,,NP03 p41 'Amendment [a] 12 March 2021',1..1 coded StudyAmendmentReason (C207415); the document gives the reason as text only (summary); decision D2
+StudyAmendment_6,geographicScopes,required_not_in_document,,NP03 p41 'Amendment [a] 12 March 2021',1..*; no geographic scope stated
+StudyAmendment_6,(amended document version),not_expressible,H0P-MC-NP03 version a,NP03 p41 'Amendment [a] 12 March 2021',StudyAmendment has no reference to the StudyDefinitionDocument or the document version it produces; only StudyChange.changedSections.appliesToId points to the document (not the version)
+StudyChange_113,summary,mapped,"Updates made to Number of Participants Intervention Groups and Duration, and Data Monitoring Committee",NP03(a) p41 summary-of-changes row 1,Description of Change
+StudyChange_113,rationale,mapped,Sample size and study intervention text updated for new dose titration scheme “Data monitoring committee” changed to “Assessment committee” for consistency with master CPMP protocol,NP03(a) p41 summary-of-changes row 1,Brief Rationale
+DocumentContentReference_113,sectionNumber,mapped,1.1,NP03(a) p41 summary-of-changes row 1,Section # and Name '1.1 Synopsis'; toc_match
+StudyChange_114,summary,mapped,Updated schema to show dose titration,NP03(a) p41 summary-of-changes row 2,Description of Change
+StudyChange_114,rationale,mapped,New dose titration scheme for participants,NP03(a) p41 summary-of-changes row 2,Brief Rationale
+DocumentContentReference_114,sectionNumber,mapped,1.2,NP03(a) p41 summary-of-changes row 2,Section # and Name '1.2 Schema'; toc_match
+StudyChange_115,summary,mapped,Added telephone visits and updated study intervention notes to include a link to the new dose modification section,NP03(a) p41 summary-of-changes row 3,Description of Change
+StudyChange_115,rationale,mapped,To implement new dose titration scheme,NP03(a) p41 summary-of-changes row 3,Brief Rationale
+DocumentContentReference_115,sectionNumber,mapped,1.3,NP03(a) p41 summary-of-changes row 3,Section # and Name '1.3 Schedule of Activities (SoA)'; toc_match
+StudyChange_116,summary,mapped,Updates were made to ECG and Vital signs,NP03(a) p41 summary-of-changes row 4,Description of Change
+StudyChange_116,rationale,mapped,Corrections for clarity,NP03(a) p41 summary-of-changes row 4,Brief Rationale
+DocumentContentReference_116,sectionNumber,mapped,1.3,NP03(a) p41 summary-of-changes row 4,Section # and Name '1.3 Schedule of Activities (SoA)'; toc_match
+StudyChange_117,summary,mapped,Replaced Urinalysis with Urine drug screen.,NP03(a) p41 summary-of-changes row 5,Description of Change
+StudyChange_117,rationale,mapped,"Urinalysis was only for Visit 3, so removed. Urine drug screen added and performed according to investigator discretion",NP03(a) p41 summary-of-changes row 5,Brief Rationale
+DocumentContentReference_117,sectionNumber,mapped,1.3,NP03(a) p41 summary-of-changes row 5,Section # and Name '1.3 Schedule of Activities (SoA)'; toc_match
+StudyChange_118,summary,mapped,Added window for PK sample collection,NP03(a) p41 summary-of-changes row 6,Description of Change
+StudyChange_118,rationale,mapped,Adding flexibility,NP03(a) p41 summary-of-changes row 6,Brief Rationale
+DocumentContentReference_118,sectionNumber,mapped,1.3,NP03(a) p41 summary-of-changes row 6,Section # and Name '1.3 Schedule of Activities (SoA)'; toc_match
+StudyChange_119,summary,mapped,Added participant digital biomarker device for Visit 7 and ED,NP03(a) p41 summary-of-changes row 7,Description of Change
+StudyChange_119,rationale,mapped,To indicate when the participant needs to return the device.,NP03(a) p41 summary-of-changes row 7,Brief Rationale
+DocumentContentReference_119,sectionNumber,mapped,1.3,NP03(a) p41 summary-of-changes row 7,Section # and Name '1.3 Schedule of Activities (SoA)'; toc_match
+StudyChange_120,summary,mapped,Updated information for the 2 Phase 1 clinical studies,NP03(a) p41 summary-of-changes row 8,Description of Change
+StudyChange_120,rationale,mapped,Both studies are completed,NP03(a) p41 summary-of-changes row 8,Brief Rationale
+DocumentContentReference_120,sectionNumber,mapped,2.2,NP03(a) p41 summary-of-changes row 8,Section # and Name '2.2 Background'; toc_match
+StudyChange_121,summary,mapped,Updated and added text to describe the new dose titration scheme,NP03(a) p41 summary-of-changes row 9,Description of Change
+StudyChange_121,rationale,mapped,New dose titration scheme for participants,NP03(a) p41 summary-of-changes row 9,Brief Rationale
+DocumentContentReference_121,sectionNumber,mapped,4.1,NP03(a) p41 summary-of-changes row 9,Section # and Name '4.1 Overall Design'; toc_match
+StudyChange_122,summary,mapped,Added text for the titration scheme Removed “preliminary” from the beginning of second paragraph,NP03(a) p41 summary-of-changes row 10,Description of Change
+StudyChange_122,rationale,mapped,New dose titration scheme for participants Study LXBA is now completed,NP03(a) p41 summary-of-changes row 10,Brief Rationale
+DocumentContentReference_122,sectionNumber,mapped,4.3,NP03(a) p41 summary-of-changes row 10,Section # and Name '4.3 Justification for Dose'; toc_match
+StudyChange_123,summary,mapped,Updated Criteria #3028,NP03(a) p41 summary-of-changes row 11,Description of Change
+StudyChange_123,rationale,mapped,Clarifications based on clinical experience and emerging pharmacokinetic/metabolism data,NP03(a) p41 summary-of-changes row 11,Brief Rationale
+DocumentContentReference_123,sectionNumber,mapped,5.2,NP03(a) p41 summary-of-changes row 11,Section # and Name '5.2 Exclusion Criteria'; toc_match
+StudyChange_124,summary,mapped,Removed text that is already in the master CPMP,NP03(a) p42 summary-of-changes row 12,Description of Change
+StudyChange_124,rationale,mapped,Master protocol updates for CPMP amendment (a),NP03(a) p42 summary-of-changes row 12,Brief Rationale
+DocumentContentReference_124,sectionNumber,mapped,5.3,NP03(a) p42 summary-of-changes row 12,Section # and Name '5.3 Lifestyle Considerations'; toc_match
+StudyChange_125,summary,mapped,Updated text and table,NP03(a) p42 summary-of-changes row 13,Description of Change
+StudyChange_125,rationale,mapped,New dose titration scheme for participants. Emerging data allow participants to take capsules with or without food,NP03(a) p42 summary-of-changes row 13,Brief Rationale
+DocumentContentReference_125,sectionNumber,mapped,6.1,NP03(a) p42 summary-of-changes row 13,Section # and Name '6.1 Study Intervention(s) Administered'; toc_match
+StudyChange_126,summary,mapped,Removed text that is duplicated in CPMP Added sub-header for drug-drug interactions,NP03(a) p42 summary-of-changes row 14,Description of Change
+StudyChange_126,rationale,mapped,Consistency across ISAs,NP03(a) p42 summary-of-changes row 14,Brief Rationale
+DocumentContentReference_126,sectionNumber,mapped,6.5,NP03(a) p42 summary-of-changes row 14,Section # and Name '6.5 Concomitant Therapy'; toc_match
+StudyChange_127,summary,mapped,New section,NP03(a) p42 summary-of-changes row 15,Description of Change
+StudyChange_127,rationale,mapped,New dose titration scheme for participants,NP03(a) p42 summary-of-changes row 15,Brief Rationale
+DocumentContentReference_127,sectionNumber,mapped,6.6,NP03(a) p42 summary-of-changes row 15,Section # and Name '6.6 Dose Modification'; toc_match
+StudyChange_128,summary,mapped,Added text to refer to the master,NP03(a) p42 summary-of-changes row 16,Description of Change
+StudyChange_128,rationale,mapped,Master protocol contains AE and SAE information,NP03(a) p42 summary-of-changes row 16,Brief Rationale
+DocumentContentReference_128,sectionNumber,mapped,8.2,NP03(a) p42 summary-of-changes row 16,Section # and Name '8.2 Adverse Events and Serious Adverse Events'; toc_match
+StudyChange_129,summary,mapped,Updated sample size,NP03(a) p42 summary-of-changes row 17,Description of Change
+StudyChange_129,rationale,mapped,New dose titration scheme for participants,NP03(a) p42 summary-of-changes row 17,Brief Rationale
+DocumentContentReference_129,sectionNumber,mapped,9.2,NP03(a) p42 summary-of-changes row 17,Section # and Name '9.2 Sample Size Determination'; toc_match
+StudyChange_130,summary,mapped,Removed “in the SAP”,NP03(a) p42 summary-of-changes row 18,Description of Change
+StudyChange_130,rationale,mapped,The master protocol defines the populations for analyses,NP03(a) p42 summary-of-changes row 18,Brief Rationale
+DocumentContentReference_130,sectionNumber,mapped,9.3,NP03(a) p42 summary-of-changes row 18,Section # and Name '9.3 Populations for Analyses'; toc_match
+StudyChange_131,summary,mapped,Updated the acceptable and ineffective methods of contraception text,NP03(a) p42 summary-of-changes row 19,Description of Change
+StudyChange_131,rationale,mapped,Updates to internal Lilly guidance,NP03(a) p42 summary-of-changes row 19,Brief Rationale
+DocumentContentReference_131,sectionNumber,mapped,10.2,NP03(a) p42 summary-of-changes row 19,Section # and Name '10.2 Appendix 2'; toc_number_only (TOC: Appendix 2: Definitions of Reproductive Requirements and Contraceptive Guidance)
+StudyChange_132,summary,mapped,Minor editorial and formatting changes,NP03(a) p42 summary-of-changes row 20,Description of Change
+StudyChange_132,rationale,mapped,"Minor, therefore not described",NP03(a) p42 summary-of-changes row 20,Brief Rationale
+DocumentContentReference_132,sectionNumber,required_not_in_document,,NP03(a) p42 summary-of-changes row 20,'Throughout the protocol' names no section; decision D4
+DocumentContentReference_132,sectionTitle,derived,Throughout the protocol,NP03(a) p42 summary-of-changes row 20,the table's Section # and Name text; not a section title
+StudyAmendment_7,name,derived,H0P-MC-NP03(b),NP03 p4 'Amendment [b]',"document number + amendment letter, as on the title page"
+StudyAmendment_7,number,mapped,b,NP03 p4 'Amendment [b]',
+StudyAmendment_7,summary,mapped,"This amendment allows participants to take certain doses of metformin based upon new PK modeling data and metformin prescribing information (GLUCOPHAGE package insert, 2018).",NP03 p4 'Overall Rationale for the Amendment',
+GovernanceDate_19,dateValue,mapped,2021-10-01,NP03 p2 title page (Step 3 StudyDefinitionDocumentVersion_15),approval date of the document version produced by this amendment
+GovernanceDate_19,geographicScopes,required_not_in_document,,NP03 p2 title page,1..*; no geographic scope stated
+StudyAmendment_7,primaryReason,required_not_in_document,,NP03 p4 'Amendment [b]',1..1 coded StudyAmendmentReason (C207415); the document gives the reason as text only (summary); decision D2
+StudyAmendment_7,geographicScopes,required_not_in_document,,NP03 p4 'Amendment [b]',1..*; no geographic scope stated
+StudyAmendment_7,(amended document version),not_expressible,H0P-MC-NP03 version b,NP03 p4 'Amendment [b]',StudyAmendment has no reference to the StudyDefinitionDocument or the document version it produces; only StudyChange.changedSections.appliesToId points to the document (not the version)
+StudyChange_133,summary,mapped,Added a follow-up visit,NP03(b) p4 summary-of-changes row 1,Description of Change
+StudyChange_133,rationale,mapped,Adding a telephone follow-up visit for adverse event (AE) check,NP03(b) p4 summary-of-changes row 1,Brief Rationale
+DocumentContentReference_133,sectionNumber,mapped,1.2,NP03(b) p4 summary-of-changes row 1,Section # and Name '1.2. Schema'; toc_match
+StudyChange_134,summary,mapped,Added a follow-up visit and a corresponding row for AEs,NP03(b) p4 summary-of-changes row 2,Description of Change
+StudyChange_134,rationale,mapped,Adding a telephone follow-up visit for AE check AEs for the rest of the study are covered in the master CPMP SoA,NP03(b) p4 summary-of-changes row 2,Brief Rationale
+DocumentContentReference_134,sectionNumber,mapped,1.3,NP03(b) p4 summary-of-changes row 2,Section # and Name '1.3. Schedule of Activities (SoA)'; toc_match
+StudyChange_135,summary,mapped,Added follow-up visit,NP03(b) p4 summary-of-changes row 3,Description of Change
+StudyChange_135,rationale,mapped,Adding a telephone follow-up visit for AE check,NP03(b) p4 summary-of-changes row 3,Brief Rationale
+DocumentContentReference_135,sectionNumber,mapped,4.1,NP03(b) p4 summary-of-changes row 3,Section # and Name '4.1. Overall Design'; toc_match
+StudyChange_136,summary,mapped,Updated criterion #3034 to allow particular metformin doses,NP03(b) p4 summary-of-changes row 4,Description of Change
+StudyChange_136,rationale,mapped,The inclusion of selected doses of metformin for concomitant use is based on new PK modeling data and metformin prescribing information,NP03(b) p4 summary-of-changes row 4,Brief Rationale
+DocumentContentReference_136,sectionNumber,mapped,5.2,NP03(b) p4 summary-of-changes row 4,Section # and Name '5.2. Exclusion Criteria'; toc_match
+StudyChange_137,summary,mapped,Added criteria #3036 - #3041,NP03(b) p4 summary-of-changes row 5,Description of Change
+StudyChange_137,rationale,mapped,For participants taking metformin,NP03(b) p4 summary-of-changes row 5,Brief Rationale
+DocumentContentReference_137,sectionNumber,mapped,5.2,NP03(b) p4 summary-of-changes row 5,Section # and Name '5.2. Exclusion Criteria'; toc_match
+StudyChange_138,summary,mapped,Added additional alcohol restrictions for binge drinking,NP03(b) p4 summary-of-changes row 6,Description of Change
+StudyChange_138,rationale,mapped,For participants taking metformin,NP03(b) p4 summary-of-changes row 6,Brief Rationale
+DocumentContentReference_138,sectionNumber,mapped,5.3,NP03(b) p4 summary-of-changes row 6,Section # and Name '5.3. Lifestyle Considerations'; toc_match
+StudyChange_139,summary,mapped,Added a sub-section for concomitant therapy with metformin,NP03(b) p4 summary-of-changes row 7,Description of Change
+StudyChange_139,rationale,mapped,Specific metformin doses are now allowed,NP03(b) p4 summary-of-changes row 7,Brief Rationale
+DocumentContentReference_139,sectionNumber,mapped,6.5,NP03(b) p4 summary-of-changes row 7,Section # and Name '6.5. Concomitant Therapy'; toc_match
+StudyChange_140,summary,mapped,Added sub-section Metabolic Safety,NP03(b) p4 summary-of-changes row 8,Description of Change
+StudyChange_140,rationale,mapped,Provides additional information for participants taking metformin,NP03(b) p4 summary-of-changes row 8,Brief Rationale
+DocumentContentReference_140,sectionNumber,mapped,7.1,NP03(b) p4 summary-of-changes row 8,Section # and Name '7.1. Discontinuation of Study Intervention'; toc_match
+StudyChange_141,summary,mapped,Added this section,NP03(b) p4 summary-of-changes row 9,Description of Change
+StudyChange_141,rationale,mapped,Provides additional information for participants taking metformin,NP03(b) p4 summary-of-changes row 9,Brief Rationale
+DocumentContentReference_141,sectionNumber,mapped,7.2,NP03(b) p4 summary-of-changes row 9,Section # and Name '7.2. Participant Discontinuation/Withdrawal from the Study'; toc_match
+StudyChange_142,summary,mapped,Added bicarbonate and anion gap calculation to chemistry,NP03(b) p4 summary-of-changes row 10,Description of Change
+StudyChange_142,rationale,mapped,Participants are now allowed to take metformin,NP03(b) p4 summary-of-changes row 10,Brief Rationale
+DocumentContentReference_142,sectionNumber,mapped,10.1,NP03(b) p4 summary-of-changes row 10,Section # and Name '10.1. Appendix 1: Clinical Laboratory Tests'; toc_match
+StudyChange_143,summary,mapped,Added eGFR calculated by CKD-EPI equation based upon cystatin c,NP03(b) p4 summary-of-changes row 11,Description of Change
+StudyChange_143,rationale,mapped,Participants are now allowed to take metformin,NP03(b) p4 summary-of-changes row 11,Brief Rationale
+DocumentContentReference_143,sectionNumber,mapped,10.1,NP03(b) p4 summary-of-changes row 11,Section # and Name '10.1. Appendix 1: Clinical Laboratory Tests'; toc_match
+StudyChange_144,summary,mapped,Added Reference section,NP03(b) p4 summary-of-changes row 12,Description of Change
+StudyChange_144,rationale,mapped,In order to cite the metformin GLUCOPHAGE package insert,NP03(b) p4 summary-of-changes row 12,Brief Rationale
+DocumentContentReference_144,sectionNumber,mapped,11,NP03(b) p4 summary-of-changes row 12,Section # and Name '11. References'; toc_match
+StudyChange_145,summary,mapped,Minor editorial and formatting changes,NP03(b) p4 summary-of-changes row 13,Description of Change
+StudyChange_145,rationale,mapped,"Minor, therefore not described",NP03(b) p4 summary-of-changes row 13,Brief Rationale
+DocumentContentReference_145,sectionNumber,required_not_in_document,,NP03(b) p4 summary-of-changes row 13,'Throughout the protocol' names no section; decision D4
+DocumentContentReference_145,sectionTitle,derived,Throughout the protocol,NP03(b) p4 summary-of-changes row 13,the table's Section # and Name text; not a section title
+StudyAmendment_8,name,derived,H0P-MC-NP05(a),NP05 p4 'Amendment a',"document number + amendment letter, as on the title page"
+StudyAmendment_8,number,mapped,a,NP05 p4 'Amendment a',
+StudyAmendment_8,summary,mapped,This amendment adds additional physical examinations and exclusion criteria to address regulatory feedback.,NP05 p4 'Overall Rationale for the Amendment',
+GovernanceDate_20,dateValue,mapped,2022-10-13,NP05 p2 title page (Step 3 StudyDefinitionDocumentVersion_17),approval date of the document version produced by this amendment
+GovernanceDate_20,geographicScopes,required_not_in_document,,NP05 p2 title page,1..*; no geographic scope stated
+StudyAmendment_8,primaryReason,required_not_in_document,,NP05 p4 'Amendment a',1..1 coded StudyAmendmentReason (C207415); the document gives the reason as text only (summary); decision D2
+StudyAmendment_8,geographicScopes,required_not_in_document,,NP05 p4 'Amendment a',1..*; no geographic scope stated
+StudyAmendment_8,(amended document version),not_expressible,H0P-MC-NP05 version a,NP05 p4 'Amendment a',StudyAmendment has no reference to the StudyDefinitionDocument or the document version it produces; only StudyChange.changedSections.appliesToId points to the document (not the version)
+StudyChange_146,summary,mapped,"Added Physical examinations at Visits 5 and 7. Added note, “Complete physical examination, including targeted examination specified below, should be performed at V3 and V801 or ED. Targeted physical examination for skin, gastrointestinal tract, mammary gland in males, and lymph nodes should also be ",NP05(a) p4 summary-of-changes row 1,Description of Change
+StudyChange_146,rationale,mapped,Per regulatory feedback.,NP05(a) p4 summary-of-changes row 1,Brief Rationale
+DocumentContentReference_146,sectionNumber,mapped,1.3,NP05(a) p4 summary-of-changes row 1,Section # and Name '1.3. Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_147,summary,mapped,"Removed text in notes for vital signs, “…and prior to PK sample collection.”",NP05(a) p4 summary-of-changes row 2 [section_from_merged_cell],Description of Change
+StudyChange_147,rationale,mapped,Editorial correction.,NP05(a) p4 summary-of-changes row 2 [section_from_merged_cell],Brief Rationale
+DocumentContentReference_147,sectionNumber,mapped,1.3,NP05(a) p4 summary-of-changes row 2 [section_from_merged_cell],Section # and Name '1.3. Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_148,summary,mapped,"Modified criterion [3085], “have completed participated in…”.",NP05(a) p4 summary-of-changes row 3,Description of Change
+StudyChange_148,rationale,mapped,Clarification.,NP05(a) p4 summary-of-changes row 3,Brief Rationale
+StudyChange_148,summary,not_expressible,struck: completed; underlined: participated in,NP05(a) p4 summary-of-changes row 3,tracked-change markup in the cell; a string carries no markup
+DocumentContentReference_148,sectionNumber,mapped,5.2,NP05(a) p4 summary-of-changes row 3,Section # and Name '5.2. Exclusion Criteria'; toc_match
+StudyAmendment_8,changes,redacted_in_document,,NP05(a) p4 summary-of-changes row 4 [empty_row_redacted],table row hidden by a redaction bar
+StudyAmendment_8,changes,not_a_change,,NP05(a) p4 summary-of-changes row 5 [empty_row],layout gap with no text
+StudyChange_149,summary,mapped,"Added, “Complete physical examination, including targeted examination specified below, should be performed at V3 and Visit 801 or ED. Targeted physical examinations of skin, gastrointestinal tract, mammary gland in males, and lymph nodes will also be performed at Visits V5 and V7 as described in the",NP05(a) p4 summary-of-changes row 6,Description of Change
+StudyChange_149,rationale,mapped,Per regulatory feedback.,NP05(a) p4 summary-of-changes row 6,Brief Rationale
+DocumentContentReference_149,sectionNumber,mapped,8.2.1,NP05(a) p4 summary-of-changes row 6,Section # and Name '8.2.1. Physical Examinations'; toc_match
+StudyChange_150,summary,mapped,"Removed, “…to physical examinations (described in Master Protocol CPMP)…”",NP05(a) p5 summary-of-changes row 7 [section_from_previous_page],Description of Change
+StudyChange_150,rationale,mapped,Editorial.,NP05(a) p5 summary-of-changes row 7 [section_from_previous_page],Brief Rationale
+DocumentContentReference_150,sectionNumber,mapped,8.2.1,NP05(a) p5 summary-of-changes row 7 [section_from_previous_page],Section # and Name '8.2.1. Physical Examinations'; toc_match
+StudyAmendment_9,name,derived,H0P-MC-OA01(a),OA01 p4 'Amendment (a)',"document number + amendment letter, as on the title page"
+StudyAmendment_9,number,mapped,a,OA01 p4 'Amendment (a)',
+StudyAmendment_9,summary,mapped,This amendment addresses Food and Drug Administration (FDA) feedback.,OA01 p4 'Overall Rationale for the Amendment',
+GovernanceDate_21,dateValue,mapped,2020-03-27,OA01 p2 title page (Step 3 StudyDefinitionDocumentVersion_19),approval date of the document version produced by this amendment
+GovernanceDate_21,geographicScopes,required_not_in_document,,OA01 p2 title page,1..*; no geographic scope stated
+StudyAmendment_9,primaryReason,required_not_in_document,,OA01 p4 'Amendment (a)',1..1 coded StudyAmendmentReason (C207415); the document gives the reason as text only (summary); decision D2
+StudyAmendment_9,geographicScopes,required_not_in_document,,OA01 p4 'Amendment (a)',1..*; no geographic scope stated
+StudyAmendment_9,(amended document version),not_expressible,H0P-MC-OA01 version a,OA01 p4 'Amendment (a)',StudyAmendment has no reference to the StudyDefinitionDocument or the document version it produces; only StudyChange.changedSections.appliesToId points to the document (not the version)
+StudyChange_151,summary,mapped,Addition of visit window for post-randomization visits,OA01(a) p4 summary-of-changes row 1,Description of Change
+StudyChange_151,rationale,mapped,Allows flexibility for participants,OA01(a) p4 summary-of-changes row 1,Brief Rationale
+DocumentContentReference_151,sectionNumber,mapped,1.3,OA01(a) p4 summary-of-changes row 1,Section # and Name 'Section 1.3. Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_152,summary,mapped,Included details for vital signs and targeted physical examination,OA01(a) p4 summary-of-changes row 2,Description of Change
+StudyChange_152,rationale,mapped,Per regulatory feedback,OA01(a) p4 summary-of-changes row 2,Brief Rationale
+DocumentContentReference_152,sectionNumber,mapped,1.3,OA01(a) p4 summary-of-changes row 2,Section # and Name 'Section 1.3. Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_153,summary,mapped,Included additional urine pregnancy sample collection and updated description of those who would be tested,OA01(a) p4 summary-of-changes row 3,Description of Change
+StudyChange_153,rationale,mapped,Per new toxicology data,OA01(a) p4 summary-of-changes row 3,Brief Rationale
+DocumentContentReference_153,sectionNumber,mapped,1.3,OA01(a) p4 summary-of-changes row 3,Section # and Name 'Section 1.3. Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_154,summary,mapped,Included additional sample collection time for hemoglobin A1c,OA01(a) p4 summary-of-changes row 4,Description of Change
+StudyChange_154,rationale,mapped,Sample collection time missed in the original version,OA01(a) p4 summary-of-changes row 4,Brief Rationale
+DocumentContentReference_154,sectionNumber,mapped,1.3,OA01(a) p4 summary-of-changes row 4,Section # and Name 'Section 1.3. Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_155,summary,mapped,Removed language for women of childbearing potential and added language for fetal exposure,OA01(a) p4 summary-of-changes row 5,Description of Change
+StudyChange_155,rationale,mapped,Women of childbearing potential are now allowed in the study; pregnant or breastfeeding women are not allowed,OA01(a) p4 summary-of-changes row 5,Brief Rationale
+DocumentContentReference_155,sectionNumber,mapped,2.3.1,OA01(a) p4 summary-of-changes row 5,Section # and Name 'Section 2.3.1. Risk Assessment'; toc_match
+StudyChange_156,summary,mapped,Amended post-treatment follow-up period instructions,OA01(a) p4 summary-of-changes row 6,Description of Change
+StudyChange_156,rationale,mapped,Updated to maximize data collection in the follow-up period,OA01(a) p4 summary-of-changes row 6,Brief Rationale
+DocumentContentReference_156,sectionNumber,mapped,4,OA01(a) p4 summary-of-changes row 6,Section # and Name 'Section 4 Study Design'; toc_match
+StudyChange_157,summary,mapped,Removed criterion related to women not of childbearing potential,OA01(a) p4 summary-of-changes row 7,Description of Change
+StudyChange_157,rationale,mapped,To account for the addition of women of childbearing potential to the study per toxicology data,OA01(a) p4 summary-of-changes row 7,Brief Rationale
+DocumentContentReference_157,sectionNumber,mapped,5.1,OA01(a) p4 summary-of-changes row 7,Section # and Name 'Section 5.1. Inclusion Criteria'; toc_match
+StudyChange_158,summary,mapped,Removed criterion related to supplements and vitamins,OA01(a) p4 summary-of-changes row 8,Description of Change
+StudyChange_158,rationale,mapped,Potential to cause unintended screen failures and requirements sufficiently covered in the treatment period through lifestyle restrictions.,OA01(a) p4 summary-of-changes row 8,Brief Rationale
+DocumentContentReference_158,sectionNumber,mapped,5.1,OA01(a) p4 summary-of-changes row 8,Section # and Name 'Section 5.1. Inclusion Criteria'; toc_match
+StudyChange_159,summary,mapped,Addition of language related to ophthalmologic disease,OA01(a) p4 summary-of-changes row 9,Description of Change
+StudyChange_159,rationale,mapped,Per regulatory feedback,OA01(a) p4 summary-of-changes row 9,Brief Rationale
+DocumentContentReference_159,sectionNumber,mapped,5.2,OA01(a) p4 summary-of-changes row 9,Section # and Name 'Section 5.2. Exclusion Criteria'; toc_match
+StudyChange_160,summary,mapped,Addition of criterion related to women who are pregnant or breastfeeding,OA01(a) p4 summary-of-changes row 10,Description of Change
+StudyChange_160,rationale,mapped,Per regulatory feedback,OA01(a) p4 summary-of-changes row 10,Brief Rationale
+DocumentContentReference_160,sectionNumber,mapped,5.2,OA01(a) p4 summary-of-changes row 10,Section # and Name 'Section 5.2. Exclusion Criteria'; toc_match
+StudyChange_161,summary,mapped,Removed language about local regulations for contraception use by men,OA01(a) p4 summary-of-changes row 11,Description of Change
+StudyChange_161,rationale,mapped,This language is intended for global studies. This study will be conducted in the United States only.,OA01(a) p4 summary-of-changes row 11,Brief Rationale
+DocumentContentReference_161,sectionNumber,mapped,5.3,OA01(a) p4 summary-of-changes row 11,Section # and Name 'Section 5.3. Lifestyle Considerations'; toc_match
+StudyChange_162,summary,mapped,Removed language about supplements,OA01(a) p4 summary-of-changes row 12,Description of Change
+StudyChange_162,rationale,mapped,Per removal of related inclusion criterion,OA01(a) p4 summary-of-changes row 12,Brief Rationale
+DocumentContentReference_162,sectionNumber,mapped,5.3,OA01(a) p4 summary-of-changes row 12,Section # and Name 'Section 5.3. Lifestyle Considerations'; toc_match
+StudyChange_163,summary,mapped,Addition of special treatment considerations,OA01(a) p5 summary-of-changes row 13,Description of Change
+StudyChange_163,rationale,mapped,Per regulatory feedback,OA01(a) p5 summary-of-changes row 13,Brief Rationale
+DocumentContentReference_163,sectionNumber,mapped,6.1.1,OA01(a) p5 summary-of-changes row 13,Section # and Name 'Section 6.1.1. Special Treatment Considerations'; toc_match
+StudyChange_164,summary,mapped,New section to include details on targeted physical examination,OA01(a) p5 summary-of-changes row 14,Description of Change
+StudyChange_164,rationale,mapped,Per regulatory feedback,OA01(a) p5 summary-of-changes row 14,Brief Rationale
+DocumentContentReference_164,sectionNumber,mapped,8.1.1,OA01(a) p5 summary-of-changes row 14,Section # and Name 'Section 8.1.1. Physical Examinations'; toc_match
+StudyChange_165,summary,mapped,Addition of definitions and contraceptive guidance related to women of childbearing potential,OA01(a) p5 summary-of-changes row 15,Description of Change
+StudyChange_165,rationale,mapped,To account for the addition of women of childbearing potential to the study per toxicology data,OA01(a) p5 summary-of-changes row 15,Brief Rationale
+DocumentContentReference_165,sectionNumber,mapped,10.2,OA01(a) p5 summary-of-changes row 15,"Section # and Name 'Section 10.2, Appendix 2'; toc_number_only (TOC: Appendix 2: Definitions of Reproductive Requirements and Contraception Guidance)"
+StudyChange_166,summary,mapped,Minor editorial and formatting changes,OA01(a) p5 summary-of-changes row 16,Description of Change
+StudyChange_166,rationale,mapped,"Minor, therefore not described",OA01(a) p5 summary-of-changes row 16,Brief Rationale
+DocumentContentReference_166,sectionNumber,required_not_in_document,,OA01(a) p5 summary-of-changes row 16,'Throughout the protocol' names no section; decision D4
+DocumentContentReference_166,sectionTitle,derived,Throughout the protocol,OA01(a) p5 summary-of-changes row 16,the table's Section # and Name text; not a section title
+StudyAmendment_10,name,derived,H0P-MC-OA02(a),OA02 p4 'Amendment [a]',"document number + amendment letter, as on the title page"
+StudyAmendment_10,number,mapped,a,OA02 p4 'Amendment [a]',
+StudyAmendment_10,summary,mapped,This amendment addresses changes in the exclusion criteria in response to FDA feedback based on in vitro data currently available.,OA02 p4 'Overall Rationale for the Amendment',
+GovernanceDate_22,dateValue,mapped,2021-08-10,OA02 p2 title page (Step 3 StudyDefinitionDocumentVersion_21),approval date of the document version produced by this amendment
+GovernanceDate_22,geographicScopes,required_not_in_document,,OA02 p2 title page,1..*; no geographic scope stated
+StudyAmendment_10,primaryReason,required_not_in_document,,OA02 p4 'Amendment [a]',1..1 coded StudyAmendmentReason (C207415); the document gives the reason as text only (summary); decision D2
+StudyAmendment_10,geographicScopes,required_not_in_document,,OA02 p4 'Amendment [a]',1..*; no geographic scope stated
+StudyAmendment_10,(amended document version),not_expressible,H0P-MC-OA02 version a,OA02 p4 'Amendment [a]',StudyAmendment has no reference to the StudyDefinitionDocument or the document version it produces; only StudyChange.changedSections.appliesToId points to the document (not the version)
+StudyChange_167,summary,mapped,Added sub-section headers.,OA02(a) p4 summary-of-changes row 1,Description of Change
+StudyChange_167,rationale,mapped,For clarity.,OA02(a) p4 summary-of-changes row 1,Brief Rationale
+DocumentContentReference_167,sectionNumber,mapped,2.3,OA02(a) p4 summary-of-changes row 1,Section # and Name '2.3. Benefit/Risk Assessment'; toc_match
+StudyChange_168,summary,mapped,"In first paragraph, added text for the effect of LY3526318 on other drugs.",OA02(a) p4 summary-of-changes row 2,Description of Change
+StudyChange_168,rationale,mapped,Clarification of the potential of LY3526318 exposure to affect metabolism of other drugs.,OA02(a) p4 summary-of-changes row 2,Brief Rationale
+DocumentContentReference_168,sectionNumber,mapped,2.3.1,OA02(a) p4 summary-of-changes row 2,Section # and Name '2.3.1. Risk Assessment'; toc_match
+StudyChange_169,summary,mapped,"Updated first bullet to specify CYP3A4, plus minor editorial changes.",OA02(a) p4 summary-of-changes row 3,Description of Change
+StudyChange_169,rationale,mapped,For clarity.,OA02(a) p4 summary-of-changes row 3,Brief Rationale
+DocumentContentReference_169,sectionNumber,mapped,2.3.1,OA02(a) p4 summary-of-changes row 3,Section # and Name '2.3.1. Risk Assessment'; toc_match
+StudyChange_170,summary,mapped,Added a bullet for CYP3A4 and p-glycoprotein (P-gp) substrates.,OA02(a) p4 summary-of-changes row 4,Description of Change
+StudyChange_170,rationale,mapped,Based on in vitro data suggesting a potential for PK interactions.,OA02(a) p4 summary-of-changes row 4,Brief Rationale
+DocumentContentReference_170,sectionNumber,mapped,2.3.1,OA02(a) p4 summary-of-changes row 4,Section # and Name '2.3.1. Risk Assessment'; toc_match
+StudyChange_171,summary,mapped,Updated numbers for inclusion and exclusion criteria.,OA02(a) p4 summary-of-changes row 5,Description of Change
+StudyChange_171,rationale,mapped,To align with master protocol and ISA numbering system.,OA02(a) p4 summary-of-changes row 5,Brief Rationale
+DocumentContentReference_171,sectionNumber,mapped,5.1,OA02(a) p4 summary-of-changes row 5,Section # and Name '5.1. Study Population'; toc_number_only (TOC: Inclusion Criteria)
+StudyChange_172,summary,mapped,Updated criterion #1051 to specify drugs taken orally or intravenously.,OA02(a) p4 summary-of-changes row 6 [section_from_merged_cell],Description of Change
+StudyChange_172,rationale,mapped,Topical drugs are allowed.,OA02(a) p4 summary-of-changes row 6 [section_from_merged_cell],Brief Rationale
+DocumentContentReference_172,sectionNumber,mapped,5.1,OA02(a) p4 summary-of-changes row 6 [section_from_merged_cell],Section # and Name '5.1. Study Population'; toc_number_only (TOC: Inclusion Criteria)
+StudyChange_173,summary,mapped,Added exclusion criterion #1054 for participants that are taking drugs that are sensitive CYP3A4 substrates with a narrow therapeutic index.,OA02(a) p4 summary-of-changes row 7 [section_from_merged_cell],Description of Change
+StudyChange_173,rationale,mapped,Based on in vitro data suggesting potential CYP3A4 inhibition at the proposed LY3526318 dose.,OA02(a) p4 summary-of-changes row 7 [section_from_merged_cell],Brief Rationale
+DocumentContentReference_173,sectionNumber,mapped,5.1,OA02(a) p4 summary-of-changes row 7 [section_from_merged_cell],Section # and Name '5.1. Study Population'; toc_number_only (TOC: Inclusion Criteria)
+StudyChange_174,summary,mapped,Added exclusion criterion #1055 for participants that are taking simvastatin at doses greater than 20 mg/day.,OA02(a) p4 summary-of-changes row 8 [section_from_merged_cell],Description of Change
+StudyChange_174,rationale,mapped,"Simvastatin is a sensitive CYP3A4 substrate, with a projected maximal increase in exposure <2-fold in combination with LY3526318. Therefore, doses of 20 mg or less are considered safe.",OA02(a) p4 summary-of-changes row 8 [section_from_merged_cell],Brief Rationale
+DocumentContentReference_174,sectionNumber,mapped,5.1,OA02(a) p4 summary-of-changes row 8 [section_from_merged_cell],Section # and Name '5.1. Study Population'; toc_number_only (TOC: Inclusion Criteria)
+StudyChange_175,summary,mapped,Added exclusion criterion #1056 for participants that are taking metformin at doses greater than 1000 mg/day.,OA02(a) p4 summary-of-changes row 9 [section_from_merged_cell],Description of Change
+StudyChange_175,rationale,mapped,Based on limited data related to inhibition of renal transporters.,OA02(a) p4 summary-of-changes row 9 [section_from_merged_cell],Brief Rationale
+DocumentContentReference_175,sectionNumber,mapped,5.1,OA02(a) p4 summary-of-changes row 9 [section_from_merged_cell],Section # and Name '5.1. Study Population'; toc_number_only (TOC: Inclusion Criteria)
+StudyChange_176,summary,mapped,Added exclusion criterion #1057 for participants that are taking digoxin.,OA02(a) p4 summary-of-changes row 10 [section_from_merged_cell],Description of Change
+StudyChange_176,rationale,mapped,Based on in vitro data suggesting a potential for LY3526318 to inhibit P-gp.,OA02(a) p4 summary-of-changes row 10 [section_from_merged_cell],Brief Rationale
+DocumentContentReference_176,sectionNumber,mapped,5.1,OA02(a) p4 summary-of-changes row 10 [section_from_merged_cell],Section # and Name '5.1. Study Population'; toc_number_only (TOC: Inclusion Criteria)
+StudyChange_177,summary,mapped,"Under Potential Drug-Drug Interactions with LY3526318, added reference to Section 5.2 for concomitant medication restrictions.",OA02(a) p4 summary-of-changes row 11,Description of Change
+StudyChange_177,rationale,mapped,Reference to added exclusion criteria.,OA02(a) p4 summary-of-changes row 11,Brief Rationale
+DocumentContentReference_177,sectionNumber,mapped,6.6,OA02(a) p4 summary-of-changes row 11,Section # and Name '6.6. Concomitant Therapy'; toc_match
+StudyChange_178,summary,mapped,Added reference to Section 5.2 and the Manual of Operations for additional information.,OA02(a) p5 summary-of-changes row 12,Description of Change
+StudyChange_178,rationale,mapped,Additional information for excluded concomitant medications are listed in Section 5.2 and the Manual of Operations.,OA02(a) p5 summary-of-changes row 12,Brief Rationale
+DocumentContentReference_178,sectionNumber,mapped,10.3,OA02(a) p5 summary-of-changes row 12,Section # and Name '10.3. Appendix 3: List of Excluded Concomitant Medications'; toc_match
+StudyChange_179,summary,mapped,Minor editorial and format changes.,OA02(a) p5 summary-of-changes row 13,Description of Change
+StudyChange_179,rationale,mapped,"Minor, therefore not described.",OA02(a) p5 summary-of-changes row 13,Brief Rationale
+DocumentContentReference_179,sectionNumber,required_not_in_document,,OA02(a) p5 summary-of-changes row 13,'Throughout the protocol' names no section; decision D4
+DocumentContentReference_179,sectionTitle,derived,Throughout the protocol,OA02(a) p5 summary-of-changes row 13,the table's Section # and Name text; not a section title
+StudyAmendment_11,name,derived,H0P-MC-OA03(a),OA03 p4 'Amendment [a]',"document number + amendment letter, as on the title page"
+StudyAmendment_11,number,mapped,a,OA03 p4 'Amendment [a]',
+StudyAmendment_11,summary,mapped,"This amendment addresses a new dose titration scheme for participants. and decisions to change the dose level will be made by the investigator, in discussion with the participants, based on adverse events reported for tolerability. The changes for dose titration affect sections throughout the ISA. A",OA03 p4 'Overall Rationale for the Amendment',
+StudyAmendment_11,summary,redacted_in_document,2,OA03 p4,2 redaction bar(s) in the Overall Rationale; hidden text not in the text layer
+GovernanceDate_23,dateValue,mapped,2021-03-03,OA03 p2 title page (Step 3 StudyDefinitionDocumentVersion_23),approval date of the document version produced by this amendment
+GovernanceDate_23,geographicScopes,required_not_in_document,,OA03 p2 title page,1..*; no geographic scope stated
+StudyAmendment_11,primaryReason,required_not_in_document,,OA03 p4 'Amendment [a]',1..1 coded StudyAmendmentReason (C207415); the document gives the reason as text only (summary); decision D2
+StudyAmendment_11,geographicScopes,required_not_in_document,,OA03 p4 'Amendment [a]',1..*; no geographic scope stated
+StudyAmendment_11,(amended document version),not_expressible,H0P-MC-OA03 version a,OA03 p4 'Amendment [a]',StudyAmendment has no reference to the StudyDefinitionDocument or the document version it produces; only StudyChange.changedSections.appliesToId points to the document (not the version)
+StudyChange_180,summary,mapped,"Updates made to  Number of Participants  Intervention Groups and Duration, and  Data Monitoring Committee",OA03(a) p4 summary-of-changes row 1,Description of Change
+StudyChange_180,rationale,mapped,Sample size and study intervention text updated for new dose titration scheme “Data monitoring committee” changed to “Assessment committee” for consistency with master CPMP protocol,OA03(a) p4 summary-of-changes row 1,Brief Rationale
+DocumentContentReference_180,sectionNumber,mapped,1.1,OA03(a) p4 summary-of-changes row 1,Section # and Name '1.1 Synopsis'; not_in_toc
+StudyChange_181,summary,mapped,Updated schema to show dose titration,OA03(a) p4 summary-of-changes row 2,Description of Change
+StudyChange_181,rationale,mapped,New dose titration scheme for participants,OA03(a) p4 summary-of-changes row 2,Brief Rationale
+DocumentContentReference_181,sectionNumber,mapped,1.2,OA03(a) p4 summary-of-changes row 2,Section # and Name '1.2 Schema'; not_in_toc
+StudyChange_182,summary,mapped,Added telephone visits and updated study intervention notes to include a link to the new dose modification section,OA03(a) p4 summary-of-changes row 3,Description of Change
+StudyChange_182,rationale,mapped,To implement new dose titration scheme,OA03(a) p4 summary-of-changes row 3,Brief Rationale
+DocumentContentReference_182,sectionNumber,mapped,1.3,OA03(a) p4 summary-of-changes row 3,Section # and Name '1.3 Schedule of Activities (SoA)'; not_in_toc
+StudyChange_183,summary,mapped,Updates were made to ECG and Vital signs,OA03(a) p4 summary-of-changes row 4,Description of Change
+StudyChange_183,rationale,mapped,Corrections for clarity,OA03(a) p4 summary-of-changes row 4,Brief Rationale
+DocumentContentReference_183,sectionNumber,mapped,1.3,OA03(a) p4 summary-of-changes row 4,Section # and Name '1.3 Schedule of Activities (SoA)'; not_in_toc
+StudyChange_184,summary,mapped,Replaced urinalysis with urine drug screen.,OA03(a) p4 summary-of-changes row 5,Description of Change
+StudyChange_184,rationale,mapped,"Urinalysis was only for Visit 3, so removed. Urine drug screen added and performed according to investigator discretion",OA03(a) p4 summary-of-changes row 5,Brief Rationale
+DocumentContentReference_184,sectionNumber,mapped,1.3,OA03(a) p4 summary-of-changes row 5,Section # and Name '1.3 Schedule of Activities (SoA)'; not_in_toc
+StudyChange_185,summary,mapped,Added window for PK sample collection,OA03(a) p4 summary-of-changes row 6,Description of Change
+StudyChange_185,rationale,mapped,Adding flexibility,OA03(a) p4 summary-of-changes row 6,Brief Rationale
+DocumentContentReference_185,sectionNumber,mapped,1.3,OA03(a) p4 summary-of-changes row 6,Section # and Name '1.3 Schedule of Activities (SoA)'; not_in_toc
+StudyChange_186,summary,mapped,Added participant digital biomarker device for Visit 7 and ED,OA03(a) p4 summary-of-changes row 7,Description of Change
+StudyChange_186,rationale,mapped,To indicate when the participant needs to return the device.,OA03(a) p4 summary-of-changes row 7,Brief Rationale
+DocumentContentReference_186,sectionNumber,mapped,1.3,OA03(a) p4 summary-of-changes row 7,Section # and Name '1.3 Schedule of Activities (SoA)'; not_in_toc
+StudyChange_187,summary,mapped,Updated information for the 2 Phase 1 clinical studies,OA03(a) p4 summary-of-changes row 8,Description of Change
+StudyChange_187,rationale,mapped,Both studies are completed,OA03(a) p4 summary-of-changes row 8,Brief Rationale
+DocumentContentReference_187,sectionNumber,mapped,2.2,OA03(a) p4 summary-of-changes row 8,Section # and Name '2.2 Background'; not_in_toc
+StudyChange_188,summary,mapped,Updated and added text to describe the new dose titration scheme,OA03(a) p4 summary-of-changes row 9,Description of Change
+StudyChange_188,rationale,mapped,New dose titration scheme for participants,OA03(a) p4 summary-of-changes row 9,Brief Rationale
+DocumentContentReference_188,sectionNumber,mapped,4.1,OA03(a) p4 summary-of-changes row 9,Section # and Name '4.1 Overall Design'; not_in_toc
+StudyChange_189,summary,mapped,Added text for the titration scheme Removed “preliminary” from the beginning of second paragraph,OA03(a) p4 summary-of-changes row 10,Description of Change
+StudyChange_189,rationale,mapped,New dose titration scheme for participants Study LXBA is now completed,OA03(a) p4 summary-of-changes row 10,Brief Rationale
+DocumentContentReference_189,sectionNumber,mapped,4.3,OA03(a) p4 summary-of-changes row 10,Section # and Name '4.3 Justification for Dose'; not_in_toc
+StudyChange_190,summary,mapped,Updated Criteria #1028 and #1034,OA03(a) p4 summary-of-changes row 11 [continued_on_p5],Description of Change
+StudyChange_190,rationale,mapped,Clarifications based on clinical experience and emerging pharmacokinetic/metabolism data,OA03(a) p4 summary-of-changes row 11 [continued_on_p5],Brief Rationale
+DocumentContentReference_190,sectionNumber,mapped,5.2,OA03(a) p4 summary-of-changes row 11 [continued_on_p5],Section # and Name '5.2 Exclusion Criteria'; not_in_toc
+StudyChange_191,summary,mapped,Removed text that is already in the master CPMP,OA03(a) p5 summary-of-changes row 12,Description of Change
+StudyChange_191,rationale,mapped,Master protocol updates for CPMP amendment (a),OA03(a) p5 summary-of-changes row 12,Brief Rationale
+DocumentContentReference_191,sectionNumber,mapped,5.3,OA03(a) p5 summary-of-changes row 12,Section # and Name '5.3 Lifestyle Considerations'; not_in_toc
+StudyChange_192,summary,mapped,Updated text and table,OA03(a) p5 summary-of-changes row 13,Description of Change
+StudyChange_192,rationale,mapped,New dose titration scheme for participants. Emerging data allow participants to take capsules with or without food Changed “pharmacy instructions” to “pharmacy manual”,OA03(a) p5 summary-of-changes row 13,Brief Rationale
+DocumentContentReference_192,sectionNumber,mapped,6.1,OA03(a) p5 summary-of-changes row 13,Section # and Name '6.1 Study Intervention(s) Administered'; not_in_toc
+StudyChange_193,summary,mapped,Removed text that is duplicated in CPMP Added text for drug-drug interactions,OA03(a) p5 summary-of-changes row 14,Description of Change
+StudyChange_193,rationale,mapped,Consistency across ISAs,OA03(a) p5 summary-of-changes row 14,Brief Rationale
+DocumentContentReference_193,sectionNumber,mapped,6.5,OA03(a) p5 summary-of-changes row 14,Section # and Name '6.5 Concomitant Therapy'; not_in_toc
+StudyChange_194,summary,mapped,New section,OA03(a) p5 summary-of-changes row 15,Description of Change
+StudyChange_194,rationale,mapped,New dose titration scheme for participants,OA03(a) p5 summary-of-changes row 15,Brief Rationale
+DocumentContentReference_194,sectionNumber,mapped,6.6,OA03(a) p5 summary-of-changes row 15,Section # and Name '6.6 Dose Modification'; not_in_toc
+StudyChange_195,summary,mapped,Added text to refer to the master,OA03(a) p5 summary-of-changes row 16,Description of Change
+StudyChange_195,rationale,mapped,Master protocol contains AE and SAE information,OA03(a) p5 summary-of-changes row 16,Brief Rationale
+DocumentContentReference_195,sectionNumber,mapped,8.2,OA03(a) p5 summary-of-changes row 16,Section # and Name '8.2 Adverse Events and Serious Adverse Events'; not_in_toc
+StudyChange_196,summary,mapped,Updated sample size,OA03(a) p5 summary-of-changes row 17,Description of Change
+StudyChange_196,rationale,mapped,New dose titration scheme for participants,OA03(a) p5 summary-of-changes row 17,Brief Rationale
+DocumentContentReference_196,sectionNumber,mapped,9.2,OA03(a) p5 summary-of-changes row 17,Section # and Name '9.2 Sample Size Determination'; not_in_toc
+StudyChange_197,summary,mapped,Removed “in the SAP”,OA03(a) p5 summary-of-changes row 18,Description of Change
+StudyChange_197,rationale,mapped,The master protocol defines the populations for analyses,OA03(a) p5 summary-of-changes row 18,Brief Rationale
+DocumentContentReference_197,sectionNumber,mapped,9.3,OA03(a) p5 summary-of-changes row 18,Section # and Name '9.3 Populations for Analyses'; not_in_toc
+StudyChange_198,summary,mapped,Updated text,OA03(a) p5 summary-of-changes row 19,Description of Change
+StudyChange_198,rationale,mapped,Updates to internal Lilly guidance,OA03(a) p5 summary-of-changes row 19,Brief Rationale
+DocumentContentReference_198,sectionNumber,mapped,10.2,OA03(a) p5 summary-of-changes row 19,Section # and Name '10.2 Appendix 2'; not_in_toc
+StudyChange_199,summary,mapped,Minor editorial and formatting changes,OA03(a) p5 summary-of-changes row 20,Description of Change
+StudyChange_199,rationale,mapped,"Minor, therefore not described",OA03(a) p5 summary-of-changes row 20,Brief Rationale
+DocumentContentReference_199,sectionNumber,required_not_in_document,,OA03(a) p5 summary-of-changes row 20,'Throughout the protocol' names no section; decision D4
+DocumentContentReference_199,sectionTitle,derived,Throughout the protocol,OA03(a) p5 summary-of-changes row 20,the table's Section # and Name text; not a section title
+StudyAmendment_12,name,derived,H0P-MC-OA05(a),OA05 p4 'Amendment a',"document number + amendment letter, as on the title page"
+StudyAmendment_12,number,mapped,a,OA05 p4 'Amendment a',
+StudyAmendment_12,summary,mapped,This amendment adds additional physical examinations and exclusion criteria to address regulatory feedback.,OA05 p4 'Overall Rationale for the Amendment',
+GovernanceDate_24,dateValue,mapped,2022-10-14,OA05 p2 title page (Step 3 StudyDefinitionDocumentVersion_25),approval date of the document version produced by this amendment
+GovernanceDate_24,geographicScopes,required_not_in_document,,OA05 p2 title page,1..*; no geographic scope stated
+StudyAmendment_12,primaryReason,required_not_in_document,,OA05 p4 'Amendment a',1..1 coded StudyAmendmentReason (C207415); the document gives the reason as text only (summary); decision D2
+StudyAmendment_12,geographicScopes,required_not_in_document,,OA05 p4 'Amendment a',1..*; no geographic scope stated
+StudyAmendment_12,(amended document version),not_expressible,H0P-MC-OA05 version a,OA05 p4 'Amendment a',StudyAmendment has no reference to the StudyDefinitionDocument or the document version it produces; only StudyChange.changedSections.appliesToId points to the document (not the version)
+StudyChange_200,summary,mapped,"Added Physical examinations at Visits 5 and 7. Added note, “Complete physical examination, including targeted physical examination specified below, should be performed at V3 and V801 or ED. Targeted examination for skin, gastrointestinal tract, mammary gland in males, and lymph nodes should also be ",OA05(a) p4 summary-of-changes row 1,Description of Change
+StudyChange_200,rationale,mapped,Per regulatory feedback.,OA05(a) p4 summary-of-changes row 1,Brief Rationale
+DocumentContentReference_200,sectionNumber,mapped,1.3,OA05(a) p4 summary-of-changes row 1,Section # and Name '1.3. Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_201,summary,mapped,"Removed text in notes for vital signs, “…and prior to PK sample collection.”",OA05(a) p4 summary-of-changes row 2 [section_from_merged_cell],Description of Change
+StudyChange_201,rationale,mapped,Editorial correction.,OA05(a) p4 summary-of-changes row 2 [section_from_merged_cell],Brief Rationale
+DocumentContentReference_201,sectionNumber,mapped,1.3,OA05(a) p4 summary-of-changes row 2 [section_from_merged_cell],Section # and Name '1.3. Schedule of Activities'; toc_number_only (TOC: Schedule of Activities (SoA))
+StudyChange_202,summary,mapped,"Modified criterion [1085], “have complete d participated in…”.",OA05(a) p4 summary-of-changes row 3,Description of Change
+StudyChange_202,rationale,mapped,Clarification.,OA05(a) p4 summary-of-changes row 3,Brief Rationale
+StudyChange_202,summary,not_expressible,struck: complete d; underlined: participated in,OA05(a) p4 summary-of-changes row 3,tracked-change markup in the cell; a string carries no markup
+DocumentContentReference_202,sectionNumber,mapped,5.2,OA05(a) p4 summary-of-changes row 3,Section # and Name '5.2. Exclusion Criteria'; toc_match
+StudyAmendment_12,changes,redacted_in_document,,OA05(a) p4 summary-of-changes row 4 [empty_row_redacted],table row hidden by a redaction bar
+StudyChange_203,summary,mapped,"Added, “Complete physical examination, including targeted examination specified below, should be performed at V3 and Visit 801 or ED. Targeted physical examinations of skin, gastrointestinal tract, mammary gland in males, and lymph nodes will also be performed at Visits V5 and V7 as described in the",OA05(a) p4 summary-of-changes row 5,Description of Change
+StudyChange_203,rationale,mapped,Per regulatory feedback.,OA05(a) p4 summary-of-changes row 5,Brief Rationale
+DocumentContentReference_203,sectionNumber,mapped,8.2.1,OA05(a) p4 summary-of-changes row 5,Section # and Name '8.2.1. Physical Examinations'; toc_match
+StudyChange_204,summary,mapped,"Removed, “…to physical examinations (described in the Master Protocol CPMP)…”",OA05(a) p5 summary-of-changes row 6 [section_from_previous_page],Description of Change
+StudyChange_204,rationale,mapped,Editorial.,OA05(a) p5 summary-of-changes row 6 [section_from_previous_page],Brief Rationale
+DocumentContentReference_204,sectionNumber,mapped,8.2.1,OA05(a) p5 summary-of-changes row 6 [section_from_previous_page],Section # and Name '8.2.1. Physical Examinations'; toc_match
+StudyAmendment_7,previousId,mapped,StudyAmendment_6,NP03 p41 Appendix 5 'Protocol Amendment History',
+-,StudyAmendment.number,not_expressible,"a (x11), b (x1)",title pages,'number' identifies an amendment only within one document; 11 amendments have number 'a'

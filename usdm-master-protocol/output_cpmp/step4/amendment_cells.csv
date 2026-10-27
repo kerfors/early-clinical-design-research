@@ -1,0 +1,624 @@
+doc,amendment,page,style,col,x0,y0,x1,y1,layer_text,ocr_text,layer_letters,ocr_letters,text_layer_short
+CPMP,a,4,grid,1,65.7,394.7,202.0,433.0,1.1 Synopsis,1.1 Synopsis |,10,10,False
+CPMP,a,4,grid,1,65.7,433.0,202.0,472.3,1.1 Synopsis,1.1 Synopsis,10,10,False
+CPMP,a,4,grid,1,65.7,472.3,202.0,537.7,1.1 Synopsis,1.1 Synopsis,10,10,False
+CPMP,a,4,grid,1,65.7,537.7,202.0,590.0,1.1 Synopsis,1.1 Synopsis,10,10,False
+CPMP,a,4,grid,1,65.7,590.0,202.0,629.3,1.1 Synopsis,1.1 Synopsis,10,10,False
+CPMP,a,4,grid,1,65.7,629.3,202.0,655.7,1.1 Synopsis,1.1 Synopsis |,10,10,False
+CPMP,a,4,grid,1,65.7,655.7,202.0,708.0,1.3 Schedule of Activities,1.3 Schedule of Activities,22,22,False
+CPMP,a,4,grid,2,202.0,394.7,405.7,433.0,Secondary objectives –Other Efficacy - change in several endpoints from “greater than” to “greater than or equal to”...,Secondary objectives — Other Efficacy - change in several endpoints from “greater than” to “sreater than or equal to”...,93,93,False
+CPMP,a,4,grid,2,202.0,433.0,405.7,472.3,Secondary objectives –Other Efficacy - change in several endpoints from “2-point reduction” to “at least 2-point reduction”...,Secondary objectives — Other Efficacy - change in several endpoints from “2-point reduction” to “at least 2-point reduction”...,99,99,False
+CPMP,a,4,grid,2,202.0,472.3,405.7,537.7,"Secondary objectives –Other Efficacy - change in several endpoints from “treatment response with a 30%, 50%, and 70% reduction” to “first pain reduction of at least 30%, 50%, and 70%”...","Secondary objectives — Other Efficacy - change in several endpoints from “treatment response with a 30%, 50%, and 70% reduction” to “first pain reduction of at least 30%, 50%, and 70%’...",138,138,False
+CPMP,a,4,grid,2,202.0,537.7,405.7,590.0,Secondary objectives –Other Efficacy - change in several endpoints from “Time to 2-point reduction” to “Time to first pain reduction of at least 2 points”...,Secondary objectives — Other Efficacy - change in several endpoints from “Time to 2-point reduction” to “Time to first pain reduction of at least 2 points”...,123,123,False
+CPMP,a,4,grid,2,202.0,590.0,405.7,629.3,"Updated Overall Design, Visit 2 to clarify the washout period should begin at Visit 2, and the recommended minimum washout is 2 days.","Updated Overall Design, Visit 2 to clarify the washout period should begin at Visit 2, and the recommended minimum washout is 2 days.",108,108,False
+CPMP,a,4,grid,2,202.0,629.3,405.7,655.7,ChangedDataMonitoringCommittee (DMC) to Assessment Committee (AC),Changed Data Monitoring Committee (DMC) to Assessment Committee (AC),56,56,False
+CPMP,a,4,grid,2,202.0,655.7,405.7,708.0,"Updated notes for pain medication washout to specify the ‘recommended minimum washout duration is 2 days’, and if participants are not taking medication for chronic pain at screening,","Updated notes for pain medication washout to specify the ‘recommended minimum washout duration is 2 days’, and if participants are not taking medication for chronic pain at screening.",152,152,False
+CPMP,a,4,grid,3,405.7,394.7,545.7,433.0,Statistician decision,Statistician decision,20,20,False
+CPMP,a,4,grid,3,405.7,433.0,545.7,472.3,Statistician decision,Statistician decision,20,20,False
+CPMP,a,4,grid,3,405.7,472.3,545.7,537.7,Statistician decision,Statistician decision,20,20,False
+CPMP,a,4,grid,3,405.7,537.7,545.7,590.0,Statistician decision,Statistician decision,20,20,False
+CPMP,a,4,grid,3,405.7,590.0,545.7,629.3,Clarification,Clarification,13,13,False
+CPMP,a,4,grid,3,405.7,629.3,545.7,655.7,Correction tomore accurately describe committee,Correction to more accurately describe committee,43,43,False
+CPMP,a,4,grid,3,405.7,655.7,545.7,708.0,Clarification,Clarification,13,13,False
+CPMP,a,5,grid,1,65.7,86.3,202.0,99.0,,,0,0,False
+CPMP,a,5,grid,1,65.7,99.0,202.0,138.3,1.3 Schedule of Activities,1.3 Schedule of Activities,22,22,False
+CPMP,a,5,grid,1,65.7,138.3,202.0,177.7,1.3 Schedule of Activities,1.3 Schedule of Activities,22,22,False
+CPMP,a,5,grid,1,65.7,177.7,202.0,191.0,1.3 Schedule of Activities,1.3 Schedule of Activities,22,22,False
+CPMP,a,5,grid,1,65.7,191.0,202.0,230.3,1.3 Schedule of Activities,1.3 Schedule of Activities,22,22,False
+CPMP,a,5,grid,1,65.7,230.3,202.0,269.7,1.3 Schedule of Activities,1.3 Schedule of Activities,22,22,False
+CPMP,a,5,grid,1,65.7,269.7,202.0,296.3,1.3 Schedule of Activities,1.3 Schedule of Activities |,22,22,False
+CPMP,a,5,grid,1,65.7,296.3,202.0,322.7,1.3 Schedule of Activities,1.3 Schedule of Activities |,22,22,False
+CPMP,a,5,grid,1,65.7,322.7,202.0,349.0,1.3 Schedule of Activities,1.3 Schedule of Activities |,22,22,False
+CPMP,a,5,grid,1,65.7,349.0,202.0,362.3,1.3 Schedule of Activities,1.3 Schedule of Activities,22,22,False
+CPMP,a,5,grid,1,65.7,362.3,202.0,388.3,1.3 Schedule of Activities,1.3 Schedule of Activities |,22,22,False
+CPMP,a,5,grid,1,65.7,388.3,202.0,413.7,,ne;,0,2,False
+CPMP,a,5,grid,1,65.7,415.3,202.0,454.7,3.0 Objectives and Endpoints,3.0 Objectives and Endpoints,24,24,False
+CPMP,a,5,grid,1,65.7,454.7,202.0,494.0,,3.0 Objectives and Endpoints,0,24,True
+CPMP,a,5,grid,1,65.7,494.0,202.0,559.3,,3.0 Objectives and Endpoints,0,24,True
+CPMP,a,5,grid,1,65.7,559.3,202.0,608.7,3.0 Objectives and Endpoints,3.0 Objectives and Endpoints,24,24,False
+CPMP,a,5,grid,1,65.7,608.7,202.0,639.3,,oe,0,2,False
+CPMP,a,5,grid,1,65.7,639.3,202.0,664.3,4.1.1DesignOutline,4.1.1 Design Outline |,16,16,False
+CPMP,a,5,grid,1,65.7,664.3,202.0,690.7,4.1.1DesignOutline,4.1.1 Design Outline |,16,16,False
+CPMP,a,5,grid,1,65.7,690.7,202.0,717.3,5.1Inclusion Criteria,5.1 Inclusion Criteria |,19,19,False
+CPMP,a,5,grid,2,202.0,86.3,405.7,99.0,awashoutisnotrequired .,a washout is not required. |,21,21,False
+CPMP,a,5,grid,2,202.0,99.0,405.7,138.3,Added footnote ‘d’ to appropriate Visit 2 procedures and removed redundant text from notes,Added footnote ‘d’ to appropriate Visit 2 procedures and removed redundant text from notes,75,75,False
+CPMP,a,5,grid,2,202.0,138.3,405.7,177.7,Removed vital signs procedures on Visits 3 through 7,Removed vital signs procedures on Visits 3 through 7,44,44,False
+CPMP,a,5,grid,2,202.0,177.7,405.7,191.0,Added respiratoryratetovital signs notes,Added respiratory rate to vital signs notes,37,37,False
+CPMP,a,5,grid,2,202.0,191.0,405.7,230.3,Removed footnote “d” and added guidance in notes section,Removed footnote “d” and added guidance in notes section,46,46,False
+CPMP,a,5,grid,2,202.0,230.3,405.7,269.7,Updated notes for rescue medication usage reporting to clarify total quantity from any source,Updated notes for rescue medication usage reporting to clarify total quantity from any source,80,80,False
+CPMP,a,5,grid,2,202.0,269.7,405.7,296.3,Added C-SSRSand associated Self-harmform procedures at Visit 2,Added C-SSRS and associated Self-harm form procedures at Visit 2 |,53,53,False
+CPMP,a,5,grid,2,202.0,296.3,405.7,322.7,"Added B12,methylmalonic acidand homocysteine to labs for Visit 1","Added B12, methylmalonic acid and homocysteine to labs for Visit 1",55,55,False
+CPMP,a,5,grid,2,202.0,322.7,405.7,349.0,Added alcoholconsumption collected at all Visits,Added alcohol consumption collected at all | Visits,43,43,False
+CPMP,a,5,grid,2,202.0,349.0,405.7,362.3,Added recreational drug use collected at Visit 1,Added recreational drug use collected at Visit 1,41,41,False
+CPMP,a,5,grid,2,202.0,362.3,405.7,388.3,Added Self-Pain Positioning Questionnaire at Visit 2,Added Self-Pain Positioning Questionnaire at | Visit 2,45,45,False
+CPMP,a,5,grid,2,202.0,388.3,405.7,413.7,,,0,0,False
+CPMP,a,5,grid,2,202.0,415.3,405.7,454.7,Secondary objectives –Other Efficacy - change in several endpoints from “greater than” to “greater than or equal to”...,Secondary objectives — Other Efficacy - change in several endpoints from “greater than” to “oreater than or equal to”...,93,93,False
+CPMP,a,5,grid,2,202.0,454.7,405.7,494.0,in several endpoints from “2-point reduction” to “at least 2-point reduction”...,Secondary objectives — Other Efficacy - change in several endpoints from “2-point reduction” to “at least 2-point reduction”...,61,99,True
+CPMP,a,5,grid,2,202.0,494.0,405.7,559.3,"in several endpoints from “treatment response with a 30%, 50%, and 70% reduction” to “first pain reduction of at least 30%, 50%, and 70%”...","Secondary objectives — Other Efficacy - change in several endpoints from “treatment response with a 30%, 50%, and 70% reduction” to “first pain reduction of at least 30%, 50%, and 70%’...",100,138,True
+CPMP,a,5,grid,2,202.0,559.3,405.7,608.7,Secondary objectives –Other Efficacy - change in several endpoints from “Time to 2-point reduction” to “Time to first pain reduction of at,Secondary objectives — Other Efficacy - change in several endpoints from “Time to 2-point reduction” to “Time to first pain reduction of at leact 2? noint”’,111,122,False
+CPMP,a,5,grid,2,202.0,608.7,405.7,639.3,,,0,0,False
+CPMP,a,5,grid,2,202.0,639.3,405.7,664.3,Updated Visit 2 to clarify the washout period should begin at Visit 2.,Updated Visit 2 to clarify the washout period | should begin at Visit 2.,57,57,False
+CPMP,a,5,grid,2,202.0,664.3,405.7,690.7,Added recommendedminimumwashout duration is 2 days to Visit 2.,Added recommended minimum washout duration is 2 days to Visit 2. |,53,53,False
+CPMP,a,5,grid,2,202.0,690.7,405.7,717.3,Updated Criterion #9 to say…all medications taken for chronic pain conditions…,Updated Criterion #9 to say... all medications taken for chronic pain conditions...,65,65,False
+CPMP,a,5,grid,3,405.7,86.3,545.7,99.0,,,0,0,False
+CPMP,a,5,grid,3,405.7,99.0,545.7,138.3,clarification,clarification,13,13,False
+CPMP,a,5,grid,3,405.7,138.3,545.7,177.7,Vital sign procedures for these visits will be detailed in the ISAs,Vital sign procedures for these visits will be detailed in the ISAs,56,56,False
+CPMP,a,5,grid,3,405.7,177.7,545.7,191.0,BasedonFDAfeedback.,Based on FDA feedback.,18,18,False
+CPMP,a,5,grid,3,405.7,191.0,545.7,230.3,Visit 2 procedure should be repeated if >60 days from Visit,Visit 2 procedure should be repeated if >60 days from Visit 1,48,49,False
+CPMP,a,5,grid,3,405.7,230.3,545.7,269.7,clarification,clarification,13,13,False
+CPMP,a,5,grid,3,405.7,269.7,545.7,296.3,correction,correction,10,10,False
+CPMP,a,5,grid,3,405.7,296.3,545.7,322.7,Medical decision,Medical decision,15,15,False
+CPMP,a,5,grid,3,405.7,322.7,545.7,349.0,Medical decision,Medical decision,15,15,False
+CPMP,a,5,grid,3,405.7,349.0,545.7,362.3,Forscreening purposes,For screening purposes,20,20,False
+CPMP,a,5,grid,3,405.7,362.3,545.7,388.3,Part of the digital biomarkers analysis,Part of the digital biomarkers analysis,34,34,False
+CPMP,a,5,grid,3,405.7,388.3,545.7,413.7,,,0,0,False
+CPMP,a,5,grid,3,405.7,415.3,545.7,454.7,Statistician decision,Statistician decision,20,20,False
+CPMP,a,5,grid,3,405.7,454.7,545.7,494.0,Statistician decision,Statistician decision,20,20,False
+CPMP,a,5,grid,3,405.7,494.0,545.7,559.3,Statistician decision,Statistician decision,20,20,False
+CPMP,a,5,grid,3,405.7,559.3,545.7,608.7,Statistician decision,Statistician decision,20,20,False
+CPMP,a,5,grid,3,405.7,608.7,545.7,639.3,,,0,0,False
+CPMP,a,5,grid,3,405.7,639.3,545.7,664.3,clarification,clarification,13,13,False
+CPMP,a,5,grid,3,405.7,664.3,545.7,690.7,clarification,clarification,13,13,False
+CPMP,a,5,grid,3,405.7,690.7,545.7,717.3,Clarification that all medications taken for chronic,Clarification that all medications taken for chronic,46,46,False
+CPMP,a,6,grid,1,66.0,86.0,202.1,124.7,,,0,0,False
+CPMP,a,6,grid,1,66.0,124.7,202.1,164.0,5.2 Exclusion Criteria,5.2 Exclusion Criteria,19,19,False
+CPMP,a,6,grid,1,66.0,164.0,202.1,203.3,5.2 Exclusion Criteria,5.2 Exclusion Criteria,19,19,False
+CPMP,a,6,grid,1,66.0,203.3,202.1,229.7,5.2 Exclusion Criteria,5.2 Exclusion Criteria,19,19,False
+CPMP,a,6,grid,1,66.0,229.7,202.1,295.0,5.3 Lifestyle Considerations,5.3 Lifestyle Considerations,25,25,False
+CPMP,a,6,grid,1,66.0,295.0,202.1,321.7,5.3 Lifestyle Considerations,5.3 Lifestyle Considerations,25,25,False
+CPMP,a,6,grid,1,66.0,321.7,202.1,348.0,5.4 Screen Failures,5.4 Screen Failures |,16,16,False
+CPMP,a,6,grid,1,66.0,348.0,202.1,387.3,5.4.1 Participation in Multiple ISAs,5.4.1 Participation in Multiple ISAs,30,30,False
+CPMP,a,6,grid,1,66.0,387.3,202.1,413.7,6.2 Preparation/Handling/ Storage/Accountability,6.2 Preparation/Handling/ Storage/Accountability,42,42,False
+CPMP,a,6,grid,1,66.0,413.7,202.1,466.0,6.3 Measures to Minimize Bias: Randomization and Blinding,6.3 Measures to Minimize Bias: Randomization and Blinding,48,48,False
+CPMP,a,6,grid,1,66.0,466.0,202.1,505.3,6.3 Measures to Minimize Bias: Randomization and Blinding,6.3 Measures to Minimize Bias: Randomization and Blinding,48,48,False
+CPMP,a,6,grid,1,66.0,505.3,202.1,531.7,6.4 Study Intervention Compliance,6.4 Study Intervention Compliance,29,29,False
+CPMP,a,6,grid,1,66.0,531.7,202.1,571.0,6.5 Concomitant Therapy,6.5 Concomitant Therapy,20,20,False
+CPMP,a,6,grid,1,66.0,571.0,202.1,597.7,7.1 Discontinuation of Study Intervention,7.1 Discontinuation of Study Intervention,36,36,False
+CPMP,a,6,grid,1,66.0,597.7,202.1,637.0,7.2.1 Discontinuation of Inadvertently Enrolled Participants,7.2.1 Discontinuation of Inadvertently Enrolled Participants,53,53,False
+CPMP,a,6,grid,1,66.0,637.0,202.1,663.3,7.3 Lost to Follow-up,7.3 Lost to Follow-up |,16,16,False
+CPMP,a,6,grid,1,66.0,663.3,202.1,702.3,8.1.1 Screening and Preliminary Data Entry Period,8.1.1 Screening and Preliminary Data Entry Period,41,41,False
+CPMP,a,6,grid,1,66.0,702.3,202.1,716.0,8.1.3.4 Sleep Quality,8.1.3.4 Sleep Quality,16,16,False
+CPMP,a,6,grid,2,202.1,86.0,405.9,124.7,,,0,0,False
+CPMP,a,6,grid,2,202.1,124.7,405.9,164.0,Updated Criterion #23 to say…ideation or behavior occurred within the past 2 months prior to randomization,Updated Criterion #23 to say...ideation or behavior occurred within the past 2 months prior to randomization,89,89,False
+CPMP,a,6,grid,2,202.1,164.0,405.9,203.3,Updated criteria #27 and #28 to specify when a participant received at least one dose of investigational intervention,Updated criteria #27 and #28 to specify when a participant received at least one dose of investigational intervention,98,98,False
+CPMP,a,6,grid,2,202.1,203.3,405.9,229.7,Medical Conditions. Added criterion #32 have fibromyalgia,Medical Conditions. Added criterion #32 have fibromyalgia,49,49,False
+CPMP,a,6,grid,2,202.1,229.7,405.9,295.0,Added sub-header Study Restrictions. Updated the first bullet to say use of medications for chronic pain conditions. Removed second bullet about modification of pharmacologic therapies for conditions other than chronic pain.,Added sub-header Study Restrictions. Updated the first bullet to say use of medications for chronic pain conditions. Removed second bullet about modification of pharmacologic therapies for conditions other than chronic pain.,190,190,False
+CPMP,a,6,grid,2,202.1,295.0,405.9,321.7,"Added information for caffeine, alcohol and activities","Added information for caffeine, alcohol and activities",47,47,False
+CPMP,a,6,grid,2,202.1,321.7,405.9,348.0,Replaced “operations manual” with the “schedule of activities” in the table,Replaced “operations manual” with the “schedule of activities” in the table,61,61,False
+CPMP,a,6,grid,2,202.1,348.0,405.9,387.3,Moved one bullet up and added exceptions to 2 other bullets for participants that did not receive intervention,Moved one bullet up and added exceptions to 2 other bullets for participants that did not receive intervention,93,93,False
+CPMP,a,6,grid,2,202.1,387.3,405.9,413.7,Updates to provide additional flexibility for study conduct,Updates to provide additional flexibility for study conduct,52,52,False
+CPMP,a,6,grid,2,202.1,413.7,405.9,466.0,Removed “case report form” from last bullet of unblinding table. The date and reason that the blind was broken must be recorded in the source documentation of the appropriate ISA.,Removed “case report form” from last bullet of unblinding table. The date and reason that the blind was broken must be recorded in the source documentation of the appropriate ISA.,146,146,False
+CPMP,a,6,grid,2,202.1,466.0,405.9,505.3,Updates to provide additional flexibility for study conduct,Updates to provide additional flexibility for study conduct,52,52,False
+CPMP,a,6,grid,2,202.1,505.3,405.9,531.7,Updates to provide additional flexibility for study conduct,Updates to provide additional flexibility for study conduct,52,52,False
+CPMP,a,6,grid,2,202.1,531.7,405.9,571.0,Entire section updated,Entire section updated,20,20,False
+CPMP,a,6,grid,2,202.1,571.0,405.9,597.7,Changed DMC to AC,Changed DMC to AC,14,14,False
+CPMP,a,6,grid,2,202.1,597.7,405.9,637.0,Removed “clinical research physician” (CRP) from…the investigator must obtain documented approval from the sponsor…,Removed “clinical research physician” (CRP) from...the investigator must obtain documented approval from the sponsor...,96,96,False
+CPMP,a,6,grid,2,202.1,637.0,405.9,663.3,Updates to provide additional flexibility for study conduct,Updates to provide additional flexibility for | study conduct,52,52,False
+CPMP,a,6,grid,2,202.1,663.3,405.9,702.3,Numeric Rating Scale. Replaced “Exclusion” with “Inclusion” criteria for the PDEP… And updated link to Section 5.1,Numeric Rating Scale. Replaced “Exclusion” with “Inclusion” criteria for the PDEP... And updated link to Section 5.1,91,91,False
+CPMP,a,6,grid,2,202.1,702.3,405.9,716.0,Updated the MOS sleep scale description,Updated the MOS sleep scale description,34,34,False
+CPMP,a,6,grid,3,405.9,86.0,546.0,124.7,"pain conditions, not just for condition under study will be discontinued","pain conditions, not just for condition under study will be discontinued",61,61,False
+CPMP,a,6,grid,3,405.9,124.7,546.0,164.0,Clarification of 2 month window prior to randomization,Clarification of 2 month window prior to randomization,47,47,False
+CPMP,a,6,grid,3,405.9,164.0,546.0,203.3,Clarification of situations where a participant may not have received intervention in a study,Clarification of situations where a participant may not have received intervention in a study,80,80,False
+CPMP,a,6,grid,3,405.9,203.3,546.0,229.7,Medical decision,Medical decision,15,15,False
+CPMP,a,6,grid,3,405.9,229.7,546.0,295.0,Clarification of information and removal of repeated information already stated in Section 6.5,Clarification of information and removal of repeated information already stated in Section 6.5,81,81,False
+CPMP,a,6,grid,3,405.9,295.0,546.0,321.7,,,0,0,False
+CPMP,a,6,grid,3,405.9,321.7,546.0,348.0,Correction,Correction,10,10,False
+CPMP,a,6,grid,3,405.9,348.0,546.0,387.3,Clarification for participants that were randomized but did not receive intervention,Clarification for participants that were randomized but did not receive intervention,74,74,False
+CPMP,a,6,grid,3,405.9,387.3,546.0,413.7,Sponsor protocol template updates,Sponsor protocol template updates,30,30,False
+CPMP,a,6,grid,3,405.9,413.7,546.0,466.0,Correction,Correction,10,10,False
+CPMP,a,6,grid,3,405.9,466.0,546.0,505.3,Sponsor protocol template updates,Sponsor protocol template updates,30,30,False
+CPMP,a,6,grid,3,405.9,505.3,546.0,531.7,Sponsor protocol template updates,Sponsor protocol template updates,30,30,False
+CPMP,a,6,grid,3,405.9,531.7,546.0,571.0,"To provide more clarity for permitted, prohibited, and rescue medication","To provide more clarity for permitted, prohibited, and rescue medication",61,61,False
+CPMP,a,6,grid,3,405.9,571.0,546.0,597.7,Corrected throughout protocol,Corrected throughout protocol,27,27,False
+CPMP,a,6,grid,3,405.9,597.7,546.0,637.0,Documented approval from the sponsor does not need to be from a CRP,Documented approval from the sponsor does not need to be from a CRP,55,55,False
+CPMP,a,6,grid,3,405.9,637.0,546.0,663.3,Sponsor protocol template updates,Sponsor protocol template updates,30,30,False
+CPMP,a,6,grid,3,405.9,663.3,546.0,702.3,Correction,Correction,10,10,False
+CPMP,a,6,grid,3,405.9,702.3,546.0,716.0,Scale update,Scale update,11,11,False
+CPMP,a,7,grid,1,65.7,86.3,202.0,112.0,8.2.3Electrocardiograms,8.2.3 Electrocardiograms |,21,21,False
+CPMP,a,7,grid,1,65.7,112.0,202.0,136.0,8.2.4 Clinical Safety L aboratory Assessments,8.2.4 Clinical Safety | T ahoratorv Assessments,38,38,False
+CPMP,a,7,grid,1,65.7,136.0,202.0,168.0,,CCI,0,3,False
+CPMP,a,7,grid,1,65.7,168.0,202.0,204.0,9.3 Populations for Analyses,9.3 Populations for Analyses |,24,24,False
+CPMP,a,7,grid,1,65.7,204.0,202.0,217.3,9.4.1General Considerations,9.4.1 General Considerations,24,24,False
+CPMP,a,7,grid,1,65.7,217.3,202.0,269.7,9.4.2 Primary Endpoint and Analysis,9.4.2 Primary Endpoint and Analysis,29,29,False
+CPMP,a,7,grid,1,65.7,269.7,202.0,309.3,9.4.2.1 Key Features of the Bayesian Primary Efficacy Analysis Model,9.4.2.1 Key Features of the Bayesian Primary Efficacy Analysis Model,56,56,False
+CPMP,a,7,grid,1,65.7,309.3,202.0,335.7,9.4.3 Secondary Endpoints and Analysis,9.4.3 Secondary Endpoints and Analysis,32,32,False
+CPMP,a,7,grid,1,65.7,335.7,202.0,388.0,9.4.3 Secondary Endpoints and Analysis,9.4.3 Secondary Endpoints and Analysis,32,32,False
+CPMP,a,7,grid,1,65.7,388.0,202.0,414.3,9.4.3.1 Continuous Efficacy Analyses,9.4.3.1 Continuous Efficacy | Analyses,30,30,False
+CPMP,a,7,grid,1,65.7,414.3,202.0,466.7,9.4.3.2 Categorical Efficacy Analyses,9.4.3.2 Categorical Efficacy Analyses,31,31,False
+CPMP,a,7,grid,1,65.7,466.7,202.0,545.0,9.4.3.2 Categorical Efficacy Analyses,9.4.3.2 Categorical Efficacy Analyses,31,31,False
+CPMP,a,7,grid,1,65.7,545.0,202.0,571.3,9.4.3.3Time to Event Efficacy Analyses,9.4.3.3 Time to Event Efficacy Analyses,31,31,False
+CPMP,a,7,grid,1,65.7,571.3,202.0,597.7,9.4.3.3Time to Event Efficacy Analyses,9.4.3.3 Time to Event Efficacy Analyses,31,31,False
+CPMP,a,7,grid,1,65.7,597.7,202.0,624.0,9.4.4Tertiary/Exploratory Endpoints,9.4.4 Tertiary/Exploratory | Endpoints,31,31,False
+CPMP,a,7,grid,1,65.7,624.0,202.0,650.3,9.4.7SubgroupAnalyses,9.4.7 Subgroup Analyses |,19,19,False
+CPMP,a,7,grid,1,65.7,650.3,202.0,689.7,9.6 Data Monitoring Committee,9.6 Data Monitoring Committee,25,25,False
+CPMP,a,7,grid,1,65.7,689.7,202.0,716.3,10.1.1 Regulatory and Ethical Considerations,10.1.1 Regulatory and Ethical | Considerations,38,38,False
+CPMP,a,7,grid,2,202.0,86.3,405.7,112.0,EvaluatingECGs.Changed “sitting”to “supine”,Evaluating ECGs. Changed “sitting” to “supine”,36,36,False
+CPMP,a,7,grid,2,202.0,112.0,405.7,136.0,Updates to provide additional flexibility for study conduct,Updates to provide additional flexibility for | stidv conduct,52,52,False
+CPMP,a,7,grid,2,202.0,136.0,405.7,168.0,,,0,0,False
+CPMP,a,7,grid,2,202.0,168.0,405.7,204.0,"Updated population description table for Enrolled, Modified ITT, Safety, and Enhanced ITT populations","Updated population description table for Enrolled, Modified ITT, Safety, and Enhanced ITT populations",86,86,False
+CPMP,a,7,grid,2,202.0,204.0,405.7,217.3,Updated ISASAPinformation for borrowing,Updated ISA SAP information for borrowing,36,36,False
+CPMP,a,7,grid,2,202.0,217.3,405.7,269.7,"Updated the population for the primary efficacy analysis, updated the outcome variable, and removed the continuous fixed covariates in model","Updated the population for the primary efficacy analysis, updated the outcome variable, and removed the continuous fixed covariates in model",119,119,False
+CPMP,a,7,grid,2,202.0,269.7,405.7,309.3,Added sub-header for Borrowing Strategy and updated text for the decisions on borrowing of placebo and treatment-effect information,Added sub-header for Borrowing Strategy and updated text for the decisions on borrowing of placebo and treatment-effect information,112,112,False
+CPMP,a,7,grid,2,202.0,309.3,405.7,335.7,Updated outcome variable and removed continuous fixed covariates in model,Updated outcome variable and removed continuous fixed covariates in model,64,64,False
+CPMP,a,7,grid,2,202.0,335.7,405.7,388.0,"Moved the table to Section 9.4.3.1. In the table, updated the outcome variable, removed the continuous fixed covariates in the model, and updated the fixed categorical effects","Moved the table to Section 9.4.3.1. In the table, updated the outcome variable, removed the continuous fixed covariates in the model, and updated the fixed categorical effects",142,142,False
+CPMP,a,7,grid,2,202.0,388.0,405.7,414.3,Table from 9.4.3. moved to this section and content updated.,Table from 9.4.3. moved to this section and content updated. |,47,47,False
+CPMP,a,7,grid,2,202.0,414.3,405.7,466.7,Change in several endpoints from “greater than” to “greater than or equal to”... and from “2-point reduction…” to “at least 2-point reduction…”,Change in several endpoints from “greater than” to “greater than or equal to”... and from “2-point reduction...” to “at least 2-point reduction...”,107,107,False
+CPMP,a,7,grid,2,202.0,466.7,405.7,545.0,Updated the outcomes from “greater than” to “greater than or equal to…”. Updated the outcomes from “a 2-point reduction from baseline” to “at least a 2-point reduction from baseline”. Added the model covariates,Updated the outcomes from “greater than” to “greater than or equal to...”. Updated the outcomes from “a 2-point reduction from baseline” to “at least a 2-point reduction from baseline”. Added the model covariates,165,165,False
+CPMP,a,7,grid,2,202.0,545.0,405.7,571.3,"Updated l ast 2bulletstosay,“time to firstpain reduction of at least 2-points”…","Updated last 2 bullets to say, “time to first pain reduction of at least 2-points”...",64,64,False
+CPMP,a,7,grid,2,202.0,571.3,405.7,597.7,Added the “time to event” analyses based on daily NRS score,Added the “time to event” analyses based on daily NRS score,47,47,False
+CPMP,a,7,grid,2,202.0,597.7,405.7,624.0,Added biomarkeranalysis,Added biomarker analysis |,22,22,False
+CPMP,a,7,grid,2,202.0,624.0,405.7,650.3,Subgroupanalyses model covariates are updated,Subgroup analyses model covariates are | updated,41,41,False
+CPMP,a,7,grid,2,202.0,650.3,405.7,689.7,Changed DMC to AC and added information for the AC and AC charter.,Changed DMC to AC and added information for the AC and AC charter.,53,53,False
+CPMP,a,7,grid,2,202.0,689.7,405.7,716.3,"Updates to provide additional flexibility for study conduct. Fourth bullet, …”oversight of","Updates to provide additional flexibility for study conduct. Fourth bullet, ...”oversight of |",75,75,False
+CPMP,a,7,grid,3,405.7,86.3,545.7,112.0,Collection shouldoccurwhile participant is supine.,Collection should occur while participant is supine.,45,45,False
+CPMP,a,7,grid,3,405.7,112.0,545.7,136.0,Sponsor protocol template updates,Sponsor protocol template indates,30,30,False
+CPMP,a,7,grid,3,405.7,136.0,545.7,168.0,,,0,0,False
+CPMP,a,7,grid,3,405.7,168.0,545.7,204.0,Based on feedback from the FDA,Based on feedback from the FDA,25,25,False
+CPMP,a,7,grid,3,405.7,204.0,545.7,217.3,Statistician decision,Statistician decision,20,20,False
+CPMP,a,7,grid,3,405.7,217.3,545.7,269.7,"Per updates in Section 9.3, feedback from the FDA, and statistician decision, respectively","Per updates in Section 9.3, feedback from the FDA, and statistician decision, respectively",74,74,False
+CPMP,a,7,grid,3,405.7,269.7,545.7,309.3,Clarification,Clarification,13,13,False
+CPMP,a,7,grid,3,405.7,309.3,545.7,335.7,Per FDA feedback and sponsor decision,Per FDA feedback and sponsor decision,32,32,False
+CPMP,a,7,grid,3,405.7,335.7,545.7,388.0,Statistician decision,Statistician decision,20,20,False
+CPMP,a,7,grid,3,405.7,388.0,545.7,414.3,Statistician decision,Statistician decision,20,20,False
+CPMP,a,7,grid,3,405.7,414.3,545.7,466.7,Statistician decision,Statistician decision,20,20,False
+CPMP,a,7,grid,3,405.7,466.7,545.7,545.0,Statistician decision,Statistician decision,20,20,False
+CPMP,a,7,grid,3,405.7,545.0,545.7,571.3,Parallelsentencestructureof outcomes,Parallel sentence structure of outcomes,35,35,False
+CPMP,a,7,grid,3,405.7,571.3,545.7,597.7,Statistician decision,Statistician decision,20,20,False
+CPMP,a,7,grid,3,405.7,597.7,545.7,624.0,Sponsor ’sdecision,Sponsor’s decision,16,16,False
+CPMP,a,7,grid,3,405.7,624.0,545.7,650.3,Statistician decision,Statistician decision,20,20,False
+CPMP,a,7,grid,3,405.7,650.3,545.7,689.7,Correction to more accurately describe committee and its responsibilities,Correction to more accurately describe committee and its responsibilities,65,65,False
+CPMP,a,7,grid,3,405.7,689.7,545.7,716.3,Sponsor protocol template updates,Sponsor protocol template updates,30,30,False
+CPMP,a,8,grid,1,66.0,86.0,202.1,111.7,,,0,0,False
+CPMP,a,8,grid,1,66.0,111.7,202.1,151.0,10.1.5 Committees Structure,10.1.5 Committees Structure,23,23,False
+CPMP,a,8,grid,1,66.0,151.0,202.1,177.7,10.1.7 Data Quality Assurance,10.1.7 Data Quality Assurance,24,24,False
+CPMP,a,8,grid,1,66.0,177.7,202.1,204.0,10.1.7 Data Quality Assurance,10.1.7 Data Quality Assurance,24,24,False
+CPMP,a,8,grid,1,66.0,204.0,202.1,243.3,10.1.12 Long-term Sample Retention,10.1.12 Long-term Sample Retention,28,28,False
+CPMP,a,8,grid,1,66.0,243.3,202.1,269.7,10.2 Appendix 2: Clinical Laboratory Tests,10.2 Appendix 2: Clinical Laboratory Tests,35,35,False
+CPMP,a,8,grid,1,66.0,269.7,202.1,296.0,10.2 Appendix 2: Clinical Laboratory Tests,10.2 Appendix 2: Clinical Laboratory Tests,35,35,False
+CPMP,a,8,grid,1,66.0,296.0,202.1,335.3,10.2 Appendix 2: Clinical Laboratory Tests,10.2 Appendix 2: Clinical Laboratory Tests,35,35,False
+CPMP,a,8,grid,1,66.0,335.3,202.1,349.0,11 References,11 References,12,12,False
+CPMP,a,8,grid,1,66.0,349.0,202.1,362.3,Throughout the protocol,Throughout the protocol |,21,21,False
+CPMP,a,8,grid,2,202.1,86.0,405.9,111.7,study conduct for participants under their responsibility…”,study conduct for participants under their responsibility...”,51,51,False
+CPMP,a,8,grid,2,202.1,111.7,405.9,151.0,Changed DMC to AC and updated responsibilities of the SASC,Changed DMC to AC and updated responsibilities of the SASC,49,49,False
+CPMP,a,8,grid,2,202.1,151.0,405.9,177.7,Updates to provide additional flexibility for study conduct,Updates to provide additional flexibility for study conduct,52,52,False
+CPMP,a,8,grid,2,202.1,177.7,405.9,204.0,Added digital biomarker data information,Added digital biomarker data information |,36,36,False
+CPMP,a,8,grid,2,202.1,204.0,405.9,243.3,Updated terminology in table and changed sample retention from 15 to 7 years for exploratory biomarker sample.,Updated terminology in table and changed sample retention from 15 to 7 years for exploratory biomarker sample.,93,93,False
+CPMP,a,8,grid,2,202.1,243.3,405.9,269.7,Added new text for local laboratory testing,Added new text for local laboratory testing,37,37,False
+CPMP,a,8,grid,2,202.1,269.7,405.9,296.0,"Added B12, methylmalonic acid and homocysteine","Added B12, methylmalonic acid and homocysteine",40,40,False
+CPMP,a,8,grid,2,202.1,296.0,405.9,335.3,"Pharmacogenetic and Exploratory Biomarker Sample Collection table, updated terminology and changed plasma to whole blood","Pharmacogenetic and Exploratory Biomarker Sample Collection table, updated terminology and changed plasma to whole blood",105,105,False
+CPMP,a,8,grid,2,202.1,335.3,405.9,349.0,"Added Liang, Zeger 2000 reference","Added Liang, Zeger 2000 reference",28,28,False
+CPMP,a,8,grid,2,202.1,349.0,405.9,362.3,Minor editorial and formatting changes,Minor editorial and formatting changes |,34,34,False
+CPMP,a,8,grid,3,405.9,86.0,546.0,111.7,,,0,0,False
+CPMP,a,8,grid,3,405.9,111.7,546.0,151.0,Correction to more accurately describe committee and its responsibilities,Correction to more accurately describe committee and its responsibilities,65,65,False
+CPMP,a,8,grid,3,405.9,151.0,546.0,177.7,Sponsor protocol template updates,Sponsor protocol template updates,30,30,False
+CPMP,a,8,grid,3,405.9,177.7,546.0,204.0,"If available, digital biomarker devices will be used in the study","If available, digital biomarker devices will be used in the study",54,54,False
+CPMP,a,8,grid,3,405.9,204.0,546.0,243.3,Per updated sponsor guidelines,Per updated sponsor guidelines,27,27,False
+CPMP,a,8,grid,3,405.9,243.3,546.0,269.7,Sponsor protocol template updates,Sponsor protocol template updates,30,30,False
+CPMP,a,8,grid,3,405.9,269.7,546.0,296.0,Per schedule of activities update,Per schedule of activities update,29,29,False
+CPMP,a,8,grid,3,405.9,296.0,546.0,335.3,Correction per updated sponsor guidelines.,Correction per updated sponsor guidelines.,37,37,False
+CPMP,a,8,grid,3,405.9,335.3,546.0,349.0,Used in Section 9.4.2.,Used in Section 9.4.2.,16,16,False
+CPMP,a,8,grid,3,405.9,349.0,546.0,362.3,"Minor, therefore not described","Minor, therefore not described",26,26,False
+BP02,a,4,grid,1,72.0,265.7,170.7,291.7,2.3. Benefit/Risk Assessment,2.3. Benefit/Risk Assessment,23,23,False
+BP02,a,4,grid,1,72.0,291.7,170.7,318.0,2.3.1. Risk Assessment,2.3.1. Risk | Assessment,17,17,False
+BP02,a,4,grid,1,72.0,318.0,170.7,357.3,2.3.1. Risk Assessment,2.3.1. Risk Assessment,17,17,False
+BP02,a,4,grid,1,72.0,357.3,170.7,383.7,2.3.1. Risk Assessment,2.3.1. Risk Assessment,17,17,False
+BP02,a,4,grid,1,72.0,383.7,170.7,619.7,5.1. Study Population,5.1. Study Population,17,17,False
+BP02,a,4,grid,1,72.0,619.7,170.7,672.0,6.6. Concomitant Therapy,6.6. Concomitant Therapy,20,20,False
+BP02,a,4,grid,2,170.7,265.7,338.3,291.7,Added sub-section headers.,Added sub-section headers. |,22,22,False
+BP02,a,4,grid,2,170.7,291.7,338.3,318.0,"In first paragraph, added text for the effect of LY3526318 on other drugs.","In first paragraph, added text for the effect of LY3526318 on other drugs.",60,60,False
+BP02,a,4,grid,2,170.7,318.0,338.3,357.3,"Updated first bullet to specify CYP3A4, plus minor editorial changes.","Updated first bullet to specify CYP3A4, plus minor editorial changes.",58,58,False
+BP02,a,4,grid,2,170.7,357.3,338.3,383.7,Added a bullet for CYP3A4 and p-glycoprotein (P-gp) substrates.,Added a bullet for CYP3A4 and p- glycoprotein (P-gp) substrates.,50,50,False
+BP02,a,4,grid,2,170.7,383.7,338.3,410.0,Updated numbers for inclusion and exclusion criteria.,Updated numbers for inclusion and exclusion criteria.,46,46,False
+BP02,a,4,grid,2,170.7,410.0,338.3,436.3,Updated criterion #2051 to specify drugs taken orally or intravenously.,Updated criterion #2051 to specify drugs taken orally or intravenously.,60,60,False
+BP02,a,4,grid,2,170.7,436.3,338.3,488.7,Added exclusion criterion #2054 for participants that are taking drugs that are sensitive CYP3A4 substrates with a narrow therapeutic index.,Added exclusion criterion #2054 for participants that are taking drugs that are sensitive CYP3A4 substrates with a narrow therapeutic index.,119,119,False
+BP02,a,4,grid,2,170.7,488.7,338.3,554.0,Added exclusion criterion #2055 for participants that are taking simvastatin at doses greater than 20 mg/day.,Added exclusion criterion #2055 for participants that are taking simvastatin at doses greater than 20 mg/day.,91,91,False
+BP02,a,4,grid,2,170.7,554.0,338.3,593.3,Added exclusion criterion #2056 for participants that are taking metformin at doses greater than 1000 mg/day.,Added exclusion criterion #2056 for participants that are taking metformin at doses greater than 1000 mg/day.,91,91,False
+BP02,a,4,grid,2,170.7,593.3,338.3,619.7,Added exclusion criterion #2057 for participants that are taking digoxin.,Added exclusion criterion #2057 for participants that are taking digoxin.,62,62,False
+BP02,a,4,grid,2,170.7,619.7,338.3,672.0,"Under Potential Drug-Drug Interactions with LY3526318, added reference to Section 5.2 for concomitant medication restrictions.","Under Potential Drug-Drug Interactions with LY3526318, added reference to Section 5.2 for concomitant medication restrictions.",108,108,False
+BP02,a,4,grid,3,338.3,265.7,540.0,291.7,For clarity.,For clarity.,10,10,False
+BP02,a,4,grid,3,338.3,291.7,540.0,318.0,Clarification of the potential of LY3526318 exposure to affect metabolism of other drugs.,Clarification of the potential of LY3526318 exposure to affect metabolism of other drugs.,76,76,False
+BP02,a,4,grid,3,338.3,318.0,540.0,357.3,For clarity.,For clarity.,10,10,False
+BP02,a,4,grid,3,338.3,357.3,540.0,383.7,Based on in vitro data suggesting a potential for PK interactions.,Based on in vitro data suggesting a potential for PK interactions.,55,55,False
+BP02,a,4,grid,3,338.3,383.7,540.0,410.0,To align with master protocol and ISA numbering system.,To align with master protocol and ISA numbering system.,46,46,False
+BP02,a,4,grid,3,338.3,410.0,540.0,436.3,Topical drugs are allowed.,Topical drugs are allowed.,22,22,False
+BP02,a,4,grid,3,338.3,436.3,540.0,488.7,Based on in vitro data suggesting potential CYP3A4 inhibition at the proposed LY3526318 dose.,Based on in vitro data suggesting potential CYP3A4 inhibition at the proposed LY3526318 dose.,79,79,False
+BP02,a,4,grid,3,338.3,488.7,540.0,554.0,"Simvastatin is a sensitive CYP3A4 substrate, with a projected maximal increase in exposure <2-fold in combination with LY3526318. Therefore, doses of 20 mg or less are considered safe.","Simvastatin is a sensitive CYP3A4 substrate, with a projected maximal increase in exposure <2-fold in combination with LY3526318. Therefore, doses of 20 mg or less are considered safe.",151,151,False
+BP02,a,4,grid,3,338.3,554.0,540.0,593.3,Based on limited data related to inhibition of renal transporters.,Based on limited data related to inhibition of renal transporters.,56,56,False
+BP02,a,4,grid,3,338.3,593.3,540.0,619.7,Based on in vitro data suggesting a potential for LY3526318 to inhibit P-gp.,Based on in vitro data suggesting a potential for LY3526318 to inhibit P-gp.,62,62,False
+BP02,a,4,grid,3,338.3,619.7,540.0,672.0,Reference to added exclusion criteria.,Reference to added exclusion criteria.,33,33,False
+BP02,a,5,grid,1,72.0,86.0,170.7,137.7,10.3. Appendix 3: List of Excluded Concomitant Medications,10.3. Appendix 3: List of Excluded Concomitant Medications,48,48,False
+BP02,a,5,grid,1,72.0,137.7,170.7,164.0,Throughout the protocol,Throughout the protocol,21,21,False
+BP02,a,5,grid,2,170.7,86.0,338.3,137.7,Added reference to Section 5.2 and the Manual of Operations for additional information.,Added reference to Section 5.2 and the Manual of Operations for additional information.,73,73,False
+BP02,a,5,grid,2,170.7,137.7,338.3,164.0,Minor editorial and format changes.,Minor editorial and format changes.,30,30,False
+BP02,a,5,grid,3,338.3,86.0,540.0,137.7,Additional information for excluded concomitant medications are listed in Section 5.2 and the Manual of Operations.,Additional information for excluded concomitant medications are listed in Section 5.2 and the Manual of Operations.,98,98,False
+BP02,a,5,grid,3,338.3,137.7,540.0,164.0,"Minor, therefore not described.","Minor, therefore not described.",26,26,False
+BP05,a,4,open,1,72.0,280.0,151.3,399.3,1.3. Schedule of Activities,1.3. Schedule of Activities,22,22,False
+BP05,a,4,open,1,72.0,399.3,151.3,446.3,5.2. Exclusion Criteria,5.2. Exclusion Criteria,19,19,False
+BP05,a,4,open,1,72.0,446.3,151.3,550.7,,,0,0,False
+BP05,a,4,open,1,72.0,552.0,151.3,716.3,8.2.1. Physical Examinations,8.2.1. Physical Examinations,23,23,False
+BP05,a,4,open,2,151.3,280.0,389.9,399.3,"Added Physical examinations at Visits 5 and 7. Added note, “Complete physical examination, including targeted physical examination specified below, should be performed at V3 and V801 or ED. Targeted examinations for skin, gastrointestinal tract, mammary gland in males, and lymph nodes should also be performed at V5 and V7.”","Added Physical examinations at Visits 5 and 7. Added note, “Complete physical examination, including targeted physical examination specified below, should be performed at V3 and V801 or ED. Targeted examinations for skin, gastrointestinal tract, mammary gland in males, and lymph nodes should also be performed at V5 and V7.”",266,266,False
+BP05,a,4,open,2,151.3,399.3,389.9,446.3,"Modified criterion [2085], “have completed participated in…”.","Modified criterion [2085], “have eempleted participated in...”.",48,48,False
+BP05,a,4,open,2,151.3,446.3,389.9,550.7,,CCl |,0,3,False
+BP05,a,4,open,2,151.3,552.0,389.9,716.3,"Added, “Complete physical examination, including targeted examination specified below, should be performed at V3 and Visit 801 or ED. Targeted physical examinations of skin, gastrointestinal tract, mammary gland in males, and lymph nodes will also be performed at Visits V5 and V7 as described in the SoA. Any clinically significant abnormal physical examination findings will be reported as AEs.” Removed, “…to physical examinations described in the Master Protocol CPMP…”","Added, “Complete physical examination, including targeted examination specified below, should be performed at V3 and Visit 801 or ED. Targeted physical examinations of skin, gastrointestinal tract, mammary gland in males, and lymph nodes will also be performed at Visits V5 and V7 as described in the SoA. Any clinically significant abnormal physical examination findings will be reported as AEs.” Removed, “...to physical examinations described in the Master Protocol CPMP...”",389,389,False
+BP05,a,4,open,3,389.9,280.0,526.7,399.3,Per regulatory feedback.,Per regulatory feedback.,21,21,False
+BP05,a,4,open,3,389.9,399.3,526.7,552.0,Clarification. Per regulatory feedback.,Clarification. Per regulatory feedback.,34,34,False
+BP05,a,4,open,3,389.9,552.0,526.7,716.3,Per regulatory feedback. Editorial.,Per regulatory feedback. Editorial.,30,30,False
+NP01,a,4,grid,1,66.0,264.7,154.6,303.3,Section 1.3. Schedule of Activities,Section 1.3. Schedule of Activities,29,29,False
+NP01,a,4,grid,1,66.0,303.3,154.6,342.7,Section 1.3. Schedule of Activities,Section 1.3. Schedule of Activities,29,29,False
+NP01,a,4,grid,1,66.0,342.7,154.6,382.0,Section 1.3. Schedule of Activities,Section 1.3. Schedule of Activities,29,29,False
+NP01,a,4,grid,1,66.0,382.0,154.6,421.3,Section 1.3. Schedule of Activities,Section 1.3. Schedule of Activities,29,29,False
+NP01,a,4,grid,1,66.0,421.3,154.6,460.7,Section 2.3.1. Risk Assessment,Section 2.3.1. Risk Assessment,24,24,False
+NP01,a,4,grid,1,66.0,460.7,154.6,487.0,Section 4 Study Design,Section 4 Study Design,19,19,False
+NP01,a,4,grid,1,66.0,487.0,154.6,526.3,Section 5.1. Inclusion Criteria,Section 5.1. Inclusion Criteria,26,26,False
+NP01,a,4,grid,1,66.0,526.3,154.6,553.0,Section 5.2. Exclusion Criteria,Section 5.2. Exclusion Criteria,26,26,False
+NP01,a,4,grid,1,66.0,553.0,154.6,579.3,Section 5.2. Exclusion Criteria,Section 5.2. | Exclusion Criteria,26,26,False
+NP01,a,4,grid,1,66.0,579.3,154.6,605.7,Section 5.2. Exclusion Criteria,Section 5.2. Exclusion Criteria,26,26,False
+NP01,a,4,grid,1,66.0,605.7,154.6,645.0,Section 5.3. Lifestyle Considerations,Section 5.3. Lifestyle Considerations,32,32,False
+NP01,a,4,grid,1,66.0,645.0,154.6,684.3,Section 6.1.1. Special Treatment Considerations,Section 6.1.1. Special Treatment Considerations,40,40,False
+NP01,a,4,grid,1,66.0,684.3,154.6,710.7,Section 8.1.1. Physical,Section 8.1.1. Physical,18,18,False
+NP01,a,4,grid,2,154.6,264.7,332.5,303.3,Addition of visit window for post-randomization visits,Addition of visit window for post- randomization visits,47,47,False
+NP01,a,4,grid,2,154.6,303.3,332.5,342.7,Included details for vital signs and targeted physical examination,Included details for vital signs and targeted physical examination,58,58,False
+NP01,a,4,grid,2,154.6,342.7,332.5,382.0,Included additional urine pregnancy sample collection and updated description of those who would be tested,Included additional urine pregnancy sample collection and updated description of those who would be tested,92,92,False
+NP01,a,4,grid,2,154.6,382.0,332.5,421.3,Included additional sample collection time for hemoglobin A1c,Included additional sample collection time for hemoglobin Alc,54,54,False
+NP01,a,4,grid,2,154.6,421.3,332.5,460.7,Removed language for women of childbearing potential and added language for fetal exposure,Removed language for women of childbearing potential and added language for fetal exposure,78,78,False
+NP01,a,4,grid,2,154.6,460.7,332.5,487.0,Amended post-treatment follow-up period instructions,Amended post-treatment follow-up period instructions,46,46,False
+NP01,a,4,grid,2,154.6,487.0,332.5,526.3,Removed criterion related to women not of childbearing potential,Removed criterion related to women not of childbearing potential,56,56,False
+NP01,a,4,grid,2,154.6,526.3,332.5,553.0,Addition of language related to ophthalmologic disease,Addition of language related to ophthalmologic disease,48,48,False
+NP01,a,4,grid,2,154.6,553.0,332.5,579.3,Removed criterion related to abnormal thyroid stimulating hormone levels,Removed criterion related to abnormal | thyroid stimulating hormone levels,64,64,False
+NP01,a,4,grid,2,154.6,579.3,332.5,605.7,Addition of criterion related to women who are pregnant or breastfeeding,Addition of criterion related to women who are pregnant or breastfeeding,62,62,False
+NP01,a,4,grid,2,154.6,605.7,332.5,645.0,Removed language about local regulations for contraception use by men,Removed language about local regulations for contraception use by men,60,60,False
+NP01,a,4,grid,2,154.6,645.0,332.5,684.3,Addition of special treatment considerations,Addition of special treatment considerations,40,40,False
+NP01,a,4,grid,2,154.6,684.3,332.5,710.7,New section to include details on targeted physical examination,New section to include details on targeted physical examination,55,55,False
+NP01,a,4,grid,3,332.5,264.7,546.0,303.3,Allows flexibility for participants,Allows flexibility for participants,32,32,False
+NP01,a,4,grid,3,332.5,303.3,546.0,342.7,Per regulatory feedback,Perregulatory feedback =,21,21,False
+NP01,a,4,grid,3,332.5,342.7,546.0,382.0,Per new toxicology data,Pernewtoxicologydata,20,20,False
+NP01,a,4,grid,3,332.5,382.0,546.0,421.3,Sample collection time missed in the original version,Sample collection time missed in the original version,46,46,False
+NP01,a,4,grid,3,332.5,421.3,546.0,460.7,Women of childbearing potential are now allowed in the study; pregnant or breastfeeding women are not allowed,Women of childbearing potential are now allowed in the study; pregnant or breastfeeding women are not allowed,92,92,False
+NP01,a,4,grid,3,332.5,460.7,546.0,487.0,Updated to maximize data collection in the follow-up period,Updated to maximize data collection in the follow- up period,50,50,False
+NP01,a,4,grid,3,332.5,487.0,546.0,526.3,To account for the addition of women of childbearing potential to the study per toxicology data,To account for the addition of women of childbearing potential to the study per toxicology data,80,80,False
+NP01,a,4,grid,3,332.5,526.3,546.0,553.0,Per regulatory feedback,Per regulatory feedback,21,21,False
+NP01,a,4,grid,3,332.5,553.0,546.0,579.3,Covered by the master Protocol H0P-MC-CPMP,Covered by the master Protocol HOP-MC-CPMP,35,35,False
+NP01,a,4,grid,3,332.5,579.3,546.0,605.7,Per regulatory feedback,Perregulatory feedback =,21,21,False
+NP01,a,4,grid,3,332.5,605.7,546.0,645.0,This language is intended for global studies. This study will be conducted in the United States only.,This language is intended for global studies. This study will be conducted in the United States only.,83,83,False
+NP01,a,4,grid,3,332.5,645.0,546.0,684.3,Per regulatory feedback,Perregulatory feedback =,21,21,False
+NP01,a,4,grid,3,332.5,684.3,546.0,710.7,Per regulatory feedback,Perregulatory feedback =,21,21,False
+NP01,a,5,grid,1,66.0,99.0,154.6,111.7,Examinations,Examinations |,12,12,False
+NP01,a,5,grid,1,66.0,111.7,154.6,151.0,"Section 10.2, Appendix 2","Section 10.2, Appendix 2",19,19,False
+NP01,a,5,grid,1,66.0,151.0,154.6,177.7,Throughout the protocol,Throughout the protocol,21,21,False
+NP01,a,5,grid,2,154.6,99.0,332.5,111.7,,,0,0,False
+NP01,a,5,grid,2,154.6,111.7,332.5,151.0,Addition of definitions and contraceptive guidance related to women of childbearing potential,Addition of definitions and contraceptive guidance related to women of childbearing potential,82,82,False
+NP01,a,5,grid,2,154.6,151.0,332.5,177.7,Minor editorial and formatting changes,Minor editorial and formatting changes,34,34,False
+NP01,a,5,grid,3,332.5,99.0,546.0,111.7,,,0,0,False
+NP01,a,5,grid,3,332.5,111.7,546.0,151.0,To account for the addition of women of childbearing potential to the study per toxicology data,To account for the addition of women of childbearing potential to the study per toxicology data,80,80,False
+NP01,a,5,grid,3,332.5,151.0,546.0,177.7,"Minor, therefore not described","Minor, therefore not described",26,26,False
+NP02,a,4,grid,1,71.7,362.7,173.2,388.3,2.3.Benefit/Risk Assessment,2.3. Benefit/Risk | Assessment,23,23,False
+NP02,a,4,grid,1,71.7,388.3,173.2,489.7,2.3.1. Risk Assessment,2.3.1. Risk Assessment,17,17,False
+NP02,a,4,grid,1,71.7,489.7,173.2,516.0,5.StudyPopulation,5. Study Population |,16,16,False
+NP02,a,4,grid,1,71.7,516.0,173.2,699.3,5.2. Exclusion Criteria,5.2. Exclusion Criteria,19,19,False
+NP02,a,4,grid,2,173.2,362.7,339.7,388.3,Added sub-section headers.,Added sub-section headers. |,22,22,False
+NP02,a,4,grid,2,173.2,388.3,339.7,414.7,"In first paragraph, added text for the effect of LY3526318 on other drugs.","In first paragraph, added text for the | effect of LY3526318 on other drugs.",60,60,False
+NP02,a,4,grid,2,173.2,414.7,339.7,463.3,"Updated first bullet to specify CYP3A4, plus minor editorial changes.","Updated first bullet to specify CYP3A4, plus minor editorial changes.",58,58,False
+NP02,a,4,grid,2,173.2,463.3,339.7,489.7,Added a bullet for CYP3A4 and p- glycoprotein (P-gp) substrates.,Added a bullet for CYP3A4 and p- | glycoprotein (P-gp) substrates.,50,50,False
+NP02,a,4,grid,2,173.2,489.7,339.7,516.0,Updated numbersfor inclusion and exclusion criteria.,Updated numbers for inclusion and | exclusion criteria.,46,46,False
+NP02,a,4,grid,2,173.2,516.0,339.7,555.3,Updated Exclusion Criterion #3051 to specify drugs taken orally or intravenously.,Updated Exclusion Criterion #3051 to specify drugs taken orally or intravenously.,69,69,False
+NP02,a,4,grid,2,173.2,555.3,339.7,607.7,Added Exclusion Criterion #3054 for participants that are taking drugs that are sensitive CYP3A4 substrates with a narrow therapeutic index.,Added Exclusion Criterion #3054 for participants that are taking drugs that are sensitive CYP3A4 substrates with a narrow therapeutic index.,119,119,False
+NP02,a,4,grid,2,173.2,607.7,339.7,673.0,Added Exclusion Criterion #3055 for participants that are taking simvastatin at doses greater than 20 mg/day.,Added Exclusion Criterion #3055 for participants that are taking simvastatin at doses greater than 20 mg/day.,91,91,False
+NP02,a,4,grid,2,173.2,673.0,339.7,699.3,Added Exclusion Criterion #3056 for participants that are taking digoxin.,Added Exclusion Criterion #3056 for participants that are taking digoxin. |,62,62,False
+NP02,a,4,grid,3,339.7,362.7,540.0,388.3,For clarity.,For clarity.,10,10,False
+NP02,a,4,grid,3,339.7,388.3,540.0,414.7,Clarification of the potential of LY3526318 exposure to affect metabolism of other drugs.,Clarification of the potential of LY3526318 exposure to affect metabolism of other drugs.,76,76,False
+NP02,a,4,grid,3,339.7,414.7,540.0,463.3,For clarity.,For clarity.,10,10,False
+NP02,a,4,grid,3,339.7,463.3,540.0,489.7,Based on in vitro data suggesting a potential for PK interactions.,Based on in vitro data suggesting a potential for PK interactions.,55,55,False
+NP02,a,4,grid,3,339.7,489.7,540.0,516.0,Toalign with master protocol andISA numbering system.,To align with master protocol and ISA numbering system.,46,46,False
+NP02,a,4,grid,3,339.7,516.0,540.0,555.3,Topical drugs are allowed.,Topical drugs are allowed.,22,22,False
+NP02,a,4,grid,3,339.7,555.3,540.0,607.7,Based on in vitro data suggesting potential CYP3A4 inhibition at the proposed LY3526318 dose.,Based on in vitro data suggesting potential CYP3A4 inhibition at the proposed LY3526318 dose.,79,79,False
+NP02,a,4,grid,3,339.7,607.7,540.0,673.0,"Simvastatin is a sensitive CYP3A4 substrate, with a projected maximal increase in exposure <2-fold in combination with LY3526318. Therefore, doses of 20 mg or less are considered safe.","Simvastatin is a sensitive CYP3A4 substrate, with a projected maximal increase in exposure <2-fold in combination with LY3526318. Therefore, doses of 20 mg or less are considered safe.",151,151,False
+NP02,a,4,grid,3,339.7,673.0,540.0,699.3,Based on in vitro data suggesting a potential for LY3526318 to inhibit P-gp.,Based on in vitro data suggesting a potential for LY3526318 to inhibit P-gp.,62,62,False
+NP02,a,5,grid,1,71.7,86.3,173.2,137.7,6.6. Concomitant Therapy,6.6. Concomitant Therapy,20,20,False
+NP02,a,5,grid,1,71.7,137.7,173.2,217.0,,oe,0,2,False
+NP02,a,5,grid,1,71.7,217.0,173.2,269.3,10.3. Appendix 3: List of Excluded Concomitant Medications,10.3. Appendix 3: List of Excluded Concomitant Medications,48,48,False
+NP02,a,5,grid,1,71.7,269.3,173.2,295.7,Throughoutthe protocol,Throughout the | protocol,21,21,False
+NP02,a,5,grid,2,173.2,86.3,339.7,137.7,"Under Potential Drug-Drug Interactions with LY3526318, added reference to Section 5.2 for concomitant medication restrictions.","Under Potential Drug-Drug Interactions with LY3526318, added reference to Section 5.2 for concomitant medication restrictions.",108,108,False
+NP02,a,5,grid,2,173.2,137.7,339.7,217.0,,,0,0,False
+NP02,a,5,grid,2,173.2,217.0,339.7,269.3,Added reference to Section 5.2 and the Manual of Operations for additional information.,Added reference to Section 5.2 and the Manual of Operations for additional information.,73,73,False
+NP02,a,5,grid,2,173.2,269.3,339.7,295.7,Minor editorial and format changes.,Minor editorial and format changes. |,30,30,False
+NP02,a,5,grid,3,339.7,86.3,540.0,137.7,Reference to add exclusion criteria.,Reference to add exclusion criteria.,31,31,False
+NP02,a,5,grid,3,339.7,137.7,540.0,217.0,,,0,0,False
+NP02,a,5,grid,3,339.7,217.0,540.0,269.3,For clarity.,For clarity.,10,10,False
+NP02,a,5,grid,3,339.7,269.3,540.0,295.7,"Minor, therefore not described.","Minor, therefore not described.",26,26,False
+NP03,b,4,grid,1,77.3,299.0,204.9,324.7,1.2. Schema,1.2. Schema |,8,8,False
+NP03,b,4,grid,1,77.3,324.7,204.9,377.0,1.3. Schedule of Activities (SoA),1.3. Schedule of Activities (SoA),25,25,False
+NP03,b,4,grid,1,77.3,377.0,204.9,403.7,4.1. Overall Design,4.1. Overall Design,15,15,False
+NP03,b,4,grid,1,77.3,403.7,204.9,443.0,5.2. Exclusion Criteria,5.2. Exclusion Criteria,19,19,False
+NP03,b,4,grid,1,77.3,443.0,204.9,456.3,5.2. Exclusion Criteria,5.2. Exclusion Criteria,19,19,False
+NP03,b,4,grid,1,77.3,456.3,204.9,482.7,5.3. Lifestyle Considerations,5.3. Lifestyle Considerations,25,25,False
+NP03,b,4,grid,1,77.3,482.7,204.9,522.0,6.5. Concomitant Therapy,6.5. Concomitant Therapy,20,20,False
+NP03,b,4,grid,1,77.3,522.0,204.9,548.3,7.1. Discontinuation of Study Intervention,7.1. Discontinuation of Study Intervention,36,36,False
+NP03,b,4,grid,1,77.3,548.3,204.9,588.0,7.2. Participant Discontinuation/Withdrawal from the Study,7.2. Participant Discontinuation/Withdrawal from the Study,50,50,False
+NP03,b,4,grid,1,77.3,588.0,204.9,614.3,10.1. Appendix 1: Clinical Laboratory Tests,10.1. Appendix 1: Clinical | Laboratory Tests,35,35,False
+NP03,b,4,grid,1,77.3,614.3,204.9,653.7,10.1. Appendix 1: Clinical Laboratory Tests,10.1. Appendix 1: Clinical Laboratory Tests,35,35,False
+NP03,b,4,grid,1,77.3,653.7,204.9,680.0,11. References,11. References,12,12,False
+NP03,b,4,grid,1,77.3,680.0,204.9,706.3,Throughout the protocol,Throughout the protocol,21,21,False
+NP03,b,4,grid,2,204.9,299.0,342.3,324.7,Added a follow-up visit,Added a follow-up visit |,19,19,False
+NP03,b,4,grid,2,204.9,324.7,342.3,377.0,Added a follow-up visit and a corresponding row for AEs,Added a follow-up visit and a corresponding row for AEs,45,45,False
+NP03,b,4,grid,2,204.9,377.0,342.3,403.7,Added follow-up visit,Added follow-up visit,18,18,False
+NP03,b,4,grid,2,204.9,403.7,342.3,443.0,Updated criterion #3034 to allow particular metformin doses,Updated criterion #3034 to allow particular metformin doses,51,51,False
+NP03,b,4,grid,2,204.9,443.0,342.3,456.3,Added criteria #3036 - #3041,Added criteria #3036 - #3041,21,21,False
+NP03,b,4,grid,2,204.9,456.3,342.3,482.7,Added additional alcohol restrictions for binge drinking,Added additional alcohol restrictions for binge drinking,50,50,False
+NP03,b,4,grid,2,204.9,482.7,342.3,522.0,Added a sub-section for concomitant therapy with metformin,Added a sub-section for concomitant therapy with metformin,50,50,False
+NP03,b,4,grid,2,204.9,522.0,342.3,548.3,Added sub-section Metabolic Safety,Added sub-section Metabolic Safety,30,30,False
+NP03,b,4,grid,2,204.9,548.3,342.3,588.0,Added this section,Added this section,16,16,False
+NP03,b,4,grid,2,204.9,588.0,342.3,614.3,Added bicarbonate and anion gap calculation to chemistry,Added bicarbonate and anion | gap calculation to chemistry,49,49,False
+NP03,b,4,grid,2,204.9,614.3,342.3,653.7,Added eGFR calculated by CKD-EPI equation based upon cystatin c,Added eGFR calculated by CKD-EPI equation based upon cystatin c,53,53,False
+NP03,b,4,grid,2,204.9,653.7,342.3,680.0,Added Reference section,Added Reference section,21,21,False
+NP03,b,4,grid,2,204.9,680.0,342.3,706.3,Minor editorial and formatting changes,Minor editorial and formatting changes,34,34,False
+NP03,b,4,grid,3,342.3,299.0,545.7,324.7,Adding a telephone follow-up visit for adverse event (AE) check,Adding a telephone follow-up visit for adverse event (AE) check,51,51,False
+NP03,b,4,grid,3,342.3,324.7,545.7,377.0,Adding a telephone follow-up visit for AE check AEs for the rest of the study are covered in the master CPMP SoA,Adding a telephone follow-up visit for AE check AEs for the rest of the study are covered in the master CPMP SoA,90,90,False
+NP03,b,4,grid,3,342.3,377.0,545.7,403.7,Adding a telephone follow-up visit for AE check,Adding a telephone follow-up visit for AE check,39,39,False
+NP03,b,4,grid,3,342.3,403.7,545.7,443.0,The inclusion of selected doses of metformin for concomitant use is based on new PK modeling data and metformin prescribing information,The inclusion of selected doses of metformin for concomitant use is based on new PK modeling data and metformin prescribing information,115,115,False
+NP03,b,4,grid,3,342.3,443.0,545.7,456.3,For participants taking metformin,For participants taking metformin,30,30,False
+NP03,b,4,grid,3,342.3,456.3,545.7,482.7,For participants taking metformin,For participants taking metformin,30,30,False
+NP03,b,4,grid,3,342.3,482.7,545.7,522.0,Specific metformin doses are now allowed,Specific metformin doses are now allowed,35,35,False
+NP03,b,4,grid,3,342.3,522.0,545.7,548.3,Provides additional information for participants taking metformin,Provides additional information for participants taking metformin,59,59,False
+NP03,b,4,grid,3,342.3,548.3,545.7,588.0,Provides additional information for participants taking metformin,Provides additional information for participants taking metformin,59,59,False
+NP03,b,4,grid,3,342.3,588.0,545.7,614.3,Participants are now allowed to take metformin,Participants are now allowed to take metformin,40,40,False
+NP03,b,4,grid,3,342.3,614.3,545.7,653.7,Participants are now allowed to take metformin,Participants are now allowed to take metformin,40,40,False
+NP03,b,4,grid,3,342.3,653.7,545.7,680.0,In order to cite the metformin GLUCOPHAGE package insert,In order to cite the metformin GLUCOPHAGE package insert,48,48,False
+NP03,b,4,grid,3,342.3,680.0,545.7,706.3,"Minor, therefore not described","Minor, therefore not described",26,26,False
+NP03,a,41,grid,1,77.3,295.7,183.7,360.3,1.1 Synopsis,1.1 Synopsis,10,10,False
+NP03,a,41,grid,1,77.3,360.3,183.7,386.7,1.2 Schema,1.2 Schema,8,8,False
+NP03,a,41,grid,1,77.3,386.7,183.7,439.0,1.3 Schedule of Activities (SoA),1.3 Schedule of Activities (SoA),25,25,False
+NP03,a,41,grid,1,77.3,439.0,183.7,465.3,1.3 Schedule of Activities (SoA),1.3 Schedule of Activities (SoA),25,25,False
+NP03,a,41,grid,1,77.3,465.3,183.7,504.7,1.3 Schedule of Activities (SoA),1.3 Schedule of Activities (SoA),25,25,False
+NP03,a,41,grid,1,77.3,504.7,183.7,531.3,1.3 Schedule of Activities (SoA),1.3 Schedule of Activities (SoA),25,25,False
+NP03,a,41,grid,1,77.3,531.3,183.7,570.7,1.3 Schedule of Activities (SoA),1.3 Schedule of Activities (SoA),25,25,False
+NP03,a,41,grid,1,77.3,570.7,183.7,597.0,2.2 Background,2.2 Background |,12,12,False
+NP03,a,41,grid,1,77.3,597.0,183.7,636.3,4.1 Overall Design,4.1 Overall Design,15,15,False
+NP03,a,41,grid,1,77.3,636.3,183.7,688.7,4.3 Justification for Dose,4.3 Justification for Dose,22,22,False
+NP03,a,41,grid,1,77.3,688.7,183.7,715.0,5.2 Exclusion Criteria,5.2 Exclusion Criteria,19,19,False
+NP03,a,41,grid,2,183.7,295.7,329.0,360.3,"Updates made to Number of Participants Intervention Groups and Duration, and Data Monitoring Committee","Updates made to Number of Participants Intervention Groups and Duration, and Data Monitoring Committee",88,88,False
+NP03,a,41,grid,2,183.7,360.3,329.0,386.7,Updated schema to show dose titration,Updated schema to show dose titration,32,32,False
+NP03,a,41,grid,2,183.7,386.7,329.0,439.0,Added telephone visits and updated study intervention notes to include a link to the new dose modification section,Added telephone visits and updated study intervention notes to include a link to the new dose modification section,97,97,False
+NP03,a,41,grid,2,183.7,439.0,329.0,465.3,Updates were made to ECG and Vital signs,Updates were made to ECG and Vital signs,33,33,False
+NP03,a,41,grid,2,183.7,465.3,329.0,504.7,Replaced Urinalysis with Urine drug screen.,Replaced Urinalysis with Urine drug screen.,37,37,False
+NP03,a,41,grid,2,183.7,504.7,329.0,531.3,Added window for PK sample collection,Added window for PK sample collection,32,32,False
+NP03,a,41,grid,2,183.7,531.3,329.0,570.7,Added participant digital biomarker device for Visit 7 and ED,Added participant digital biomarker device for Visit 7 and ED,52,52,False
+NP03,a,41,grid,2,183.7,570.7,329.0,597.0,Updated information for the 2 Phase 1 clinical studies,Updated information for the 2 | Phase 1 clinical studies,46,46,False
+NP03,a,41,grid,2,183.7,597.0,329.0,636.3,Updated and added text to describe the new dose titration scheme,Updated and added text to describe the new dose titration scheme,54,54,False
+NP03,a,41,grid,2,183.7,636.3,329.0,688.7,Added text for the titration scheme Removed “preliminary” from the beginning of second paragraph,Added text for the titration scheme ) ) ) ) beginning of second paragraph,81,56,False
+NP03,a,41,grid,2,183.7,688.7,329.0,715.0,Updated Criteria #3028,Updated Criteria #3028,19,19,False
+NP03,a,41,grid,3,329.0,295.7,545.7,360.3,Sample size and study intervention text updated for new dose titration scheme “Data monitoring committee” changed to “Assessment committee” for consistency with master CPMP protocol,Sample size and study intervention text updated for new dose titration scheme rs) ) ) )) n ) ) ) ) ) master CPMP protocol,153,87,False
+NP03,a,41,grid,3,329.0,360.3,545.7,386.7,New dose titration scheme for participants,New dose titration scheme for participants,37,37,False
+NP03,a,41,grid,3,329.0,386.7,545.7,439.0,To implement new dose titration scheme,To implement new dose titration scheme,33,33,False
+NP03,a,41,grid,3,329.0,439.0,545.7,465.3,Corrections for clarity,Corrections for clarity,21,21,False
+NP03,a,41,grid,3,329.0,465.3,545.7,504.7,"Urinalysis was only for Visit 3, so removed. Urine drug screen added and performed according to investigator discretion","Urinalysis was only for Visit 3, so removed. Urine drug screen added and performed according to investigator discretion",100,100,False
+NP03,a,41,grid,3,329.0,504.7,545.7,531.3,Adding flexibility,Adding flexibility,17,17,False
+NP03,a,41,grid,3,329.0,531.3,545.7,570.7,To indicate when the participant needs to return the device.,To indicate when the participant needs to return the device.,50,50,False
+NP03,a,41,grid,3,329.0,570.7,545.7,597.0,Both studies are completed,Both studies are completed,23,23,False
+NP03,a,41,grid,3,329.0,597.0,545.7,636.3,New dose titration scheme for participants,New dose titration scheme for participants,37,37,False
+NP03,a,41,grid,3,329.0,636.3,545.7,688.7,New dose titration scheme for participants Study LXBA is now completed,New dose titration scheme for participants Study LXBA is now completed,60,60,False
+NP03,a,41,grid,3,329.0,688.7,545.7,715.0,Clarifications based on clinical experience and emerging pharmacokinetic/metabolism data,Clarifications based on clinical experience and emerging pharmacokinetic/metabolism data,79,79,False
+NP03,a,42,grid,1,77.3,86.0,183.7,111.7,5.3 Lifestyle Considerations,5.3 Lifestyle | Considerations,25,25,False
+NP03,a,42,grid,1,77.3,111.7,183.7,151.0,6.1 Study Intervention(s) Administered,6.1 Study Intervention(s) Administered,32,32,False
+NP03,a,42,grid,1,77.3,151.0,183.7,203.3,6.5 Concomitant Therapy,6.5 Concomitant Therapy,20,20,False
+NP03,a,42,grid,1,77.3,203.3,183.7,217.0,6.6 Dose Modification,6.6 Dose Modification,18,18,False
+NP03,a,42,grid,1,77.3,217.0,183.7,256.3,8.2 Adverse Events and Serious Adverse Events,8.2 Adverse Events and Serious Adverse Events,38,38,False
+NP03,a,42,grid,1,77.3,256.3,183.7,282.7,9.2 Sample Size Determination,9.2 Sample Size | Determination,25,25,False
+NP03,a,42,grid,1,77.3,282.7,183.7,309.0,9.3 Populations for Analyses,9.3 Populations for Analyses,24,24,False
+NP03,a,42,grid,1,77.3,309.0,183.7,348.3,10.2 Appendix 2,10.2 Appendix 2,12,12,False
+NP03,a,42,grid,1,77.3,348.3,183.7,375.0,Throughout the protocol,Throughout the protocol,21,21,False
+NP03,a,42,grid,2,183.7,86.0,329.0,111.7,Removed text that is already in the master CPMP,Removed text that is already in the master CPMP,39,39,False
+NP03,a,42,grid,2,183.7,111.7,329.0,151.0,Updated text and table,Updated text and table,19,19,False
+NP03,a,42,grid,2,183.7,151.0,329.0,203.3,Removed text that is duplicated in CPMP Added sub-header for drug-drug interactions,Removed text that is duplicated in CPMP Added sub-header for drug-drug interactions,70,70,False
+NP03,a,42,grid,2,183.7,203.3,329.0,217.0,New section,New section,10,10,False
+NP03,a,42,grid,2,183.7,217.0,329.0,256.3,Added text to refer to the master,Added text to refer to the master,27,27,False
+NP03,a,42,grid,2,183.7,256.3,329.0,282.7,Updated sample size,Updated sample size |,17,17,False
+NP03,a,42,grid,2,183.7,282.7,329.0,309.0,Removed “in the SAP”,") ) Jn,",15,2,False
+NP03,a,42,grid,2,183.7,309.0,329.0,348.3,Updated the acceptable and ineffective methods of contraception text,Updated the acceptable and ineffective methods of contraception text,60,60,False
+NP03,a,42,grid,2,183.7,348.3,329.0,375.0,Minor editorial and formatting changes,Minor editorial and formatting changes,34,34,False
+NP03,a,42,grid,3,329.0,86.0,545.7,111.7,Master protocol updates for CPMP amendment (a),Master protocol updates for CPMP amendment (a),38,38,False
+NP03,a,42,grid,3,329.0,111.7,545.7,151.0,New dose titration scheme for participants. Emerging data allow participants to take capsules with or without food,New dose titration scheme for participants. Emerging data allow participants to take capsules with or without food,97,97,False
+NP03,a,42,grid,3,329.0,151.0,545.7,203.3,Consistency across ISAs,Consistency across ISAs,21,21,False
+NP03,a,42,grid,3,329.0,203.3,545.7,217.0,New dose titration scheme for participants,New dose titration scheme for participants,37,37,False
+NP03,a,42,grid,3,329.0,217.0,545.7,256.3,Master protocol contains AE and SAE information,Master protocol contains AE and SAE information,41,41,False
+NP03,a,42,grid,3,329.0,256.3,545.7,282.7,New dose titration scheme for participants,New dose titration scheme for participants,37,37,False
+NP03,a,42,grid,3,329.0,282.7,545.7,309.0,The master protocol defines the populations for analyses,The master protocol defines the populations for analyses,49,49,False
+NP03,a,42,grid,3,329.0,309.0,545.7,348.3,Updates to internal Lilly guidance,Updates to internal Lilly guidance,30,30,False
+NP03,a,42,grid,3,329.0,348.3,545.7,375.0,"Minor, therefore not described","Minor, therefore not described",26,26,False
+NP05,a,4,open,1,72.0,280.0,151.4,432.7,1.3. Schedule of Activities,1.3. Schedule of Activities,22,22,False
+NP05,a,4,open,1,72.0,432.7,151.4,480.3,5.2. Exclusion Criteria,5.2. Exclusion Criteria,19,19,False
+NP05,a,4,open,1,72.0,480.3,151.4,581.7,,,0,0,False
+NP05,a,4,open,1,72.0,581.7,151.4,585.7,,,0,0,False
+NP05,a,4,open,1,72.0,585.7,151.4,714.3,8.2.1. Physical Examinations,8.2.1. Physical Examinations,23,23,False
+NP05,a,4,open,2,151.4,280.0,389.9,432.7,"Added Physical examinations at Visits 5 and 7. Added note, “Complete physical examination, including targeted examination specified below, should be performed at V3 and V801 or ED. Targeted physical examination for skin, gastrointestinal tract, mammary gland in males, and lymph nodes should also be performed at V5 and V7.” Removed text in notes for vital signs, “…and prior to PK sample collection.”","Added Physical examinations at Visits 5 and 7. Added note, “Complete physical examination, including targeted examination specified below, should be performed at V3 and V801 or ED. Targeted physical examination for skin, gastrointestinal tract, mammary gland in males, and lymph nodes should also be performed at V5 and V7.” Removed text in notes for vital signs, “...and prior to PK sample collection.”",324,324,False
+NP05,a,4,open,2,151.4,432.7,389.9,480.3,"Modified criterion [3085], “have completed participated in…”.","Modified criterion [3085], “have eempleted participated in...”.",48,48,False
+NP05,a,4,open,2,151.4,480.3,389.9,581.7,,Ce,0,2,False
+NP05,a,4,open,2,151.4,581.7,389.9,585.7,,,0,0,False
+NP05,a,4,open,2,151.4,585.7,389.9,714.3,"Added, “Complete physical examination, including targeted examination specified below, should be performed at V3 and Visit 801 or ED. Targeted physical examinations of skin, gastrointestinal tract, mammary gland in males, and lymph nodes will also be performed at Visits V5 and V7 as described in the SoA. Any clinically significant abnormal physical examination findings will be reported as AEs.”","Added, “Complete physical examination, including targeted examination specified below, should be performed at V3 and Visit 801 or ED. Targeted physical examinations of skin, gastrointestinal tract, mammary gland in males, and lymph nodes will also be performed at Visits V5 and V7 as described in the SoA. Any clinically significant abnormal physical examination findings will be reported as AEs.”",328,328,False
+NP05,a,4,open,3,389.9,280.0,526.7,432.7,Per regulatory feedback. Editorial correction.,Per regulatory feedback. Editorial correction.,40,40,False
+NP05,a,4,open,3,389.9,432.7,526.7,480.3,Clarification.,Clarification.,13,13,False
+NP05,a,4,open,3,389.9,480.3,526.7,581.7,,,0,0,False
+NP05,a,4,open,3,389.9,581.7,526.7,585.7,,,0,0,False
+NP05,a,4,open,3,389.9,585.7,526.7,714.3,Per regulatory feedback.,Per regulatory feedback.,21,21,False
+NP05,a,5,open,1,72.0,102.0,151.4,134.7,,,0,0,False
+NP05,a,5,open,2,151.4,102.0,389.9,134.7,"Removed, “…to physical examinations (described in Master Protocol CPMP)…”","Removed, “...to physical examinations (described in Master Protocol CPMP)...”",58,58,False
+NP05,a,5,open,3,389.9,102.0,526.7,134.7,Editorial.,Editorial.,9,9,False
+OA01,a,4,grid,1,66.0,264.7,155.5,303.3,Section 1.3. Schedule of Activities,Section 1.3. Schedule of Activities,29,29,False
+OA01,a,4,grid,1,66.0,303.3,155.5,342.7,Section 1.3. Schedule of Activities,Section 1.3. Schedule of Activities,29,29,False
+OA01,a,4,grid,1,66.0,342.7,155.5,395.0,Section 1.3. Schedule of Activities,Section 1.3. Schedule of Activities,29,29,False
+OA01,a,4,grid,1,66.0,395.0,155.5,434.3,Section 1.3. Schedule of Activities,Section 1.3. Schedule of Activities,29,29,False
+OA01,a,4,grid,1,66.0,434.3,155.5,473.7,Section 2.3.1. Risk Assessment,Section 2.3.1. Risk Assessment,24,24,False
+OA01,a,4,grid,1,66.0,473.7,155.5,500.0,Section 4 Study Design,Section 4 Study Design,19,19,False
+OA01,a,4,grid,1,66.0,500.0,155.5,539.3,Section 5.1. Inclusion Criteria,Section 5.1. Inclusion Criteria,26,26,False
+OA01,a,4,grid,1,66.0,539.3,155.5,578.7,Section 5.1. Inclusion Criteria,Section 5.1. Inclusion Criteria,26,26,False
+OA01,a,4,grid,1,66.0,578.7,155.5,605.3,Section 5.2. Exclusion Criteria,Section 5.2. Exclusion Criteria,26,26,False
+OA01,a,4,grid,1,66.0,605.3,155.5,631.7,Section 5.2. Exclusion Criteria,Section 5.2. Exclusion Criteria,26,26,False
+OA01,a,4,grid,1,66.0,631.7,155.5,670.7,Section 5.3. Lifestyle Considerations,Section 5.3. Lifestyle Considerations,32,32,False
+OA01,a,4,grid,1,66.0,670.7,155.5,710.3,Section 5.3. Lifestyle Considerations,Section 5.3. Lifestyle Considerations,32,32,False
+OA01,a,4,grid,2,155.5,264.7,327.2,303.3,Addition of visit window for post-randomization visits,Addition of visit window for post- randomization visits,47,47,False
+OA01,a,4,grid,2,155.5,303.3,327.2,342.7,Included details for vital signs and targeted physical examination,Included details for vital signs and targeted physical examination,58,58,False
+OA01,a,4,grid,2,155.5,342.7,327.2,395.0,Included additional urine pregnancy sample collection and updated description of those who would be tested,Included additional urine pregnancy sample collection and updated description of those who would be tested,92,92,False
+OA01,a,4,grid,2,155.5,395.0,327.2,434.3,Included additional sample collection time for hemoglobin A1c,Included additional sample collection time for hemoglobin Alc,54,54,False
+OA01,a,4,grid,2,155.5,434.3,327.2,473.7,Removed language for women of childbearing potential and added language for fetal exposure,Removed language for women of childbearing potential and added language for fetal exposure,78,78,False
+OA01,a,4,grid,2,155.5,473.7,327.2,500.0,Amended post-treatment follow-up period instructions,Amended post-treatment follow-up period instructions,46,46,False
+OA01,a,4,grid,2,155.5,500.0,327.2,539.3,Removed criterion related to women not of childbearing potential,Removed criterion related to women not of childbearing potential,56,56,False
+OA01,a,4,grid,2,155.5,539.3,327.2,578.7,Removed criterion related to supplements and vitamins,Removed criterion related to supplements and vitamins,47,47,False
+OA01,a,4,grid,2,155.5,578.7,327.2,605.3,Addition of language related to ophthalmologic disease,Addition of language related to ophthalmologic disease,48,48,False
+OA01,a,4,grid,2,155.5,605.3,327.2,631.7,Addition of criterion related to women who are pregnant or breastfeeding,Addition of criterion related to women who are pregnant or breastfeeding,62,62,False
+OA01,a,4,grid,2,155.5,631.7,327.2,670.7,Removed language about local regulations for contraception use by men,Removed language about local regulations for contraception use by men,60,60,False
+OA01,a,4,grid,2,155.5,670.7,327.2,710.3,Removed language about supplements,Removed language about supplements,31,31,False
+OA01,a,4,grid,3,327.2,264.7,546.0,303.3,Allows flexibility for participants,Allows flexibility for participants,32,32,False
+OA01,a,4,grid,3,327.2,303.3,546.0,342.7,Per regulatory feedback,Perregulatory feedback =,21,21,False
+OA01,a,4,grid,3,327.2,342.7,546.0,395.0,Per new toxicology data,Pernewtoxicologydata,20,20,False
+OA01,a,4,grid,3,327.2,395.0,546.0,434.3,Sample collection time missed in the original version,Sample collection time missed in the original version,46,46,False
+OA01,a,4,grid,3,327.2,434.3,546.0,473.7,Women of childbearing potential are now allowed in the study; pregnant or breastfeeding women are not allowed,Women of childbearing potential are now allowed in the study; pregnant or breastfeeding women are not allowed,92,92,False
+OA01,a,4,grid,3,327.2,473.7,546.0,500.0,Updated to maximize data collection in the follow-up period,Updated to maximize data collection in the follow- up period,50,50,False
+OA01,a,4,grid,3,327.2,500.0,546.0,539.3,To account for the addition of women of childbearing potential to the study per toxicology data,To account for the addition of women of childbearing potential to the study per toxicology data,80,80,False
+OA01,a,4,grid,3,327.2,539.3,546.0,578.7,Potential to cause unintended screen failures and requirements sufficiently covered in the treatment period through lifestyle restrictions.,Potential to cause unintended screen failures and requirements sufficiently covered in the treatment period through lifestyle restrictions.,122,122,False
+OA01,a,4,grid,3,327.2,578.7,546.0,605.3,Per regulatory feedback,Perregulatory feedback =,21,21,False
+OA01,a,4,grid,3,327.2,605.3,546.0,631.7,Per regulatory feedback,Per regulatory feedback,21,21,False
+OA01,a,4,grid,3,327.2,631.7,546.0,670.7,This language is intended for global studies. This study will be conducted in the United States only.,This language is intended for global studies. This study will be conducted in the United States only.,83,83,False
+OA01,a,4,grid,3,327.2,670.7,546.0,710.3,Per removal of related inclusion criterion,Per removal of related inclusion criterion,37,37,False
+OA01,a,5,grid,1,66.0,99.0,155.5,137.7,Section 6.1.1. Special Treatment Considerations,Section 6.1.1. Special Treatment Considerations,40,40,False
+OA01,a,5,grid,1,66.0,137.7,155.5,177.0,Section 8.1.1. Physical Examinations,Section 8.1.1. Physical Examinations,30,30,False
+OA01,a,5,grid,1,66.0,177.0,155.5,216.3,"Section 10.2, Appendix 2","Section 10.2, Appendix 2",19,19,False
+OA01,a,5,grid,1,66.0,216.3,155.5,242.7,Throughout the protocol,Throughout the protocol,21,21,False
+OA01,a,5,grid,2,155.5,99.0,327.2,137.7,Addition of special treatment considerations,Addition of special treatment considerations,40,40,False
+OA01,a,5,grid,2,155.5,137.7,327.2,177.0,New section to include details on targeted physical examination,New section to include details on targeted physical examination,55,55,False
+OA01,a,5,grid,2,155.5,177.0,327.2,216.3,Addition of definitions and contraceptive guidance related to women of childbearing potential,Addition of definitions and contraceptive guidance related to women of childbearing potential,82,82,False
+OA01,a,5,grid,2,155.5,216.3,327.2,242.7,Minor editorial and formatting changes,Minor editorial and formatting changes,34,34,False
+OA01,a,5,grid,3,327.2,99.0,546.0,137.7,Per regulatory feedback,Per regulatory feedback,21,21,False
+OA01,a,5,grid,3,327.2,137.7,546.0,177.0,Per regulatory feedback,Perregulatory feedback =,21,21,False
+OA01,a,5,grid,3,327.2,177.0,546.0,216.3,To account for the addition of women of childbearing potential to the study per toxicology data,To account for the addition of women of childbearing potential to the study per toxicology data,80,80,False
+OA01,a,5,grid,3,327.2,216.3,546.0,242.7,"Minor, therefore not described","Minor, therefore not described",26,26,False
+OA02,a,4,grid,1,72.0,285.7,170.7,311.3,2.3. Benefit/Risk Assessment,2.3. Benefit/Risk Assessment,23,23,False
+OA02,a,4,grid,1,72.0,311.3,170.7,337.7,2.3.1. Risk Assessment,2.3.1. Risk Assessment,17,17,False
+OA02,a,4,grid,1,72.0,337.7,170.7,377.3,2.3.1. Risk Assessment,2.3.1. Risk Assessment,17,17,False
+OA02,a,4,grid,1,72.0,377.3,170.7,403.7,2.3.1. Risk Assessment,2.3.1. Risk | Assessment,17,17,False
+OA02,a,4,grid,1,72.0,403.7,170.7,639.7,5.1. Study Population,5.1. Study Population,17,17,False
+OA02,a,4,grid,1,72.0,639.7,170.7,691.7,6.6. Concomitant Therapy,6.6. Concomitant Therapy,20,20,False
+OA02,a,4,grid,2,170.7,285.7,338.3,311.3,Added sub-section headers.,Added sub-section headers. |,22,22,False
+OA02,a,4,grid,2,170.7,311.3,338.3,337.7,"In first paragraph, added text for the effect of LY3526318 on other drugs.","In first paragraph, added text for the effect of LY3526318 on other drugs.",60,60,False
+OA02,a,4,grid,2,170.7,337.7,338.3,377.3,"Updated first bullet to specify CYP3A4, plus minor editorial changes.","Updated first bullet to specify CYP3A4, plus minor editorial changes.",58,58,False
+OA02,a,4,grid,2,170.7,377.3,338.3,403.7,Added a bullet for CYP3A4 and p-glycoprotein (P-gp) substrates.,Added a bullet for CYP3A4 and p- | glycoprotein (P-gp) substrates.,50,50,False
+OA02,a,4,grid,2,170.7,403.7,338.3,430.0,Updated numbers for inclusion and exclusion criteria.,Updated numbers for inclusion and exclusion criteria.,46,46,False
+OA02,a,4,grid,2,170.7,430.0,338.3,456.3,Updated criterion #1051 to specify drugs taken orally or intravenously.,Updated criterion #1051 to specify drugs taken orally or intravenously.,60,60,False
+OA02,a,4,grid,2,170.7,456.3,338.3,508.3,Added exclusion criterion #1054 for participants that are taking drugs that are sensitive CYP3A4 substrates with a narrow therapeutic index.,Added exclusion criterion #1054 for participants that are taking drugs that are sensitive CYP3A4 substrates with a narrow therapeutic index.,119,119,False
+OA02,a,4,grid,2,170.7,508.3,338.3,573.7,Added exclusion criterion #1055 for participants that are taking simvastatin at doses greater than 20 mg/day.,Added exclusion criterion #1055 for participants that are taking simvastatin at doses greater than 20 mg/day.,91,91,False
+OA02,a,4,grid,2,170.7,573.7,338.3,613.0,Added exclusion criterion #1056 for participants that are taking metformin at doses greater than 1000 mg/day.,Added exclusion criterion #1056 for participants that are taking metformin at doses greater than 1000 mg/day.,91,91,False
+OA02,a,4,grid,2,170.7,613.0,338.3,639.7,Added exclusion criterion #1057 for participants that are taking digoxin.,Added exclusion criterion #1057 for participants that are taking digoxin.,62,62,False
+OA02,a,4,grid,2,170.7,639.7,338.3,691.7,"Under Potential Drug-Drug Interactions with LY3526318, added reference to Section 5.2 for concomitant medication restrictions.","Under Potential Drug-Drug Interactions with LY3526318, added reference to Section 5.2 for concomitant medication restrictions.",108,108,False
+OA02,a,4,grid,3,338.3,285.7,540.0,311.3,For clarity.,For clarity.,10,10,False
+OA02,a,4,grid,3,338.3,311.3,540.0,337.7,Clarification of the potential of LY3526318 exposure to affect metabolism of other drugs.,Clarification of the potential of LY3526318 exposure to affect metabolism of other drugs.,76,76,False
+OA02,a,4,grid,3,338.3,337.7,540.0,377.3,For clarity.,For clarity.,10,10,False
+OA02,a,4,grid,3,338.3,377.3,540.0,403.7,Based on in vitro data suggesting a potential for PK interactions.,Based on in vitro data suggesting a potential for PK interactions.,55,55,False
+OA02,a,4,grid,3,338.3,403.7,540.0,430.0,To align with master protocol and ISA numbering system.,To align with master protocol and ISA numbering system.,46,46,False
+OA02,a,4,grid,3,338.3,430.0,540.0,456.3,Topical drugs are allowed.,Topical drugs are allowed.,22,22,False
+OA02,a,4,grid,3,338.3,456.3,540.0,508.3,Based on in vitro data suggesting potential CYP3A4 inhibition at the proposed LY3526318 dose.,Based on in vitro data suggesting potential CYP3A4 inhibition at the proposed LY3526318 dose.,79,79,False
+OA02,a,4,grid,3,338.3,508.3,540.0,573.7,"Simvastatin is a sensitive CYP3A4 substrate, with a projected maximal increase in exposure <2-fold in combination with LY3526318. Therefore, doses of 20 mg or less are considered safe.","Simvastatin is a sensitive CYP3A4 substrate, with a projected maximal increase in exposure <2-fold in combination with LY3526318. Therefore, doses of 20 mg or less are considered safe.",151,151,False
+OA02,a,4,grid,3,338.3,573.7,540.0,613.0,Based on limited data related to inhibition of renal transporters.,Based on limited data related to inhibition of renal transporters.,56,56,False
+OA02,a,4,grid,3,338.3,613.0,540.0,639.7,Based on in vitro data suggesting a potential for LY3526318 to inhibit P-gp.,"Based on in vitro data suggesting a potential for"" LY3526318 to inhibit P-gp.",62,62,False
+OA02,a,4,grid,3,338.3,639.7,540.0,691.7,Reference to added exclusion criteria.,Reference to added exclusion criteria.,33,33,False
+OA02,a,5,grid,1,72.0,86.0,170.7,137.7,10.3. Appendix 3: List of Excluded Concomitant Medications,10.3. Appendix 3: List of Excluded Concomitant Medications,48,48,False
+OA02,a,5,grid,1,72.0,137.7,170.7,164.0,Throughout the protocol,Throughout the protocol,21,21,False
+OA02,a,5,grid,2,170.7,86.0,338.3,137.7,Added reference to Section 5.2 and the Manual of Operations for additional information.,Added reference to Section 5.2 and the Manual of Operations for additional information.,73,73,False
+OA02,a,5,grid,2,170.7,137.7,338.3,164.0,Minor editorial and format changes.,Minor editorial and format changes.,30,30,False
+OA02,a,5,grid,3,338.3,86.0,540.0,137.7,Additional information for excluded concomitant medications are listed in Section 5.2 and the Manual of Operations.,Additional information for excluded concomitant medications are listed in Section 5.2 and the Manual of Operations.,98,98,False
+OA02,a,5,grid,3,338.3,137.7,540.0,164.0,"Minor, therefore not described.","Minor, therefore not described.",26,26,False
+OA03,a,4,grid,1,71.7,307.7,182.6,372.0,1.1 Synopsis,1.1 Synopsis,10,10,False
+OA03,a,4,grid,1,71.7,372.0,182.6,398.7,1.2 Schema,1.2 Schema,8,8,False
+OA03,a,4,grid,1,71.7,398.7,182.6,451.0,1.3 Schedule of Activities (SoA),1.3 Schedule of Activities (SoA),25,25,False
+OA03,a,4,grid,1,71.7,451.0,182.6,477.3,1.3 Schedule of Activities (SoA),1.3 Schedule of | Activities (SoA),25,25,False
+OA03,a,4,grid,1,71.7,477.3,182.6,516.7,1.3 Schedule of Activities (SoA),1.3 Schedule of Activities (SoA),25,25,False
+OA03,a,4,grid,1,71.7,516.7,182.6,543.0,1.3 Schedule of Activities (SoA),1.3 Schedule of | Activities (SoA),25,25,False
+OA03,a,4,grid,1,71.7,543.0,182.6,582.3,1.3 Schedule of Activities (SoA),1.3 Schedule of Activities (SoA),25,25,False
+OA03,a,4,grid,1,71.7,582.3,182.6,608.7,2.2 Background,2.2 Background,12,12,False
+OA03,a,4,grid,1,71.7,608.7,182.6,648.0,4.1 Overall Design,4.1 Overall Design,15,15,False
+OA03,a,4,grid,1,71.7,648.0,182.6,700.3,4.3 Justification for Dose,4.3 Justification for Dose,22,22,False
+OA03,a,4,grid,1,71.7,700.3,182.6,714.0,5.2 Exclusion Criteria,5.2 Exclusion Criteria,19,19,False
+OA03,a,4,grid,2,182.6,307.7,327.3,372.0,"Updates made to  Number of Participants  Intervention Groups and Duration, and  Data Monitoring Committee","Updates made to e Number of Participants e = Intervention Groups and Duration, and e Data Monitoring Committee",88,91,False
+OA03,a,4,grid,2,182.6,372.0,327.3,398.7,Updated schema to show dose titration,Updated schema to show dose titration,32,32,False
+OA03,a,4,grid,2,182.6,398.7,327.3,451.0,Added telephone visits and updated study intervention notes to include a link to the new dose modification section,Added telephone visits and updated study intervention notes to include a link to the new dose modification section,97,97,False
+OA03,a,4,grid,2,182.6,451.0,327.3,477.3,Updates were made to ECG and Vital signs,Updates were made to ECG and | Vital signs,33,33,False
+OA03,a,4,grid,2,182.6,477.3,327.3,516.7,Replaced urinalysis with urine drug screen.,Replaced urinalysis with urine drug screen.,37,37,False
+OA03,a,4,grid,2,182.6,516.7,327.3,543.0,Added window for PK sample collection,Added window for PK sample | collection,32,32,False
+OA03,a,4,grid,2,182.6,543.0,327.3,582.3,Added participant digital biomarker device for Visit 7 and ED,Added participant digital biomarker device for Visit 7 and ED,52,52,False
+OA03,a,4,grid,2,182.6,582.3,327.3,608.7,Updated information for the 2 Phase 1 clinical studies,Updated information for the 2 Phase | clinical studies,46,45,False
+OA03,a,4,grid,2,182.6,608.7,327.3,648.0,Updated and added text to describe the new dose titration scheme,Updated and added text to describe the new dose titration scheme,54,54,False
+OA03,a,4,grid,2,182.6,648.0,327.3,700.3,Added text for the titration scheme Removed “preliminary” from the beginning of second paragraph,Added text for the titration scheme Removed “preliminary” from the beginning of second paragraph,81,81,False
+OA03,a,4,grid,2,182.6,700.3,327.3,714.0,Updated Criteria #1028 and,Updated Criteria #1028 and,22,22,False
+OA03,a,4,grid,3,327.3,307.7,545.7,372.0,Sample size and study intervention text updated for new dose titration scheme “Data monitoring committee” changed to “Assessment committee” for consistency with master CPMP protocol,Sample size and study intervention text updated for new dose titration scheme “Data monitoring committee” changed to “Assessment committee” for consistency with master CPMP protocol,153,153,False
+OA03,a,4,grid,3,327.3,372.0,545.7,398.7,New dose titration scheme for participants,New dose titration scheme for participants,37,37,False
+OA03,a,4,grid,3,327.3,398.7,545.7,451.0,To implement new dose titration scheme,To implement new dose titration scheme,33,33,False
+OA03,a,4,grid,3,327.3,451.0,545.7,477.3,Corrections for clarity,Corrections for clarity,21,21,False
+OA03,a,4,grid,3,327.3,477.3,545.7,516.7,"Urinalysis was only for Visit 3, so removed. Urine drug screen added and performed according to investigator discretion","Urinalysis was only for Visit 3, so removed. Urine drug screen added and performed according to investigator discretion",100,100,False
+OA03,a,4,grid,3,327.3,516.7,545.7,543.0,Adding flexibility,Adding flexibility,17,17,False
+OA03,a,4,grid,3,327.3,543.0,545.7,582.3,To indicate when the participant needs to return the device.,To indicate when the participant needs to return the device.,50,50,False
+OA03,a,4,grid,3,327.3,582.3,545.7,608.7,Both studies are completed,Both studies are completed,23,23,False
+OA03,a,4,grid,3,327.3,608.7,545.7,648.0,New dose titration scheme for participants,New dose titration scheme for participants,37,37,False
+OA03,a,4,grid,3,327.3,648.0,545.7,700.3,New dose titration scheme for participants Study LXBA is now completed,New dose titration scheme for participants Study LXBA is now completed,60,60,False
+OA03,a,4,grid,3,327.3,700.3,545.7,714.0,Clarifications based on clinical experience and,Clarifications based on clinical experience and,42,42,False
+OA03,a,5,grid,1,71.7,86.0,182.6,98.7,,,0,0,False
+OA03,a,5,grid,1,71.7,98.7,182.6,125.3,5.3 Lifestyle Considerations,5.3 Lifestyle Considerations,25,25,False
+OA03,a,5,grid,1,71.7,125.3,182.6,190.3,6.1 Study Intervention(s) Administered,6.1 Study Intervention(s) Administered,32,32,False
+OA03,a,5,grid,1,71.7,190.3,182.6,242.7,6.5 Concomitant Therapy,6.5 Concomitant Therapy,20,20,False
+OA03,a,5,grid,1,71.7,242.7,182.6,256.3,6.6 Dose Modification,6.6 Dose Modification,18,18,False
+OA03,a,5,grid,1,71.7,256.3,182.6,282.7,8.2 Adverse Events and Serious Adverse Events,8.2 Adverse Events and Serious Adverse Events,38,38,False
+OA03,a,5,grid,1,71.7,282.7,182.6,309.0,9.2 Sample Size Determination,9.2 Sample Size Determination,25,25,False
+OA03,a,5,grid,1,71.7,309.0,182.6,335.3,9.3 Populations for Analyses,9.3 Populations for Analyses,24,24,False
+OA03,a,5,grid,1,71.7,335.3,182.6,349.0,10.2 Appendix 2,10.2 Appendix 2,12,12,False
+OA03,a,5,grid,1,71.7,349.0,182.6,375.3,Throughout the protocol,Throughout the | protocol,21,21,False
+OA03,a,5,grid,2,182.6,86.0,327.3,98.7,#1034,#1034 |,4,4,False
+OA03,a,5,grid,2,182.6,98.7,327.3,125.3,Removed text that is already in the master CPMP,Removed text that is already in the master CPMP,39,39,False
+OA03,a,5,grid,2,182.6,125.3,327.3,190.3,Updated text and table,Updated text and table,19,19,False
+OA03,a,5,grid,2,182.6,190.3,327.3,242.7,Removed text that is duplicated in CPMP Added text for drug-drug interactions,Removed text that is duplicated in CPMP Added text for drug-drug interactions,65,65,False
+OA03,a,5,grid,2,182.6,242.7,327.3,256.3,New section,New section,10,10,False
+OA03,a,5,grid,2,182.6,256.3,327.3,282.7,Added text to refer to the master,Added text to refer to the master |,27,27,False
+OA03,a,5,grid,2,182.6,282.7,327.3,309.0,Updated sample size,Updated sample size,17,17,False
+OA03,a,5,grid,2,182.6,309.0,327.3,335.3,Removed “in the SAP”,Removed “in the SAP”,15,15,False
+OA03,a,5,grid,2,182.6,335.3,327.3,349.0,Updated text,Updated text,11,11,False
+OA03,a,5,grid,2,182.6,349.0,327.3,375.3,Minor editorial and formatting changes,Minor editorial and formatting | changes,34,34,False
+OA03,a,5,grid,3,327.3,86.0,545.7,98.7,emerging pharmacokinetic/metabolism data,emerging pharmacokinetic/metabolism data,37,37,False
+OA03,a,5,grid,3,327.3,98.7,545.7,125.3,Master protocol updates for CPMP amendment (a),Master protocol updates for CPMP amendment (a),38,38,False
+OA03,a,5,grid,3,327.3,125.3,545.7,190.3,New dose titration scheme for participants. Emerging data allow participants to take capsules with or without food Changed “pharmacy instructions” to “pharmacy manual”,New dose titration scheme for participants. Emerging data allow participants to take capsules with or without food Changed “pharmacy instructions” to “pharmacy manual”,140,140,False
+OA03,a,5,grid,3,327.3,190.3,545.7,242.7,Consistency across ISAs,Consistency across ISAs,21,21,False
+OA03,a,5,grid,3,327.3,242.7,545.7,256.3,New dose titration scheme for participants,New dose titration scheme for participants,37,37,False
+OA03,a,5,grid,3,327.3,256.3,545.7,282.7,Master protocol contains AE and SAE information,Master protocol contains AE and SAE information,41,41,False
+OA03,a,5,grid,3,327.3,282.7,545.7,309.0,New dose titration scheme for participants,New dose titration scheme for participants,37,37,False
+OA03,a,5,grid,3,327.3,309.0,545.7,335.3,The master protocol defines the populations for analyses,The master protocol defines the populations for analyses,49,49,False
+OA03,a,5,grid,3,327.3,335.3,545.7,349.0,Updates to internal Lilly guidance,Updates to internal Lilly guidance,30,30,False
+OA03,a,5,grid,3,327.3,349.0,545.7,375.3,"Minor, therefore not described","Minor, therefore not described",26,26,False
+OA05,a,4,open,1,72.0,280.3,151.2,432.7,1.3. Schedule of Activities,1.3. Schedule of Activities,22,22,False
+OA05,a,4,open,1,72.0,432.7,151.2,482.3,5.2. Exclusion Criteria,5.2. Exclusion Criteria,19,19,False
+OA05,a,4,open,1,72.0,482.3,151.2,582.3,,,0,0,False
+OA05,a,4,open,1,72.0,585.7,151.2,711.7,8.2.1. Physical Examinations,8.2.1. Physical Examinations,23,23,False
+OA05,a,4,open,2,151.2,280.3,389.7,432.7,"Added Physical examinations at Visits 5 and 7. Added note, “Complete physical examination, including targeted physical examination specified below, should be performed at V3 and V801 or ED. Targeted examination for skin, gastrointestinal tract, mammary gland in males, and lymph nodes should also be performed at V5 and V7.” Removed text in notes for vital signs, “…and prior to PK sample collection.”","Added Physical examinations at Visits 5 and 7. Added note, “Complete physical examination, including targeted physical examination specified below, should be performed at V3 and V801 or ED. Targeted examination for skin, gastrointestinal tract, mammary gland in males, and lymph nodes should also be performed at V5 and V7.” Removed text in notes for vital signs, “...and prior to PK sample collection.”",324,324,False
+OA05,a,4,open,2,151.2,432.7,389.7,482.3,"Modified criterion [1085], “have complete d participated in…”.","Modified criterion [1085], “have eempleted participated in...”.",48,48,False
+OA05,a,4,open,2,151.2,482.3,389.7,582.3,,ne,0,2,False
+OA05,a,4,open,2,151.2,585.7,389.7,711.7,"Added, “Complete physical examination, including targeted examination specified below, should be performed at V3 and Visit 801 or ED. Targeted physical examinations of skin, gastrointestinal tract, mammary gland in males, and lymph nodes will also be performed at Visits V5 and V7 as described in the SoA. Any clinically significant abnormal physical examination findings will be reported as AEs.”","Added, “Complete physical examination, including targeted examination specified below, should be performed at V3 and Visit 801 or ED. Targeted physical examinations of skin, gastrointestinal tract, mammary gland in males, and lymph nodes will also be performed at Visits V5 and V7 as described in the SoA. Any clinically significant abnormal physical examination findings will be reported as AEs.”",328,328,False
+OA05,a,4,open,3,389.7,280.3,526.7,432.7,Per regulatory feedback. Editorial correction.,Per regulatory feedback. Editorial correction.,40,40,False
+OA05,a,4,open,3,389.7,432.7,526.7,482.3,Clarification.,Clarification.,13,13,False
+OA05,a,4,open,3,389.7,482.3,526.7,582.3,,,0,0,False
+OA05,a,4,open,3,389.7,585.7,526.7,711.7,Per regulatory feedback.,Per regulatory feedback.,21,21,False
+OA05,a,5,open,1,72.0,102.0,151.4,134.7,,,0,0,False
+OA05,a,5,open,2,151.4,102.0,389.9,134.7,"Removed, “…to physical examinations (described in the Master Protocol CPMP)…”",* HD) ) ) (described in the Master Protocol CPMP),61,34,False
+OA05,a,5,open,3,389.9,102.0,526.7,134.7,Editorial.,Editorial.,9,9,False

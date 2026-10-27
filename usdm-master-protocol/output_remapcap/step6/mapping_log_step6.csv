@@ -1,0 +1,57 @@
+object,attribute,status,value,evidence,note
+CORE_41 7.6.3,sectionNumber,derived,7.6.3,CORE_41 7.6.2 (body),"heading in the V4.1 body but not in the V4.1 TOC; split from 7.6.2 by heading text, as in Step 5"
+CORE_41 7.6.4,sectionNumber,derived,7.6.4,CORE_41 7.6.2 (body),"heading in the V4.1 body but not in the V4.1 TOC; split from 7.6.2 by heading text, as in Step 5"
+NarrativeContent_18,contentItemId,not_in_document,,CORE 1 p10,heading only; no text before the next numbered heading
+NarrativeContent_21,contentItemId,not_in_document,,CORE 2 p16,heading only; no text before the next numbered heading
+NarrativeContent_49,contentItemId,not_in_document,,CORE 5 p27,heading only; no text before the next numbered heading
+NarrativeContent_50,contentItemId,not_in_document,,CORE 5.1 p27,heading only; no text before the next numbered heading
+NarrativeContent_68,contentItemId,not_in_document,,CORE 6 p39,heading only; no text before the next numbered heading
+NarrativeContent_71,contentItemId,not_in_document,,CORE 7 p40,heading only; no text before the next numbered heading
+NarrativeContent_79,contentItemId,not_in_document,,CORE 7.5 p42,heading only; no text before the next numbered heading
+NarrativeContent_87,contentItemId,not_in_document,,CORE 7.7 p48,heading only; no text before the next numbered heading
+NarrativeContent_94,contentItemId,not_in_document,,CORE 7.8 p49,heading only; no text before the next numbered heading
+NarrativeContent_106,contentItemId,not_in_document,,CORE 7.9 p69,heading only; no text before the next numbered heading
+NarrativeContent_113,contentItemId,not_in_document,,CORE 8.1 p73,heading only; no text before the next numbered heading
+NarrativeContent_115,contentItemId,not_in_document,,CORE 8.2 p74,heading only; no text before the next numbered heading
+NarrativeContent_119,contentItemId,not_in_document,,CORE 8.4 p75,heading only; no text before the next numbered heading
+NarrativeContent_125,contentItemId,not_in_document,,CORE 8.8 p77,heading only; no text before the next numbered heading
+NarrativeContent_130,contentItemId,not_in_document,,CORE 8.9 p79,heading only; no text before the next numbered heading
+NarrativeContent_137,contentItemId,not_in_document,,CORE 8.12 p82,heading only; no text before the next numbered heading
+NarrativeContent_143,contentItemId,not_in_document,,CORE 9 p86,heading only; no text before the next numbered heading
+NarrativeContent_145,contentItemId,not_in_document,,CORE 9.2 p86,heading only; no text before the next numbered heading
+NarrativeContent_149,contentItemId,not_in_document,,CORE 9.3 p89,heading only; no text before the next numbered heading
+NarrativeContent_154,contentItemId,not_in_document,,CORE 9.7 p90,heading only; no text before the next numbered heading
+NarrativeContent_158,contentItemId,not_in_document,,CORE 9.9 p91,heading only; no text before the next numbered heading
+NarrativeContent_163,contentItemId,not_in_document,,CORE_41 1 p10,heading only; no text before the next numbered heading
+NarrativeContent_166,contentItemId,not_in_document,,CORE_41 2 p16,heading only; no text before the next numbered heading
+NarrativeContent_194,contentItemId,not_in_document,,CORE_41 5 p27,heading only; no text before the next numbered heading
+NarrativeContent_195,contentItemId,not_in_document,,CORE_41 5.1 p27,heading only; no text before the next numbered heading
+NarrativeContent_213,contentItemId,not_in_document,,CORE_41 6 p39,heading only; no text before the next numbered heading
+NarrativeContent_216,contentItemId,not_in_document,,CORE_41 7 p40,heading only; no text before the next numbered heading
+NarrativeContent_224,contentItemId,not_in_document,,CORE_41 7.5 p42,heading only; no text before the next numbered heading
+NarrativeContent_234,contentItemId,not_in_document,,CORE_41 7.7 p49,heading only; no text before the next numbered heading
+NarrativeContent_241,contentItemId,not_in_document,,CORE_41 7.8 p51,heading only; no text before the next numbered heading
+NarrativeContent_253,contentItemId,not_in_document,,CORE_41 7.9 p71,heading only; no text before the next numbered heading
+NarrativeContent_260,contentItemId,not_in_document,,CORE_41 8.1 p75,heading only; no text before the next numbered heading
+NarrativeContent_262,contentItemId,not_in_document,,CORE_41 8.2 p76,heading only; no text before the next numbered heading
+NarrativeContent_266,contentItemId,not_in_document,,CORE_41 8.4 p77,heading only; no text before the next numbered heading
+NarrativeContent_272,contentItemId,not_in_document,,CORE_41 8.8 p79,heading only; no text before the next numbered heading
+NarrativeContent_277,contentItemId,not_in_document,,CORE_41 8.9 p81,heading only; no text before the next numbered heading
+NarrativeContent_284,contentItemId,not_in_document,,CORE_41 8.12 p85,heading only; no text before the next numbered heading
+NarrativeContent_290,contentItemId,not_in_document,,CORE_41 9 p88,heading only; no text before the next numbered heading
+NarrativeContent_292,contentItemId,not_in_document,,CORE_41 9.2 p89,heading only; no text before the next numbered heading
+NarrativeContent_296,contentItemId,not_in_document,,CORE_41 9.3 p91,heading only; no text before the next numbered heading
+NarrativeContent_301,contentItemId,not_in_document,,CORE_41 9.7 p93,heading only; no text before the next numbered heading
+NarrativeContent_305,contentItemId,not_in_document,,CORE_41 9.9 p94,heading only; no text before the next numbered heading
+NarrativeContent_314,contentItemId,not_in_document,,CS_DSA 4 p12,heading only; no text before the next numbered heading
+NarrativeContent_318,contentItemId,not_in_document,,CS_DSA 6 p13,heading only; no text before the next numbered heading
+NarrativeContent_329,contentItemId,not_in_document,,CS_DSA 8 p22,heading only; no text before the next numbered heading
+NarrativeContent_330,contentItemId,not_in_document,,CS_DSA 8.1 p22,heading only; no text before the next numbered heading
+NarrativeContent_338,contentItemId,not_in_document,,CS_DSA 8.3 p24,heading only; no text before the next numbered heading
+NarrativeContent_345,contentItemId,not_in_document,,CS_DSA 8.5 p26,heading only; no text before the next numbered heading
+NarrativeContent_348,contentItemId,not_in_document,,CS_DSA 9 p27,heading only; no text before the next numbered heading
+NarrativeContent_350,contentItemId,not_in_document,,CS_DSA 9.2 p27,heading only; no text before the next numbered heading
+NarrativeContent_354,contentItemId,not_in_document,,CS_DSA 10 p28,heading only; no text before the next numbered heading
+NarrativeContent_364,contentItemId,not_in_document,,CS_DSA 11 p31,heading only; no text before the next numbered heading
+NarrativeContent_369,contentItemId,not_in_document,,CS_DSA 12 p32,heading only; no text before the next numbered heading
+StudyDefinitionDocumentVersion_3,contents,not_expressible,,Step 5 decision: CS_DSA V6 shared by StudyVersion 1 and 2,"NarrativeContentItem sits at StudyVersion level, the document version is shared; its items are placed in StudyVersion 1 only, so StudyVersion 2 holds a document version whose text it does not contain"

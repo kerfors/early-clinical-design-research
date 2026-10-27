@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uri name="https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/imports/upstream_import" uri="../imports/upstream_import.ttl"/>
+  <uri name="https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/rcap-core" uri="rcap-core.ttl"/>
+  <uri name="https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/components" uri="components.ttl"/>
+  <uri name="https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/about" uri="about.ttl"/>
+  <uri name="https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/core" uri="core.ttl"/>
+  <uri name="https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/core-4.0" uri="core-4.0.ttl"/>
+  <uri name="https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/core-4.1" uri="core-4.1.ttl"/>
+  <uri name="https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/panda" uri="panda.ttl"/>
+  <uri name="https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-shared" uri="dsa-shared.ttl"/>
+  <uri name="https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-CS" uri="dsa-CS.ttl"/>
+  <uri name="https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-AB" uri="dsa-AB.ttl"/>
+  <uri name="https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-TAB" uri="dsa-TAB.ttl"/>
+  <uri name="https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-IAV" uri="dsa-IAV.ttl"/>
+  <uri name="https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-MD" uri="dsa-MD.ttl"/>
+  <uri name="https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-IG" uri="dsa-IG.ttl"/>
+  <uri name="https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-MV" uri="dsa-MV.ttl"/>
+  <uri name="https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-END" uri="dsa-END.ttl"/>
+  <uri name="https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-IIM" uri="dsa-IIM.ttl"/>
+  <uri name="https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/readings" uri="readings.ttl"/>
+  <uri name="https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/delegations" uri="delegations.ttl"/>
+</catalog>

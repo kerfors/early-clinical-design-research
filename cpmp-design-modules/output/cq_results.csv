@@ -1,0 +1,12 @@
+question,answer,check
+reasoner: inferred compound = stated compound,"12 ISAs; no compound: cpmp:ISA_BP07, cpmp:ISA_NP07, cpmp:ISA_OA07",pass
+CQ1a disease-independent by module,77 components,pass
+CQ1b disease-independent by occurrence,80 components (+3 vs CQ1a),pass
+CQ2 new ISA inherits,51 master components + 8 slots,pass
+CQ3 ISA-specific components,41 rows; same set within column: 8 ISAs,pass
+CQ4 delegation to non-public module,"2 components + 8 slots (4 content, 4 role statements)",pass
+CQ4b ISA references to the DSA,117 sentences,pass
+CQ5 new ISA inherits (schedule),148 master cells + 9 slots + 3 defaults,pass
+CQ6 overrides,"12: 9 master defaults, 3 to disease state",pass
+CQ7 compound schedule modules,LY3016859 50; LY3556050 26; LY3857210 33; 71 cells cross-compound,pass
+CQ8 delegated activities filled by ISAs,6 of 8 activities; 255 ISA cells,pass

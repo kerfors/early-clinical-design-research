@@ -1,0 +1,2343 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rcap: <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/core-4.1> a owl:Ontology ;
+    dcterms:isVersionOf <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/core> ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/core> ;
+    owl:versionIRI <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/core/4.1> .
+
+rcap:CoreDesign_4_1 a owl:Class ;
+    rdfs:label "REMAP-CAP Core design 4.1" ;
+    rdfs:subClassOf _:N007cad49ae454f7ca6ce9f0630d0244c,
+        _:N00b1de3954ff4977b9629a51d53ef8a6,
+        _:N026751caa75c434094656ec318f0c5b4,
+        _:N040eb459358c41339455739e21d6775f,
+        _:N045ab501ec1749eaa0549527ca462d59,
+        _:N07a770f04e854e05b6f1b7289214c1eb,
+        _:N08516aef75c9444c83195bc4c6e6edb8,
+        _:N0856bedfe7c94330ab703becd40bc886,
+        _:N0a5ec55586a347e5bd8bb1c5fe296d35,
+        _:N0cdbd7a50d614d4d99fb24bc3ebcbf5f,
+        _:N0ceb7d4823134992958dacf7d30e1973,
+        _:N0f7e57c738c04fdfa845299c302737dd,
+        _:N11073e4221a3414f8ea7a466032c7d10,
+        _:N1287cfbda8344f0aa611f97d7c2d8c31,
+        _:N132f90adbc204c4a8ab4f266b4633952,
+        _:N16a50a9e477d4383a68fbd441f9f0500,
+        _:N18539482564c4cf6b8f8caae40f39503,
+        _:N19db652b1d124a3e81350d83bcc61f32,
+        _:N19de69cc3de8443eb6a9ac979b55368d,
+        _:N1c0b999aa45842c0bec56171bab4f2e0,
+        _:N1c88ab8103f04f38885ca8038504b054,
+        _:N1e9c2f760b95486e9c76e2ad343917bf,
+        _:N1ec627115db54b1dbd723f73a68edfa7,
+        _:N231378ee616b4921a0ca670783e1d256,
+        _:N261b52250d6d46aebe6ead36a494c618,
+        _:N264f909951b74b60997ab3d7b3b0ca77,
+        _:N2729a6e4e4824dc59ff2944ebd45f6dd,
+        _:N27dbe602d8e647818e1d340b079faeee,
+        _:N2a27e6c746aa458e82e1f6f094fcd8b7,
+        _:N2e89d6c3745847719ba52bea69f9dedd,
+        _:N328d213e135144f193155d55f835f842,
+        _:N32c3427f98ab4aa493e8891373641ce1,
+        _:N33f93a0293ef47019ef1d8727a263308,
+        _:N3493c281499346568b56a80c41c7f2cb,
+        _:N3cbfdb773a774019aaedd89fe7ebbdae,
+        _:N3d16dc58f19641dca112ff8d6224e43c,
+        _:N3e80b49fa4a441e986d83074af0fd1bf,
+        _:N3fed63ce701f4b7f84df89c7e67b4b70,
+        _:N420bbcacdd4a4affa93afde6f67489d4,
+        _:N43d843ea67684be5bb733d2e18fd258f,
+        _:N45e8cbf99acb47debd0bc52686e99c6a,
+        _:N46427bf0b3bd4c29b302ecd311d167c3,
+        _:N47b906e8101c4020a99e14280ed64781,
+        _:N4bcf5ffa8e7d41ddac189edd83692124,
+        _:N5343e29a2f724ccab4005266c2a27c1e,
+        _:N5673c7054c344eeb96501d8f283c18cb,
+        _:N56f459cc4e3241bf98f34d79a1640a69,
+        _:N57dcb776665446c3a9796e2ac3363c4b,
+        _:N5b342c5da4034e519920c6a9201aa1c3,
+        _:N5bbe24cb23c94b85834d780f2e96c83a,
+        _:N5d4d9d7c9a25431b985072ef76dacd17,
+        _:N5f60c168d0cc436db3cf6586c3995f20,
+        _:N5f915785344c40dbba07f4d7921d789e,
+        _:N619057f483504b349da3184df76f66aa,
+        _:N64e1ed2e683540b18c89f073d33dfd17,
+        _:N65cd8fcf7ee4437286daa8981339490d,
+        _:N6899717f0629424abcfbc68de36b640b,
+        _:N6a144c2163ab46858d9ee3743d208338,
+        _:N703a401d21b949d5a137504962bbab44,
+        _:N70652b04019d4984acc3a2e8d2955fd3,
+        _:N749e0d9d36ff4c609e94e88cda70f7f4,
+        _:N76dcc50ba5db4256b4397576ff243882,
+        _:N7c5af2a034e740e6a617be28231e3e1d,
+        _:N7e1d807b23d2495c94cd20dd1331dfe6,
+        _:N7e879970953246c99c756998cdd03031,
+        _:N7ed3870ee8284c939aaa93ff084d5e88,
+        _:N84ef730328944722a583cc2b55361266,
+        _:N85e01ec87a7743a7a3de257e181be8c1,
+        _:N862e3424e4054c4c9367a960c48e77f5,
+        _:N865ead6182bf4b09aa58b4a79ef38436,
+        _:N871e7ca6bee7450fa0d8e41e09291cb8,
+        _:N895622178eac4562a62147a25cd159a3,
+        _:N8980a0a5a099414aa8c7caca34879281,
+        _:N8b65c24bd80d4810a08feaa71032defb,
+        _:N90273ea88a7f479ea9dbf9d572f7ead6,
+        _:N91ba94cccc9f4448933503d1806d22b5,
+        _:N91d032eba5704ad98395e5a557d8faad,
+        _:N91d099b230374efc8c1eb710f9b6802a,
+        _:N96adf58618194f268d65bfbbedb4d8fc,
+        _:N997cc00ef1294570b56e270e44cb9e58,
+        _:N99e9229cc5fe4b62bf3a8e0891116c0e,
+        _:N9a0df34a23504b33a1359e480165b5fd,
+        _:N9caa1ac2f3ba486dad8173a7247d9b55,
+        _:N9d786b75368b4ffbbf64ab3d79847bfa,
+        _:Na0159398c84d4e139d24376227c2911f,
+        _:Na3c51120c735441d84fa23438454178c,
+        _:Na5928b5e2c2d47e2b4435b55db199124,
+        _:Na6e19d853eb647039328272ccefbe7de,
+        _:Na9f09269cf014138af507541ecdccb8d,
+        _:Naa3c68a903fb4fd987b600a4c0fff288,
+        _:Naa6327ec536e4f37953d79bff32ec3e8,
+        _:Nb0c76f8c4cae497d8c00dcd8f0ae2c17,
+        _:Nb20a856f8694479b9f85af6126d571ab,
+        _:Nb50dd692a69b42179eddb483a90c9cf7,
+        _:Nb54e6016f84e45f68a5fc1319186ecc6,
+        _:Nbc7b9d5492d946849d9f54e4cf9863dc,
+        _:Nbc93175e47cf4b46b2362c3d0720b471,
+        _:Nc1ef4a79552e4155a1399930695f6595,
+        _:Nc337a9665d894704bfaea4e0b1902771,
+        _:Nc414a684b6904fd1b6339af0326521f0,
+        _:Nc5019d9f1e5748868b3c9c193d858b2b,
+        _:Nc6760c90f604419fb376b3fbe9ad94b8,
+        _:Nca3a4b44f2b04bebb0f0f2ac59224c6f,
+        _:Ncaa777e29a1d4f32a92c98529858f4e8,
+        _:Ncaf130a071e44226884e4c79a8366972,
+        _:Ncaf49a9381744864b352f83aa99ac7eb,
+        _:Ncec9320922784339a512219a6f272eaf,
+        _:Ncf4de10fba57468d9838fea8ceafe752,
+        _:Ncff68fac91e047d7a3ea51b54d2992d4,
+        _:Nd0a421b8df3b497099c59f3ee4aa0c14,
+        _:Nd2ebe5f4e2c94548903ac5eafdea1f72,
+        _:Nd3a2d37039754fc6bb9a0b30b2924eae,
+        _:Nd5245e99d45a41a9a6f579b715ec3ffa,
+        _:Nd8f5ae36a7774a37b0100821db271b0b,
+        _:Nd970c179836b45b7902b8dc1d4c57551,
+        _:Ne0c289c7fc754c5abe533f216037fca2,
+        _:Ne1ad2f8729e14a8a9737d6372c6dbbf1,
+        _:Ne49524911e8c44ac9ba2b1b4ff5ad984,
+        _:Ne4c10b3cb4d84dfca8283b1cfba74334,
+        _:Ne4d7201b50744076a0f7e0f3482d45f3,
+        _:Ne6c0ac9ed11e4308a9c830b21082ccdb,
+        _:Ne89911cbd2d749e293a5a8ce70c28443,
+        _:Neae16c39c7b24a3c85ef0a11b2be5e10,
+        _:Nec5d30276ec74fbdad46f30a682f5713,
+        _:Nee889e8f68594281b77cad8ad07b85c4,
+        _:Nf2d49123d24b4e4eb67e942292724720,
+        _:Nf8e5d0f4f46e40a18b76086bdfeb9c86,
+        _:Nfa46bdf682ed409888c097c33dcc57f3 ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( obo:OBI_0500001 [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:ca7be08f164 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c66579d1944 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cec9be7e972 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c590db8e067 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cecffffb51b ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c7194d0f95a ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:ca44d73b6be ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c45bf8da54f ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c0a964350f0 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cc4d4bee65c ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cb34d84e7ea ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c3deb0fab93 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c178de9633a ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c711c3155bb ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cd9f81c7ca1 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c09cf90d5ee ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c53bf0a00bd ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cf04bc22981 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c93f9ab717f ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c29280fe471 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:ca053db75aa ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c573bcf8236 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c627ea981bb ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cc80fdb595f ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c4ea2e1b3d0 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c9f97c0e55a ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c220498dbf0 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c8d1e9454aa ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cc66e2d09a4 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:ce3b8327b04 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c766b35362d ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cf670d47a1a ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c050828c00a ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cb214214243 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c3d1875c5d8 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c4bf9cd2f70 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c39a5310383 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c9291b4492d ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cafe6794404 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c89c6bd7fd6 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c2f2797ef7b ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c949256d13a ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:ce6c5856c8f ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c3cdcb22828 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cfead389651 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c05beb36299 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c5462fafecb ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c10b27d976a ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c5f64d55307 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c322d3a6829 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c4ac501a924 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c8da9e5a430 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cae2185962c ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c7a19fee7fd ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c8aa5949cb6 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c5c4df60c48 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:ca8ce9c3f7e ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c790b78b24e ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:ce3d8c467cd ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c3dd8ad249e ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c5ab9f3456c ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c0a5dc0cbed ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c34bbecb9d3 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c08df43abd6 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c3c375c3292 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cedd28ca5fa ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cbd9f9062ae ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c347c9d7e7f ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c225b497b1c ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c1ae29f53d7 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c526f7bee55 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cc6cadc9e2c ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cac579e3b99 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:ce697805e1b ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cf674dd11cd ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c9fd4c2c7f1 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c44479053d2 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c19e778dc9d ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cdd87c4f09f ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c460eabd0d4 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c6d2d9b72d9 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cdb5e5b5b01 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c3dc68afb7d ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cd3a5049ef6 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c3abbbe9446 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c3ef0808232 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c025838a38f ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:ce9fbd2a72d ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c876d85ebab ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c7cb95286f2 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c92cfc5ceb8 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c1b2898941a ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c2dd383f950 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c0de6d4fcdc ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cbab88bbe86 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cc5809dffc7 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cad22b7129d ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c13276457d5 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c73967ff128 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:ca3cd41bbeb ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c8efcf1d144 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c07829b4907 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c15ec59dfe1 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c83d2f160ad ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cd8acafd0a6 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cbde5a9f0f5 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c7e00deda39 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cb47d826c76 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cb31eb2bc1f ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cd9bbfeda6a ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c34900c49d6 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:ce0a442373c ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c2487d60744 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cc0ad33a8ee ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:ccd60c004da ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c0103ae2e32 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c0ac63ad5df ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c759e6b1e5d ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c6c97a30d25 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:ce246d5a2ae ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cde66571e15 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:caddd53de20 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c2369d7796b ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c40f4f99eeb ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cc0c73f73da ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:cdef3264f84 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c51f246f1be ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom rcap:c3f206ae93f ] ) ] ;
+    rcap:documentDate "29 May 2026" ;
+    rcap:documentTitle "Core Protocol 4.1" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N045ab501ec1749eaa0549527ca462d59 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:9" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "Such decisions will be specified in an amended DSA." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N11073e4221a3414f8ea7a466032c7d10 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 48 ;
+    rcap:evidencePosition "13" ;
+    rcap:evidenceSection "7.6.2" ;
+    rcap:evidenceText "Disability status measured at 180 days after enrollment using the WHODAS 2.0, 12-item instrument (where feasible, refer to relevant regional RSA) in those aged 18 or older" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N9d786b75368b4ffbbf64ab3d79847bfa ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "7.6.2" ;
+    rcap:evidenceText "Some domain-specific secondary endpoints may be specified as Key Domain-Specific Endpoints and will be interpreted in conjunction with the primary endpoint in determining the overall effectiveness of interventions." ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N9a0df34a23504b33a1359e480165b5fd ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "●" ;
+    rcap:evidenceGroup "Actions following Statistical Trigger for equivalence, or noninferiority" ;
+    rcap:evidencePage 68 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "A pair of equivalent interventions may be compressed into a single group for the purposes of ongoing analyses. Both interventions continue to be interventions that are available within the domain for allocation, but the primary analysis considers the effect of the two interventions as a single group, where a balanced randomization will be assigned to each of the intervention pair within this compressed group. Secondary analyses can continue to be conducted to determine if equivalence is maintained, with the possibility of the intervention being restored as individual interventions if results no longer support equivalence. It is acknowledged that re-analysis of the domain immediately following compression of one (or more) pairs of equivalent interventions may result in the occurrence of other Statistical Triggers (e.g., a compressed pair may be superior or inferior to all remaining interventions). Any Statistical Trigger that results from compression of one or more pairs will be responded to as outlined in this section with reporting of the cascade of Statistical Triggers. Compression of a pair of interventions can occur with or without reporting of a Platform Conclusion." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N895622178eac4562a62147a25cd159a3 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "7.6.2" ;
+    rcap:evidenceText "Additional secondary endpoints may be specified for a domain within the DSA." ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N08516aef75c9444c83195bc4c6e6edb8 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Baseline variables are defined as at or before the time of randomization." ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Ne4c10b3cb4d84dfca8283b1cfba74334 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:10" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "There is no automated adaptation when equivalence is deemed to have occurred." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N57dcb776665446c3a9796e2ac3363c4b ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "7.4.2" ;
+    rcap:evidenceText "A potentially eligible patient who meets any of the following criteria will be excluded from participation in this trial:" ;
+    rcap:occurrenceKind "platform_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Ne6c0ac9ed11e4308a9c830b21082ccdb ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePage 48 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "7.6.3" ;
+    rcap:evidenceText "Hospitalized on non-invasive ventilation or high-flow oxygen" ;
+    rcap:occurrenceKind "endpoint_exploratory" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N33f93a0293ef47019ef1d8727a263308 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePage 48 ;
+    rcap:evidencePosition "7" ;
+    rcap:evidenceSection "7.6.3" ;
+    rcap:evidenceText "Discharged from index hospitalization Respiratory Infection Ordinal Weighted Score" ;
+    rcap:occurrenceKind "endpoint_exploratory" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N07a770f04e854e05b6f1b7289214c1eb ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "7.6.2" ;
+    rcap:evidenceText "DSAs dated before this Core Protocol amendment will additionally report the pre-specified endpoints as indicated in their respective documents and previous versions of the Core Protocol (available on the trial website)." ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N862e3424e4054c4c9367a960c48e77f5 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 47 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "7.6.2" ;
+    rcap:evidenceText "Mortality, censored at 90 days" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N3d16dc58f19641dca112ff8d6224e43c ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "Hospital outcome data" ;
+    rcap:evidencePage 80 ;
+    rcap:evidencePosition "16" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Date and time of hospital admission and discharge" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Ne0c289c7fc754c5abe533f216037fca2 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:1" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "Factors that should be taken into account by the DSMB and the ITSC include the results of the primary analysis, analysis of clinically relevant secondary end-points, the possibility of treatment-by-treatment interactions, the relative burden and cost of the two interventions, the clinical interpretation of the adequacy of the delta, and the possibility that ongoing randomization with a smaller delta might also allow a Statistical Trigger for superiority (with a small effect size)." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N4bcf5ffa8e7d41ddac189edd83692124 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "Baseline and Eligibility data" ;
+    rcap:evidencePage 79 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Demographic data" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N8b65c24bd80d4810a08feaa71032defb ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "Baseline and Eligibility data" ;
+    rcap:evidencePage 80 ;
+    rcap:evidencePosition "8" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Source of hospital admission" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N7ed3870ee8284c939aaa93ff084d5e88 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:5" ;
+    rcap:evidenceSection "7.6.1" ;
+    rcap:evidenceText "Mortality at 90-days is the worst possible outcome regardless of duration of organ support or hospital stay, and outcomes for survivors are ordered by length of organ failure support and hospital stay." ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N96adf58618194f268d65bfbbedb4d8fc ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "Actions following Statistical Trigger for superiority, efficacy, inferiority, or harm If an intervention reaches one of the above thresholds and the DSMB declares this as a Platform Conclusion, the ITSC will be informed that the trigger has been met." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N32c3427f98ab4aa493e8891373641ce1 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "7.6.3" ;
+    rcap:evidenceText "Two additional exploratory outcome measures will be reported." ;
+    rcap:occurrenceKind "endpoint_exploratory" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N007cad49ae454f7ca6ce9f0630d0244c ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "Post-discharge outcome data" ;
+    rcap:evidencePage 80 ;
+    rcap:evidencePosition "24" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "HRQoL measured by EQ-5D or EQ-5D-Y and PedsQL-SF15 in participants aged less than 18 years at 180 days" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nb0c76f8c4cae497d8c00dcd8f0ae2c17 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:1" ;
+    rcap:evidenceSection "7.6.3" ;
+    rcap:evidenceText "The Respiratory Infection Ordinal Weighted Score will use the same ordinal scale categories as in the Survival and Recovery Trajectory described above but will be transformed to a numeric value between 0 (best) and 1 (worst) that reflects the severity of a patient’s illness and recovery trajectory over 28 days." ;
+    rcap:occurrenceKind "endpoint_exploratory" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Ncec9320922784339a512219a6f272eaf ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:5" ;
+    rcap:evidenceSection "7.6.3" ;
+    rcap:evidenceText "The weights for each daily ordinal status will be derived from existing REMAP-CAP data and correspond to the estimated probability of 90-day mortality for that category." ;
+    rcap:occurrenceKind "endpoint_exploratory" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N45e8cbf99acb47debd0bc52686e99c6a ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "7.6.2" ;
+    rcap:evidenceText "The generic key secondary endpoints for the trial are:" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N328d213e135144f193155d55f835f842 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "●" ;
+    rcap:evidenceGroup "Actions following Statistical Trigger for equivalence, or noninferiority" ;
+    rcap:evidencePage 68 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "No change to the interventions within the domain with continuation of RAR. This could be to further evaluate secondary endpoints, a smaller delta, or interest in interactions with other interventions." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Ncaa777e29a1d4f32a92c98529858f4e8 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 48 ;
+    rcap:evidencePosition "10" ;
+    rcap:evidenceSection "7.6.2" ;
+    rcap:evidenceText "Progression to IMV/ECLS/death among those not receiving invasive mechanical ventilation or ECLS at baseline" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N5673c7054c344eeb96501d8f283c18cb ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "7.6.1" ;
+    rcap:evidenceText "Days free of organ failure support will be coded as 0-28." ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N90273ea88a7f479ea9dbf9d572f7ead6 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:13" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "The ITSC in conjunction with the DSMB may undertake additional analyses, for example, of clinically relevant secondary endpoints." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N7e1d807b23d2495c94cd20dd1331dfe6 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePage 48 ;
+    rcap:evidencePosition "6" ;
+    rcap:evidenceSection "7.6.3" ;
+    rcap:evidenceText "Hospitalized, no oxygen" ;
+    rcap:occurrenceKind "endpoint_exploratory" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Ne4d7201b50744076a0f7e0f3482d45f3 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePage 42 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "7.4.1" ;
+    rcap:evidenceText "Aged 28 days or older" ;
+    rcap:occurrenceKind "platform_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N231378ee616b4921a0ca670783e1d256 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:15" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "For domains with only two interventions a valid Statistical Trigger for equivalence or noninferiority will be reported as a Platform Conclusion." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N47b906e8101c4020a99e14280ed64781 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "Baseline and Eligibility data" ;
+    rcap:evidencePage 79 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Status for all applicable states and strata" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N5bbe24cb23c94b85834d780f2e96c83a ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "Medication Administration" ;
+    rcap:evidencePage 80 ;
+    rcap:evidencePosition "20" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Administration of relevant concomitant medications" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N0a5ec55586a347e5bd8bb1c5fe296d35 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "The discontinuation of a domain, or interventions within a domain, in response to reaching a Statistical Trigger will not require a protocol amendment." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nd8f5ae36a7774a37b0100821db271b0b ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePage 42 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "7.4.2" ;
+    rcap:evidenceText "Patient is expected to be discharged from hospital within the next 24 hours" ;
+    rcap:occurrenceKind "platform_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N871e7ca6bee7450fa0d8e41e09291cb8 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "7.4.1" ;
+    rcap:evidenceText "In order to be eligible to participate in this trial, all patients must meet the following criteria:" ;
+    rcap:occurrenceKind "platform_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N91d099b230374efc8c1eb710f9b6802a ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "7.6.3" ;
+    rcap:evidenceText "The trajectory will be analyzed with a statistical model (Markov longitudinal proportional odds model) that captures how patients move through different health states over time, reported as an odds ratio with covariate adjustment." ;
+    rcap:occurrenceKind "endpoint_exploratory" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Ncaf130a071e44226884e4c79a8366972 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "7.6.3" ;
+    rcap:evidenceText "Survival and Recovery Trajectory Survival and Recovery Trajectory is a composite of all-cause mortality at day 90 and, among survivors, a daily ordinal scale of illness and recovery to 28 days." ;
+    rcap:occurrenceKind "endpoint_exploratory" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N3e80b49fa4a441e986d83074af0fd1bf ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "7.6.1" ;
+    rcap:evidenceText "The primary endpoint is a composite of 90-day all-cause mortality and, among survivors, the number of days on which the patient was not receiving organ failure support (OFS) during the index hospitalization, up to the end of study day 28; and among survivors who never receive OFS, hospital free days for the index hospitalization up to the end of study day 28." ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N1287cfbda8344f0aa611f97d7c2d8c31 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:6" ;
+    rcap:evidenceSection "7.6.1" ;
+    rcap:evidenceText "The index hospital admission is defined as continuing while the participant is admitted to any healthcare facility or level of residence that provides an equivalent or higher level of care than that corresponding to where the participant was enrolled." ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N865ead6182bf4b09aa58b4a79ef38436 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:9" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "If a Platform Conclusion is reached, the ITSC will take responsibility to undertake Public Disclosure as soon as practicable with the dissemination of the research result via presentation or publication or both." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Ncf4de10fba57468d9838fea8ceafe752 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 48 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "7.6.3" ;
+    rcap:evidenceText "Among Day-90 survivors, their daily respiratory support level as defined by position on a five-category ordinal scale:" ;
+    rcap:occurrenceKind "endpoint_exploratory" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N0f7e57c738c04fdfa845299c302737dd ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 48 ;
+    rcap:evidencePosition "11" ;
+    rcap:evidenceSection "7.6.2" ;
+    rcap:evidenceText "Survival at 180 days after enrollment (where feasible, refer to relevant regional RSA)" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N91ba94cccc9f4448933503d1806d22b5 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "Medication Administration" ;
+    rcap:evidencePage 80 ;
+    rcap:evidencePosition "19" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Administration of allocated medications" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N00b1de3954ff4977b9629a51d53ef8a6 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:16" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "With respect to the adaptation of the domain, the following actions are possible:" ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nbc7b9d5492d946849d9f54e4cf9863dc ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "7.6.2" ;
+    rcap:evidenceText "A standard set of secondary endpoints will be evaluated, including the components of the primary endpoint." ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Neae16c39c7b24a3c85ef0a11b2be5e10 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "ICU Outcome data" ;
+    rcap:evidencePage 80 ;
+    rcap:evidencePosition "14" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Date and time of ICU admission and discharge" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N9caa1ac2f3ba486dad8173a7247d9b55 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "●" ;
+    rcap:evidenceGroup "Actions following Statistical Trigger for equivalence, or noninferiority" ;
+    rcap:evidencePage 68 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "Adapt the domain to better refine the optimal characteristics of interventions (i.e., duration or dose)" ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nc6760c90f604419fb376b3fbe9ad94b8 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:6" ;
+    rcap:evidenceSection "7.6.3" ;
+    rcap:evidenceText "The ordinal weighted score will be analyzed with a covariate-adjusted linear model, and effects will be reported as a difference in average scores between treatment groups." ;
+    rcap:occurrenceKind "endpoint_exploratory" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N5f915785344c40dbba07f4d7921d789e ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePage 42 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "7.4.1" ;
+    rcap:evidenceText "Hospitalized patient" ;
+    rcap:occurrenceKind "platform_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N040eb459358c41339455739e21d6775f ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:12" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "As with other triggers, the DSMB may recommend that Public Disclosure should be delayed until additional results are available, so as to allow further recruitment to evaluate interactions between interventions in different domains or for other clinically or statistically valid reasons." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nf2d49123d24b4e4eb67e942292724720 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePage 48 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "7.6.3" ;
+    rcap:evidenceText "Hospitalized on ECLS or invasive mechanical ventilation (IMV)" ;
+    rcap:occurrenceKind "endpoint_exploratory" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N5f60c168d0cc436db3cf6586c3995f20 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "Baseline and Eligibility data" ;
+    rcap:evidencePage 80 ;
+    rcap:evidencePosition "10" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Results of microbiological testing" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N7c5af2a034e740e6a617be28231e3e1d ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "At that point, randomization to all other remaining interventions in the domain and in that unit-of-analysis where superiority or efficacy has been declared will be halted at sites at which the relevant intervention is available." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Naa3c68a903fb4fd987b600a4c0fff288 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 46 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "7.6.1" ;
+    rcap:evidenceText "Invasive mechanical ventilation" ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N2a27e6c746aa458e82e1f6f094fcd8b7 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:3" ;
+    rcap:evidenceSection "7.6.1" ;
+    rcap:evidenceText "We acknowledge mortality is tied to a longer time frame than the ordinal scale." ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N1c0b999aa45842c0bec56171bab4f2e0 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "The generic variables to be collected for all domains in this Platform are as detailed below." ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N997cc00ef1294570b56e270e44cb9e58 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 47 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "7.6.2" ;
+    rcap:evidenceText "Domain-specific efficacy outcomes, where applicable" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N0cdbd7a50d614d4d99fb24bc3ebcbf5f ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "If a Statistical Trigger is achieved this will be communicated by the SAC to the DSMB." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Ncff68fac91e047d7a3ea51b54d2992d4 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:3" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "For a domain with three or more interventions, the information provided by the DSMB to the ITSC may include specification of the ordinal rank of the interventions within the domain." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N84ef730328944722a583cc2b55361266 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:6" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "Randomization to the non-superior or non-efficacious interventions may continue at sites at which the superior or efficacious intervention is not available, pending its availability." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nfa46bdf682ed409888c097c33dcc57f3 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePage 42 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "7.4.2" ;
+    rcap:evidenceText "Death is deemed to be imminent and inevitable during the next 24 hours AND one or more of the patient, substitute decision maker or attending physician are not committed to full active treatment." ;
+    rcap:occurrenceKind "platform_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N18539482564c4cf6b8f8caae40f39503 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePage 48 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "7.6.3" ;
+    rcap:evidenceText "Hospitalized on low-intensity oxygen" ;
+    rcap:occurrenceKind "endpoint_exploratory" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N0ceb7d4823134992958dacf7d30e1973 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "●" ;
+    rcap:evidenceGroup "Actions following Statistical Trigger for equivalence, or noninferiority" ;
+    rcap:evidencePage 69 ;
+    rcap:evidencePosition "6" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "No change to the interventions within the domain with continuation of RAR. This could be to further evaluate secondary endpoints, a smaller delta of equivalence, or interest in interactions with other interventions. Such changes would require amendment to the DSA. This could occur with or without reporting a Platform Conclusion." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N8980a0a5a099414aa8c7caca34879281 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 47 ;
+    rcap:evidencePosition "7" ;
+    rcap:evidenceSection "7.6.2" ;
+    rcap:evidenceText "28-day survival" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N43d843ea67684be5bb733d2e18fd258f ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "7.6.3" ;
+    rcap:evidenceText "This hierarchical ordinal scale is a composite of:" ;
+    rcap:occurrenceKind "endpoint_exploratory" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nd970c179836b45b7902b8dc1d4c57551 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:11" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "However, declaration of a Platform Conclusion will always result in the removal of inferior or harmful interventions from a domain." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nc5019d9f1e5748868b3c9c193d858b2b ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:8" ;
+    rcap:evidenceSection "7.6.1" ;
+    rcap:evidenceText "Organ failure support or hospital stay received prior to the end of study day 28, but outside of the index hospitalization (i.e., during a subsequent hospital admission after discharge from the index hospitalization) will not contribute to the primary endpoint." ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nb54e6016f84e45f68a5fc1319186ecc6 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "Baseline and Eligibility data" ;
+    rcap:evidencePage 79 ;
+    rcap:evidencePosition "6" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Receipt of organ failure support" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N749e0d9d36ff4c609e94e88cda70f7f4 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "●" ;
+    rcap:evidenceGroup "Actions following Statistical Trigger for equivalence, or noninferiority" ;
+    rcap:evidencePage 69 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "Removal of one of the pair of equivalent interventions from the domain, for example the more burdensome or more expensive intervention, which will result in a reporting of a Platform Conclusion." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nca3a4b44f2b04bebb0f0f2ac59224c6f ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:1" ;
+    rcap:evidenceSection "7.6.1" ;
+    rcap:evidenceText "*High-flow oxygen is defined as a fractional inspired oxygen concentration of 0.4 or higher and with flow rate of at least 30 liters per minute (or at least 2 liters per minute per kilogram of bodyweight in children less than 15 kilograms)." ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Na6e19d853eb647039328272ccefbe7de ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 46 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "7.6.1" ;
+    rcap:evidenceText "Continuous infusion of vasopressors, inotropes or both" ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N2e89d6c3745847719ba52bea69f9dedd ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePage 42 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "7.4.1" ;
+    rcap:evidenceText "Acute respiratory tract infection" ;
+    rcap:occurrenceKind "platform_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N026751caa75c434094656ec318f0c5b4 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "7.6.1" ;
+    rcap:evidenceText "Survivors who never receive organ failure support during their index hospitalization to the end of study day 28 will be coded above the organ support-free days range, with categories defined by their number of hospital free days to the end of study day 28." ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N85e01ec87a7743a7a3de257e181be8c1 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 48 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "7.6.3" ;
+    rcap:evidenceText "Landmark mortality at Day 90 post-randomization," ;
+    rcap:occurrenceKind "endpoint_exploratory" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Na3c51120c735441d84fa23438454178c ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "●" ;
+    rcap:evidenceGroup "Inpatient data" ;
+    rcap:evidencePage 80 ;
+    rcap:evidencePosition "11" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Hypotension and administration of vasopressors/inotropes" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N3493c281499346568b56a80c41c7f2cb ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:11" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "If an intervention reaches a Statistical Trigger for futility and the DSMB declares this as a Platform Conclusion, the ITSC will be informed that the trigger has been met." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N3fed63ce701f4b7f84df89c7e67b4b70 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:1" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Collected while participants are admitted to hospital between randomization and Day 28: For participants admitted to ICU at the time of enrollment, or after enrollment: Unless specified otherwise in an RSA or DSA:" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N6899717f0629424abcfbc68de36b640b ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:14" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "The approach to a Statistical Trigger for equivalence or noninferiority is different depending on the number of interventions within a domain." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N64e1ed2e683540b18c89f073d33dfd17 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 48 ;
+    rcap:evidencePosition "12" ;
+    rcap:evidenceSection "7.6.2" ;
+    rcap:evidenceText "HRQoL at 180 days after enrollment using the EQ5D-5L or EQ-5D-Y and PedsQL-SF15 in participants aged less than 18 years (where feasible, refer to relevant regional RSA)" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N7e879970953246c99c756998cdd03031 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:10" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "Where a Platform Conclusion is reached for superiority or efficacy, the DSMB may recommend that Public Disclosure should be delayed until additional results are available, so as to allow further recruitment to evaluate interactions between interventions in different domains or for other clinically or statistically valid reasons." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Ne1ad2f8729e14a8a9737d6372c6dbbf1 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:8" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "It is possible that a superior or efficacious intervention will be retained but subjected to further evaluation to refine the optimal characteristics (for example duration of therapy or optimal dose)." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N703a401d21b949d5a137504962bbab44 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:5" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "In a domain that comprises three or more interventions, but in which two or more interventions are analyzed in a nested manner, the nested group may be combined for analyses of equivalence." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nd2ebe5f4e2c94548903ac5eafdea1f72 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 47 ;
+    rcap:evidencePosition "8" ;
+    rcap:evidenceSection "7.6.2" ;
+    rcap:evidenceText "Vasopressor-free days at day 28" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N91d032eba5704ad98395e5a557d8faad ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:1" ;
+    rcap:evidenceSection "7.6.2" ;
+    rcap:evidenceText "There will be a list of tertiary outcomes where no formal hypothesis tests will be performed." ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N261b52250d6d46aebe6ead36a494c618 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 46 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "7.6.1" ;
+    rcap:evidenceText "High-flow nasal oxygen*" ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N619057f483504b349da3184df76f66aa ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:4" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "With respect to reporting of Platform Conclusions and adaptations of the domain the following actions are possible: Factors that should be taken into account by the DSMB and the ITSC include the results of the primary analysis, analysis of clinically relevant secondary end-points, the possibility of treatment-by-treatment interactions, the relative burden and cost of the two interventions, the clinical interpretation of the adequacy of the delta, the possibility that ongoing randomization with a smaller delta might also allow a Statistical Trigger for superiority (with a small effect size) and the ordinal position of the equivalent pair within the domain." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N132f90adbc204c4a8ab4f266b4633952 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "The DSMB will oversee a range of actions as described in operational documents and the DSMB charter to confirm that the Statistical Trigger has been reached validly." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nb50dd692a69b42179eddb483a90c9cf7 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "7.6.1" ;
+    rcap:evidenceText "All participants who die before the end of study day 90 will be coded as ‘-1’ on the ordinal scale, the worst score." ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Ne89911cbd2d749e293a5a8ce70c28443 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "Post-discharge outcome data" ;
+    rcap:evidencePage 80 ;
+    rcap:evidencePosition "22" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Survival status at 90 days" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Na0159398c84d4e139d24376227c2911f ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "●" ;
+    rcap:evidenceGroup "Actions following Statistical Trigger for equivalence, or noninferiority" ;
+    rcap:evidencePage 68 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "Removal of the domain from the Platform" ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N0856bedfe7c94330ab703becd40bc886 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "Baseline and Eligibility data" ;
+    rcap:evidencePage 80 ;
+    rcap:evidencePosition "9" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Physiologic and laboratory results indicative of severity of illness and organ dysfunction" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Na9f09269cf014138af507541ecdccb8d ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:7" ;
+    rcap:evidenceSection "7.6.3" ;
+    rcap:evidenceText "As exploratory outcomes, the exact categorizations of respiratory support may change in both of the above exploratory outcomes, which will be transparently reported in publications and presentations." ;
+    rcap:occurrenceKind "endpoint_exploratory" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N19de69cc3de8443eb6a9ac979b55368d ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:2" ;
+    rcap:evidenceSection "7.6.3" ;
+    rcap:evidenceText "All patients who die on or before day 90 will be assigned a score of ‘1’." ;
+    rcap:occurrenceKind "endpoint_exploratory" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N46427bf0b3bd4c29b302ecd311d167c3 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "Baseline and Eligibility data" ;
+    rcap:evidencePage 79 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Screening information, including Platform, domain and intervention eligibility criteria" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N6a144c2163ab46858d9ee3743d208338 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:2" ;
+    rcap:evidenceSection "7.6.1" ;
+    rcap:evidenceText "This endpoint is designed to encompass all illness severity states, and builds on our experience with the distribution and power of the primary endpoints used in previous versions of this Core Protocol and the Pandemic Appendix to the Core Protocol." ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nd3a2d37039754fc6bb9a0b30b2924eae ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:4" ;
+    rcap:evidenceSection "7.6.1" ;
+    rcap:evidenceText "However, integrating 90-day mortality with a shorter-term outcome is patient-centered and allows continuity with previous versions of the Core protocol and the Pandemic Appendix to the Core Protocol." ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N65cd8fcf7ee4437286daa8981339490d ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "●" ;
+    rcap:evidenceGroup "Inpatient data" ;
+    rcap:evidencePage 80 ;
+    rcap:evidencePosition "13" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Administration of oxygen support including ECLS" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nee889e8f68594281b77cad8ad07b85c4 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "Baseline and Eligibility data" ;
+    rcap:evidencePage 79 ;
+    rcap:evidencePosition "7" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Co-existing illnesses and risk factors for respiratory tract infection" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nd0a421b8df3b497099c59f3ee4aa0c14 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "●" ;
+    rcap:evidenceGroup "Inpatient data" ;
+    rcap:evidencePage 80 ;
+    rcap:evidencePosition "12" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Administration of renal replacement therapy" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nf8e5d0f4f46e40a18b76086bdfeb9c86 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:4" ;
+    rcap:evidenceSection "7.6.3" ;
+    rcap:evidenceText "This will create a score reflecting whether and how quickly they recovered, where better health states receive weights closer to 0." ;
+    rcap:occurrenceKind "endpoint_exploratory" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N76dcc50ba5db4256b4397576ff243882 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:7" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "For RAR, allocation proportions will be capped at 75% for two-intervention domains, unless otherwise specified in a DSA." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N1ec627115db54b1dbd723f73a68edfa7 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 47 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "7.6.2" ;
+    rcap:evidenceText "Days alive and free of organ-failure support to day 28" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Na5928b5e2c2d47e2b4435b55db199124 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePage 42 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "7.4.2" ;
+    rcap:evidenceText "Previous enrollment in this Platform within the last 90 days" ;
+    rcap:occurrenceKind "platform_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N1c88ab8103f04f38885ca8038504b054 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 47 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "7.6.2" ;
+    rcap:evidenceText "Days alive and out of hospital to day 28" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nc1ef4a79552e4155a1399930695f6595 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 47 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "7.6.2" ;
+    rcap:evidenceText "Domain-specific safety outcomes, where applicable" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N1e9c2f760b95486e9c76e2ad343917bf ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:2" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "The options following a Statistical Trigger for a pair of interventions in a Domain with three or more Interventions are more complex." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N420bbcacdd4a4affa93afde6f67489d4 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "Post-discharge outcome data" ;
+    rcap:evidencePage 81 ;
+    rcap:evidencePosition "26" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Opinions and beliefs regarding participation in research (reported at 180 days)" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N5b342c5da4034e519920c6a9201aa1c3 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:8" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "Statistical Triggers for equivalence in domains with three or more interventions may occur with or without Platform Conclusions and public disclosure of results, as determined by the ITSC and DSMB." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nc337a9665d894704bfaea4e0b1902771 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:3" ;
+    rcap:evidenceSection "7.6.3" ;
+    rcap:evidenceText "For patients who survive to day 90, each day's ordinal status is converted to its corresponding mortality-derived weight, and the score is calculated as the mean of these daily weights over the first 28 days." ;
+    rcap:occurrenceKind "endpoint_exploratory" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N70652b04019d4984acc3a2e8d2955fd3 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "Post-discharge outcome data" ;
+    rcap:evidencePage 80 ;
+    rcap:evidencePosition "21" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Survival status at 28 days" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Naa6327ec536e4f37953d79bff32ec3e8 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Additional domain-specific variables are outlined in the relevant DSAs." ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N99e9229cc5fe4b62bf3a8e0891116c0e ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 47 ;
+    rcap:evidencePosition "6" ;
+    rcap:evidenceSection "7.6.2" ;
+    rcap:evidenceText "Hospital survival" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N16a50a9e477d4383a68fbd441f9f0500 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:6" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "Where compression converts a domain with three or more interventions into a domain with two interventions (and data continues to support equivalence of the compressed interventions) such a domain will be regarded as a two-intervention domain for the purposes of RAR and for evaluation of Statistical Triggers for superiority, inferiority, and equivalence." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N5d4d9d7c9a25431b985072ef76dacd17 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 46 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "7.6.1" ;
+    rcap:evidenceText "Non-invasive ventilation (bilevel positive airway pressure or continuous positive airway pressure by mask or helmet)" ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N2729a6e4e4824dc59ff2944ebd45f6dd ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:7" ;
+    rcap:evidenceSection "7.6.1" ;
+    rcap:evidenceText "Participants who have been, and still are, admitted to a healthcare facility 90 days after enrollment are coded as being alive." ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nd5245e99d45a41a9a6f579b715ec3ffa ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "Hospital outcome data" ;
+    rcap:evidencePage 80 ;
+    rcap:evidencePosition "17" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Survival status at hospital discharge" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nb20a856f8694479b9f85af6126d571ab ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "ICU Outcome data" ;
+    rcap:evidencePage 80 ;
+    rcap:evidencePosition "15" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Dates of ICU readmission and discharge during the index hospitalization" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Ne49524911e8c44ac9ba2b1b4ff5ad984 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:7" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "The ITSC will take responsibility to undertake Public Disclosure as soon as practicable with the dissemination of the research result via presentation or publication or both." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N5343e29a2f724ccab4005266c2a27c1e ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "Post-discharge outcome data" ;
+    rcap:evidencePage 80 ;
+    rcap:evidencePosition "23" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Survival status at 180 days" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nc414a684b6904fd1b6339af0326521f0 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "7.6.1" ;
+    rcap:evidenceText "For the purposes of this primary endpoint, organ failure support is defined as:" ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nec5d30276ec74fbdad46f30a682f5713 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "Hospital outcome data" ;
+    rcap:evidencePage 80 ;
+    rcap:evidencePosition "18" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Hospital discharge destination" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N56f459cc4e3241bf98f34d79a1640a69 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "Baseline and Eligibility data" ;
+    rcap:evidencePage 79 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Date and time of hospital admission" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N19db652b1d124a3e81350d83bcc61f32 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 46 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "7.6.1" ;
+    rcap:evidenceText "Extracorporeal life support (ECLS)" ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N264f909951b74b60997ab3d7b3b0ca77 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "Post-discharge outcome data" ;
+    rcap:evidencePage 80 ;
+    rcap:evidencePosition "25" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Disability status measured by WHODAS at 180 days and baseline information to interpret disability (adults)" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Nbc93175e47cf4b46b2362c3d0720b471 ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidenceGroup "Baseline and Eligibility data" ;
+    rcap:evidencePage 79 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "8.8.2" ;
+    rcap:evidenceText "Date and time of ICU admission(s) (where applicable)" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:Ncaf49a9381744864b352f83aa99ac7eb ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 47 ;
+    rcap:evidencePosition "9" ;
+    rcap:evidenceSection "7.6.2" ;
+    rcap:evidenceText "Ventilator-free days at day 28" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N3cbfdb773a774019aaedd89fe7ebbdae ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "lead_in:12" ;
+    rcap:evidenceSection "7.8.7" ;
+    rcap:evidenceText "If a Platform Conclusion arises because one or more pairs of interventions reach a Statistical Trigger for equivalence or noninferiority within a unit-of-analysis, this will be communicated to the ITSC by the DSMB." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:CoreDesign_4_1 ;
+    owl:annotatedTarget _:N27dbe602d8e647818e1d340b079faeee ;
+    rcap:evidenceDoc "Core Protocol 4.1" ;
+    rcap:evidencePosition "trailing:2" ;
+    rcap:evidenceSection "7.6.2" ;
+    rcap:evidenceText "These may include: Additional outcomes that will be collected, where feasible, will comprise:" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+_:N007cad49ae454f7ca6ce9f0630d0244c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5ab9f3456c .
+
+_:N00b1de3954ff4977b9629a51d53ef8a6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce0a442373c .
+
+_:N026751caa75c434094656ec318f0c5b4 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c225b497b1c .
+
+_:N040eb459358c41339455739e21d6775f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c40f4f99eeb .
+
+_:N045ab501ec1749eaa0549527ca462d59 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd8acafd0a6 .
+
+_:N07a770f04e854e05b6f1b7289214c1eb a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdb5e5b5b01 .
+
+_:N08516aef75c9444c83195bc4c6e6edb8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c51f246f1be .
+
+_:N0856bedfe7c94330ab703becd40bc886 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c05beb36299 .
+
+_:N0a5ec55586a347e5bd8bb1c5fe296d35 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c73967ff128 .
+
+_:N0cdbd7a50d614d4d99fb24bc3ebcbf5f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cad22b7129d .
+
+_:N0ceb7d4823134992958dacf7d30e1973 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c39a5310383 .
+
+_:N0f7e57c738c04fdfa845299c302737dd a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c573bcf8236 .
+
+_:N11073e4221a3414f8ea7a466032c7d10 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc80fdb595f .
+
+_:N1287cfbda8344f0aa611f97d7c2d8c31 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9fd4c2c7f1 .
+
+_:N132f90adbc204c4a8ab4f266b4633952 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c13276457d5 .
+
+_:N16a50a9e477d4383a68fbd441f9f0500 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c759e6b1e5d .
+
+_:N18539482564c4cf6b8f8caae40f39503 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc66e2d09a4 .
+
+_:N19db652b1d124a3e81350d83bcc61f32 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca44d73b6be .
+
+_:N19de69cc3de8443eb6a9ac979b55368d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c92cfc5ceb8 .
+
+_:N1c0b999aa45842c0bec56171bab4f2e0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc0c73f73da .
+
+_:N1c88ab8103f04f38885ca8038504b054 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c711c3155bb .
+
+_:N1e9c2f760b95486e9c76e2ad343917bf a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc0ad33a8ee .
+
+_:N1ec627115db54b1dbd723f73a68edfa7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c178de9633a .
+
+_:N231378ee616b4921a0ca670783e1d256 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c34900c49d6 .
+
+_:N261b52250d6d46aebe6ead36a494c618 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc4d4bee65c .
+
+_:N264f909951b74b60997ab3d7b3b0ca77 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0a5dc0cbed .
+
+_:N2729a6e4e4824dc59ff2944ebd45f6dd a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c44479053d2 .
+
+_:N27dbe602d8e647818e1d340b079faeee a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3abbbe9446 .
+
+_:N2a27e6c746aa458e82e1f6f094fcd8b7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cac579e3b99 .
+
+_:N2e89d6c3745847719ba52bea69f9dedd a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c66579d1944 .
+
+_:N328d213e135144f193155d55f835f842 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c050828c00a .
+
+_:N32c3427f98ab4aa493e8891373641ce1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3ef0808232 .
+
+_:N33f93a0293ef47019ef1d8727a263308 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c766b35362d .
+
+_:N3493c281499346568b56a80c41c7f2cb a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2369d7796b .
+
+_:N3cbfdb773a774019aaedd89fe7ebbdae a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb47d826c76 .
+
+_:N3d16dc58f19641dca112ff8d6224e43c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cae2185962c .
+
+_:N3e80b49fa4a441e986d83074af0fd1bf a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cedd28ca5fa .
+
+_:N3fed63ce701f4b7f84df89c7e67b4b70 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3f206ae93f .
+
+_:N420bbcacdd4a4affa93afde6f67489d4 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c34bbecb9d3 .
+
+_:N43d843ea67684be5bb733d2e18fd258f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c876d85ebab .
+
+_:N45e8cbf99acb47debd0bc52686e99c6a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3dc68afb7d .
+
+_:N46427bf0b3bd4c29b302ecd311d167c3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cafe6794404 .
+
+_:N47b906e8101c4020a99e14280ed64781 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c949256d13a .
+
+_:N4bcf5ffa8e7d41ddac189edd83692124 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9291b4492d .
+
+_:N5343e29a2f724ccab4005266c2a27c1e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3dd8ad249e .
+
+_:N5673c7054c344eeb96501d8f283c18cb a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c347c9d7e7f .
+
+_:N56f459cc4e3241bf98f34d79a1640a69 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c89c6bd7fd6 .
+
+_:N57dcb776665446c3a9796e2ac3363c4b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3c375c3292 .
+
+_:N5b342c5da4034e519920c6a9201aa1c3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce246d5a2ae .
+
+_:N5bbe24cb23c94b85834d780f2e96c83a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca8ce9c3f7e .
+
+_:N5d4d9d7c9a25431b985072ef76dacd17 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0a964350f0 .
+
+_:N5f60c168d0cc436db3cf6586c3995f20 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5462fafecb .
+
+_:N5f915785344c40dbba07f4d7921d789e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca7be08f164 .
+
+_:N619057f483504b349da3184df76f66aa a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0103ae2e32 .
+
+_:N64e1ed2e683540b18c89f073d33dfd17 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c627ea981bb .
+
+_:N65cd8fcf7ee4437286daa8981339490d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c322d3a6829 .
+
+_:N6899717f0629424abcfbc68de36b640b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd9bbfeda6a .
+
+_:N6a144c2163ab46858d9ee3743d208338 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc6cadc9e2c .
+
+_:N703a401d21b949d5a137504962bbab44 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0ac63ad5df .
+
+_:N70652b04019d4984acc3a2e8d2955fd3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c790b78b24e .
+
+_:N749e0d9d36ff4c609e94e88cda70f7f4 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4bf9cd2f70 .
+
+_:N76dcc50ba5db4256b4397576ff243882 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6c97a30d25 .
+
+_:N7c5af2a034e740e6a617be28231e3e1d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8efcf1d144 .
+
+_:N7e1d807b23d2495c94cd20dd1331dfe6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce3b8327b04 .
+
+_:N7e879970953246c99c756998cdd03031 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cbde5a9f0f5 .
+
+_:N7ed3870ee8284c939aaa93ff084d5e88 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf674dd11cd .
+
+_:N84ef730328944722a583cc2b55361266 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c07829b4907 .
+
+_:N85e01ec87a7743a7a3de257e181be8c1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4ea2e1b3d0 .
+
+_:N862e3424e4054c4c9367a960c48e77f5 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3deb0fab93 .
+
+_:N865ead6182bf4b09aa58b4a79ef38436 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cde66571e15 .
+
+_:N871e7ca6bee7450fa0d8e41e09291cb8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c08df43abd6 .
+
+_:N895622178eac4562a62147a25cd159a3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c460eabd0d4 .
+
+_:N8980a0a5a099414aa8c7caca34879281 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf04bc22981 .
+
+_:N8b65c24bd80d4810a08feaa71032defb a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cfead389651 .
+
+_:N90273ea88a7f479ea9dbf9d572f7ead6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb31eb2bc1f .
+
+_:N91ba94cccc9f4448933503d1806d22b5 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5c4df60c48 .
+
+_:N91d032eba5704ad98395e5a557d8faad a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd3a5049ef6 .
+
+_:N91d099b230374efc8c1eb710f9b6802a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce9fbd2a72d .
+
+_:N96adf58618194f268d65bfbbedb4d8fc a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca3cd41bbeb .
+
+_:N997cc00ef1294570b56e270e44cb9e58 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd9f81c7ca1 .
+
+_:N99e9229cc5fe4b62bf3a8e0891116c0e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c53bf0a00bd .
+
+_:N9a0df34a23504b33a1359e480165b5fd a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3d1875c5d8 .
+
+_:N9caa1ac2f3ba486dad8173a7247d9b55 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb214214243 .
+
+_:N9d786b75368b4ffbbf64ab3d79847bfa a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6d2d9b72d9 .
+
+_:Na0159398c84d4e139d24376227c2911f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf670d47a1a .
+
+_:Na3c51120c735441d84fa23438454178c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c10b27d976a .
+
+_:Na5928b5e2c2d47e2b4435b55db199124 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7194d0f95a .
+
+_:Na6e19d853eb647039328272ccefbe7de a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb34d84e7ea .
+
+_:Na9f09269cf014138af507541ecdccb8d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc5809dffc7 .
+
+_:Naa3c68a903fb4fd987b600a4c0fff288 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c45bf8da54f .
+
+_:Naa6327ec536e4f37953d79bff32ec3e8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdef3264f84 .
+
+_:Nb0c76f8c4cae497d8c00dcd8f0ae2c17 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7cb95286f2 .
+
+_:Nb20a856f8694479b9f85af6126d571ab a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8da9e5a430 .
+
+_:Nb50dd692a69b42179eddb483a90c9cf7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cbd9f9062ae .
+
+_:Nb54e6016f84e45f68a5fc1319186ecc6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce6c5856c8f .
+
+_:Nbc7b9d5492d946849d9f54e4cf9863dc a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cdd87c4f09f .
+
+_:Nbc93175e47cf4b46b2362c3d0720b471 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2f2797ef7b .
+
+_:Nc1ef4a79552e4155a1399930695f6595 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c09cf90d5ee .
+
+_:Nc337a9665d894704bfaea4e0b1902771 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1b2898941a .
+
+_:Nc414a684b6904fd1b6339af0326521f0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1ae29f53d7 .
+
+_:Nc5019d9f1e5748868b3c9c193d858b2b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c19e778dc9d .
+
+_:Nc6760c90f604419fb376b3fbe9ad94b8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cbab88bbe86 .
+
+_:Nca3a4b44f2b04bebb0f0f2ac59224c6f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c526f7bee55 .
+
+_:Ncaa777e29a1d4f32a92c98529858f4e8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ca053db75aa .
+
+_:Ncaf130a071e44226884e4c79a8366972 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c025838a38f .
+
+_:Ncaf49a9381744864b352f83aa99ac7eb a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c29280fe471 .
+
+_:Ncec9320922784339a512219a6f272eaf a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0de6d4fcdc .
+
+_:Ncf4de10fba57468d9838fea8ceafe752 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9f97c0e55a .
+
+_:Ncff68fac91e047d7a3ea51b54d2992d4 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ccd60c004da .
+
+_:Nd0a421b8df3b497099c59f3ee4aa0c14 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c5f64d55307 .
+
+_:Nd2ebe5f4e2c94548903ac5eafdea1f72 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c93f9ab717f .
+
+_:Nd3a2d37039754fc6bb9a0b30b2924eae a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce697805e1b .
+
+_:Nd5245e99d45a41a9a6f579b715ec3ffa a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7a19fee7fd .
+
+_:Nd8f5ae36a7774a37b0100821db271b0b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cecffffb51b .
+
+_:Nd970c179836b45b7902b8dc1d4c57551 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7e00deda39 .
+
+_:Ne0c289c7fc754c5abe533f216037fca2 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2487d60744 .
+
+_:Ne1ad2f8729e14a8a9737d6372c6dbbf1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c83d2f160ad .
+
+_:Ne49524911e8c44ac9ba2b1b4ff5ad984 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c15ec59dfe1 .
+
+_:Ne4c10b3cb4d84dfca8283b1cfba74334 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:caddd53de20 .
+
+_:Ne4d7201b50744076a0f7e0f3482d45f3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cec9be7e972 .
+
+_:Ne6c0ac9ed11e4308a9c830b21082ccdb a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8d1e9454aa .
+
+_:Ne89911cbd2d749e293a5a8ce70c28443 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce3d8c467cd .
+
+_:Neae16c39c7b24a3c85ef0a11b2be5e10 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4ac501a924 .
+
+_:Nec5d30276ec74fbdad46f30a682f5713 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8aa5949cb6 .
+
+_:Nee889e8f68594281b77cad8ad07b85c4 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3cdcb22828 .
+
+_:Nf2d49123d24b4e4eb67e942292724720 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c220498dbf0 .
+
+_:Nf8e5d0f4f46e40a18b76086bdfeb9c86 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2dd383f950 .
+
+_:Nfa46bdf682ed409888c097c33dcc57f3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c590db8e067 .
+

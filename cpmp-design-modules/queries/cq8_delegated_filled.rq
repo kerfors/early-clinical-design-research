@@ -1,0 +1,22 @@
+# CQ8: for each activity the master SoA delegates to the ISAs, where does each ISA schedule it?
+# Slot (master) -> ISA designs it delegates to -> the ISA's own cells of the same activity.
+PREFIX cpmp: <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?activity ?isa ?visit ?allocation
+WHERE {
+    ?slot rdfs:subClassOf cpmp:DelegatedSlot , obo:IAO_0000007 ;
+          cpmp:activityKey ?activity ;
+          cpmp:delegatesTo ?isa .
+    ?isa rdfs:subClassOf ?r .
+    ?r owl:onProperty obo:BFO_0000051 ;
+       owl:someValuesFrom ?cell .
+    ?cell cpmp:activityKey ?activity ;
+          cpmp:visit ?visit .
+    ?ax owl:annotatedSource ?isa ;
+        owl:annotatedTarget ?r ;
+        cpmp:allocation ?allocation .
+}
+ORDER BY ?activity ?isa ?visit

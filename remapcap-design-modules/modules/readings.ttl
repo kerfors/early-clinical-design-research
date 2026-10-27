@@ -1,0 +1,3652 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rcap: <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+rcap:binding a owl:AnnotationProperty .
+
+rcap:dependsOn a owl:AnnotationProperty .
+
+rcap:evidenceDoc a owl:AnnotationProperty .
+
+rcap:evidenceSection a owl:AnnotationProperty .
+
+rcap:evidenceText a owl:AnnotationProperty .
+
+<https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/readings> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/components> .
+
+rcap:note a owl:AnnotationProperty .
+
+rcap:reading-00828254f0 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c1424395077,
+        rcap:c1873c181b7,
+        rcap:c33f3696e91,
+        rcap:c63908c2226,
+        rcap:ce0d5a36d2c ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "This domain is available to patients who are in the Adult Age Stratum, as defined in Core Protocol Documents." ;
+    rcap:note "single version; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MD ;
+    rcap:resolvesToCoreVersions "PANDA 1.0" ;
+    rcap:resolvesToSection "PANDA 2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 7" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.1.1)" ;
+    rcap:statement rcap:ced7c375feb ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-01820e0cd9 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceSection "11.1" ;
+    rcap:evidenceText "The DSMB is convened under the guidance provided in the Core Protocol and DSMB Charter." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IIM ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.11" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 12" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-02d578ef93 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "12.1" ;
+    rcap:evidenceText "Funding sources for this trial are specified in relevant Core Protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_END ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 2.5" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 13" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-04134dccd1 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0a964350f0,
+        rcap:c0f40ddaf60,
+        rcap:c19e778dc9d,
+        rcap:c1ae29f53d7,
+        rcap:c21617daed3,
+        rcap:c225b497b1c,
+        rcap:c2bad68295e,
+        rcap:c347c9d7e7f,
+        rcap:c44479053d2,
+        rcap:c45bf8da54f,
+        rcap:c4ea2e1b3d0,
+        rcap:c526f7bee55,
+        rcap:c701544ad16,
+        rcap:c876d85ebab,
+        rcap:c8d1e9454aa,
+        rcap:c9f97c0e55a,
+        rcap:c9fd4c2c7f1,
+        rcap:ca44d73b6be,
+        rcap:cac579e3b99,
+        rcap:cb34d84e7ea,
+        rcap:cbb090195d3,
+        rcap:cbd9f9062ae,
+        rcap:cc4d4bee65c,
+        rcap:cc66e2d09a4,
+        rcap:cc6cadc9e2c,
+        rcap:cceee3b61f1,
+        rcap:ce3b8327b04,
+        rcap:ce697805e1b,
+        rcap:ce70d7458d7,
+        rcap:cedd28ca5fa,
+        rcap:cf408836934,
+        rcap:cf674dd11cd,
+        rcap:cf9f13d39df ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.5.1" ;
+    rcap:evidenceText "The primary endpoint for this domain is the primary outcome specified in the Core Protocol." ;
+    rcap:note "V-current + V-transition; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_AB ;
+    rcap:resolvesToCoreVersions "4.1 + 4.0 (additionally)" ;
+    rcap:resolvesToSection "CORE 7.6.1" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 10" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 7 and 8.5.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c5770ae5285 ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-07974fd755 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "2" ;
+    rcap:evidenceText "The Core Protocol does not contain detailed information about the statistical analysis or simulations, because the analysis model will change overtime in accordance with the domain and intervention trial adaptations but this information is contained in the Statistical Analysis Appendix." ;
+    rcap:readingOf rcap:DomainDesign_IG ;
+    rcap:reviewStatus "out of scope (SAA not in scope)" ;
+    rcap:ruleSource "out of scope (SAA not in scope)" ;
+    rcap:targetPhrase "Statistical Analysis Appendix" .
+
+rcap:reading-0ab455e7fa a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Tropical Antibiotic Domain-Specific Appendix 1" ;
+    rcap:evidenceSection "9.3" ;
+    rcap:evidenceText "Refer to Core Protocol documents for criteria for discontinuation of participation in this trial." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_TAB ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.6" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 11" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 9.3)" ;
+    rcap:statement rcap:c85858c8378 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-0e1e9512e6 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "11.1" ;
+    rcap:evidenceText "The DSMB is convened under the guidance provided in the Core Protocol and DSMB Charter." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MV ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.11" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 12" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-10d3a5e28c a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c1424395077,
+        rcap:c1873c181b7,
+        rcap:c33f3696e91,
+        rcap:c63908c2226,
+        rcap:ce0d5a36d2c ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "This domain is available to patients who are in the Adult Age Stratum, as defined in Core Protocol documents." ;
+    rcap:note "single version; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_END ;
+    rcap:resolvesToCoreVersions "PANDA 1.0" ;
+    rcap:resolvesToSection "PANDA 2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 7" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.1.1)" ;
+    rcap:statement rcap:ced7c375feb ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-11cbcfa01a a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "12.1" ;
+    rcap:evidenceText "Funding sources for the Platform are specified in the Core Protocol domain." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_AB ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 2.5" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 13" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-1448d0d53f a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c07c65fbdc2,
+        rcap:c0a964350f0,
+        rcap:c2350a9a8ac,
+        rcap:c2cc32f1c28,
+        rcap:c36608008f9,
+        rcap:c45bf8da54f,
+        rcap:c4fc623517c,
+        rcap:c6333bb2823,
+        rcap:c9af5ab3b4d,
+        rcap:ca33244a322,
+        rcap:ca3c788e844,
+        rcap:cb34d84e7ea,
+        rcap:cb93e454359,
+        rcap:cc1810a8322,
+        rcap:cdc7ec59d43,
+        rcap:ce1d999722f,
+        rcap:cf38c43f5dc,
+        rcap:cfbfe88c56e ;
+    rcap:evidenceDoc "Tropical Antibiotic Domain-Specific Appendix 1" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "This domain is available to patients who are in the Severe Illness Severity State, as defined in Core Protocol documents." ;
+    rcap:note "single version; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_TAB ;
+    rcap:resolvesToCoreVersions "PANDA 1.0" ;
+    rcap:resolvesToSection "PANDA 4.3" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 8" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.1.2)" ;
+    rcap:statement rcap:c7fd21cde5f ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-1561cbc2e8 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c09cf90d5ee,
+        rcap:c149340e649,
+        rcap:c178de9633a,
+        rcap:c29280fe471,
+        rcap:c3abbbe9446,
+        rcap:c3dc68afb7d,
+        rcap:c3deb0fab93,
+        rcap:c4420ca6ee4,
+        rcap:c44479053d2,
+        rcap:c460eabd0d4,
+        rcap:c53bf0a00bd,
+        rcap:c573bcf8236,
+        rcap:c627ea981bb,
+        rcap:c6cb92153ee,
+        rcap:c6d2d9b72d9,
+        rcap:c711c3155bb,
+        rcap:c7e605d5258,
+        rcap:c93f9ab717f,
+        rcap:c9c6cc320ec,
+        rcap:c9fd4c2c7f1,
+        rcap:ca053db75aa,
+        rcap:cc80fdb595f,
+        rcap:cd3a5049ef6,
+        rcap:cd9f81c7ca1,
+        rcap:cdb5e5b5b01,
+        rcap:cdd87c4f09f,
+        rcap:cf04bc22981 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "All secondary endpoints as specified in the relevant Core Protocol Documents." ;
+    rcap:note "V-current + V-transition; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IG ;
+    rcap:resolvesToCoreVersions "4.1 + 4.0 (additionally)" ;
+    rcap:resolvesToSection "CORE 7.6.2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 9" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.5.2)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c37a3fade76 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-16cccd05ea a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Tropical Antibiotic Domain-Specific Appendix 1" ;
+    rcap:evidenceSection "10.7" ;
+    rcap:evidenceText "The threshold probability for statistical triggers for superiority and inferiority are those specified in the Core Protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_TAB ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.6" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 4" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.7)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:ccbc477aff8 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-1b60fe2d5a a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c08df43abd6,
+        rcap:c3c375c3292,
+        rcap:c590db8e067,
+        rcap:c66579d1944,
+        rcap:c7194d0f95a,
+        rcap:ca7be08f164,
+        rcap:cec9be7e972,
+        rcap:cecffffb51b ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "8.2" ;
+    rcap:evidenceText "Patients are eligible for this domain if they meet all of the platform-level inclusion and none of the platform-level exclusion criteria as specified in Core Protocol Documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_END ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.4.1",
+        "CORE 7.4.2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 6" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.2)" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-1cc2dad1d3 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceSection "10.8" ;
+    rcap:evidenceText "The threshold probability of a statistical trigger for futility will be those specified in the Core Protocol." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_CS ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.6" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 3" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.8)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:cee7d1a66ec ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-1ce2320f12 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "11.2" ;
+    rcap:evidenceText "The occurrence of the following should be screened for and reported as Serious Adverse Events (SAEs) for all participants in this domain, irrespective of intervention allocation: • Barotrauma (i.e., pneumothorax, subcutaneous emphysema, etc.) Other SAEs should be reported only where, in the opinion of the site investigator, the event might reasonably have occurred as a consequence of a study intervention or study participation (see relevant Core Protocol documents)." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MV ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.12.3" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 14" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-2069e30c53 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0103ae2e32,
+        rcap:c050828c00a,
+        rcap:c07829b4907,
+        rcap:c0ac63ad5df,
+        rcap:c13276457d5,
+        rcap:c15ec59dfe1,
+        rcap:c2369d7796b,
+        rcap:c2487d60744,
+        rcap:c34900c49d6,
+        rcap:c39a5310383,
+        rcap:c3d1875c5d8,
+        rcap:c40f4f99eeb,
+        rcap:c4bf9cd2f70,
+        rcap:c6c97a30d25,
+        rcap:c73967ff128,
+        rcap:c759e6b1e5d,
+        rcap:c7e00deda39,
+        rcap:c83d2f160ad,
+        rcap:c8efcf1d144,
+        rcap:ca3cd41bbeb,
+        rcap:cad22b7129d,
+        rcap:caddd53de20,
+        rcap:cb214214243,
+        rcap:cb31eb2bc1f,
+        rcap:cb47d826c76,
+        rcap:cbde5a9f0f5,
+        rcap:cc0ad33a8ee,
+        rcap:ccd60c004da,
+        rcap:cd8acafd0a6,
+        rcap:cd9bbfeda6a,
+        rcap:cde66571e15,
+        rcap:ce0a442373c,
+        rcap:ce246d5a2ae,
+        rcap:cf670d47a1a ;
+    rcap:evidenceDoc "Tropical Antibiotic Domain-Specific Appendix 1" ;
+    rcap:evidenceSection "10.1" ;
+    rcap:evidenceText "In all other respects the stopping rules for this domain are those outlined in the Core Protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_TAB ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.6",
+        "CORE 7.8.7" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 5" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1;changed in 4.1" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-20be0dd444 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "The domain-specific secondary outcome measures will be: From randomization in this domain, during the index hospitalization until the end of study day 15: • Severe thrombocytopenia (defined as platelet count <50 x 109 /L) • Severe neutropenia (defined as neutrophil count <1.0 x 109 /L) • Major bleeding (as defined by the ISTH criteria) • Increase in AST or ALT to 5 x ULN or bilirubin 3 x ULN From randomization in this domain, during the index hospitalization unless otherwise specified, censored 90 days after enrollment: • Confirmed proximal deep venous thrombosis • Confirmed pulmonary embolism • Acute myocardial infarction • Confirmed ischemic cerebrovascular event • Other thrombotic events • Serious adverse events as defined in relevant core protocol documents and this DSA" ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_END ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.12.2" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-26" ;
+    rcap:rule "topic rule 18" ;
+    rcap:ruleSource "nine-DSA run; accepted by Kerstin 2026-10-26 (8.5.2 SAE pointers; MD_DSA 9.2.1)" ;
+    rcap:statement rcap:c27cacd94ff,
+        rcap:c304206ce4e ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-211ead0343 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "9.3" ;
+    rcap:evidenceText "Refer to relevant core protocol documents for criteria for discontinuation of participation in this trial." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_END ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.6" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 11" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 9.3)" ;
+    rcap:statement rcap:c85858c8378 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-247fa0b759 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c1424395077,
+        rcap:c1873c181b7,
+        rcap:c33f3696e91,
+        rcap:c63908c2226,
+        rcap:ce0d5a36d2c ;
+    rcap:evidenceDoc "Tropical Antibiotic Domain-Specific Appendix 1" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "This domain is available to patients who are in the Adult Age Stratum, as defined in Core Protocol documents." ;
+    rcap:note "single version; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_TAB ;
+    rcap:resolvesToCoreVersions "PANDA 1.0" ;
+    rcap:resolvesToSection "PANDA 2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 7" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.1.1)" ;
+    rcap:statement rcap:ced7c375feb ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-24a1368ffa a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "10.7" ;
+    rcap:evidenceText "The threshold probability for statistical triggers for superiority and inferiority are those specified in the Core Protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_AB ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.6" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 4" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.7)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:ccbc477aff8 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-2559530130 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0a964350f0,
+        rcap:c0f40ddaf60,
+        rcap:c19e778dc9d,
+        rcap:c1ae29f53d7,
+        rcap:c21617daed3,
+        rcap:c225b497b1c,
+        rcap:c2bad68295e,
+        rcap:c347c9d7e7f,
+        rcap:c44479053d2,
+        rcap:c45bf8da54f,
+        rcap:c4ea2e1b3d0,
+        rcap:c526f7bee55,
+        rcap:c701544ad16,
+        rcap:c876d85ebab,
+        rcap:c8d1e9454aa,
+        rcap:c9f97c0e55a,
+        rcap:c9fd4c2c7f1,
+        rcap:ca44d73b6be,
+        rcap:cac579e3b99,
+        rcap:cb34d84e7ea,
+        rcap:cbb090195d3,
+        rcap:cbd9f9062ae,
+        rcap:cc4d4bee65c,
+        rcap:cc66e2d09a4,
+        rcap:cc6cadc9e2c,
+        rcap:cceee3b61f1,
+        rcap:ce3b8327b04,
+        rcap:ce697805e1b,
+        rcap:ce70d7458d7,
+        rcap:cedd28ca5fa,
+        rcap:cf408836934,
+        rcap:cf674dd11cd,
+        rcap:cf9f13d39df ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "7" ;
+    rcap:evidenceText "We hypothesize that the primary endpoint specified in relevant Core Protocol documents will differ based on the duration of administration of a macrolide." ;
+    rcap:note "V-current + V-transition; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MD ;
+    rcap:resolvesToCoreVersions "4.1 + 4.0 (additionally)" ;
+    rcap:resolvesToSection "CORE 7.6.1" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 10" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 7 and 8.5.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-2588ad751a a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0103ae2e32,
+        rcap:c050828c00a,
+        rcap:c07829b4907,
+        rcap:c0ac63ad5df,
+        rcap:c13276457d5,
+        rcap:c15ec59dfe1,
+        rcap:c2369d7796b,
+        rcap:c2487d60744,
+        rcap:c34900c49d6,
+        rcap:c39a5310383,
+        rcap:c3d1875c5d8,
+        rcap:c40f4f99eeb,
+        rcap:c4bf9cd2f70,
+        rcap:c6c97a30d25,
+        rcap:c73967ff128,
+        rcap:c759e6b1e5d,
+        rcap:c7e00deda39,
+        rcap:c83d2f160ad,
+        rcap:c8efcf1d144,
+        rcap:ca3cd41bbeb,
+        rcap:cad22b7129d,
+        rcap:caddd53de20,
+        rcap:cb214214243,
+        rcap:cb31eb2bc1f,
+        rcap:cb47d826c76,
+        rcap:cbde5a9f0f5,
+        rcap:cc0ad33a8ee,
+        rcap:ccd60c004da,
+        rcap:cd8acafd0a6,
+        rcap:cd9bbfeda6a,
+        rcap:cde66571e15,
+        rcap:ce0a442373c,
+        rcap:ce246d5a2ae,
+        rcap:cf670d47a1a ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceSection "10.3" ;
+    rcap:evidenceText "If RAR is applied, the cap on the maximum or minimum proportion of patients assigned to an intervention that is specified in core protocol documents may be modified by the Statistical Analysis Committee (SAC) if needed to reduce the likelihood of sites being unblinded or to improve power." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IIM ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.7" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 2" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.3)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:ccdc64e11f3 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-2984ab0f66 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0103ae2e32,
+        rcap:c050828c00a,
+        rcap:c07829b4907,
+        rcap:c0ac63ad5df,
+        rcap:c13276457d5,
+        rcap:c15ec59dfe1,
+        rcap:c2369d7796b,
+        rcap:c2487d60744,
+        rcap:c34900c49d6,
+        rcap:c39a5310383,
+        rcap:c3d1875c5d8,
+        rcap:c40f4f99eeb,
+        rcap:c4bf9cd2f70,
+        rcap:c6c97a30d25,
+        rcap:c73967ff128,
+        rcap:c759e6b1e5d,
+        rcap:c7e00deda39,
+        rcap:c83d2f160ad,
+        rcap:c8efcf1d144,
+        rcap:ca3cd41bbeb,
+        rcap:cad22b7129d,
+        rcap:caddd53de20,
+        rcap:cb214214243,
+        rcap:cb31eb2bc1f,
+        rcap:cb47d826c76,
+        rcap:cbde5a9f0f5,
+        rcap:cc0ad33a8ee,
+        rcap:ccd60c004da,
+        rcap:cd8acafd0a6,
+        rcap:cd9bbfeda6a,
+        rcap:cde66571e15,
+        rcap:ce0a442373c,
+        rcap:ce246d5a2ae,
+        rcap:cf670d47a1a ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "10.1" ;
+    rcap:evidenceText "• Efficacy of high titer plasma compared to no immunoglobulin • Futility of high titer plasma compared to no immunoglobulin In all other respects the stopping rules for this domain are those outlined in the relevant core protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IG ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.6",
+        "CORE 7.8.7" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 5" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1;changed in 4.1" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-2a43c38206 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "10.3.8" ;
+    rcap:evidenceText "This initial phase is conducted as part of an ongoing Platform, as outlined in Core Protocol documents." ;
+    rcap:readingOf rcap:DomainDesign_MV ;
+    rcap:reviewStatus "left unresolved 2026-10-26" ;
+    rcap:ruleSource "unresolved: no topic rule matches" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-2b257dc90a a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceSection "11.1" ;
+    rcap:evidenceText "The DSMB are convened under the guidance provided in the core protocol and the DSMB charter." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_CS ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.11" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 12" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-2fa4a85d56 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0a964350f0,
+        rcap:c0f40ddaf60,
+        rcap:c19e778dc9d,
+        rcap:c1ae29f53d7,
+        rcap:c21617daed3,
+        rcap:c225b497b1c,
+        rcap:c2bad68295e,
+        rcap:c347c9d7e7f,
+        rcap:c44479053d2,
+        rcap:c45bf8da54f,
+        rcap:c4ea2e1b3d0,
+        rcap:c526f7bee55,
+        rcap:c701544ad16,
+        rcap:c876d85ebab,
+        rcap:c8d1e9454aa,
+        rcap:c9f97c0e55a,
+        rcap:c9fd4c2c7f1,
+        rcap:ca44d73b6be,
+        rcap:cac579e3b99,
+        rcap:cb34d84e7ea,
+        rcap:cbb090195d3,
+        rcap:cbd9f9062ae,
+        rcap:cc4d4bee65c,
+        rcap:cc66e2d09a4,
+        rcap:cc6cadc9e2c,
+        rcap:cceee3b61f1,
+        rcap:ce3b8327b04,
+        rcap:ce697805e1b,
+        rcap:ce70d7458d7,
+        rcap:cedd28ca5fa,
+        rcap:cf408836934,
+        rcap:cf674dd11cd,
+        rcap:cf9f13d39df ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.5.1" ;
+    rcap:evidenceText "The primary endpoint for this domain is the primary outcome specified in Core Protocol." ;
+    rcap:note "V-current + V-transition; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MD ;
+    rcap:resolvesToCoreVersions "4.1 + 4.0 (additionally)" ;
+    rcap:resolvesToSection "CORE 7.6.1" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 10" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 7 and 8.5.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c5770ae5285 ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-32771f1dc3 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "It is noted that the definition of shock that is specified in the Core Protocol (presence or absence of inotrope or vasopressor infusion at baseline) determines strata status, and not the definition of septic shock that is used to define administration of hydrocortisone in the shock-dependent duration hydrocortisone intervention." ;
+    rcap:readingOf rcap:DomainDesign_CS ;
+    rcap:reviewStatus "left unresolved 2026-10-25" ;
+    rcap:ruleSource "unresolved: no topic rule matches" ;
+    rcap:statement rcap:cd3604c9617 ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-32e50f47ab a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "10.4" ;
+    rcap:evidenceText "The timing of the revealing of allocation status and administration of interventions is specified to be Randomization with Deferred Reveal to permit confirmation of microbiological diagnosis if results of testing are not known at the time of initial assessment of eligibility (see relevant core protocol documents)." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IG ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.3" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-26" ;
+    rcap:rule "topic rule 16" ;
+    rcap:ruleSource "nine-DSA run; accepted by Kerstin 2026-10-26 (CS/IG/END/IIM 10.4; Core 7.8.3 defines both terms)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c323b860242 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-33be570621 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c07c65fbdc2,
+        rcap:c0a964350f0,
+        rcap:c2350a9a8ac,
+        rcap:c2cc32f1c28,
+        rcap:c36608008f9,
+        rcap:c45bf8da54f,
+        rcap:c4fc623517c,
+        rcap:c6333bb2823,
+        rcap:c9af5ab3b4d,
+        rcap:ca33244a322,
+        rcap:ca3c788e844,
+        rcap:cb34d84e7ea,
+        rcap:cb93e454359,
+        rcap:cc1810a8322,
+        rcap:cdc7ec59d43,
+        rcap:ce1d999722f,
+        rcap:cf38c43f5dc,
+        rcap:cfbfe88c56e ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "These States are defined in Core Protocol documents." ;
+    rcap:note "single version; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_CS ;
+    rcap:resolvesToCoreVersions "PANDA 1.0" ;
+    rcap:resolvesToSection "PANDA 4.3" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 8" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.1.2)" ;
+    rcap:statement rcap:cc26608429f ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-365cc30c9e a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "The domain-specific secondary outcome measures (occurring during the index hospitalization, censored 90 days after enrollment) are: • Administration of rescue therapies • Occurrence of barotrauma • SAE as defined in the core protocol documents and qualified in this DSA" ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MV ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.12.2" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-26" ;
+    rcap:rule "topic rule 18" ;
+    rcap:ruleSource "nine-DSA run; accepted by Kerstin 2026-10-26 (8.5.2 SAE pointers; MD_DSA 9.2.1)" ;
+    rcap:statement rcap:cfc67fd1c19 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-3a728a2e24 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c09cf90d5ee,
+        rcap:c149340e649,
+        rcap:c178de9633a,
+        rcap:c29280fe471,
+        rcap:c3abbbe9446,
+        rcap:c3dc68afb7d,
+        rcap:c3deb0fab93,
+        rcap:c4420ca6ee4,
+        rcap:c44479053d2,
+        rcap:c460eabd0d4,
+        rcap:c53bf0a00bd,
+        rcap:c573bcf8236,
+        rcap:c627ea981bb,
+        rcap:c6cb92153ee,
+        rcap:c6d2d9b72d9,
+        rcap:c711c3155bb,
+        rcap:c7e605d5258,
+        rcap:c93f9ab717f,
+        rcap:c9c6cc320ec,
+        rcap:c9fd4c2c7f1,
+        rcap:ca053db75aa,
+        rcap:cc80fdb595f,
+        rcap:cd3a5049ef6,
+        rcap:cd9f81c7ca1,
+        rcap:cdb5e5b5b01,
+        rcap:cdd87c4f09f,
+        rcap:cf04bc22981 ;
+    rcap:evidenceDoc "Tropical Antibiotic Domain-Specific Appendix 1" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "All secondary endpoints as specified in the Core Protocol." ;
+    rcap:note "V-current + V-transition; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_TAB ;
+    rcap:resolvesToCoreVersions "4.1 + 4.0 (additionally)" ;
+    rcap:resolvesToSection "CORE 7.6.2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 9" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.5.2)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c494ee9cfa6 ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-3c5c8ee962 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "11.2" ;
+    rcap:evidenceText "The occurrence of the following should be screened for and reported as SAEs for all patients in this domain, irrespective of intervention allocation: • Unexpected respiratory depression (including if due to suspected drug interaction between fentanyl and imatinib) • Cardiac arrythmia (particularly torsades de pointes) Other SAEs should be reported only where, in the opinion of the site-investigator, the event might reasonably have occurred as a consequence of a study intervention or study participation (see relevant core protocol documents)." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_END ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.12.3" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 14" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-3c9fe9ac88 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "11.1" ;
+    rcap:evidenceText "The DSMB is convened under the guidance provided in the Core Protocol and DSMB Charter." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IG ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.11" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 12" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-3ef6a8ad34 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c07c65fbdc2,
+        rcap:c0a964350f0,
+        rcap:c2350a9a8ac,
+        rcap:c2cc32f1c28,
+        rcap:c36608008f9,
+        rcap:c45bf8da54f,
+        rcap:c4fc623517c,
+        rcap:c6333bb2823,
+        rcap:c9af5ab3b4d,
+        rcap:ca33244a322,
+        rcap:ca3c788e844,
+        rcap:cb34d84e7ea,
+        rcap:cb93e454359,
+        rcap:cc1810a8322,
+        rcap:cdc7ec59d43,
+        rcap:ce1d999722f,
+        rcap:cf38c43f5dc,
+        rcap:cfbfe88c56e ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "This domain is available for patients who are in the Severe State, as defined in Core Protocol documents." ;
+    rcap:note "single version; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IIM ;
+    rcap:resolvesToCoreVersions "PANDA 1.0" ;
+    rcap:resolvesToSection "PANDA 4.3" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-26" ;
+    rcap:rule "topic rule 15" ;
+    rcap:ruleSource "nine-DSA run; accepted by Kerstin 2026-10-26 (END_DSA and IIM_DSA 8.1.2)" ;
+    rcap:statement rcap:c7fd21cde5f ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-3f2d560ff2 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "11.2" ;
+    rcap:evidenceText "The occurrence of the following should be screened for and reported as SAEs for all participants in this domain, irrespective of intervention allocation: • Cardiac arrhythmia (particularly torsades de pointes) • Gastrointestinal intolerance • Hypersensitivity • Abnormal liver function Other SAEs should be reported only where, in the opinion of the site investigator, the event might reasonably have occurred as a consequence of a study intervention or study participation (see relevant Core Protocol documents)." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MD ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.12.3" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 14" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-3fab2f2b80 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0a964350f0,
+        rcap:c0f40ddaf60,
+        rcap:c19e778dc9d,
+        rcap:c1ae29f53d7,
+        rcap:c21617daed3,
+        rcap:c225b497b1c,
+        rcap:c2bad68295e,
+        rcap:c347c9d7e7f,
+        rcap:c44479053d2,
+        rcap:c45bf8da54f,
+        rcap:c4ea2e1b3d0,
+        rcap:c526f7bee55,
+        rcap:c701544ad16,
+        rcap:c876d85ebab,
+        rcap:c8d1e9454aa,
+        rcap:c9f97c0e55a,
+        rcap:c9fd4c2c7f1,
+        rcap:ca44d73b6be,
+        rcap:cac579e3b99,
+        rcap:cb34d84e7ea,
+        rcap:cbb090195d3,
+        rcap:cbd9f9062ae,
+        rcap:cc4d4bee65c,
+        rcap:cc66e2d09a4,
+        rcap:cc6cadc9e2c,
+        rcap:cceee3b61f1,
+        rcap:ce3b8327b04,
+        rcap:ce697805e1b,
+        rcap:ce70d7458d7,
+        rcap:cedd28ca5fa,
+        rcap:cf408836934,
+        rcap:cf674dd11cd,
+        rcap:cf9f13d39df ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceSection "11.2" ;
+    rcap:evidenceText "These contribute to the Primary Endpoint as described in the Core Protocol." ;
+    rcap:note "V-current + V-transition; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_CS ;
+    rcap:resolvesToCoreVersions "4.1 + 4.0 (additionally)" ;
+    rcap:resolvesToSection "CORE 7.6.1" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 10" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 7 and 8.5.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-3fc0724e2c a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c07c65fbdc2,
+        rcap:c0a964350f0,
+        rcap:c2350a9a8ac,
+        rcap:c2cc32f1c28,
+        rcap:c36608008f9,
+        rcap:c45bf8da54f,
+        rcap:c4fc623517c,
+        rcap:c6333bb2823,
+        rcap:c9af5ab3b4d,
+        rcap:ca33244a322,
+        rcap:ca3c788e844,
+        rcap:cb34d84e7ea,
+        rcap:cb93e454359,
+        rcap:cc1810a8322,
+        rcap:cdc7ec59d43,
+        rcap:ce1d999722f,
+        rcap:cf38c43f5dc,
+        rcap:cfbfe88c56e ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "This domain is available for patients who are in the Severe Illness Severity State, as defined in Core Protocol Documents." ;
+    rcap:note "single version; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MD ;
+    rcap:resolvesToCoreVersions "PANDA 1.0" ;
+    rcap:resolvesToSection "PANDA 4.3" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 8" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.1.2)" ;
+    rcap:statement rcap:c7fd21cde5f ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-3fe7d5ae78 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "current (study website)" ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceSection "2" ;
+    rcap:evidenceText "The current version of the Core Protocol, DSAs, RSAs and the Statistical Analysis Appendix is listed in the Protocol Summary and on the study website." ;
+    rcap:readingOf rcap:DomainDesign_CS ;
+    rcap:reviewStatus "version_scoped: names the current version, no section" ;
+    rcap:ruleSource "version_scoped: names the current version, no section" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-409d6184f8 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c08df43abd6,
+        rcap:c3c375c3292,
+        rcap:c590db8e067,
+        rcap:c66579d1944,
+        rcap:c7194d0f95a,
+        rcap:ca7be08f164,
+        rcap:cec9be7e972,
+        rcap:cecffffb51b ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.2" ;
+    rcap:evidenceText "Patients are eligible for this domain if they meet all of the platform-level inclusion and none of the platform-level exclusion criteria as specified in relevant core protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_AB ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.4.1",
+        "CORE 7.4.2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 6" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.2)" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-414bf082a3 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c1424395077,
+        rcap:c1873c181b7,
+        rcap:c33f3696e91,
+        rcap:c63908c2226,
+        rcap:ce0d5a36d2c ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "This domain is available to patients who are in the Adolescent or Adult Age Strata, as defined in Core Protocol documents." ;
+    rcap:note "single version; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IG ;
+    rcap:resolvesToCoreVersions "PANDA 1.0" ;
+    rcap:resolvesToSection "PANDA 2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 7" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.1.1)" ;
+    rcap:statement rcap:c41ae9d218c ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-4601ab5024 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0103ae2e32,
+        rcap:c050828c00a,
+        rcap:c07829b4907,
+        rcap:c0ac63ad5df,
+        rcap:c13276457d5,
+        rcap:c15ec59dfe1,
+        rcap:c2369d7796b,
+        rcap:c2487d60744,
+        rcap:c34900c49d6,
+        rcap:c39a5310383,
+        rcap:c3d1875c5d8,
+        rcap:c40f4f99eeb,
+        rcap:c4bf9cd2f70,
+        rcap:c6c97a30d25,
+        rcap:c73967ff128,
+        rcap:c759e6b1e5d,
+        rcap:c7e00deda39,
+        rcap:c83d2f160ad,
+        rcap:c8efcf1d144,
+        rcap:ca3cd41bbeb,
+        rcap:cad22b7129d,
+        rcap:caddd53de20,
+        rcap:cb214214243,
+        rcap:cb31eb2bc1f,
+        rcap:cb47d826c76,
+        rcap:cbde5a9f0f5,
+        rcap:cc0ad33a8ee,
+        rcap:ccd60c004da,
+        rcap:cd8acafd0a6,
+        rcap:cd9bbfeda6a,
+        rcap:cde66571e15,
+        rcap:ce0a442373c,
+        rcap:ce246d5a2ae,
+        rcap:cf670d47a1a ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "10.1" ;
+    rcap:evidenceText "In all other respects the stopping rules for this domain are those outlined in the Core Protocol." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IAV ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.6",
+        "CORE 7.8.7" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 5" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1;changed in 4.1" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-4958cac4c2 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0a964350f0,
+        rcap:c0f40ddaf60,
+        rcap:c19e778dc9d,
+        rcap:c1ae29f53d7,
+        rcap:c21617daed3,
+        rcap:c225b497b1c,
+        rcap:c2bad68295e,
+        rcap:c347c9d7e7f,
+        rcap:c44479053d2,
+        rcap:c45bf8da54f,
+        rcap:c4ea2e1b3d0,
+        rcap:c526f7bee55,
+        rcap:c701544ad16,
+        rcap:c876d85ebab,
+        rcap:c8d1e9454aa,
+        rcap:c9f97c0e55a,
+        rcap:c9fd4c2c7f1,
+        rcap:ca44d73b6be,
+        rcap:cac579e3b99,
+        rcap:cb34d84e7ea,
+        rcap:cbb090195d3,
+        rcap:cbd9f9062ae,
+        rcap:cc4d4bee65c,
+        rcap:cc66e2d09a4,
+        rcap:cc6cadc9e2c,
+        rcap:cceee3b61f1,
+        rcap:ce3b8327b04,
+        rcap:ce697805e1b,
+        rcap:ce70d7458d7,
+        rcap:cedd28ca5fa,
+        rcap:cf408836934,
+        rcap:cf674dd11cd,
+        rcap:cf9f13d39df ;
+    rcap:evidenceDoc "Tropical Antibiotic Domain-Specific Appendix 1" ;
+    rcap:evidenceSection "8.5.1" ;
+    rcap:evidenceText "The primary endpoint for this domain is the primary outcome specified in the Core Protocol." ;
+    rcap:note "V-current + V-transition; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_TAB ;
+    rcap:resolvesToCoreVersions "4.1 + 4.0 (additionally)" ;
+    rcap:resolvesToSection "CORE 7.6.1" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 10" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 7 and 8.5.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c5770ae5285 ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-53efce4b12 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "difficile illness based on detection from feces using current standard of care diagnostics used at site • Serious adverse event (SAE) as defined in Core Protocol Table 4: Organisms of interest as baseline or outcome measures Site Organisms of interest Blood, lower respiratory tract (endotracheal suction, bronchoalveolar lavage, sputum), Pleural fluid (e.g." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_AB ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.12.2" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-26" ;
+    rcap:rule "topic rule 18" ;
+    rcap:ruleSource "nine-DSA run; accepted by Kerstin 2026-10-26 (8.5.2 SAE pointers; MD_DSA 9.2.1)" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-54b5e84267 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceSection "12.1" ;
+    rcap:evidenceText "Funding sources for the Platform are specified in Core Protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IIM ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 2.5" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 13" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-5ad6fca86c a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0a964350f0,
+        rcap:c0f40ddaf60,
+        rcap:c19e778dc9d,
+        rcap:c1ae29f53d7,
+        rcap:c21617daed3,
+        rcap:c225b497b1c,
+        rcap:c2bad68295e,
+        rcap:c347c9d7e7f,
+        rcap:c44479053d2,
+        rcap:c45bf8da54f,
+        rcap:c4ea2e1b3d0,
+        rcap:c526f7bee55,
+        rcap:c701544ad16,
+        rcap:c876d85ebab,
+        rcap:c8d1e9454aa,
+        rcap:c9f97c0e55a,
+        rcap:c9fd4c2c7f1,
+        rcap:ca44d73b6be,
+        rcap:cac579e3b99,
+        rcap:cb34d84e7ea,
+        rcap:cbb090195d3,
+        rcap:cbd9f9062ae,
+        rcap:cc4d4bee65c,
+        rcap:cc66e2d09a4,
+        rcap:cc6cadc9e2c,
+        rcap:cceee3b61f1,
+        rcap:ce3b8327b04,
+        rcap:ce697805e1b,
+        rcap:ce70d7458d7,
+        rcap:cedd28ca5fa,
+        rcap:cf408836934,
+        rcap:cf674dd11cd,
+        rcap:cf9f13d39df ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceSection "7" ;
+    rcap:evidenceText "We hypothesize that the probability of the occurrence of the primary endpoint specified in the relevant Core Protocol documents will differ based on allocation to influenza immune modulation therapy." ;
+    rcap:note "V-current + V-transition; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IIM ;
+    rcap:resolvesToCoreVersions "4.1 + 4.0 (additionally)" ;
+    rcap:resolvesToSection "CORE 7.6.1" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 10" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 7 and 8.5.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-5f0cb8c607 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0103ae2e32,
+        rcap:c050828c00a,
+        rcap:c07829b4907,
+        rcap:c0ac63ad5df,
+        rcap:c13276457d5,
+        rcap:c15ec59dfe1,
+        rcap:c2369d7796b,
+        rcap:c2487d60744,
+        rcap:c34900c49d6,
+        rcap:c39a5310383,
+        rcap:c3d1875c5d8,
+        rcap:c40f4f99eeb,
+        rcap:c4bf9cd2f70,
+        rcap:c6c97a30d25,
+        rcap:c73967ff128,
+        rcap:c759e6b1e5d,
+        rcap:c7e00deda39,
+        rcap:c83d2f160ad,
+        rcap:c8efcf1d144,
+        rcap:ca3cd41bbeb,
+        rcap:cad22b7129d,
+        rcap:caddd53de20,
+        rcap:cb214214243,
+        rcap:cb31eb2bc1f,
+        rcap:cb47d826c76,
+        rcap:cbde5a9f0f5,
+        rcap:cc0ad33a8ee,
+        rcap:ccd60c004da,
+        rcap:cd8acafd0a6,
+        rcap:cd9bbfeda6a,
+        rcap:cde66571e15,
+        rcap:ce0a442373c,
+        rcap:ce246d5a2ae,
+        rcap:cf670d47a1a ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "10.1" ;
+    rcap:evidenceText "In all other respects the stopping rules for this domain are those outlined in the Core Protocol." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MD ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.6",
+        "CORE 7.8.7" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 5" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1;changed in 4.1" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-5f89d58b30 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c07c65fbdc2,
+        rcap:c0a964350f0,
+        rcap:c2350a9a8ac,
+        rcap:c2cc32f1c28,
+        rcap:c36608008f9,
+        rcap:c45bf8da54f,
+        rcap:c4fc623517c,
+        rcap:c6333bb2823,
+        rcap:c9af5ab3b4d,
+        rcap:ca33244a322,
+        rcap:ca3c788e844,
+        rcap:cb34d84e7ea,
+        rcap:cb93e454359,
+        rcap:cc1810a8322,
+        rcap:cdc7ec59d43,
+        rcap:ce1d999722f,
+        rcap:cf38c43f5dc,
+        rcap:cfbfe88c56e ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "This domain is available for patients who are in the Severe State, as defined in Core Protocol documents." ;
+    rcap:note "single version; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_END ;
+    rcap:resolvesToCoreVersions "PANDA 1.0" ;
+    rcap:resolvesToSection "PANDA 4.3" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-26" ;
+    rcap:rule "topic rule 15" ;
+    rcap:ruleSource "nine-DSA run; accepted by Kerstin 2026-10-26 (END_DSA and IIM_DSA 8.1.2)" ;
+    rcap:statement rcap:c7fd21cde5f ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-63ef8d86d2 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0103ae2e32,
+        rcap:c050828c00a,
+        rcap:c07829b4907,
+        rcap:c0ac63ad5df,
+        rcap:c13276457d5,
+        rcap:c15ec59dfe1,
+        rcap:c2369d7796b,
+        rcap:c2487d60744,
+        rcap:c34900c49d6,
+        rcap:c39a5310383,
+        rcap:c3d1875c5d8,
+        rcap:c40f4f99eeb,
+        rcap:c4bf9cd2f70,
+        rcap:c6c97a30d25,
+        rcap:c73967ff128,
+        rcap:c759e6b1e5d,
+        rcap:c7e00deda39,
+        rcap:c83d2f160ad,
+        rcap:c8efcf1d144,
+        rcap:ca3cd41bbeb,
+        rcap:cad22b7129d,
+        rcap:caddd53de20,
+        rcap:cb214214243,
+        rcap:cb31eb2bc1f,
+        rcap:cb47d826c76,
+        rcap:cbde5a9f0f5,
+        rcap:cc0ad33a8ee,
+        rcap:ccd60c004da,
+        rcap:cd8acafd0a6,
+        rcap:cd9bbfeda6a,
+        rcap:cde66571e15,
+        rcap:ce0a442373c,
+        rcap:ce246d5a2ae,
+        rcap:cf670d47a1a ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "10.3" ;
+    rcap:evidenceText "If RAR is applied, the cap on the maximum or minimum proportion of patients assigned to an intervention that is specified in core protocol documents may be modified by the Statistical Analysis Committee (SAC) if needed to reduce the likelihood of sites being unblinded or to improve power." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IAV ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.7" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 2" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.3)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:ccdc64e11f3 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-6524fc2c1a a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c08df43abd6,
+        rcap:c3c375c3292,
+        rcap:c590db8e067,
+        rcap:c66579d1944,
+        rcap:c7194d0f95a,
+        rcap:ca7be08f164,
+        rcap:cec9be7e972,
+        rcap:cecffffb51b ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.2" ;
+    rcap:evidenceText "Patients are eligible for this domain if they meet all of the platform-level inclusion and none of the platform-level exclusion criteria as specified in Core Protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IG ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.4.1",
+        "CORE 7.4.2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 6" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.2)" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-66fd378ba0 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "2" ;
+    rcap:evidenceText "The Core Protocol does not contain detailed information about the statistical analysis or simulations, because the analytic model will also change over time in accordance with the domain and intervention trial adaptations but this information is contained in the Statistical Analysis Appendix." ;
+    rcap:readingOf rcap:DomainDesign_IAV ;
+    rcap:reviewStatus "out of scope (SAA not in scope)" ;
+    rcap:ruleSource "out of scope (SAA not in scope)" ;
+    rcap:targetPhrase "Statistical Analysis Appendix" .
+
+rcap:reading-684fe0f4f5 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c09cf90d5ee,
+        rcap:c149340e649,
+        rcap:c178de9633a,
+        rcap:c29280fe471,
+        rcap:c3abbbe9446,
+        rcap:c3dc68afb7d,
+        rcap:c3deb0fab93,
+        rcap:c4420ca6ee4,
+        rcap:c44479053d2,
+        rcap:c460eabd0d4,
+        rcap:c53bf0a00bd,
+        rcap:c573bcf8236,
+        rcap:c627ea981bb,
+        rcap:c6cb92153ee,
+        rcap:c6d2d9b72d9,
+        rcap:c711c3155bb,
+        rcap:c7e605d5258,
+        rcap:c93f9ab717f,
+        rcap:c9c6cc320ec,
+        rcap:c9fd4c2c7f1,
+        rcap:ca053db75aa,
+        rcap:cc80fdb595f,
+        rcap:cd3a5049ef6,
+        rcap:cd9f81c7ca1,
+        rcap:cdb5e5b5b01,
+        rcap:cdd87c4f09f,
+        rcap:cf04bc22981 ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "All secondary endpoints as specified in the Core Protocol." ;
+    rcap:note "V-current + V-transition; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_CS ;
+    rcap:resolvesToCoreVersions "4.1 + 4.0 (additionally)" ;
+    rcap:resolvesToSection "CORE 7.6.2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 9" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.5.2)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c494ee9cfa6 ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-68b341c3d8 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "The domain-specific secondary outcome measures (occurring during the index hospitalization, censored at 90 days after enrollment) will be: • All-cause mortality at 28 days censored at hospital discharge • Confirmed deep venous thrombosis • Confirmed pulmonary embolism • Confirmed ischemic stroke • Confirmed acute myocardial infarction • Other confirmed thrombotic events • Serious Adverse Events (SAE) as defined in Core Protocol documents and qualified in this DSA" ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IG ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.12.2" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-26" ;
+    rcap:rule "topic rule 18" ;
+    rcap:ruleSource "nine-DSA run; accepted by Kerstin 2026-10-26 (8.5.2 SAE pointers; MD_DSA 9.2.1)" ;
+    rcap:statement rcap:cfc67fd1c19 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-6917a273fa a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Tropical Antibiotic Domain-Specific Appendix 1" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "difficile illness based on detection from feces using current standard of care diagnostics used at site • Serious adverse event (SAE) as defined in Core Protocol Table 8: Organisms of interest as baseline or outcome measures Site Organisms of interest Blood, lower respiratory tract (endotracheal suction, bronchoalveolar lavage, sputum), Pleural fluid (e.g., pleural aspirate, chest drain) Staphylococcus aureus Streptococcus pyogenes, or S." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_TAB ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.12.2" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-26" ;
+    rcap:rule "topic rule 18" ;
+    rcap:ruleSource "nine-DSA run; accepted by Kerstin 2026-10-26 (8.5.2 SAE pointers; MD_DSA 9.2.1)" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-6a1028c94b a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c07c65fbdc2,
+        rcap:c0a964350f0,
+        rcap:c2350a9a8ac,
+        rcap:c2cc32f1c28,
+        rcap:c36608008f9,
+        rcap:c45bf8da54f,
+        rcap:c4fc623517c,
+        rcap:c6333bb2823,
+        rcap:c9af5ab3b4d,
+        rcap:ca33244a322,
+        rcap:ca3c788e844,
+        rcap:cb34d84e7ea,
+        rcap:cb93e454359,
+        rcap:cc1810a8322,
+        rcap:cdc7ec59d43,
+        rcap:ce1d999722f,
+        rcap:cf38c43f5dc,
+        rcap:cfbfe88c56e ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "This domain is available to patients who are in the Severe Illness Severity State, as defined in Core Protocol documents." ;
+    rcap:note "single version; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_AB ;
+    rcap:resolvesToCoreVersions "PANDA 1.0" ;
+    rcap:resolvesToSection "PANDA 4.3" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 8" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.1.2)" ;
+    rcap:statement rcap:c7fd21cde5f ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-6a5954f997 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "9.2" ;
+    rcap:evidenceText "Refer to relevant core protocol documents for criteria for discontinuation of participation in the trial." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IG ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.6" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 11" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 9.3)" ;
+    rcap:statement rcap:c85858c8378 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-6a9009bbb6 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0a964350f0,
+        rcap:c0f40ddaf60,
+        rcap:c19e778dc9d,
+        rcap:c1ae29f53d7,
+        rcap:c21617daed3,
+        rcap:c225b497b1c,
+        rcap:c2bad68295e,
+        rcap:c347c9d7e7f,
+        rcap:c44479053d2,
+        rcap:c45bf8da54f,
+        rcap:c4ea2e1b3d0,
+        rcap:c526f7bee55,
+        rcap:c701544ad16,
+        rcap:c876d85ebab,
+        rcap:c8d1e9454aa,
+        rcap:c9f97c0e55a,
+        rcap:c9fd4c2c7f1,
+        rcap:ca44d73b6be,
+        rcap:cac579e3b99,
+        rcap:cb34d84e7ea,
+        rcap:cbb090195d3,
+        rcap:cbd9f9062ae,
+        rcap:cc4d4bee65c,
+        rcap:cc66e2d09a4,
+        rcap:cc6cadc9e2c,
+        rcap:cceee3b61f1,
+        rcap:ce3b8327b04,
+        rcap:ce697805e1b,
+        rcap:ce70d7458d7,
+        rcap:cedd28ca5fa,
+        rcap:cf408836934,
+        rcap:cf674dd11cd,
+        rcap:cf9f13d39df ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceSection "7" ;
+    rcap:evidenceText "We hypothesize that the probability of the occurrence of the primary endpoint specified in the Core Protocol documents will differ based on the allocated corticosteroid strategy." ;
+    rcap:note "V-current + V-transition; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_CS ;
+    rcap:resolvesToCoreVersions "4.1 + 4.0 (additionally)" ;
+    rcap:resolvesToSection "CORE 7.6.1" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 10" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 7 and 8.5.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-6b0278d81e a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c1424395077,
+        rcap:c1873c181b7,
+        rcap:c33f3696e91,
+        rcap:c63908c2226,
+        rcap:ce0d5a36d2c ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "This domain is available to patients who are in the Adult Age Stratum, as defined in Core Protocol documents." ;
+    rcap:note "single version; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_AB ;
+    rcap:resolvesToCoreVersions "PANDA 1.0" ;
+    rcap:resolvesToSection "PANDA 2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 7" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.1.1)" ;
+    rcap:statement rcap:ced7c375feb ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-6c82eac10b a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "10.8" ;
+    rcap:evidenceText "The default threshold probability of a statistical trigger for futility is as specified in the core protocol." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IAV ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.6" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 3" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.8)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c59ffd75f17 ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-6e47af21d1 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0a964350f0,
+        rcap:c0f40ddaf60,
+        rcap:c19e778dc9d,
+        rcap:c1ae29f53d7,
+        rcap:c21617daed3,
+        rcap:c225b497b1c,
+        rcap:c2bad68295e,
+        rcap:c347c9d7e7f,
+        rcap:c44479053d2,
+        rcap:c45bf8da54f,
+        rcap:c4ea2e1b3d0,
+        rcap:c526f7bee55,
+        rcap:c701544ad16,
+        rcap:c876d85ebab,
+        rcap:c8d1e9454aa,
+        rcap:c9f97c0e55a,
+        rcap:c9fd4c2c7f1,
+        rcap:ca44d73b6be,
+        rcap:cac579e3b99,
+        rcap:cb34d84e7ea,
+        rcap:cbb090195d3,
+        rcap:cbd9f9062ae,
+        rcap:cc4d4bee65c,
+        rcap:cc66e2d09a4,
+        rcap:cc6cadc9e2c,
+        rcap:cceee3b61f1,
+        rcap:ce3b8327b04,
+        rcap:ce697805e1b,
+        rcap:ce70d7458d7,
+        rcap:cedd28ca5fa,
+        rcap:cf408836934,
+        rcap:cf674dd11cd,
+        rcap:cf9f13d39df ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "7" ;
+    rcap:evidenceText "We hypothesize that the probability of the occurrence of the primary endpoint specified in the relevant core protocol documents will differ based on allocation to Endothelial Modulation Domain therapy." ;
+    rcap:note "V-current + V-transition; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_END ;
+    rcap:resolvesToCoreVersions "4.1 + 4.0 (additionally)" ;
+    rcap:resolvesToSection "CORE 7.6.1" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 10" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 7 and 8.5.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-6f45894bbf a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c1424395077,
+        rcap:c1873c181b7,
+        rcap:c33f3696e91,
+        rcap:c63908c2226,
+        rcap:ce0d5a36d2c ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "This domain is available to patients who are in the Adult Age Stratum, as defined in Core Protocol documents." ;
+    rcap:note "single version; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MV ;
+    rcap:resolvesToCoreVersions "PANDA 1.0" ;
+    rcap:resolvesToSection "PANDA 2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 7" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.1.1)" ;
+    rcap:statement rcap:ced7c375feb ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-71594042f4 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceSection "11.2" ;
+    rcap:evidenceText "Other SAEs should be reported only where, in the opinion of the site investigator, the event might reasonably have occurred as a consequence of a study intervention or study participation (see relevant Core Protocol documents)." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_CS ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.12.3" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 14" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-73a3b7e978 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "9.3" ;
+    rcap:evidenceText "Refer to Core Protocol documents for criteria for discontinuation of participation in this trial." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_AB ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.6" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 11" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 9.3)" ;
+    rcap:statement rcap:c85858c8378 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-751042d5ec a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c09cf90d5ee,
+        rcap:c149340e649,
+        rcap:c178de9633a,
+        rcap:c29280fe471,
+        rcap:c3abbbe9446,
+        rcap:c3dc68afb7d,
+        rcap:c3deb0fab93,
+        rcap:c4420ca6ee4,
+        rcap:c44479053d2,
+        rcap:c460eabd0d4,
+        rcap:c53bf0a00bd,
+        rcap:c573bcf8236,
+        rcap:c627ea981bb,
+        rcap:c6cb92153ee,
+        rcap:c6d2d9b72d9,
+        rcap:c711c3155bb,
+        rcap:c7e605d5258,
+        rcap:c93f9ab717f,
+        rcap:c9c6cc320ec,
+        rcap:c9fd4c2c7f1,
+        rcap:ca053db75aa,
+        rcap:cc80fdb595f,
+        rcap:cd3a5049ef6,
+        rcap:cd9f81c7ca1,
+        rcap:cdb5e5b5b01,
+        rcap:cdd87c4f09f,
+        rcap:cf04bc22981 ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "All secondary endpoints as specified in the Core Protocol The domain-specific secondary outcome measures (from randomization, during the index hospitalization, censored 90 days after enrollment) will be: • Positive blood culture for pathogenic bacteria and/or fungus during this hospitalization and more than 48 hours following randomization • Pulmonary aspergillosis, during this hopsitalization and more than 48 hours following randomization, defined as culture of Aspergillus species from tracheal aspirate or bronchoalveolar lavage or invasive pulmonary aspergillosis diagnosed and treated with one or more systemic antifungal agent • Serious adverse event (SAE) as defined in Core Protocol An additional endpoint, that will be reported as it becomes available and only from sites where linked data is available, is occurrence of major adverse cardiovascular events." ;
+    rcap:note "V-current + V-transition; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IIM ;
+    rcap:resolvesToCoreVersions "4.1 + 4.0 (additionally)" ;
+    rcap:resolvesToSection "CORE 7.6.2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 9" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.5.2)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c81b67d784e,
+        rcap:ce075d8b7cc ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-7708231d6d a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c09cf90d5ee,
+        rcap:c149340e649,
+        rcap:c178de9633a,
+        rcap:c29280fe471,
+        rcap:c3abbbe9446,
+        rcap:c3dc68afb7d,
+        rcap:c3deb0fab93,
+        rcap:c4420ca6ee4,
+        rcap:c44479053d2,
+        rcap:c460eabd0d4,
+        rcap:c53bf0a00bd,
+        rcap:c573bcf8236,
+        rcap:c627ea981bb,
+        rcap:c6cb92153ee,
+        rcap:c6d2d9b72d9,
+        rcap:c711c3155bb,
+        rcap:c7e605d5258,
+        rcap:c93f9ab717f,
+        rcap:c9c6cc320ec,
+        rcap:c9fd4c2c7f1,
+        rcap:ca053db75aa,
+        rcap:cc80fdb595f,
+        rcap:cd3a5049ef6,
+        rcap:cd9f81c7ca1,
+        rcap:cdb5e5b5b01,
+        rcap:cdd87c4f09f,
+        rcap:cf04bc22981 ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "All secondary endpoints as specified in the Core Protocol." ;
+    rcap:note "V-current + V-transition; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MV ;
+    rcap:resolvesToCoreVersions "4.1 + 4.0 (additionally)" ;
+    rcap:resolvesToSection "CORE 7.6.2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 9" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.5.2)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c494ee9cfa6 ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-7872be16cd a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "current (study website)" ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "2" ;
+    rcap:evidenceText "The current version of the Core Protocol, DSAs, RSAs and the Statistical Analysis Appendix is listed in the Protocol Summary and on the study website." ;
+    rcap:readingOf rcap:DomainDesign_MD ;
+    rcap:reviewStatus "version_scoped: names the current version, no section" ;
+    rcap:ruleSource "version_scoped: names the current version, no section" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-7a8e8d6394 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceSection "12.1" ;
+    rcap:evidenceText "Funding sources for the Platform are specified in the Core Protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_CS ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 2.5" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 13" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-7af3841503 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceSection "10.8" ;
+    rcap:evidenceText "The threshold probability of a statistical trigger for futility will be those specified in the Core Protocol." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IIM ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.6" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 3" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.8)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:cee7d1a66ec ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-83d8b9957b a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceSection "2" ;
+    rcap:evidenceText "The Core Protocol does not contain detailed information about the statistical analysis or simulations, because the analysis model will change overtime in accordance with the domain and intervention trial adaptations but this information is contained in the Statistical Analysis Appendix." ;
+    rcap:readingOf rcap:DomainDesign_CS ;
+    rcap:reviewStatus "out of scope (SAA not in scope)" ;
+    rcap:ruleSource "out of scope (SAA not in scope)" ;
+    rcap:targetPhrase "Statistical Analysis Appendix" .
+
+rcap:reading-85e6361651 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c09cf90d5ee,
+        rcap:c178de9633a,
+        rcap:c29280fe471,
+        rcap:c3abbbe9446,
+        rcap:c3dc68afb7d,
+        rcap:c3deb0fab93,
+        rcap:c460eabd0d4,
+        rcap:c53bf0a00bd,
+        rcap:c573bcf8236,
+        rcap:c627ea981bb,
+        rcap:c6d2d9b72d9,
+        rcap:c711c3155bb,
+        rcap:c93f9ab717f,
+        rcap:ca053db75aa,
+        rcap:cc80fdb595f,
+        rcap:cd3a5049ef6,
+        rcap:cd9f81c7ca1,
+        rcap:cdb5e5b5b01,
+        rcap:cdd87c4f09f,
+        rcap:cf04bc22981 ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "All secondary endpoints as specified in the Core Protocol." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IAV ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.6.2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 9" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.5.2)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c494ee9cfa6 ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-86a876badd a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "The domain-specific secondary outcome measures (occurring during the index hospitalization, censored at 90 days after enrollment) will be: • serious adverse events (SAE) as defined in the Core Protocol There are no additional domain-specific secondary outcome measures." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_CS ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.12.2" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-26" ;
+    rcap:rule "topic rule 18" ;
+    rcap:ruleSource "nine-DSA run; accepted by Kerstin 2026-10-26 (8.5.2 SAE pointers; MD_DSA 9.2.1)" ;
+    rcap:statement rcap:c2ff63e56e1,
+        rcap:cfc67fd1c19 ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-8939bd560e a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "12.1" ;
+    rcap:evidenceText "Funding sources for the Platform are specified in relevant Core Protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MV ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 2.5" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 13" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-8947cdf0de a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c08df43abd6,
+        rcap:c3c375c3292,
+        rcap:c590db8e067,
+        rcap:c66579d1944,
+        rcap:c7194d0f95a,
+        rcap:ca7be08f164,
+        rcap:cec9be7e972,
+        rcap:cecffffb51b ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceSection "8.2" ;
+    rcap:evidenceText "Patients are eligible for this domain if they meet all of the platform-level inclusion and none of the platform-level exclusion criteria as specified In relevant Core Protocol Documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IIM ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.4.1",
+        "CORE 7.4.2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 6" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.2)" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-8a39ba6340 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceSection "9.3" ;
+    rcap:evidenceText "Refer to relevant Core Protocol documents for criteria for discontinuation of participation in this trial." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IIM ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.6" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 11" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 9.3)" ;
+    rcap:statement rcap:c85858c8378 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-8a8254a4cd a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c07c65fbdc2,
+        rcap:c0a964350f0,
+        rcap:c2350a9a8ac,
+        rcap:c2cc32f1c28,
+        rcap:c36608008f9,
+        rcap:c45bf8da54f,
+        rcap:c4fc623517c,
+        rcap:c6333bb2823,
+        rcap:c9af5ab3b4d,
+        rcap:ca33244a322,
+        rcap:ca3c788e844,
+        rcap:cb34d84e7ea,
+        rcap:cb93e454359,
+        rcap:cc1810a8322,
+        rcap:cdc7ec59d43,
+        rcap:ce1d999722f,
+        rcap:cf38c43f5dc,
+        rcap:cfbfe88c56e ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "This domain is available for patients who are in the Severe Illness Severity State, as defined in Core Protocol Documents." ;
+    rcap:note "single version; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MV ;
+    rcap:resolvesToCoreVersions "PANDA 1.0" ;
+    rcap:resolvesToSection "PANDA 4.3" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 8" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.1.2)" ;
+    rcap:statement rcap:c7fd21cde5f ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-8aed831c3f a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c08df43abd6,
+        rcap:c3c375c3292,
+        rcap:c590db8e067,
+        rcap:c66579d1944,
+        rcap:c7194d0f95a,
+        rcap:ca7be08f164,
+        rcap:cec9be7e972,
+        rcap:cecffffb51b ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "8.2" ;
+    rcap:evidenceText "Patients are eligible for this domain if they meet all of the platform-level inclusion and none of the platform-level exclusion criteria as specified in relevant Core Protocol Documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MV ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.4.1",
+        "CORE 7.4.2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 6" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.2)" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-8d20277ded a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "10.1" ;
+    rcap:evidenceText "As specified in the Core protocol, futility thresholds will always be achieved before harm thresholds in the setting of regular adaptive analyses." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IAV ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.6" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 3" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.8)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-8eddcfe4b0 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "11.1" ;
+    rcap:evidenceText "The DSMB is convened under the guidance provided in the Core Protocol and DSMB Charter." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_END ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.11" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 12" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-929d3983ed a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0103ae2e32,
+        rcap:c050828c00a,
+        rcap:c07829b4907,
+        rcap:c0ac63ad5df,
+        rcap:c13276457d5,
+        rcap:c15ec59dfe1,
+        rcap:c2369d7796b,
+        rcap:c2487d60744,
+        rcap:c34900c49d6,
+        rcap:c39a5310383,
+        rcap:c3d1875c5d8,
+        rcap:c40f4f99eeb,
+        rcap:c4bf9cd2f70,
+        rcap:c6c97a30d25,
+        rcap:c73967ff128,
+        rcap:c759e6b1e5d,
+        rcap:c7e00deda39,
+        rcap:c83d2f160ad,
+        rcap:c8efcf1d144,
+        rcap:ca3cd41bbeb,
+        rcap:cad22b7129d,
+        rcap:caddd53de20,
+        rcap:cb214214243,
+        rcap:cb31eb2bc1f,
+        rcap:cb47d826c76,
+        rcap:cbde5a9f0f5,
+        rcap:cc0ad33a8ee,
+        rcap:ccd60c004da,
+        rcap:cd8acafd0a6,
+        rcap:cd9bbfeda6a,
+        rcap:cde66571e15,
+        rcap:ce0a442373c,
+        rcap:ce246d5a2ae,
+        rcap:cf670d47a1a ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceSection "10.1" ;
+    rcap:evidenceText "In all other respects the stopping rules for this domain are those outlined in the relevant Core Protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_CS ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.6",
+        "CORE 7.8.7" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 5" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1;changed in 4.1" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-934dddf919 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "11.1" ;
+    rcap:evidenceText "The DSMB is convened under the guidance provided in the Core Protocol and DSMB Charter." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MD ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.11" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 12" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-9c48fdface a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "12.1" ;
+    rcap:evidenceText "Funding sources for the Platform are specified in the Core Protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MD ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 2.5" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 13" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-9e351fe291 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceSection "10.4" ;
+    rcap:evidenceText "The timing of the revealing of allocation status and administration of interventions is specified to be Randomization with Immediate Reveal and Initiation or Randomization with Deferred Reveal and Initiation if prospective agreement to participate is required for this domain (see relevant Core Protocol documents) or if the results of microbiological testing for influenza or SARS-CoV-2 or both are unavailable at the time of eligibility." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IIM ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.3" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-26" ;
+    rcap:rule "topic rule 16" ;
+    rcap:ruleSource "nine-DSA run; accepted by Kerstin 2026-10-26 (CS/IG/END/IIM 10.4; Core 7.8.3 defines both terms)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c97191d8ecd ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-9e70e379e3 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "9.3" ;
+    rcap:evidenceText "Refer to relevant Core Protocol documents for criteria for discontinuation of participation in this trial." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IAV ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.6" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 11" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 9.3)" ;
+    rcap:statement rcap:c85858c8378 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-a1966d0f93 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c1424395077,
+        rcap:c1873c181b7,
+        rcap:c33f3696e91,
+        rcap:c63908c2226,
+        rcap:ce0d5a36d2c ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "This domain is available to patients in the Pediatric, Adolescent, or Adult Age Stratum, as defined in Core Protocol documents." ;
+    rcap:note "single version; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IIM ;
+    rcap:resolvesToCoreVersions "PANDA 1.0" ;
+    rcap:resolvesToSection "PANDA 2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 7" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.1.1)" ;
+    rcap:statement rcap:c404c1328e4 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-a3aa4ca294 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "The statistical model will not permit borrowing between Severity States but will borrow between Age Strata, as specified in the Core Protocol." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IAV ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.3" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 1" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.2)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c65709c1927 ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-a477ec65a4 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c07c65fbdc2,
+        rcap:c0a964350f0,
+        rcap:c2350a9a8ac,
+        rcap:c2cc32f1c28,
+        rcap:c36608008f9,
+        rcap:c45bf8da54f,
+        rcap:c4fc623517c,
+        rcap:c6333bb2823,
+        rcap:c9af5ab3b4d,
+        rcap:ca33244a322,
+        rcap:ca3c788e844,
+        rcap:cb34d84e7ea,
+        rcap:cb93e454359,
+        rcap:cc1810a8322,
+        rcap:cdc7ec59d43,
+        rcap:ce1d999722f,
+        rcap:cf38c43f5dc,
+        rcap:cfbfe88c56e ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "These States are defined in Core Protocol documents." ;
+    rcap:note "single version; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IAV ;
+    rcap:resolvesToCoreVersions "PANDA 1.0" ;
+    rcap:resolvesToSection "PANDA 4.3" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 8" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.1.2)" ;
+    rcap:statement rcap:cc26608429f ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-a6138c907a a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceSection "10.7" ;
+    rcap:evidenceText "The threshold probability for statistical triggers for superiority, efficacy, and inferiority, are those specified in the relevant Core Protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_CS ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.6" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 4" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.7)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c49cafec9f1 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-a8751c217b a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceSection "2" ;
+    rcap:evidenceText "The Core Protocol does not contain detailed information about the statistical analysis or simulations, because the analytic model will also change over time in accordance with the domain and intervention trial adaptations but this information is contained in the Statistical Analysis Appendix and an operational document referred to as the Current State." ;
+    rcap:readingOf rcap:DomainDesign_IIM ;
+    rcap:reviewStatus "out of scope (SAA not in scope)" ;
+    rcap:ruleSource "out of scope (SAA not in scope)" ;
+    rcap:targetPhrase "Statistical Analysis Appendix" .
+
+rcap:reading-aac423624e a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0103ae2e32,
+        rcap:c050828c00a,
+        rcap:c07829b4907,
+        rcap:c0ac63ad5df,
+        rcap:c13276457d5,
+        rcap:c15ec59dfe1,
+        rcap:c2369d7796b,
+        rcap:c2487d60744,
+        rcap:c34900c49d6,
+        rcap:c39a5310383,
+        rcap:c3d1875c5d8,
+        rcap:c40f4f99eeb,
+        rcap:c4bf9cd2f70,
+        rcap:c6c97a30d25,
+        rcap:c73967ff128,
+        rcap:c759e6b1e5d,
+        rcap:c7e00deda39,
+        rcap:c83d2f160ad,
+        rcap:c8efcf1d144,
+        rcap:ca3cd41bbeb,
+        rcap:cad22b7129d,
+        rcap:caddd53de20,
+        rcap:cb214214243,
+        rcap:cb31eb2bc1f,
+        rcap:cb47d826c76,
+        rcap:cbde5a9f0f5,
+        rcap:cc0ad33a8ee,
+        rcap:ccd60c004da,
+        rcap:cd8acafd0a6,
+        rcap:cd9bbfeda6a,
+        rcap:cde66571e15,
+        rcap:ce0a442373c,
+        rcap:ce246d5a2ae,
+        rcap:cf670d47a1a ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "10.3.1" ;
+    rcap:evidenceText "The use of Statistical Triggers and Platform Conclusions will be as specified in the core protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MV ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.6",
+        "CORE 7.8.7" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-26" ;
+    rcap:rule "topic rule 17" ;
+    rcap:ruleSource "nine-DSA run; accepted by Kerstin 2026-10-26 (MV_DSA 10.3.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1;changed in 4.1" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-afce503baf a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c09cf90d5ee,
+        rcap:c149340e649,
+        rcap:c178de9633a,
+        rcap:c29280fe471,
+        rcap:c3abbbe9446,
+        rcap:c3dc68afb7d,
+        rcap:c3deb0fab93,
+        rcap:c4420ca6ee4,
+        rcap:c44479053d2,
+        rcap:c460eabd0d4,
+        rcap:c53bf0a00bd,
+        rcap:c573bcf8236,
+        rcap:c627ea981bb,
+        rcap:c6cb92153ee,
+        rcap:c6d2d9b72d9,
+        rcap:c711c3155bb,
+        rcap:c7e605d5258,
+        rcap:c93f9ab717f,
+        rcap:c9c6cc320ec,
+        rcap:c9fd4c2c7f1,
+        rcap:ca053db75aa,
+        rcap:cc80fdb595f,
+        rcap:cd3a5049ef6,
+        rcap:cd9f81c7ca1,
+        rcap:cdb5e5b5b01,
+        rcap:cdd87c4f09f,
+        rcap:cf04bc22981 ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "All secondary endpoints as specified in the Core Protocol." ;
+    rcap:note "V-current + V-transition; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MD ;
+    rcap:resolvesToCoreVersions "4.1 + 4.0 (additionally)" ;
+    rcap:resolvesToSection "CORE 7.6.2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 9" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.5.2)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c494ee9cfa6 ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-b0219b3def a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c1424395077,
+        rcap:c1873c181b7,
+        rcap:c33f3696e91,
+        rcap:c63908c2226,
+        rcap:ce0d5a36d2c ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "This domain is available to patients who are in the Pediatric, Adolescent or Adult Age Strata, as defined in Core Protocol Documents." ;
+    rcap:note "single version; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IAV ;
+    rcap:resolvesToCoreVersions "PANDA 1.0" ;
+    rcap:resolvesToSection "PANDA 2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 7" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.1.1)" ;
+    rcap:statement rcap:c404c1328e4 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-b36fc9a559 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "current (study website)" ;
+    rcap:evidenceDoc "Tropical Antibiotic Domain-Specific Appendix 1" ;
+    rcap:evidenceSection "2" ;
+    rcap:evidenceText "The current version of the Core Protocol, DSAs, RSAs and the Statistical Analysis Appendix is listed on the study website." ;
+    rcap:readingOf rcap:DomainDesign_TAB ;
+    rcap:reviewStatus "version_scoped: names the current version, no section" ;
+    rcap:ruleSource "version_scoped: names the current version, no section" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-b41bee24cb a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "11.1" ;
+    rcap:evidenceText "The DSMB is convened under the guidance provided in the Core Protocol and DSMB Charter." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_AB ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.11" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 12" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-b583f197e6 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Tropical Antibiotic Domain-Specific Appendix 1" ;
+    rcap:evidenceSection "11.2" ;
+    rcap:evidenceText "Other SAEs should be reported only where, in the opinion of the site-investigator, the event might reasonably have occurred as a consequence of a study intervention or study participation (see relevant Core Protocol documents)." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_TAB ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.12.3" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 14" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-b5ee0ac6c5 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "2" ;
+    rcap:evidenceText "The Core Protocol does not contain detailed information about the statistical analysis or simulations, because the analytic model will also change over time in accordance with the domain and intervention trial adaptations but this information is contained in the Statistical Analysis Appendix and an operational document referred to as the Current State." ;
+    rcap:readingOf rcap:DomainDesign_END ;
+    rcap:reviewStatus "out of scope (SAA not in scope)" ;
+    rcap:ruleSource "out of scope (SAA not in scope)" ;
+    rcap:targetPhrase "Statistical Analysis Appendix" .
+
+rcap:reading-b61e9003f6 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "11.2" ;
+    rcap:evidenceText "Other SAEs should be reported only where, in the opinion of the site-investigator, the event might reasonably have occurred as a consequence of a study intervention or study participation (see relevant Core Protocol documents)." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_AB ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.12.3" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 14" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-b9877a42d8 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "10.7" ;
+    rcap:evidenceText "The threshold probability for statistical triggers forefficacy are those specified in the relevant Core Protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_END ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.6" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 4" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.7)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c08f5b718bc ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-bcee961be7 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "current (study website)" ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "2" ;
+    rcap:evidenceText "The current version of the Core Protocol documents, DSAs, RSAs, and the Statistical Analysis Appendix is listed in the Protocol Summary and on the study website." ;
+    rcap:readingOf rcap:DomainDesign_IG ;
+    rcap:reviewStatus "version_scoped: names the current version, no section" ;
+    rcap:ruleSource "version_scoped: names the current version, no section" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-bd2e0a4809 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0a964350f0,
+        rcap:c0f40ddaf60,
+        rcap:c19e778dc9d,
+        rcap:c1ae29f53d7,
+        rcap:c21617daed3,
+        rcap:c225b497b1c,
+        rcap:c2bad68295e,
+        rcap:c347c9d7e7f,
+        rcap:c44479053d2,
+        rcap:c45bf8da54f,
+        rcap:c4ea2e1b3d0,
+        rcap:c526f7bee55,
+        rcap:c701544ad16,
+        rcap:c876d85ebab,
+        rcap:c8d1e9454aa,
+        rcap:c9f97c0e55a,
+        rcap:c9fd4c2c7f1,
+        rcap:ca44d73b6be,
+        rcap:cac579e3b99,
+        rcap:cb34d84e7ea,
+        rcap:cbb090195d3,
+        rcap:cbd9f9062ae,
+        rcap:cc4d4bee65c,
+        rcap:cc66e2d09a4,
+        rcap:cc6cadc9e2c,
+        rcap:cceee3b61f1,
+        rcap:ce3b8327b04,
+        rcap:ce697805e1b,
+        rcap:ce70d7458d7,
+        rcap:cedd28ca5fa,
+        rcap:cf408836934,
+        rcap:cf674dd11cd,
+        rcap:cf9f13d39df ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceSection "8.5.1" ;
+    rcap:evidenceText "The primary endpoint for this domain is the primary outcome as specified in Core Protocol documents." ;
+    rcap:note "V-current + V-transition; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_CS ;
+    rcap:resolvesToCoreVersions "4.1 + 4.0 (additionally)" ;
+    rcap:resolvesToSection "CORE 7.6.1" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 10" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 7 and 8.5.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c70fcba7483 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-bebf99a533 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0a964350f0,
+        rcap:c19e778dc9d,
+        rcap:c1ae29f53d7,
+        rcap:c225b497b1c,
+        rcap:c347c9d7e7f,
+        rcap:c44479053d2,
+        rcap:c45bf8da54f,
+        rcap:c526f7bee55,
+        rcap:c9fd4c2c7f1,
+        rcap:ca44d73b6be,
+        rcap:cac579e3b99,
+        rcap:cb34d84e7ea,
+        rcap:cbd9f9062ae,
+        rcap:cc4d4bee65c,
+        rcap:cc6cadc9e2c,
+        rcap:ce697805e1b,
+        rcap:cedd28ca5fa,
+        rcap:cf674dd11cd ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.5.1" ;
+    rcap:evidenceText "The primary endpoint for this domain is the primary outcome as specified in the Core Protocol." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IAV ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.6.1" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 10" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 7 and 8.5.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c5770ae5285 ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-becc8a9b5a a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0a964350f0,
+        rcap:c0f40ddaf60,
+        rcap:c19e778dc9d,
+        rcap:c1ae29f53d7,
+        rcap:c21617daed3,
+        rcap:c225b497b1c,
+        rcap:c2bad68295e,
+        rcap:c347c9d7e7f,
+        rcap:c44479053d2,
+        rcap:c45bf8da54f,
+        rcap:c4ea2e1b3d0,
+        rcap:c526f7bee55,
+        rcap:c701544ad16,
+        rcap:c876d85ebab,
+        rcap:c8d1e9454aa,
+        rcap:c9f97c0e55a,
+        rcap:c9fd4c2c7f1,
+        rcap:ca44d73b6be,
+        rcap:cac579e3b99,
+        rcap:cb34d84e7ea,
+        rcap:cbb090195d3,
+        rcap:cbd9f9062ae,
+        rcap:cc4d4bee65c,
+        rcap:cc66e2d09a4,
+        rcap:cc6cadc9e2c,
+        rcap:cceee3b61f1,
+        rcap:ce3b8327b04,
+        rcap:ce697805e1b,
+        rcap:ce70d7458d7,
+        rcap:cedd28ca5fa,
+        rcap:cf408836934,
+        rcap:cf674dd11cd,
+        rcap:cf9f13d39df ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "10.1" ;
+    rcap:evidenceText "The Primary Endpoint for this model is as defined in Core Protocol documents." ;
+    rcap:note "V-current + V-transition; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IG ;
+    rcap:resolvesToCoreVersions "4.1 + 4.0 (additionally)" ;
+    rcap:resolvesToSection "CORE 7.6.1" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 10" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 7 and 8.5.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-c121c7fc83 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "10.7" ;
+    rcap:evidenceText "The threshold probability for statistical triggers for efficacy, superiority, and inferiority are those specified in the relevant core protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IAV ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.6" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 4" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.7)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c49cafec9f1 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-c6f075df3b a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "9.3" ;
+    rcap:evidenceText "Refer to Core Protocol documents for criteria for the discontinuation of participation in this trial." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MD ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.6" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 11" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 9.3)" ;
+    rcap:statement rcap:c85858c8378 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-c6f5882bff a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "12.1" ;
+    rcap:evidenceText "Funding sources for this Platform are specified in the Core Protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IG ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 2.5" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 13" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-c8716188ce a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "current (study website)" ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "2" ;
+    rcap:evidenceText "The current version of the Core Protocol, DSAs, RSAs and the Statistical Analysis Appendix is listed on the study website." ;
+    rcap:readingOf rcap:DomainDesign_AB ;
+    rcap:reviewStatus "version_scoped: names the current version, no section" ;
+    rcap:ruleSource "version_scoped: names the current version, no section" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-cb62bad923 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "10.7" ;
+    rcap:evidenceText "The threshold probability for statistical triggers for superiority, inferiority, and futility are those specified in the Core Protocol." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MD ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.6" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 4" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.7)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c194af0dab6 ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-d26076b957 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "The statistical model will permit borrowing between all strata as specified in Core Protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_CS ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.3" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 1" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.2)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c048bddcbd7 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-d2bf6239fd a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0103ae2e32,
+        rcap:c050828c00a,
+        rcap:c07829b4907,
+        rcap:c0ac63ad5df,
+        rcap:c13276457d5,
+        rcap:c15ec59dfe1,
+        rcap:c2369d7796b,
+        rcap:c2487d60744,
+        rcap:c34900c49d6,
+        rcap:c39a5310383,
+        rcap:c3d1875c5d8,
+        rcap:c40f4f99eeb,
+        rcap:c4bf9cd2f70,
+        rcap:c6c97a30d25,
+        rcap:c73967ff128,
+        rcap:c759e6b1e5d,
+        rcap:c7e00deda39,
+        rcap:c83d2f160ad,
+        rcap:c8efcf1d144,
+        rcap:ca3cd41bbeb,
+        rcap:cad22b7129d,
+        rcap:caddd53de20,
+        rcap:cb214214243,
+        rcap:cb31eb2bc1f,
+        rcap:cb47d826c76,
+        rcap:cbde5a9f0f5,
+        rcap:cc0ad33a8ee,
+        rcap:ccd60c004da,
+        rcap:cd8acafd0a6,
+        rcap:cd9bbfeda6a,
+        rcap:cde66571e15,
+        rcap:ce0a442373c,
+        rcap:ce246d5a2ae,
+        rcap:cf670d47a1a ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "10.1" ;
+    rcap:evidenceText "The following Platform Conclusions are possible in this domain: • Efficacy of one or more active endothelial modulator intervention(s) compared with ‘no endothelial modulator’ intervention • Futility of one or more active endothelial modulator intervention(s) compared with ‘no endothelial modulator’ intervention In all other respects the stopping rules for this domain are those outlined in the relevant core protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_END ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.6",
+        "CORE 7.8.7" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 5" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1;changed in 4.1" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-d458595201 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0a964350f0,
+        rcap:c0f40ddaf60,
+        rcap:c19e778dc9d,
+        rcap:c1ae29f53d7,
+        rcap:c21617daed3,
+        rcap:c225b497b1c,
+        rcap:c2bad68295e,
+        rcap:c347c9d7e7f,
+        rcap:c44479053d2,
+        rcap:c45bf8da54f,
+        rcap:c4ea2e1b3d0,
+        rcap:c526f7bee55,
+        rcap:c701544ad16,
+        rcap:c876d85ebab,
+        rcap:c8d1e9454aa,
+        rcap:c9f97c0e55a,
+        rcap:c9fd4c2c7f1,
+        rcap:ca44d73b6be,
+        rcap:cac579e3b99,
+        rcap:cb34d84e7ea,
+        rcap:cbb090195d3,
+        rcap:cbd9f9062ae,
+        rcap:cc4d4bee65c,
+        rcap:cc66e2d09a4,
+        rcap:cc6cadc9e2c,
+        rcap:cceee3b61f1,
+        rcap:ce3b8327b04,
+        rcap:ce697805e1b,
+        rcap:ce70d7458d7,
+        rcap:cedd28ca5fa,
+        rcap:cf408836934,
+        rcap:cf674dd11cd,
+        rcap:cf9f13d39df ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "8.5.1" ;
+    rcap:evidenceText "The primary endpoint for this domain is the primary outcome specified in the Core Protocol." ;
+    rcap:note "V-current + V-transition; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_END ;
+    rcap:resolvesToCoreVersions "4.1 + 4.0 (additionally)" ;
+    rcap:resolvesToSection "CORE 7.6.1" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 10" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 7 and 8.5.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c5770ae5285 ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-d50bad79b2 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceSection "9.3" ;
+    rcap:evidenceText "Refer to relevant core protocol documents for criteria for the discontinuation of participation in this trial." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_CS ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.6" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 11" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 9.3)" ;
+    rcap:statement rcap:c85858c8378 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-d57f77a13a a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceSection "10.4" ;
+    rcap:evidenceText "The timing of the revealing of allocation status and administration of interventions is specified to be Randomization with Immediate Reveal and Initiation or Randomization with Deferred Reveal and Initiation if prospective agreement to participate is required for this domain (see relevant Core Protocol documents)." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_CS ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.3" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-26" ;
+    rcap:rule "topic rule 16" ;
+    rcap:ruleSource "nine-DSA run; accepted by Kerstin 2026-10-26 (CS/IG/END/IIM 10.4; Core 7.8.3 defines both terms)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:ca8c5ba6b39 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-d585097e60 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c08df43abd6,
+        rcap:c3c375c3292,
+        rcap:c590db8e067,
+        rcap:c66579d1944,
+        rcap:c7194d0f95a,
+        rcap:ca7be08f164,
+        rcap:cec9be7e972,
+        rcap:cecffffb51b ;
+    rcap:evidenceDoc "Tropical Antibiotic Domain-Specific Appendix 1" ;
+    rcap:evidenceSection "8.2" ;
+    rcap:evidenceText "Patients are eligible for this domain if they meet all of the platform-level inclusion and none of the platform-level exclusion criteria as specified in relevant core protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_TAB ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.4.1",
+        "CORE 7.4.2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 6" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.2)" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-d76eb14ef0 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c09cf90d5ee,
+        rcap:c149340e649,
+        rcap:c178de9633a,
+        rcap:c29280fe471,
+        rcap:c3abbbe9446,
+        rcap:c3dc68afb7d,
+        rcap:c3deb0fab93,
+        rcap:c4420ca6ee4,
+        rcap:c44479053d2,
+        rcap:c460eabd0d4,
+        rcap:c53bf0a00bd,
+        rcap:c573bcf8236,
+        rcap:c627ea981bb,
+        rcap:c6cb92153ee,
+        rcap:c6d2d9b72d9,
+        rcap:c711c3155bb,
+        rcap:c7e605d5258,
+        rcap:c93f9ab717f,
+        rcap:c9c6cc320ec,
+        rcap:c9fd4c2c7f1,
+        rcap:ca053db75aa,
+        rcap:cc80fdb595f,
+        rcap:cd3a5049ef6,
+        rcap:cd9f81c7ca1,
+        rcap:cdb5e5b5b01,
+        rcap:cdd87c4f09f,
+        rcap:cf04bc22981 ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "All secondary endpoints as specified in Core Protocol documents." ;
+    rcap:note "V-current + V-transition; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_END ;
+    rcap:resolvesToCoreVersions "4.1 + 4.0 (additionally)" ;
+    rcap:resolvesToSection "CORE 7.6.2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 9" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.5.2)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c37a3fade76 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-d770e74967 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "12.1" ;
+    rcap:evidenceText "Funding sources for the Platform are specified in Core Protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IAV ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 2.5" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 13" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-d7829e63c9 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Tropical Antibiotic Domain-Specific Appendix 1" ;
+    rcap:evidenceSection "11.1" ;
+    rcap:evidenceText "The DSMB is convened under the guidance provided in the Core Protocol and DSMB Charter." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_TAB ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.11" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 12" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-d8503ec42e a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "current (study website)" ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "2" ;
+    rcap:evidenceText "The current version of the Core Protocol, DSAs, RSAs and the Statistical Analysis Appendix is listed in the Protocol Summary and on the study website." ;
+    rcap:readingOf rcap:DomainDesign_IAV ;
+    rcap:reviewStatus "version_scoped: names the current version, no section" ;
+    rcap:ruleSource "version_scoped: names the current version, no section" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-dd067af0ba a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0a964350f0,
+        rcap:c0f40ddaf60,
+        rcap:c19e778dc9d,
+        rcap:c1ae29f53d7,
+        rcap:c21617daed3,
+        rcap:c225b497b1c,
+        rcap:c2bad68295e,
+        rcap:c347c9d7e7f,
+        rcap:c44479053d2,
+        rcap:c45bf8da54f,
+        rcap:c4ea2e1b3d0,
+        rcap:c526f7bee55,
+        rcap:c701544ad16,
+        rcap:c876d85ebab,
+        rcap:c8d1e9454aa,
+        rcap:c9f97c0e55a,
+        rcap:c9fd4c2c7f1,
+        rcap:ca44d73b6be,
+        rcap:cac579e3b99,
+        rcap:cb34d84e7ea,
+        rcap:cbb090195d3,
+        rcap:cbd9f9062ae,
+        rcap:cc4d4bee65c,
+        rcap:cc66e2d09a4,
+        rcap:cc6cadc9e2c,
+        rcap:cceee3b61f1,
+        rcap:ce3b8327b04,
+        rcap:ce697805e1b,
+        rcap:ce70d7458d7,
+        rcap:cedd28ca5fa,
+        rcap:cf408836934,
+        rcap:cf674dd11cd,
+        rcap:cf9f13d39df ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceSection "8.5.1" ;
+    rcap:evidenceText "The primary endpoint for this domain is the primary outcome specified in the Core Protocol." ;
+    rcap:note "V-current + V-transition; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IIM ;
+    rcap:resolvesToCoreVersions "4.1 + 4.0 (additionally)" ;
+    rcap:resolvesToSection "CORE 7.6.1" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 10" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 7 and 8.5.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c5770ae5285 ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-dd0d3fcad6 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Tropical Antibiotic Domain-Specific Appendix 1" ;
+    rcap:evidenceSection "12.1" ;
+    rcap:evidenceText "Funding sources for the Platform are specified in the Core Protocol domain." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_TAB ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 2.5" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 13" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-df7a880a8c a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c08df43abd6,
+        rcap:c3c375c3292,
+        rcap:c590db8e067,
+        rcap:c66579d1944,
+        rcap:c7194d0f95a,
+        rcap:ca7be08f164,
+        rcap:cec9be7e972,
+        rcap:cecffffb51b ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.2" ;
+    rcap:evidenceText "Patients are eligible for this domain if they meet all of the platform-level inclusion and none of the platform-level exclusion criteria as specified in relevant Core Protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IAV ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.4.1",
+        "CORE 7.4.2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 6" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.2)" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-e0661186a4 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c07c65fbdc2,
+        rcap:c0a964350f0,
+        rcap:c2350a9a8ac,
+        rcap:c2cc32f1c28,
+        rcap:c36608008f9,
+        rcap:c45bf8da54f,
+        rcap:c4fc623517c,
+        rcap:c6333bb2823,
+        rcap:c9af5ab3b4d,
+        rcap:ca33244a322,
+        rcap:ca3c788e844,
+        rcap:cb34d84e7ea,
+        rcap:cb93e454359,
+        rcap:cc1810a8322,
+        rcap:cdc7ec59d43,
+        rcap:ce1d999722f,
+        rcap:cf38c43f5dc,
+        rcap:cfbfe88c56e ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "These States are defined in Core Protocol documents." ;
+    rcap:note "single version; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IG ;
+    rcap:resolvesToCoreVersions "PANDA 1.0" ;
+    rcap:resolvesToSection "PANDA 4.3" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 8" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.1.2)" ;
+    rcap:statement rcap:cc26608429f ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-e139b8ee4b a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c08df43abd6,
+        rcap:c3c375c3292,
+        rcap:c590db8e067,
+        rcap:c66579d1944,
+        rcap:c7194d0f95a,
+        rcap:ca7be08f164,
+        rcap:cec9be7e972,
+        rcap:cecffffb51b ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.2" ;
+    rcap:evidenceText "Participants are included in the platform if they have all the platform-level inclusions and none of the platform-level exclusion criteria as specified in relevant Core Protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MD ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.4.1",
+        "CORE 7.4.2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 6" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.2)" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-e42f5ef4d6 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceSection "10.7" ;
+    rcap:evidenceText "The threshold probability for statistical triggers for superiority, effectiveness, and inferiority are those specified in the relevant Core Protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IIM ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.6" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 4" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.7)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:cf76cd04abc ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-e4d9016f95 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "11.1" ;
+    rcap:evidenceText "The DSMB are convened under the guidance provided in the core protocol and the DSMB charter." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IAV ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.11" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 12" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-e5a5aaa5ee a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "The domain-specific secondary outcome measures (occurring during the index hospitalization, censored at 90 days after enrollment) will be: • Serious ventricular arrhythmia (including ventricular fibrillation) or sudden unexpected death in hospital • Serious Adverse Events (SAE) as defined in Core Protocol" ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MD ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.12.2" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-26" ;
+    rcap:rule "topic rule 18" ;
+    rcap:ruleSource "nine-DSA run; accepted by Kerstin 2026-10-26 (8.5.2 SAE pointers; MD_DSA 9.2.1)" ;
+    rcap:statement rcap:cfc67fd1c19 ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-e5bec98deb a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "11.2" ;
+    rcap:evidenceText "Other SAEs should be reported only where, in the opinion of the site investigator, the event might reasonably have occurred as a consequence of a study intervention or study participation (see relevant core protocol documents)." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IG ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.12.3" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 14" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-e60c9dc440 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0103ae2e32,
+        rcap:c050828c00a,
+        rcap:c07829b4907,
+        rcap:c0ac63ad5df,
+        rcap:c13276457d5,
+        rcap:c15ec59dfe1,
+        rcap:c2369d7796b,
+        rcap:c2487d60744,
+        rcap:c34900c49d6,
+        rcap:c39a5310383,
+        rcap:c3d1875c5d8,
+        rcap:c40f4f99eeb,
+        rcap:c4bf9cd2f70,
+        rcap:c6c97a30d25,
+        rcap:c73967ff128,
+        rcap:c759e6b1e5d,
+        rcap:c7e00deda39,
+        rcap:c83d2f160ad,
+        rcap:c8efcf1d144,
+        rcap:ca3cd41bbeb,
+        rcap:cad22b7129d,
+        rcap:caddd53de20,
+        rcap:cb214214243,
+        rcap:cb31eb2bc1f,
+        rcap:cb47d826c76,
+        rcap:cbde5a9f0f5,
+        rcap:cc0ad33a8ee,
+        rcap:ccd60c004da,
+        rcap:cd8acafd0a6,
+        rcap:cd9bbfeda6a,
+        rcap:cde66571e15,
+        rcap:ce0a442373c,
+        rcap:ce246d5a2ae,
+        rcap:cf670d47a1a ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceSection "10.1" ;
+    rcap:evidenceText "In all other respects the stopping rules for this domain are those outlined in the relevant Core Protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IIM ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.6",
+        "CORE 7.8.7" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 5" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1;changed in 4.1" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-e777ce4b1e a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0103ae2e32,
+        rcap:c050828c00a,
+        rcap:c07829b4907,
+        rcap:c0ac63ad5df,
+        rcap:c13276457d5,
+        rcap:c15ec59dfe1,
+        rcap:c2369d7796b,
+        rcap:c2487d60744,
+        rcap:c34900c49d6,
+        rcap:c39a5310383,
+        rcap:c3d1875c5d8,
+        rcap:c40f4f99eeb,
+        rcap:c4bf9cd2f70,
+        rcap:c6c97a30d25,
+        rcap:c73967ff128,
+        rcap:c759e6b1e5d,
+        rcap:c7e00deda39,
+        rcap:c83d2f160ad,
+        rcap:c8efcf1d144,
+        rcap:ca3cd41bbeb,
+        rcap:cad22b7129d,
+        rcap:caddd53de20,
+        rcap:cb214214243,
+        rcap:cb31eb2bc1f,
+        rcap:cb47d826c76,
+        rcap:cbde5a9f0f5,
+        rcap:cc0ad33a8ee,
+        rcap:ccd60c004da,
+        rcap:cd8acafd0a6,
+        rcap:cd9bbfeda6a,
+        rcap:cde66571e15,
+        rcap:ce0a442373c,
+        rcap:ce246d5a2ae,
+        rcap:cf670d47a1a ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceSection "10.3" ;
+    rcap:evidenceText "If RAR is applied, the cap on the maximum or minimum proportion of patients assigned to an intervention that is specified in core protocol documents may be modified by the Statistical Analysis Committee (SAC) if needed to reduce the likelihood of sites being unblinded or to improve power." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_CS ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.7" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 2" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.3)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:ccdc64e11f3 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-e83a423a86 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "10.4" ;
+    rcap:evidenceText "The timing of the revealing of allocation status and administration of interventions is specified to be Randomization with Immediate Reveal and Initiation or Randomization with Deferred Reveal and Initiation (see relevant Core Protocol documents)." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_END ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.3" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-26" ;
+    rcap:rule "topic rule 16" ;
+    rcap:ruleSource "nine-DSA run; accepted by Kerstin 2026-10-26 (CS/IG/END/IIM 10.4; Core 7.8.3 defines both terms)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c7c5d9e9c31 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-e9261bda59 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Macrolide Duration Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "9.2.1" ;
+    rcap:evidenceText "• SAE as defined in Core Protocol" ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MD ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.12.2" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-26" ;
+    rcap:rule "topic rule 18" ;
+    rcap:ruleSource "nine-DSA run; accepted by Kerstin 2026-10-26 (8.5.2 SAE pointers; MD_DSA 9.2.1)" ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-e9ccc841b9 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c09cf90d5ee,
+        rcap:c149340e649,
+        rcap:c178de9633a,
+        rcap:c29280fe471,
+        rcap:c3abbbe9446,
+        rcap:c3dc68afb7d,
+        rcap:c3deb0fab93,
+        rcap:c4420ca6ee4,
+        rcap:c44479053d2,
+        rcap:c460eabd0d4,
+        rcap:c53bf0a00bd,
+        rcap:c573bcf8236,
+        rcap:c627ea981bb,
+        rcap:c6cb92153ee,
+        rcap:c6d2d9b72d9,
+        rcap:c711c3155bb,
+        rcap:c7e605d5258,
+        rcap:c93f9ab717f,
+        rcap:c9c6cc320ec,
+        rcap:c9fd4c2c7f1,
+        rcap:ca053db75aa,
+        rcap:cc80fdb595f,
+        rcap:cd3a5049ef6,
+        rcap:cd9f81c7ca1,
+        rcap:cdb5e5b5b01,
+        rcap:cdd87c4f09f,
+        rcap:cf04bc22981 ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "All secondary endpoints as specified in the Core Protocol." ;
+    rcap:note "V-current + V-transition; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_AB ;
+    rcap:resolvesToCoreVersions "4.1 + 4.0 (additionally)" ;
+    rcap:resolvesToSection "CORE 7.6.2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 9" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.5.2)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c494ee9cfa6 ;
+    rcap:targetPhrase "document: Core Protocol" .
+
+rcap:reading-ea27f64e52 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Influenza Immune Modulation Domain-Specific Appendix 2.1" ;
+    rcap:evidenceSection "11.2" ;
+    rcap:evidenceText "The occurrence of the following should be screened for and reported as SAEs for all patients in this domain, irrespective of intervention allocation: • Severe thrombocytopenia, out of keeping with clinical disease • Severe neutropenia, out of keeping with clinical disease • Increase in LFTs to 5x upper limit of normal • Gastrointestinal perforation Other SAEs should be reported only where, in the opinion of the site-investigator, the event might reasonably have occurred as a consequence of a study intervention or study participation (see relevant Core Protocol documents)." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IIM ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.12.3" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 14" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-eb6bd8b513 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "9.2" ;
+    rcap:evidenceText "Refer to relevant Core Protocol documents for criteria for discontinuation of participation in this trial." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MV ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.6" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 11" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 9.3)" ;
+    rcap:statement rcap:c85858c8378 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-edd300316b a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0103ae2e32,
+        rcap:c050828c00a,
+        rcap:c07829b4907,
+        rcap:c0ac63ad5df,
+        rcap:c13276457d5,
+        rcap:c15ec59dfe1,
+        rcap:c2369d7796b,
+        rcap:c2487d60744,
+        rcap:c34900c49d6,
+        rcap:c39a5310383,
+        rcap:c3d1875c5d8,
+        rcap:c40f4f99eeb,
+        rcap:c4bf9cd2f70,
+        rcap:c6c97a30d25,
+        rcap:c73967ff128,
+        rcap:c759e6b1e5d,
+        rcap:c7e00deda39,
+        rcap:c83d2f160ad,
+        rcap:c8efcf1d144,
+        rcap:ca3cd41bbeb,
+        rcap:cad22b7129d,
+        rcap:caddd53de20,
+        rcap:cb214214243,
+        rcap:cb31eb2bc1f,
+        rcap:cb47d826c76,
+        rcap:cbde5a9f0f5,
+        rcap:cc0ad33a8ee,
+        rcap:ccd60c004da,
+        rcap:cd8acafd0a6,
+        rcap:cd9bbfeda6a,
+        rcap:cde66571e15,
+        rcap:ce0a442373c,
+        rcap:ce246d5a2ae,
+        rcap:cf670d47a1a ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "10.3" ;
+    rcap:evidenceText "If RAR is applied, the cap on the maximum or minimum proportion of patients assigned to an intervention that is specified in core protocol documents may be modified by the Statistical Analysis Committee (SAC) if needed to reduce the likelihood of sites being unblinded or to improve power." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_END ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.7" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 2" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.3)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:ccdc64e11f3 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-eed4b30891 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0a964350f0,
+        rcap:c0f40ddaf60,
+        rcap:c19e778dc9d,
+        rcap:c1ae29f53d7,
+        rcap:c21617daed3,
+        rcap:c225b497b1c,
+        rcap:c2bad68295e,
+        rcap:c347c9d7e7f,
+        rcap:c44479053d2,
+        rcap:c45bf8da54f,
+        rcap:c4ea2e1b3d0,
+        rcap:c526f7bee55,
+        rcap:c701544ad16,
+        rcap:c876d85ebab,
+        rcap:c8d1e9454aa,
+        rcap:c9f97c0e55a,
+        rcap:c9fd4c2c7f1,
+        rcap:ca44d73b6be,
+        rcap:cac579e3b99,
+        rcap:cb34d84e7ea,
+        rcap:cbb090195d3,
+        rcap:cbd9f9062ae,
+        rcap:cc4d4bee65c,
+        rcap:cc66e2d09a4,
+        rcap:cc6cadc9e2c,
+        rcap:cceee3b61f1,
+        rcap:ce3b8327b04,
+        rcap:ce697805e1b,
+        rcap:ce70d7458d7,
+        rcap:cedd28ca5fa,
+        rcap:cf408836934,
+        rcap:cf674dd11cd,
+        rcap:cf9f13d39df ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "8.5.1" ;
+    rcap:evidenceText "The primary endpoint for this domain is the primary outcome specified in the relevant Core Protocol documents." ;
+    rcap:note "V-current + V-transition; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IG ;
+    rcap:resolvesToCoreVersions "4.1 + 4.0 (additionally)" ;
+    rcap:resolvesToSection "CORE 7.6.1" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 10" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 7 and 8.5.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c70fcba7483 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-f039ece87f a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c1424395077,
+        rcap:c1873c181b7,
+        rcap:c33f3696e91,
+        rcap:c63908c2226,
+        rcap:ce0d5a36d2c ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "This domain is available to patients in the Pediatric, Adolescent, or Adult Age Strata, as defined in Core Protocol documents." ;
+    rcap:note "single version; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_CS ;
+    rcap:resolvesToCoreVersions "PANDA 1.0" ;
+    rcap:resolvesToSection "PANDA 2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 7" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.1.1)" ;
+    rcap:statement rcap:c404c1328e4 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-f28656ddf1 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0a964350f0,
+        rcap:c0f40ddaf60,
+        rcap:c19e778dc9d,
+        rcap:c1ae29f53d7,
+        rcap:c21617daed3,
+        rcap:c225b497b1c,
+        rcap:c2bad68295e,
+        rcap:c347c9d7e7f,
+        rcap:c44479053d2,
+        rcap:c45bf8da54f,
+        rcap:c4ea2e1b3d0,
+        rcap:c526f7bee55,
+        rcap:c701544ad16,
+        rcap:c876d85ebab,
+        rcap:c8d1e9454aa,
+        rcap:c9f97c0e55a,
+        rcap:c9fd4c2c7f1,
+        rcap:ca44d73b6be,
+        rcap:cac579e3b99,
+        rcap:cb34d84e7ea,
+        rcap:cbb090195d3,
+        rcap:cbd9f9062ae,
+        rcap:cc4d4bee65c,
+        rcap:cc66e2d09a4,
+        rcap:cc6cadc9e2c,
+        rcap:cceee3b61f1,
+        rcap:ce3b8327b04,
+        rcap:ce697805e1b,
+        rcap:ce70d7458d7,
+        rcap:cedd28ca5fa,
+        rcap:cf408836934,
+        rcap:cf674dd11cd,
+        rcap:cf9f13d39df ;
+    rcap:evidenceDoc "Mechanical Ventilation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "8.5.1" ;
+    rcap:evidenceText "The primary endpoint for this domain is as specified in Core Protocol documents." ;
+    rcap:note "V-current + V-transition; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_MV ;
+    rcap:resolvesToCoreVersions "4.1 + 4.0 (additionally)" ;
+    rcap:resolvesToSection "CORE 7.6.1" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 10" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 7 and 8.5.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1" ;
+    rcap:statement rcap:c70fcba7483 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-f711c5515a a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Endothelial Modulation Domain-Specific Appendix 2" ;
+    rcap:evidenceSection "10.8" ;
+    rcap:evidenceText "The same odds ratio delta as specified in the relevant Core Protocol documents for equivalence will be used for futility." ;
+    rcap:readingOf rcap:DomainDesign_END ;
+    rcap:reviewStatus "left unresolved 2026-10-26" ;
+    rcap:ruleSource "unresolved: no topic rule matches" ;
+    rcap:statement rcap:c7a203272b8 ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-fa103ddd5e a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c0103ae2e32,
+        rcap:c050828c00a,
+        rcap:c07829b4907,
+        rcap:c0ac63ad5df,
+        rcap:c13276457d5,
+        rcap:c15ec59dfe1,
+        rcap:c2369d7796b,
+        rcap:c2487d60744,
+        rcap:c34900c49d6,
+        rcap:c39a5310383,
+        rcap:c3d1875c5d8,
+        rcap:c40f4f99eeb,
+        rcap:c4bf9cd2f70,
+        rcap:c6c97a30d25,
+        rcap:c73967ff128,
+        rcap:c759e6b1e5d,
+        rcap:c7e00deda39,
+        rcap:c83d2f160ad,
+        rcap:c8efcf1d144,
+        rcap:ca3cd41bbeb,
+        rcap:cad22b7129d,
+        rcap:caddd53de20,
+        rcap:cb214214243,
+        rcap:cb31eb2bc1f,
+        rcap:cb47d826c76,
+        rcap:cbde5a9f0f5,
+        rcap:cc0ad33a8ee,
+        rcap:ccd60c004da,
+        rcap:cd8acafd0a6,
+        rcap:cd9bbfeda6a,
+        rcap:cde66571e15,
+        rcap:ce0a442373c,
+        rcap:ce246d5a2ae,
+        rcap:cf670d47a1a ;
+    rcap:evidenceDoc "Antibiotic Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "10.1" ;
+    rcap:evidenceText "In all other respects the stopping rules for this domain are those outlined in the Core Protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_AB ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.8.6",
+        "CORE 7.8.7" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 5" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 10.1)" ;
+    rcap:sectionChangedIn41 "changed in 4.1;changed in 4.1" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-fa40039a59 a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:dependsOn rcap:c08df43abd6,
+        rcap:c3c375c3292,
+        rcap:c590db8e067,
+        rcap:c66579d1944,
+        rcap:c7194d0f95a,
+        rcap:ca7be08f164,
+        rcap:cec9be7e972,
+        rcap:cecffffb51b ;
+    rcap:evidenceDoc "Corticosteroid Domain-Specific Appendix 6" ;
+    rcap:evidenceSection "8.2" ;
+    rcap:evidenceText "Patients are eligible for this domain if they meet all of the platform-level inclusion and none of the platform-level exclusion criteria as specified in relevant Core Protocol documents." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_CS ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 7.4.1",
+        "CORE 7.4.2" ;
+    rcap:reviewStatus "analyst-reading; rule agreed 2026-10-24" ;
+    rcap:rule "topic rule 6" ;
+    rcap:ruleSource "agreed 2026-10-24 (inherited_from_core.csv CS_DSA 8.2)" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:reading-fb3ad1a70e a owl:NamedIndividual,
+        rcap:InheritanceReading ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "Influenza Antiviral Domain-Specific Appendix 4" ;
+    rcap:evidenceSection "11.2" ;
+    rcap:evidenceText "Other SAEs should be reported only where, in the opinion of the site-investigator, the event might reasonably have occurred as a consequence of a study intervention or study participation (see relevant core protocol documents)." ;
+    rcap:note "V-current; V-current and V-transition accepted 2026-10-25" ;
+    rcap:readingOf rcap:DomainDesign_IAV ;
+    rcap:resolvesToCoreVersions "4.1" ;
+    rcap:resolvesToSection "CORE 8.12.3" ;
+    rcap:reviewStatus "analyst-reading; rule accepted 2026-10-25" ;
+    rcap:rule "topic rule 14" ;
+    rcap:ruleSource "title rule; accepted by Kerstin 2026-10-25" ;
+    rcap:targetPhrase "document set: core protocol documents" .
+
+rcap:readingOf a owl:AnnotationProperty .
+
+rcap:resolvesToCoreVersions a owl:AnnotationProperty .
+
+rcap:resolvesToSection a owl:AnnotationProperty .
+
+rcap:reviewStatus a owl:AnnotationProperty .
+
+rcap:rule a owl:AnnotationProperty .
+
+rcap:ruleSource a owl:AnnotationProperty .
+
+rcap:sectionChangedIn41 a owl:AnnotationProperty .
+
+rcap:statement a owl:AnnotationProperty .
+
+rcap:targetPhrase a owl:AnnotationProperty .
+
+rcap:cdb5e5b5b01 rcap:note "Refers to the Core version that contains it ('this Core Protocol amendment'): in Core 4.1 it applies to DSAs dated before 29 May 2026. Reading accepted by Kerstin 2026-10-25 (V-transition)." .
+
+rcap:InheritanceReading a owl:Class ;
+    rdfs:label "inheritance reading (analyst reading of a DSA statement that takes content from another layer)" ;
+    rdfs:subClassOf obo:IAO_0000030 .
+

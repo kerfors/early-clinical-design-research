@@ -1,0 +1,4 @@
+sources/upstream/*.owl
+output/merged.ttl
+output/profile.txt
+__pycache__/

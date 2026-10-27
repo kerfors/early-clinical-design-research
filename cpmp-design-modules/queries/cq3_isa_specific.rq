@@ -1,0 +1,25 @@
+# CQ3: which components does each ISA design have beyond its (inferred) compound design?
+# Designs in one compound column whose sets are equal differ only in the disease-state module.
+PREFIX cpmp: <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?compound ?isa ?part ?label ?sharing
+WHERE {
+    ?isa cpmp:moduleRole "compound x disease state" ;
+         rdfs:subClassOf ?compound .
+    ?compound cpmp:moduleRole "compound" .
+    ?isa rdfs:subClassOf ?r .
+    ?r owl:onProperty obo:BFO_0000051 ;
+       owl:someValuesFrom ?part .
+    FILTER NOT EXISTS {
+        ?compound owl:equivalentClass/owl:intersectionOf/rdf:rest*/rdf:first ?r2 .
+        ?r2 owl:someValuesFrom ?part .
+    }
+    FILTER NOT EXISTS { ?part rdfs:subClassOf obo:IAO_0000007 }
+    ?part rdfs:label ?label ;
+          cpmp:sharingClass ?sharing .
+}
+ORDER BY ?compound ?isa ?label

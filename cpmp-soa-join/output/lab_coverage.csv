@@ -1,0 +1,158 @@
+nct_id,pdf_page,column_header,subgroup,test_as_printed,isa,rows,n_rows
+NCT05986292,75,Chemistry,,Sodium,CPMP,Chemistry,1
+NCT05986292,75,Chemistry,,Potassium,CPMP,Chemistry,1
+NCT05986292,75,Chemistry,,Chloride,CPMP,Chemistry,1
+NCT05986292,75,Chemistry,,"Bilirubin, total",CPMP,Chemistry,1
+NCT05986292,75,Chemistry,,"Bilirubin, direct",CPMP,Chemistry,1
+NCT05986292,75,Chemistry,,ALP,CPMP,Chemistry,1
+NCT05986292,75,Chemistry,,ALT,CPMP,Chemistry,1
+NCT05986292,75,Chemistry,,AST,CPMP,Chemistry,1
+NCT05986292,75,Chemistry,,Urea nitrogen (BUN),CPMP,Chemistry,1
+NCT05986292,75,Chemistry,,"Creatinine, enzymatic",CPMP,Chemistry,1
+NCT05986292,75,Chemistry,,Protein,CPMP,Chemistry,1
+NCT05986292,75,Chemistry,,Albumin,CPMP,Chemistry,1
+NCT05986292,75,Chemistry,,Calcium,CPMP,Chemistry,1
+NCT05986292,75,Chemistry,,Glucose,CPMP,Chemistry,1
+NCT05986292,75,Chemistry,,Cholesterol,CPMP,Chemistry,1
+NCT05986292,75,Chemistry,,Triglycerides,CPMP,Chemistry,1
+NCT05986292,75,Chemistry,,eGFR calculated by CKD-EPI equation,CPMP,Chemistry,1
+NCT05986292,75,Chemistry,,B12,CPMP,Chemistry | B12,2
+NCT05986292,75,Chemistry,,Methylmalonic acid,CPMP,Chemistry | Methylmalonic acid,2
+NCT05986292,75,Chemistry,,Homocysteine,CPMP,Chemistry | Homocysteine,2
+NCT05986292,75,Chemistry,Lipid Panel,HDL-C,CPMP,Lipid panel,1
+NCT05986292,75,Chemistry,Lipid Panel,LDL-C,CPMP,Lipid panel,1
+NCT05986292,75,Hematology and Differential,,Hemoglobin,CPMP,Hematology,1
+NCT05986292,75,Hematology and Differential,,Hematocrit,CPMP,Hematology,1
+NCT05986292,75,Hematology and Differential,,Erythrocyte count (RBC),CPMP,Hematology,1
+NCT05986292,75,Hematology and Differential,,MCV,CPMP,Hematology,1
+NCT05986292,75,Hematology and Differential,,MCH,CPMP,Hematology,1
+NCT05986292,75,Hematology and Differential,,MCHC,CPMP,Hematology,1
+NCT05986292,75,Hematology and Differential,,Leukocytes (WBC),CPMP,Hematology,1
+NCT05986292,75,Hematology and Differential,Differential (absolute),Neutrophils,CPMP,Hematology,1
+NCT05986292,75,Hematology and Differential,Differential (absolute),Bands,CPMP,Hematology,1
+NCT05986292,75,Hematology and Differential,Differential (absolute),Lymphocytes,CPMP,Hematology,1
+NCT05986292,75,Hematology and Differential,Differential (absolute),Monocytes,CPMP,Hematology,1
+NCT05986292,75,Hematology and Differential,Differential (absolute),Eosinophils,CPMP,Hematology,1
+NCT05986292,75,Hematology and Differential,Differential (absolute),Basophils,CPMP,Hematology,1
+NCT05986292,75,Hematology and Differential,Differential (absolute),Platelets,CPMP,Hematology,1
+NCT05986292,75,Hematology and Differential,Differential (absolute),"Cell morphology (RBC, WBC)",CPMP,Hematology,1
+NCT05986292,75,Urinalysis,,Specific gravity,CPMP,Urinalysis,1
+NCT05986292,75,Urinalysis,,pH,CPMP,Urinalysis,1
+NCT05986292,75,Urinalysis,,Protein,CPMP,Urinalysis,1
+NCT05986292,75,Urinalysis,,Glucose,CPMP,Urinalysis,1
+NCT05986292,75,Urinalysis,,Ketones,CPMP,Urinalysis,1
+NCT05986292,75,Urinalysis,,Bilirubin,CPMP,Urinalysis,1
+NCT05986292,75,Urinalysis,,Urobilinogen,CPMP,Urinalysis,1
+NCT05986292,75,Urinalysis,,Blood,CPMP,Urinalysis,1
+NCT05986292,75,Urinalysis,,Nitrite,CPMP,Urinalysis,1
+NCT05986292,75,Urinalysis,,Leukocyte esterase,CPMP,Urinalysis,1
+NCT05986292,75,Urinalysis,,Microscopic examination of sediment,CPMP,Urinalysis,1
+NCT05986292,75,Urine Drug Screen,,Antidepressants,CPMP,Urine drug screen,1
+NCT05986292,75,Urine Drug Screen,,Opiates,CPMP,Urine drug screen,1
+NCT05986292,75,Urine Drug Screen,,Cocaine,CPMP,Urine drug screen,1
+NCT05986292,75,Urine Drug Screen,,Benzodiazepines,CPMP,Urine drug screen,1
+NCT05986292,75,Urine Drug Screen,,Barbiturates,CPMP,Urine drug screen,1
+NCT05986292,75,Urine Drug Screen,,Amphetamines,CPMP,Urine drug screen,1
+NCT05986292,75,Urine Drug Screen,,Cannabinoids,CPMP,Urine drug screen,1
+NCT05986292,75,Urine Drug Screen,,Methadone,CPMP,Urine drug screen,1
+NCT05986292,75,Urine Drug Screen,,Phencyclidine,CPMP,Urine drug screen,1
+NCT05986292,75,Urine Drug Screen,,Propoxyphene,CPMP,Urine drug screen,1
+NCT05986292,75,Other Tests,Hormones (female),"Pregnancy test (serum, urine)",CPMP,Serum pregnancy,1
+NCT05986292,75,Other Tests,Hormones (female),FSH,CPMP,FSH,1
+NCT05986292,75,Other Tests,Hormones (female),Estradiol,CPMP,Estradiol,1
+NCT05986292,75,Other Tests,Hormones (female),TSH,CPMP,TSH,1
+NCT05986292,75,Other Tests,Other,HbA1C,CPMP,HbA1c,1
+NCT05986292,75,Other Tests,Other,HIV,CPMP,HIV,1
+NCT04456686,34,Chemistry,,Cystatin-C,OA01,Chemistry,1
+NCT04456686,34,Urine Chemistries,,Albumin,OA01,Urine Chemistries,1
+NCT04456686,34,Urine Chemistries,,Creatinine,OA01,Urine Chemistries,1
+NCT04456686,34,Urine Chemistries,,Albumin/creatinine ratio (ACR),OA01,Urine Chemistries,1
+NCT04456686,34,Urine Chemistries,,Protein,OA01,Urine Chemistries,1
+NCT04456686,34,Urine Chemistries,,Protein/creatinine ratio (PCR),OA01,Urine Chemistries,1
+NCT04456686,34,Other Tests,,Immunogenicity,OA01,Immunogenicity (ADA) sample,1
+NCT04456686,34,Other Tests,,Epiregulin,OA01,Epiregulin sample,1
+NCT04456686,34,Other Tests,,LY3016859 concentration,OA01,PK sample,1
+NCT04456686,34,Other Tests,,Urine pregnancy,OA01,Urine pregnancy,1
+NCT04476108,33,Chemistry,,Cystatin-C,NP01,Chemistry,1
+NCT04476108,33,Urine Chemistries,,Albumin,NP01,Urine Chemistries,1
+NCT04476108,33,Urine Chemistries,,Creatinine,NP01,Urine Chemistries,1
+NCT04476108,33,Urine Chemistries,,Albumin/creatinine ratio (ACR),NP01,Urine Chemistries,1
+NCT04476108,33,Urine Chemistries,,Protein,NP01,Urine Chemistries,1
+NCT04476108,33,Urine Chemistries,,Protein/creatinine ratio (PCR),NP01,Urine Chemistries,1
+NCT04476108,33,Other Tests,,Immunogenicity,NP01,Immunogenicity (ADA) sample,1
+NCT04476108,33,Other Tests,,Epiregulin,NP01,Epiregulin sample,1
+NCT04476108,33,Other Tests,,LY3016859 concentration,NP01,PK sample,1
+NCT04476108,33,Other Tests,,Urine pregnancy,NP01,Urine pregnancy,1
+NCT04529096,32,Chemistry,,Cystatin-C,BP01,Chemistry,1
+NCT04529096,32,Urine Chemistries,,Albumin,BP01,Urine Chemistries,1
+NCT04529096,32,Urine Chemistries,,Creatinine,BP01,Urine Chemistries,1
+NCT04529096,32,Urine Chemistries,,ACR,BP01,Urine Chemistries,1
+NCT04529096,32,Urine Chemistries,,Protein,BP01,Urine Chemistries,1
+NCT04529096,32,Urine Chemistries,,PCR,BP01,Urine Chemistries,1
+NCT04529096,32,Other Tests,,Immunogenicity,BP01,Immunogenicity (ADA) sample,1
+NCT04529096,32,Other Tests,,Epiregulin,BP01,Epiregulin sample,1
+NCT04529096,32,Other Tests,,LY3016859 concentration,BP01,PK sample,1
+NCT04529096,32,Other Tests,,Urine pregnancy,BP01,Urine pregnancy,1
+NCT05080660,30,Other Tests,,LY3526318 concentration,OA02,PK sample,1
+NCT05080660,30,Other Tests,,Urine pregnancy,OA02,Urine pregnancy,1
+NCT05086289,29,Other Tests,,LY3526318 concentration,BP02,PK sample,1
+NCT05086289,29,Other Tests,,Urine pregnancy,BP02,Urine pregnancy,1
+NCT05177094,29,Other Tests,,LY3526318 concentration,NP02,PK sample,1
+NCT05177094,29,Other Tests,,Urine pregnancy,NP02,Urine pregnancy,1
+NCT04627038,30,Chemistry,,Cystatin-C,OA03,Chemistry | Cystatin C,2
+NCT04627038,30,Chemistry,,TSH,OA03,Chemistry,1
+NCT04627038,30,Additional Thyroid Tests,,Free Triiodothyronine (FreeT3),OA03,Thyroid panel,1
+NCT04627038,30,Additional Thyroid Tests,,Total Triiodothyronine (T3),OA03,Thyroid panel,1
+NCT04627038,30,Additional Thyroid Tests,,Free Thyroxine (FreeT4),OA03,Thyroid panel,1
+NCT04627038,30,Additional Thyroid Tests,,Total Thyroxine (T4),OA03,Thyroid panel,1
+NCT04627038,30,Other SST-Regulated Hormones,,Growth hormone,OA03,Somatostatin-regulated hormone sample,1
+NCT04627038,30,Other SST-Regulated Hormones,,Insulin-like Growth Factor-1 (IGF-1),OA03,Somatostatin-regulated hormone sample,1
+NCT04627038,30,Other SST-Regulated Hormones,,Prolactin,OA03,Somatostatin-regulated hormone sample,1
+NCT04627038,30,Other SST-Regulated Hormones,,Gastrin,OA03,Somatostatin-regulated hormone sample,1
+NCT04627038,30,Other SST-Regulated Hormones,,Glucagon,OA03,Somatostatin-regulated hormone sample,1
+NCT04627038,30,Other SST-Regulated Hormones,,Insulin,OA03,Somatostatin-regulated hormone sample,1
+NCT04627038,30,Other Tests,,Amylase,OA03,,0
+NCT04627038,30,Other Tests,,Lipase,OA03,,0
+NCT04627038,30,Other Tests,,LY3556050 concentration,OA03,PK sample,1
+NCT04627038,30,Other Tests,,Serum pregnancy test,OA03,Serum pregnancy,1
+NCT04627038,30,Other Tests,,HbA1c,OA03,HbA1c,1
+NCT04874636,27,Chemistry,,Cystatin-C,BP03,Chemistry | Cystatin C,2
+NCT04874636,27,Chemistry,,TSH,BP03,Chemistry,1
+NCT04874636,27,Additional Thyroid Tests,,Free Triiodothyronine (FreeT3),BP03,Thyroid panel,1
+NCT04874636,27,Additional Thyroid Tests,,Total Triiodothyronine (T3),BP03,Thyroid panel,1
+NCT04874636,27,Additional Thyroid Tests,,Free Thyroxine (FreeT4),BP03,Thyroid panel,1
+NCT04874636,27,Additional Thyroid Tests,,Total Thyroxine (T4),BP03,Thyroid panel,1
+NCT04874636,27,Other SST-Regulated Hormones,,Growth hormone,BP03,Somatostatin-regulated hormone sample,1
+NCT04874636,27,Other SST-Regulated Hormones,,Insulin-like Growth Factor-1 (IGF-1),BP03,Somatostatin-regulated hormone sample,1
+NCT04874636,27,Other SST-Regulated Hormones,,Prolactin,BP03,Somatostatin-regulated hormone sample,1
+NCT04874636,27,Other SST-Regulated Hormones,,Gastrin,BP03,Somatostatin-regulated hormone sample,1
+NCT04874636,27,Other SST-Regulated Hormones,,Glucagon,BP03,Somatostatin-regulated hormone sample,1
+NCT04874636,27,Other SST-Regulated Hormones,,Insulin,BP03,Somatostatin-regulated hormone sample,1
+NCT04874636,27,Other Tests,,Amylase,BP03,,0
+NCT04874636,27,Other Tests,,Lipase,BP03,,0
+NCT04874636,27,Other Tests,,LY3556050 concentration,BP03,PK sample,1
+NCT04874636,27,Other Tests,,Serum pregnancy test,BP03,Serum pregnancy,1
+NCT04874636,27,Other Tests,,HbA1c,BP03,HbA1c,1
+NCT04707157,31,Chemistry,,Cystatin-C,NP03,Chemistry | Cystatin C,2
+NCT04707157,31,Chemistry,,TSH,NP03,Chemistry,1
+NCT04707157,31,Chemistry,,Bicarbonate,NP03,Chemistry,1
+NCT04707157,31,Chemistry,,Anion gap (calculation),NP03,Chemistry,1
+NCT04707157,31,Chemistry,,eGFR calculated by CKD-EPI equation based upon cystatin c,NP03,Chemistry,1
+NCT04707157,31,Additional Thyroid Tests,,Free Triiodothyronine (FreeT3),NP03,Thyroid panel,1
+NCT04707157,31,Additional Thyroid Tests,,Total Triiodothyronine (T3),NP03,Thyroid panel,1
+NCT04707157,31,Additional Thyroid Tests,,Free Thyroxine (FreeT4),NP03,Thyroid panel,1
+NCT04707157,31,Additional Thyroid Tests,,Total Thyroxine (T4),NP03,Thyroid panel,1
+NCT04707157,31,Other SST-Regulated Hormones,,Growth hormone,NP03,Somatostatin-regulated hormone sample,1
+NCT04707157,31,Other SST-Regulated Hormones,,Insulin-like Growth Factor-1 (IGF-1),NP03,Somatostatin-regulated hormone sample,1
+NCT04707157,31,Other SST-Regulated Hormones,,Prolactin,NP03,Somatostatin-regulated hormone sample,1
+NCT04707157,31,Other SST-Regulated Hormones,,Gastrin,NP03,Somatostatin-regulated hormone sample,1
+NCT04707157,31,Other SST-Regulated Hormones,,Glucagon,NP03,Somatostatin-regulated hormone sample,1
+NCT04707157,31,Other SST-Regulated Hormones,,Insulin,NP03,Somatostatin-regulated hormone sample,1
+NCT04707157,31,Other Tests,,Amylase,NP03,,0
+NCT04707157,31,Other Tests,,Lipase,NP03,,0
+NCT04707157,31,Other Tests,,LY3556050 concentration,NP03,PK sample,1
+NCT04707157,31,Other Tests,,Serum pregnancy test,NP03,Serum pregnancy,1
+NCT04707157,31,Other Tests,,HbA1c,NP03,HbA1c,1
+NCT05620563,34,Other Tests,,LY3857210 concentration,OA05,PK sample,1
+NCT05630196,33,Other Tests,,LY3857210 concentration,BP05,PK sample,1
+NCT05620576,34,Other Tests,,LY3857210 concentration,NP05,PK sample,1

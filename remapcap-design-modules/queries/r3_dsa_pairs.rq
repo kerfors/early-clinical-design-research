@@ -1,0 +1,21 @@
+# R3: for each pair of DSAs, the number of components both have part of that no Core version
+# and no PANDA has part of.
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rcap: <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/>
+SELECT ?a ?b (COUNT(DISTINCT ?component) AS ?shared) WHERE {
+  VALUES ?a { rcap:DomainDesign_CS rcap:DomainDesign_AB rcap:DomainDesign_TAB rcap:DomainDesign_IAV
+              rcap:DomainDesign_MD rcap:DomainDesign_IG rcap:DomainDesign_MV rcap:DomainDesign_END rcap:DomainDesign_IIM }
+  VALUES ?b { rcap:DomainDesign_CS rcap:DomainDesign_AB rcap:DomainDesign_TAB rcap:DomainDesign_IAV
+              rcap:DomainDesign_MD rcap:DomainDesign_IG rcap:DomainDesign_MV rcap:DomainDesign_END rcap:DomainDesign_IIM }
+  FILTER (STR(?a) < STR(?b))
+  ?a rdfs:subClassOf [ owl:onProperty obo:BFO_0000051 ; owl:someValuesFrom ?component ] .
+  ?b rdfs:subClassOf [ owl:onProperty obo:BFO_0000051 ; owl:someValuesFrom ?component ] .
+  FILTER NOT EXISTS {
+    VALUES ?other { rcap:CoreDesign_4_0 rcap:CoreDesign_4_1 rcap:PandaDesign }
+    ?other rdfs:subClassOf [ owl:onProperty obo:BFO_0000051 ; owl:someValuesFrom ?component ] .
+  }
+}
+GROUP BY ?a ?b
+ORDER BY DESC(?shared)

@@ -1,0 +1,34 @@
+# CQ1b: which components occur in a design of every disease state?
+# An ISA design has a component directly (its own document) or through a superclass
+# whose definition has it (master design, inferred compound design).
+PREFIX cpmp: <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?component ?label (COUNT(DISTINCT ?ds) AS ?n_disease_states)
+WHERE {
+    ?isa cpmp:moduleRole "compound x disease state" ;
+         rdfs:subClassOf ?ds .
+    ?ds cpmp:moduleRole "disease state" .
+    {
+        ?isa rdfs:subClassOf ?r .
+    }
+    UNION
+    {
+        ?isa rdfs:subClassOf ?sup .
+        ?sup cpmp:moduleRole ?role .
+        FILTER (?role IN ("master", "compound"))
+        ?sup owl:equivalentClass/owl:intersectionOf/rdf:rest*/rdf:first ?r .
+    }
+    ?r owl:onProperty obo:BFO_0000051 ;
+       owl:someValuesFrom ?component .
+    FILTER isIRI(?component)
+    FILTER NOT EXISTS { ?component rdfs:subClassOf cpmp:DelegatedSlot }
+    FILTER NOT EXISTS { ?component rdfs:subClassOf obo:IAO_0000007 }
+    ?component rdfs:label ?label .
+}
+GROUP BY ?component ?label
+HAVING (COUNT(DISTINCT ?ds) = 3)
+ORDER BY ?label

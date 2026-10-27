@@ -1,0 +1,8 @@
+# R6 (statement level): DSA statements whose resolved target section changed between Core 4.0 and 4.1.
+PREFIX rcap: <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/>
+SELECT ?dsa ?section ?target ?change ?versions WHERE {
+  ?r a rcap:InheritanceReading ; rcap:readingOf ?dsa ; rcap:evidenceSection ?section ;
+     rcap:sectionChangedIn41 ?change ; rcap:resolvesToCoreVersions ?versions .
+  { SELECT ?r (GROUP_CONCAT(?t; separator=";") AS ?target) WHERE { ?r rcap:resolvesToSection ?t } GROUP BY ?r }
+}
+ORDER BY ?dsa ?section ?target

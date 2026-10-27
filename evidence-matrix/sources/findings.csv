@@ -1,0 +1,37 @@
+finding_id,case,requirement,finding,expected
+RC-1,REMAP-CAP,R-COMMON,Components every DSA states and no Core or PANDA text states: a small common layer that no document states (12 when only the first four DSAs were in scope),4 components in all 9 DSAs
+RC-2,REMAP-CAP,R-COMMON,"Antibiotic and Tropical Antibiotic share 58 components beyond Core and PANDA, most of Tropical Antibiotic's 75: a DSA family no document states",58 components
+RC-3,REMAP-CAP,R-LAYER,No DSA repeats a Core 4.1 or PANDA component; each DSA states only its own content and points at the rest,0 restated in 9 DSAs
+RC-4,REMAP-CAP,R-GAP,Inherited Core 4.1 and PANDA components that no inheritance statement of the DSA points at (measured over sections with component kinds),113 in 8 DSAs; 119 in IAV_DSA
+RC-5,REMAP-CAP,R-GAP,"Core 4.1 delegations a DSA leaves unanswered (no answer, or condition not stated), and delegations answered in their own section and also pointed back to the Core in another section",17 unanswered; 6 answered with a pointer back
+RC-6,REMAP-CAP,R-GAP,"Overridable defaults a DSA is silent on (balanced allocation at domain start and for a new intervention); whether the no-control-arm default applies is not evaluated, a trial-design question (R5)",18 silent (balanced allocation); 9 not evaluated (no control arm)
+RC-7,REMAP-CAP,R-LAYER,END 10.8 points at the Core for the equivalence odds ratio delta; Core 4.1 7.8.6 says the Core sets no equivalence default and the DSAs specify the margin,2 sentences
+RC-8,REMAP-CAP,R-LAYER,Macrolide Duration eligibility is defined through allocation in another domain (Antibiotic),*
+RC-9,REMAP-CAP,R-VERSION,"No DSA statement names a Core version number; pointers to the Core are unversioned or go to ""the current version"" listed on the study website",0 statements name a Core version
+RC-10,REMAP-CAP,R-VERSION,"DSA statements resolving to Core sections changed in 4.1, and the DSAs dated before Core 4.1 (R6s, R7)",54 statements; 8 of 9 DSAs before Core 4.1
+RC-11,REMAP-CAP,R-VERSION,The two-intervention RAR cap changed between Core 4.0 and 4.1 while the Corticosteroid DSA takes it without a version,60% -> 75%
+RC-12,REMAP-CAP,R-VERSION,"The Core 7.6.2 transition sentence is word-identical in 4.0 and 4.1; read as referring to the version that contains it, it protects older DSAs' endpoints only",identical in 4.0 and 4.1
+RC-13,REMAP-CAP,R-VERSION,"Core 4.0 to 4.1: components revised, and components moved with a role change (the 4.0 primary endpoint parts became exploratory)",3 revised; 8 moved
+RC-14,REMAP-CAP,R-ID,"Identity needs human judgement: crosswalk decisions, some still pending a clinical or statistical reader",141 decisions; 6 tentative
+RC-15,REMAP-CAP,R-ID,One component is an inclusion criterion in one domain and an exclusion criterion in another (SARS-CoV-2),1 component
+RC-16,REMAP-CAP,R-DOCSET,"DSAs point at ""core protocol documents"", a document set no document defines",9 DSAs; 7-14 statements each
+RC-17,REMAP-CAP,R-DOCSET,"DSA 8.1 points at ""Core Protocol documents"" for age strata and illness severity states; they are defined in PANDA, and whether PANDA is part of that set is not stated",9 DSAs
+RC-18,REMAP-CAP,R-DOCSET,"A region-specific (Japan) modification, RSA-layer content, sits inside the Influenza Antiviral DSA; its appendix heading has no number in the text layer","IAV_DSA 14.1;14.2.1;14.2.2; heading unnumbered, inside section 13"
+RC-19,REMAP-CAP,R-DOCSET,Mechanical Ventilation has no section numbers in its text layer; every number is reconstructed,all MV_DSA sections reconstructed
+RC-20,REMAP-CAP,R-DECISION,"Version histories give version, approving body and date, and no reason for any version",11 sections; 0 reasons
+CP-1,CPMP,R-COMMON,"Compound module: components shared by the three ISAs of a compound, with no document of its own; recovered by the reasoner and equal to the compound each ISA section 5 names",26 components; 12 ISAs name their compound
+CP-2,CPMP,R-COMMON,SoA cells marked in all 12 ISAs and not in the master: a common schedule no document states,22 cells
+CP-3,CPMP,R-COMMON,The pregnancy exclusion is in all 12 ISAs and in no master criterion; the master only delegates reproductive requirements to the ISAs,12 ISAs; 1 master sentence
+CP-4,CPMP,R-LAYER,The ISA SoA marks only what it adds or changes: it restates almost none of the master's cells,restated 0-8 of 151 master cells
+CP-5,CPMP,R-LAYER,"ED overrides in the LY3016859 ISAs: notes that a master ED assessment is ""not needed for ED per the CPMP SoA""; some are on disease instruments the master SoA does not have",12 cells; 3 on activities not in the master SoA
+CP-6,CPMP,R-LAYER,"Stated addition ""in addition to schedule described in"" the master, in the LY3857210 ISAs only; OA05 also names its DSA",25 statements; LY3857210 only; DSA named in OA05
+CP-7,CPMP,R-GAP,"The master hands post-randomization marks for 8 activities to the ISAs: six are filled as SoA rows, TSH only at test level inside Chemistry in the LY3556050 ISAs, exploratory biomarker samples nowhere",8 activities; 6 filled as rows; TSH at test level in 3 ISAs; exploratory biomarker samples in none
+CP-8,CPMP,R-GAP,"Delegation to the disease-state addenda, which are not public: master slots and ISA sentences that depend on DSA content",8 slots; 117 ISA sentences
+CP-9,CPMP,R-GAP,"A new ISA (LY4065967: OA07, BP07, NP07; registered, no documents posted) inherits the master and empty disease-state slots, and no compound module",3 ISAs; 51 master components + 8 slots
+CP-10,CPMP,R-ID,"An ISA SoA row such as Chemistry means the master's tests plus the tests the ISA's lab appendix calls unique, as every ISA appendix states; the same test sits under different headings (TSH: Other Tests in the master, Chemistry in the LY3556050 ISAs)",12 sentences; TSH under 2 headings
+CP-11a,CPMP,R-ID,Identity needs human judgement: crosswalk decisions between criteria worded differently across ISAs,115 decisions
+CP-11b,CPMP,R-ID,"The eGFR exclusion is one rule with three values by compound, with the same formula and visits; text identity cannot express ""same rule, different value""",eGFR values 30/60/70
+CP-12,CPMP,R-ANCHOR,"Baseline is defined as everything before randomization at Visit 3, while master and ISAs mark activities at Visit 3: post randomization is an event inside a visit",*
+CP-13,CPMP,R-VERSION,"ISA amendment texts that concern the master rarely name the master version, and no panel-content sentence names one",2 of 26 amendment texts; 0 of 12 panel sentences
+CP-14,CPMP,R-DECISION,"Amendment summary-of-changes tables give a brief rationale per change (e.g. ""Statistician decision"", ""Based on FDA feedback""); some rationales recur across documents",204 changes; 40 shared rationales
+CP-15,CPMP,R-DOCSET,The three disease-state addenda are cited but not public,3 DSAs not posted

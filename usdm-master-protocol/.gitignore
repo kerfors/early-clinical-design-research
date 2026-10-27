@@ -1,0 +1,5 @@
+# Large downloaded source documents (re-creatable with the scripts; manifests are kept)
+sources/pdf/
+sources/publications/
+sources/remapcap/**/*.pdf
+sources/remapcap/html/

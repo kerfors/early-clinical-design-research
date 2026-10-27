@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/rcap-all> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/about>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/components>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/core>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/core-4.0>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/core-4.1>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/delegations>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-AB>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-CS>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-END>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-IAV>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-IG>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-IIM>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-MD>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-MV>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-TAB>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-shared>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/panda>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/rcap-core>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/readings> .
+

@@ -1,0 +1,51 @@
+doc                        AB_DSA  CORE40  CORE41  CS_DSA  IAV_DSA  PANDA  TAB_DSA
+kind                                                                              
+allocation_rar                  0       6       6       0        0      0        0
+category_acquisition            0       0       0       0        0      3        0
+category_clinical_feature       0       0       0       0        0     15        0
+category_disease_entity         0       0       0       0        0      2        0
+category_illness_severity       0       0       0       0        0     13        0
+category_pathogen               0       0       0       0        0      7        0
+data_collection                 2      27      26       2        1      0        2
+domain_exclusion                9       0       0       6        6      0        8
+domain_inclusion                3       0       0       4        2      0        3
+endpoint_exploratory            0       0       7       0        0      0        0
+endpoint_primary                0       7       5       0        0      0        0
+endpoint_secondary              3      13      13       1        0      0        3
+intervention                   18       0       0       3        4      0       15
+intervention_exclusion          6       0       0       1        2      0        3
+platform_exclusion              0       3       3       0        0      0        0
+platform_inclusion              0       3       3       0        0      0        0
+statements: 389
+doc                          AB_DSA  CORE40  CORE41  CS_DSA  IAV_DSA  PANDA  TAB_DSA
+kind                                                                                
+allocation_interactions           2       0       0       2        3      0        2
+allocation_nesting                3       0       0       1        2      0        1
+allocation_rar                    1      28      28       3        3      0        1
+allocation_reveal                 1       0       0       2        1      0        1
+allocation_threshold              3       0       0       4        4      0        3
+allocation_unit_of_analysis       2       0       0       3        5      0        2
+applicability_age                 1       0       0       3        3      0        1
+applicability_state               1       0       0       3        3      0        1
+category_acquisition              0       0       0       0        0      2        0
+category_clinical_feature         0       0       0       0        0      2        0
+category_disease_entity           0       0       0       0        0      2        0
+category_illness_severity         0       0       0       0        0      6        0
+category_pathogen                 0       0       0       0        0     27        0
+category_pathogen_stratum         0       0       0       0        0     11        0
+category_patient                  0       0       0       0        0      5        0
+data_collection                   1       4       4       1        1      0        1
+discontinuation                   1       0       0       1        1      0        1
+domain_exclusion                  5       0       0       1        1      0        3
+domain_inclusion                  1       0       0       1        1      0        1
+domain_strata                     1       0       0       1        1      0        1
+endpoint_exploratory              0       0      11       0        0      0        0
+endpoint_primary                  1       9      13       1        1      0        1
+endpoint_secondary                2      10       7       6        1      0        2
+intervention                     18       0       0      31       17      0       14
+intervention_exclusion           10       0       0       5        4      0        5
+platform_exclusion                0       1       1       0        0      0        0
+platform_inclusion                0       1       1       0        0      0        0
+body margin per document: {'CORE40': 72, 'CORE41': 72, 'PANDA': 72, 'CS_DSA': 72, 'AB_DSA': 72, 'TAB_DSA': 72, 'IAV_DSA': 72}
+unnumbered TOC headings per document: {'CORE40': 36, 'CORE41': 36, 'PANDA': 0, 'CS_DSA': 0, 'AB_DSA': 2, 'TAB_DSA': 2, 'IAV_DSA': 14}
+sections without items: [['PANDA', '2', 'category_patient'], ['PANDA', '3.1', 'category_pathogen'], ['PANDA', '3.2', 'category_pathogen'], ['PANDA', '3.3', 'category_pathogen'], ['PANDA', '3.4', 'category_pathogen_stratum'], ['PANDA', '3.4.1', 'category_pathogen_stratum'], ['CS_DSA', '8.1.1', 'applicability_age'], ['CS_DSA', '8.1.2', 'applicability_state'], ['CS_DSA', '8.1.3', 'domain_strata'], ['CS_DSA', '8.3', 'intervention'], ['CS_DSA', '8.3.2', 'intervention'], ['CS_DSA', '8.3.3', 'intervention'], ['CS_DSA', '8.3.4', 'intervention'], ['CS_DSA', '8.3.5', 'intervention'], ['CS_DSA', '8.5.1', 'endpoint_primary'], ['CS_DSA', '9.2', 'data_collection'], ['CS_DSA', '9.3', 'discontinuation'], ['CS_DSA', '10.2', 'allocation_unit_of_analysis'], ['CS_DSA', '10.3', 'allocation_rar'], ['CS_DSA', '10.4', 'allocation_reveal'], ['CS_DSA', '10.5', 'allocation_interactions'], ['CS_DSA', '10.6', 'allocation_nesting'], ['CS_DSA', '10.7', 'allocation_threshold'], ['CS_DSA', '10.8', 'allocation_threshold'], ['AB_DSA', '8.1.1', 'applicability_age'], ['AB_DSA', '8.1.2', 'applicability_state'], ['AB_DSA', '8.1.3', 'domain_strata'], ['AB_DSA', '8.3', 'intervention'], ['AB_DSA', '8.3.3', 'intervention'], ['AB_DSA', '8.3.6', 'intervention'], ['AB_DSA', '8.5.1', 'endpoint_primary'], ['AB_DSA', '9.3', 'discontinuation'], ['AB_DSA', '10.2', 'allocation_unit_of_analysis'], ['AB_DSA', '10.3', 'allocation_rar'], ['AB_DSA', '10.4', 'allocation_reveal'], ['AB_DSA', '10.5', 'allocation_interactions'], ['AB_DSA', '10.6', 'allocation_nesting'], ['AB_DSA', '10.7', 'allocation_threshold'], ['AB_DSA', '10.8', 'allocation_threshold'], ['TAB_DSA', '8.1.1', 'applicability_age'], ['TAB_DSA', '8.1.2', 'applicability_state'], ['TAB_DSA', '8.1.3', 'domain_strata'], ['TAB_DSA', '8.3', 'intervention'], ['TAB_DSA', '8.3.3', 'intervention'], ['TAB_DSA', '8.3.6', 'intervention'], ['TAB_DSA', '8.5.1', 'endpoint_primary'], ['TAB_DSA', '9.3', 'discontinuation'], ['TAB_DSA', '10.2', 'allocation_unit_of_analysis'], ['TAB_DSA', '10.3', 'allocation_rar'], ['TAB_DSA', '10.4', 'allocation_reveal'], ['TAB_DSA', '10.5', 'allocation_interactions'], ['TAB_DSA', '10.6', 'allocation_nesting'], ['TAB_DSA', '10.7', 'allocation_threshold'], ['TAB_DSA', '10.8', 'allocation_threshold'], ['IAV_DSA', '8.1.1', 'applicability_age'], ['IAV_DSA', '8.1.2', 'applicability_state'], ['IAV_DSA', '8.1.3', 'domain_strata'], ['IAV_DSA', '8.3', 'intervention'], ['IAV_DSA', '8.3.2', 'intervention'], ['IAV_DSA', '8.3.3', 'intervention'], ['IAV_DSA', '8.3.4', 'intervention'], ['IAV_DSA', '8.5.1', 'endpoint_primary'], ['IAV_DSA', '8.5.2', 'endpoint_secondary'], ['IAV_DSA', '9.2', 'data_collection'], ['IAV_DSA', '9.3', 'discontinuation'], ['IAV_DSA', '10.2', 'allocation_unit_of_analysis'], ['IAV_DSA', '10.3', 'allocation_rar'], ['IAV_DSA', '10.4', 'allocation_reveal'], ['IAV_DSA', '10.5', 'allocation_interactions'], ['IAV_DSA', '10.6', 'allocation_nesting'], ['IAV_DSA', '10.7', 'allocation_threshold'], ['IAV_DSA', '10.8', 'allocation_threshold']]

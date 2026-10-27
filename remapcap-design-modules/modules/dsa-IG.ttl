@@ -1,0 +1,1090 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rcap: <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/dsa-IG> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/about>,
+        <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/modules/core> .
+
+rcap:Domain_IG a owl:Class ;
+    rdfs:label "COVID-19 Immunoglobulin Therapy domain" ;
+    rdfs:subClassOf _:N354ac4bcbcf64f08811377af18eeae7e,
+        _:N7f0a3509bde8474ea535820be8c721ab,
+        rcap:Domain .
+
+rcap:DomainDesign_IG a owl:Class ;
+    rdfs:label "REMAP-CAP COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4 design" ;
+    rdfs:subClassOf _:N0024e309a2c849b186ea80fc33c8b19d,
+        _:N00e7fe27e80d4517a9bdfb9183c688c4,
+        _:N0513badab5514dbf995164b0a132edc8,
+        _:N0bff39f4c2b54f708c97dd68b7032fc8,
+        _:N11b489dc5a3a4c238a4f4eb1b29b94d3,
+        _:N12c74b2f2ebd497ebdd102031e6d1805,
+        _:N13686ea6ad644502b1e2d8f14cc689bc,
+        _:N15ca5fad5e04462c863ef35aedf376ed,
+        _:N16c62c57acb24226b057183f108fd32c,
+        _:N1b830aba2e364ef4b27c723efffecbc0,
+        _:N1e43e86464394d508a4294147ade4ee7,
+        _:N254dd15b08e24ee29a4320687df55ad8,
+        _:N28ef61a9354c4e37b68935380c169b7c,
+        _:N2923dd006cd1459eaf63a1a59d76a663,
+        _:N31071610f57d421c9bbc95cf37e639f3,
+        _:N36a2922ef00a4d1fae0ea83fa0a3be47,
+        _:N3c422740e3b04b49b4a95229ee3dee1e,
+        _:N3f68595892664d11a73746ef48887603,
+        _:N404a2830bc784e2897b8aebf84ad0f69,
+        _:N47c792bee0f84103b669fd804d20787f,
+        _:N5158fee856a749da9e81a3ca93ea34d2,
+        _:N51c1f457ddb04fb08367edbafca64fd1,
+        _:N51c968ecf6cb43dbb4166a3f6dd1d051,
+        _:N5282e9e31d5c404e95530872c195d8c2,
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000051 ;
+            owl:someValuesFrom rcap:Domain_IG ],
+        _:N60781b2a66264f189520a87558ae6a3f,
+        _:N64e5b2af5476413fa2592181001caec0,
+        _:N69d379ead4b5434487715c0137f105ae,
+        _:N6b098ae275064ccc8330766015c3eb29,
+        _:N6c6451aafdb843e4b518c25262c39cb8,
+        _:N6f646e137988430ea2dbd65f9e6c624d,
+        _:N7376f1f34b634cb19ae2d222f841f485,
+        _:N76548ae7da4b4f99966c077306b94df0,
+        _:N7c275589ecea487d9c602e38b245c806,
+        _:N7d01a3706b2046379823690d64efe94d,
+        _:N81b8331cd396480db5177c5486317763,
+        _:N82d45f4b0aa148259dc5152066118b05,
+        _:N8a461c59b9f6498595d57fea62a29fb0,
+        _:N8bb437f90d664158951226ec576ba696,
+        _:N94ea3ded62cd47b4a1762f4d43a3e03c,
+        _:N953207187f9d45bab1cd96167b7bf1a3,
+        _:N96f59cd245e04eb1bb6fb0ab7164fac6,
+        _:N99eaca2d3ab94627abaebb52510afacd,
+        _:Na405b5324ebd4117958bf340b578c330,
+        _:Na417a915904d47a082943e7fe86c5913,
+        _:Na55bfa163ffa44298f9ba198ba9fc9f1,
+        _:Na8e4f36ec2994c158ce58c1d86be7d48,
+        _:Nb8571a941b9541348f2cd0681a28ae97,
+        _:Nbed1e4eb8cb64a7c8eb76fd751886569,
+        _:Nc2126ff4f2d446c3805f1dab371415a0,
+        _:Nc2419062dca4489ca1c6a252cc671a70,
+        _:Nca46dc81d8124705acef5c7e6d1cd61b,
+        _:Ncbf1037c627a4f2fad410f8189658a7b,
+        _:Nd01063e4e48040528ff84371cc736de1,
+        _:Nd6d8ac90ae3e475188e4430edf9dc526,
+        _:Nd8f1bf4e2f184261b3e14f3f73ca4de8,
+        _:Ndd5ee96ffa0f42878c7dd896cb91ebfc,
+        _:Ne1d614789b0c40099668fe559feb63c6,
+        _:Ne261c5dff4624e70bd936046a2cfdc1f,
+        _:Ne6842e23d586448f91cdf3228a3d4bb2,
+        _:Nec5ccb0b97bb41b78f0e36604f185043,
+        _:Nee5cc9f4babd44ed9a6fef12b7a2e778,
+        _:Nf21dac49acd64a8d8b2378c71d55b18c,
+        _:Nfde2288a0e134b04b9bb9e0720fa3cef,
+        _:Nff39689572c14796924d878bb3613051,
+        _:Nffda4de981894fa38ad9284bab0fafbd,
+        rcap:CoreDesign ;
+    rcap:documentDate "5 Nov 2024" ;
+    rcap:documentTitle "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N0bff39f4c2b54f708c97dd68b7032fc8 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.6" ;
+    rcap:evidenceText "Nesting high titer plasma with low titer plasma in the Immune Suppressed strata effectively borrows information from the previous immune suppressed patients randomized to convalescent plasma." ;
+    rcap:occurrenceKind "allocation_nesting" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget rcap:CoreDesign ;
+    rcap:binding "unversioned" ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePage 9 ;
+    rcap:evidenceRule "B-dsa" ;
+    rcap:evidenceText "The Core Protocol contains all information that is generic to the trial …" ;
+    rcap:note "Core Protocol 4.0 1.2: Domain-Specific Appendix is an appendix to the Core Protocol.",
+        "Core Protocol 4.1 1.2: Domain-Specific Appendix is an appendix to the Core Protocol." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Nf21dac49acd64a8d8b2378c71d55b18c ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Patients may also be excluded from receiving one or more interventions within the domain for patient-specific reasons." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Ndd5ee96ffa0f42878c7dd896cb91ebfc ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "These States are defined in Core Protocol documents." ;
+    rcap:occurrenceKind "applicability_state" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N31071610f57d421c9bbc95cf37e639f3 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "10.6" ;
+    rcap:evidenceText "Following any Platform Conclusion in this domain, a sensitivity analysis will be conducted that is restricted to patients randomized concurrently to P1 and P4 interventions." ;
+    rcap:occurrenceKind "allocation_nesting" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Nd6d8ac90ae3e475188e4430edf9dc526 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "The population of interest that will be reported as a result of the amendment of this domain are patients who have received an allocation in the Immunoglobulin Domain, including patients who have already been recruited and treated with convalescent plasma, as specified in earlier versions of this DSA." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Ne6842e23d586448f91cdf3228a3d4bb2 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Patients who are eligible for only a single intervention at a site (i.e." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Na417a915904d47a082943e7fe86c5913 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "Participating sites may choose to offer this domain to patients in one or more of these Age Strata." ;
+    rcap:occurrenceKind "applicability_age" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N51c1f457ddb04fb08367edbafca64fd1 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.5" ;
+    rcap:evidenceText "Interactions with all other domains are either not evaluable or not considered possible and will not be incorporated into the statistical model or models in which this domain is evaluated." ;
+    rcap:occurrenceKind "allocation_interactions" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Nffda4de981894fa38ad9284bab0fafbd ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "Administration of such a preparation is considered a protocol deviation." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Na8e4f36ec2994c158ce58c1d86be7d48 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "All-cause mortality at 28 days censored at hospital discharge" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Nec5ccb0b97bb41b78f0e36604f185043 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "9.1" ;
+    rcap:evidenceText "Serious clinically diagnosed arterial (e.g. myocardial infarction (MI), cerebrovascular accident (CVA), mesenteric arterial thrombosis) or venous thrombotic events (e.g. deep vein thrombosis (DVT), pulmonary embolism (PE), portal or mesenteric venous thrombosis, or cortical venous sinus thrombosis) occurring during the index hospitalization censored at day 90 after enrolment." ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N3f68595892664d11a73746ef48887603 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 24 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Patient is aged ≥ 16 years old" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N1e43e86464394d508a4294147ade4ee7 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "all other interventions are contraindicated) are not eligible for this domain." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N953207187f9d45bab1cd96167b7bf1a3 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:7" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "Borrowing is permitted between States, i.e." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Nff39689572c14796924d878bb3613051 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "9.1" ;
+    rcap:evidenceText "Transfusion-transmitted infection occurring at any time during the study" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N64e5b2af5476413fa2592181001caec0 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Patients are eligible for this domain if:" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N13686ea6ad644502b1e2d8f14cc689bc ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "Administration of a monoclonal antibody directed against SARS-CoV-2 was an exclusion criteria in all earlier versions of this DSA." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Na405b5324ebd4117958bf340b578c330 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "All patients recruited using versions of this DSA prior to Version 3 are classified as members of the No Prior Monoclonal Antibody sub-group." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N94ea3ded62cd47b4a1762f4d43a3e03c ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "9.1" ;
+    rcap:evidenceText "Viral variants. Method of viral testing and analysis will vary from country to country and will be within country-specific testing guidance document." ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N15ca5fad5e04462c863ef35aedf376ed ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "10.6" ;
+    rcap:evidenceText "This nesting structure can be interpreted as an informative prior for high titer plasma that is a weighted average of the low titer plasma effect in immune suppressed and Non-Immune Suppressed strata." ;
+    rcap:occurrenceKind "allocation_nesting" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N47c792bee0f84103b669fd804d20787f ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.4" ;
+    rcap:evidenceText "The timing of the revealing of allocation status and administration of interventions is specified to be Randomization with Deferred Reveal to permit confirmation of microbiological diagnosis if results of testing are not known at the time of initial assessment of eligibility (see relevant core protocol documents)." ;
+    rcap:occurrenceKind "allocation_reveal" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N36a2922ef00a4d1fae0ea83fa0a3be47 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "So as to achieve continuity with the initial phase of this domain, a stratum is defined as comprising patients who are immune suppressed." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N3c422740e3b04b49b4a95229ee3dee1e ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 25 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Known objection to receiving plasma products will exclude a patient from receiving any plasma components" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:Domain_IG ;
+    owl:annotatedTarget _:N354ac4bcbcf64f08811377af18eeae7e ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 25 ;
+    rcap:evidenceRule "B-domain" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "No immunoglobulin against COVID-19 (no placebo)" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Ne261c5dff4624e70bd936046a2cfdc1f ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:8" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "borrowing will occur between Moderate and Severe states." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N96f59cd245e04eb1bb6fb0ab7164fac6 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.6" ;
+    rcap:evidenceText "The high titer convalescent plasma (active intervention specified in this DSA and designated the intervention code ‘P4’) will be nested with the (low titer) convalescent plasma intervention (intervention code ‘P2’ and the active intervention in earlier versions of this DSA approved in regions other than the United States) in the Immune Suppressed and Non-Immune Suppressed Strata." ;
+    rcap:occurrenceKind "allocation_nesting" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N7d01a3706b2046379823690d64efe94d ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 25 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "More than 48 hours has elapsed since commencement of sustained organ failure support in an ICU" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Nfde2288a0e134b04b9bb9e0720fa3cef ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Confirmed deep venous thrombosis" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N404a2830bc784e2897b8aebf84ad0f69 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.3" ;
+    rcap:evidenceText "Response Adaptive Randomization will not be applied to this domain." ;
+    rcap:occurrenceKind "allocation_rar" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Nb8571a941b9541348f2cd0681a28ae97 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 25 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "More than 14 days have elapsed since hospital admission" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N99eaca2d3ab94627abaebb52510afacd ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "Eligibility within these strata may be further constrained by domain-specific eligibility criteria specified below." ;
+    rcap:occurrenceKind "applicability_age" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N7376f1f34b634cb19ae2d222f841f485 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "10.7" ;
+    rcap:evidenceText "The threshold odds ratio delta for efficacy and futility in this domain are those specified as the default thresholds in the relevant Core Protocol documents." ;
+    rcap:occurrenceKind "allocation_threshold" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N6c6451aafdb843e4b518c25262c39cb8 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 24 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "SARS-CoV-2 infection is confirmed by microbiological testing" ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N5282e9e31d5c404e95530872c195d8c2 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 25 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "No immunoglobulin against COVID-19 (no placebo)" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N81b8331cd396480db5177c5486317763 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "Participating sites may choose to offer this domain to patients in one or both of these Illness Severity States." ;
+    rcap:occurrenceKind "applicability_state" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Nc2126ff4f2d446c3805f1dab371415a0 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 25 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Known previous history of transfusion-related acute lung injury will exclude a patient from receiving high titer plasma" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N6b098ae275064ccc8330766015c3eb29 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 25 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Known hypersensitivity/allergy to an agent specified as an intervention in this domain will exclude a patient from receiving that agent" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N00e7fe27e80d4517a9bdfb9183c688c4 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.5.1" ;
+    rcap:evidenceText "The primary endpoint for this domain is the primary outcome specified in the relevant Core Protocol documents." ;
+    rcap:occurrenceKind "endpoint_primary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N82d45f4b0aa148259dc5152066118b05 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "Administration of a monoclonal antibody preparation is permitted prior to time of reveal of assigned treatment." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N1b830aba2e364ef4b27c723efffecbc0 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "10.6" ;
+    rcap:evidenceText "Nesting high titer plasma with low titer plasma in the Non-Immune Suppressed strata is intended to reduce the amount of information borrowed from the previous positive result." ;
+    rcap:occurrenceKind "allocation_nesting" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N0024e309a2c849b186ea80fc33c8b19d ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "9.1" ;
+    rcap:evidenceText "Cause of immunosuppression at baseline" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N0513badab5514dbf995164b0a132edc8 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Patients will be excluded from this domain if they have any of the following:" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Nc2419062dca4489ca1c6a252cc671a70 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Confirmed pulmonary embolism" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N8bb437f90d664158951226ec576ba696 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.2" ;
+    rcap:evidenceText "This domain is available for patients in the Moderate State and the Severe State." ;
+    rcap:occurrenceKind "applicability_state" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Nca46dc81d8124705acef5c7e6d1cd61b ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Confirmed ischemic stroke" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N6f646e137988430ea2dbd65f9e6c624d ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 25 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "Patient has already received treatment with any non-trial prescribed polyclonal antibody therapy (hyperimmune immunoglobulin, or convalescent plasma) intended to be active against COVID-19 during this acute illness." ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Nd01063e4e48040528ff84371cc736de1 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:5" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Criteria that exclude a patient from one or more interventions are:" ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Ncbf1037c627a4f2fad410f8189658a7b ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 25 ;
+    rcap:evidencePosition "2" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "High titer convalescent plasma" ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N60781b2a66264f189520a87558ae6a3f ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:4" ;
+    rcap:evidenceSection "8.2.3" ;
+    rcap:evidenceText "Patients who are not eligible for this domain will be treated according to the current standard of care at the clinician’s discretion." ;
+    rcap:occurrenceKind "intervention_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N69d379ead4b5434487715c0137f105ae ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "All interventions will be commenced immediately after allocation status is revealed." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Na55bfa163ffa44298f9ba198ba9fc9f1 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "7" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Serious Adverse Events (SAE) as defined in Core Protocol documents and qualified in this DSA" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N254dd15b08e24ee29a4320687df55ad8 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.1.1" ;
+    rcap:evidenceText "This domain is available to patients who are in the Adolescent or Adult Age Strata, as defined in Core Protocol documents." ;
+    rcap:occurrenceKind "applicability_age" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N28ef61a9354c4e37b68935380c169b7c ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "Patients will be randomly assigned to receive one of the following open-label strategies." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N16c62c57acb24226b057183f108fd32c ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 24 ;
+    rcap:evidencePosition "3" ;
+    rcap:evidenceSection "8.2.1" ;
+    rcap:evidenceText "Patient has an underlying immunodeficiency or has received recent immunosuppressant therapy, corresponding to the APACHE II definitions (Knaus et al., 1985) , extended to take into account equivalent forms of immunosuppressant therapy that post-date the APACHE II definitions." ;
+    rcap:occurrenceKind "domain_inclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N76548ae7da4b4f99966c077306b94df0 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 25 ;
+    rcap:evidencePosition "4" ;
+    rcap:evidenceSection "8.2.2" ;
+    rcap:evidenceText "The treating clinician believes that participation in the domain would not be in the best interests of the patient" ;
+    rcap:occurrenceKind "domain_exclusion" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N8a461c59b9f6498595d57fea62a29fb0 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:3" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "This stratum definition will be applied retrospectively to patients enrolled using earlier versions of this domain and applied prospectively, operationalized as eligibility criteria, for Version 3 of this DSA onwards (i.e., only patients meeting this stratum definition are recruited using this version of the DSA)." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N12c74b2f2ebd497ebdd102031e6d1805 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.3.2" ;
+    rcap:evidenceText "Patients assigned to this intervention will not receive any preparation of polyclonal immunoglobulin intended to neutralize COVID-19 during the index hospitalization." ;
+    rcap:occurrenceKind "intervention" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N11b489dc5a3a4c238a4f4eb1b29b94d3 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "1" ;
+    rcap:evidenceSection "9.1" ;
+    rcap:evidenceText "SARS-CoV-2 antibody status at baseline" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N5158fee856a749da9e81a3ca93ea34d2 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "9.1" ;
+    rcap:evidenceText "Additional domain-specific data will be collected on all participants:" ;
+    rcap:occurrenceKind "data_collection" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N7c275589ecea487d9c602e38b245c806 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "9.2" ;
+    rcap:evidenceText "Refer to relevant core protocol documents for criteria for discontinuation of participation in the trial." ;
+    rcap:occurrenceKind "discontinuation" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Nd8f1bf4e2f184261b3e14f3f73ca4de8 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:6" ;
+    rcap:evidenceSection "10.2" ;
+    rcap:evidenceText "The unit-of-analysis for this domain consists of all patients who have received an allocation in this domain, and is further stratified by illness severity state at time of enrollment (defined as either Moderate State or Severe State) and Immune Suppressed Strata." ;
+    rcap:occurrenceKind "allocation_unit_of_analysis" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Ne1d614789b0c40099668fe559feb63c6 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "5" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Confirmed acute myocardial infarction" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:Domain_IG ;
+    owl:annotatedTarget _:N7f0a3509bde8474ea535820be8c721ab ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 25 ;
+    rcap:evidenceRule "B-domain" ;
+    rcap:evidenceSection "8.3.1" ;
+    rcap:evidenceText "High titer convalescent plasma" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N2923dd006cd1459eaf63a1a59d76a663 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "10.5" ;
+    rcap:evidenceText "If an interaction is specified with a future domain, it is sufficient for the interaction to be specified only in the DSA of such a future domain." ;
+    rcap:occurrenceKind "allocation_interactions" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:N51c968ecf6cb43dbb4166a3f6dd1d051 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:1" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "All secondary endpoints as specified in the relevant Core Protocol Documents." ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Nee5cc9f4babd44ed9a6fef12b7a2e778 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidencePosition "lead_in:2" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "The domain-specific secondary outcome measures (occurring during the index hospitalization, censored at 90 days after enrollment) will be:" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource rcap:DomainDesign_IG ;
+    owl:annotatedTarget _:Nbed1e4eb8cb64a7c8eb76fd751886569 ;
+    rcap:evidenceDoc "COVID-19 Immunoglobulin Therapy Domain-Specific Appendix 4" ;
+    rcap:evidenceGlyph "•" ;
+    rcap:evidencePage 27 ;
+    rcap:evidencePosition "6" ;
+    rcap:evidenceSection "8.5.2" ;
+    rcap:evidenceText "Other confirmed thrombotic events" ;
+    rcap:occurrenceKind "endpoint_secondary" .
+
+_:N0024e309a2c849b186ea80fc33c8b19d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2f3692658b .
+
+_:N00e7fe27e80d4517a9bdfb9183c688c4 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c70fcba7483 .
+
+_:N0513badab5514dbf995164b0a132edc8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc4a3982cda .
+
+_:N0bff39f4c2b54f708c97dd68b7032fc8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf3df6f4af5 .
+
+_:N11b489dc5a3a4c238a4f4eb1b29b94d3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6a712fb80d .
+
+_:N12c74b2f2ebd497ebdd102031e6d1805 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd269ca08fb .
+
+_:N13686ea6ad644502b1e2d8f14cc689bc a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce9865c51f8 .
+
+_:N15ca5fad5e04462c863ef35aedf376ed a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9ef610c2b5 .
+
+_:N16c62c57acb24226b057183f108fd32c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ceb8d951140 .
+
+_:N1b830aba2e364ef4b27c723efffecbc0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd715a78d79 .
+
+_:N1e43e86464394d508a4294147ade4ee7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c20d2fa4a96 .
+
+_:N254dd15b08e24ee29a4320687df55ad8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c41ae9d218c .
+
+_:N28ef61a9354c4e37b68935380c169b7c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb26af16384 .
+
+_:N2923dd006cd1459eaf63a1a59d76a663 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c168c834f5a .
+
+_:N31071610f57d421c9bbc95cf37e639f3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c796cb21447 .
+
+_:N354ac4bcbcf64f08811377af18eeae7e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6fb7a69975 .
+
+_:N36a2922ef00a4d1fae0ea83fa0a3be47 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cebb11ad03d .
+
+_:N3c422740e3b04b49b4a95229ee3dee1e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2bd61c29d0 .
+
+_:N3f68595892664d11a73746ef48887603 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6e16e97770 .
+
+_:N404a2830bc784e2897b8aebf84ad0f69 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc905bfb5f1 .
+
+_:N47c792bee0f84103b669fd804d20787f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c323b860242 .
+
+_:N5158fee856a749da9e81a3ca93ea34d2 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c39521898a2 .
+
+_:N51c1f457ddb04fb08367edbafca64fd1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc4efc1a692 .
+
+_:N51c968ecf6cb43dbb4166a3f6dd1d051 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c37a3fade76 .
+
+_:N5282e9e31d5c404e95530872c195d8c2 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6fb7a69975 .
+
+_:N60781b2a66264f189520a87558ae6a3f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cbc08787e8f .
+
+_:N64e5b2af5476413fa2592181001caec0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c8bc517a21d .
+
+_:N69d379ead4b5434487715c0137f105ae a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c29662860b2 .
+
+_:N6b098ae275064ccc8330766015c3eb29 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c03a44f4e7e .
+
+_:N6c6451aafdb843e4b518c25262c39cb8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4ee594ef26 .
+
+_:N6f646e137988430ea2dbd65f9e6c624d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0f86ea227e .
+
+_:N7376f1f34b634cb19ae2d222f841f485 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c45959ad7c8 .
+
+_:N76548ae7da4b4f99966c077306b94df0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c324186f8e2 .
+
+_:N7c275589ecea487d9c602e38b245c806 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c85858c8378 .
+
+_:N7d01a3706b2046379823690d64efe94d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf124de0190 .
+
+_:N7f0a3509bde8474ea535820be8c721ab a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6379004c57 .
+
+_:N81b8331cd396480db5177c5486317763 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7584fb6acd .
+
+_:N82d45f4b0aa148259dc5152066118b05 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c46fe2e7c1f .
+
+_:N8a461c59b9f6498595d57fea62a29fb0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4e1cf278ed .
+
+_:N8bb437f90d664158951226ec576ba696 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9b8bdba438 .
+
+_:N94ea3ded62cd47b4a1762f4d43a3e03c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cab1ce74ed4 .
+
+_:N953207187f9d45bab1cd96167b7bf1a3 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c151c132f43 .
+
+_:N96f59cd245e04eb1bb6fb0ab7164fac6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c947cb519f4 .
+
+_:N99eaca2d3ab94627abaebb52510afacd a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce5c526ddb9 .
+
+_:Na405b5324ebd4117958bf340b578c330 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cda45f8b5ea .
+
+_:Na417a915904d47a082943e7fe86c5913 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c9c4ee896ea .
+
+_:Na55bfa163ffa44298f9ba198ba9fc9f1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cb366f79e1b .
+
+_:Na8e4f36ec2994c158ce58c1d86be7d48 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c144fb17704 .
+
+_:Nb8571a941b9541348f2cd0681a28ae97 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c1ca983b883 .
+
+_:Nbed1e4eb8cb64a7c8eb76fd751886569 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce60bf2679f .
+
+_:Nc2126ff4f2d446c3805f1dab371415a0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c7bc833fbed .
+
+_:Nc2419062dca4489ca1c6a252cc671a70 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c486a11a14d .
+
+_:Nca46dc81d8124705acef5c7e6d1cd61b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4320f7169f .
+
+_:Ncbf1037c627a4f2fad410f8189658a7b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c6379004c57 .
+
+_:Nd01063e4e48040528ff84371cc736de1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c4c7e690055 .
+
+_:Nd6d8ac90ae3e475188e4430edf9dc526 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c3e403ea549 .
+
+_:Nd8f1bf4e2f184261b3e14f3f73ca4de8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cd89c60e3af .
+
+_:Ndd5ee96ffa0f42878c7dd896cb91ebfc a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cc26608429f .
+
+_:Ne1d614789b0c40099668fe559feb63c6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0cc4f0f17b .
+
+_:Ne261c5dff4624e70bd936046a2cfdc1f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c077742c43e .
+
+_:Ne6842e23d586448f91cdf3228a3d4bb2 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c0096438fef .
+
+_:Nec5ccb0b97bb41b78f0e36604f185043 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c027ab13bf7 .
+
+_:Nee5cc9f4babd44ed9a6fef12b7a2e778 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cfc67fd1c19 .
+
+_:Nf21dac49acd64a8d8b2378c71d55b18c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:c2ca322189f .
+
+_:Nfde2288a0e134b04b9bb9e0720fa3cef a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:ce39d43c5e4 .
+
+_:Nff39689572c14796924d878bb3613051 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cee36dc04d1 .
+
+_:Nffda4de981894fa38ad9284bab0fafbd a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom rcap:cf0778908bc .
+

@@ -1,0 +1,44 @@
+# R2e: R2 for every DSA in scope. Per DSA:
+#   components       components the DSA states (its domain individual excluded)
+#   restates         of those, components that Core 4.1 or PANDA also state
+#   reached          Core 4.1 / PANDA components in the sections its inheritance statements resolve to
+#   unreached        Core 4.1 / PANDA components reached by none of its inheritance statements
+#   silent_defaults  Core 4.1 overridable defaults on which the DSA says nothing
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rcap: <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/>
+SELECT ?dsa ?measure (COUNT(DISTINCT ?x) AS ?n) WHERE {
+  VALUES ?dsa { rcap:DomainDesign_CS rcap:DomainDesign_AB rcap:DomainDesign_TAB rcap:DomainDesign_IAV
+              rcap:DomainDesign_MD rcap:DomainDesign_IG rcap:DomainDesign_MV rcap:DomainDesign_END rcap:DomainDesign_IIM }
+  {
+    ?dsa rdfs:subClassOf [ owl:onProperty obo:BFO_0000051 ; owl:someValuesFrom ?x ] .
+    FILTER (!STRSTARTS(STR(?x), STR(rcap:Domain_)))
+    BIND ("components" AS ?measure)
+  } UNION {
+    ?dsa rdfs:subClassOf [ owl:onProperty obo:BFO_0000051 ; owl:someValuesFrom ?x ] .
+    VALUES ?up { rcap:CoreDesign_4_1 rcap:PandaDesign }
+    ?up rdfs:subClassOf [ owl:onProperty obo:BFO_0000051 ; owl:someValuesFrom ?x ] .
+    BIND ("restates" AS ?measure)
+  } UNION {
+    ?reading a rcap:InheritanceReading ; rcap:readingOf ?dsa ; rcap:dependsOn ?x .
+    VALUES ?up { rcap:CoreDesign_4_1 rcap:PandaDesign }
+    ?up rdfs:subClassOf [ owl:onProperty obo:BFO_0000051 ; owl:someValuesFrom ?x ] .
+    BIND ("reached" AS ?measure)
+  } UNION {
+    # ?dsa bound here: FILTER NOT EXISTS is evaluated before the outer VALUES is joined
+    VALUES ?dsa { rcap:DomainDesign_CS rcap:DomainDesign_AB rcap:DomainDesign_TAB rcap:DomainDesign_IAV
+              rcap:DomainDesign_MD rcap:DomainDesign_IG rcap:DomainDesign_MV rcap:DomainDesign_END rcap:DomainDesign_IIM }
+    VALUES ?up { rcap:CoreDesign_4_1 rcap:PandaDesign }
+    ?up rdfs:subClassOf [ owl:onProperty obo:BFO_0000051 ; owl:someValuesFrom ?x ] .
+    FILTER NOT EXISTS { ?reading a rcap:InheritanceReading ; rcap:readingOf ?dsa ; rcap:dependsOn ?x . }
+    BIND ("unreached" AS ?measure)
+  } UNION {
+    ?x a rcap:DelegationReading ; rcap:readingOf ?dsa ; rcap:allocationKind "overridable default" ;
+       rcap:role "paired" ; rcap:response "silent" .
+    FILTER NOT EXISTS { ?x rcap:refinesReading ?parent }
+    BIND ("silent_defaults" AS ?measure)
+  }
+}
+GROUP BY ?dsa ?measure
+ORDER BY ?dsa ?measure

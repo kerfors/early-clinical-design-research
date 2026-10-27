@@ -1,0 +1,643 @@
+@prefix cpmp: <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cpmp:Compound_LY3016859 a owl:Class ;
+    rdfs:label "CPMP compound design LY3016859" ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( obo:OBI_0500001 [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:crit-a859d57a40 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:crit-64b102cbb0 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:crit-9743386e83 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:crit-3c0e69b5ef ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:crit-3383ea9433 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:crit-d691e3b9d5 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:crit-d67f28f4aa ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:obj-fb5a0a3866 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:obj-88cb76c315 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:ep-7f56ccdd52 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:ep-228ca9b2b6 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:ep-7fdad73522 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:ep-cd9a66989d ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-0056f65561 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-5e833e10fd ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-ac441963dd ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-98948bfc7f ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-707d2de9a6 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-63bd612e5e ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-7875dcab45 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-fd26a0e67e ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-30c6973f97 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-abe48f5c6e ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-cbefed3c8e ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-5b53206c5a ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-452eefb7c3 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-4dec8dd958 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-2dd0680f48 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-95af42944c ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-7250125a64 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-09b5ae3214 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-7656f5ad19 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-37cb84d39f ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-905523def0 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-5f52751908 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-7c24578f59 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-8b299f01a5 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-b5691a85d9 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-1066bdc837 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-14f8e783f5 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-6945e3ce03 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-f86a9d3e11 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-40f101ce8c ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-f525c22e54 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-fbbb9af8cf ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-0c2ba80b21 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-aff1c53be5 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-d823816eef ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-9acd50f882 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-83bc832227 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-7ca9a9d9e6 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-98298d431f ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-e7b5f9b1df ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-4acb452cde ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-c13ae9d73e ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-3babb86112 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-2b89d7060a ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-6116f9af6e ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-5a274a2650 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-0ba39a6cac ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-03a0b15870 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-83d195b8c4 ] [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000051 ;
+                        owl:someValuesFrom cpmp:sched-1d4987abef ] ) ] ;
+    cpmp:moduleRole "compound" ;
+    cpmp:note "No document of its own: components worded the same (Step 5 template) in all three ISAs of this compound." .
+
+<https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/compound-LY3016859> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/cpmp-core> .
+
+cpmp:crit-3383ea9433 a owl:Class ;
+    rdfs:label "Have an eGFR of less than 70 ml/min/1.73m2 based on CKD-EPI formula at Visit 1 or Visit 2" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical false ;
+    cpmp:variantText "Have an estimated glomerular filtration rate (eGFR) of less than 70 ml/min/1.73m2 based on the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI) formula at Visit 1 or Visit 2",
+        "have an eGFR of less than 70 ml/min/1.73m2 based on CKD-EPI formula at Visit 1 or Visit 2" .
+
+cpmp:crit-3c0e69b5ef a owl:Class ;
+    rdfs:label "have a history of allergic reactions to monoclonal antibodies, or clinically significant multiple or severe drug allergies, including but not limited to erythema multiforme major, linear immunoglobulin A dermatosis, toxic epidermal necrolysis, or exfoliative dermatitis" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical false ;
+    cpmp:variantText "have a history of allergic reactions to monoclonal antibodies, or clinically significant multiple or severe drug allergies, including but not limited to erythema multiforme major, linear immunoglobulin A dermatosis, toxic epidermal necrolysis, or exfoliative dermatitis." .
+
+cpmp:crit-64b102cbb0 a owl:Class ;
+    rdfs:label "must have venous access in both arms for IV infusion and sample collection." ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical true .
+
+cpmp:crit-9743386e83 a owl:Class ;
+    rdfs:label "have received any antibodies against nerve growth factor (NGF), antibodies against EGFR, or EGFR tyrosine kinase inhibitors (TKI)." ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical false ;
+    cpmp:variantText "have received any antibodies against nerve growth factor (NGF), or antibodies against EGFR, or EGFR tyrosine kinase inhibitors",
+        "have received any antibodies against nerve growth factor (NGF), or antibodies against EGFR, or EGFR tyrosine kinase inhibitors." .
+
+cpmp:crit-a859d57a40 a owl:Class ;
+    rdfs:label "are willing to discontinue all pain medications for condition under study except rescue medication permitted per protocol until V801 in the follow-up period" ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical false ;
+    cpmp:variantText "are willing to discontinue all pain medications for condition under study except rescue medication permitted until V801 in the follow-up period" .
+
+cpmp:crit-d67f28f4aa a owl:Class ;
+    rdfs:label "have a history or presence of uncontrolled asthma, eczema, significant atopy, significant hereditary angio-edema or common variable immune deficiency, and" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical false ;
+    cpmp:variantText "have a history or presence of uncontrolled asthma, eczema, significant atopy, significant hereditary angio-edema, or common variable immune deficiency, and",
+        "have a history or presence of uncontrolled asthma, eczema, significant atopy, significant hereditary angioedema or common variable immune deficiency, and" .
+
+cpmp:crit-d691e3b9d5 a owl:Class ;
+    rdfs:label "Have any clinically serious or unstable cardiovascular, musculoskeletal disorder, gastrointestinal, endocrinologic, hematologic, hepatic, metabolic, urologic, pulmonary, dermatologic, immunologic, or ophthalmologic disease within 3 months of Visit 3" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical false ;
+    cpmp:variantText "Have any clinically serious or unstable cardiovascular, musculoskeletal disorder, gastrointestinal (GI), endocrinologic, hematologic, hepatic, metabolic, urologic, pulmonary, dermatologic, immunologic, or ophthalmologic disease within 3 months of Visit 3" .
+
+cpmp:ep-228ca9b2b6 a owl:Class ;
+    rdfs:label "Assessment of urine albumin/creatinine ratio" ;
+    rdfs:subClassOf cpmp:EndpointSpecification ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical true .
+
+cpmp:ep-7f56ccdd52 a owl:Class ;
+    rdfs:label "Appearance of anti-drug antibodies and neutralizing antibodies to {compound}" ;
+    rdfs:subClassOf cpmp:EndpointSpecification ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical true .
+
+cpmp:ep-7fdad73522 a owl:Class ;
+    rdfs:label "Assessment of urine protein/creatinine ratio" ;
+    rdfs:subClassOf cpmp:EndpointSpecification ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical true .
+
+cpmp:ep-cd9a66989d a owl:Class ;
+    rdfs:label "Assessment of eGFR" ;
+    rdfs:subClassOf cpmp:EndpointSpecification ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical true .
+
+cpmp:obj-88cb76c315 a owl:Class ;
+    rdfs:label "Explore the effect of {compound} on the kidney" ;
+    rdfs:subClassOf obo:IAO_0000005 ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical true .
+
+cpmp:obj-fb5a0a3866 a owl:Class ;
+    rdfs:label "Characterize immunogenicity of {compound}" ;
+    rdfs:subClassOf obo:IAO_0000005 ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:textIdentical true .
+
+cpmp:sched-0056f65561 a owl:Class ;
+    rdfs:label "Adverse events @ V802" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Adverse events" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V802" .
+
+cpmp:sched-03a0b15870 a owl:Class ;
+    rdfs:label "Vital signs @ V802" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Vital signs" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V802" .
+
+cpmp:sched-09b5ae3214 a owl:Class ;
+    rdfs:label "Hematology @ V802" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Hematology" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V802" .
+
+cpmp:sched-0ba39a6cac a owl:Class ;
+    rdfs:label "Urine pregnancy @ V803" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Urine pregnancy" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V803" .
+
+cpmp:sched-0c2ba80b21 a owl:Class ;
+    rdfs:label "Self-Harm Supplement form @ V803" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Self-Harm Supplement form" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V803" .
+
+cpmp:sched-1066bdc837 a owl:Class ;
+    rdfs:label "Immunogenicity (ADA) sample @ V803" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Immunogenicity (ADA) sample" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V803" .
+
+cpmp:sched-14f8e783f5 a owl:Class ;
+    rdfs:label "PK sample @ V801" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "PK sample" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V801" .
+
+cpmp:sched-1d4987abef a owl:Class ;
+    rdfs:label "Weight @ V803" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Weight" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V803" .
+
+cpmp:sched-2b89d7060a a owl:Class ;
+    rdfs:label "Urine Chemistries @ V7" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Urine Chemistries" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V7" .
+
+cpmp:sched-2dd0680f48 a owl:Class ;
+    rdfs:label "Epiregulin sample @ V802" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Epiregulin sample" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V802" .
+
+cpmp:sched-30c6973f97 a owl:Class ;
+    rdfs:label "Epiregulin sample @ ED" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Epiregulin sample" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "ED" .
+
+cpmp:sched-37cb84d39f a owl:Class ;
+    rdfs:label "Immunogenicity (ADA) sample @ ED" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Immunogenicity (ADA) sample" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "ED" .
+
+cpmp:sched-3babb86112 a owl:Class ;
+    rdfs:label "Urine Chemistries @ V6" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Urine Chemistries" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V6" .
+
+cpmp:sched-40f101ce8c a owl:Class ;
+    rdfs:label "Physical examination @ V802" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Physical examination" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V802" .
+
+cpmp:sched-452eefb7c3 a owl:Class ;
+    rdfs:label "Epiregulin sample @ V7" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Epiregulin sample" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V7" .
+
+cpmp:sched-4acb452cde a owl:Class ;
+    rdfs:label "Urine Chemistries @ V4" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Urine Chemistries" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V4" .
+
+cpmp:sched-4dec8dd958 a owl:Class ;
+    rdfs:label "Epiregulin sample @ V801" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Epiregulin sample" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V801" .
+
+cpmp:sched-5a274a2650 a owl:Class ;
+    rdfs:label "Urine Chemistries @ V803" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Urine Chemistries" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V803" .
+
+cpmp:sched-5b53206c5a a owl:Class ;
+    rdfs:label "Epiregulin sample @ V5" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Epiregulin sample" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V5" .
+
+cpmp:sched-5e833e10fd a owl:Class ;
+    rdfs:label "Adverse events @ V803" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Adverse events" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V803" .
+
+cpmp:sched-5f52751908 a owl:Class ;
+    rdfs:label "Immunogenicity (ADA) sample @ V4" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Immunogenicity (ADA) sample" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V4" .
+
+cpmp:sched-6116f9af6e a owl:Class ;
+    rdfs:label "Urine Chemistries @ V801" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Urine Chemistries" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V801" .
+
+cpmp:sched-63bd612e5e a owl:Class ;
+    rdfs:label "Concomitant medication @ V802" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Concomitant medication" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V802" .
+
+cpmp:sched-6945e3ce03 a owl:Class ;
+    rdfs:label "PK sample @ V802" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "PK sample" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V802" .
+
+cpmp:sched-707d2de9a6 a owl:Class ;
+    rdfs:label "Chemistry @ V803" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Chemistry" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V803" .
+
+cpmp:sched-7250125a64 a owl:Class ;
+    rdfs:label "HbA1c @ V803" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "HbA1c" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V803" .
+
+cpmp:sched-7656f5ad19 a owl:Class ;
+    rdfs:label "Hematology @ V803" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Hematology" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V803" .
+
+cpmp:sched-7875dcab45 a owl:Class ;
+    rdfs:label "Concomitant medication @ V803" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Concomitant medication" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V803" .
+
+cpmp:sched-7c24578f59 a owl:Class ;
+    rdfs:label "Immunogenicity (ADA) sample @ V5" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Immunogenicity (ADA) sample" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V5" .
+
+cpmp:sched-7ca9a9d9e6 a owl:Class ;
+    rdfs:label "Urinalysis @ V803" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Urinalysis" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V803" .
+
+cpmp:sched-83bc832227 a owl:Class ;
+    rdfs:label "Study intervention IV infusion @ V6" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Study intervention IV infusion" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V6" .
+
+cpmp:sched-83d195b8c4 a owl:Class ;
+    rdfs:label "Vital signs @ V803" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Vital signs" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V803" .
+
+cpmp:sched-8b299f01a5 a owl:Class ;
+    rdfs:label "Immunogenicity (ADA) sample @ V7" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Immunogenicity (ADA) sample" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V7" .
+
+cpmp:sched-905523def0 a owl:Class ;
+    rdfs:label "Immunogenicity (ADA) sample @ V3" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Immunogenicity (ADA) sample" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V3" .
+
+cpmp:sched-95af42944c a owl:Class ;
+    rdfs:label "Epiregulin sample @ V803" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Epiregulin sample" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V803" .
+
+cpmp:sched-98298d431f a owl:Class ;
+    rdfs:label "Urine Chemistries @ ED" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Urine Chemistries" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "ED" .
+
+cpmp:sched-98948bfc7f a owl:Class ;
+    rdfs:label "Chemistry @ V802" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Chemistry" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V802" .
+
+cpmp:sched-9acd50f882 a owl:Class ;
+    rdfs:label "Study intervention IV infusion @ V5" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Study intervention IV infusion" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V5" .
+
+cpmp:sched-abe48f5c6e a owl:Class ;
+    rdfs:label "Epiregulin sample @ V3" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Epiregulin sample" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V3" .
+
+cpmp:sched-ac441963dd a owl:Class ;
+    rdfs:label "C-SSRS @ V803" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "C-SSRS" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V803" .
+
+cpmp:sched-aff1c53be5 a owl:Class ;
+    rdfs:label "Study intervention IV infusion @ V3" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Study intervention IV infusion" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V3" .
+
+cpmp:sched-b5691a85d9 a owl:Class ;
+    rdfs:label "Immunogenicity (ADA) sample @ V801" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Immunogenicity (ADA) sample" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V801" .
+
+cpmp:sched-c13ae9d73e a owl:Class ;
+    rdfs:label "Urine Chemistries @ V5" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Urine Chemistries" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V5" .
+
+cpmp:sched-cbefed3c8e a owl:Class ;
+    rdfs:label "Epiregulin sample @ V4" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Epiregulin sample" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V4" .
+
+cpmp:sched-d823816eef a owl:Class ;
+    rdfs:label "Study intervention IV infusion @ V4" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Study intervention IV infusion" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V4" .
+
+cpmp:sched-e7b5f9b1df a owl:Class ;
+    rdfs:label "Urine Chemistries @ V3" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Urine Chemistries" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V3" .
+
+cpmp:sched-f525c22e54 a owl:Class ;
+    rdfs:label "Physical examination @ V803" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Physical examination" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V803" .
+
+cpmp:sched-f86a9d3e11 a owl:Class ;
+    rdfs:label "PK sample @ V803" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "PK sample" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V803" .
+
+cpmp:sched-fbbb9af8cf a owl:Class ;
+    rdfs:label "Self-Harm Follow-Up form @ V803" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Self-Harm Follow-Up form" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V803" .
+
+cpmp:sched-fd26a0e67e a owl:Class ;
+    rdfs:label "ECG @ V803" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "ECG" ;
+    cpmp:occursIn "BP01;NP01;OA01" ;
+    cpmp:sharingClass "compound column" ;
+    cpmp:visit "V803" .
+

@@ -1,0 +1,65 @@
+@prefix cpmp: <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/isa-NP07> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/disease-DPNP>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/master> .
+
+cpmp:ISA_NP07 a owl:Class ;
+    rdfs:label "CPMP ISA NP07 design (registered, no documents posted)" ;
+    rdfs:subClassOf _:N0cddf20377964df384f176c9ff7a6ca0,
+        _:N6943bf6af7634186a0357daa28accab4,
+        _:Nb6e8a996c75a44f5878ceafe9f1e48a6,
+        obo:OBI_0500001,
+        cpmp:DiseaseState_DPNP,
+        cpmp:MasterDesign ;
+    cpmp:compoundStated "LY4065967" ;
+    cpmp:diseaseStated "DPNP" ;
+    cpmp:moduleRole "compound x disease state" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP07 ;
+    owl:annotatedTarget _:Nb6e8a996c75a44f5878ceafe9f1e48a6 ;
+    cpmp:allocation "default assumed, no document" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP07 ;
+    owl:annotatedTarget cpmp:DiseaseState_DPNP ;
+    cpmp:evidenceDoc "NCT07285018 (ClinicalTrials.gov record, last update 2026-07-07)" ;
+    cpmp:evidenceText "The purpose of this study is to test the safety and efficacy of study drug LY4065967 for the treatment of diabetic peripheral neuropathic pain (DPNP). This trial is part of the chronic pain master protocol H0P-MC-CPMP (NCT05986292) which is a protocol to accelerate the development of new treatments for chronic pain." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP07 ;
+    owl:annotatedTarget _:N6943bf6af7634186a0357daa28accab4 ;
+    cpmp:allocation "default assumed, no document" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP07 ;
+    owl:annotatedTarget cpmp:MasterDesign ;
+    cpmp:evidenceDoc "NCT07285018 (ClinicalTrials.gov record, last update 2026-07-07)" ;
+    cpmp:evidenceText "The purpose of this study is to test the safety and efficacy of study drug LY4065967 for the treatment of diabetic peripheral neuropathic pain (DPNP). This trial is part of the chronic pain master protocol H0P-MC-CPMP (NCT05986292) which is a protocol to accelerate the development of new treatments for chronic pain." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP07 ;
+    owl:annotatedTarget _:N0cddf20377964df384f176c9ff7a6ca0 ;
+    cpmp:allocation "default assumed, no document" .
+
+_:N0cddf20377964df384f176c9ff7a6ca0 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-58d0248746 .
+
+_:N6943bf6af7634186a0357daa28accab4 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-cd09149b03 .
+
+_:Nb6e8a996c75a44f5878ceafe9f1e48a6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-da92f518e5 .
+

@@ -1,0 +1,4 @@
+file,url,version_iri,sha256,downloaded
+obi.owl,http://purl.obolibrary.org/obo/obi.owl,http://purl.obolibrary.org/obo/obi/2026-07-27/obi.owl,8874abcca971ee26b4e4442198387916d788d14af3519e1040474908ed12b946,2026-10-25
+mondo.owl,http://purl.obolibrary.org/obo/mondo.owl,http://purl.obolibrary.org/obo/mondo/releases/2026-10-06/mondo.owl,cbf3e02cc0aefed4fa6925162a5b1d1a48fbf0418586341967d5fd68fd7185d1,2026-10-25
+hp.owl,http://purl.obolibrary.org/obo/hp.owl,http://purl.obolibrary.org/obo/hp/releases/2026-09-01/hp.owl,8da35ec3b4cb494369b249acb9c2b3874a5a5839a91d5fae74b0d215b355138b,2026-10-25

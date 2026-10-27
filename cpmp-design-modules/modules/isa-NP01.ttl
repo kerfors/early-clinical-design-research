@@ -1,0 +1,2034 @@
+@prefix cpmp: <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/isa-NP01> a owl:Ontology ;
+    owl:imports <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/compound-LY3016859>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/disease-DPNP>,
+        <https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/modules/master> .
+
+cpmp:crit-74fe2bce04 a owl:Class ;
+    rdfs:label "have megaloblastic anemia or combined degeneration of the spinal cord" ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    cpmp:occursIn "NP01" ;
+    cpmp:sharingClass "single ISA" ;
+    cpmp:textIdentical true .
+
+cpmp:crit-d1b6b338d0 a owl:Class ;
+    rdfs:label "Women who are pregnant or breastfeeding." ;
+    rdfs:subClassOf obo:OBI_0500028 ;
+    cpmp:note "Occurs in ISAs of more than one compound column; no document groups it." ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:textIdentical false ;
+    cpmp:variantText "are pregnant or breastfeeding.",
+        "are women who are pregnant or breastfeeding.",
+        "women who are pregnant or breastfeeding." .
+
+cpmp:crit-dbf29d0d20 a owl:Class ;
+    rdfs:label "Are men or women who abide by the reproductive and contraceptive requirements provided in {isa} Section 10.2, Appendix 2." ;
+    rdfs:subClassOf obo:OBI_0500027 ;
+    cpmp:note "Occurs in ISAs of more than one compound column; no document groups it." ;
+    cpmp:occursIn "BP01;BP02;NP01;NP02;OA01;OA02" ;
+    cpmp:sharingClass "other" ;
+    cpmp:textIdentical false ;
+    cpmp:variantText "are men or women who abide by the reproductive and contraceptive requirements provided in {isa} Section 10.2, Appendix 2" .
+
+cpmp:ep-937e4b1b69 a owl:Class ;
+    rdfs:label "Assessment of serum concentrations of {compound} and epiregulin to enable pharmacokinetic and pharmacodynamic evaluations" ;
+    rdfs:subClassOf cpmp:EndpointSpecification ;
+    cpmp:occursIn "NP01;OA01" ;
+    cpmp:sharingClass "compound column (part)" ;
+    cpmp:textIdentical true .
+
+cpmp:obj-9ebe360470 a owl:Class ;
+    rdfs:label "Characterize the pharmacokinetics and pharmacodynamics of {compound} after multiple intravenous infusions in participants with {disease}" ;
+    rdfs:subClassOf obo:IAO_0000005 ;
+    cpmp:occursIn "NP01;OA01" ;
+    cpmp:sharingClass "compound column (part)" ;
+    cpmp:textIdentical false .
+
+cpmp:sched-04f121850a a owl:Class ;
+    rdfs:label "Self-Harm Follow-Up form @ V801" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Self-Harm Follow-Up form" ;
+    cpmp:occursIn "BP01;BP05;NP01;NP05;OA01;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V801" .
+
+cpmp:sched-092c25af85 a owl:Class ;
+    rdfs:label "Urine drug screen @ V3" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Urine drug screen" ;
+    cpmp:occursIn "BP01;BP02;BP05;NP01;NP02;NP05;OA01;OA02;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V3" .
+
+cpmp:sched-0a036e67cb a owl:Class ;
+    rdfs:label "ECG @ V5" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "ECG" ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V5" .
+
+cpmp:sched-0ce5e334a6 a owl:Class ;
+    rdfs:label "PGI @ V801" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "PGI" ;
+    cpmp:occursIn "BP01;BP05;NP01;NP05;OA01;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V801" .
+
+cpmp:sched-24c3804538 a owl:Class ;
+    rdfs:label "Physical examination @ ED" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Physical examination" ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "ED" .
+
+cpmp:sched-259a0cc432 a owl:Class ;
+    rdfs:label "Physical examination @ V3" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Physical examination" ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V3" .
+
+cpmp:sched-28381f85e9 a owl:Class ;
+    rdfs:label "PK sample @ V6" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "PK sample" ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V6" .
+
+cpmp:sched-29c3870028 a owl:Class ;
+    rdfs:label "PK sample @ V3" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "PK sample" ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V3" .
+
+cpmp:sched-2f0266e4f7 a owl:Class ;
+    rdfs:label "Urine drug screen @ V7" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Urine drug screen" ;
+    cpmp:occursIn "BP01;BP02;BP05;NP01;NP02;NP05;OA01;OA02;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V7" .
+
+cpmp:sched-3a30f4798e a owl:Class ;
+    rdfs:label "Vital signs @ V7" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Vital signs" ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V7" .
+
+cpmp:sched-3b9694d89e a owl:Class ;
+    rdfs:label "BPI @ V801" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "BPI" ;
+    cpmp:occursIn "NP01" ;
+    cpmp:sharingClass "single ISA" ;
+    cpmp:visit "V801" .
+
+cpmp:sched-3dac8b3398 a owl:Class ;
+    rdfs:label "Rescue medication usage reporting @ V801" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Rescue medication usage reporting" ;
+    cpmp:occursIn "BP01;BP05;NP01;NP05;OA01;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V801" .
+
+cpmp:sched-41b889ce0a a owl:Class ;
+    rdfs:label "Chemistry @ V4" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Chemistry" ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V4" .
+
+cpmp:sched-4d1eaa89cf a owl:Class ;
+    rdfs:label "Chemistry @ V6" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Chemistry" ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V6" .
+
+cpmp:sched-51108b0e6e a owl:Class ;
+    rdfs:label "Urine pregnancy @ ED" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Urine pregnancy" ;
+    cpmp:occursIn "BP01;BP02;BP05;NP01;NP02;NP05;OA01;OA02;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "ED" .
+
+cpmp:sched-52b231fea1 a owl:Class ;
+    rdfs:label "Vital signs @ V5" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Vital signs" ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V5" .
+
+cpmp:sched-5320527061 a owl:Class ;
+    rdfs:label "Urine drug screen @ V5" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Urine drug screen" ;
+    cpmp:occursIn "BP01;BP02;BP05;NP01;NP02;NP05;OA01;OA02;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V5" .
+
+cpmp:sched-53c92b1efe a owl:Class ;
+    rdfs:label "Hematology @ V801" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Hematology" ;
+    cpmp:occursIn "BP01;BP05;NP01;NP05;OA01;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V801" .
+
+cpmp:sched-53e46ffd7b a owl:Class ;
+    rdfs:label "NRS for pain @ V801" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "NRS for pain" ;
+    cpmp:occursIn "BP01;BP05;NP01;NP05;OA01;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V801" .
+
+cpmp:sched-62aab6ef47 a owl:Class ;
+    rdfs:label "Physical examination @ V4" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Physical examination" ;
+    cpmp:occursIn "BP01;BP03;NP01;NP03;OA01;OA03" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V4" .
+
+cpmp:sched-6843c3e5c0 a owl:Class ;
+    rdfs:label "ECG @ V7" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "ECG" ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V7" .
+
+cpmp:sched-69591ddbee a owl:Class ;
+    rdfs:label "Urine pregnancy @ V3" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Urine pregnancy" ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V3" .
+
+cpmp:sched-7f20d0cd57 a owl:Class ;
+    rdfs:label "HbA1c @ ED" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "HbA1c" ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "ED" .
+
+cpmp:sched-89718592f4 a owl:Class ;
+    rdfs:label "Urine pregnancy @ V5" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Urine pregnancy" ;
+    cpmp:occursIn "BP01;BP02;BP05;NP01;NP02;NP05;OA01;OA02;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V5" .
+
+cpmp:sched-910bc9191e a owl:Class ;
+    rdfs:label "Vital signs @ V801" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Vital signs" ;
+    cpmp:occursIn "BP01;BP05;NP01;NP05;OA01;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V801" .
+
+cpmp:sched-97af4ff05d a owl:Class ;
+    rdfs:label "Vital signs @ V6" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Vital signs" ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V6" .
+
+cpmp:sched-9a39377853 a owl:Class ;
+    rdfs:label "Self-Harm Supplement form @ V801" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Self-Harm Supplement form" ;
+    cpmp:occursIn "BP01;BP05;NP01;NP05;OA01;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V801" .
+
+cpmp:sched-ab41e3d173 a owl:Class ;
+    rdfs:label "Urine pregnancy @ V4" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Urine pregnancy" ;
+    cpmp:occursIn "BP01;BP02;BP05;NP01;NP02;NP05;OA01;OA02;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V4" .
+
+cpmp:sched-b384cf1816 a owl:Class ;
+    rdfs:label "PK sample @ V5" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "PK sample" ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V5" .
+
+cpmp:sched-b6726fa62d a owl:Class ;
+    rdfs:label "PK sample @ V7" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "PK sample" ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V7" .
+
+cpmp:sched-bf04ad5911 a owl:Class ;
+    rdfs:label "Physical examination @ V7" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Physical examination" ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V7" .
+
+cpmp:sched-c0ba3a70eb a owl:Class ;
+    rdfs:label "Physical examination @ V801" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Physical examination" ;
+    cpmp:occursIn "BP01;BP05;NP01;NP05;OA01;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V801" .
+
+cpmp:sched-c70e7cd953 a owl:Class ;
+    rdfs:label "HbA1c @ V3" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "HbA1c" ;
+    cpmp:occursIn "BP01;BP02;BP05;NP01;NP02;NP05;OA01;OA02;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V3" .
+
+cpmp:sched-c7614fbac8 a owl:Class ;
+    rdfs:label "Urine pregnancy @ V6" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Urine pregnancy" ;
+    cpmp:occursIn "BP01;BP02;BP05;NP01;NP02;NP05;OA01;OA02;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V6" .
+
+cpmp:sched-c7f32aef29 a owl:Class ;
+    rdfs:label "Urine pregnancy @ V7" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Urine pregnancy" ;
+    cpmp:occursIn "BP01;BP02;BP05;NP01;NP02;NP05;OA01;OA02;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V7" .
+
+cpmp:sched-c82f8a1ef2 a owl:Class ;
+    rdfs:label "Physical examination @ V6" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Physical examination" ;
+    cpmp:occursIn "BP01;BP03;NP01;NP03;OA01;OA03" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V6" .
+
+cpmp:sched-d0d46bbc41 a owl:Class ;
+    rdfs:label "PK sample @ V4" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "PK sample" ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V4" .
+
+cpmp:sched-d525bd11cc a owl:Class ;
+    rdfs:label "Vital signs @ V4" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Vital signs" ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V4" .
+
+cpmp:sched-daa8802b99 a owl:Class ;
+    rdfs:label "C-SSRS @ V801" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "C-SSRS" ;
+    cpmp:occursIn "BP01;BP05;NP01;NP05;OA01;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V801" .
+
+cpmp:sched-de4850e095 a owl:Class ;
+    rdfs:label "Adverse events @ V801" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Adverse events" ;
+    cpmp:occursIn "BP01;BP05;NP01;NP03;NP05;OA01;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V801" .
+
+cpmp:sched-e0a40845d6 a owl:Class ;
+    rdfs:label "Concomitant medication @ V801" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Concomitant medication" ;
+    cpmp:occursIn "BP01;BP05;NP01;NP05;OA01;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V801" .
+
+cpmp:sched-e246124e69 a owl:Class ;
+    rdfs:label "Physical examination @ V5" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Physical examination" ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V5" .
+
+cpmp:sched-ec1531f8b4 a owl:Class ;
+    rdfs:label "PK sample @ ED" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "PK sample" ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "ED" .
+
+cpmp:sched-ee818e08b4 a owl:Class ;
+    rdfs:label "HbA1c @ V7" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "HbA1c" ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V7" .
+
+cpmp:sched-f4729df931 a owl:Class ;
+    rdfs:label "Chemistry @ V801" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Chemistry" ;
+    cpmp:occursIn "BP01;BP05;NP01;NP05;OA01;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V801" .
+
+cpmp:sched-fcd0489783 a owl:Class ;
+    rdfs:label "Vital signs @ V3" ;
+    rdfs:subClassOf obo:IAO_0000007 ;
+    cpmp:activityKey "Vital signs" ;
+    cpmp:occursIn "BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05" ;
+    cpmp:sharingClass "other" ;
+    cpmp:visit "V3" .
+
+cpmp:ISA_NP01 a owl:Class ;
+    rdfs:label "CPMP ISA NP01 design" ;
+    rdfs:subClassOf _:N03e2ef1bc06b4781b503fbbb8ae35183,
+        _:N09a5d41178174b54ab13353c95626c44,
+        _:N0ad46dccb8ae42be9717b8fca7ce43f9,
+        _:N0be3510bbeb949a49ab3cc4f4adf968c,
+        _:N0c2e5b7457d740c7af75b8624e9cf716,
+        _:N0e43f954411e483e9be02aae0599cc37,
+        _:N10997e23103a4c688a509244d2a88f4f,
+        _:N11d0763c045344edbf4557fc8b324b66,
+        _:N129f63cc68d7466ca2e4928dcedfb7e5,
+        _:N13fe773e0faf4245a8d766f91b4b5ee1,
+        _:N16bce082b521466dba8211a1abd7f0ff,
+        _:N193c18d30d35498fb8fd5775e308f7ae,
+        _:N1bf48dcaf12e4266a610ee2c650a76e4,
+        _:N1d2432bc1348440c88bf10647eea3f6e,
+        _:N20c0624a4c17412d8dcf5159617c6f96,
+        _:N22486d5c65b240e0acc8afc13a19f76a,
+        _:N240a087a5f91452c8259ffbc4725b98d,
+        _:N258ff2f12d1648dab2bd09d25c3f5020,
+        _:N269b29a414b543c39170b4dc4d4eea97,
+        _:N2872ca9c67a14c2592df481223cdda79,
+        _:N289f9497c8d3436ba74f2d67b89b53bb,
+        _:N2aec06508d6e4a36b148501e9c3e6075,
+        _:N2b88b0aacde8486a9dba021eb5708016,
+        _:N2b9ce4e8de144c0c95dbaff25139224a,
+        _:N2bb6a1d6c3ab458ab3227b41325a56f7,
+        _:N2bd8c54592d542ea95af9de77e971e8d,
+        _:N2cd09d6abff24e2eab47d1a3e9c175c4,
+        _:N2d18565df96d4186900451a74869c6be,
+        _:N3085c41148e7422890858e847afeb1a7,
+        _:N33f2def717af4deb8afb8cdda3afd0c1,
+        _:N3b70171a3e9646c9a233720d51a37134,
+        _:N3ec38b35d9e14363a042d2b7147d447c,
+        _:N3f8a5b6278164894ae8a2aa083dffbe6,
+        _:N417d063ea9294f35a7a5a642a2c76ba7,
+        _:N41b874cae31a4cb4a0fbbd8e462f5d22,
+        _:N43217f2e32e643da8e1fb30c4c72cca5,
+        _:N45ee9e6427054aa9a07118669a3fba25,
+        _:N482d03cfbcc940d08bf6c990a4a97a97,
+        _:N4a4ded9fd4534a88b74325ec6e5466fa,
+        _:N4cc9ad49bf884d96b03b5c683b7f35c4,
+        _:N56111cd5d33d4562a5aec745032683aa,
+        _:N59b2e683a5434de0960da90ff6e7164f,
+        _:N59bf2d33eedd4f23a1da7f4b70fbc280,
+        _:N5cd0494f8dae40d7bfa6e8f3163db235,
+        _:N5d2eb1b785334ca3bee9f4468fe6d1d5,
+        _:N5fa41b5937d74a37850d8d7b6a42520f,
+        _:N673e48486b7e45dd821b453db3ede352,
+        _:N67471bad32ad4ca4a8c91af2f7b13865,
+        _:N680a29f1c598428fb135e8513e90ba67,
+        _:N698fb5b99a5f4690b30b90475709abbb,
+        _:N6a346e454b49482191c2939c04d49032,
+        _:N6aa007bec928476f9a58da933c814a29,
+        _:N6c24f8b7729f47d79a8ff9ea2951a742,
+        _:N747f9155339e4275bcc78a2a37fb654e,
+        _:N750f9b3d435545679066cab62b2150a7,
+        _:N774907cf0d5247fcb0e706e0492d603b,
+        _:N7aad1afcf9014042acd810ac0acafefd,
+        _:N7ac03172617948718a40335205679b91,
+        _:N7d1575c48c864cf0962477102d66e4b2,
+        _:N7dbd8c9c201e43519ac2bd65d0bdacae,
+        _:N8053700053a8493282ae1daf22636694,
+        _:N84f4fa67768c483ca8ca493a98c8333e,
+        _:N858b7845110346f5b5677a004c8b9548,
+        _:N8685aaec0bec4fe098f28553ae04ecaf,
+        _:N86935b1f72b840d7aad9553cb136d859,
+        _:N892b320678884c1fa65608f27a0ea8e6,
+        _:N8ebdad90d9954927b8ecc61a1da12da9,
+        _:N8f07caed4e574edbaaa6703b888bca27,
+        _:N92a463dcea9c49cba787038e76f804e6,
+        _:N947d0f2c2cd642778f8cf52435890232,
+        _:N9640cc5a974c41c9888e9fe4d0382d50,
+        _:N9867c1da16044a5b9383511dc61f6f5a,
+        _:N9981b905fe004668b07903fd6ef99983,
+        _:N9aac1577ddfb4febb18013e0940ba5ca,
+        _:N9c1817a5768c4bd2b0ac61e595a35fc4,
+        _:N9d7800d96fb6438dbc7436a271a544a7,
+        _:N9d9eb336f8e24d2a80fe4622309dcd54,
+        _:N9ec09134ca5f4964b6ff87cc5506c92c,
+        _:Na196f10424344f2a8b3ddae86aa7a12e,
+        _:Na4007b44efae4ae18901ed8cc98c9964,
+        _:Na82759849b104c67af69fc7205866666,
+        _:Nac0174d8f31e44b99e2104d3920ec308,
+        _:Nb7892afe8b75445684e4ce6d8ba1a768,
+        _:Nb96ea84583b548c99f89e75015ad353c,
+        _:Nc0024583d985465195e2c3760c6f5fff,
+        _:Nc1c839bc4a764362b849a03ec5160d85,
+        _:Nc21509231da745bb98800c35688aad7e,
+        _:Nc6d19095e81449849e889a13c83d4a74,
+        _:Nc894393496674006a5ee2ab5a9ee3ec7,
+        _:Ncb936288e379493da2c2d71314acd942,
+        _:Nce43dfe59ec04cc3b4b57d170ae1730c,
+        _:Nd07eecc43e52486c8ac36fedeee4de13,
+        _:Nd3bd46d4815a48738adb4c8e0ea08648,
+        _:Nd458f8c06d71411d875325a0f07f10bd,
+        _:Nd7b8efaa6e244672b6878752d0e4767a,
+        _:Ndb70979c1e7f4df3bac52c504bf666a6,
+        _:Ne1af88131b744055b58b89eba294c09c,
+        _:Ne28e4636cd8f49b1a61135e08b4a785c,
+        _:Ne3509f5bc7804fdd9fece9063fa6ea06,
+        _:Ne41a9485603a47cab054232fa1a3f138,
+        _:Ne4597985c7fe46a5a6d3b98412076655,
+        _:Ne73a185be3104100b0630a077ce52957,
+        _:Ne754964b73614e78947f72f1c6e69b06,
+        _:Ne78deda0558f4db3bbaf9fd945d11b73,
+        _:Ne84bc123da484561bd7e9947331c1bb8,
+        _:Ne90727a40fc44c228486156440fb7a5b,
+        _:Neb6eb994db6f4d30870507eb56963fca,
+        _:Need36d9358484ba2b405620790696a2d,
+        _:Nefe722a911024e07ae514dccc3e4be6a,
+        _:Nf5d2434529c84662a858e34eb1488c0e,
+        _:Nf6e964215b47402c9263113f38df3343,
+        _:Nfacad4c03a95455cac0a7c294cf54689,
+        _:Nfb86fec75db347088158b1075745ad28,
+        _:Nfebd5bd3887347939c50abd701520a65,
+        obo:OBI_0500001,
+        cpmp:DiseaseState_DPNP,
+        cpmp:MasterDesign ;
+    cpmp:compoundStated "LY3016859" ;
+    cpmp:dependsOn cpmp:DiseaseState_DPNP ;
+    cpmp:diseaseStated "DPNP" ;
+    cpmp:moduleRole "compound x disease state" ;
+    cpmp:overrides cpmp:DiseaseState_DPNP,
+        cpmp:sched-58d0248746,
+        cpmp:sched-cd09149b03,
+        cpmp:sched-da92f518e5 .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Ne78deda0558f4db3bbaf9fd945d11b73 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Ne754964b73614e78947f72f1c6e69b06 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N2b9ce4e8de144c0c95dbaff25139224a ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N03e2ef1bc06b4781b503fbbb8ae35183 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Ne90727a40fc44c228486156440fb7a5b ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty cpmp:dependsOn ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget cpmp:DiseaseState_DPNP ;
+    cpmp:evidencePage 18 ;
+    cpmp:evidenceSection "3 Objectives and Endpoints" ;
+    cpmp:evidenceText "The master protocol CPMP and DPNP DSA CPMP(3) include objectives and endpoints applicable for this study." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Nc0024583d985465195e2c3760c6f5fff ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceNumber "3002" ;
+    cpmp:evidencePage 21 ;
+    cpmp:evidenceText "must have venous access in both arms for IV infusion and sample collection." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Nce43dfe59ec04cc3b4b57d170ae1730c ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N3b70171a3e9646c9a233720d51a37134 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N7dbd8c9c201e43519ac2bd65d0bdacae ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N11d0763c045344edbf4557fc8b324b66 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N750f9b3d435545679066cab62b2150a7 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Na196f10424344f2a8b3ddae86aa7a12e ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Ne3509f5bc7804fdd9fece9063fa6ea06 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget cpmp:MasterDesign ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceText "NP01 §5 p21: The master protocol CPMP and DPNP DSA CPMP(3) provide eligibility criteria that must be followed for this study. LY3016859 specific inclusion and exclusion crit" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty cpmp:dependsOn ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget cpmp:DiseaseState_DPNP ;
+    cpmp:evidencePage 10 ;
+    cpmp:evidenceSection "1.3 Schedule of Activities (SoA)" ;
+    cpmp:evidenceText "Please refer to master protocol H0P-MC-CPMP (CPMP) and the diabetic peripheral neuropathic pain (DPNP) disease-state addendum (DSA) H0P-MC-CPMP(3) SoAs for additional information." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Nc6d19095e81449849e889a13c83d4a74 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N774907cf0d5247fcb0e706e0492d603b ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N9d9eb336f8e24d2a80fe4622309dcd54 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N2aec06508d6e4a36b148501e9c3e6075 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Nc1c839bc4a764362b849a03ec5160d85 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Nd458f8c06d71411d875325a0f07f10bd ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N9867c1da16044a5b9383511dc61f6f5a ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty cpmp:dependsOn ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget cpmp:DiseaseState_DPNP ;
+    cpmp:evidencePage 31 ;
+    cpmp:evidenceSection "9.4.1 General considerations" ;
+    cpmp:evidenceText "Secondary and Tertiary/Exploratory endpoints and analyses are described in protocol CPMP and DSA CPMP(3)." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Nd3bd46d4815a48738adb4c8e0ea08648 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N482d03cfbcc940d08bf6c990a4a97a97 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N9aac1577ddfb4febb18013e0940ba5ca ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N5fa41b5937d74a37850d8d7b6a42520f ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty cpmp:overrides ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget cpmp:DiseaseState_DPNP ;
+    cpmp:activityKey "BPI" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceText "If the participant discontinues after V801, this assessment is not needed for ED per the CPMP SoA." ;
+    cpmp:visit "ED" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N56111cd5d33d4562a5aec745032683aa ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N20c0624a4c17412d8dcf5159617c6f96 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Neb6eb994db6f4d30870507eb56963fca ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N698fb5b99a5f4690b30b90475709abbb ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceNumber "" ;
+    cpmp:evidencePage 18 ;
+    cpmp:evidenceText "eGFR" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N43217f2e32e643da8e1fb30c4c72cca5 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty cpmp:overrides ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget cpmp:sched-da92f518e5 ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceText "If the participant discontinues after V801, this assessment is not needed for ED per the CPMP SoA." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N5d2eb1b785334ca3bee9f4468fe6d1d5 ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceNumber "3009" ;
+    cpmp:evidencePage 21 ;
+    cpmp:evidenceText "are women who are pregnant or breastfeeding." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N258ff2f12d1648dab2bd09d25c3f5020 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N8053700053a8493282ae1daf22636694 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N1d2432bc1348440c88bf10647eea3f6e ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceNumber "3004" ;
+    cpmp:evidencePage 21 ;
+    cpmp:evidenceText "Have any clinically serious or unstable cardiovascular, musculoskeletal disorder, gastrointestinal, endocrinologic, hematologic, hepatic, metabolic, urologic, pulmonary, dermatologic, immunologic, or ophthalmologic disease within 3 months of Visit 3" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N3f8a5b6278164894ae8a2aa083dffbe6 ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceNumber "3003" ;
+    cpmp:evidencePage 21 ;
+    cpmp:evidenceText "Have an eGFR of less than 70 ml/min/1.73m2 based on CKD-EPI formula at Visit 1 or Visit 2" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N67471bad32ad4ca4a8c91af2f7b13865 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N8ebdad90d9954927b8ecc61a1da12da9 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N7d1575c48c864cf0962477102d66e4b2 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Nefe722a911024e07ae514dccc3e4be6a ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N09a5d41178174b54ab13353c95626c44 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N269b29a414b543c39170b4dc4d4eea97 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N858b7845110346f5b5677a004c8b9548 ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceNumber "3006" ;
+    cpmp:evidencePage 21 ;
+    cpmp:evidenceText "have received any antibodies against nerve growth factor (NGF), or antibodies against EGFR, or EGFR tyrosine kinase inhibitors." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Na82759849b104c67af69fc7205866666 ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceNumber "" ;
+    cpmp:evidencePage 18 ;
+    cpmp:evidenceText "Assessment of serum concentrations of LY3016859 and epiregulin to enable pharmacokinetic and pharmacodynamic evaluations" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Ne84bc123da484561bd7e9947331c1bb8 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N2cd09d6abff24e2eab47d1a3e9c175c4 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Nf6e964215b47402c9263113f38df3343 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty cpmp:dependsOn ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget cpmp:DiseaseState_DPNP ;
+    cpmp:evidencePage 8 ;
+    cpmp:evidenceSection "1.1 Synopsis" ;
+    cpmp:evidenceText "Objectives and Endpoints The primary and secondary objectives and endpoints are stated in the master protocol H0P-MC-CPMP (CPMP) and DPNP disease-state addendum ([DSA] H0P-MC-CPMP[3])." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N0c2e5b7457d740c7af75b8624e9cf716 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N0e43f954411e483e9be02aae0599cc37 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N1bf48dcaf12e4266a610ee2c650a76e4 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N92a463dcea9c49cba787038e76f804e6 ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceNumber "3008" ;
+    cpmp:evidencePage 21 ;
+    cpmp:evidenceText "have a history or presence of uncontrolled asthma, eczema, significant atopy, significant hereditary angio-edema or common variable immune deficiency, and" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Nfebd5bd3887347939c50abd701520a65 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Nc21509231da745bb98800c35688aad7e ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Ne4597985c7fe46a5a6d3b98412076655 ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceNumber "" ;
+    cpmp:evidencePage 18 ;
+    cpmp:evidenceText "Characterize immunogenicity of LY3016859" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N10997e23103a4c688a509244d2a88f4f ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Ne41a9485603a47cab054232fa1a3f138 ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceNumber "3005" ;
+    cpmp:evidencePage 21 ;
+    cpmp:evidenceText "have megaloblastic anemia or combined degeneration of the spinal cord" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N22486d5c65b240e0acc8afc13a19f76a ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N289f9497c8d3436ba74f2d67b89b53bb ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N2872ca9c67a14c2592df481223cdda79 ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceNumber "" ;
+    cpmp:evidencePage 18 ;
+    cpmp:evidenceText "urine albumin/creatinine ratio" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N417d063ea9294f35a7a5a642a2c76ba7 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Nb7892afe8b75445684e4ce6d8ba1a768 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N680a29f1c598428fb135e8513e90ba67 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N6aa007bec928476f9a58da933c814a29 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N45ee9e6427054aa9a07118669a3fba25 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N84f4fa67768c483ca8ca493a98c8333e ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceNumber "3001" ;
+    cpmp:evidencePage 21 ;
+    cpmp:evidenceText "are willing to discontinue all pain medications for condition under study except rescue medication permitted per protocol until V801 in the follow-up period" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty cpmp:overrides ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget cpmp:sched-cd09149b03 ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceText "If the participant discontinues after V801, this assessment is not needed for ED per the CPMP SoA." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N59b2e683a5434de0960da90ff6e7164f ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N0be3510bbeb949a49ab3cc4f4adf968c ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Nfacad4c03a95455cac0a7c294cf54689 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N41b874cae31a4cb4a0fbbd8e462f5d22 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Ne28e4636cd8f49b1a61135e08b4a785c ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N9640cc5a974c41c9888e9fe4d0382d50 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N9981b905fe004668b07903fd6ef99983 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N240a087a5f91452c8259ffbc4725b98d ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Nf5d2434529c84662a858e34eb1488c0e ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N13fe773e0faf4245a8d766f91b4b5ee1 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty cpmp:dependsOn ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget cpmp:DiseaseState_DPNP ;
+    cpmp:evidencePage 27 ;
+    cpmp:evidenceSection "8 Study Assessments and Procedures" ;
+    cpmp:evidenceText "Study procedures and their timing are summarized in the protocol CPMP, DPNP DSA CPMP(3), and ISA NP01 SoAs." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N33f2def717af4deb8afb8cdda3afd0c1 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N6c24f8b7729f47d79a8ff9ea2951a742 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Ncb936288e379493da2c2d71314acd942 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N4cc9ad49bf884d96b03b5c683b7f35c4 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Ne1af88131b744055b58b89eba294c09c ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N6a346e454b49482191c2939c04d49032 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Nc894393496674006a5ee2ab5a9ee3ec7 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N747f9155339e4275bcc78a2a37fb654e ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N8685aaec0bec4fe098f28553ae04ecaf ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N4a4ded9fd4534a88b74325ec6e5466fa ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty cpmp:overrides ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget cpmp:sched-58d0248746 ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceText "If the participant discontinues after V801, this assessment is not needed for ED per the CPMP SoA." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N7aad1afcf9014042acd810ac0acafefd ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N3085c41148e7422890858e847afeb1a7 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N5cd0494f8dae40d7bfa6e8f3163db235 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N9ec09134ca5f4964b6ff87cc5506c92c ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N86935b1f72b840d7aad9553cb136d859 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N947d0f2c2cd642778f8cf52435890232 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N892b320678884c1fa65608f27a0ea8e6 ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceNumber "" ;
+    cpmp:evidencePage 18 ;
+    cpmp:evidenceText "Appearance of anti-drug antibodies and neutralizing antibodies to LY3016859" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Nb96ea84583b548c99f89e75015ad353c ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Nd7b8efaa6e244672b6878752d0e4767a ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Ne73a185be3104100b0630a077ce52957 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N7ac03172617948718a40335205679b91 ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceNumber "" ;
+    cpmp:evidencePage 18 ;
+    cpmp:evidenceText "Explore the effect of LY3016859 on the kidney" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N16bce082b521466dba8211a1abd7f0ff ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceNumber "" ;
+    cpmp:evidencePage 18 ;
+    cpmp:evidenceText "Characterize the pharmacokinetics and pharmacodynamics of LY3016859 after multiple intravenous infusions in participants with diabetic peripheral neuropathic pain" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N129f63cc68d7466ca2e4928dcedfb7e5 ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceNumber "3007" ;
+    cpmp:evidencePage 21 ;
+    cpmp:evidenceText "have a history of allergic reactions to monoclonal antibodies, or clinically significant multiple or severe drug allergies, including but not limited to erythema multiforme major, linear immunoglobulin A dermatosis, toxic epidermal necrolysis, or exfoliative dermatitis." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N3ec38b35d9e14363a042d2b7147d447c ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Nd07eecc43e52486c8ac36fedeee4de13 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N8f07caed4e574edbaaa6703b888bca27 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty cpmp:dependsOn ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget cpmp:DiseaseState_DPNP ;
+    cpmp:evidencePage 21 ;
+    cpmp:evidenceSection "5 Study Population" ;
+    cpmp:evidenceText "The master protocol CPMP and DPNP DSA CPMP(3) provide eligibility criteria that must be followed for this study." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N2b88b0aacde8486a9dba021eb5708016 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N193c18d30d35498fb8fd5775e308f7ae ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget cpmp:DiseaseState_DPNP ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceText "NP01 §5 p21: The master protocol CPMP and DPNP DSA CPMP(3) provide eligibility criteria that must be followed for this study. LY3016859 specific inclusion and exclusion crit" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N9c1817a5768c4bd2b0ac61e595a35fc4 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N2bb6a1d6c3ab458ab3227b41325a56f7 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Nfb86fec75db347088158b1075745ad28 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Ndb70979c1e7f4df3bac52c504bf666a6 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Na4007b44efae4ae18901ed8cc98c9964 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N673e48486b7e45dd821b453db3ede352 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N9d7800d96fb6438dbc7436a271a544a7 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty cpmp:dependsOn ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget cpmp:DiseaseState_DPNP ;
+    cpmp:evidencePage 31 ;
+    cpmp:evidenceSection "9 Statistical Considerations" ;
+    cpmp:evidenceText "The master protocol and DPNP DSA provide statistical considerations." .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N0ad46dccb8ae42be9717b8fca7ce43f9 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N2bd8c54592d542ea95af9de77e971e8d ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceNumber "3000" ;
+    cpmp:evidencePage 21 ;
+    cpmp:evidenceText "are men or women who abide by the reproductive and contraceptive requirements provided in NP01 Section 10.2, Appendix 2" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N59bf2d33eedd4f23a1da7f4b70fbc280 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:N2d18565df96d4186900451a74869c6be ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Need36d9358484ba2b405620790696a2d ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceNumber "" ;
+    cpmp:evidencePage 18 ;
+    cpmp:evidenceText "urine protein/creatinine ratio" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource cpmp:ISA_NP01 ;
+    owl:annotatedTarget _:Nac0174d8f31e44b99e2104d3920ec308 ;
+    cpmp:allocation "own" ;
+    cpmp:evidenceDoc "NP01" ;
+    cpmp:evidenceSource "soa2usdm-collections cf9541d (consolidated SoA), via cpmp-soa-join 9ee4b8a, NCT04476108" .
+
+_:N03e2ef1bc06b4781b503fbbb8ae35183 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-52b231fea1 .
+
+_:N09a5d41178174b54ab13353c95626c44 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-de4850e095 .
+
+_:N0ad46dccb8ae42be9717b8fca7ce43f9 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-5a274a2650 .
+
+_:N0be3510bbeb949a49ab3cc4f4adf968c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-d525bd11cc .
+
+_:N0c2e5b7457d740c7af75b8624e9cf716 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-9a39377853 .
+
+_:N0e43f954411e483e9be02aae0599cc37 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-3dac8b3398 .
+
+_:N10997e23103a4c688a509244d2a88f4f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-2f0266e4f7 .
+
+_:N11d0763c045344edbf4557fc8b324b66 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-abe48f5c6e .
+
+_:N129f63cc68d7466ca2e4928dcedfb7e5 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:crit-3c0e69b5ef .
+
+_:N13fe773e0faf4245a8d766f91b4b5ee1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-0a036e67cb .
+
+_:N16bce082b521466dba8211a1abd7f0ff a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:obj-9ebe360470 .
+
+_:N193c18d30d35498fb8fd5775e308f7ae a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-4d1eaa89cf .
+
+_:N1bf48dcaf12e4266a610ee2c650a76e4 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-5f52751908 .
+
+_:N1d2432bc1348440c88bf10647eea3f6e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:crit-d691e3b9d5 .
+
+_:N20c0624a4c17412d8dcf5159617c6f96 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-6945e3ce03 .
+
+_:N22486d5c65b240e0acc8afc13a19f76a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-daa8802b99 .
+
+_:N240a087a5f91452c8259ffbc4725b98d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-37cb84d39f .
+
+_:N258ff2f12d1648dab2bd09d25c3f5020 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-63bd612e5e .
+
+_:N269b29a414b543c39170b4dc4d4eea97 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-b6726fa62d .
+
+_:N2872ca9c67a14c2592df481223cdda79 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:ep-228ca9b2b6 .
+
+_:N289f9497c8d3436ba74f2d67b89b53bb a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-5e833e10fd .
+
+_:N2aec06508d6e4a36b148501e9c3e6075 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-98298d431f .
+
+_:N2b88b0aacde8486a9dba021eb5708016 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-51108b0e6e .
+
+_:N2b9ce4e8de144c0c95dbaff25139224a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-b384cf1816 .
+
+_:N2bb6a1d6c3ab458ab3227b41325a56f7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-fd26a0e67e .
+
+_:N2bd8c54592d542ea95af9de77e971e8d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:crit-dbf29d0d20 .
+
+_:N2cd09d6abff24e2eab47d1a3e9c175c4 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-7250125a64 .
+
+_:N2d18565df96d4186900451a74869c6be a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-53c92b1efe .
+
+_:N3085c41148e7422890858e847afeb1a7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-7875dcab45 .
+
+_:N33f2def717af4deb8afb8cdda3afd0c1 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-7656f5ad19 .
+
+_:N3b70171a3e9646c9a233720d51a37134 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-14f8e783f5 .
+
+_:N3ec38b35d9e14363a042d2b7147d447c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-aff1c53be5 .
+
+_:N3f8a5b6278164894ae8a2aa083dffbe6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:crit-3383ea9433 .
+
+_:N417d063ea9294f35a7a5a642a2c76ba7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-98948bfc7f .
+
+_:N41b874cae31a4cb4a0fbbd8e462f5d22 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-707d2de9a6 .
+
+_:N43217f2e32e643da8e1fb30c4c72cca5 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-95af42944c .
+
+_:N45ee9e6427054aa9a07118669a3fba25 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-f4729df931 .
+
+_:N482d03cfbcc940d08bf6c990a4a97a97 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-c7f32aef29 .
+
+_:N4a4ded9fd4534a88b74325ec6e5466fa a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-c82f8a1ef2 .
+
+_:N4cc9ad49bf884d96b03b5c683b7f35c4 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-e7b5f9b1df .
+
+_:N56111cd5d33d4562a5aec745032683aa a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-9acd50f882 .
+
+_:N59b2e683a5434de0960da90ff6e7164f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-04f121850a .
+
+_:N59bf2d33eedd4f23a1da7f4b70fbc280 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-40f101ce8c .
+
+_:N5cd0494f8dae40d7bfa6e8f3163db235 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-cbefed3c8e .
+
+_:N5d2eb1b785334ca3bee9f4468fe6d1d5 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:crit-d1b6b338d0 .
+
+_:N5fa41b5937d74a37850d8d7b6a42520f a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-b5691a85d9 .
+
+_:N673e48486b7e45dd821b453db3ede352 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-4acb452cde .
+
+_:N67471bad32ad4ca4a8c91af2f7b13865 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-09b5ae3214 .
+
+_:N680a29f1c598428fb135e8513e90ba67 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-6116f9af6e .
+
+_:N698fb5b99a5f4690b30b90475709abbb a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:ep-cd9a66989d .
+
+_:N6a346e454b49482191c2939c04d49032 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-e246124e69 .
+
+_:N6aa007bec928476f9a58da933c814a29 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-d0d46bbc41 .
+
+_:N6c24f8b7729f47d79a8ff9ea2951a742 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-d823816eef .
+
+_:N747f9155339e4275bcc78a2a37fb654e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-f525c22e54 .
+
+_:N750f9b3d435545679066cab62b2150a7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-2b89d7060a .
+
+_:N774907cf0d5247fcb0e706e0492d603b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-0c2ba80b21 .
+
+_:N7aad1afcf9014042acd810ac0acafefd a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-89718592f4 .
+
+_:N7ac03172617948718a40335205679b91 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:obj-88cb76c315 .
+
+_:N7d1575c48c864cf0962477102d66e4b2 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-3a30f4798e .
+
+_:N7dbd8c9c201e43519ac2bd65d0bdacae a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-bf04ad5911 .
+
+_:N8053700053a8493282ae1daf22636694 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-29c3870028 .
+
+_:N84f4fa67768c483ca8ca493a98c8333e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:crit-a859d57a40 .
+
+_:N858b7845110346f5b5677a004c8b9548 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:crit-9743386e83 .
+
+_:N8685aaec0bec4fe098f28553ae04ecaf a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-910bc9191e .
+
+_:N86935b1f72b840d7aad9553cb136d859 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-5320527061 .
+
+_:N892b320678884c1fa65608f27a0ea8e6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:ep-7f56ccdd52 .
+
+_:N8ebdad90d9954927b8ecc61a1da12da9 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-3babb86112 .
+
+_:N8f07caed4e574edbaaa6703b888bca27 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-259a0cc432 .
+
+_:N92a463dcea9c49cba787038e76f804e6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:crit-d67f28f4aa .
+
+_:N947d0f2c2cd642778f8cf52435890232 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-8b299f01a5 .
+
+_:N9640cc5a974c41c9888e9fe4d0382d50 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-ee818e08b4 .
+
+_:N9867c1da16044a5b9383511dc61f6f5a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-ab41e3d173 .
+
+_:N9981b905fe004668b07903fd6ef99983 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-0ce5e334a6 .
+
+_:N9aac1577ddfb4febb18013e0940ba5ca a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-03a0b15870 .
+
+_:N9c1817a5768c4bd2b0ac61e595a35fc4 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-0056f65561 .
+
+_:N9d7800d96fb6438dbc7436a271a544a7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-1066bdc837 .
+
+_:N9d9eb336f8e24d2a80fe4622309dcd54 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-c70e7cd953 .
+
+_:N9ec09134ca5f4964b6ff87cc5506c92c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-1d4987abef .
+
+_:Na196f10424344f2a8b3ddae86aa7a12e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-f86a9d3e11 .
+
+_:Na4007b44efae4ae18901ed8cc98c9964 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-6843c3e5c0 .
+
+_:Na82759849b104c67af69fc7205866666 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:ep-937e4b1b69 .
+
+_:Nac0174d8f31e44b99e2104d3920ec308 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-2dd0680f48 .
+
+_:Nb7892afe8b75445684e4ce6d8ba1a768 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-c7614fbac8 .
+
+_:Nb96ea84583b548c99f89e75015ad353c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-ec1531f8b4 .
+
+_:Nc0024583d985465195e2c3760c6f5fff a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:crit-64b102cbb0 .
+
+_:Nc1c839bc4a764362b849a03ec5160d85 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-c0ba3a70eb .
+
+_:Nc21509231da745bb98800c35688aad7e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-7ca9a9d9e6 .
+
+_:Nc6d19095e81449849e889a13c83d4a74 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-28381f85e9 .
+
+_:Nc894393496674006a5ee2ab5a9ee3ec7 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-452eefb7c3 .
+
+_:Ncb936288e379493da2c2d71314acd942 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-7f20d0cd57 .
+
+_:Nce43dfe59ec04cc3b4b57d170ae1730c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-30c6973f97 .
+
+_:Nd07eecc43e52486c8ac36fedeee4de13 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-ac441963dd .
+
+_:Nd3bd46d4815a48738adb4c8e0ea08648 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-62aab6ef47 .
+
+_:Nd458f8c06d71411d875325a0f07f10bd a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-69591ddbee .
+
+_:Nd7b8efaa6e244672b6878752d0e4767a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-7c24578f59 .
+
+_:Ndb70979c1e7f4df3bac52c504bf666a6 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-41b889ce0a .
+
+_:Ne1af88131b744055b58b89eba294c09c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-53e46ffd7b .
+
+_:Ne28e4636cd8f49b1a61135e08b4a785c a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-fcd0489783 .
+
+_:Ne3509f5bc7804fdd9fece9063fa6ea06 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-c13ae9d73e .
+
+_:Ne41a9485603a47cab054232fa1a3f138 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:crit-74fe2bce04 .
+
+_:Ne4597985c7fe46a5a6d3b98412076655 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:obj-fb5a0a3866 .
+
+_:Ne73a185be3104100b0630a077ce52957 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-0ba39a6cac .
+
+_:Ne754964b73614e78947f72f1c6e69b06 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-83bc832227 .
+
+_:Ne78deda0558f4db3bbaf9fd945d11b73 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-092c25af85 .
+
+_:Ne84bc123da484561bd7e9947331c1bb8 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-905523def0 .
+
+_:Ne90727a40fc44c228486156440fb7a5b a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-97af4ff05d .
+
+_:Neb6eb994db6f4d30870507eb56963fca a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-3b9694d89e .
+
+_:Need36d9358484ba2b405620790696a2d a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:ep-7fdad73522 .
+
+_:Nefe722a911024e07ae514dccc3e4be6a a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-83d195b8c4 .
+
+_:Nf5d2434529c84662a858e34eb1488c0e a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-4dec8dd958 .
+
+_:Nf6e964215b47402c9263113f38df3343 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-5b53206c5a .
+
+_:Nfacad4c03a95455cac0a7c294cf54689 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-24c3804538 .
+
+_:Nfb86fec75db347088158b1075745ad28 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-e0a40845d6 .
+
+_:Nfebd5bd3887347939c50abd701520a65 a owl:Restriction ;
+    owl:onProperty obo:BFO_0000051 ;
+    owl:someValuesFrom cpmp:sched-fbbb9af8cf .
+

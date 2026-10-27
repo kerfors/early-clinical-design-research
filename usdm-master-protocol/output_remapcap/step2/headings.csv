@@ -1,0 +1,227 @@
+doc,number,title,level,toc_page,body_page,found
+CORE,1,ABBREVIATIONS AND GLOSSARY,1.0,10,10,True
+CORE,1.1,Abbreviations,2.0,10,10,True
+CORE,1.2,Glossary,2.0,12,12,True
+CORE,2,INTRODUCTION,1.0,16,16,True
+CORE,2.1,Synopsis,2.0,16,16,True
+CORE,2.2,Protocol Structure,2.0,17,17,True
+CORE,2.2.1,Core Protocol,3.0,18,18,True
+CORE,2.2.2,"Patient, Pathogen and Disease Appendix",3.0,19,19,True
+CORE,2.2.3,Domain-Specific Appendices,3.0,19,19,True
+CORE,2.2.4,Region-Specific Appendices,3.0,20,20,True
+CORE,2.2.5,Pandemic Appendix,3.0,20,20,True
+CORE,2.2.6,Biological Sampling Appendix,3.0,20,20,True
+CORE,2.2.7,Registry Appendix,3.0,21,21,True
+CORE,2.2.8,Operational Documents,3.0,21,21,True
+CORE,2.2.9,Core Protocol Version History,3.0,21,21,True
+CORE,2.3,Lay Description,2.0,22,22,True
+CORE,2.4,Trial registration,2.0,23,23,True
+CORE,2.5,Funding of the trial,2.0,23,23,True
+CORE,3,STUDY ADMINISTRATION STRUCTURE,1.0,23,23,True
+CORE,3.1,International Trial Steering Committee,2.0,24,24,True
+CORE,3.1.1,Responsibilities,3.0,24,24,True
+CORE,3.1.2,Members,3.0,25,25,True
+CORE,3.2,Regional Management Committees,2.0,25,25,True
+CORE,3.2.1,Responsibilities,3.0,25,25,True
+CORE,3.3,Domain-Specific Working Groups,2.0,25,25,True
+CORE,3.3.1,Responsibilities,3.0,26,26,True
+CORE,3.3.2,Members,3.0,26,26,True
+CORE,3.4,Sponsors,2.0,26,26,True
+CORE,3.4.1,Role of Sponsor,3.0,26,26,True
+CORE,3.4.2,Insurance,3.0,26,26,True
+CORE,4,INTERNATIONAL TRIAL STEERING COMMITTEE AUTHORIZATION,1.0,26,26,True
+CORE,5,BACKGROUND & RATIONALE,1.0,27,27,True
+CORE,5.1,Respiratory Tract Infections,2.0,27,27,True
+CORE,5.1.1,Introduction,3.0,27,27,True
+CORE,5.1.2,Epidemiology,3.0,27,27,True
+CORE,5.1.3,Standard care for patients with respiratory tract infections,3.0,27,27,True
+CORE,5.1.4,Treatment guidelines,3.0,28,28,True
+CORE,5.1.5,Variation in care and compliance with guidelines,3.0,29,29,True
+CORE,5.1.6,An unmet need for better evidence,3.0,29,29,True
+CORE,5.2,Pandemics and emerging pathogens,2.0,30,30,True
+CORE,5.3,Randomized Embedded Multifactorial Adaptive Platform Trials,2.0,30,30,True
+CORE,5.3.1,Generating clinical evidence,3.0,30,30,True
+CORE,5.3.2,Underlying Principles of the Study Design,3.0,31,31,True
+CORE,5.3.3,Nomenclature,3.0,32,32,True
+CORE,5.3.4,Randomization and Response Adaptive Randomization,3.0,32,32,True
+CORE,5.3.5,Embedding,3.0,34,34,True
+CORE,5.3.6,Multifactorial,3.0,35,35,True
+CORE,5.3.7,Adaptive,3.0,35,35,True
+CORE,5.3.8,Nesting of the REMAP within a Registry,3.0,38,38,True
+CORE,5.3.9,Platform,3.0,39,39,True
+CORE,6,OBJECTIVES,1.0,39,39,True
+CORE,6.1,Primary objective,2.0,39,39,True
+CORE,6.2,Secondary objectives,2.0,40,40,True
+CORE,7,SUMMARY OF TRIAL DESIGN,1.0,40,40,True
+CORE,7.1,Introduction,2.0,40,40,True
+CORE,7.2,Nomenclature,2.0,40,40,True
+CORE,7.3,Study setting and participating regions,2.0,41,41,True
+CORE,7.4,Eligibility criteria,2.0,41,41,True
+CORE,7.4.1,Platform Inclusion Criteria,3.0,41,41,True
+CORE,7.4.2,Platform Exclusion Criteria,3.0,42,42,True
+CORE,7.4.3,Domain- and Intervention-Specific Entry criteria,3.0,42,42,True
+CORE,7.5,Interventions,2.0,42,42,True
+CORE,7.5.1,Domain-Specific Information,3.0,42,42,True
+CORE,7.5.2,Treatment allocation and Response Adaptive Randomization,3.0,43,43,True
+CORE,7.5.3,Adaptation of Domains and Interventions,3.0,44,44,True
+CORE,7.5.4,Principles for new domain stages,3.0,45,45,True
+CORE,7.6,Endpoints,2.0,46,46,True
+CORE,7.6.1,Primary Endpoint,3.0,46,46,True
+CORE,7.6.2,Secondary Endpoints,3.0,47,47,True
+CORE,7.7,Bias Control,2.0,48,48,True
+CORE,7.7.1,Randomization,3.0,48,48,True
+CORE,7.7.2,Allocation concealment,3.0,48,48,True
+CORE,7.7.3,Blinding of treatment allocation,3.0,48,48,True
+CORE,7.7.4,Blinding of outcome adjudication,3.0,48,48,True
+CORE,7.7.5,Follow up and missing data,3.0,48,48,True
+CORE,7.7.6,Utilization of Clinician-Assigned Treatment,3.0,49,49,True
+CORE,7.8,Principles of Statistical Analysis,2.0,49,49,True
+CORE,7.8.1,Preface,3.0,49,49,True
+CORE,7.8.2,Introduction,3.0,51,51,True
+CORE,7.8.3,Target populations (strata and states) and implications for evaluation of treatment-by-treatment and treatment-by-strata interactions,3.0,52,52,True
+CORE,7.8.4,Bayesian Statistical modeling,3.0,58,58,True
+CORE,7.8.5,Statistical Handling of Ineligible Participants,3.0,60,60,True
+CORE,7.8.6,Statistical Triggers,3.0,61,61,True
+CORE,7.8.7,Action when a Statistical Trigger is achieved,3.0,65,65,True
+CORE,7.8.8,Analysis set for reporting,3.0,68,68,True
+CORE,7.8.9,Simulations and statistical power,3.0,68,68,True
+CORE,7.8.10,Updating model after monitoring,3.0,69,69,True
+CORE,7.8.11,Discontinuation of domains or interventions in the absence of a Statistical Trigger,3.0,69,69,True
+CORE,7.9,Interaction with other trials,2.0,69,69,True
+CORE,7.9.1,Co-enrollment with other trials,3.0,69,69,True
+CORE,7.9.2,"Cooperation between the REMAP and other trials with overlapping populations or interventions, and federation of trials",3.0,70,70,True
+CORE,7.10,Investigational medical products,2.0,72,72,True
+CORE,7.11,Registry of non-randomized patients,2.0,73,73,True
+CORE,7.12,Criteria for termination of the trial,2.0,73,73,True
+CORE,8,TRIAL CONDUCT,1.0,73,73,True
+CORE,8.1,Site time-lines,2.0,73,73,True
+CORE,8.1.1,Initiation of participation at a site,3.0,73,73,True
+CORE,8.2,Recruitment of participants including embedding,2.0,74,74,True
+CORE,8.2.1,Embedding,3.0,74,74,True
+CORE,8.2.2,Participant recruitment procedures at participating units,3.0,74,74,True
+CORE,8.3,Treatment allocation,2.0,74,74,True
+CORE,8.4,Delivery of interventions,2.0,75,75,True
+CORE,8.4.1,Treatment allocation and protocol adherence at participating units,3.0,75,75,True
+CORE,8.4.2,Transfer of participants between locations and protocol adherence,3.0,75,75,True
+CORE,8.5,Unblinding of allocation status,2.0,75,75,True
+CORE,8.6,Criteria for discontinuation of an allocated intervention within the Platform,2.0,76,76,True
+CORE,8.7,Concomitant care and co-interventions,2.0,76,76,True
+CORE,8.8,Data collection,2.0,77,77,True
+CORE,8.8.1,Principles of data collection,3.0,77,77,True
+CORE,8.8.2,Variables to be collected,3.0,77,77,True
+CORE,8.8.3,Data required to inform Response Adaptive Randomization,3.0,78,78,True
+CORE,8.8.4,Blinding of outcome assessment,3.0,79,79,True
+CORE,8.9,Data management,2.0,79,79,True
+CORE,8.9.1,Source Data,3.0,79,79,True
+CORE,8.9.2,Confidentiality,3.0,79,79,True
+CORE,8.10,Quality assurance and monitoring,2.0,80,80,True
+CORE,8.10.1,Protocol adherence and data quality,3.0,80,80,True
+CORE,8.10.2,Monitoring of protocol adherence and data quality,3.0,81,81,True
+CORE,8.11,Data safety and monitoring board,2.0,82,82,True
+CORE,8.12,Safety monitoring and reporting,2.0,82,82,True
+CORE,8.12.1,Principles,3.0,82,82,True
+CORE,8.12.2,Definitions,3.0,84,84,True
+CORE,8.12.3,Reporting Procedures for Safety and Serious Adverse Events,3.0,84,84,True
+CORE,8.12.4,Attribution of serious events to study interventions,3.0,85,85,True
+CORE,8.12.5,Attribution of a death to study interventions or study participation,3.0,86,86,True
+CORE,9,GOVERNANCE AND ETHICAL CONSIDERATIONS,1.0,86,86,True
+CORE,9.1,Management of participating sites and trial coordination,2.0,86,86,True
+CORE,9.2,Ethics and regulatory issues,2.0,86,86,True
+CORE,9.2.1,Guiding principles,3.0,86,86,True
+CORE,9.2.2,Ethical issues relevant to this study,3.0,86,86,True
+CORE,9.2.3,Approvals,3.0,89,89,True
+CORE,9.3,Protocol modifications,2.0,89,89,True
+CORE,9.3.1,Amendments,3.0,89,89,True
+CORE,9.4,Confidentiality,2.0,90,90,True
+CORE,9.5,Declarations of interest,2.0,90,90,True
+CORE,9.6,Post-trial care,2.0,90,90,True
+CORE,9.7,Communication,2.0,90,90,True
+CORE,9.7.1,Reporting,3.0,90,90,True
+CORE,9.7.2,Communication of trial results,3.0,91,91,True
+CORE,9.8,Publication policy,2.0,91,91,True
+CORE,9.9,Data access and ownership,2.0,91,91,True
+CORE,9.9.1,Data ownership,3.0,91,91,True
+CORE,9.9.2,Access to Data,3.0,91,91,True
+CORE,9.10,Consent form,2.0,91,91,True
+CORE,10,REFERENCES,1.0,93,93,True
+PANDA,1,Background,1.0,3,3,True
+PANDA,2,Patient Characteristics,1.0,4,4,True
+PANDA,3,Pathogens,1.0,4,4,True
+PANDA,3.1,Defining pathogen status,2.0,5,5,True
+PANDA,3.2,Pathogen status for domain eligibility,2.0,6,6,True
+PANDA,3.3,Pathogen status for analysis strata,2.0,6,6,True
+PANDA,3.4,Definitions of pathogen analysis strata,2.0,6,6,True
+PANDA,3.4.1,Approach to novel pandemic pathogens,3.0,7,7,True
+PANDA,4,Diseases and clinical features,1.0,7,7,True
+PANDA,4.1,Acquisition of infection,2.0,8,8,True
+PANDA,4.2,Disease entity,2.0,8,8,True
+PANDA,4.3,Illness severity,2.0,9,9,True
+PANDA,4.4,Specific clinical features or syndromes,2.0,10,10,True
+PANDA,4.5,Diseases and clinical features for eligibility,2.0,11,11,True
+PANDA,4.6,Disease and clinical feature analysis strata,2.0,11,11,True
+PANDA,5,"Consistent categorization of pathogens, diseases and clinical features",1.0,12,12,True
+PANDA,6,Continuity with pre-existing domains,1.0,12,12,True
+CS_DSA,1,ABBREVIATIONS,1.0,9,9,True
+CS_DSA,2,PROTOCOL APPENDIX STRUCTURE,1.0,10,10,True
+CS_DSA,3,CORTICOSTEROID DOMAIN-SPECIFIC APPENDIX VERSION,1.0,11,11,True
+CS_DSA,3.1,Version history,2.0,11,11,True
+CS_DSA,4,CORTICOSTEROID DOMAIN GOVERNANCE,1.0,12,12,True
+CS_DSA,4.1,Domain members,2.0,12,12,True
+CS_DSA,4.2,Contact Details,2.0,12,12,True
+CS_DSA,5,CORTICOSTEROID DOMAIN-SPECIFIC WORKING GROUP AUTHORIZATION,1.0,13,13,True
+CS_DSA,6,BACKGROUND AND RATIONALE,1.0,13,13,True
+CS_DSA,6.1,Domain definition,2.0,13,13,True
+CS_DSA,6.2,Domain-specific background,2.0,13,13,True
+CS_DSA,6.2.1,Corticosteroids in critical illness,3.0,14,14,True
+CS_DSA,6.2.2,Clinical questions regarding corticosteroids in patients with CAP,3.0,14,14,True
+CS_DSA,6.2.3,Role of corticosteroids in septic shock secondary to CAP,3.0,14,14,True
+CS_DSA,6.2.4,Role of corticosteroids in CAP irrespective of septic shock,3.0,17,17,True
+CS_DSA,6.2.5,Role of corticosteroids in CAP secondary to influenza,3.0,19,19,True
+CS_DSA,6.2.6,Role of corticosteroids in Acute Respiratory Distress Syndrome,3.0,20,20,True
+CS_DSA,6.2.7,Corticosteroid-associated complications in critical illness.,3.0,21,21,True
+CS_DSA,7,DOMAIN OBJECTIVES,1.0,21,21,True
+CS_DSA,8,TRIAL DESIGN,1.0,22,22,True
+CS_DSA,8.1,Population,2.0,22,22,True
+CS_DSA,8.1.1,Age Strata,3.0,22,22,True
+CS_DSA,8.1.2,Illness Severity State,3.0,22,22,True
+CS_DSA,8.1.3,Domain-specific strata,3.0,22,22,True
+CS_DSA,8.2,Eligibility criteria,2.0,23,23,True
+CS_DSA,8.2.1,Domain inclusion criteria,3.0,23,23,True
+CS_DSA,8.2.2,Domain exclusion criteria,3.0,23,23,True
+CS_DSA,8.2.3,Intervention exclusion criteria,3.0,23,23,True
+CS_DSA,8.3,Interventions,2.0,24,24,True
+CS_DSA,8.3.1,Corticosteroid strategy interventions,3.0,24,24,True
+CS_DSA,8.3.2,No corticosteroid intervention,3.0,24,24,True
+CS_DSA,8.3.3,Shock-dependent hydrocortisone intervention,3.0,25,25,True
+CS_DSA,8.3.4,Fixed duration dexamethasone,3.0,25,25,True
+CS_DSA,8.3.5,Duration of study intervention,3.0,26,26,True
+CS_DSA,8.4,Concomitant care,2.0,26,26,True
+CS_DSA,8.5,Endpoints,2.0,26,26,True
+CS_DSA,8.5.1,Primary endpoint,3.0,26,26,True
+CS_DSA,8.5.2,Secondary endpoints,3.0,26,26,True
+CS_DSA,9,TRIAL CONDUCT,1.0,27,27,True
+CS_DSA,9.1,Microbiology,2.0,27,27,True
+CS_DSA,9.2,Domain-specific data collection,2.0,27,27,True
+CS_DSA,9.2.1,Clinical data collection,3.0,27,27,True
+CS_DSA,9.3,Criteria for discontinuation,2.0,27,27,True
+CS_DSA,9.4,Blinding,2.0,28,28,True
+CS_DSA,10,STATISTICAL CONSIDERATIONS,1.0,28,28,True
+CS_DSA,10.1,Domain-specific stopping rules,2.0,28,28,True
+CS_DSA,10.2,Unit-of-analysis and strata,2.0,29,29,True
+CS_DSA,10.3,Application of Response-Adaptive Randomization,2.0,29,29,True
+CS_DSA,10.4,Timing of revealing of randomization status,2.0,29,29,True
+CS_DSA,10.5,Interactions with interventions in other domains,2.0,30,30,True
+CS_DSA,10.6,Nesting,2.0,30,30,True
+CS_DSA,10.7,"Threshold probability for superiority, efficacy, and inferiority",2.0,30,30,True
+CS_DSA,10.8,Threshold odds ratio delta for equivalence and futility,2.0,30,30,True
+CS_DSA,10.9,Post-trial Subgroups,2.0,30,30,True
+CS_DSA,11,ETHICAL CONSIDERATIONS,1.0,31,31,True
+CS_DSA,11.1,Data Safety and Monitoring Board,2.0,31,31,True
+CS_DSA,11.2,Potential domain-specific adverse events,2.0,31,31,True
+CS_DSA,11.3,Domain risk assessment,2.0,31,31,True
+CS_DSA,11.4,Domain-specific consent issues,2.0,32,32,True
+CS_DSA,12,GOVERNANCE ISSUES,1.0,32,32,True
+CS_DSA,12.1,Funding of domain,2.0,32,32,True
+CS_DSA,12.2,Funding of domain interventions and outcome measures,2.0,33,33,True
+CS_DSA,12.3,Domain-specific declarations of interest,2.0,33,33,True
+CS_DSA,13,REFERENCES,1.0,34,34,True

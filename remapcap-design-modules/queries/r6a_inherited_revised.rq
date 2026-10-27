@@ -1,0 +1,14 @@
+# R6a: Core components that a DSA inherits through CoreDesign (version-independent) whose
+# Core 4.0 and 4.1 texts differ: the DSA design has part some revision parent, not a revision.
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rcap: <https://kerfors.github.io/early-clinical-design-research/remapcap-design-modules/>
+SELECT ?dsa ?parent ?text_40 ?text_41 WHERE {
+  ?dsa rdfs:subClassOf rcap:CoreDesign .
+  FILTER (STRSTARTS(STR(?dsa), STR(rcap:DomainDesign_)))
+  rcap:CoreDesign owl:equivalentClass/owl:intersectionOf/rdf:rest*/rdf:first/owl:someValuesFrom ?parent .
+  ?r40 rcap:revisionOf ?parent ; rcap:inVersion "4.0" ; rdfs:label ?text_40 .
+  ?r41 rcap:revisionOf ?parent ; rcap:inVersion "4.1" ; rdfs:label ?text_41 .
+}
+ORDER BY ?dsa ?parent

@@ -1,0 +1,19 @@
+disease,endpoint_template,isas,level
+CLBP,Appearance of anti-drug antibodies and neutralizing antibodies to {compound},BP01,Tertiary/Exploratory
+CLBP,Assessment of eGFR,BP01,Tertiary/Exploratory
+CLBP,Assessment of serum concentrations of {compound} and epiregulin to enable PK and PD evaluations,BP01,Tertiary/Exploratory
+CLBP,Assessment of urine albumin/creatinine ratio,BP01,Tertiary/Exploratory
+CLBP,Assessment of urine protein/creatinine ratio,BP01,Tertiary/Exploratory
+CLBP,Measure of plasma concentrations of {compound} to enable PK evaluations.,BP02,Tertiary/Exploratory
+DPNP,Appearance of anti-drug antibodies and neutralizing antibodies to {compound},NP01,Tertiary/Exploratory
+DPNP,Assessment of eGFR,NP01,Tertiary/Exploratory
+DPNP,Assessment of serum concentrations of {compound} and epiregulin to enable pharmacokinetic and pharmacodynamic evaluations,NP01,Tertiary/Exploratory
+DPNP,Assessment of urine albumin/creatinine ratio,NP01,Tertiary/Exploratory
+DPNP,Assessment of urine protein/creatinine ratio,NP01,Tertiary/Exploratory
+DPNP,Measure of plasma concentrations of {compound} to enable PK evaluations.,NP02,Tertiary/Exploratory
+OA,Appearance of anti-drug antibodies and neutralizing antibodies to {compound},OA01,Tertiary/Exploratory
+OA,Assessment of eGFR,OA01,Tertiary/Exploratory
+OA,Assessment of serum concentrations of {compound} and epiregulin to enable pharmacokinetic and pharmacodynamic evaluations,OA01,Tertiary/Exploratory
+OA,Assessment of urine albumin/creatinine ratio,OA01,Tertiary/Exploratory
+OA,Assessment of urine protein/creatinine ratio,OA01,Tertiary/Exploratory
+OA,Measure of plasma concentrations of {compound} to enable PK evaluations.,OA02,Tertiary/Exploratory

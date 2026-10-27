@@ -1,0 +1,9 @@
+requirement,name,what design modules must represent
+R-ID,Identity,"One identity per component across trials and versions, including below the SoA row (tests in panels)"
+R-LAYER,Layer relations,"Explicit relations between layers: inherits, delegates, overridable default, restates, extends, overrides"
+R-GAP,Obligations,"Delegations and defaults as checkable obligations: an unanswered delegation or a silent default is detectable, not found later"
+R-COMMON,Unstated sharing,Shared content that no document states as shared
+R-VERSION,Version binding,Binding to the version of the layer depended on; the effect of a parent amendment on each child
+R-ANCHOR,Event anchors,"Events inside a visit as anchors (""post randomization"" inside Visit 3)"
+R-DECISION,Decisions,"Decisions with rationale and alternatives, the part public sources barely give"
+R-DOCSET,Documents as views,"The document set, layer boundaries and numbering, which documents carry badly today"

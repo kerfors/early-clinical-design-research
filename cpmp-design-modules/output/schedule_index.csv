@@ -1,0 +1,337 @@
+iri,activity_key,visit,class,docs
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-477c02d7b8,Adverse events,ED,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-3be2c3c3c1,Adverse events,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-0b20c199aa,Adverse events,V3,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-12f50eccb7,Adverse events,V4,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-4947686e6d,Adverse events,V5,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-cd7b7bab26,Adverse events,V6,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-4172de27a0,Adverse events,V7,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-5ac3292f82,Alcohol consumption,ED,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-01d30cd825,Alcohol consumption,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-97bf172a64,Alcohol consumption,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-98fdd60f53,Alcohol consumption,V3,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-848a981741,Alcohol consumption,V4,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-5a28681681,Alcohol consumption,V5,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-98325785b1,Alcohol consumption,V6,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-743050c188,Alcohol consumption,V7,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-cba8a8faa1,B12,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-067d8db20f,C-SSRS,ED,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-71b8f796c2,C-SSRS,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-80bbe5ee37,C-SSRS,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-3dd4a453c1,C-SSRS,V3,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-03170c41d7,C-SSRS,V4,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-507940b635,C-SSRS,V5,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-c73b274747,C-SSRS,V6,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-4303d30241,C-SSRS,V7,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-42b6221682,Chemistry,ED,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-fecbce0e7c,Chemistry,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-2cd4b0ba7e,Chemistry,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-3243455c78,Chemistry,V3,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-b32a9603be,Concomitant medication,ED,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-d8ccd5d4c6,Concomitant medication,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-9bb9173dcb,Concomitant medication,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-12e033e58d,Concomitant medication,V3,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-521cc0e22d,Concomitant medication,V4,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-102d68b54e,Concomitant medication,V5,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-d23d224368,Concomitant medication,V6,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-ef4ed501ac,Concomitant medication,V7,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-6a534c1ca2,Demographics,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-510a01d6e4,ECG,ED,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-7b858b6fa5,ECG,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-2ce8d72538,ECG,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-9a03b19be1,ECG,V3,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-97a9bb37f9,EQ-5D-5L,ED,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-5bfcf9aa28,EQ-5D-5L,V3,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-76479b5840,EQ-5D-5L,V4,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-72fc3fbdeb,EQ-5D-5L,V5,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-a0abea840a,EQ-5D-5L,V6,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-154e22efdf,EQ-5D-5L,V7,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-51d6e89cbb,Estradiol,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-dd23bc4298,Estradiol,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-89fdbffdb9,Evaluate master protocol I/E criteria,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-2846ae6d75,Evaluate master protocol I/E criteria,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-8c611e8e6d,Evaluate master protocol I/E criteria,V3,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-6398f260ba,Exploratory biomarker samples,V3,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-541344994e,FSH,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-104d9a9496,FSH,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-e667e567b5,Family history,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-b8327d524a,HIV,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-8f86c8db4f,HIV,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-c8f3039ea9,HbA1c,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-02d1217109,HbA1c,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-6482b5fdb7,Height,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-15f8901c88,Hematology,ED,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-9a3dbc4bd7,Hematology,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-b2cc709d29,Hematology,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-1bb2ce9a5e,Hematology,V3,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-d0b950f3c3,Homocysteine,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-b16095b238,Informed consent for ISA,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-d3a65a6e16,Informed consent for master protocol,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-3013a35d8b,Lipid panel,ED,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-5efb71a7ec,Lipid panel,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-83a40bfbb7,Lipid panel,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-890a16420a,Lipid panel,V3,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-6ba67a32f1,MOS Sleep Scale,ED,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-78d9abe480,MOS Sleep Scale,V3,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-d4b88459fa,MOS Sleep Scale,V4,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-63819de4ef,MOS Sleep Scale,V5,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-bfec7780b1,MOS Sleep Scale,V6,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-dd49a90f41,MOS Sleep Scale,V7,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-2051720c99,Medical history,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-59ecde1442,Methylmalonic acid,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-58d0248746,NRS for pain,ED,master default,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-880e53a6e6,NRS for pain,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-fc076e7d8e,NRS for pain,V3,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-cf2d4cd176,NRS for pain,V4,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-49175c0fce,NRS for pain,V5,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-d8fa18bbbc,NRS for pain,V6,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-2bbc1b7fdd,NRS for pain,V7,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-e13bb123d4,PDEP,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-da92f518e5,PGI,ED,master default,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-9651c0eba8,PGI,V4,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-30c6292991,PGI,V5,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-96dc5aedac,PGI,V6,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-86b1bec818,PGI,V7,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-acca7dd374,Pain catastrophizing scale,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-5ee6f291a5,Pain medication washout,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-50c0991f91,Pharmacogenetic sample,V3,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-cdc31897fc,Physical examination,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-37ce231066,Physical examination,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-a5f59195cb,Preexisting conditions,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-647a903f80,Recreational drug use,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-cd09149b03,Rescue medication usage reporting,ED,master default,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-fef236b010,Rescue medication usage reporting,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-f04c181949,Rescue medication usage reporting,V3,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-d7e3428e68,Rescue medication usage reporting,V4,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-4bf7fce377,Rescue medication usage reporting,V5,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-14deda6e1b,Rescue medication usage reporting,V6,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-a513d4eb87,Rescue medication usage reporting,V7,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-0f7a738767,Self-Harm Follow-Up form,ED,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-93136d2fcc,Self-Harm Follow-Up form,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-fcdcf5a5d6,Self-Harm Follow-Up form,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-04da4040cb,Self-Harm Follow-Up form,V3,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-1d6f77cc4c,Self-Harm Follow-Up form,V4,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-add6bf8280,Self-Harm Follow-Up form,V5,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-aa516084e6,Self-Harm Follow-Up form,V6,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-c4dbaaf573,Self-Harm Follow-Up form,V7,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-c970ca322b,Self-Harm Supplement form,ED,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-efc5bc8e85,Self-Harm Supplement form,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-653414d003,Self-Harm Supplement form,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-e01de2333a,Self-Harm Supplement form,V3,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-8ef47164eb,Self-Harm Supplement form,V4,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-7b25fe5649,Self-Harm Supplement form,V5,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-b9385c257c,Self-Harm Supplement form,V6,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-dea3ad5927,Self-Harm Supplement form,V7,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-a0b6528da7,Self-pain positioning questionnaire,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-732bca255d,Serum pregnancy,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-9ef0048ae6,Serum pregnancy,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-b1e773a129,TSH,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-bb6895e10a,TSH,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-1e6b1dcd2c,Urinalysis,ED,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-e4900f7059,Urinalysis,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-510edcbed7,Urinalysis,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-336ec512be,Urinalysis,V3,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-32f9805629,Urine drug screen,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-a5c8711533,VAS for pain,ED,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-6a14cd3568,VAS for pain,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-070aa25ab9,VAS for pain,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-8d4567acfc,VAS for pain,V3,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-c5c659afad,VAS for pain,V4,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-71a023f181,VAS for pain,V5,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-14e91b48ab,VAS for pain,V6,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-eb18740b24,VAS for pain,V7,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-a76bbe271d,Vital signs,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-d95ff0022e,Vital signs,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-25d13de6ca,Weight,ED,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-a141c36833,Weight,V1,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-ed4ef59ea4,Weight,V2,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-38597084f4,Weight,V3,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-9af1d04ee1,Weight,V4,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-96e3c304c6,Weight,V5,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-a95ec4bb88,Weight,V6,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-5fb70034be,Weight,V7,master,CPMP
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-de4850e095,Adverse events,V801,other,BP01;BP05;NP01;NP03;NP05;OA01;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-0056f65561,Adverse events,V802,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-5e833e10fd,Adverse events,V803,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-3b9694d89e,BPI,V801,single ISA,NP01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-daa8802b99,C-SSRS,V801,other,BP01;BP05;NP01;NP05;OA01;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-ac441963dd,C-SSRS,V803,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-41b889ce0a,Chemistry,V4,other,BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-99e5ee43dd,Chemistry,V5,other,BP02;BP03;BP05;NP02;NP03;NP05;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-4d1eaa89cf,Chemistry,V6,other,BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-3c4076f03d,Chemistry,V7,other,BP02;BP03;BP05;NP02;NP03;NP05;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-f4729df931,Chemistry,V801,other,BP01;BP05;NP01;NP05;OA01;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-98948bfc7f,Chemistry,V802,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-707d2de9a6,Chemistry,V803,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-e0a40845d6,Concomitant medication,V801,other,BP01;BP05;NP01;NP05;OA01;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-63bd612e5e,Concomitant medication,V802,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-7875dcab45,Concomitant medication,V803,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-d348388645,Confirm ISA inclusion and exclusion criteria,V1,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-8d3275527c,Confirm ISA inclusion and exclusion criteria,V2,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-13974ed7cb,Confirm ISA inclusion and exclusion criteria,V3,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-1e90f4e6a0,Cystatin C,ED,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-668fd73716,Cystatin C,V3,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-88b6967f96,Cystatin C,V4,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-8cec5f13d0,Cystatin C,V5,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-8730098b0d,Cystatin C,V6,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-a93954ad6a,Cystatin C,V7,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-c010940fab,Dispense study intervention to participant,V3,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-937cea1b2f,Dispense study intervention to participant,V4,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-8f54919165,Dispense study intervention to participant,V5,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-e7b26407e8,Dispense study intervention to participant,V6,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-be70874649,ECG,V4,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-0a036e67cb,ECG,V5,other,BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-425415259a,ECG,V6,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-6843c3e5c0,ECG,V7,other,BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-1d3340eeda,ECG,V801,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-fd26a0e67e,ECG,V803,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-30c6973f97,Epiregulin sample,ED,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-abe48f5c6e,Epiregulin sample,V3,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-cbefed3c8e,Epiregulin sample,V4,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-5b53206c5a,Epiregulin sample,V5,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-452eefb7c3,Epiregulin sample,V7,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-4dec8dd958,Epiregulin sample,V801,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-2dd0680f48,Epiregulin sample,V802,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-95af42944c,Epiregulin sample,V803,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-a60f669c55,Evaluate all I/E criteria,V3,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-7f20d0cd57,HbA1c,ED,other,BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-c70e7cd953,HbA1c,V3,other,BP01;BP02;BP05;NP01;NP02;NP05;OA01;OA02;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-ee818e08b4,HbA1c,V7,other,BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-7250125a64,HbA1c,V803,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-ca9d10cfe1,Hematology,V4,other,BP02;BP03;BP05;NP02;NP03;NP05;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-c092b21e86,Hematology,V5,other,BP02;BP03;BP05;NP02;NP03;NP05;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-187b0a2436,Hematology,V6,other,BP02;BP03;BP05;NP02;NP03;NP05;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-f0aa23de05,Hematology,V7,other,BP02;BP03;BP05;NP02;NP03;NP05;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-53c92b1efe,Hematology,V801,other,BP01;BP05;NP01;NP05;OA01;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-09b5ae3214,Hematology,V802,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-7656f5ad19,Hematology,V803,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-37cb84d39f,Immunogenicity (ADA) sample,ED,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-905523def0,Immunogenicity (ADA) sample,V3,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-5f52751908,Immunogenicity (ADA) sample,V4,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-7c24578f59,Immunogenicity (ADA) sample,V5,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-8b299f01a5,Immunogenicity (ADA) sample,V7,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-b5691a85d9,Immunogenicity (ADA) sample,V801,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-1066bdc837,Immunogenicity (ADA) sample,V803,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-9d18d3034a,Intervention compliance,ED,other,BP02;BP03;BP05;NP02;NP03;NP05;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-5903a5b53b,Intervention compliance,V4,other,BP02;BP03;BP05;NP02;NP03;NP05;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-319400e0b3,Intervention compliance,V5,other,BP02;BP03;BP05;NP02;NP03;NP05;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-67731e0ecd,Intervention compliance,V6,other,BP02;BP03;BP05;NP02;NP03;NP05;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-21f57ce673,Intervention compliance,V7,other,BP02;BP03;BP05;NP02;NP03;NP05;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-1ad0a79632,Lipid panel,V4,other,BP02;BP03;BP05;NP02;NP03;NP05;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-fe27c90032,Lipid panel,V5,other,BP02;BP03;BP05;NP02;NP03;NP05;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-1c0911463f,Lipid panel,V6,other,BP02;BP03;BP05;NP02;NP03;NP05;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-cffd8d6ef5,Lipid panel,V7,other,BP02;BP03;BP05;NP02;NP03;NP05;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-dac1081871,Lipid panel,V801,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-53e46ffd7b,NRS for pain,V801,other,BP01;BP05;NP01;NP05;OA01;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-f6507fcf42,Neurological assessment,ED,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-0cc8781722,Neurological assessment,V3,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-895d940e99,Neurological assessment,V4,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-71349f7b65,Neurological assessment,V5,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-a350bca5af,Neurological assessment,V6,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-7e6e507682,Neurological assessment,V7,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-854a62d3f8,Neurological assessment,V801,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-0ce5e334a6,PGI,V801,other,BP01;BP05;NP01;NP05;OA01;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-ec1531f8b4,PK sample,ED,other,BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-29c3870028,PK sample,V3,other,BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-d0d46bbc41,PK sample,V4,other,BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-b384cf1816,PK sample,V5,other,BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-28381f85e9,PK sample,V6,other,BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-b6726fa62d,PK sample,V7,other,BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-14f8e783f5,PK sample,V801,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-6945e3ce03,PK sample,V802,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-f86a9d3e11,PK sample,V803,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-195bbbdf74,Participant returns device,ED,other,BP02;BP03;NP02;NP03;OA02;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-1cd6e300bd,Participant returns device,V7,other,BP02;BP03;NP02;NP03;OA02;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-952a32c763,Participant returns unused study intervention,ED,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-07b94cc3ff,Participant returns unused study intervention,V4,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-86b3ae6516,Participant returns unused study intervention,V5,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-76e79c8759,Participant returns unused study intervention,V6,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-6c40f8c9b2,Participant returns unused study intervention,V7,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-24c3804538,Physical examination,ED,other,BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-259a0cc432,Physical examination,V3,other,BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-62aab6ef47,Physical examination,V4,other,BP01;BP03;NP01;NP03;OA01;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-e246124e69,Physical examination,V5,other,BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-c82f8a1ef2,Physical examination,V6,other,BP01;BP03;NP01;NP03;OA01;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-bf04ad5911,Physical examination,V7,other,BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-c0ba3a70eb,Physical examination,V801,other,BP01;BP05;NP01;NP05;OA01;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-40f101ce8c,Physical examination,V802,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-f525c22e54,Physical examination,V803,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-3a2d02167f,Placebo response video training (participant),V2,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-1d6b69b8bf,Prespecified CLBP medical history,V3,single ISA,BP05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-4855377e74,Prespecified DPNP medical history,V3,single ISA,NP05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-13a592e1e4,Prespecified OA medical history,V3,single ISA,OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-379652c2b5,RMDQ,V801,single ISA,BP01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-d59ee438a7,Reinforce pain assessment guidelines,V2,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-2b2006516f,Reinforce pain assessment guidelines,V3,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-67646d0a61,Reinforce pain assessment guidelines,V4,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-1d09703d13,Reinforce pain assessment guidelines,V5,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-b7e56203ed,Reinforce pain assessment guidelines,V6,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-87f01423bc,Reinforce pain assessment guidelines,V7,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-3dac8b3398,Rescue medication usage reporting,V801,other,BP01;BP05;NP01;NP05;OA01;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-04f121850a,Self-Harm Follow-Up form,V801,other,BP01;BP05;NP01;NP05;OA01;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-fbbb9af8cf,Self-Harm Follow-Up form,V803,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-9a39377853,Self-Harm Supplement form,V801,other,BP01;BP05;NP01;NP05;OA01;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-0c2ba80b21,Self-Harm Supplement form,V803,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-5d27c27b87,Serum pregnancy,ED,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-7277543555,Serum pregnancy,V4,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-9745c3b10e,Serum pregnancy,V5,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-6f2515d406,Serum pregnancy,V6,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-b089e31a19,Serum pregnancy,V7,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-d46d04092d,Somatostatin-regulated hormone sample,ED,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-5d8acca92a,Somatostatin-regulated hormone sample,V3,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-cb65a5ebab,Somatostatin-regulated hormone sample,V4,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-3529010986,Somatostatin-regulated hormone sample,V5,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-f8db2015d3,Somatostatin-regulated hormone sample,V6,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-0b03ede8de,Somatostatin-regulated hormone sample,V7,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-91891c9953,Study intervention,V3,other,BP02;BP03;NP02;NP03;OA02;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-2f9e253a64,Study intervention,V4,other,BP02;BP03;NP02;NP03;OA02;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-b764a68494,Study intervention,V5,other,BP02;BP03;NP02;NP03;OA02;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-5bb1a38a9d,Study intervention,V6,other,BP02;BP03;NP02;NP03;OA02;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-349db66e3b,Study intervention,V7,other,BP02;BP03;NP02;NP03;OA02;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-aff1c53be5,Study intervention IV infusion,V3,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-d823816eef,Study intervention IV infusion,V4,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-9acd50f882,Study intervention IV infusion,V5,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-83bc832227,Study intervention IV infusion,V6,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-edd61e9741,Study intervention administration,V3,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-6933849674,Study intervention administration,V4,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-9d3f2b3c03,Study intervention administration,V5,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-6448a5539b,Study intervention administration,V6,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-c6ab81af7c,Thyroid panel,ED,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-79cb32ae42,Thyroid panel,V3,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-9d9dffadc9,Thyroid panel,V4,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-676f6c0fb0,Thyroid panel,V5,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-e322d4ba03,Thyroid panel,V6,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-432f731dc6,Thyroid panel,V7,compound column,BP03;NP03;OA03
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-056d231df5,Urinalysis,V7,other,BP02;BP05;NP02;NP05;OA02;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-26bab6352e,Urinalysis,V801,compound column,BP05;NP05;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-7ca9a9d9e6,Urinalysis,V803,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-98298d431f,Urine Chemistries,ED,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-e7b5f9b1df,Urine Chemistries,V3,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-4acb452cde,Urine Chemistries,V4,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-c13ae9d73e,Urine Chemistries,V5,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-3babb86112,Urine Chemistries,V6,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-2b89d7060a,Urine Chemistries,V7,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-6116f9af6e,Urine Chemistries,V801,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-5a274a2650,Urine Chemistries,V803,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-37e5c15ff0,Urine drug screen,ED,other,BP02;BP05;NP02;NP05;OA02;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-092c25af85,Urine drug screen,V3,other,BP01;BP02;BP05;NP01;NP02;NP05;OA01;OA02;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-5320527061,Urine drug screen,V5,other,BP01;BP02;BP05;NP01;NP02;NP05;OA01;OA02;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-2f0266e4f7,Urine drug screen,V7,other,BP01;BP02;BP05;NP01;NP02;NP05;OA01;OA02;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-51108b0e6e,Urine pregnancy,ED,other,BP01;BP02;BP05;NP01;NP02;NP05;OA01;OA02;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-69591ddbee,Urine pregnancy,V3,other,BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-ab41e3d173,Urine pregnancy,V4,other,BP01;BP02;BP05;NP01;NP02;NP05;OA01;OA02;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-89718592f4,Urine pregnancy,V5,other,BP01;BP02;BP05;NP01;NP02;NP05;OA01;OA02;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-c7614fbac8,Urine pregnancy,V6,other,BP01;BP02;BP05;NP01;NP02;NP05;OA01;OA02;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-c7f32aef29,Urine pregnancy,V7,other,BP01;BP02;BP05;NP01;NP02;NP05;OA01;OA02;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-0ba39a6cac,Urine pregnancy,V803,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-b2b79983f3,Vital signs,ED,other,BP02;BP03;BP05;NP02;NP03;NP05;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-fcd0489783,Vital signs,V3,other,BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-d525bd11cc,Vital signs,V4,other,BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-52b231fea1,Vital signs,V5,other,BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-97af4ff05d,Vital signs,V6,other,BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-3a30f4798e,Vital signs,V7,other,BP01;BP02;BP03;BP05;NP01;NP02;NP03;NP05;OA01;OA02;OA03;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-910bc9191e,Vital signs,V801,other,BP01;BP05;NP01;NP05;OA01;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-03a0b15870,Vital signs,V802,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-83d195b8c4,Vital signs,V803,compound column,BP01;NP01;OA01
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-15744d16b7,WOMAC,V801,other,OA01;OA05
+https://kerfors.github.io/early-clinical-design-research/cpmp-design-modules/sched-1d4987abef,Weight,V803,compound column,BP01;NP01;OA01
