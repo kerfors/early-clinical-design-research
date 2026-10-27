@@ -50,6 +50,13 @@ Some questions have no answer in the public documents (Q10 above all); the catal
 - **REMAP-CAP**: an adaptive platform trial in community-acquired pneumonia. A Core Protocol (versions 4.0 and
   4.1), the Patient, Pathogen and Disease Appendix (PANDA) and nine domain-specific appendices (DSA).
 
+## Templates as data
+
+Before the cases, two public template families were read as data, the same method on a template rather than a
+protocol: [EU-PEARL](eupearl-templates/) (sections with keys, text categories from the template's own markers,
+field labels, a TOC check, and the MPT ↔ ISA alignment) and [four TPP templates](tpp-templates/) (column models
+compared, with concept matching left to a review file).
+
 ## How the work is done
 
 - Questions first; each step produces evidence for a question or a requirement.
@@ -73,7 +80,8 @@ Some questions have no answer in the public documents (Q10 above all); the catal
 | `cpmp-soa-join/` | CPMP master and ISA Schedules of Activities joined cell by cell: allocation kind per activity × visit |
 | `usdm-master-protocol/` | Both cases in USDM v4: document structure, cross-layer statements, amendments, breakpoints |
 | `cdd-layer/` | Sketch of an allocation layer above USDM (parked) |
-| `eupearl-templates/`, `tpp-templates/` | Structure of the EU-PEARL master protocol templates and of TPP templates |
+| `eupearl-templates/` | The five EU-PEARL templates as data: sections, text categories, field labels, TOC check, MPT ↔ ISA alignment |
+| `tpp-templates/` | Four TPP templates compared: elements, column models, attribute inventory, crosswalk for review |
 | `literature/` | Europe PMC query script and hit list |
 | `scripts/` | Notebook generators for the template and SoA-join notebooks |
 
