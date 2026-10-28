@@ -1,9 +1,9 @@
 # Early clinical design research
 
-How the design content of a clinical trial programme can be held as linked knowledge, and what the documents
-carry today. Two public master protocols are the cases: the Lilly Chronic Pain Master Protocol (CPMP) and
-REMAP-CAP. Programme-level design and Target Product Profiles (TPP) are the wider frame, after the EFPIA Smart
-Program Design and PhUSE CDD Framework work (2013–2018).
+How the design content of a clinical trial programme can be identified, and its relations across documents
+made explicit, as data; and what the documents carry today. Two public master protocols are the cases: the
+Lilly Chronic Pain Master Protocol (CPMP) and REMAP-CAP. Programme-level design and Target Product Profiles
+(TPP) are the wider frame, after the EFPIA Smart Program Design and PhUSE CDD Framework work (2013–2018).
 
 **Status: early exploratory work.** Draft, not normative. It is published so the method and the evidence can
 be followed and reused, not as a model to adopt. Built from public documents (ClinicalTrials.gov, remapcap.org,
@@ -17,6 +17,11 @@ describe one study and one protocol. This repo explores what neither covers yet:
 and handed over between the documents of a master protocol, across sub-studies and versions. USDM v4 stays the
 document carrier here (`usdm-master-protocol/`, checked with the usdm-rdf validator), and the design modules sit
 next to it. Pointing statements at m11-rdf section identifiers, rather than at section numbers, is an open choice.
+
+**Towards Linked Data.** The direction is Linked Data, as in [m11-rdf](https://w3id.org/m11-rdf/), where every
+identifier resolves to a page that says what it is. This work is not there yet: the design modules are OWL files
+whose IRIs sit in a namespace for now (`https://kerfors.github.io/early-clinical-design-research/`), and those
+IRIs do not resolve yet.
 
 ## The questions
 
