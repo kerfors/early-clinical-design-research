@@ -63,6 +63,13 @@ body.data .key { display: inline-block; }
 .side .box { font-size: 0.82rem; }
 .side .rel { font-size: 0.75rem; color: var(--muted); align-self: center; }
 .side .empty { border: 1.5px dashed var(--line); border-radius: 5px; }
+table.matrix td.num { text-align: center; white-space: nowrap; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8rem; }
+table.matrix td.miss { border-left: 1px dashed var(--line); border-right: 1px dashed var(--line); }
+table.matrix td.miss span { display: block; border: 1.5px dashed var(--line); border-radius: 3px; height: 1.1rem; }
+table.matrix th.dsa { text-align: center; font-size: 0.8rem; vertical-align: bottom; }
+table.matrix th .dname { font-weight: 400; font-size: 0.72rem; color: var(--muted); }
+table.matrix td.title { min-width: 16rem; }
+details.own summary { cursor: pointer; font-weight: 600; margin: 0.4rem 0; }
 .lv2 { margin-left: 0.8rem; } .lv3 { margin-left: 1.6rem; } .lv4 { margin-left: 2.4rem; }
 .tree .box { margin: 0.25rem 0; }
 .slotbox { border: 1.5px dashed var(--muted); border-radius: 3px; min-height: 1.6rem; padding: 0.15rem 0.4rem;
@@ -89,23 +96,30 @@ each ISA's section 5 sentence naming the master protocol and its DSA
 <div class="layer"><div class="box"><b>CPMP master protocol</b><a href="https://clinicaltrials.gov/study/NCT05986292">NCT05986292</a> · A Master Protocol Study (LY900028) of Multiple Intervention-Specific-Appendices (ISAs) in Participants With Chronic Pain<br>
 <span class="muted"><a href="https://cdn.clinicaltrials.gov/large-docs/92/NCT05986292/Prot_005.pdf">protocol</a> 2020-12-11</span></div></div>
 <h2>Disease-state addenda and ISAs</h2>
+<p class="muted">Rows: the disease states, each with its disease-state addendum (DSA). Columns: the compounds. Disease
+names as the ISAs' ClinicalTrials.gov records give them:
+<b>OA</b> Osteoarthritis; <b>CLBP</b> Chronic Low-back Pain; <b>DPNP</b> Diabetic Peripheral Neuropathic Pain. ISA codes: a disease prefix
+(OA = OA, BP = CLBP, NP = DPNP) and a compound number
+(01 = LY3016859, 02 = LY3526318, 03 = LY3556050, 05 = LY3857210).</p>
 <div class="table-wrap"><div class="grid4">
+<div class="head">Disease state</div>
+<div class="head" style="grid-column: span 4; text-align: center">Compound (one ISA per compound and disease state)</div>
 <div></div>
 <div class="head">LY3016859</div>
 <div class="head">LY3526318</div>
 <div class="head">LY3556050</div>
 <div class="head">LY3857210</div>
-<div class="box dashed"><b>OA DSA</b><span class="muted">not public; Osteoarthritis</span></div>
+<div class="box dashed"><b>OA DSA</b><span class="muted">Osteoarthritis; not public</span></div>
 <div class="box"><b>OA01</b><a href="https://clinicaltrials.gov/study/NCT04456686">NCT04456686</a><br><span class="muted"><a href="https://cdn.clinicaltrials.gov/large-docs/86/NCT04456686/Prot_000.pdf">protocol</a> 2020-03-27</span></div>
 <div class="box"><b>OA02</b><a href="https://clinicaltrials.gov/study/NCT05080660">NCT05080660</a><br><span class="muted"><a href="https://cdn.clinicaltrials.gov/large-docs/60/NCT05080660/Prot_004.pdf">protocol</a> 2021-08-10</span></div>
 <div class="box"><b>OA03</b><a href="https://clinicaltrials.gov/study/NCT04627038">NCT04627038</a><br><span class="muted"><a href="https://cdn.clinicaltrials.gov/large-docs/38/NCT04627038/Prot_000.pdf">protocol</a> 2021-03-03</span></div>
 <div class="box"><b>OA05</b><a href="https://clinicaltrials.gov/study/NCT05620563">NCT05620563</a><br><span class="muted"><a href="https://cdn.clinicaltrials.gov/large-docs/63/NCT05620563/Prot_000.pdf">protocol</a> 2022-10-14</span></div>
-<div class="box dashed"><b>CLBP DSA</b><span class="muted">not public; Chronic Low-back Pain</span></div>
+<div class="box dashed"><b>CLBP DSA</b><span class="muted">Chronic Low-back Pain; not public</span></div>
 <div class="box"><b>BP01</b><a href="https://clinicaltrials.gov/study/NCT04529096">NCT04529096</a><br><span class="muted"><a href="https://cdn.clinicaltrials.gov/large-docs/96/NCT04529096/Prot_000.pdf">protocol</a> 2020-05-11</span></div>
 <div class="box"><b>BP02</b><a href="https://clinicaltrials.gov/study/NCT05086289">NCT05086289</a><br><span class="muted"><a href="https://cdn.clinicaltrials.gov/large-docs/89/NCT05086289/Prot_002.pdf">protocol</a> 2021-08-10</span></div>
 <div class="box"><b>BP03</b><a href="https://clinicaltrials.gov/study/NCT04874636">NCT04874636</a><br><span class="muted"><a href="https://cdn.clinicaltrials.gov/large-docs/36/NCT04874636/Prot_000.pdf">protocol</a> 2021-03-17</span></div>
 <div class="box"><b>BP05</b><a href="https://clinicaltrials.gov/study/NCT05630196">NCT05630196</a><br><span class="muted"><a href="https://cdn.clinicaltrials.gov/large-docs/96/NCT05630196/Prot_000.pdf">protocol</a> 2022-10-13</span></div>
-<div class="box dashed"><b>DPNP DSA</b><span class="muted">not public; Diabetic Peripheral Neuropathic Pain</span></div>
+<div class="box dashed"><b>DPNP DSA</b><span class="muted">Diabetic Peripheral Neuropathic Pain; not public</span></div>
 <div class="box"><b>NP01</b><a href="https://clinicaltrials.gov/study/NCT04476108">NCT04476108</a><br><span class="muted"><a href="https://cdn.clinicaltrials.gov/large-docs/08/NCT04476108/Prot_000.pdf">protocol</a> 2020-03-27</span></div>
 <div class="box"><b>NP02</b><a href="https://clinicaltrials.gov/study/NCT05177094">NCT05177094</a><br><span class="muted"><a href="https://cdn.clinicaltrials.gov/large-docs/94/NCT05177094/Prot_000.pdf">protocol</a> 2021-09-30</span></div>
 <div class="box"><b>NP03</b><a href="https://clinicaltrials.gov/study/NCT04707157">NCT04707157</a><br><span class="muted"><a href="https://cdn.clinicaltrials.gov/large-docs/57/NCT04707157/Prot_000.pdf">protocol</a> 2021-10-01</span></div>

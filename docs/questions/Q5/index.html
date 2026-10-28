@@ -63,6 +63,13 @@ body.data .key { display: inline-block; }
 .side .box { font-size: 0.82rem; }
 .side .rel { font-size: 0.75rem; color: var(--muted); align-self: center; }
 .side .empty { border: 1.5px dashed var(--line); border-radius: 5px; }
+table.matrix td.num { text-align: center; white-space: nowrap; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8rem; }
+table.matrix td.miss { border-left: 1px dashed var(--line); border-right: 1px dashed var(--line); }
+table.matrix td.miss span { display: block; border: 1.5px dashed var(--line); border-radius: 3px; height: 1.1rem; }
+table.matrix th.dsa { text-align: center; font-size: 0.8rem; vertical-align: bottom; }
+table.matrix th .dname { font-weight: 400; font-size: 0.72rem; color: var(--muted); }
+table.matrix td.title { min-width: 16rem; }
+details.own summary { cursor: pointer; font-weight: 600; margin: 0.4rem 0; }
 .lv2 { margin-left: 0.8rem; } .lv3 { margin-left: 1.6rem; } .lv4 { margin-left: 2.4rem; }
 .tree .box { margin: 0.25rem 0; }
 .slotbox { border: 1.5px dashed var(--muted); border-radius: 3px; min-height: 1.6rem; padding: 0.15rem 0.4rem;
@@ -78,7 +85,12 @@ footer { max-width: 64rem; margin: 0 auto; padding: 0 1rem 2rem; color: var(--mu
 <nav><a href="../../">Early clinical design research</a> · <a href="../../questions/">Questions</a> · <a href="../../cases/">Cases</a> · <a href="../../templates/">Templates</a> · <a href="https://github.com/kerfors/early-clinical-design-research">repository</a></nav>
 <h1>Q5. Which hand-overs to a child are never answered, or point at content that is not available?</h1>
 <ul><li><b>Obligations</b> (R-GAP): Delegations and defaults as checkable obligations: an unanswered delegation or a silent default is detectable, not found later</li></ul>
-<p class="muted">Solid left edge: answered (finding, case question or earlier answer). Dashed: open or not asked.
+<p class="muted">Item: <b>CP-</b> and <b>RC-</b> are findings for CPMP and REMAP-CAP, each with document evidence
+(<a href="https://github.com/kerfors/early-clinical-design-research/blob/main/evidence-matrix/sources/findings.csv">findings.csv</a>; the link opens the finding's row); <b>CQ</b> and <b>R</b> are the case
+questions of the CPMP and REMAP-CAP design modules, each a SPARQL query (the link opens the query); <i>earlier</i>
+rows are answers from before the modules, and cdd-layer items are questions stated in the parked cdd-layer sketch.
+Case "both": a question asked of the two cases together.
+Solid left edge: answered (finding, case question or earlier answer). Dashed: open or not asked.
 Status gives the kinds of evidence behind a finding, with counts when there is more than one kind; evidence rows are
 in <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/evidence-matrix/output/evidence_matrix.csv">evidence_matrix.csv</a>. Same rows as the
 <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/competency-questions/output/catalogue.md">catalogue</a>.</p>
@@ -92,9 +104,9 @@ in <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/
 <td>pass (against pandas, cq_results.csv)</td><td></td><td></td><td></td></tr>
 <tr class="answered"><td>case question</td><td class="item"><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/cpmp-design-modules/queries/cq8_delegated_filled.rq">CQ8</a></td><td>for each activity the master SoA delegates to the ISAs, where does each ISA schedule it?</td><td>6 of 8 activities; 255 ISA cells</td>
 <td>pass (against pandas, cq_results.csv)</td><td></td><td></td><td></td></tr>
-<tr class="answered"><td>finding</td><td class="item">CP-7</td><td>The master hands post-randomization marks for 8 activities to the ISAs: six are filled as SoA rows, TSH only at test level inside Chemistry in the LY3556050 ISAs, exploratory biomarker samples nowhere</td><td>8 activities; 6 filled as rows; TSH at test level in 3 ISAs; exploratory biomarker samples in none</td>
+<tr class="answered"><td>finding</td><td class="item"><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/evidence-matrix/sources/findings.csv#L28">CP-7</a></td><td>The master hands post-randomization marks for 8 activities to the ISAs: six are filled as SoA rows, TSH only at test level inside Chemistry in the LY3556050 ISAs, exploratory biomarker samples nowhere</td><td>8 activities; 6 filled as rows; TSH at test level in 3 ISAs; exploratory biomarker samples in none</td>
 <td>pass</td><td><span class="chip">document fact 11</span><span class="chip">rule-derived 1</span></td><td>12</td><td></td></tr>
-<tr class="answered"><td>finding</td><td class="item">CP-8</td><td>Delegation to the disease-state addenda, which are not public: master slots and ISA sentences that depend on DSA content</td><td>8 slots; 117 ISA sentences</td>
+<tr class="answered"><td>finding</td><td class="item"><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/evidence-matrix/sources/findings.csv#L29">CP-8</a></td><td>Delegation to the disease-state addenda, which are not public: master slots and ISA sentences that depend on DSA content</td><td>8 slots; 117 ISA sentences</td>
 <td>pass</td><td><span class="chip">rule-derived</span></td><td>125</td><td></td></tr>
 </tbody></table></div>
 <h2>REMAP-CAP</h2>
@@ -103,11 +115,11 @@ in <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/
 <tbody>
 <tr class="answered"><td>case question</td><td class="item"><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/remapcap-design-modules/queries/r4_unanswered_delegations.rq">R4</a></td><td>Core 4.1 delegations a DSA leaves unanswered (no_answer, condition_not_stated) or answers only by referring back to the Core (defers_back), in the mapped section or, separately, in the secondary section.</td><td>condition_not_stated 13; fills 6; no_answer 4; defers back in another section 9</td>
 <td>pass (against pandas, notebooks/01_cq_check.ipynb)</td><td></td><td></td><td>absence readings reviewed 2026-10-27 (RC-5)</td></tr>
-<tr class="answered"><td>finding</td><td class="item">RC-5</td><td>Core 4.1 delegations a DSA leaves unanswered (no answer, or condition not stated), and delegations answered in their own section and also pointed back to the Core in another section</td><td>17 unanswered; 6 answered with a pointer back</td>
+<tr class="answered"><td>finding</td><td class="item"><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/evidence-matrix/sources/findings.csv#L6">RC-5</a></td><td>Core 4.1 delegations a DSA leaves unanswered (no answer, or condition not stated), and delegations answered in their own section and also pointed back to the Core in another section</td><td>17 unanswered; 6 answered with a pointer back</td>
 <td>pass</td><td><span class="chip">document fact 23</span><span class="chip">analyst-reading 23</span></td><td>46</td><td>readings: 20 confirmed, 3 open</td></tr>
-<tr class="answered"><td>finding</td><td class="item">RC-7</td><td>END 10.8 points at the Core for the equivalence odds ratio delta; Core 4.1 7.8.6 says the Core sets no equivalence default and the DSAs specify the margin</td><td>2 sentences</td>
+<tr class="answered"><td>finding</td><td class="item"><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/evidence-matrix/sources/findings.csv#L8">RC-7</a></td><td>END 10.8 points at the Core for the equivalence odds ratio delta; Core 4.1 7.8.6 says the Core sets no equivalence default and the DSAs specify the margin</td><td>2 sentences</td>
 <td>pass</td><td><span class="chip">document fact</span></td><td>2</td><td>statistical meaning: trial-design reviewer <span class="chip wait">waits for trial-design reviewer</span></td></tr>
-<tr class="answered"><td>finding</td><td class="item">RC-8</td><td>Macrolide Duration eligibility is defined through allocation in another domain (Antibiotic)</td><td>3 eligibility items</td>
+<tr class="answered"><td>finding</td><td class="item"><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/evidence-matrix/sources/findings.csv#L9">RC-8</a></td><td>Macrolide Duration eligibility is defined through allocation in another domain (Antibiotic)</td><td>3 eligibility items</td>
 <td>first counted here</td><td><span class="chip">document fact</span></td><td>3</td><td></td></tr>
 <tr class="answered"><td>earlier</td><td class="item"><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/cdd-layer/README.md">cdd-layer CQ2</a></td><td></td><td></td>
 <td></td><td></td><td></td><td></td></tr>

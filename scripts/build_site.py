@@ -19,6 +19,10 @@ Pages:
 - docs/cases/remapcap/index.html: the REMAP-CAP documents in scope (version and date as read
   from each document's header: remapcap-design-modules/output/documents.csv), the other current
   documents and the superseded listings on remapcap.org (usdm-master-protocol/sources/remapcap/manifest.csv).
+- docs/templates/remapcap-dsa/index.html: the DSA template REMAP-CAP uses but no document states,
+  read from the headings of its nine DSAs (remapcap-design-modules/output/step1/headings.csv, no text):
+  one row per title key found in two or more DSAs, one column per DSA with that DSA's section
+  number(s); then the headings found in one DSA only.
 - docs/templates/eupearl/index.html: the EU-PEARL templates as data, from eupearl-templates/output_eupearl/:
   the MPT and ISA side by side on the committed alignment (ISA-only sections placed after the ISA section
   they follow), the SAP and DMC heading trees, and the MPT and ISA field labels. Per section, the number of
@@ -69,6 +73,10 @@ RCAP_INPUTS = {
 }
 CTGOV_DOC = "https://cdn.clinicaltrials.gov/large-docs/{tail}/{nct}/{file}"
 DISEASE_ORDER = ["OA", "CLBP", "DPNP"]
+RDSA_INPUTS = {
+    "headings": "remapcap-design-modules/output/step1/headings.csv",
+    "documents": "remapcap-design-modules/output/documents.csv",
+}
 EUP_DIR = "eupearl-templates/output_eupearl/"
 EUP_INPUTS = {
     "sections": EUP_DIR + "sections.csv",
@@ -143,6 +151,13 @@ body.data .key { display: inline-block; }
 .side .box { font-size: 0.82rem; }
 .side .rel { font-size: 0.75rem; color: var(--muted); align-self: center; }
 .side .empty { border: 1.5px dashed var(--line); border-radius: 5px; }
+table.matrix td.num { text-align: center; white-space: nowrap; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8rem; }
+table.matrix td.miss { border-left: 1px dashed var(--line); border-right: 1px dashed var(--line); }
+table.matrix td.miss span { display: block; border: 1.5px dashed var(--line); border-radius: 3px; height: 1.1rem; }
+table.matrix th.dsa { text-align: center; font-size: 0.8rem; vertical-align: bottom; }
+table.matrix th .dname { font-weight: 400; font-size: 0.72rem; color: var(--muted); }
+table.matrix td.title { min-width: 16rem; }
+details.own summary { cursor: pointer; font-weight: 600; margin: 0.4rem 0; }
 .lv2 { margin-left: 0.8rem; } .lv3 { margin-left: 1.6rem; } .lv4 { margin-left: 2.4rem; }
 .tree .box { margin: 0.25rem 0; }
 .slotbox { border: 1.5px dashed var(--muted); border-radius: 3px; min-height: 1.6rem; padding: 0.15rem 0.4rem;
@@ -210,6 +225,13 @@ def waits(review):
 
 
 readme = (ROOT / INPUTS["readme"]).read_text(encoding="utf-8")
+FINDINGS = "evidence-matrix/sources/findings.csv"
+finding_line = {}
+for i, ln in enumerate((ROOT / FINDINGS).read_text(encoding="utf-8").splitlines(), start=1):
+    fid = ln.split(",", 1)[0]
+    if re.fullmatch(r"(CP|RC)-\d+[a-z]?", fid):
+        assert fid not in finding_line, fid
+        finding_line[fid] = i
 questions = pd.read_csv(ROOT / INPUTS["questions"], dtype=str)
 cat = pd.read_csv(ROOT / INPUTS["catalogue"], dtype=str)
 reqs = pd.read_csv(ROOT / INPUTS["requirements"], dtype=str).set_index("requirement")
@@ -233,6 +255,7 @@ if DOCS.exists():
 (DOCS / "cases" / "cpmp").mkdir(parents=True)
 (DOCS / "cases" / "remapcap").mkdir(parents=True)
 (DOCS / "templates" / "eupearl").mkdir(parents=True)
+(DOCS / "templates" / "remapcap-dsa").mkdir(parents=True)
 (DOCS / ".nojekyll").write_text("")
 
 # Landing page
@@ -261,8 +284,8 @@ for q in questions.itertuples():
 questions_body = f"""<h1>The questions</h1>
 {md_to_html(questions_md)}
 <p class="muted">Each card counts what the catalogue holds per case: findings with document evidence, case questions
-answered by SPARQL over the design modules, and questions still open. Earlier answers (before the modules) are on
-the question pages.</p>
+answered by SPARQL over the design modules, and questions still open; "both" is a question asked of the two cases
+together. Earlier answers (before the modules) are on the question pages.</p>
 <div class="cards">
 {chr(10).join(cards)}
 </div>
@@ -284,6 +307,8 @@ for q in questions.itertuples():
             item = esc(r.item_id)
             if not pd.isna(r.query):
                 item = f'<a href="{repo_link(r.query)}">{item}</a>'
+            elif r.kind == "finding":
+                item = f'<a href="{BLOB}{FINDINGS}#L{finding_line[r.item_id]}">{item}</a>'
             cls = "unanswered" if r.kind in ("open", "not asked") else "answered"
             wait_html = "".join(f'<span class="chip wait">waits for {w}</span>' for w in waits(r.review))
             trs.append(f"""<tr class="{cls}"><td>{esc(r.kind)}</td><td class="item">{item}</td><td>{esc(r.text)}</td><td>{esc(r.answer)}</td>
@@ -296,7 +321,12 @@ for q in questions.itertuples():
 </tbody></table></div>""")
     body = f"""<h1>{q.q_id}. {esc(q.question)}</h1>
 <ul>{req_html}</ul>
-<p class="muted">Solid left edge: answered (finding, case question or earlier answer). Dashed: open or not asked.
+<p class="muted">Item: <b>CP-</b> and <b>RC-</b> are findings for CPMP and REMAP-CAP, each with document evidence
+(<a href="{BLOB}{FINDINGS}">findings.csv</a>; the link opens the finding's row); <b>CQ</b> and <b>R</b> are the case
+questions of the CPMP and REMAP-CAP design modules, each a SPARQL query (the link opens the query); <i>earlier</i>
+rows are answers from before the modules, and cdd-layer items are questions stated in the parked cdd-layer sketch.
+Case "both": a question asked of the two cases together.
+Solid left edge: answered (finding, case question or earlier answer). Dashed: open or not asked.
 Status gives the kinds of evidence behind a finding, with counts when there is more than one kind; evidence rows are
 in <a href="{BLOB}evidence-matrix/output/evidence_matrix.csv">evidence_matrix.csv</a>. Same rows as the
 <a href="{BLOB}competency-questions/output/catalogue.md">catalogue</a>.</p>
@@ -345,11 +375,20 @@ def protocol_line(code):
 
 
 m = reg["CPMP"]
-cells = ['<div></div>'] + [f'<div class="head">{html.escape(c)}</div>' for c in compounds]
+prefix = grid.assign(p=grid.doc.str[:2]).groupby("disease").p.unique()
+assert all(len(v) == 1 for v in prefix), prefix
+prefix = prefix.str[0]
+suffix = grid.assign(n=grid.doc.str[2:]).groupby("compound").n.unique()
+assert all(len(v) == 1 for v in suffix), suffix
+suffix = suffix.str[0]
+dis_name = {dis: sorted({reg[d]["conditions"][0] for d in grid[grid.disease == dis].doc}) for dis in DISEASE_ORDER}
+assert all(len(v) == 1 for v in dis_name.values()), dis_name
+cells = (['<div class="head">Disease state</div>', f'<div class="head" style="grid-column: span {len(compounds)}; '
+          'text-align: center">Compound (one ISA per compound and disease state)</div>']
+         + ['<div></div>'] + [f'<div class="head">{html.escape(c)}</div>' for c in compounds])
 for dis in DISEASE_ORDER:
-    cond = sorted({reg[d]["conditions"][0] for d in grid[grid.disease == dis].doc})
-    cells.append(f'<div class="box dashed"><b>{dis} DSA</b><span class="muted">not public; '
-                 f'{html.escape(", ".join(cond))}</span></div>')
+    cells.append(f'<div class="box dashed"><b>{dis} DSA</b><span class="muted">{html.escape(dis_name[dis][0])}; '
+                 f'not public</span></div>')
     for c in compounds:
         hit = grid[(grid.disease == dis) & (grid.compound == c)]
         assert len(hit) == 1, (dis, c)
@@ -373,6 +412,11 @@ each ISA's section 5 sentence naming the master protocol and its DSA
 <div class="layer"><div class="box"><b>CPMP master protocol</b>{ctgov_link('CPMP')} · {html.escape(m['title'])}<br>
 <span class="muted">{protocol_line('CPMP')}</span></div></div>
 <h2>Disease-state addenda and ISAs</h2>
+<p class="muted">Rows: the disease states, each with its disease-state addendum (DSA). Columns: the compounds. Disease
+names as the ISAs' ClinicalTrials.gov records give them:
+{'; '.join(f'<b>{dis}</b> {html.escape(dis_name[dis][0])}' for dis in DISEASE_ORDER)}. ISA codes: a disease prefix
+({', '.join(f'{prefix[dis]} = {dis}' for dis in DISEASE_ORDER)}) and a compound number
+({', '.join(f'{suffix[c]} = {c}' for c in compounds)}).</p>
 <div class="table-wrap"><div class="grid4">
 {chr(10).join(cells)}
 </div></div>
@@ -397,7 +441,7 @@ assert list(rdocs.layer.unique()) == ["CORE", "PANDA", "DSA"], list(rdocs.layer.
 
 def rbox(r):
     return (f'<div class="box"><b>{esc(r.header_name)} {esc(r.version)}</b>'
-            f'<span class="muted">{esc(r.date)} · <a href="{esc(r.url)}">remapcap.org</a> · {esc(r.short)}</span></div>')
+            f'<span class="muted">{esc(r.date)} · <a href="{esc(r.url)}">remapcap.org</a> · key in the data: {esc(r.short)}</span></div>')
 
 
 layer_html = {lay: "".join(rbox(r) for r in rdocs[rdocs.layer == lay].itertuples()) for lay in ["CORE", "PANDA", "DSA"]}
@@ -423,6 +467,7 @@ on remapcap.org: a Core Protocol, the Patient, Pathogen and Disease Appendix (PA
 <div class="layer core2">{layer_html['PANDA']}</div>
 <h2>Domain-specific appendices</h2>
 <div class="layer dsa3">{layer_html['DSA']}</div>
+<p>The structure the nine DSAs share: <a href="../../templates/remapcap-dsa/">the DSA template no document states</a>.</p>
 <h2>Other current documents on remapcap.org (not read here)</h2>
 <div class="table-wrap"><table><tbody>{out_rows}</tbody></table></div>
 <h2>Superseded versions listed on remapcap.org</h2>
@@ -552,6 +597,84 @@ sw.addEventListener('change', () => document.body.classList.toggle('data', sw.ch
     page("EU-PEARL templates as data", 2, eup_body, wide=True, inputs=list(EUP_INPUTS.values())), encoding="utf-8")
 
 
+# REMAP-CAP DSA template page
+hd = pd.read_csv(ROOT / RDSA_INPUTS["headings"], dtype=str)
+rd = pd.read_csv(ROOT / RDSA_INPUTS["documents"], dtype=str)
+dsa_keys = rd[rd.layer == "DSA"].key.tolist()
+short = rd.set_index("key").short
+dh = hd[hd.doc.isin(dsa_keys)].copy()
+assert set(dh.doc) == set(dsa_keys), set(dsa_keys) - set(dh.doc)
+dh["pos"] = dh.groupby("doc").cumcount() / dh.groupby("doc").doc.transform("size")
+n_docs = dh.groupby("title_key").doc.nunique()
+shared = n_docs[n_docs >= 2].index
+order = (dh[dh.title_key.isin(shared)].groupby(["title_key", "doc"]).pos.min()
+         .groupby("title_key").mean().sort_values(kind="stable").index)
+
+
+def label(key):
+    titles = dh[dh.title_key == key].title
+    counts = titles.value_counts()
+    return counts[counts == counts.max()].index[0] if (counts == counts.max()).sum() == 1 else titles.iloc[0]
+
+
+mrows = []
+for key in order:
+    sub = dh[dh.title_key == key]
+    lvl = int(sub.level.astype(int).min())
+    cells = []
+    for d in dsa_keys:
+        nums = sub[sub.doc == d].number.tolist()
+        cells.append(f'<td class="num">{" · ".join(esc(x) for x in nums)}</td>' if nums
+                     else '<td class="miss"><span></span></td>')
+    mrows.append(f'<tr><td class="title lv{lvl}">{esc(label(key))}<span class="key">{esc(key)}</span></td>'
+                 f'{"".join(cells)}<td class="num">{n_docs[key]}</td></tr>')
+own = []
+for d in dsa_keys:
+    sub = dh[(dh.doc == d) & dh.title_key.isin(n_docs[n_docs == 1].index)]
+    items = "".join(f"<li>{esc(r.number)} {esc(r.title)}</li>" for r in sub.itertuples())
+    own.append(f'<details class="own"><summary>{esc(short[d])}: {len(sub)} of {(dh.doc == d).sum()} headings</summary>'
+               f'<ul>{items}</ul></details>')
+dist = n_docs.value_counts().sort_index(ascending=False)
+rdoc = rd.set_index("key")
+dname = {d: rdoc.loc[d, "header_name"].replace(" Domain-Specific Appendix", "") for d in dsa_keys}
+heads = "".join(f'<th class="dsa" title="{esc(rdoc.loc[d, "header_name"])} {esc(rdoc.loc[d, "version"])}">'
+                f'{esc(short[d])}<br><span class="dname">{esc(dname[d])}</span></th>' for d in dsa_keys)
+legend = " · ".join(f"<b>{esc(short[d])}</b> {esc(dname[d])} {esc(rdoc.loc[d, 'version'])} ({esc(rdoc.loc[d, 'date'])})"
+                    for d in dsa_keys)
+rdsa_body = f"""<h1>REMAP-CAP: the DSA template no document states</h1>
+<p>Each REMAP-CAP domain-specific appendix (DSA) follows a common structure, but no REMAP-CAP document gives that
+structure as a template. Here it is read from the headings of the nine DSAs read in this work: {len(dh)} headings
+under {len(n_docs)} distinct titles. The heading-level counterpart of finding RC-1 (components every DSA states).</p>
+<p class="muted">Titles matched exactly: lower case, characters other than a–z ignored; no fuzzy matching and no domain
+names masked, so "Corticosteroid Domain Governance" and "Antibiotic Domain Governance" stay apart. A cell holds the
+section number(s) of that heading in that DSA; a dashed cell: the DSA has no heading with that title. Rows in the
+mean relative position of the heading's first occurrence in each DSA. Number of DSAs per title:
+{'; '.join(f'{k} DSAs: {v}' for k, v in dist.items() if k > 1)}; one DSA only: {dist.get(1, 0)}.
+Headings and numbers as each document's table of contents gives them
+(<a href="{BLOB}{RDSA_INPUTS['headings']}">headings.csv</a>, written by
+<a href="{BLOB}remapcap-design-modules/scripts/12_headings.py">12_headings.py</a>); documents on the
+<a href="../../cases/remapcap/">REMAP-CAP page</a>.</p>
+<div class="switch"><label><input type="checkbox" id="sw"> Show as data</label>
+<span class="muted"> the title key each row is matched on</span></div>
+<h2>Headings in two or more DSAs ({len(order)})</h2>
+<p>Rows: one heading title. Columns: the nine domain-specific appendices (DSA), one per REMAP-CAP domain, by version
+and date: {legend}. Last column: in how many of the nine the heading occurs.</p>
+<div class="table-wrap"><table class="matrix">
+<thead><tr><th></th><th colspan="{len(dsa_keys)}" class="dsa">Domain-specific appendix (DSA): section number of the heading</th><th></th></tr>
+<tr><th>Heading</th>{heads}<th class="dsa">DSAs</th></tr></thead>
+<tbody>{''.join(mrows)}</tbody></table></div>
+<h2>Headings in one DSA only ({dist.get(1, 0)})</h2>
+<p class="muted">The domain-specific part of each appendix, and headings that would match with a different
+wording or with the domain name masked.</p>
+{''.join(own)}
+<script>
+const sw = document.getElementById('sw');
+sw.addEventListener('change', () => document.body.classList.toggle('data', sw.checked));
+</script>
+"""
+(DOCS / "templates" / "remapcap-dsa" / "index.html").write_text(
+    page("REMAP-CAP: the DSA template", 2, rdsa_body, wide=True, inputs=list(RDSA_INPUTS.values())), encoding="utf-8")
+
 # Area pages and landing page
 def area_card(href, title, lines):
     return (f'<div class="card"><h3><a href="{href}">{html.escape(title)}</a></h3>'
@@ -579,13 +702,16 @@ templates_cards = [
               [", ".join(f"{d} {n}" for d, n in tot.items()) + " sections",
                f"MPT and ISA side by side: {n_match['both']} in both, {n_match['mpt_only']} MPT only, "
                f"{n_match['isa_only']} ISA only; {len(fld)} field labels"]),
+    area_card("remapcap-dsa/", "REMAP-CAP: the DSA template no document states",
+              [f"{len(dh)} headings of the nine DSAs under {len(n_docs)} titles: {dist.get(len(dsa_keys), 0)} in all nine, "
+               f"{len(order)} in two or more"]),
     area_card(f"{BLOB}tpp-templates/", "TPP templates",
               ["Not rendered on the site yet; the comparison is in the repository folder"]),
 ]
 (DOCS / "templates" / "index.html").write_text(page("Templates as data", 1, f"""<h1>Templates as data</h1>
 {md_to_html(templates_md)}
 <div class="cards">{''.join(templates_cards)}</div>
-""", inputs=[INPUTS["readme"]] + list(EUP_INPUTS.values())), encoding="utf-8")
+""", inputs=[INPUTS["readme"]] + list(EUP_INPUTS.values()) + [RDSA_INPUTS["headings"]]), encoding="utf-8")
 
 landing_cards = [
     area_card("questions/", "The questions",
@@ -594,7 +720,8 @@ landing_cards = [
     area_card("cases/", "The two cases",
               [f"CPMP: master and {len(grid)} ISAs", f"REMAP-CAP: {len(rdocs)} documents read"]),
     area_card("templates/", "Templates as data",
-              [f"EU-PEARL: {len(tot)} templates with their heading trees, MPT and ISA side by side"]),
+              [f"EU-PEARL: {len(tot)} templates with their heading trees, MPT and ISA side by side",
+               f"REMAP-CAP: the DSA template read from {len(dsa_keys)} DSAs"]),
 ]
 index_body = f"""<h1>Early clinical design research</h1>
 {md_to_html(intro)}
@@ -602,4 +729,4 @@ index_body = f"""<h1>Early clinical design research</h1>
 """
 (DOCS / "index.html").write_text(page("Early clinical design research", 0, index_body), encoding="utf-8")
 
-print(f"docs/: index.html, 3 area pages, {len(questions)} question pages, 2 case pages, 1 template page")
+print(f"docs/: index.html, 3 area pages, {len(questions)} question pages, 2 case pages, 2 template pages")

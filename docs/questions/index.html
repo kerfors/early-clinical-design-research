@@ -63,6 +63,13 @@ body.data .key { display: inline-block; }
 .side .box { font-size: 0.82rem; }
 .side .rel { font-size: 0.75rem; color: var(--muted); align-self: center; }
 .side .empty { border: 1.5px dashed var(--line); border-radius: 5px; }
+table.matrix td.num { text-align: center; white-space: nowrap; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8rem; }
+table.matrix td.miss { border-left: 1px dashed var(--line); border-right: 1px dashed var(--line); }
+table.matrix td.miss span { display: block; border: 1.5px dashed var(--line); border-radius: 3px; height: 1.1rem; }
+table.matrix th.dsa { text-align: center; font-size: 0.8rem; vertical-align: bottom; }
+table.matrix th .dname { font-weight: 400; font-size: 0.72rem; color: var(--muted); }
+table.matrix td.title { min-width: 16rem; }
+details.own summary { cursor: pointer; font-weight: 600; margin: 0.4rem 0; }
 .lv2 { margin-left: 0.8rem; } .lv3 { margin-left: 1.6rem; } .lv4 { margin-left: 2.4rem; }
 .tree .box { margin: 0.25rem 0; }
 .slotbox { border: 1.5px dashed var(--muted); border-radius: 3px; min-height: 1.6rem; padding: 0.15rem 0.4rem;
@@ -82,8 +89,8 @@ modules and by findings with document evidence. The catalogue gives the question
 findings under it, the answer, how it was checked, and its status:
 <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/competency-questions/output/catalogue.md">competency-questions/output/catalogue.md</a>.</p>
 <p class="muted">Each card counts what the catalogue holds per case: findings with document evidence, case questions
-answered by SPARQL over the design modules, and questions still open. Earlier answers (before the modules) are on
-the question pages.</p>
+answered by SPARQL over the design modules, and questions still open; "both" is a question asked of the two cases
+together. Earlier answers (before the modules) are on the question pages.</p>
 <div class="cards">
 <div class="card">
 <h3><span class="qid">Q1</span><a href="Q1/">When are two occurrences in different documents the same component?</a></h3>
