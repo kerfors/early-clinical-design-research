@@ -70,6 +70,7 @@ table.matrix th.dsa { text-align: center; font-size: 0.8rem; vertical-align: bot
 table.matrix th .dname { font-weight: 400; font-size: 0.72rem; color: var(--muted); }
 table.matrix td.title { min-width: 16rem; }
 details.own summary { cursor: pointer; font-weight: 600; margin: 0.4rem 0; }
+.lead { border-left: 3px solid var(--link); background: var(--card); padding: 0.6rem 0.9rem; margin: 1rem 0; }
 .lv2 { margin-left: 0.8rem; } .lv3 { margin-left: 1.6rem; } .lv4 { margin-left: 2.4rem; }
 .tree .box { margin: 0.25rem 0; }
 .slotbox { border: 1.5px dashed var(--muted); border-radius: 3px; min-height: 1.6rem; padding: 0.15rem 0.4rem;
@@ -82,7 +83,7 @@ footer { max-width: 64rem; margin: 0 auto; padding: 0 1rem 2rem; color: var(--mu
 </head>
 <body>
 <main>
-<nav><a href="">Early clinical design research</a> · <a href="questions/">Questions</a> · <a href="cases/">Cases</a> · <a href="templates/">Templates</a> · <a href="https://github.com/kerfors/early-clinical-design-research">repository</a></nav>
+<nav><a href="">Early clinical design research</a> · <a href="questions/">Questions</a> · <a href="cases/">Cases</a> · <a href="templates/">Templates</a> · <a href="vision/">Vision</a> · <a href="https://github.com/kerfors/early-clinical-design-research">repository</a></nav>
 <h1>Early clinical design research</h1>
 <p>How the design content of a clinical trial programme can be identified, and its relations across documents
 made explicit, as data; and what the documents carry today. Two public master protocols are the cases: the
@@ -102,7 +103,8 @@ next to it. Pointing statements at m11-rdf section identifiers, rather than at s
 <p><strong>Towards Linked Data.</strong> The direction is Linked Data, as in <a href="https://w3id.org/m11-rdf/">m11-rdf</a>, where every
 identifier resolves to a page that says what it is. This work is not there yet: the design modules are OWL files
 whose IRIs sit in a namespace for now (<code>https://kerfors.github.io/early-clinical-design-research/</code>), and those
-IRIs do not resolve yet.</p>
+IRIs do not resolve yet. Where this is heading, and the role of ontologies in it: <a href="vision/">VISION.md</a>.</p>
+<p class="lead"><a href="vision/"><b>Where this is heading</b></a>: components first, then the ontologies behind the content.</p>
 <div class="cards"><div class="card"><h3><a href="questions/">The questions</a></h3><p>10 competency questions; the catalogue holds 36 findings, 22 case questions and 4 open questions</p></div><div class="card"><h3><a href="cases/">The two cases</a></h3><p>CPMP: master and 12 ISAs</p><p>REMAP-CAP: 12 documents read</p></div><div class="card"><h3><a href="templates/">Templates as data</a></h3><p>EU-PEARL: 4 templates with their heading trees, MPT and ISA side by side</p><p>REMAP-CAP: the DSA template read from 9 DSAs</p></div></div>
 
 </main>
