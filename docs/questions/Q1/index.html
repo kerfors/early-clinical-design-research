@@ -51,13 +51,31 @@ main.wide, footer.wide { max-width: 84rem; }
 .grid4 .head { font-size: 0.8rem; color: var(--muted); font-weight: 600; align-self: end; }
 .dsa3 { grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); }
 .core2 { grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); }
+.switch { position: sticky; top: 0; background: var(--bg); padding: 0.5rem 0; border-bottom: 1px solid var(--line);
+          z-index: 2; font-size: 0.9rem; }
+.key { display: none; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.75rem; color: var(--link);
+       background: var(--code); border-radius: 3px; padding: 0 0.3rem; margin-left: 0.3rem; }
+body.data .key { display: inline-block; }
+.rel .key { overflow-wrap: anywhere; max-width: 100%; }
+.chip.change { background: transparent; border: 1px solid var(--line); }
+.side { display: grid; grid-template-columns: minmax(0, 1fr) 9.5rem minmax(0, 1fr); gap: 0.3rem 0.5rem; min-width: 46rem; }
+.side .colhead { font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+.side .box { font-size: 0.82rem; }
+.side .rel { font-size: 0.75rem; color: var(--muted); align-self: center; }
+.side .empty { border: 1.5px dashed var(--line); border-radius: 5px; }
+.lv2 { margin-left: 0.8rem; } .lv3 { margin-left: 1.6rem; } .lv4 { margin-left: 2.4rem; }
+.tree .box { margin: 0.25rem 0; }
+.slotbox { border: 1.5px dashed var(--muted); border-radius: 3px; min-height: 1.6rem; padding: 0.15rem 0.4rem;
+           font-size: 0.8rem; color: var(--muted); }
+.fields { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0.3rem 0.8rem; align-items: center; font-size: 0.85rem; }
+@media (max-width: 40rem) { .fields { grid-template-columns: 1fr; } }
 footer { max-width: 64rem; margin: 0 auto; padding: 0 1rem 2rem; color: var(--muted); font-size: 0.8rem; overflow-wrap: anywhere; }
 @media (max-width: 40rem) { main { padding: 1rem 1rem 2rem; } }
 </style>
 </head>
 <body>
 <main class="wide">
-<nav><a href="../../">Early clinical design research</a> · <a href="../../cases/cpmp/">CPMP</a> · <a href="../../cases/remapcap/">REMAP-CAP</a> · <a href="https://github.com/kerfors/early-clinical-design-research">repository</a></nav>
+<nav><a href="../../">Early clinical design research</a> · <a href="../../cases/cpmp/">CPMP</a> · <a href="../../cases/remapcap/">REMAP-CAP</a> · <a href="../../templates/eupearl/">EU-PEARL templates</a> · <a href="https://github.com/kerfors/early-clinical-design-research">repository</a></nav>
 <h1>Q1. When are two occurrences in different documents the same component?</h1>
 <ul><li><b>Identity</b> (R-ID): One identity per component across trials and versions, including below the SoA row (tests in panels)</li></ul>
 <p class="muted">Solid left edge: answered (finding, case question or earlier answer). Dashed: open or not asked.
