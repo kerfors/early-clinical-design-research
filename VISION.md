@@ -43,6 +43,12 @@ The design modules here are test cases on the way, not that ontology. They ancho
 Data, with identifiers that resolve as in [m11-rdf](https://w3id.org/m11-rdf/), they would let the questions here be
 asked across programmes.
 
-This is the structural part of the 2018 CDD vision, now testable on public material. Besides the ontologies, it needs
-an authoring environment design teams will use, and agreed decision and argument patterns. The hard part is getting
-teams to state decisions and arguments at the time.
+Earlier work pointed in this direction. The EFPIA Smart Program Design team (2013) named the gap: industry standards
+do not cover the programme level or the rationale behind design decisions. A volunteer PhUSE project, the Clinical
+Development Design (CDD) Framework (2015–2018), sketched ideas for capturing decisions, alternatives not taken and
+the evidence behind them ([PhUSE project page](https://advance.hub.phuse.global/wiki/x/byCZAQ);
+[Applied Clinical Trials, April 2018](https://www.appliedclinicaltrialsonline.com/view/barriers-and-solutions-smart-clinical-program-designs-0)).
+In the same years master protocols came into use, with one programme split into a master and its appendices. The
+work here tests the structural part of those ideas on two of them. Besides the ontologies, it needs an authoring
+environment design teams will use, and agreed decision and argument patterns. The hard part is getting teams to
+state decisions and arguments at the time.
