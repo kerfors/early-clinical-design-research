@@ -1,0 +1,13 @@
+key,layer,short,header_name,version,date,url,sha256
+CORE40,CORE,CORE40,Core Protocol,4.0,2024-11-05,https://www.remapcap.org/s/REMAP-CAP-Core-Protocol-V4-05-November-2024_CLEAN-m9gf.pdf,7c0010c99f9b5fb29cd02bae86beb18e5c24d359a9d9fb2fe72edc39824417e2
+CORE41,CORE,CORE41,Core Protocol,4.1,2026-05-29,https://www.remapcap.org/s/REMAP-CAP-Core-Protocol-V41-29-MAY-2026_CLEAN.pdf,85371ccc6de0b8c143b4123b69882b490b207be4d82e9fa5f4bf076278143f28
+PANDA,PANDA,PANDA,"Patient, Pathogen and Disease Appendix",1,2024-11-05,https://www.remapcap.org/s/REMAP-CAP-Pathogen-ANd-Disease-Appendix-PANDA-V1-05-NOV-2024.pdf,7b8a3c1968acd76a59efaf10804a8a880cef726170428d51322aeb855ed02cb9
+CS_DSA,DSA,CS,Corticosteroid Domain-Specific Appendix,6,2024-11-05,https://www.remapcap.org/s/REMAP-CAP-Corticosteroid-DSA-V6-05-NOV-2024_CLEAN.pdf,e009c0e510cbab30562680c146b477a8559db209b33936b7c46d725e26d93b25
+AB_DSA,DSA,AB,Antibiotic Domain-Specific Appendix,4,2024-11-05,https://www.remapcap.org/s/REMAP-CAP-Antibiotic-DSA-V4-05-NOV-2024_CLEAN.pdf,0cabae953705f44ffa486803b4e36e69101dcb80316f3a948c437a8a344981ae
+TAB_DSA,DSA,TAB,Tropical Antibiotic Domain-Specific Appendix,1,2026-04-22,https://www.remapcap.org/s/REMAP-CAP-Tropical-Antibiotic-DSA-V1-22-APR-2026.pdf,cea292c5039c0b8bbd08447cfa8ce6d4cea235b7252fc5c82fbf26c88fb6de67
+IAV_DSA,DSA,IAV,Influenza Antiviral Domain-Specific Appendix,4,2026-10-05,https://www.remapcap.org/s/REMAP-CAP-Influenza-Antiviral-DSA-V4_CLEAN-05-OCT-2026.pdf,49977c7ef6b2ec40eabd4748ce6f039121b2a966da92c9ad2819ae0ec15f5d27
+MD_DSA,DSA,MD,Macrolide Duration Domain-Specific Appendix,4,2024-11-05,https://www.remapcap.org/s/REMAP-CAP-Macrolide-Duration-DSA-V4-05-NOV-2024_CLEAN.pdf,6c216d136788ba3904f9b4ab6c4564b464f301656824602b42483f3cf3fd4071
+IG_DSA,DSA,IG,COVID-19 Immunoglobulin Therapy Domain-Specific Appendix,4,2024-11-05,https://www.remapcap.org/s/REMAP-CAP-COVID-19-Immunoglobulin-DSA-V4-05-NOV-2024_CLEAN.pdf,42d130d3230d6990deca023330cc6cfb6ccf8bea3adeb69cdb8e0c58e1df3f13
+MV_DSA,DSA,MV,Mechanical Ventilation Domain-Specific Appendix,2,2024-11-05,https://www.remapcap.org/s/REMAP-CAP-Mechanical-Ventilation-DSA-V20-05-NOV-2024_CLEAN.pdf,779cbfa31ebc294c0fef7643a61a11f08e568ca2d0c273bfae8a0528b476c1b4
+END_DSA,DSA,END,Endothelial Modulation Domain-Specific Appendix,2,2024-11-05,https://www.remapcap.org/s/REMAP-CAP-Endothelial-DSA-V2-05-NOV-2024_CLEAN.pdf,0b623087c665e99c2152d4bffe70febd6b88e98a459bee81f9367c03719df1b4
+IIM_DSA,DSA,IIM,Influenza Immune Modulation Domain-Specific Appendix,2.1,2025-05-09,https://www.remapcap.org/s/REMAP-CAP-Influenza-IM-DSA-V21-09-May-2025_CLEAN.pdf,7a4c287efcbc43940dd452bde98f6e9d8f425df2984d0a80bc8e4921309d2259

@@ -4,7 +4,12 @@ Scripts 01 and 02 keep their own DOCS tables (committed, gated, outputs byte-ide
 Version and issue date are read from each document's header (pages 2-3), not typed:
 "Version <v> Dated <d Month yyyy>" (case-insensitive "dated"; IG writes "Version 4 dated ...").
 Title = header name + " " + version.
+
+Run as a script: prints the table and writes output/documents.csv (with url and sha256 from the
+manifest), so pages built without the PDFs can show version and date.
 """
+import csv
+import hashlib
 import subprocess
 from collections import namedtuple
 from datetime import datetime
@@ -56,3 +61,14 @@ TITLES = {k: DOCS[k].title for k in DSAS}
 if __name__ == "__main__":
     for d in DOCS.values():
         print(f"{d.key:8} {d.short:6} {d.title:62} {d.date_text}")
+    with open(SRC / "manifest.csv", newline="") as f:
+        manifest = {r["file"]: r for r in csv.DictReader(f)}
+    out = Path(__file__).resolve().parents[1] / "output" / "documents.csv"
+    with open(out, "w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["key", "layer", "short", "header_name", "version", "date", "url", "sha256"])
+        for d in DOCS.values():
+            m = manifest[d.file]
+            assert m["sha256"] == hashlib.sha256((SRC / d.file).read_bytes()).hexdigest(), d.file
+            w.writerow([d.key, d.layer, d.short, d.header_name, d.version, d.date.isoformat(), m["url"], m["sha256"]])
+    print(f"wrote {out}")
