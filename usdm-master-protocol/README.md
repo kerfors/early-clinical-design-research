@@ -4,7 +4,7 @@ Plan 1: test USDM v4 against two public master protocols, the Lilly Chronic Pain
 
 Status 2026-10-27: REMAP-CAP Steps 2–6 and CPMP Steps 2–5 done (sections below). The work first stopped after Step 1 (2026-10-24): the CPMP disease-state addenda (DSA) are not posted on CT.gov, and the search of other public sources found none ("DSA search" below). REMAP-CAP was then added as a fully public case, and CPMP was restarted for its posted documents.
 
-Whole-document outputs (`output_cpmp/step2/page_text.csv` and `sections.csv`, `output_remapcap/step2/sections.csv`, and the USDM JSON files of both cases) are not in the public repo. The scripts and notebooks re-create them from the source PDFs (URLs and sha256 in `sources/`).
+Whole-document outputs (`output_cpmp/step2/page_text.csv` and `sections.csv`, `output_remapcap/step2/sections.csv`, and the USDM JSON files of both cases) are not in the public repo. The scripts and notebooks re-create them from the source PDFs (URLs and sha256 in `sources/`). The most complete USDM file of each case is published without the section text in `published/` (`scripts/20_usdm_without_text.py`).
 
 ## Contents
 

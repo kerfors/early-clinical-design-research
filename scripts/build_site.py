@@ -110,6 +110,8 @@ NOT_CARRIED = {
             "no schedule (the 13 SoAs are in soa2usdm-collections); no biomedical concepts",
 }
 BREAKPOINTS = UMP + "output_remapcap/step5/breakpoints.csv"
+RAW = "https://raw.githubusercontent.com/kerfors/early-clinical-design-research/main/"
+PUBLISHED = [UMP + "published/cpmp_usdm_v2_without_text.json", UMP + "published/remapcap_usdm_v3_without_text.json"]
 USDM_METHOD = [
     ("Read the documents",
      "Table of contents, headings and section text from the PDF text layer; for CPMP, letter-spaced pages with word "
@@ -763,7 +765,9 @@ def validator_output(folder):
     return out
 
 
-usdm_inputs = [BREAKPOINTS]
+for p in PUBLISHED:
+    assert (ROOT / p).is_file(), p
+usdm_inputs = [BREAKPOINTS] + PUBLISHED
 file_rows, log_rows = [], []
 log_status = set()
 logs = {}
@@ -831,6 +835,11 @@ data4knowledge usdm_data, as of 28 October 2026): a real before and after (REMAP
 4.1) and amendments with section-level changes (CPMP: 12 amendments, 204 changes, each pointing at the amended
 section). The section text is kept as read from the documents: it carries no usdm:ref links into the structured
 data.</p>
+<p><b>Published without the section text:</b> the most complete file of each case, with every section text and the
+REMAP-CAP intervention descriptions replaced by a marker, everything else as built, and validated with the same
+findings as the originals:
+{' · '.join(f'<a href="{BLOB}{p}">{p.split("/")[-1]}</a> (<a href="{RAW}{p}">raw</a>)' for p in PUBLISHED)}
+· <a href="{BLOB}{UMP}published/README.md">what is in them</a>.</p>
 <p>The Schedules of Activities are the other half. The 13 CPMP schedules (master and 12 ISAs) are extracted to USDM by
 <a href="https://github.com/kerfors/soa2usdm">soa2usdm</a>, in
 <a href="https://kerfors.github.io/soa2usdm-collections/collections/cpmp/protocols/index.html">soa2usdm-collections</a>,
