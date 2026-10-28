@@ -1,9 +1,13 @@
 # Where this is heading
 
-Master-protocol templates solve document modularity. What trials actually share and change is design content:
-eligibility criteria, arms and doses, endpoints and instruments, schedule cells, allocation rules. No standard today
-carries that content as reusable units with one identity across trials and versions, or records who decides what at
-which layer.
+Master-protocol templates organise the documents: a master and its appendices, as in the EU-PEARL templates
+([side by side](https://kerfors.github.io/early-clinical-design-research/templates/eupearl/)). What trials actually
+share and change is design content: eligibility criteria, arms and doses, endpoints and instruments, schedule cells,
+allocation rules. USDM v4.0 cannot hold that content once and reuse it: an inherited endpoint can only be copied
+(BP05), and a new Core version means copying unchanged appendix content into a new study version (BP13)
+([breakpoints](https://kerfors.github.io/early-clinical-design-research/usdm/)). And the documents give at most a
+one-line rationale per change, never the alternatives considered
+([Q10](https://kerfors.github.io/early-clinical-design-research/questions/Q10/)).
 
 ## First step: design content as Linked Data
 
@@ -23,6 +27,10 @@ The future this points to:
    USDM and M11 become outputs, not mapping targets.
 5. **Evolution is native.** An amendment changes a component or a decision, and every user of it is listed, to
    rebind or to stay.
+
+Near term, USDM v4 stays the document carrier, with the design modules beside it for what it cannot carry
+([USDM v4 and master protocols](https://kerfors.github.io/early-clinical-design-research/usdm/)); documents
+generated from the model are the direction.
 
 ## Next step: the ontologies behind the content
 

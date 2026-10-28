@@ -88,10 +88,14 @@ footer { max-width: 64rem; margin: 0 auto; padding: 0 1rem 2rem; color: var(--mu
 <main>
 <nav><a href="../">Early clinical design research</a> · <a href="../questions/">Questions</a> · <a href="../cases/">Cases</a> · <a href="../usdm/">USDM</a> · <a href="../templates/">Templates</a> · <a href="../vision/">Vision</a> · <a href="https://github.com/kerfors/early-clinical-design-research">repository</a></nav>
 <h1>Where this is heading</h1>
-<p>Master-protocol templates solve document modularity. What trials actually share and change is design content:
-eligibility criteria, arms and doses, endpoints and instruments, schedule cells, allocation rules. No standard today
-carries that content as reusable units with one identity across trials and versions, or records who decides what at
-which layer.</p>
+<p>Master-protocol templates organise the documents: a master and its appendices, as in the EU-PEARL templates
+(<a href="https://kerfors.github.io/early-clinical-design-research/templates/eupearl/">side by side</a>). What trials actually
+share and change is design content: eligibility criteria, arms and doses, endpoints and instruments, schedule cells,
+allocation rules. USDM v4.0 cannot hold that content once and reuse it: an inherited endpoint can only be copied
+(BP05), and a new Core version means copying unchanged appendix content into a new study version (BP13)
+(<a href="https://kerfors.github.io/early-clinical-design-research/usdm/">breakpoints</a>). And the documents give at most a
+one-line rationale per change, never the alternatives considered
+(<a href="https://kerfors.github.io/early-clinical-design-research/questions/Q10/">Q10</a>).</p>
 <h2>First step: design content as Linked Data</h2>
 <p>The idea is design content as components, each with its own identifier, wherever it occurs. The relations are then
 statements between identifiers: between layers (inherits, delegates, overridable default, restates, extends,
@@ -109,6 +113,9 @@ can be read and queried across trials and programmes.</p>
 <li><strong>Evolution is native.</strong> An amendment changes a component or a decision, and every user of it is listed, to
    rebind or to stay.</li>
 </ol>
+<p>Near term, USDM v4 stays the document carrier, with the design modules beside it for what it cannot carry
+(<a href="https://kerfors.github.io/early-clinical-design-research/usdm/">USDM v4 and master protocols</a>); documents
+generated from the model are the direction.</p>
 <h2>Next step: the ontologies behind the content</h2>
 <p>Components in a graph are only a first part. Behind the content are classes and relations: an objective, the
 endpoint that measures it, the procedure that produces the data, a specimen taken during it, an assessment, and its
