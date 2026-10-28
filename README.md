@@ -20,8 +20,10 @@ document carrier here (`usdm-master-protocol/`, checked with the usdm-rdf valida
 next to it. Pointing statements at m11-rdf section identifiers, rather than at section numbers, is an open choice.
 
 **Identifiers, for now.** The design modules are OWL files whose IRIs sit in a namespace for now
-(`https://kerfors.github.io/early-clinical-design-research/`), and those IRIs do not resolve yet. Where this is
-heading, first Linked Data as in m11-rdf and then the ontologies behind the content: [VISION.md](VISION.md).
+(`https://kerfors.github.io/early-clinical-design-research/`), and those IRIs do not resolve yet.
+
+**Where this is heading:** first the design content as Linked Data, as in m11-rdf, then the ontologies behind the
+content. See [VISION.md](VISION.md).
 
 ## The questions
 

@@ -734,10 +734,13 @@ assert vision_title == "# Where this is heading", vision_title
 {md_to_html(vision_rest)}
 """, inputs=[VISION]), encoding="utf-8")
 intro_html = md_to_html(intro)
-assert intro_html.count(f'href="{BLOB}{VISION}"') == 1, "README intro must link VISION.md once"
+heading_p = re.findall(r'<p><strong>Where this is heading:</strong>(.*?) See <a href="' + re.escape(BLOB + VISION) + r'">VISION\.md</a>\.</p>',
+                       intro_html, flags=re.S)
+assert len(heading_p) == 1, "README intro must end with one 'Where this is heading:' paragraph linking VISION.md"
+intro_html = re.sub(r'<p><strong>Where this is heading:</strong>.*?</p>',
+                    f'<p class="lead"><a href="vision/"><b>Where this is heading</b></a>:{heading_p[0]}</p>', intro_html, flags=re.S)
 index_body = f"""<h1>Early clinical design research</h1>
-{intro_html.replace(f'href="{BLOB}{VISION}"', 'href="vision/"')}
-<p class="lead"><a href="vision/"><b>Where this is heading</b></a>: components first, then the ontologies behind the content.</p>
+{intro_html}
 <div class="cards">{''.join(landing_cards)}</div>
 """
 (DOCS / "index.html").write_text(page("Early clinical design research", 0, index_body), encoding="utf-8")
