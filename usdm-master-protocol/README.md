@@ -159,7 +159,7 @@ Mapping log status counts: mapped 44, mapped_copy_from_core 7, derived 9, requir
 ## Step 4 – Validation (done 2026-10-24)
 
 - Runner: `scripts/04_run_usdm_rdf_validator.py`. Executes usdm-rdf `notebooks/60_validate_study.ipynb` unchanged on disk; the two input lines are set in memory (`STUDY_JSON` = step 3 JSON, `BASE_IRI` = `https://kerfors.github.io/early-clinical-design-research/usdm/remapcap/`, an instance namespace chosen for this study – change if wanted).
-- Outputs: `output_remapcap/step4/shacl_findings.csv`, `context_unmapped_keys.csv`, executed notebook `60_validate_remapcap.ipynb` (local paths replaced by `<repo>` / `<repos>`).
+- Outputs: `output_remapcap/step4/shacl_findings.csv`, `context_unmapped_keys.csv`, executed notebook `60_validate_study.ipynb` (local paths replaced by `<repo>` / `<repos>`).
 - Needs rdflib + pyshacl + nbclient; run in the cloud workspace (the Mac VM has no free space for installs).
 
 Results:
@@ -222,6 +222,7 @@ Why: the cdd-layer (`../cdd-layer/`) points statements and allocations at USDM `
 - Outputs in `output_remapcap/step6/`: `remapcap_usdm_v3.json` (Step 5 JSON + NarrativeContent for Core V4.0, Core V4.1 and CS_DSA V6; nothing else changed), `mapping_log_step6.csv`, `validation/`.
 - Sources: Core V4.0 and CS_DSA V6 from Step 2 `sections.csv`; Core V4.1 read with the Step 2 code unchanged, as in Step 5, with 7.6.3 and 7.6.4 split from 7.6.2. The notebook re-reads Core V4.0 and CS_DSA V6 and checks they equal `sections.csv`.
 - Same pattern as Step 3 for PANDA: one `NarrativeContent` per numbered section, `previousId`/`nextId` in document order, `childIds` from the section number; text in `NarrativeContentItem`s at `StudyVersion` level. Headings without text of their own get no item (`contentItemId` 0..1).
+- The text is kept as read from the documents: no `<usdm:ref>` tags link it into the structured data (none in any of the five USDM files, REMAP-CAP or CPMP). Possible later step.
 - Counts: Core V4.0 145 sections (124 with text), Core V4.1 147 (126), CS_DSA V6 64 (53). 940 objects in the JSON.
 - Validation: `python3 scripts/04_run_usdm_rdf_validator.py output_remapcap/step6/remapcap_usdm_v3.json output_remapcap/step6/validation`. 0 dangling references; 90 structural `MinCount` findings, row for row identical to Step 5; terminology conforms.
 - Test: executed with Jupyter in the cloud workspace and its code run on this Mac; JSON and log byte-identical.
@@ -270,3 +271,4 @@ Results:
 - Shared stated reasons (CQ4, from Step 4): 40 brief rationales occur in more than one document; 39 within one compound column, 1 includes the master.
 - Crosswalk proposals: 115 pairs (81 `similar` at difflib ratio ≥ 0.85, 34 `same_slot`); nothing merged here. Decided later in `../cpmp-design-modules/sources/crosswalk_decisions.csv`.
 - Not done: USDM `StudyDesign` per ISA (set aside 2026-10-25; the design modules build took over).
+- Not done: joining the 13 CPMP schedules from soa2usdm-collections into the CPMP Study (open, not started).

@@ -3,7 +3,7 @@
 The usdm-rdf notebook is not modified on disk. It is loaded, its two input
 lines (STUDY_JSON, BASE_IRI) are replaced in memory, one cell is appended that
 writes the findings to CSV, and it is executed with usdm-rdf/notebooks as
-working directory. The executed copy is saved in output_remapcap/step4/.
+working directory. The executed copy is saved in OUT_DIR as 60_validate_study.ipynb.
 
 Needs: nbformat, nbclient, ipykernel, rdflib, pyshacl.
 Run:   python3 scripts/04_run_usdm_rdf_validator.py [STUDY_JSON [OUT_DIR [BASE_IRI]]]
@@ -49,7 +49,7 @@ nb.cells.append(nbformat.v4.new_code_cell(
 
 NotebookClient(nb, timeout=900, kernel_name="python3",
                resources={"metadata": {"path": str(USDM_RDF / "notebooks")}}).execute()
-nbformat.write(nb, OUT_DIR / "60_validate_remapcap.ipynb")
+nbformat.write(nb, OUT_DIR / "60_validate_study.ipynb")
 
 for cell in nb.cells:
     if cell.cell_type != "code":
