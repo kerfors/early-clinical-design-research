@@ -1,0 +1,891 @@
+doc,number,title,level,start_page,end_page,title_key
+CORE40,1,ABBREVIATIONS AND GLOSSARY,1,10,10,abbreviations and glossary
+CORE40,1.1,Abbreviations,2,10,11,abbreviations
+CORE40,1.2,Glossary,2,12,15,glossary
+CORE40,2,INTRODUCTION,1,16,16,introduction
+CORE40,2.1,Synopsis,2,16,17,synopsis
+CORE40,2.2,Protocol Structure,2,17,18,protocol structure
+CORE40,2.2.1,Core Protocol,3,18,19,core protocol
+CORE40,2.2.2,"Patient, Pathogen and Disease Appendix",3,19,19,patient pathogen and disease appendix
+CORE40,2.2.3,Domain-Specific Appendices,3,19,20,domain specific appendices
+CORE40,2.2.4,Region-Specific Appendices,3,20,20,region specific appendices
+CORE40,2.2.5,Pandemic Appendix,3,20,20,pandemic appendix
+CORE40,2.2.6,Biological Sampling Appendix,3,20,20,biological sampling appendix
+CORE40,2.2.7,Registry Appendix,3,21,21,registry appendix
+CORE40,2.2.8,Operational Documents,3,21,21,operational documents
+CORE40,2.2.9,Core Protocol Version History,3,21,22,core protocol version history
+CORE40,2.3,Lay Description,2,22,22,lay description
+CORE40,2.4,Trial registration,2,23,23,trial registration
+CORE40,2.5,Funding of the trial,2,23,23,funding of the trial
+CORE40,3,STUDY ADMINISTRATION STRUCTURE,1,23,24,study administration structure
+CORE40,3.1,International Trial Steering Committee,2,24,24,international trial steering committee
+CORE40,3.1.1,Responsibilities,3,24,25,responsibilities
+CORE40,3.1.2,Members,3,25,25,members
+CORE40,3.2,Regional Management Committees,2,25,25,regional management committees
+CORE40,3.2.1,Responsibilities,3,25,25,responsibilities
+CORE40,3.3,Domain-Specific Working Groups,2,25,25,domain specific working groups
+CORE40,3.3.1,Responsibilities,3,26,26,responsibilities
+CORE40,3.3.2,Members,3,26,26,members
+CORE40,3.4,Sponsors,2,26,26,sponsors
+CORE40,3.4.1,Role of Sponsor,3,26,26,role of sponsor
+CORE40,3.4.2,Insurance,3,26,26,insurance
+CORE40,4,INTERNATIONAL TRIAL STEERING COMMITTEE AUTHORIZATION,1,26,26,international trial steering committee authorization
+CORE40,5,BACKGROUND & RATIONALE,1,27,27,background rationale
+CORE40,5.1,Respiratory Tract Infections,2,27,27,respiratory tract infections
+CORE40,5.1.1,Introduction,3,27,27,introduction
+CORE40,5.1.2,Epidemiology,3,27,27,epidemiology
+CORE40,5.1.3,Standard care for patients with respiratory tract infections,3,27,28,standard care for patients with respiratory tract infections
+CORE40,5.1.4,Treatment guidelines,3,28,29,treatment guidelines
+CORE40,5.1.5,Variation in care and compliance with guidelines,3,29,29,variation in care and compliance with guidelines
+CORE40,5.1.6,An unmet need for better evidence,3,29,29,an unmet need for better evidence
+CORE40,5.2,Pandemics and emerging pathogens,2,30,30,pandemics and emerging pathogens
+CORE40,5.3,Randomized Embedded Multifactorial Adaptive Platform Trials,2,30,30,randomized embedded multifactorial adaptive platform trials
+CORE40,5.3.1,Generating clinical evidence,3,30,31,generating clinical evidence
+CORE40,5.3.2,Underlying Principles of the Study Design,3,31,32,underlying principles of the study design
+CORE40,5.3.3,Nomenclature,3,32,32,nomenclature
+CORE40,5.3.4,Randomization and Response Adaptive Randomization,3,32,34,randomization and response adaptive randomization
+CORE40,5.3.5,Embedding,3,34,35,embedding
+CORE40,5.3.6,Multifactorial,3,35,35,multifactorial
+CORE40,5.3.7,Adaptive,3,35,38,adaptive
+CORE40,5.3.8,Nesting of the REMAP within a Registry,3,38,38,nesting of the remap within a registry
+CORE40,5.3.9,Platform,3,39,39,platform
+CORE40,6,OBJECTIVES,1,39,39,objectives
+CORE40,6.1,Primary objective,2,39,39,primary objective
+CORE40,6.2,Secondary objectives,2,40,40,secondary objectives
+CORE40,7,SUMMARY OF TRIAL DESIGN,1,40,40,summary of trial design
+CORE40,7.1,Introduction,2,40,40,introduction
+CORE40,7.2,Nomenclature,2,40,40,nomenclature
+CORE40,7.3,Study setting and participating regions,2,41,41,study setting and participating regions
+CORE40,7.4,Eligibility criteria,2,41,41,eligibility criteria
+CORE40,7.4.1,Platform Inclusion Criteria,3,41,42,platform inclusion criteria
+CORE40,7.4.2,Platform Exclusion Criteria,3,42,42,platform exclusion criteria
+CORE40,7.4.3,Domain- and Intervention-Specific Entry criteria,3,42,42,domain and intervention specific entry criteria
+CORE40,7.5,Interventions,2,42,42,interventions
+CORE40,7.5.1,Domain-Specific Information,3,42,43,domain specific information
+CORE40,7.5.2,Treatment allocation and Response Adaptive Randomization,3,43,44,treatment allocation and response adaptive randomization
+CORE40,7.5.3,Adaptation of Domains and Interventions,3,44,45,adaptation of domains and interventions
+CORE40,7.5.4,Principles for new domain stages,3,45,46,principles for new domain stages
+CORE40,7.6,Endpoints,2,46,46,endpoints
+CORE40,7.6.1,Primary Endpoint,3,46,47,primary endpoint
+CORE40,7.6.2,Secondary Endpoints,3,47,48,secondary endpoints
+CORE40,7.7,Bias Control,2,48,48,bias control
+CORE40,7.7.1,Randomization,3,48,48,randomization
+CORE40,7.7.2,Allocation concealment,3,48,48,allocation concealment
+CORE40,7.7.3,Blinding of treatment allocation,3,48,48,blinding of treatment allocation
+CORE40,7.7.4,Blinding of outcome adjudication,3,48,48,blinding of outcome adjudication
+CORE40,7.7.5,Follow up and missing data,3,48,49,follow up and missing data
+CORE40,7.7.6,Utilization of Clinician-Assigned Treatment,3,49,49,utilization of clinician assigned treatment
+CORE40,7.8,Principles of Statistical Analysis,2,49,49,principles of statistical analysis
+CORE40,7.8.1,Preface,3,49,51,preface
+CORE40,7.8.2,Introduction,3,51,52,introduction
+CORE40,7.8.3,Target populations (strata and states) and implications for evaluation of treatment-by-treatment and treatment-by-strata interactions,3,52,57,target populations strata and states and implications for evaluation of treatment by treatment and treatment by strata interactions
+CORE40,7.8.4,Bayesian Statistical modeling,3,58,60,bayesian statistical modeling
+CORE40,7.8.5,Statistical Handling of Ineligible Participants,3,60,61,statistical handling of ineligible participants
+CORE40,7.8.6,Statistical Triggers,3,61,64,statistical triggers
+CORE40,7.8.7,Action when a Statistical Trigger is achieved,3,65,68,action when a statistical trigger is achieved
+CORE40,7.8.8,Analysis set for reporting,3,68,68,analysis set for reporting
+CORE40,7.8.9,Simulations and statistical power,3,68,68,simulations and statistical power
+CORE40,7.8.10,Updating model after monitoring,3,69,69,updating model after monitoring
+CORE40,7.8.11,Discontinuation of domains or interventions in the absence of a Statistical Trigger,3,69,69,discontinuation of domains or interventions in the absence of a statistical trigger
+CORE40,7.9,Interaction with other trials,2,69,69,interaction with other trials
+CORE40,7.9.1,Co-enrollment with other trials,3,69,69,co enrollment with other trials
+CORE40,7.9.2,"Cooperation between the REMAP and other trials with overlapping populations or interventions, and federation of trials",3,70,72,cooperation between the remap and other trials with overlapping populations or interventions and federation of trials
+CORE40,7.10,Investigational medical products,2,72,72,investigational medical products
+CORE40,7.11,Registry of non-randomized patients,2,73,73,registry of non randomized patients
+CORE40,7.12,Criteria for termination of the trial,2,73,73,criteria for termination of the trial
+CORE40,8,TRIAL CONDUCT,1,73,73,trial conduct
+CORE40,8.1,Site time-lines,2,73,73,site time lines
+CORE40,8.1.1,Initiation of participation at a site,3,73,74,initiation of participation at a site
+CORE40,8.2,Recruitment of participants including embedding,2,74,74,recruitment of participants including embedding
+CORE40,8.2.1,Embedding,3,74,74,embedding
+CORE40,8.2.2,Participant recruitment procedures at participating units,3,74,74,participant recruitment procedures at participating units
+CORE40,8.3,Treatment allocation,2,74,75,treatment allocation
+CORE40,8.4,Delivery of interventions,2,75,75,delivery of interventions
+CORE40,8.4.1,Treatment allocation and protocol adherence at participating units,3,75,75,treatment allocation and protocol adherence at participating units
+CORE40,8.4.2,Transfer of participants between locations and protocol adherence,3,75,75,transfer of participants between locations and protocol adherence
+CORE40,8.5,Unblinding of allocation status,2,75,76,unblinding of allocation status
+CORE40,8.6,Criteria for discontinuation of an allocated intervention within the Platform,2,76,76,criteria for discontinuation of an allocated intervention within the platform
+CORE40,8.7,Concomitant care and co-interventions,2,76,76,concomitant care and co interventions
+CORE40,8.8,Data collection,2,77,77,data collection
+CORE40,8.8.1,Principles of data collection,3,77,77,principles of data collection
+CORE40,8.8.2,Variables to be collected,3,77,78,variables to be collected
+CORE40,8.8.3,Data required to inform Response Adaptive Randomization,3,78,79,data required to inform response adaptive randomization
+CORE40,8.8.4,Blinding of outcome assessment,3,79,79,blinding of outcome assessment
+CORE40,8.9,Data management,2,79,79,data management
+CORE40,8.9.1,Source Data,3,79,79,source data
+CORE40,8.9.2,Confidentiality,3,79,80,confidentiality
+CORE40,8.10,Quality assurance and monitoring,2,80,80,quality assurance and monitoring
+CORE40,8.10.1,Protocol adherence and data quality,3,80,81,protocol adherence and data quality
+CORE40,8.10.2,Monitoring of protocol adherence and data quality,3,81,82,monitoring of protocol adherence and data quality
+CORE40,8.11,Data safety and monitoring board,2,82,82,data safety and monitoring board
+CORE40,8.12,Safety monitoring and reporting,2,82,82,safety monitoring and reporting
+CORE40,8.12.1,Principles,3,82,84,principles
+CORE40,8.12.2,Definitions,3,84,84,definitions
+CORE40,8.12.3,Reporting Procedures for Safety and Serious Adverse Events,3,84,85,reporting procedures for safety and serious adverse events
+CORE40,8.12.4,Attribution of serious events to study interventions,3,85,86,attribution of serious events to study interventions
+CORE40,8.12.5,Attribution of a death to study interventions or study participation,3,86,86,attribution of a death to study interventions or study participation
+CORE40,9,GOVERNANCE AND ETHICAL CONSIDERATIONS,1,86,86,governance and ethical considerations
+CORE40,9.1,Management of participating sites and trial coordination,2,86,86,management of participating sites and trial coordination
+CORE40,9.2,Ethics and regulatory issues,2,86,86,ethics and regulatory issues
+CORE40,9.2.1,Guiding principles,3,86,86,guiding principles
+CORE40,9.2.2,Ethical issues relevant to this study,3,86,89,ethical issues relevant to this study
+CORE40,9.2.3,Approvals,3,89,89,approvals
+CORE40,9.3,Protocol modifications,2,89,89,protocol modifications
+CORE40,9.3.1,Amendments,3,89,90,amendments
+CORE40,9.4,Confidentiality,2,90,90,confidentiality
+CORE40,9.5,Declarations of interest,2,90,90,declarations of interest
+CORE40,9.6,Post-trial care,2,90,90,post trial care
+CORE40,9.7,Communication,2,90,90,communication
+CORE40,9.7.1,Reporting,3,90,90,reporting
+CORE40,9.7.2,Communication of trial results,3,91,91,communication of trial results
+CORE40,9.8,Publication policy,2,91,91,publication policy
+CORE40,9.9,Data access and ownership,2,91,91,data access and ownership
+CORE40,9.9.1,Data ownership,3,91,91,data ownership
+CORE40,9.9.2,Access to Data,3,91,91,access to data
+CORE40,9.10,Consent form,2,91,91,consent form
+CORE40,10,REFERENCES,1,93,98,references
+CORE41,1,ABBREVIATIONS AND GLOSSARY,1,10,10,abbreviations and glossary
+CORE41,1.1,Abbreviations,2,10,11,abbreviations
+CORE41,1.2,Glossary,2,12,15,glossary
+CORE41,2,INTRODUCTION,1,16,16,introduction
+CORE41,2.1,Synopsis,2,16,17,synopsis
+CORE41,2.2,Protocol Structure,2,17,18,protocol structure
+CORE41,2.2.1,Core Protocol,3,18,19,core protocol
+CORE41,2.2.2,"Patient, Pathogen and Disease Appendix",3,19,19,patient pathogen and disease appendix
+CORE41,2.2.3,Domain-Specific Appendices,3,19,20,domain specific appendices
+CORE41,2.2.4,Region-Specific Appendices,3,20,20,region specific appendices
+CORE41,2.2.5,Pandemic Appendix,3,20,20,pandemic appendix
+CORE41,2.2.6,Biological Sampling Appendix,3,20,20,biological sampling appendix
+CORE41,2.2.7,Registry Appendix,3,21,21,registry appendix
+CORE41,2.2.8,Operational Documents,3,21,21,operational documents
+CORE41,2.2.9,Core Protocol Version History,3,21,22,core protocol version history
+CORE41,2.3,Lay Description,2,22,22,lay description
+CORE41,2.4,Trial registration,2,23,23,trial registration
+CORE41,2.5,Funding of the trial,2,23,23,funding of the trial
+CORE41,3,STUDY ADMINISTRATION STRUCTURE,1,23,24,study administration structure
+CORE41,3.1,International Trial Steering Committee,2,24,24,international trial steering committee
+CORE41,3.1.1,Responsibilities,3,24,25,responsibilities
+CORE41,3.1.2,Members,3,25,25,members
+CORE41,3.2,Regional Management Committees,2,25,25,regional management committees
+CORE41,3.2.1,Responsibilities,3,25,25,responsibilities
+CORE41,3.3,Domain-Specific Working Groups,2,25,25,domain specific working groups
+CORE41,3.3.1,Responsibilities,3,26,26,responsibilities
+CORE41,3.3.2,Members,3,26,26,members
+CORE41,3.4,Sponsors,2,26,26,sponsors
+CORE41,3.4.1,Role of Sponsor,3,26,26,role of sponsor
+CORE41,3.4.2,Insurance,3,26,26,insurance
+CORE41,4,INTERNATIONAL TRIAL STEERING COMMITTEE AUTHORIZATION,1,26,26,international trial steering committee authorization
+CORE41,5,BACKGROUND & RATIONALE,1,27,27,background rationale
+CORE41,5.1,Respiratory Tract Infections,2,27,27,respiratory tract infections
+CORE41,5.1.1,Introduction,3,27,27,introduction
+CORE41,5.1.2,Epidemiology,3,27,27,epidemiology
+CORE41,5.1.3,Standard care for patients with respiratory tract infections,3,27,28,standard care for patients with respiratory tract infections
+CORE41,5.1.4,Treatment guidelines,3,28,29,treatment guidelines
+CORE41,5.1.5,Variation in care and compliance with guidelines,3,29,29,variation in care and compliance with guidelines
+CORE41,5.1.6,An unmet need for better evidence,3,29,29,an unmet need for better evidence
+CORE41,5.2,Pandemics and emerging pathogens,2,30,30,pandemics and emerging pathogens
+CORE41,5.3,Randomized Embedded Multifactorial Adaptive Platform Trials,2,30,30,randomized embedded multifactorial adaptive platform trials
+CORE41,5.3.1,Generating clinical evidence,3,30,31,generating clinical evidence
+CORE41,5.3.2,Underlying Principles of the Study Design,3,31,32,underlying principles of the study design
+CORE41,5.3.3,Nomenclature,3,32,32,nomenclature
+CORE41,5.3.4,Randomization and Response Adaptive Randomization,3,32,34,randomization and response adaptive randomization
+CORE41,5.3.5,Embedding,3,34,35,embedding
+CORE41,5.3.6,Multifactorial,3,35,35,multifactorial
+CORE41,5.3.7,Adaptive,3,35,38,adaptive
+CORE41,5.3.8,Nesting of the REMAP within a Registry,3,38,38,nesting of the remap within a registry
+CORE41,5.3.9,Platform,3,39,39,platform
+CORE41,6,OBJECTIVES,1,39,39,objectives
+CORE41,6.1,Primary objective,2,39,40,primary objective
+CORE41,6.2,Secondary objectives,2,40,40,secondary objectives
+CORE41,7,SUMMARY OF TRIAL DESIGN,1,40,40,summary of trial design
+CORE41,7.1,Introduction,2,40,40,introduction
+CORE41,7.2,Nomenclature,2,40,41,nomenclature
+CORE41,7.3,Study setting and participating regions,2,41,41,study setting and participating regions
+CORE41,7.4,Eligibility criteria,2,41,41,eligibility criteria
+CORE41,7.4.1,Platform Inclusion Criteria,3,42,42,platform inclusion criteria
+CORE41,7.4.2,Platform Exclusion Criteria,3,42,42,platform exclusion criteria
+CORE41,7.4.3,Domain- and Intervention-Specific Entry criteria,3,42,42,domain and intervention specific entry criteria
+CORE41,7.5,Interventions,2,42,42,interventions
+CORE41,7.5.1,Domain-Specific Information,3,42,43,domain specific information
+CORE41,7.5.2,Treatment allocation and Response Adaptive Randomization,3,43,44,treatment allocation and response adaptive randomization
+CORE41,7.5.3,Adaptation of Domains and Interventions,3,44,45,adaptation of domains and interventions
+CORE41,7.5.4,Principles for new domain stages,3,45,46,principles for new domain stages
+CORE41,7.6,Endpoints,2,46,46,endpoints
+CORE41,7.6.1,Primary Endpoint,3,46,47,primary endpoint
+CORE41,7.6.2,Secondary Endpoints,3,47,49,secondary endpoints
+CORE41,7.6.3,Exploratory outcomes,3,,,exploratory outcomes
+CORE41,7.6.4,Adaptations to the primary endpoint in the event of a pandemic,3,,,adaptations to the primary endpoint in the event of a pandemic
+CORE41,7.7,Bias Control,2,49,49,bias control
+CORE41,7.7.1,Randomization,3,49,49,randomization
+CORE41,7.7.2,Allocation concealment,3,49,49,allocation concealment
+CORE41,7.7.3,Blinding of treatment allocation,3,50,50,blinding of treatment allocation
+CORE41,7.7.4,Blinding of outcome adjudication,3,50,50,blinding of outcome adjudication
+CORE41,7.7.5,Follow up and missing data,3,50,50,follow up and missing data
+CORE41,7.7.6,Utilization of Clinician-Assigned Treatment,3,50,51,utilization of clinician assigned treatment
+CORE41,7.8,Principles of Statistical Analysis,2,51,51,principles of statistical analysis
+CORE41,7.8.1,Preface,3,51,52,preface
+CORE41,7.8.2,Introduction,3,52,53,introduction
+CORE41,7.8.3,Target populations (strata and states) and implications for evaluation of treatment-by-treatment and treatment-by-strata interactions,3,53,59,target populations strata and states and implications for evaluation of treatment by treatment and treatment by strata interactions
+CORE41,7.8.4,Bayesian Statistical modeling,3,59,61,bayesian statistical modeling
+CORE41,7.8.5,Statistical Handling of Ineligible Participants,3,62,63,statistical handling of ineligible participants
+CORE41,7.8.6,Statistical Triggers,3,63,66,statistical triggers
+CORE41,7.8.7,Action when a Statistical Trigger is achieved,3,67,70,action when a statistical trigger is achieved
+CORE41,7.8.8,Analysis set for reporting,3,70,70,analysis set for reporting
+CORE41,7.8.9,Simulations and statistical power,3,70,70,simulations and statistical power
+CORE41,7.8.10,Updating model after monitoring,3,71,71,updating model after monitoring
+CORE41,7.8.11,Discontinuation of domains or interventions in the absence of a Statistical Trigger,3,71,71,discontinuation of domains or interventions in the absence of a statistical trigger
+CORE41,7.9,Interaction with other trials,2,71,71,interaction with other trials
+CORE41,7.9.1,Co-enrollment with other trials,3,71,71,co enrollment with other trials
+CORE41,7.9.2,"Cooperation between the REMAP and other trials with overlapping populations or interventions, and federation of trials",3,72,74,cooperation between the remap and other trials with overlapping populations or interventions and federation of trials
+CORE41,7.10,Investigational medical products,2,74,74,investigational medical products
+CORE41,7.11,Registry of non-randomized patients,2,75,75,registry of non randomized patients
+CORE41,7.12,Criteria for termination of the trial,2,75,75,criteria for termination of the trial
+CORE41,8,TRIAL CONDUCT,1,75,75,trial conduct
+CORE41,8.1,Site time-lines,2,75,75,site time lines
+CORE41,8.1.1,Initiation of participation at a site,3,75,76,initiation of participation at a site
+CORE41,8.2,Recruitment of participants including embedding,2,76,76,recruitment of participants including embedding
+CORE41,8.2.1,Embedding,3,76,76,embedding
+CORE41,8.2.2,Participant recruitment procedures at participating units,3,76,76,participant recruitment procedures at participating units
+CORE41,8.3,Treatment allocation,2,76,77,treatment allocation
+CORE41,8.4,Delivery of interventions,2,77,77,delivery of interventions
+CORE41,8.4.1,Treatment allocation and protocol adherence at participating units,3,77,77,treatment allocation and protocol adherence at participating units
+CORE41,8.4.2,Transfer of participants between locations and protocol adherence,3,77,78,transfer of participants between locations and protocol adherence
+CORE41,8.5,Unblinding of allocation status,2,78,78,unblinding of allocation status
+CORE41,8.6,Criteria for discontinuation of an allocated intervention within the Platform,2,78,79,criteria for discontinuation of an allocated intervention within the platform
+CORE41,8.7,Concomitant care and co-interventions,2,79,79,concomitant care and co interventions
+CORE41,8.8,Data collection,2,79,79,data collection
+CORE41,8.8.1,Principles of data collection,3,79,79,principles of data collection
+CORE41,8.8.2,Variables to be collected,3,79,81,variables to be collected
+CORE41,8.8.3,Data required to inform Response Adaptive Randomization,3,81,81,data required to inform response adaptive randomization
+CORE41,8.8.4,Blinding of outcome assessment,3,81,81,blinding of outcome assessment
+CORE41,8.9,Data management,2,81,81,data management
+CORE41,8.9.1,Source Data,3,81,81,source data
+CORE41,8.9.2,Confidentiality,3,82,82,confidentiality
+CORE41,8.10,Quality assurance and monitoring,2,82,83,quality assurance and monitoring
+CORE41,8.10.1,Protocol adherence and data quality,3,83,84,protocol adherence and data quality
+CORE41,8.10.2,Monitoring of protocol adherence and data quality,3,84,84,monitoring of protocol adherence and data quality
+CORE41,8.11,Data safety and monitoring board,2,84,85,data safety and monitoring board
+CORE41,8.12,Safety monitoring and reporting,2,85,85,safety monitoring and reporting
+CORE41,8.12.1,Principles,3,85,86,principles
+CORE41,8.12.2,Definitions,3,86,87,definitions
+CORE41,8.12.3,Reporting Procedures for Safety and Serious Adverse Events,3,87,88,reporting procedures for safety and serious adverse events
+CORE41,8.12.4,Attribution of serious events to study interventions,3,88,88,attribution of serious events to study interventions
+CORE41,8.12.5,Attribution of a death to study interventions or study participation,3,88,88,attribution of a death to study interventions or study participation
+CORE41,9,GOVERNANCE AND ETHICAL CONSIDERATIONS,1,88,88,governance and ethical considerations
+CORE41,9.1,Management of participating sites and trial coordination,2,88,88,management of participating sites and trial coordination
+CORE41,9.2,Ethics and regulatory issues,2,89,89,ethics and regulatory issues
+CORE41,9.2.1,Guiding principles,3,89,89,guiding principles
+CORE41,9.2.2,Ethical issues relevant to this study,3,89,91,ethical issues relevant to this study
+CORE41,9.2.3,Approvals,3,91,91,approvals
+CORE41,9.3,Protocol modifications,2,91,91,protocol modifications
+CORE41,9.3.1,Amendments,3,91,92,amendments
+CORE41,9.4,Confidentiality,2,92,92,confidentiality
+CORE41,9.5,Declarations of interest,2,92,92,declarations of interest
+CORE41,9.6,Post-trial care,2,93,93,post trial care
+CORE41,9.7,Communication,2,93,93,communication
+CORE41,9.7.1,Reporting,3,93,93,reporting
+CORE41,9.7.2,Communication of trial results,3,93,93,communication of trial results
+CORE41,9.8,Publication policy,2,93,93,publication policy
+CORE41,9.9,Data access and ownership,2,94,94,data access and ownership
+CORE41,9.9.1,Data ownership,3,94,94,data ownership
+CORE41,9.9.2,Access to Data,3,94,94,access to data
+CORE41,9.10,Consent form,2,94,94,consent form
+CORE41,10,REFERENCES,1,95,100,references
+PANDA,1,Background,1,3,4,background
+PANDA,2,Patient Characteristics,1,4,4,patient characteristics
+PANDA,3,Pathogens,1,4,5,pathogens
+PANDA,3.1,Defining pathogen status,2,5,5,defining pathogen status
+PANDA,3.2,Pathogen status for domain eligibility,2,6,6,pathogen status for domain eligibility
+PANDA,3.3,Pathogen status for analysis strata,2,6,6,pathogen status for analysis strata
+PANDA,3.4,Definitions of pathogen analysis strata,2,6,7,definitions of pathogen analysis strata
+PANDA,3.4.1,Approach to novel pandemic pathogens,3,7,7,approach to novel pandemic pathogens
+PANDA,4,Diseases and clinical features,1,7,8,diseases and clinical features
+PANDA,4.1,Acquisition of infection,2,8,8,acquisition of infection
+PANDA,4.2,Disease entity,2,8,9,disease entity
+PANDA,4.3,Illness severity,2,9,10,illness severity
+PANDA,4.4,Specific clinical features or syndromes,2,10,11,specific clinical features or syndromes
+PANDA,4.5,Diseases and clinical features for eligibility,2,11,11,diseases and clinical features for eligibility
+PANDA,4.6,Disease and clinical feature analysis strata,2,11,11,disease and clinical feature analysis strata
+PANDA,5,"Consistent categorization of pathogens, diseases and clinical features",1,12,12,consistent categorization of pathogens diseases and clinical features
+PANDA,6,Continuity with pre-existing domains,1,12,12,continuity with pre existing domains
+CS_DSA,1,ABBREVIATIONS,1,9,9,abbreviations
+CS_DSA,2,PROTOCOL APPENDIX STRUCTURE,1,10,11,protocol appendix structure
+CS_DSA,3,CORTICOSTEROID DOMAIN-SPECIFIC APPENDIX VERSION,1,11,11,corticosteroid domain specific appendix version
+CS_DSA,3.1,Version history,2,11,11,version history
+CS_DSA,4,CORTICOSTEROID DOMAIN GOVERNANCE,1,12,12,corticosteroid domain governance
+CS_DSA,4.1,Domain members,2,12,12,domain members
+CS_DSA,4.2,Contact Details,2,12,13,contact details
+CS_DSA,5,CORTICOSTEROID DOMAIN-SPECIFIC WORKING GROUP AUTHORIZATION,1,13,13,corticosteroid domain specific working group authorization
+CS_DSA,6,BACKGROUND AND RATIONALE,1,13,13,background and rationale
+CS_DSA,6.1,Domain definition,2,13,13,domain definition
+CS_DSA,6.2,Domain-specific background,2,13,14,domain specific background
+CS_DSA,6.2.1,Corticosteroids in critical illness,3,14,14,corticosteroids in critical illness
+CS_DSA,6.2.2,Clinical questions regarding corticosteroids in patients with CAP,3,14,14,clinical questions regarding corticosteroids in patients with cap
+CS_DSA,6.2.3,Role of corticosteroids in septic shock secondary to CAP,3,14,16,role of corticosteroids in septic shock secondary to cap
+CS_DSA,6.2.4,Role of corticosteroids in CAP irrespective of septic shock,3,17,19,role of corticosteroids in cap irrespective of septic shock
+CS_DSA,6.2.5,Role of corticosteroids in CAP secondary to influenza,3,19,20,role of corticosteroids in cap secondary to influenza
+CS_DSA,6.2.6,Role of corticosteroids in Acute Respiratory Distress Syndrome,3,20,21,role of corticosteroids in acute respiratory distress syndrome
+CS_DSA,6.2.7,Corticosteroid-associated complications in critical illness.,3,21,21,corticosteroid associated complications in critical illness
+CS_DSA,7,DOMAIN OBJECTIVES,1,21,22,domain objectives
+CS_DSA,8,TRIAL DESIGN,1,22,22,trial design
+CS_DSA,8.1,Population,2,22,22,population
+CS_DSA,8.1.1,Age Strata,3,22,22,age strata
+CS_DSA,8.1.2,Illness Severity State,3,22,22,illness severity state
+CS_DSA,8.1.3,Domain-specific strata,3,22,22,domain specific strata
+CS_DSA,8.2,Eligibility criteria,2,23,23,eligibility criteria
+CS_DSA,8.2.1,Domain inclusion criteria,3,23,23,domain inclusion criteria
+CS_DSA,8.2.2,Domain exclusion criteria,3,23,23,domain exclusion criteria
+CS_DSA,8.2.3,Intervention exclusion criteria,3,23,24,intervention exclusion criteria
+CS_DSA,8.3,Interventions,2,24,24,interventions
+CS_DSA,8.3.1,Corticosteroid strategy interventions,3,24,24,corticosteroid strategy interventions
+CS_DSA,8.3.2,No corticosteroid intervention,3,24,24,no corticosteroid intervention
+CS_DSA,8.3.3,Shock-dependent hydrocortisone intervention,3,25,25,shock dependent hydrocortisone intervention
+CS_DSA,8.3.4,Fixed duration dexamethasone,3,25,26,fixed duration dexamethasone
+CS_DSA,8.3.5,Duration of study intervention,3,26,26,duration of study intervention
+CS_DSA,8.4,Concomitant care,2,26,26,concomitant care
+CS_DSA,8.5,Endpoints,2,26,26,endpoints
+CS_DSA,8.5.1,Primary endpoint,3,26,26,primary endpoint
+CS_DSA,8.5.2,Secondary endpoints,3,26,27,secondary endpoints
+CS_DSA,9,TRIAL CONDUCT,1,27,27,trial conduct
+CS_DSA,9.1,Microbiology,2,27,27,microbiology
+CS_DSA,9.2,Domain-specific data collection,2,27,27,domain specific data collection
+CS_DSA,9.2.1,Clinical data collection,3,27,27,clinical data collection
+CS_DSA,9.3,Criteria for discontinuation,2,27,27,criteria for discontinuation
+CS_DSA,9.4,Blinding,2,28,28,blinding
+CS_DSA,10,STATISTICAL CONSIDERATIONS,1,28,28,statistical considerations
+CS_DSA,10.1,Domain-specific stopping rules,2,28,29,domain specific stopping rules
+CS_DSA,10.2,Unit-of-analysis and strata,2,29,29,unit of analysis and strata
+CS_DSA,10.3,Application of Response-Adaptive Randomization,2,29,29,application of response adaptive randomization
+CS_DSA,10.4,Timing of revealing of randomization status,2,29,30,timing of revealing of randomization status
+CS_DSA,10.5,Interactions with interventions in other domains,2,30,30,interactions with interventions in other domains
+CS_DSA,10.6,Nesting,2,30,30,nesting
+CS_DSA,10.7,"Threshold probability for superiority, efficacy, and inferiority",2,30,30,threshold probability for superiority efficacy and inferiority
+CS_DSA,10.8,Threshold odds ratio delta for equivalence and futility,2,30,30,threshold odds ratio delta for equivalence and futility
+CS_DSA,10.9,Post-trial Subgroups,2,30,30,post trial subgroups
+CS_DSA,11,ETHICAL CONSIDERATIONS,1,31,31,ethical considerations
+CS_DSA,11.1,Data Safety and Monitoring Board,2,31,31,data safety and monitoring board
+CS_DSA,11.2,Potential domain-specific adverse events,2,31,31,potential domain specific adverse events
+CS_DSA,11.3,Domain risk assessment,2,31,32,domain risk assessment
+CS_DSA,11.4,Domain-specific consent issues,2,32,32,domain specific consent issues
+CS_DSA,12,GOVERNANCE ISSUES,1,32,32,governance issues
+CS_DSA,12.1,Funding of domain,2,32,32,funding of domain
+CS_DSA,12.2,Funding of domain interventions and outcome measures,2,33,33,funding of domain interventions and outcome measures
+CS_DSA,12.3,Domain-specific declarations of interest,2,33,33,domain specific declarations of interest
+CS_DSA,13,REFERENCES,1,34,38,references
+AB_DSA,1,ABBREVIATIONS,1,8,8,abbreviations
+AB_DSA,2,PROTOCOL APPENDIX STRUCTURE,1,9,10,protocol appendix structure
+AB_DSA,3,ANTIBIOTIC DOMAIN-SPECIFIC APPENDIX VERSION,1,10,10,antibiotic domain specific appendix version
+AB_DSA,3.1,Version history,2,10,10,version history
+AB_DSA,4,ANTIBIOTIC DOMAIN GOVERNANCE,1,10,10,antibiotic domain governance
+AB_DSA,4.1,Domain members,2,10,11,domain members
+AB_DSA,4.2,Contact details,2,11,11,contact details
+AB_DSA,5,ANTIBIOTIC DOMAIN-SPECIFIC WORKING GROUP AUTHORIZATION,1,11,11,antibiotic domain specific working group authorization
+AB_DSA,6,BACKGROUND AND RATIONALE,1,12,12,background and rationale
+AB_DSA,6.1,Domain definition,2,12,12,domain definition
+AB_DSA,6.2,Domain-specific background,2,12,12,domain specific background
+AB_DSA,6.2.1,Microbiology of CAP,3,12,14,microbiology of cap
+AB_DSA,6.2.2,Guidelines recommend a number of different antibiotic treatment options,3,14,15,guidelines recommend a number of different antibiotic treatment options
+AB_DSA,6.2.3,There is a diversity of antibiotics used in clinical practice,3,16,16,there is a diversity of antibiotics used in clinical practice
+AB_DSA,6.2.4,Both the efficacy as well as adverse effects of antibiotics need to be considered,3,16,16,both the efficacy as well as adverse effects of antibiotics need to be considered
+AB_DSA,6.2.5,All antibiotics used in CAP have a well-established safety profile,3,17,17,all antibiotics used in cap have a well established safety profile
+AB_DSA,6.2.6,Bacterial co-infection or super-infection is more common with influenza than with COVID-19,3,17,18,bacterial co infection or super infection is more common with influenza than with covid
+AB_DSA,6.2.7,Transition from empiric to targeted antibiotic therapy,3,18,18,transition from empiric to targeted antibiotic therapy
+AB_DSA,7,DOMAIN OBJECTIVES,1,18,18,domain objectives
+AB_DSA,8,TRIAL DESIGN,1,19,19,trial design
+AB_DSA,8.1,Population,2,19,19,population
+AB_DSA,8.1.1,Age Strata,3,19,19,age strata
+AB_DSA,8.1.2,Illness Severity State,3,19,19,illness severity state
+AB_DSA,8.1.3,Domain-specific strata,3,19,19,domain specific strata
+AB_DSA,8.2,Eligibility criteria,2,19,19,eligibility criteria
+AB_DSA,8.2.1,Domain inclusion criteria,3,19,19,domain inclusion criteria
+AB_DSA,8.2.2,Domain exclusion criteria,3,19,20,domain exclusion criteria
+AB_DSA,8.2.3,Intervention exclusion criteria,3,20,21,intervention exclusion criteria
+AB_DSA,8.3,Interventions,2,21,21,interventions
+AB_DSA,8.3.1,Antibiotic interventions,3,21,22,antibiotic interventions
+AB_DSA,8.3.2,Recommended antibiotic dosing,3,22,22,recommended antibiotic dosing
+AB_DSA,8.3.3,Timing of initiation of antibiotics,3,23,23,timing of initiation of antibiotics
+AB_DSA,8.3.4,Duration of administration of antibiotics,3,23,23,duration of administration of antibiotics
+AB_DSA,8.3.5,Choice of macrolide,3,23,23,choice of macrolide
+AB_DSA,8.3.6,Discontinuation of study intervention,3,24,24,discontinuation of study intervention
+AB_DSA,8.4,Concomitant care,2,24,24,concomitant care
+AB_DSA,8.5,Endpoints,2,24,24,endpoints
+AB_DSA,8.5.1,Primary endpoint,3,24,24,primary endpoint
+AB_DSA,8.5.2,Secondary endpoints,3,24,25,secondary endpoints
+AB_DSA,9,TRIAL CONDUCT,1,25,25,trial conduct
+AB_DSA,9.1,Microbiology,2,25,25,microbiology
+AB_DSA,9.2,Domain-specific data collection,2,25,25,domain specific data collection
+AB_DSA,9.3,Criteria for discontinuation,2,25,25,criteria for discontinuation
+AB_DSA,9.4,Blinding,2,26,26,blinding
+AB_DSA,10,STATISTICAL CONSIDERATIONS,1,26,26,statistical considerations
+AB_DSA,10.1,Domain-specific stopping rules,2,26,26,domain specific stopping rules
+AB_DSA,10.2,Unit-of-analysis and strata,2,27,27,unit of analysis and strata
+AB_DSA,10.3,Application of Response-Adaptive Randomization,2,27,27,application of response adaptive randomization
+AB_DSA,10.4,Timing of revealing of randomization status,2,27,27,timing of revealing of randomization status
+AB_DSA,10.5,Interactions with interventions in other domains,2,27,27,interactions with interventions in other domains
+AB_DSA,10.6,Nesting of interventions,2,27,27,nesting of interventions
+AB_DSA,10.7,Threshold probability for superiority and inferiority,2,27,27,threshold probability for superiority and inferiority
+AB_DSA,10.8,Threshold odds ratio delta for equivalence,2,28,28,threshold odds ratio delta for equivalence
+AB_DSA,10.9,Informative priors,2,28,28,informative priors
+AB_DSA,10.10,Post-trial sub-groups,2,28,28,post trial sub groups
+AB_DSA,11,ETHICAL CONSIDERATIONS,1,28,28,ethical considerations
+AB_DSA,11.1,Data Safety and Monitoring Board,2,28,28,data safety and monitoring board
+AB_DSA,11.2,Potential domain-specific adverse events,2,28,29,potential domain specific adverse events
+AB_DSA,11.3,Domain risk assessment,2,29,29,domain risk assessment
+AB_DSA,11.4,Domain-specific consent issues,2,29,29,domain specific consent issues
+AB_DSA,12,GOVERNANCE ISSUES,1,30,30,governance issues
+AB_DSA,12.1,Funding of domain,2,30,30,funding of domain
+AB_DSA,12.2,Funding of domain interventions and outcome measures,2,30,30,funding of domain interventions and outcome measures
+AB_DSA,12.3,Domain-specific declarations of interest,2,30,30,domain specific declarations of interest
+AB_DSA,13,REFERENCES,1,31,34,references
+TAB_DSA,1,ABBREVIATIONS,1,8,8,abbreviations
+TAB_DSA,2,PROTOCOL APPENDIX STRUCTURE,1,9,10,protocol appendix structure
+TAB_DSA,3,TROPICAL ANTIBIOTIC DOMAIN-SPECIFIC APPENDIX VERSION,1,10,10,tropical antibiotic domain specific appendix version
+TAB_DSA,3.1,Version history,2,10,10,version history
+TAB_DSA,4,TROPICAL ANTIBIOTIC DOMAIN GOVERNANCE,1,10,10,tropical antibiotic domain governance
+TAB_DSA,4.1,Domain members,2,10,10,domain members
+TAB_DSA,4.2,Contact details,2,10,11,contact details
+TAB_DSA,5,TROPICAL ANTIBIOTIC DOMAIN-SPECIFIC WORKING GROUP AUTHORIZATION,1,11,11,tropical antibiotic domain specific working group authorization
+TAB_DSA,6,BACKGROUND AND RATIONALE,1,11,11,background and rationale
+TAB_DSA,6.1,Domain definition,2,11,11,domain definition
+TAB_DSA,6.2,Domain-specific background,2,11,15,domain specific background
+TAB_DSA,6.2.1,Domain Rationale,3,16,17,domain rationale
+TAB_DSA,6.2.2,Intervention Safety Profile,3,17,18,intervention safety profile
+TAB_DSA,7,DOMAIN OBJECTIVES,1,18,18,domain objectives
+TAB_DSA,8,TRIAL DESIGN,1,18,18,trial design
+TAB_DSA,8.1,Population,2,18,18,population
+TAB_DSA,8.1.1,Age Strata,3,18,18,age strata
+TAB_DSA,8.1.2,Illness Severity State,3,18,18,illness severity state
+TAB_DSA,8.1.3,Domain-specific strata,3,18,18,domain specific strata
+TAB_DSA,8.2,Eligibility criteria,2,19,19,eligibility criteria
+TAB_DSA,8.2.1,Domain inclusion criteria,3,19,19,domain inclusion criteria
+TAB_DSA,8.2.2,Domain exclusion criteria,3,19,19,domain exclusion criteria
+TAB_DSA,8.2.3,Intervention exclusion criteria,3,20,20,intervention exclusion criteria
+TAB_DSA,8.3,Interventions,2,20,20,interventions
+TAB_DSA,8.3.1,Antibiotic interventions,3,20,20,antibiotic interventions
+TAB_DSA,8.3.2,Recommended antibiotic dosing,3,20,21,recommended antibiotic dosing
+TAB_DSA,8.3.3,Timing of initiation of antibiotics,3,21,21,timing of initiation of antibiotics
+TAB_DSA,8.3.4,Duration of administration of antibiotics,3,22,22,duration of administration of antibiotics
+TAB_DSA,8.3.5,Choice of macrolide,3,22,22,choice of macrolide
+TAB_DSA,8.3.6,Discontinuation of study intervention,3,22,23,discontinuation of study intervention
+TAB_DSA,8.4,Concomitant care,2,23,23,concomitant care
+TAB_DSA,8.5,Endpoints,2,23,23,endpoints
+TAB_DSA,8.5.1,Primary endpoint,3,23,23,primary endpoint
+TAB_DSA,8.5.2,Secondary endpoints,3,23,24,secondary endpoints
+TAB_DSA,9,TRIAL CONDUCT,1,24,24,trial conduct
+TAB_DSA,9.1,Microbiology,2,24,24,microbiology
+TAB_DSA,9.2,Domain-specific data collection,2,24,24,domain specific data collection
+TAB_DSA,9.3,Criteria for discontinuation,2,24,24,criteria for discontinuation
+TAB_DSA,9.4,Blinding,2,24,24,blinding
+TAB_DSA,10,STATISTICAL CONSIDERATIONS,1,25,25,statistical considerations
+TAB_DSA,10.1,Domain-specific stopping rules,2,25,25,domain specific stopping rules
+TAB_DSA,10.2,Unit-of-analysis and strata,2,25,25,unit of analysis and strata
+TAB_DSA,10.3,Application of Response-Adaptive Randomization,2,25,25,application of response adaptive randomization
+TAB_DSA,10.4,Timing of revealing of randomization status,2,25,25,timing of revealing of randomization status
+TAB_DSA,10.5,Interactions with interventions in other domains,2,25,26,interactions with interventions in other domains
+TAB_DSA,10.6,Nesting of interventions,2,26,26,nesting of interventions
+TAB_DSA,10.7,Threshold probability for superiority and inferiority,2,26,26,threshold probability for superiority and inferiority
+TAB_DSA,10.8,Threshold odds ratio delta for equivalence,2,26,26,threshold odds ratio delta for equivalence
+TAB_DSA,10.9,Informative priors,2,26,26,informative priors
+TAB_DSA,10.10,Post-trial sub-groups,2,26,26,post trial sub groups
+TAB_DSA,11,ETHICAL CONSIDERATIONS,1,26,26,ethical considerations
+TAB_DSA,11.1,Data Safety and Monitoring Board,2,26,27,data safety and monitoring board
+TAB_DSA,11.2,Potential domain-specific adverse events,2,27,27,potential domain specific adverse events
+TAB_DSA,11.3,Domain risk assessment,2,27,27,domain risk assessment
+TAB_DSA,11.4,Domain-specific consent issues,2,27,28,domain specific consent issues
+TAB_DSA,12,GOVERNANCE ISSUES,1,28,28,governance issues
+TAB_DSA,12.1,Funding of domain,2,28,28,funding of domain
+TAB_DSA,12.2,Funding of domain interventions and outcome measures,2,28,28,funding of domain interventions and outcome measures
+TAB_DSA,12.3,Domain-specific declarations of interest,2,28,28,domain specific declarations of interest
+TAB_DSA,13,REFERENCES,1,29,31,references
+IAV_DSA,1,ABBREVIATIONS,1,9,9,abbreviations
+IAV_DSA,2,PROTOCOL APPENDIX STRUCTURE,1,10,11,protocol appendix structure
+IAV_DSA,3,INFLUENZA ANTIVIRAL DOMAIN-SPECIFIC APPENDIX VERSION,1,11,11,influenza antiviral domain specific appendix version
+IAV_DSA,3.1,Version history,2,11,11,version history
+IAV_DSA,4,INFLUENZA ANTIVIRAL DOMAIN GOVERNANCE,1,11,11,influenza antiviral domain governance
+IAV_DSA,4.1,Domain members,2,11,12,domain members
+IAV_DSA,4.2,Contact Details,2,12,12,contact details
+IAV_DSA,5,INFLUENZA Antiviral DOMAIN-SPECIFIC WORKING GROUP AUTHORIZATION,1,13,13,influenza antiviral domain specific working group authorization
+IAV_DSA,6,BACKGROUND AND RATIONALE,1,13,13,background and rationale
+IAV_DSA,6.1,Domain definition,2,13,13,domain definition
+IAV_DSA,6.2,Domain-specific background,2,13,13,domain specific background
+IAV_DSA,6.2.1,Influenza,3,13,14,influenza
+IAV_DSA,6.2.2,Oseltamivir,3,14,14,oseltamivir
+IAV_DSA,6.2.3,Baloxavir,3,15,16,baloxavir
+IAV_DSA,6.2.4,Evaluation of effectiveness of antivirals,3,16,16,evaluation of effectiveness of antivirals
+IAV_DSA,6.2.5,Potential interaction between antiviral therapy and immune modulation therapy,3,16,16,potential interaction between antiviral therapy and immune modulation therapy
+IAV_DSA,6.2.6,Domain rationale,3,16,16,domain rationale
+IAV_DSA,7,DOMAIN OBJECTIVES,1,17,17,domain objectives
+IAV_DSA,8,TRIAL DESIGN,1,17,17,trial design
+IAV_DSA,8.1,Population,2,17,17,population
+IAV_DSA,8.1.1,Age Strata,3,17,17,age strata
+IAV_DSA,8.1.2,Illness Severity State,3,17,17,illness severity state
+IAV_DSA,8.1.3,Domain-specific strata,3,17,17,domain specific strata
+IAV_DSA,8.2,Eligibility criteria,2,18,18,eligibility criteria
+IAV_DSA,8.2.1,Domain inclusion criteria,3,18,18,domain inclusion criteria
+IAV_DSA,8.2.2,Domain exclusion criteria,3,18,18,domain exclusion criteria
+IAV_DSA,8.2.3,Intervention exclusion criteria,3,18,19,intervention exclusion criteria
+IAV_DSA,8.3,Interventions,2,19,19,interventions
+IAV_DSA,8.3.1,Antiviral interventions,3,19,19,antiviral interventions
+IAV_DSA,8.3.2,Recommended oseltamivir dosing,3,19,20,recommended oseltamivir dosing
+IAV_DSA,8.3.3,Recommended baloxavir dosing,3,20,20,recommended baloxavir dosing
+IAV_DSA,8.3.4,Discontinuation of study intervention,3,20,20,discontinuation of study intervention
+IAV_DSA,8.4,Concomitant care,2,20,20,concomitant care
+IAV_DSA,8.5,Endpoints,2,20,20,endpoints
+IAV_DSA,8.5.1,Primary endpoint,3,20,20,primary endpoint
+IAV_DSA,8.5.2,Secondary endpoints,3,20,20,secondary endpoints
+IAV_DSA,9,TRIAL CONDUCT,1,21,21,trial conduct
+IAV_DSA,9.1,Microbiology,2,21,21,microbiology
+IAV_DSA,9.2,Domain-specific data collection,2,21,21,domain specific data collection
+IAV_DSA,9.2.1,Clinical data collection,3,21,21,clinical data collection
+IAV_DSA,9.3,Criteria for discontinuation,2,21,21,criteria for discontinuation
+IAV_DSA,9.4,Blinding,2,21,21,blinding
+IAV_DSA,10,STATISTICAL CONSIDERATIONS,1,21,21,statistical considerations
+IAV_DSA,10.1,Domain-specific stopping rules,2,21,23,domain specific stopping rules
+IAV_DSA,10.2,Unit-of-analysis and strata,2,23,23,unit of analysis and strata
+IAV_DSA,10.3,Application of Response-Adaptive Randomization,2,23,23,application of response adaptive randomization
+IAV_DSA,10.4,Timing of revealing of randomization status,2,23,23,timing of revealing of randomization status
+IAV_DSA,10.5,Interactions with interventions in other domains,2,24,24,interactions with interventions in other domains
+IAV_DSA,10.6,Nesting of interventions,2,24,24,nesting of interventions
+IAV_DSA,10.7,"Threshold probability for efficacy, superiority, and inferiority",2,24,24,threshold probability for efficacy superiority and inferiority
+IAV_DSA,10.8,Threshold odds ratio delta for equivalence and futility,2,24,24,threshold odds ratio delta for equivalence and futility
+IAV_DSA,10.9,Domain History,2,24,25,domain history
+IAV_DSA,10.10,Informative priors,2,25,25,informative priors
+IAV_DSA,10.11,Post-trial sub-groups,2,25,25,post trial sub groups
+IAV_DSA,11,ETHICAL CONSIDERATIONS,1,26,26,ethical considerations
+IAV_DSA,11.1,Data Safety and Monitoring Board,2,26,26,data safety and monitoring board
+IAV_DSA,11.2,Potential domain-specific adverse events,2,26,26,potential domain specific adverse events
+IAV_DSA,11.3,Domain risk assessment,2,26,27,domain risk assessment
+IAV_DSA,11.4,Domain-specific consent issues,2,27,28,domain specific consent issues
+IAV_DSA,12,GOVERNANCE ISSUES,1,28,28,governance issues
+IAV_DSA,12.1,Funding of domain,2,28,28,funding of domain
+IAV_DSA,12.2,Funding of domain interventions and outcome measures,2,28,28,funding of domain interventions and outcome measures
+IAV_DSA,12.3,Domain-specific declarations of interest,2,28,28,domain specific declarations of interest
+IAV_DSA,13,REFERENCES,1,29,32,references
+IAV_DSA,14.1,Eligibility Criteria,2,32,32,eligibility criteria
+IAV_DSA,14.1.1,Domain Exclusion Criteria,3,32,32,domain exclusion criteria
+IAV_DSA,14.2,Interventions,2,32,32,interventions
+IAV_DSA,14.2.1,Oseltamivir dosing,3,32,32,oseltamivir dosing
+IAV_DSA,14.2.2,Baloxavir dosing,3,32,32,baloxavir dosing
+MD_DSA,1,ABBREVIATIONS,1,7,7,abbreviations
+MD_DSA,2,PROTOCOL APPENDIX STRUCTURE,1,8,9,protocol appendix structure
+MD_DSA,3,MACROLIDE DURATION DOMAIN-SPECIFIC APPENDIX VERSION,1,9,9,macrolide duration domain specific appendix version
+MD_DSA,3.1,Version history,2,9,9,version history
+MD_DSA,4,MACROLIDE DURATION DOMAIN GOVERNANCE,1,9,9,macrolide duration domain governance
+MD_DSA,4.1,Domain members,2,9,10,domain members
+MD_DSA,4.2,Contact Details,2,10,10,contact details
+MD_DSA,5,MACROLIDE DURATION DOMAIN-SPECIFIC WORKING GROUP AUTHORIZATION,1,10,11,macrolide duration domain specific working group authorization
+MD_DSA,6,BACKGROUND AND RATIONALE,1,11,11,background and rationale
+MD_DSA,6.1,Domain definition,2,11,11,domain definition
+MD_DSA,6.2,Domain-specific background,2,11,11,domain specific background
+MD_DSA,6.2.1,Guidelines recommend either macrolides or quinolones to treat “atypical” respiratory pathogens,3,11,13,guidelines recommend either macrolides or quinolones to treat atypical respiratory pathogens
+MD_DSA,6.2.2,Macrolide antibiotics have anti-inflammatory properties,3,13,13,macrolide antibiotics have anti inflammatory properties
+MD_DSA,6.2.3,Severe CAP is intertwined with the host systemic inflammatory response,3,13,14,severe cap is intertwined with the host systemic inflammatory response
+MD_DSA,6.2.4,Macrolides have been associated with improved clinical outcomes in inflammatory lung diseases in some studies,3,14,14,macrolides have been associated with improved clinical outcomes in inflammatory lung diseases in some studies
+MD_DSA,6.2.5,The use of macrolide antibiotics has been associated with improved outcomes in CAP even when the causative organism is resistant to macrolides.,3,14,14,the use of macrolide antibiotics has been associated with improved outcomes in cap even when the causative organism is resistant to macrolides
+MD_DSA,6.2.6,Macrolide antibiotics safety profile,3,15,15,macrolide antibiotics safety profile
+MD_DSA,7,DOMAIN OBJECTIVES,1,15,15,domain objectives
+MD_DSA,8,TRIAL DESIGN,1,15,15,trial design
+MD_DSA,8.1,Population,2,15,15,population
+MD_DSA,8.1.1,Age Strata,3,15,15,age strata
+MD_DSA,8.1.2,Illness Severity State,3,15,15,illness severity state
+MD_DSA,8.1.3,Domain-Specific Strata,3,15,15,domain specific strata
+MD_DSA,8.2,Eligibility criteria,2,16,16,eligibility criteria
+MD_DSA,8.2.1,Domain inclusion criteria,3,16,16,domain inclusion criteria
+MD_DSA,8.2.2,Domain exclusion criteria,3,16,16,domain exclusion criteria
+MD_DSA,8.2.3,Intervention exclusion criteria,3,16,16,intervention exclusion criteria
+MD_DSA,8.3,Interventions,2,16,16,interventions
+MD_DSA,8.3.1,Macrolide intervention,3,16,17,macrolide intervention
+MD_DSA,8.3.2,Macrolide administration and dosing,3,17,17,macrolide administration and dosing
+MD_DSA,8.3.3,Duration of administration of macrolide,3,18,18,duration of administration of macrolide
+MD_DSA,8.3.4,Discontinuation of study intervention,3,18,18,discontinuation of study intervention
+MD_DSA,8.4,Concomitant care,2,18,19,concomitant care
+MD_DSA,8.5,Endpoints,2,19,19,endpoints
+MD_DSA,8.5.1,Primary endpoint,3,19,19,primary endpoint
+MD_DSA,8.5.2,Secondary endpoints,3,19,19,secondary endpoints
+MD_DSA,9,TRIAL CONDUCT,1,19,19,trial conduct
+MD_DSA,9.1,Microbiology,2,19,19,microbiology
+MD_DSA,9.2,Domain-specific data collection,2,19,19,domain specific data collection
+MD_DSA,9.2.1,Clinical data collection,3,19,19,clinical data collection
+MD_DSA,9.3,Criteria for discontinuation,2,20,20,criteria for discontinuation
+MD_DSA,9.4,Blinding,2,20,20,blinding
+MD_DSA,10,STATISTICAL CONSIDERATIONS,1,20,20,statistical considerations
+MD_DSA,10.1,Domain-specific stopping rules,2,20,20,domain specific stopping rules
+MD_DSA,10.2,Unit-of-analysis and strata,2,20,20,unit of analysis and strata
+MD_DSA,10.3,Application of Response-Adaptive Randomization,2,20,20,application of response adaptive randomization
+MD_DSA,10.4,Timing of revealing of randomization status,2,20,20,timing of revealing of randomization status
+MD_DSA,10.5,Interactions with interventions in other domains,2,21,21,interactions with interventions in other domains
+MD_DSA,10.6,Nesting,2,21,21,nesting
+MD_DSA,10.7,"Threshold probability for superiority, inferiority, and futility",2,21,21,threshold probability for superiority inferiority and futility
+MD_DSA,10.8,Informative priors,2,21,21,informative priors
+MD_DSA,10.9,Post-trial Sub-groups,2,21,22,post trial sub groups
+MD_DSA,11,ETHICAL CONSIDERATIONS,1,22,22,ethical considerations
+MD_DSA,11.1,Data Safety and Monitoring Board,2,22,22,data safety and monitoring board
+MD_DSA,11.2,Potential domain-specific adverse events,2,22,22,potential domain specific adverse events
+MD_DSA,11.3,Domain risk assessment,2,22,23,domain risk assessment
+MD_DSA,11.4,Domain-specific consent issues,2,23,23,domain specific consent issues
+MD_DSA,12,GOVERNANCE ISSUES,1,24,24,governance issues
+MD_DSA,12.1,Funding of domain,2,24,24,funding of domain
+MD_DSA,12.2,Funding of domain interventions and outcome measures,2,24,24,funding of domain interventions and outcome measures
+MD_DSA,12.3,Domain-specific declarations of interest,2,24,24,domain specific declarations of interest
+MD_DSA,13,REFERENCES,1,25,27,references
+IG_DSA,1,ABBREVIATIONS,1,8,8,abbreviations
+IG_DSA,2,PROTOCOL APPENDIX STRUCTURE,1,9,10,protocol appendix structure
+IG_DSA,3,COVID-19 IMMUNOGLOBULIN DOMAIN-SPECIFIC APPENDIX VERSION,1,10,10,covid immunoglobulin domain specific appendix version
+IG_DSA,3.1,Version history,2,10,10,version history
+IG_DSA,4,COVID-19 IMMUNOGLOBULIN THERAPY DOMAIN GOVERNANCE,1,11,11,covid immunoglobulin therapy domain governance
+IG_DSA,4.1,Domain members,2,11,12,domain members
+IG_DSA,4.2,Contact Details,2,12,12,contact details
+IG_DSA,5,COVID-19 IMMUNOGLOBULIN THERAPY DOMAIN-SPECIFIC WORKING GROUP AUTHORIZATION,1,13,13,covid immunoglobulin therapy domain specific working group authorization
+IG_DSA,6,BACKGROUND AND RATIONALE,1,13,13,background and rationale
+IG_DSA,6.1,Domain definition,2,13,13,domain definition
+IG_DSA,6.2,Domain-specific background,2,13,13,domain specific background
+IG_DSA,6.2.1,COVID-19 Infection,3,13,13,covid infection
+IG_DSA,6.2.2,Clinical trials for COVID-19,3,14,14,clinical trials for covid
+IG_DSA,6.2.3,Convalescent Plasma,3,14,15,convalescent plasma
+IG_DSA,6.2.4,Rationale for evaluation of high-titer convalescent plasma in immunocompromised patients with COVID-19,3,15,21,rationale for evaluation of high titer convalescent plasma in immunocompromised patients with covid
+IG_DSA,6.2.5,Safety profile of convalescent plasma,3,22,22,safety profile of convalescent plasma
+IG_DSA,6.2.6,Intervention Strategy for this domain,3,22,23,intervention strategy for this domain
+IG_DSA,7,DOMAIN OBJECTIVES,1,23,23,domain objectives
+IG_DSA,8,TRIAL DESIGN,1,24,24,trial design
+IG_DSA,8.1,Population,2,24,24,population
+IG_DSA,8.1.1,Age Strata,3,24,24,age strata
+IG_DSA,8.1.2,State,3,24,24,state
+IG_DSA,8.2,Eligibility criteria,2,24,24,eligibility criteria
+IG_DSA,8.2.1,Domain inclusion criteria,3,24,24,domain inclusion criteria
+IG_DSA,8.2.2,Domain exclusion criteria,3,24,25,domain exclusion criteria
+IG_DSA,8.2.3,Intervention exclusion criteria,3,25,25,intervention exclusion criteria
+IG_DSA,8.3,Interventions,2,25,25,interventions
+IG_DSA,8.3.1,Immunoglobulin Therapy Interventions,3,25,25,immunoglobulin therapy interventions
+IG_DSA,8.3.2,No immunoglobulin against COVID-19 (no placebo),3,26,26,no immunoglobulin against covid no placebo
+IG_DSA,8.3.3,High titer plasma,3,26,26,high titer plasma
+IG_DSA,8.4,Concomitant care,2,26,26,concomitant care
+IG_DSA,8.5,Endpoints,2,26,26,endpoints
+IG_DSA,8.5.1,Primary endpoint,3,26,26,primary endpoint
+IG_DSA,8.5.2,Secondary endpoints,3,27,27,secondary endpoints
+IG_DSA,9,TRIAL CONDUCT,1,27,27,trial conduct
+IG_DSA,9.1,Domain-specific data collection,2,27,27,domain specific data collection
+IG_DSA,9.2,Criteria for discontinuation,2,27,27,criteria for discontinuation
+IG_DSA,9.3,Blinding,2,28,28,blinding
+IG_DSA,10,STATISTICAL CONSIDERATIONS,1,28,28,statistical considerations
+IG_DSA,10.1,Domain-specific stopping rules,2,28,28,domain specific stopping rules
+IG_DSA,10.2,Unit-of-analysis and strata,2,28,29,unit of analysis and strata
+IG_DSA,10.3,Application of Response-Adaptive Randomization,2,29,29,application of response adaptive randomization
+IG_DSA,10.4,Timing of revealing of randomization status,2,29,29,timing of revealing of randomization status
+IG_DSA,10.5,Interactions with interventions in other domains,2,29,29,interactions with interventions in other domains
+IG_DSA,10.6,Nesting of interventions,2,30,30,nesting of interventions
+IG_DSA,10.7,Threshold probability for efficacy and futility,2,30,30,threshold probability for efficacy and futility
+IG_DSA,10.8,Informative priors,2,30,30,informative priors
+IG_DSA,10.9,Post-trial Sub-groups,2,30,31,post trial sub groups
+IG_DSA,11,ETHICAL CONSIDERATIONS,1,31,31,ethical considerations
+IG_DSA,11.1,Data Safety and Monitoring Board,2,31,31,data safety and monitoring board
+IG_DSA,11.2,Potential domain-specific adverse events,2,31,32,potential domain specific adverse events
+IG_DSA,11.3,Domain risk assessment,2,32,32,domain risk assessment
+IG_DSA,11.4,Domain-specific consent issues,2,32,32,domain specific consent issues
+IG_DSA,12,GOVERNANCE ISSUES,1,33,33,governance issues
+IG_DSA,12.1,Funding of domain,2,33,33,funding of domain
+IG_DSA,12.2,Funding of domain interventions and outcome measures,2,33,33,funding of domain interventions and outcome measures
+IG_DSA,12.3,Domain-specific declarations of interest,2,33,36,domain specific declarations of interest
+MV_DSA,1,ABBREVIATIONS,1,8,9,abbreviations
+MV_DSA,2,PROTOCOL APPENDIX STRUCTURE,1,10,11,protocol appendix structure
+MV_DSA,3,MECHANICAL VENTILATION DOMAIN-SPECIFIC APPENDIX VERSION,1,11,11,mechanical ventilation domain specific appendix version
+MV_DSA,3.1,Version history,2,11,11,version history
+MV_DSA,4,MECHANICAL VENTILATION DOMAIN-GOVERNANCE,1,11,11,mechanical ventilation domain governance
+MV_DSA,4.1,Domain members,2,11,12,domain members
+MV_DSA,4.2,Contact Details,2,12,12,contact details
+MV_DSA,5,MECHANICAL VENTILATION DOMAIN-SPECIFIC WORKING GROUP AUTHORIZATION,1,12,12,mechanical ventilation domain specific working group authorization
+MV_DSA,6,BACKGROUND AND RATIONALE,1,13,13,background and rationale
+MV_DSA,6.1,Domain definition,2,13,13,domain definition
+MV_DSA,6.2,Introduction,2,13,14,introduction
+MV_DSA,6.3,Current recommendations and variability among recommendations,2,14,14,current recommendations and variability among recommendations
+MV_DSA,6.3.1,Current guideline recommendations for mechanical ventilation in patients with CAP,3,14,16,current guideline recommendations for mechanical ventilation in patients with cap
+MV_DSA,6.3.2,Compliance with guidelines and heterogeneity of ventilatory practice,3,16,17,compliance with guidelines and heterogeneity of ventilatory practice
+MV_DSA,6.3.3,Compliance with guidelines and outcome,3,17,17,compliance with guidelines and outcome
+MV_DSA,6.3.4,Within unit vs between unit variation,3,17,18,within unit vs between unit variation
+MV_DSA,6.4,An analytic approach to determining optimal ventilation,2,18,18,an analytic approach to determining optimal ventilation
+MV_DSA,6.4.1,Scope of the problem,3,18,20,scope of the problem
+MV_DSA,6.4.2,Protocolized guideline-recommended versus wild-type as first questions,3,20,22,protocolized guideline recommended versus wild type as first questions
+MV_DSA,6.4.3,Isolation of testable strategies within heterogeneity of current practice,3,22,22,isolation of testable strategies within heterogeneity of current practice
+MV_DSA,6.4.4,Analytic approaches to heterogeneity of current practice,3,22,23,analytic approaches to heterogeneity of current practice
+MV_DSA,6.4.5,Principles of analysis,3,23,24,principles of analysis
+MV_DSA,6.5,Summary of background,2,24,24,summary of background
+MV_DSA,7,DOMAIN OBJECTIVES,1,24,26,domain objectives
+MV_DSA,8,TRIAL DESIGN,1,26,26,trial design
+MV_DSA,8.1,Population,2,26,26,population
+MV_DSA,8.1.1,Age Strata,3,26,26,age strata
+MV_DSA,8.1.2,Illness Severity State,3,26,26,illness severity state
+MV_DSA,8.1.3,Domain-specific strata,3,26,26,domain specific strata
+MV_DSA,8.2,Eligibility criteria,2,26,26,eligibility criteria
+MV_DSA,8.2.1,Domain inclusion criteria,3,26,27,domain inclusion criteria
+MV_DSA,8.2.2,Domain exclusion criteria,3,27,27,domain exclusion criteria
+MV_DSA,8.3,Interventions,2,27,27,interventions
+MV_DSA,8.3.1,Mechanical Ventilation Interventions,3,27,27,mechanical ventilation interventions
+MV_DSA,8.3.2,Physiological targets set prior to reveal of allocation status and common to both interventions,3,27,27,physiological targets set prior to reveal of allocation status and common to both interventions
+MV_DSA,8.3.3,Clinician-preferred mechanical ventilation strategy,3,27,28,clinician preferred mechanical ventilation strategy
+MV_DSA,8.3.4,Protocolized mechanical ventilation strategy,3,28,30,protocolized mechanical ventilation strategy
+MV_DSA,8.3.5,Duration of administration of domain intervention,3,30,30,duration of administration of domain intervention
+MV_DSA,8.4,Concomitant care,2,30,30,concomitant care
+MV_DSA,8.5,Endpoints,2,30,30,endpoints
+MV_DSA,8.5.1,Primary endpoint,3,30,30,primary endpoint
+MV_DSA,8.5.2,Secondary endpoints,3,30,30,secondary endpoints
+MV_DSA,8.5.3,Process end-points,3,31,31,process end points
+MV_DSA,9,TRIAL CONDUCT,1,31,31,trial conduct
+MV_DSA,9.1,Domain-specific data collection,2,31,31,domain specific data collection
+MV_DSA,9.1.1,Clinical data collection,3,31,31,clinical data collection
+MV_DSA,9.2,Criteria for discontinuation,2,31,31,criteria for discontinuation
+MV_DSA,9.3,Blinding,2,31,31,blinding
+MV_DSA,9.3.1,Blinding,3,31,31,blinding
+MV_DSA,9.3.2,Unblinding,3,31,31,unblinding
+MV_DSA,10,STATISTICAL CONSIDERATIONS,1,32,32,statistical considerations
+MV_DSA,10.1,Domain-specific stopping rules,2,32,32,domain specific stopping rules
+MV_DSA,10.2,Categorization of clinician-preferred ventilator strategies,2,32,32,categorization of clinician preferred ventilator strategies
+MV_DSA,10.2.1,Unit-level self-categorization,3,32,32,unit level self categorization
+MV_DSA,10.2.2,Unit-level observed categorization,3,32,32,unit level observed categorization
+MV_DSA,10.2.3,Patient-level categorization,3,32,33,patient level categorization
+MV_DSA,10.2.4,Methods of determination of categorization,3,33,33,methods of determination of categorization
+MV_DSA,10.3,Statistical analysis,2,33,33,statistical analysis
+MV_DSA,10.3.1,Principles of statistical analysis,3,33,33,principles of statistical analysis
+MV_DSA,10.3.2,Strata,3,33,34,strata
+MV_DSA,10.3.3,Primary analysis,3,34,34,primary analysis
+MV_DSA,10.3.4,Descriptive analysis of ventilatory patterns,3,34,34,descriptive analysis of ventilatory patterns
+MV_DSA,10.3.5,Secondary analyses,3,34,35,secondary analyses
+MV_DSA,10.3.6,Identification of variables that may modify treatment effect,3,36,36,identification of variables that may modify treatment effect
+MV_DSA,10.3.7,Evaluation of separation between protocolized and clinician-preferred ventilatory strategies,3,36,36,evaluation of separation between protocolized and clinician preferred ventilatory strategies
+MV_DSA,10.3.8,Sample size and statistical power,3,36,36,sample size and statistical power
+MV_DSA,10.4,Timing of revealing of randomization status,2,37,37,timing of revealing of randomization status
+MV_DSA,10.5,Interactions with interventions in other domains,2,37,37,interactions with interventions in other domains
+MV_DSA,10.6,Nesting of interventions,2,37,37,nesting of interventions
+MV_DSA,11,ETHICAL CONSIDERATIONS,1,37,37,ethical considerations
+MV_DSA,11.1,Data Safety and Monitoring Board,2,37,37,data safety and monitoring board
+MV_DSA,11.2,Potential domain-specific adverse events,2,37,37,potential domain specific adverse events
+MV_DSA,11.3,Domain risk assessment,2,37,38,domain risk assessment
+MV_DSA,11.4,Domain-specific consent issues,2,38,38,domain specific consent issues
+MV_DSA,12,GOVERNANCE ISSUES,1,38,38,governance issues
+MV_DSA,12.1,Funding of domain,2,38,38,funding of domain
+MV_DSA,12.2,Funding of domain interventions and outcome measures,2,38,38,funding of domain interventions and outcome measures
+MV_DSA,12.3,Domain-specific declarations of interest,2,39,39,domain specific declarations of interest
+MV_DSA,13,REFERENCES,1,40,64,references
+END_DSA,1,ABBREVIATIONS,1,7,8,abbreviations
+END_DSA,2,PROTOCOL APPENDIX STRUCTURE,1,9,10,protocol appendix structure
+END_DSA,3,ENDOTHELIAL MODULATION DOMAIN-SPECIFIC APPENDIX VERSION,1,10,10,endothelial modulation domain specific appendix version
+END_DSA,3.1,Version history,2,10,10,version history
+END_DSA,4,ENDOTHELIAL MODULATION DOMAIN GOVERNANCE,1,10,10,endothelial modulation domain governance
+END_DSA,4.1,Domain members,2,10,11,domain members
+END_DSA,4.2,Contact Details,2,11,12,contact details
+END_DSA,5,ENDOTHELIAL MODULATION DOMAIN-SPECIFIC WORKING GROUP AUTHORIZATION,1,12,12,endothelial modulation domain specific working group authorization
+END_DSA,6,BACKGROUND AND RATIONALE,1,12,12,background and rationale
+END_DSA,6.1,Domain definition,2,12,12,domain definition
+END_DSA,6.2,Domain-specific background,2,12,12,domain specific background
+END_DSA,6.2.1,COVID-19 infection,3,12,14,covid infection
+END_DSA,6.2.2,Rationale for Endothelial Modulation Domain,3,14,17,rationale for endothelial modulation domain
+END_DSA,6.2.3,Intervention strategy for this domain,3,17,17,intervention strategy for this domain
+END_DSA,6.2.4,Imatinib,3,17,26,imatinib
+END_DSA,7,DOMAIN OBJECTIVES,1,26,26,domain objectives
+END_DSA,8,TRIAL DESIGN,1,26,26,trial design
+END_DSA,8.1,Population,2,26,26,population
+END_DSA,8.1.1,Age Strata,3,26,26,age strata
+END_DSA,8.1.2,State,3,27,27,state
+END_DSA,8.1.3,Domain-specific strata,3,27,27,domain specific strata
+END_DSA,8.2,Eligibility criteria,2,27,27,eligibility criteria
+END_DSA,8.2.1,Domain inclusion criteria,3,27,27,domain inclusion criteria
+END_DSA,8.2.2,Domain exclusion criteria,3,27,27,domain exclusion criteria
+END_DSA,8.2.3,Intervention exclusion criteria,3,28,28,intervention exclusion criteria
+END_DSA,8.3,Interventions,2,29,29,interventions
+END_DSA,8.3.1,Endothelial Modulation Domain Interventions,3,29,29,endothelial modulation domain interventions
+END_DSA,8.3.2,No Endothelial modulator therapy,3,29,29,no endothelial modulator therapy
+END_DSA,8.3.3,Enteral imatinib,3,29,29,enteral imatinib
+END_DSA,8.3.4,Duration of Endothelial modulator therapy,3,29,29,duration of endothelial modulator therapy
+END_DSA,8.3.5,Monitoring for cytopenias and liver function,3,29,29,monitoring for cytopenias and liver function
+END_DSA,8.3.6,Discontinuation of study intervention,3,29,30,discontinuation of study intervention
+END_DSA,8.3.7,Contraception advice,3,30,30,contraception advice
+END_DSA,8.4,Concomitant care,2,30,30,concomitant care
+END_DSA,8.5,Endpoints,2,31,31,endpoints
+END_DSA,8.5.1,Primary endpoint,3,31,31,primary endpoint
+END_DSA,8.5.2,Secondary endpoints,3,31,31,secondary endpoints
+END_DSA,9,TRIAL CONDUCT,1,31,31,trial conduct
+END_DSA,9.1,Microbiology,2,31,31,microbiology
+END_DSA,9.2,Domain-specific data collection,2,32,32,domain specific data collection
+END_DSA,9.3,Criteria for discontinuation,2,32,32,criteria for discontinuation
+END_DSA,9.4,Blinding,2,32,32,blinding
+END_DSA,10,STATISTICAL CONSIDERATIONS,1,32,32,statistical considerations
+END_DSA,10.1,Domain-specific stopping rules,2,32,32,domain specific stopping rules
+END_DSA,10.2,Unit-of-analysis and strata,2,33,33,unit of analysis and strata
+END_DSA,10.3,Application of Response-Adaptive Randomization,2,33,33,application of response adaptive randomization
+END_DSA,10.4,Timing of revealing of randomization status,2,33,33,timing of revealing of randomization status
+END_DSA,10.5,Interactions with interventions in other domains,2,33,33,interactions with interventions in other domains
+END_DSA,10.6,Nesting of interventions,2,33,33,nesting of interventions
+END_DSA,10.7,Threshold probability for efficacy,2,33,33,threshold probability for efficacy
+END_DSA,10.8,Threshold odds ratio delta for futility,2,34,34,threshold odds ratio delta for futility
+END_DSA,10.9,Informative priors,2,34,34,informative priors
+END_DSA,10.10,Post-trial sub-groups,2,34,34,post trial sub groups
+END_DSA,11,ETHICAL CONSIDERATIONS,1,34,34,ethical considerations
+END_DSA,11.1,Data Safety and Monitoring Board,2,34,35,data safety and monitoring board
+END_DSA,11.2,Potential domain-specific adverse events,2,35,35,potential domain specific adverse events
+END_DSA,11.3,Domain risk assessment,2,35,35,domain risk assessment
+END_DSA,11.4,Domain-specific consent issues,2,35,36,domain specific consent issues
+END_DSA,12,GOVERNANCE ISSUES,1,36,36,governance issues
+END_DSA,12.1,Funding of domain,2,36,36,funding of domain
+END_DSA,12.2,Funding of domain interventions and outcome measures,2,36,36,funding of domain interventions and outcome measures
+END_DSA,12.3,Domain-specific declarations of interest,2,36,36,domain specific declarations of interest
+END_DSA,13,REFERENCES,1,37,41,references
+IIM_DSA,1,ABBREVIATIONS,1,8,8,abbreviations
+IIM_DSA,2,PROTOCOL APPENDIX STRUCTURE,1,9,10,protocol appendix structure
+IIM_DSA,3,INFLUENZA IMMUNE MODULATION DOMAIN-SPECIFIC APPENDIX VERSION,1,10,10,influenza immune modulation domain specific appendix version
+IIM_DSA,3.1,Version history,2,10,10,version history
+IIM_DSA,4,INFLUENZA IMMUNE MODULATION DOMAIN GOVERNANCE,1,10,10,influenza immune modulation domain governance
+IIM_DSA,4.1,Domain members,2,10,11,domain members
+IIM_DSA,4.2,Contact Details,2,12,12,contact details
+IIM_DSA,5,INFLUENZA IMMUNE MODULATION DOMAIN-SPECIFIC WORKING GROUP AUTHORIZATION,1,12,12,influenza immune modulation domain specific working group authorization
+IIM_DSA,6,BACKGROUND AND RATIONALE,1,12,12,background and rationale
+IIM_DSA,6.1,Domain definition,2,12,12,domain definition
+IIM_DSA,6.2,Domain-specific background,2,12,12,domain specific background
+IIM_DSA,6.2.1,Influenza,3,12,15,influenza
+IIM_DSA,6.2.2,Intervention strategy for this domain,3,15,15,intervention strategy for this domain
+IIM_DSA,6.2.3,Tocilizumab,3,15,20,tocilizumab
+IIM_DSA,6.2.4,Baricitinib,3,21,25,baricitinib
+IIM_DSA,7,DOMAIN OBJECTIVES,1,25,25,domain objectives
+IIM_DSA,8,TRIAL DESIGN,1,25,25,trial design
+IIM_DSA,8.1,Population,2,25,25,population
+IIM_DSA,8.1.1,Age Strata,3,25,25,age strata
+IIM_DSA,8.1.2,Illness Severity State,3,25,25,illness severity state
+IIM_DSA,8.1.3,Domain-specific strata,3,26,26,domain specific strata
+IIM_DSA,8.2,Eligibility criteria,2,26,26,eligibility criteria
+IIM_DSA,8.2.1,Domain inclusion criteria,3,26,26,domain inclusion criteria
+IIM_DSA,8.2.2,Domain exclusion criteria,3,26,27,domain exclusion criteria
+IIM_DSA,8.2.3,Intervention exclusion criteria,3,27,28,intervention exclusion criteria
+IIM_DSA,8.3,Interventions,2,28,28,interventions
+IIM_DSA,8.3.1,Influenza Immune Modulation Domain Interventions,3,28,28,influenza immune modulation domain interventions
+IIM_DSA,8.3.2,No Influenza Immune Modulation therapy,3,28,28,no influenza immune modulation therapy
+IIM_DSA,8.3.3,Tocilizumab,3,28,28,tocilizumab
+IIM_DSA,8.3.4,Baricitinib,3,29,29,baricitinib
+IIM_DSA,8.3.5,Discontinuation of study intervention,3,29,30,discontinuation of study intervention
+IIM_DSA,8.4,Concomitant care,2,30,30,concomitant care
+IIM_DSA,8.5,Endpoints,2,30,30,endpoints
+IIM_DSA,8.5.1,Primary endpoint,3,30,30,primary endpoint
+IIM_DSA,8.5.2,Secondary endpoints,3,30,30,secondary endpoints
+IIM_DSA,9,TRIAL CONDUCT,1,31,31,trial conduct
+IIM_DSA,9.1,Microbiology,2,31,31,microbiology
+IIM_DSA,9.2,Domain-specific data collection,2,31,31,domain specific data collection
+IIM_DSA,9.3,Criteria for discontinuation,2,31,31,criteria for discontinuation
+IIM_DSA,9.4,Blinding,2,31,31,blinding
+IIM_DSA,10,STATISTICAL CONSIDERATIONS,1,32,32,statistical considerations
+IIM_DSA,10.1,Domain-specific stopping rules,2,32,33,domain specific stopping rules
+IIM_DSA,10.2,Unit-of-analysis and strata,2,33,33,unit of analysis and strata
+IIM_DSA,10.3,Application of Response-Adaptive Randomization,2,33,33,application of response adaptive randomization
+IIM_DSA,10.4,Timing of revealing of randomization status,2,33,33,timing of revealing of randomization status
+IIM_DSA,10.5,Interactions with interventions in other domains,2,33,34,interactions with interventions in other domains
+IIM_DSA,10.6,Nesting of interventions,2,34,34,nesting of interventions
+IIM_DSA,10.7,"Threshold probability for superiority, effectiveness, and inferiority",2,34,34,threshold probability for superiority effectiveness and inferiority
+IIM_DSA,10.8,Threshold odds ratio delta for equivalence and futility,2,34,34,threshold odds ratio delta for equivalence and futility
+IIM_DSA,10.9,Statistical management of patients with intervention-specific exclusion,2,34,34,statistical management of patients with intervention specific exclusion
+IIM_DSA,10.10,Informative priors,2,35,35,informative priors
+IIM_DSA,10.11,Post-trial sub-groups,2,35,35,post trial sub groups
+IIM_DSA,11,ETHICAL CONSIDERATIONS,1,35,35,ethical considerations
+IIM_DSA,11.1,Data Safety and Monitoring Board,2,35,36,data safety and monitoring board
+IIM_DSA,11.2,Potential domain-specific adverse events,2,36,36,potential domain specific adverse events
+IIM_DSA,11.3,Domain risk assessment,2,36,36,domain risk assessment
+IIM_DSA,11.4,Domain-specific consent issues,2,36,37,domain specific consent issues
+IIM_DSA,12,GOVERNANCE ISSUES,1,37,37,governance issues
+IIM_DSA,12.1,Funding of domain,2,37,37,funding of domain
+IIM_DSA,12.2,Funding of domain interventions and outcome measures,2,37,37,funding of domain interventions and outcome measures
+IIM_DSA,12.3,Domain-specific declarations of interest,2,37,37,domain specific declarations of interest
+IIM_DSA,13,REFERENCES,1,38,45,references
