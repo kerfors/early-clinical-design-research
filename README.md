@@ -7,9 +7,10 @@ Lilly Chronic Pain Master Protocol (CPMP) and REMAP-CAP. Programme-level design 
 
 **Status: early exploratory work.** Draft, not normative. It is published so the method and the evidence can
 be followed and reused, not as a model to adopt. Built from public documents (ClinicalTrials.gov, remapcap.org,
-EU-PEARL, FDA, WOAH, NIH SEED) and public ontologies (OBI, MONDO, HP). Analyst readings are marked as such, and
-each carries its review state; what still waits for a trial-design reviewer or a clinical reader is listed in
-the catalogue.
+EU-PEARL, FDA, WOAH, NIH SEED). The design classes are anchored in 16 terms from public ontologies (OBI with IAO
+and BFO, MONDO, HP), imported from pinned releases; the gaps found are listed in the module READMEs. Analyst
+readings are marked as such, and each carries its review state; what still waits for a trial-design reviewer or a
+clinical reader is listed in the catalogue.
 
 **Relation to usdm-rdf and m11-rdf.** [usdm-rdf](https://w3id.org/cdisc/usdm/v4/) gives USDM v4 an RDF/OWL
 form, and [m11-rdf](https://w3id.org/m11-rdf/) gives every ICH M11 section and element its own identifier. Both
