@@ -31,7 +31,7 @@ Pages:
 
 Inputs (read only, all committed): README.md, competency-questions/sources/questions.csv,
 competency-questions/output/catalogue.csv, evidence-matrix/sources/requirements.csv, and the
-case inputs above. Each page ends with a provenance line: its input files and their sha256. No build time,
+case inputs above. Each page ends with a provenance line: its input files, linked. No build time and no hashes,
 so an unchanged input gives byte-identical pages.
 
 Relative links in README.md and the catalogue point at files in the repo; on the site
@@ -193,7 +193,7 @@ def esc(x):
 
 def page(title, depth, body, wide=False, inputs=None):
     up = "../" * depth
-    prov = "; ".join(f'<a href="{BLOB}{p}">{p}</a> sha256 <code>{sha256(p)[:12]}</code>' for p in (inputs or list(INPUTS.values())))
+    prov = "; ".join(f'<a href="{BLOB}{p}">{p}</a>' for p in (inputs or list(INPUTS.values())))
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
