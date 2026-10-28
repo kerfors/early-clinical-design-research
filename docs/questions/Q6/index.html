@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Q6. Which defaults does a child take, override or stay silent on?</title>
+<style>
+:root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f6368; --line: #dadce0; --link: #1a5fb4;
+        --code: #f3f4f6; --card: #f8f9fb; --chip: #eef1f5; --wait: #8a5a00; --wait-bg: #fff4dc; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #16181c; --fg: #e8eaed; --muted: #9aa0a6; --line: #3c4043;
+    --link: #8ab4f8; --code: #23262b; --card: #1d2025; --chip: #2a2e35; --wait: #f2c46d; --wait-bg: #3a2f17; }
+}
+:root[data-theme="dark"] { --bg: #16181c; --fg: #e8eaed; --muted: #9aa0a6; --line: #3c4043;
+  --link: #8ab4f8; --code: #23262b; --card: #1d2025; --chip: #2a2e35; --wait: #f2c46d; --wait-bg: #3a2f17; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; margin: 0; }
+main { max-width: 64rem; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+a { color: var(--link); }
+nav { font-size: 0.9rem; color: var(--muted); margin-bottom: 1rem; }
+h1 { font-size: 1.6rem; margin: 0.2rem 0 0.6rem; }
+h2 { font-size: 1.15rem; margin-top: 2rem; border-bottom: 1px solid var(--line); padding-bottom: 0.2rem; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.88rem; background: var(--code);
+       padding: 0.05rem 0.3rem; border-radius: 3px; overflow-wrap: anywhere; }
+.muted { color: var(--muted); font-size: 0.9rem; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.8rem; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 0.8rem 1rem; }
+.card h3 { margin: 0 0 0.3rem; font-size: 1rem; line-height: 1.35; }
+.card h3 a { text-decoration: none; }
+.card .qid { color: var(--muted); font-weight: 600; margin-right: 0.3rem; }
+.card p { margin: 0.3rem 0; font-size: 0.88rem; }
+.chip { display: inline-block; background: var(--chip); border-radius: 3px; padding: 0 0.35rem; margin: 0 0.25rem 0.2rem 0;
+        font-size: 0.8rem; white-space: nowrap; }
+.wait { background: var(--wait-bg); color: var(--wait); }
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 0.88rem; }
+th, td { border-bottom: 1px solid var(--line); padding: 0.4rem 0.5rem; text-align: left; vertical-align: top; }
+th { color: var(--muted); font-weight: 600; }
+td.item { white-space: nowrap; }
+td .chip { white-space: normal; }
+tr.answered td:first-child { border-left: 3px solid var(--fg); }
+tr.unanswered td:first-child { border-left: 3px dashed var(--muted); }
+tr.unanswered td { color: var(--muted); }
+main.wide, footer.wide { max-width: 84rem; }
+.layer { display: grid; gap: 0.5rem; margin: 0.6rem 0 1.2rem; }
+.box { border: 1.5px solid var(--fg); border-radius: 5px; padding: 0.45rem 0.6rem; font-size: 0.85rem; background: var(--card); }
+.box.dashed { border-style: dashed; border-color: var(--muted); color: var(--muted); background: transparent; }
+.box b { display: block; font-size: 0.92rem; }
+.box .muted { font-size: 0.8rem; }
+.grid4 { display: grid; grid-template-columns: 9rem repeat(4, minmax(7rem, 1fr)); gap: 0.5rem; align-items: stretch; }
+.grid4 .head { font-size: 0.8rem; color: var(--muted); font-weight: 600; align-self: end; }
+.dsa3 { grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); }
+.core2 { grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); }
+footer { max-width: 64rem; margin: 0 auto; padding: 0 1rem 2rem; color: var(--muted); font-size: 0.8rem; overflow-wrap: anywhere; }
+@media (max-width: 40rem) { main { padding: 1rem 1rem 2rem; } }
+</style>
+</head>
+<body>
+<main class="wide">
+<nav><a href="../../">Early clinical design research</a> · <a href="../../cases/cpmp/">CPMP</a> · <a href="../../cases/remapcap/">REMAP-CAP</a> · <a href="https://github.com/kerfors/early-clinical-design-research">repository</a></nav>
+<h1>Q6. Which defaults does a child take, override or stay silent on?</h1>
+<ul><li><b>Layer relations</b> (R-LAYER): Explicit relations between layers: inherits, delegates, overridable default, restates, extends, overrides</li><li><b>Obligations</b> (R-GAP): Delegations and defaults as checkable obligations: an unanswered delegation or a silent default is detectable, not found later</li></ul>
+<p class="muted">Solid left edge: answered (finding, case question or earlier answer). Dashed: open or not asked.
+Status gives the kinds of evidence behind a finding, with counts when there is more than one kind; evidence rows are
+in <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/evidence-matrix/output/evidence_matrix.csv">evidence_matrix.csv</a>. Same rows as the
+<a href="https://github.com/kerfors/early-clinical-design-research/blob/main/competency-questions/output/catalogue.md">catalogue</a>.</p>
+<h2>CPMP</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Kind</th><th>Item</th><th>Question or finding</th><th>Answer</th><th>Check</th><th>Status</th><th>Evidence rows</th><th>Review</th></tr></thead>
+<tbody>
+<tr class="answered"><td>case question</td><td class="item"><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/cpmp-design-modules/queries/cq6_overrides.rq">CQ6</a></td><td>which master SoA cells are overridden, by which ISAs, and what does an override point at?</td><td>12: 9 master defaults, 3 to disease state</td>
+<td>pass (against pandas, cq_results.csv)</td><td></td><td></td><td></td></tr>
+<tr class="answered"><td>finding</td><td class="item">CP-5</td><td>ED overrides in the LY3016859 ISAs: notes that a master ED assessment is &quot;not needed for ED per the CPMP SoA&quot;; some are on disease instruments the master SoA does not have</td><td>12 cells; 3 on activities not in the master SoA</td>
+<td>pass</td><td><span class="chip">document fact</span></td><td>12</td><td></td></tr>
+</tbody></table></div>
+<h2>REMAP-CAP</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Kind</th><th>Item</th><th>Question or finding</th><th>Answer</th><th>Check</th><th>Status</th><th>Evidence rows</th><th>Review</th></tr></thead>
+<tbody>
+<tr class="answered"><td>case question</td><td class="item"><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/remapcap-design-modules/queries/r5_defaults.rq">R5</a></td><td>how each DSA answers each Core 4.1 overridable default (takes, overrides, silent, ambiguous), and, for the two-intervention defaults, the answer per illness-severity state (condition_not_met where the state does not have exactly two arms).</td><td>ambiguous 9; silent 18; takes 9</td>
+<td>pass (against pandas, notebooks/01_cq_check.ipynb)</td><td></td><td></td><td>silent and not-evaluated readings reviewed 2026-10-27 (RC-6); two-intervention readings: trial-design reviewer <span class="chip wait">waits for trial-design reviewer</span></td></tr>
+<tr class="answered"><td>finding</td><td class="item">RC-6</td><td>Overridable defaults a DSA is silent on (balanced allocation at domain start and for a new intervention); whether the no-control-arm default applies is not evaluated, a trial-design question (R5)</td><td>18 silent (balanced allocation); 9 not evaluated (no control arm)</td>
+<td>pass</td><td><span class="chip">document fact 27</span><span class="chip">analyst-reading 27</span></td><td>54</td><td>readings: 18 confirmed, 9 not evaluated</td></tr>
+</tbody></table></div>
+<h2>both</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Kind</th><th>Item</th><th>Question or finding</th><th>Answer</th><th>Check</th><th>Status</th><th>Evidence rows</th><th>Review</th></tr></thead>
+<tbody>
+<tr class="unanswered"><td>open</td><td class="item"><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/cdd-layer/README.md">cdd-layer CQ-A</a></td><td></td><td>not answered</td>
+<td></td><td></td><td></td><td></td></tr>
+</tbody></table></div>
+
+</main>
+<footer class="wide">Generated by <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/scripts/build_site.py">scripts/build_site.py</a> from <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/README.md">README.md</a> sha256 <code>2d27964124e4</code>; <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/competency-questions/sources/questions.csv">competency-questions/sources/questions.csv</a> sha256 <code>acc62a1d77fa</code>; <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/competency-questions/output/catalogue.csv">competency-questions/output/catalogue.csv</a> sha256 <code>05ad02dd277b</code>; <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/evidence-matrix/sources/requirements.csv">evidence-matrix/sources/requirements.csv</a> sha256 <code>87f426666791</code>. Namespace for now:
+<code>https://kerfors.github.io/early-clinical-design-research/</code>. Code MIT, derived content CC BY 4.0.</footer>
+</body>
+</html>
