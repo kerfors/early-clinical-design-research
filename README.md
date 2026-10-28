@@ -15,9 +15,11 @@ clinical reader is listed in the catalogue.
 **Relation to usdm-rdf and m11-rdf.** [usdm-rdf](https://w3id.org/cdisc/usdm/v4/) gives USDM v4 an RDF/OWL
 form, and [m11-rdf](https://w3id.org/m11-rdf/) gives every ICH M11 section and element its own identifier. Both
 describe one study and one protocol. This repo explores what neither covers yet: design content that is shared
-and handed over between the documents of a master protocol, across sub-studies and versions. USDM v4 stays the
-document carrier here (`usdm-master-protocol/`, checked with the usdm-rdf validator), and the design modules sit
-next to it. Pointing statements at m11-rdf section identifiers, rather than at section numbers, is an open choice.
+and handed over between the documents of a master protocol, across sub-studies and versions. The first round built
+both master protocols as USDM v4 JSON, validated with the usdm-rdf validator, and collected where USDM v4.0 could not
+carry them as a table of breakpoints ([usdm-master-protocol/](usdm-master-protocol/)). The design modules sit next to
+USDM for what it cannot carry. Pointing statements at m11-rdf section identifiers, rather than at section numbers, is
+an open choice.
 
 **Identifiers, for now.** The design modules are OWL files whose IRIs sit in a namespace for now
 (`https://kerfors.github.io/early-clinical-design-research/`), and those IRIs do not resolve yet.

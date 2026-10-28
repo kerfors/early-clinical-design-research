@@ -24,6 +24,7 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0
        padding: 0.05rem 0.3rem; border-radius: 3px; overflow-wrap: anywhere; }
 .muted { color: var(--muted); font-size: 0.9rem; }
 .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.8rem; }
+.cards.four { grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 0.8rem 1rem; }
 .card h3 { margin: 0 0 0.3rem; font-size: 1rem; line-height: 1.35; }
 .card h3 a { text-decoration: none; }
@@ -63,6 +64,8 @@ body.data .key { display: inline-block; }
 .side .box { font-size: 0.82rem; }
 .side .rel { font-size: 0.75rem; color: var(--muted); align-self: center; }
 .side .empty { border: 1.5px dashed var(--line); border-radius: 5px; }
+th.area { text-align: left; background: var(--card); font-size: 0.85rem; }
+td.num { text-align: right; white-space: nowrap; }
 table.matrix td.num { text-align: center; white-space: nowrap; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8rem; }
 table.matrix td.miss { border-left: 1px dashed var(--line); border-right: 1px dashed var(--line); }
 table.matrix td.miss span { display: block; border: 1.5px dashed var(--line); border-radius: 3px; height: 1.1rem; }
@@ -83,7 +86,7 @@ footer { max-width: 64rem; margin: 0 auto; padding: 0 1rem 2rem; color: var(--mu
 </head>
 <body>
 <main>
-<nav><a href="">Early clinical design research</a> · <a href="questions/">Questions</a> · <a href="cases/">Cases</a> · <a href="templates/">Templates</a> · <a href="vision/">Vision</a> · <a href="https://github.com/kerfors/early-clinical-design-research">repository</a></nav>
+<nav><a href="">Early clinical design research</a> · <a href="questions/">Questions</a> · <a href="cases/">Cases</a> · <a href="usdm/">USDM</a> · <a href="templates/">Templates</a> · <a href="vision/">Vision</a> · <a href="https://github.com/kerfors/early-clinical-design-research">repository</a></nav>
 <h1>Early clinical design research</h1>
 <p>How the design content of a clinical trial programme can be identified, and its relations across documents
 made explicit, as data; and what the documents carry today. Two public master protocols are the cases: the
@@ -98,14 +101,16 @@ clinical reader is listed in the catalogue.</p>
 <p><strong>Relation to usdm-rdf and m11-rdf.</strong> <a href="https://w3id.org/cdisc/usdm/v4/">usdm-rdf</a> gives USDM v4 an RDF/OWL
 form, and <a href="https://w3id.org/m11-rdf/">m11-rdf</a> gives every ICH M11 section and element its own identifier. Both
 describe one study and one protocol. This repo explores what neither covers yet: design content that is shared
-and handed over between the documents of a master protocol, across sub-studies and versions. USDM v4 stays the
-document carrier here (<code>usdm-master-protocol/</code>, checked with the usdm-rdf validator), and the design modules sit
-next to it. Pointing statements at m11-rdf section identifiers, rather than at section numbers, is an open choice.</p>
+and handed over between the documents of a master protocol, across sub-studies and versions. The first round built
+both master protocols as USDM v4 JSON, validated with the usdm-rdf validator, and collected where USDM v4.0 could not
+carry them as a table of breakpoints (<a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/">usdm-master-protocol/</a>). The design modules sit next to
+USDM for what it cannot carry. Pointing statements at m11-rdf section identifiers, rather than at section numbers, is
+an open choice.</p>
 <p><strong>Identifiers, for now.</strong> The design modules are OWL files whose IRIs sit in a namespace for now
 (<code>https://kerfors.github.io/early-clinical-design-research/</code>), and those IRIs do not resolve yet.</p>
 <p class="lead"><a href="vision/"><b>Where this is heading</b></a>: first the design content as Linked Data, as in m11-rdf, then the ontologies behind the
 content.</p>
-<div class="cards"><div class="card"><h3><a href="questions/">The questions</a></h3><p>10 competency questions; the catalogue holds 36 findings, 22 case questions and 4 open questions</p></div><div class="card"><h3><a href="cases/">The two cases</a></h3><p>CPMP: master and 12 ISAs</p><p>REMAP-CAP: 12 documents read</p></div><div class="card"><h3><a href="templates/">Templates as data</a></h3><p>EU-PEARL: 4 templates with their heading trees, MPT and ISA side by side</p><p>REMAP-CAP: the DSA template read from 9 DSAs</p></div></div>
+<div class="cards four"><div class="card"><h3><a href="questions/">The questions</a></h3><p>10 competency questions; the catalogue holds 36 findings, 22 case questions and 4 open questions</p></div><div class="card"><h3><a href="cases/">The two cases</a></h3><p>CPMP: master and 12 ISAs</p><p>REMAP-CAP: 12 documents read</p></div><div class="card"><h3><a href="usdm/">USDM v4 and master protocols</a></h3><p>Both cases as USDM v4 JSON, validated; 21 breakpoints where USDM could not carry them</p></div><div class="card"><h3><a href="templates/">Templates as data</a></h3><p>EU-PEARL: 4 templates with their heading trees, MPT and ISA side by side</p><p>REMAP-CAP: the DSA template read from 9 DSAs</p></div></div>
 
 </main>
 <footer>Generated by <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/scripts/build_site.py">scripts/build_site.py</a> from <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/README.md">README.md</a>; <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/competency-questions/sources/questions.csv">competency-questions/sources/questions.csv</a>; <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/competency-questions/output/catalogue.csv">competency-questions/output/catalogue.csv</a>; <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/evidence-matrix/sources/requirements.csv">evidence-matrix/sources/requirements.csv</a>. Namespace for now:

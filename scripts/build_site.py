@@ -20,6 +20,11 @@ Pages:
 - docs/cases/remapcap/index.html: the REMAP-CAP documents in scope (version and date as read
   from each document's header: remapcap-design-modules/output/documents.csv), the other current
   documents and the superseded listings on remapcap.org (usdm-master-protocol/sources/remapcap/manifest.csv).
+- docs/usdm/index.html: the first round, USDM v4 as the carrier for both master protocols
+  (usdm-master-protocol/): the five USDM files and what each step added, with the validator's own
+  counts read from the committed executed validation notebooks; the mapping decisions per step from
+  the mapping logs; the method with links to its scripts and notebooks; the breakpoint table
+  (output_remapcap/step5/breakpoints.csv). The USDM JSON files themselves are not committed.
 - docs/templates/remapcap-dsa/index.html: the DSA template REMAP-CAP uses but no document states,
   read from the headings of its nine DSAs (remapcap-design-modules/output/step1/headings.csv, no text):
   one row per title key found in two or more DSAs, one column per DSA with that DSA's section
@@ -79,6 +84,55 @@ RDSA_INPUTS = {
     "headings": "remapcap-design-modules/output/step1/headings.csv",
     "documents": "remapcap-design-modules/output/documents.csv",
 }
+UMP = "usdm-master-protocol/"
+USDM_FILES = [
+    # case, step, file name, what the step added, mapping log, validation folder, building notebook
+    ("REMAP-CAP", "Step 3", "remapcap_usdm.json",
+     "Core 4.0, PANDA 1.0 and the Corticosteroid DSA 6 as three documents (Core childIds = PANDA, DSA); eligibility, objectives and endpoints, arms and interventions of the Corticosteroid domain; PANDA section text",
+     "output_remapcap/step3/mapping_log.csv", "output_remapcap/step4", "notebooks/03_remapcap_usdm.ipynb"),
+    ("REMAP-CAP", "Step 5", "remapcap_usdm_v2.json",
+     "plus Core 4.1 as a new document version and StudyVersion 2 with a StudyAmendment",
+     "output_remapcap/step5/mapping_log_step5.csv", "output_remapcap/step5/validation",
+     "notebooks/05_remapcap_amendment_breakpoints.ipynb"),
+    ("REMAP-CAP", "Step 6", "remapcap_usdm_v3.json",
+     "plus the section text of Core 4.0, Core 4.1 and the Corticosteroid DSA 6 as NarrativeContent",
+     "output_remapcap/step6/mapping_log_step6.csv", "output_remapcap/step6/validation", "notebooks/06_remapcap_narrative.ipynb"),
+    ("CPMP", "Step 3", "cpmp_usdm.json",
+     "one Study with 13 documents (master childIds = the 12 ISAs; the three DSAs logged as not public), document versions with approval dates, the section text of all 13 as NarrativeContent",
+     "output_cpmp/step3/mapping_log.csv", "output_cpmp/step3/validation", "notebooks/12_cpmp_usdm.ipynb"),
+    ("CPMP", "Step 4", "cpmp_usdm_v2.json",
+     "plus the 12 amendments, one StudyChange per row of each Summary of Changes table, pointing at the amended section",
+     "output_cpmp/step4/mapping_log_step4.csv", "output_cpmp/step4/validation", "notebooks/13_cpmp_amendments.ipynb"),
+]
+BREAKPOINTS = UMP + "output_remapcap/step5/breakpoints.csv"
+USDM_METHOD = [
+    ("Read the documents",
+     "Table of contents, headings and section text from the PDF text layer; for CPMP, letter-spaced pages with word "
+     "boundaries from OCR aligned line by line, and section numbers from the printed body heading. The cross-layer "
+     "statements (\"as specified in the Core Protocol\", \"will be specified in the DSA\") by phrase rules, with "
+     "direction and overridable defaults.",
+     ["scripts/10_cpmp_page_text.py", "notebooks/02_remapcap_structure.ipynb", "notebooks/11_cpmp_structure.ipynb"]),
+    ("Map to USDM v4.0.0",
+     "Model and controlled terminology pinned from usdm-rdf (DDF-RA v4.0.0). A value only where the document states "
+     "it; a required attribute with no source is left out and logged; one mapping-log row per decision, with evidence. "
+     "Structure decisions by Kerstin, recorded in the README.",
+     ["notebooks/03_remapcap_usdm.ipynb", "notebooks/12_cpmp_usdm.ipynb"]),
+    ("Validate",
+     "The usdm-rdf validator notebook, run unchanged: references, structural SHACL shapes, terminology. Every "
+     "structural finding is checked against the absences the mapping logged.",
+     ["scripts/04_run_usdm_rdf_validator.py"]),
+    ("Amendments",
+     "REMAP-CAP: Core 4.1 as a second study version, with a section-level diff of 4.0 and 4.1. CPMP: the Summary of "
+     "Changes tables read cell by cell, with rules and redaction bars from the rendered page and every cell checked "
+     "against OCR.",
+     ["notebooks/05_remapcap_amendment_breakpoints.ipynb", "scripts/13_cpmp_amendment_tables.py",
+      "notebooks/13_cpmp_amendments.ipynb"]),
+    ("Section text", "One NarrativeContent per numbered section, in document order.",
+     ["notebooks/06_remapcap_narrative.ipynb"]),
+    ("Breakpoints",
+     "What the mapping logs marked not expressible, or possible only by copying or convention, collected with evidence.",
+     ["notebooks/05_remapcap_amendment_breakpoints.ipynb"]),
+]
 EUP_DIR = "eupearl-templates/output_eupearl/"
 EUP_INPUTS = {
     "sections": EUP_DIR + "sections.csv",
@@ -114,6 +168,7 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0
        padding: 0.05rem 0.3rem; border-radius: 3px; overflow-wrap: anywhere; }
 .muted { color: var(--muted); font-size: 0.9rem; }
 .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.8rem; }
+.cards.four { grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 0.8rem 1rem; }
 .card h3 { margin: 0 0 0.3rem; font-size: 1rem; line-height: 1.35; }
 .card h3 a { text-decoration: none; }
@@ -153,6 +208,8 @@ body.data .key { display: inline-block; }
 .side .box { font-size: 0.82rem; }
 .side .rel { font-size: 0.75rem; color: var(--muted); align-self: center; }
 .side .empty { border: 1.5px dashed var(--line); border-radius: 5px; }
+th.area { text-align: left; background: var(--card); font-size: 0.85rem; }
+td.num { text-align: right; white-space: nowrap; }
 table.matrix td.num { text-align: center; white-space: nowrap; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8rem; }
 table.matrix td.miss { border-left: 1px dashed var(--line); border-right: 1px dashed var(--line); }
 table.matrix td.miss span { display: block; border: 1.5px dashed var(--line); border-radius: 3px; height: 1.1rem; }
@@ -207,7 +264,7 @@ def page(title, depth, body, wide=False, inputs=None):
 </head>
 <body>
 <main{' class="wide"' if wide else ''}>
-<nav><a href="{up}">Early clinical design research</a> · <a href="{up}questions/">Questions</a> · <a href="{up}cases/">Cases</a> · <a href="{up}templates/">Templates</a> · <a href="{up}vision/">Vision</a> · <a href="{REPO}">repository</a></nav>
+<nav><a href="{up}">Early clinical design research</a> · <a href="{up}questions/">Questions</a> · <a href="{up}cases/">Cases</a> · <a href="{up}usdm/">USDM</a> · <a href="{up}templates/">Templates</a> · <a href="{up}vision/">Vision</a> · <a href="{REPO}">repository</a></nav>
 {body}
 </main>
 <footer{' class="wide"' if wide else ''}>Generated by <a href="{BLOB}{SCRIPT}">{SCRIPT}</a> from {prov}. Namespace for now:
@@ -256,6 +313,7 @@ if DOCS.exists():
     shutil.rmtree(DOCS)
 (DOCS / "questions").mkdir(parents=True)
 (DOCS / "vision").mkdir(parents=True)
+(DOCS / "usdm").mkdir(parents=True)
 (DOCS / "cases" / "cpmp").mkdir(parents=True)
 (DOCS / "cases" / "remapcap").mkdir(parents=True)
 (DOCS / "templates" / "eupearl").mkdir(parents=True)
@@ -679,6 +737,112 @@ sw.addEventListener('change', () => document.body.classList.toggle('data', sw.ch
 (DOCS / "templates" / "remapcap-dsa" / "index.html").write_text(
     page("REMAP-CAP: the DSA template", 2, rdsa_body, wide=True, inputs=list(RDSA_INPUTS.values())), encoding="utf-8")
 
+# USDM page
+VAL_PATTERNS = {
+    "objects": r"typed objects:\s+(\d+)",
+    "triples": r"instance triples:\s+(\d+)",
+    "refs": r"cross-references:\s+(\d+), dangling: (\d+)",
+    "structural": r"structural\s+conforms=(\w+)\s+findings=(\d+)",
+    "terminology": r"terminology\s+conforms=(\w+)",
+}
+
+
+def validator_output(folder):
+    nb = json.loads((ROOT / UMP / folder / "60_validate_remapcap.ipynb").read_text(encoding="utf-8"))
+    text = "".join("".join(o.get("text", [])) for c in nb["cells"] for o in c.get("outputs", []))
+    out = {}
+    for k, pat in VAL_PATTERNS.items():
+        m = re.findall(pat, text)
+        assert len(m) == 1, (folder, k, m)
+        out[k] = m[0]
+    return out
+
+
+usdm_inputs = [BREAKPOINTS]
+file_rows, log_rows = [], []
+log_status = set()
+logs = {}
+for case, step, name, added, log, val, nbk in USDM_FILES:
+    v = validator_output(val)
+    sf = pd.read_csv(ROOT / UMP / val / "shacl_findings.csv", dtype=str)
+    assert len(sf) == int(v["structural"][1]) and set(zip(sf.layer, sf.constraint)) <= {("structural", "MinCount")}, val
+    lg = pd.read_csv(ROOT / UMP / log, dtype=str)
+    logs[(case, step)] = lg.status.value_counts()
+    log_status |= set(lg.status)
+    usdm_inputs += [UMP + log, UMP + val + "/60_validate_remapcap.ipynb"]
+    file_rows.append(f"""<tr><td>{case}</td><td>{step}</td><td><code>{name}</code><br><span class="muted">built by
+<a href="{BLOB}{UMP}{nbk}">{nbk.split('/')[-1]}</a></span></td><td>{esc(added)}</td>
+<td class="num">{int(v['objects']):,}</td><td class="num">{int(v['triples']):,}</td>
+<td class="num">{int(v['refs'][0]):,} / {v['refs'][1]}</td>
+<td class="num"><a href="{BLOB}{UMP}{val}/shacl_findings.csv">{v['structural'][1]}</a></td>
+<td>{'conforms' if v['terminology'] == 'True' else 'does not conform'}</td></tr>""")
+STATUS_ORDER = ["mapped", "mapped_copy_from_core", "derived", "required_not_in_document", "not_in_document",
+                "not_expressible", "ambiguous_in_document", "redacted_in_document", "deferred", "not_a_change"]
+assert log_status <= set(STATUS_ORDER), log_status - set(STATUS_ORDER)
+used_status = [x for x in STATUS_ORDER if x in log_status]
+log_head = "".join(f'<th class="dsa">{x.replace("_", " ")}</th>' for x in used_status)
+for case, step, name, added, log, val, nbk in USDM_FILES:
+    c = logs[(case, step)]
+    log_rows.append(f'<tr><td>{case}</td><td><a href="{BLOB}{UMP}{log}">{step}</a></td>'
+                    + "".join(f'<td class="num">{c.get(x, "")}</td>' for x in used_status)
+                    + f'<td class="num">{c.sum()}</td></tr>')
+method_items = "".join(
+    f'<li><b>{esc(t)}.</b> {esc(d)} <span class="muted">'
+    + " · ".join(f'<a href="{BLOB}{UMP}{x}">{x.split("/")[-1]}</a>' for x in links) + "</span></li>"
+    for t, d, links in USDM_METHOD)
+for _, _, links in USDM_METHOD:
+    for x in links:
+        assert (ROOT / UMP / x).exists(), x
+bp = pd.read_csv(ROOT / BREAKPOINTS, dtype=str).fillna("")
+assert bp.id.is_unique
+bp_kinds = bp.groupby(["area", "kind"], sort=False).size().unstack(fill_value=0)
+bp_rows = []
+for area, sub in bp.groupby("area", sort=False):
+    bp_rows.append(f'<tr><th colspan="5" class="area">{esc(area)}</th></tr>')
+    for r in sub.itertuples():
+        note = f'<br><span class="muted">{esc(r.cpmp_note)}</span>' if r.cpmp_note else ""
+        bp_rows.append(f'<tr><td class="item">{esc(r.id)}</td><td><span class="chip">{esc(r.kind)}</span></td>'
+                       f'<td>{esc(r.breakpoint)}</td><td><code>{esc(r.usdm_element)}</code></td>'
+                       f'<td>{esc(r.evidence_remapcap)}{note}</td></tr>')
+kinds_line = "; ".join(f"{k} {int((bp.kind == k).sum())}" for k in ["model", "mapping", "content"])
+usdm_body = f"""<h1>USDM v4 and master protocols</h1>
+<p>The first round of this work asked whether USDM v4 can carry a master protocol. Both cases were built as USDM v4.0.0
+JSON from their documents, step by step, and checked with the <a href="https://w3id.org/cdisc/usdm/v4/">usdm-rdf</a>
+validator. What USDM could not express is collected as a table of breakpoints. The design modules were built next to
+USDM for what it cannot carry.</p>
+<p class="muted">Folder: <a href="{BLOB}{UMP}README.md">usdm-master-protocol/</a> (its README records each step and
+decision). The USDM JSON files are not published, since they hold whole-document text; the notebooks re-create them
+from the source documents. The counts below are the validator's own, read from the executed validation notebooks.</p>
+<h2>What we have</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Case</th><th>Step</th><th>File</th><th>What the step added</th><th>Objects</th><th>Triples</th>
+<th>References / dangling</th><th>Structural findings</th><th>Terminology</th></tr></thead>
+<tbody>{''.join(file_rows)}</tbody></table></div>
+<p class="muted">Structural findings are all missing required attributes (MinCount); each one is an absence the mapping
+logged (required but not in the document, or not expressible), not an error in the file.</p>
+<p>The Schedules of Activities are the other half. The 13 CPMP schedules (master and 12 ISAs) are extracted to USDM by
+<a href="https://github.com/kerfors/soa2usdm">soa2usdm</a>, in
+<a href="https://kerfors.github.io/soa2usdm-collections/collections/cpmp/protocols/index.html">soa2usdm-collections</a>,
+kept separate and not yet joined into the CPMP Study above. REMAP-CAP has no schedule tables.</p>
+<h2>Method</h2>
+<ol>{method_items}</ol>
+<p class="muted">Every notebook is generated by a script and was run twice, in a cloud workspace and on a Mac, with
+byte-identical outputs.</p>
+<h3>Mapping decisions per step</h3>
+<div class="table-wrap"><table class="matrix">
+<thead><tr><th>Case</th><th>Mapping log</th>{log_head}<th class="dsa">rows</th></tr></thead>
+<tbody>{''.join(log_rows)}</tbody></table></div>
+<h2>What it showed: {len(bp)} breakpoints</h2>
+<p>Where USDM v4.0.0 could not carry the master protocols. Kind: <i>model</i>, USDM cannot express it; <i>mapping</i>,
+only by copying or convention; <i>content</i>, the protocol does not state it. {kinds_line}. Evidence from REMAP-CAP,
+with the CPMP counterpart where there is one (<a href="{BLOB}{BREAKPOINTS}">breakpoints.csv</a>).</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Id</th><th>Kind</th><th>Breakpoint</th><th>USDM element</th><th>Evidence</th></tr></thead>
+<tbody>{''.join(bp_rows)}</tbody></table></div>
+"""
+(DOCS / "usdm" / "index.html").write_text(
+    page("USDM v4 and master protocols", 1, usdm_body, wide=True, inputs=usdm_inputs), encoding="utf-8")
+
 # Area pages and landing page
 def area_card(href, title, lines):
     return (f'<div class="card"><h3><a href="{href}">{html.escape(title)}</a></h3>'
@@ -723,6 +887,8 @@ landing_cards = [
                f"{n_kind.get('case question', 0)} case questions and {n_kind.get('open', 0)} open questions"]),
     area_card("cases/", "The two cases",
               [f"CPMP: master and {len(grid)} ISAs", f"REMAP-CAP: {len(rdocs)} documents read"]),
+    area_card("usdm/", "USDM v4 and master protocols",
+              [f"Both cases as USDM v4 JSON, validated; {len(bp)} breakpoints where USDM could not carry them"]),
     area_card("templates/", "Templates as data",
               [f"EU-PEARL: {len(tot)} templates with their heading trees, MPT and ISA side by side",
                f"REMAP-CAP: the DSA template read from {len(dsa_keys)} DSAs"]),
@@ -741,7 +907,7 @@ intro_html = re.sub(r'<p><strong>Where this is heading:</strong>.*?</p>',
                     f'<p class="lead"><a href="vision/"><b>Where this is heading</b></a>:{heading_p[0]}</p>', intro_html, flags=re.S)
 index_body = f"""<h1>Early clinical design research</h1>
 {intro_html}
-<div class="cards">{''.join(landing_cards)}</div>
+<div class="cards four">{''.join(landing_cards)}</div>
 """
 (DOCS / "index.html").write_text(page("Early clinical design research", 0, index_body), encoding="utf-8")
 

@@ -24,6 +24,7 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0
        padding: 0.05rem 0.3rem; border-radius: 3px; overflow-wrap: anywhere; }
 .muted { color: var(--muted); font-size: 0.9rem; }
 .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.8rem; }
+.cards.four { grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 0.8rem 1rem; }
 .card h3 { margin: 0 0 0.3rem; font-size: 1rem; line-height: 1.35; }
 .card h3 a { text-decoration: none; }
@@ -63,6 +64,8 @@ body.data .key { display: inline-block; }
 .side .box { font-size: 0.82rem; }
 .side .rel { font-size: 0.75rem; color: var(--muted); align-self: center; }
 .side .empty { border: 1.5px dashed var(--line); border-radius: 5px; }
+th.area { text-align: left; background: var(--card); font-size: 0.85rem; }
+td.num { text-align: right; white-space: nowrap; }
 table.matrix td.num { text-align: center; white-space: nowrap; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8rem; }
 table.matrix td.miss { border-left: 1px dashed var(--line); border-right: 1px dashed var(--line); }
 table.matrix td.miss span { display: block; border: 1.5px dashed var(--line); border-radius: 3px; height: 1.1rem; }
@@ -83,7 +86,7 @@ footer { max-width: 64rem; margin: 0 auto; padding: 0 1rem 2rem; color: var(--mu
 </head>
 <body>
 <main class="wide">
-<nav><a href="../../">Early clinical design research</a> · <a href="../../questions/">Questions</a> · <a href="../../cases/">Cases</a> · <a href="../../templates/">Templates</a> · <a href="../../vision/">Vision</a> · <a href="https://github.com/kerfors/early-clinical-design-research">repository</a></nav>
+<nav><a href="../../">Early clinical design research</a> · <a href="../../questions/">Questions</a> · <a href="../../cases/">Cases</a> · <a href="../../usdm/">USDM</a> · <a href="../../templates/">Templates</a> · <a href="../../vision/">Vision</a> · <a href="https://github.com/kerfors/early-clinical-design-research">repository</a></nav>
 <h1>REMAP-CAP: the DSA template no document states</h1>
 <p>Each REMAP-CAP domain-specific appendix (DSA) follows a common structure, but no REMAP-CAP document gives that
 structure as a template. Here it is read from the headings of the nine DSAs read in this work: 581 headings

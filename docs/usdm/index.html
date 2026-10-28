@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>USDM v4 and master protocols</title>
+<style>
+:root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f6368; --line: #dadce0; --link: #1a5fb4;
+        --code: #f3f4f6; --card: #f8f9fb; --chip: #eef1f5; --wait: #8a5a00; --wait-bg: #fff4dc; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #16181c; --fg: #e8eaed; --muted: #9aa0a6; --line: #3c4043;
+    --link: #8ab4f8; --code: #23262b; --card: #1d2025; --chip: #2a2e35; --wait: #f2c46d; --wait-bg: #3a2f17; }
+}
+:root[data-theme="dark"] { --bg: #16181c; --fg: #e8eaed; --muted: #9aa0a6; --line: #3c4043;
+  --link: #8ab4f8; --code: #23262b; --card: #1d2025; --chip: #2a2e35; --wait: #f2c46d; --wait-bg: #3a2f17; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; margin: 0; }
+main { max-width: 64rem; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+a { color: var(--link); }
+nav { font-size: 0.9rem; color: var(--muted); margin-bottom: 1rem; }
+h1 { font-size: 1.6rem; margin: 0.2rem 0 0.6rem; }
+h2 { font-size: 1.15rem; margin-top: 2rem; border-bottom: 1px solid var(--line); padding-bottom: 0.2rem; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.88rem; background: var(--code);
+       padding: 0.05rem 0.3rem; border-radius: 3px; overflow-wrap: anywhere; }
+.muted { color: var(--muted); font-size: 0.9rem; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.8rem; }
+.cards.four { grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 0.8rem 1rem; }
+.card h3 { margin: 0 0 0.3rem; font-size: 1rem; line-height: 1.35; }
+.card h3 a { text-decoration: none; }
+.card .qid { color: var(--muted); font-weight: 600; margin-right: 0.3rem; }
+.card p { margin: 0.3rem 0; font-size: 0.88rem; }
+.chip { display: inline-block; background: var(--chip); border-radius: 3px; padding: 0 0.35rem; margin: 0 0.25rem 0.2rem 0;
+        font-size: 0.8rem; white-space: nowrap; }
+.wait { background: var(--wait-bg); color: var(--wait); }
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 0.88rem; }
+th, td { border-bottom: 1px solid var(--line); padding: 0.4rem 0.5rem; text-align: left; vertical-align: top; }
+th { color: var(--muted); font-weight: 600; }
+td.item { white-space: nowrap; }
+td .chip { white-space: normal; }
+tr.answered td:first-child { border-left: 3px solid var(--fg); }
+tr.unanswered td:first-child { border-left: 3px dashed var(--muted); }
+tr.unanswered td { color: var(--muted); }
+main.wide, footer.wide { max-width: 84rem; }
+.layer { display: grid; gap: 0.5rem; margin: 0.6rem 0 1.2rem; }
+.box { border: 1.5px solid var(--fg); border-radius: 5px; padding: 0.45rem 0.6rem; font-size: 0.85rem; background: var(--card); }
+.box.dashed { border-style: dashed; border-color: var(--muted); color: var(--muted); background: transparent; }
+.box b { display: block; font-size: 0.92rem; }
+.box .muted { font-size: 0.8rem; }
+.grid4 { display: grid; grid-template-columns: 9rem repeat(4, minmax(7rem, 1fr)); gap: 0.5rem; align-items: stretch; }
+.grid4 .head { font-size: 0.8rem; color: var(--muted); font-weight: 600; align-self: end; }
+.dsa3 { grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); }
+.core2 { grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); }
+.switch { position: sticky; top: 0; background: var(--bg); padding: 0.5rem 0; border-bottom: 1px solid var(--line);
+          z-index: 2; font-size: 0.9rem; }
+.key { display: none; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.75rem; color: var(--link);
+       background: var(--code); border-radius: 3px; padding: 0 0.3rem; margin-left: 0.3rem; }
+body.data .key { display: inline-block; }
+.rel .key { overflow-wrap: anywhere; max-width: 100%; }
+.chip.change { background: transparent; border: 1px solid var(--line); }
+.side { display: grid; grid-template-columns: minmax(0, 1fr) 9.5rem minmax(0, 1fr); gap: 0.3rem 0.5rem; min-width: 46rem; }
+.side .colhead { font-size: 1.05rem; color: var(--fg); font-weight: 700; padding-bottom: 0.2rem; }
+.side .box { font-size: 0.82rem; }
+.side .rel { font-size: 0.75rem; color: var(--muted); align-self: center; }
+.side .empty { border: 1.5px dashed var(--line); border-radius: 5px; }
+th.area { text-align: left; background: var(--card); font-size: 0.85rem; }
+td.num { text-align: right; white-space: nowrap; }
+table.matrix td.num { text-align: center; white-space: nowrap; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8rem; }
+table.matrix td.miss { border-left: 1px dashed var(--line); border-right: 1px dashed var(--line); }
+table.matrix td.miss span { display: block; border: 1.5px dashed var(--line); border-radius: 3px; height: 1.1rem; }
+table.matrix th.dsa { text-align: center; font-size: 0.8rem; vertical-align: bottom; }
+table.matrix th .dname { font-weight: 400; font-size: 0.72rem; color: var(--muted); }
+table.matrix td.title { min-width: 16rem; }
+details.own summary { cursor: pointer; font-weight: 600; margin: 0.4rem 0; }
+.lead { border-left: 3px solid var(--link); background: var(--card); padding: 0.6rem 0.9rem; margin: 1rem 0; }
+.lv2 { margin-left: 0.8rem; } .lv3 { margin-left: 1.6rem; } .lv4 { margin-left: 2.4rem; }
+.tree .box { margin: 0.25rem 0; }
+.slotbox { border: 1.5px dashed var(--muted); border-radius: 3px; min-height: 1.6rem; padding: 0.15rem 0.4rem;
+           font-size: 0.8rem; color: var(--muted); }
+.fields { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0.3rem 0.8rem; align-items: center; font-size: 0.85rem; }
+@media (max-width: 40rem) { .fields { grid-template-columns: 1fr; } }
+footer { max-width: 64rem; margin: 0 auto; padding: 0 1rem 2rem; color: var(--muted); font-size: 0.8rem; overflow-wrap: anywhere; }
+@media (max-width: 40rem) { main { padding: 1rem 1rem 2rem; } }
+</style>
+</head>
+<body>
+<main class="wide">
+<nav><a href="../">Early clinical design research</a> · <a href="../questions/">Questions</a> · <a href="../cases/">Cases</a> · <a href="../usdm/">USDM</a> · <a href="../templates/">Templates</a> · <a href="../vision/">Vision</a> · <a href="https://github.com/kerfors/early-clinical-design-research">repository</a></nav>
+<h1>USDM v4 and master protocols</h1>
+<p>The first round of this work asked whether USDM v4 can carry a master protocol. Both cases were built as USDM v4.0.0
+JSON from their documents, step by step, and checked with the <a href="https://w3id.org/cdisc/usdm/v4/">usdm-rdf</a>
+validator. What USDM could not express is collected as a table of breakpoints. The design modules were built next to
+USDM for what it cannot carry.</p>
+<p class="muted">Folder: <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/README.md">usdm-master-protocol/</a> (its README records each step and
+decision). The USDM JSON files are not published, since they hold whole-document text; the notebooks re-create them
+from the source documents. The counts below are the validator's own, read from the executed validation notebooks.</p>
+<h2>What we have</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Case</th><th>Step</th><th>File</th><th>What the step added</th><th>Objects</th><th>Triples</th>
+<th>References / dangling</th><th>Structural findings</th><th>Terminology</th></tr></thead>
+<tbody><tr><td>REMAP-CAP</td><td>Step 3</td><td><code>remapcap_usdm.json</code><br><span class="muted">built by
+<a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/notebooks/03_remapcap_usdm.ipynb">03_remapcap_usdm.ipynb</a></span></td><td>Core 4.0, PANDA 1.0 and the Corticosteroid DSA 6 as three documents (Core childIds = PANDA, DSA); eligibility, objectives and endpoints, arms and interventions of the Corticosteroid domain; PANDA section text</td>
+<td class="num">139</td><td class="num">805</td>
+<td class="num">128 / 0</td>
+<td class="num"><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/output_remapcap/step4/shacl_findings.csv">30</a></td>
+<td>conforms</td></tr><tr><td>REMAP-CAP</td><td>Step 5</td><td><code>remapcap_usdm_v2.json</code><br><span class="muted">built by
+<a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/notebooks/05_remapcap_amendment_breakpoints.ipynb">05_remapcap_amendment_breakpoints.ipynb</a></span></td><td>plus Core 4.1 as a new document version and StudyVersion 2 with a StudyAmendment</td>
+<td class="num">281</td><td class="num">1,504</td>
+<td class="num">209 / 0</td>
+<td class="num"><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/output_remapcap/step5/validation/shacl_findings.csv">90</a></td>
+<td>conforms</td></tr><tr><td>REMAP-CAP</td><td>Step 6</td><td><code>remapcap_usdm_v3.json</code><br><span class="muted">built by
+<a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/notebooks/06_remapcap_narrative.ipynb">06_remapcap_narrative.ipynb</a></span></td><td>plus the section text of Core 4.0, Core 4.1 and the Corticosteroid DSA 6 as NarrativeContent</td>
+<td class="num">940</td><td class="num">6,540</td>
+<td class="num">1,541 / 0</td>
+<td class="num"><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/output_remapcap/step6/validation/shacl_findings.csv">90</a></td>
+<td>conforms</td></tr><tr><td>CPMP</td><td>Step 3</td><td><code>cpmp_usdm.json</code><br><span class="muted">built by
+<a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/notebooks/12_cpmp_usdm.ipynb">12_cpmp_usdm.ipynb</a></span></td><td>one Study with 13 documents (master childIds = the 12 ISAs; the three DSAs logged as not public), document versions with approval dates, the section text of all 13 as NarrativeContent</td>
+<td class="num">1,716</td><td class="num">12,507</td>
+<td class="num">3,100 / 0</td>
+<td class="num"><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/output_cpmp/step3/validation/shacl_findings.csv">55</a></td>
+<td>conforms</td></tr><tr><td>CPMP</td><td>Step 4</td><td><code>cpmp_usdm_v2.json</code><br><span class="muted">built by
+<a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/notebooks/13_cpmp_amendments.ipynb">13_cpmp_amendments.ipynb</a></span></td><td>plus the 12 amendments, one StudyChange per row of each Summary of Changes table, pointing at the amended section</td>
+<td class="num">2,158</td><td class="num">14,706</td>
+<td class="num">3,305 / 0</td>
+<td class="num"><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/output_cpmp/step4/validation/shacl_findings.csv">102</a></td>
+<td>conforms</td></tr></tbody></table></div>
+<p class="muted">Structural findings are all missing required attributes (MinCount); each one is an absence the mapping
+logged (required but not in the document, or not expressible), not an error in the file.</p>
+<p>The Schedules of Activities are the other half. The 13 CPMP schedules (master and 12 ISAs) are extracted to USDM by
+<a href="https://github.com/kerfors/soa2usdm">soa2usdm</a>, in
+<a href="https://kerfors.github.io/soa2usdm-collections/collections/cpmp/protocols/index.html">soa2usdm-collections</a>,
+kept separate and not yet joined into the CPMP Study above. REMAP-CAP has no schedule tables.</p>
+<h2>Method</h2>
+<ol><li><b>Read the documents.</b> Table of contents, headings and section text from the PDF text layer; for CPMP, letter-spaced pages with word boundaries from OCR aligned line by line, and section numbers from the printed body heading. The cross-layer statements (&quot;as specified in the Core Protocol&quot;, &quot;will be specified in the DSA&quot;) by phrase rules, with direction and overridable defaults. <span class="muted"><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/scripts/10_cpmp_page_text.py">10_cpmp_page_text.py</a> · <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/notebooks/02_remapcap_structure.ipynb">02_remapcap_structure.ipynb</a> · <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/notebooks/11_cpmp_structure.ipynb">11_cpmp_structure.ipynb</a></span></li><li><b>Map to USDM v4.0.0.</b> Model and controlled terminology pinned from usdm-rdf (DDF-RA v4.0.0). A value only where the document states it; a required attribute with no source is left out and logged; one mapping-log row per decision, with evidence. Structure decisions by Kerstin, recorded in the README. <span class="muted"><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/notebooks/03_remapcap_usdm.ipynb">03_remapcap_usdm.ipynb</a> · <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/notebooks/12_cpmp_usdm.ipynb">12_cpmp_usdm.ipynb</a></span></li><li><b>Validate.</b> The usdm-rdf validator notebook, run unchanged: references, structural SHACL shapes, terminology. Every structural finding is checked against the absences the mapping logged. <span class="muted"><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/scripts/04_run_usdm_rdf_validator.py">04_run_usdm_rdf_validator.py</a></span></li><li><b>Amendments.</b> REMAP-CAP: Core 4.1 as a second study version, with a section-level diff of 4.0 and 4.1. CPMP: the Summary of Changes tables read cell by cell, with rules and redaction bars from the rendered page and every cell checked against OCR. <span class="muted"><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/notebooks/05_remapcap_amendment_breakpoints.ipynb">05_remapcap_amendment_breakpoints.ipynb</a> · <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/scripts/13_cpmp_amendment_tables.py">13_cpmp_amendment_tables.py</a> · <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/notebooks/13_cpmp_amendments.ipynb">13_cpmp_amendments.ipynb</a></span></li><li><b>Section text.</b> One NarrativeContent per numbered section, in document order. <span class="muted"><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/notebooks/06_remapcap_narrative.ipynb">06_remapcap_narrative.ipynb</a></span></li><li><b>Breakpoints.</b> What the mapping logs marked not expressible, or possible only by copying or convention, collected with evidence. <span class="muted"><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/notebooks/05_remapcap_amendment_breakpoints.ipynb">05_remapcap_amendment_breakpoints.ipynb</a></span></li></ol>
+<p class="muted">Every notebook is generated by a script and was run twice, in a cloud workspace and on a Mac, with
+byte-identical outputs.</p>
+<h3>Mapping decisions per step</h3>
+<div class="table-wrap"><table class="matrix">
+<thead><tr><th>Case</th><th>Mapping log</th><th class="dsa">mapped</th><th class="dsa">mapped copy from core</th><th class="dsa">derived</th><th class="dsa">required not in document</th><th class="dsa">not in document</th><th class="dsa">not expressible</th><th class="dsa">ambiguous in document</th><th class="dsa">redacted in document</th><th class="dsa">deferred</th><th class="dsa">not a change</th><th class="dsa">rows</th></tr></thead>
+<tbody><tr><td>REMAP-CAP</td><td><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/output_remapcap/step3/mapping_log.csv">Step 3</a></td><td class="num">44</td><td class="num">7</td><td class="num">9</td><td class="num">30</td><td class="num"></td><td class="num">9</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">99</td></tr><tr><td>REMAP-CAP</td><td><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/output_remapcap/step5/mapping_log_step5.csv">Step 5</a></td><td class="num">2</td><td class="num">6</td><td class="num">19</td><td class="num">39</td><td class="num"></td><td class="num">17</td><td class="num">1</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">84</td></tr><tr><td>REMAP-CAP</td><td><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/output_remapcap/step6/mapping_log_step6.csv">Step 6</a></td><td class="num"></td><td class="num"></td><td class="num">2</td><td class="num"></td><td class="num">53</td><td class="num">1</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">56</td></tr><tr><td>CPMP</td><td><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/output_cpmp/step3/mapping_log.csv">Step 3</a></td><td class="num">95</td><td class="num"></td><td class="num">17</td><td class="num">44</td><td class="num">43</td><td class="num">39</td><td class="num"></td><td class="num"></td><td class="num">2</td><td class="num"></td><td class="num">240</td></tr><tr><td>CPMP</td><td><a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/output_cpmp/step4/mapping_log_step4.csv">Step 4</a></td><td class="num">632</td><td class="num"></td><td class="num">28</td><td class="num">47</td><td class="num"></td><td class="num">17</td><td class="num"></td><td class="num">11</td><td class="num"></td><td class="num">1</td><td class="num">736</td></tr></tbody></table></div>
+<h2>What it showed: 21 breakpoints</h2>
+<p>Where USDM v4.0.0 could not carry the master protocols. Kind: <i>model</i>, USDM cannot express it; <i>mapping</i>,
+only by copying or convention; <i>content</i>, the protocol does not state it. model 14; mapping 3; content 4. Evidence from REMAP-CAP,
+with the CPMP counterpart where there is one (<a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/output_remapcap/step5/breakpoints.csv">breakpoints.csv</a>).</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Id</th><th>Kind</th><th>Breakpoint</th><th>USDM element</th><th>Evidence</th></tr></thead>
+<tbody><tr><th colspan="5" class="area">substudy unit</th></tr><tr><td class="item">BP01</td><td><span class="chip">model</span></td><td>No class for a domain / substudy. The Corticosteroid domain is a StudyDesign; the platform (Core) has no design of its own because StudyDesign needs arms, cells, epochs.</td><td><code>StudyVersion.studyDesigns; StudyDesign.arms 1..*</code></td><td>Step 3 decision; CORE 2.2.3 &#x27;Domain-Specific Appendices&#x27;<br><span class="muted">CPMP: master (NCT05986292) has no interventions of its own; each ISA is its own study with own NCT</span></td></tr><tr><th colspan="5" class="area">three layers</th></tr><tr><td class="item">BP02</td><td><span class="chip">model</span></td><td>Document hierarchy is expressible (Core childIds = PANDA, DSA), but appendices have no document type: value set C215477 has only &#x27;Protocol&#x27;.</td><td><code>StudyDefinitionDocument.childIds; StudyDefinitionDocument.type</code></td><td>CORE 2.2; PANDA and CS_DSA title pages<br><span class="muted">CPMP: same three layers (master, DSA CPMP(n), ISA)</span></td></tr><tr><td class="item">BP03</td><td><span class="chip">model</span></td><td>The population layer (PANDA: age strata, illness states) has no class; states are dynamic and allow re-randomisation. Kept as narrative.</td><td><code>StudyDesignPopulation.cohorts; StudyCohort</code></td><td>PANDA 2; PANDA 4.3; CS_DSA 8.1.1; CS_DSA 8.1.2<br><span class="muted">CPMP: DSA = disease-state layer (not public)</span></td></tr><tr><td class="item">BP04</td><td><span class="chip">mapping</span></td><td>The DSA reaches the population layer only through &#x27;Core Protocol documents&#x27; (13 uses); strata and states are defined in PANDA, not in the Core.</td><td><code>(no element)</code></td><td>CS_DSA 8.1.1; CS_DSA 8.1.2; CORE 7.8.3</td></tr><tr><th colspan="5" class="area">inherited content</th></tr><tr><td class="item">BP05</td><td><span class="chip">model</span></td><td>Inherited Core endpoint can only be copied into the domain design; Endpoint is composed (Value), not referenceable.</td><td><code>Objective.endpoints (Value)</code></td><td>CS_DSA 8.5.1; CORE 7.6.1<br><span class="muted">CPMP: ISA states objectives/endpoints are in master and DSA</span></td></tr><tr><td class="item">BP06</td><td><span class="chip">mapping</span></td><td>Domain eligibility = platform + domain criteria in one flat list; the layer survives only in EligibilityCriterion.identifier.</td><td><code>StudyDesign.eligibilityCriteria; StudyVersion.eligibilityCriterionItems</code></td><td>CS_DSA 8.2; CORE 7.4.1; CORE 7.4.2<br><span class="muted">CPMP: ISA eligibility delegates to master and DSA</span></td></tr><tr><td class="item">BP07</td><td><span class="chip">model</span></td><td>Core defaults that a DSA may override (&#x27;unless otherwise specified in a DSA&#x27;, 6 statements) and delegations to DSAs (15) have no representation.</td><td><code>(no element)</code></td><td>CORE 7.5.2; CORE 7.6; CORE 7.8.7</td></tr><tr><td class="item">BP08</td><td><span class="chip">model</span></td><td>Intervention-level exclusion conditional on site regulatory approval (pregnancy, dexamethasone).</td><td><code>EligibilityCriterion (design level only)</code></td><td>CS_DSA 8.2.3</td></tr><tr><td class="item">BP09</td><td><span class="chip">model</span></td><td>Arm available only in one illness state (hydrocortisone, Severe State only).</td><td><code>StudyArm; StudyCell</code></td><td>CS_DSA 8.3.3</td></tr><tr><th colspan="5" class="area">version granularity</th></tr><tr><td class="item">BP10</td><td><span class="chip">model</span></td><td>No binding of a DSA version to a Core version; DSA references are unversioned (&#x27;the Core Protocol&#x27;).</td><td><code>StudyVersion.documentVersionIds; StudyDefinitionDocument.childIds</code></td><td>CS_DSA 2; PANDA 6</td></tr><tr><td class="item">BP11</td><td><span class="chip">model</span></td><td>A Core amendment changes the effective primary endpoint of an unchanged DSA (V4.1 transition rule); StudyAmendment/StudyChange can only cite Core sections.</td><td><code>StudyAmendment.changes; StudyChange.changedSections</code></td><td>CORE_41 7.6.2; CORE_41 7.6.1; CS_DSA 8.5.1</td></tr><tr><td class="item">BP12</td><td><span class="chip">model</span></td><td>DocumentContentReference.appliesToId points to the document, not to a document version.</td><td><code>DocumentContentReference.appliesToId</code></td><td>Step 5 StudyChange_1..</td></tr><tr><td class="item">BP13</td><td><span class="chip">mapping</span></td><td>A new Core version needs a complete new StudyVersion; unchanged DSA content is copied (16 criteria, 3 interventions, 3 arms).</td><td><code>Study.versions; StudyVersion (composition)</code></td><td>Step 5 StudyVersion 2</td></tr><tr><td class="item">BP14</td><td><span class="chip">model</span></td><td>Master Protocol Indicator: both published M11 mappings (HL7 CSP IG ballot May 2026 row 83, DDF-RA v4.0.0 row 88) target StudyDefinitionDocumentVersion.children, the location before DDF-RA #614 (closed) moved it to the document; in v4.0.0 only StudyDefinitionDocument.childIds can carry it, the same for every version.</td><td><code>StudyDefinitionDocument.childIds</code></td><td>m11-rdf reports/d2-residue.csv</td></tr><tr><td class="item">BP15</td><td><span class="chip">content</span></td><td>Version histories give version numbers and approval dates only: no amendment summary, reason, scope or change rationale.</td><td><code>StudyAmendment.summary, primaryReason, geographicScopes; StudyChange.summary, rationale</code></td><td>CORE 2.2.9; CORE_41 2.2.9; CS_DSA 3.1<br><span class="muted">CPMP: ISA and master posted with amendment summary tables</span></td></tr><tr><td class="item">BP16</td><td><span class="chip">content</span></td><td>Website listing and document content disagree (COVID-19 Antiviral II current V1.1 older than superseded V2; Immunoglobulin 2.2 file date vs document date); V4.1 TOC misses 7.6.3 and 7.6.4.</td><td><code>(source quality)</code></td><td>remapcap_inventory.csv; CORE_41 7.6.2</td></tr><tr><td class="item">BP17</td><td><span class="chip">model</span></td><td>Versions branch by region (Immunoglobulin 2.2 Canada, 2.3 USA, 2.4.2 AUS, 2.5 NZ; Core 3.1 UK); Study.versions has no predecessor link and no branch or region qualifier.</td><td><code>Study.versions; StudyVersion.versionIdentifier</code></td><td>remapcap_inventory.csv</td></tr><tr><th colspan="5" class="area">substudy identity</th></tr><tr><td class="item">BP18</td><td><span class="chip">model</span></td><td>One registry entry for the whole platform (NCT02735707); a domain has no identifier of its own.</td><td><code>StudyIdentifier (StudyVersion level only)</code></td><td>CORE 2.4<br><span class="muted">CPMP: opposite pattern, master and each ISA have own NCT (FDA Master Protocols guidance Appendix C)</span></td></tr><tr><td class="item">BP19</td><td><span class="chip">content</span></td><td>Universal Trial Number stated, issuing organization not; registry organization identifier not stated.</td><td><code>StudyIdentifier.scopeId; Organization.identifier</code></td><td>CORE 2.4</td></tr><tr><th colspan="5" class="area">codes</th></tr><tr><td class="item">BP20</td><td><span class="chip">model</span></td><td>Code.codeSystemVersion is 1..1; no CT package date in any source. Value records where the code came from.</td><td><code>Code.codeSystemVersion</code></td><td>Step 3 code helper</td></tr><tr><th colspan="5" class="area">content gaps</th></tr><tr><td class="item">BP21</td><td><span class="chip">content</span></td><td>Required, not stated in the documents: design model, rationale, epochs, cells; arm type; intervention role and type (&#x27;No corticosteroid&#x27; has no substance); endpoint purpose; domain objective level; template name.</td><td><code>see mapping_log.csv</code></td><td>Step 3 mapping_log.csv</td></tr></tbody></table></div>
+
+</main>
+<footer class="wide">Generated by <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/scripts/build_site.py">scripts/build_site.py</a> from <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/output_remapcap/step5/breakpoints.csv">usdm-master-protocol/output_remapcap/step5/breakpoints.csv</a>; <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/output_remapcap/step3/mapping_log.csv">usdm-master-protocol/output_remapcap/step3/mapping_log.csv</a>; <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/output_remapcap/step4/60_validate_remapcap.ipynb">usdm-master-protocol/output_remapcap/step4/60_validate_remapcap.ipynb</a>; <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/output_remapcap/step5/mapping_log_step5.csv">usdm-master-protocol/output_remapcap/step5/mapping_log_step5.csv</a>; <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/output_remapcap/step5/validation/60_validate_remapcap.ipynb">usdm-master-protocol/output_remapcap/step5/validation/60_validate_remapcap.ipynb</a>; <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/output_remapcap/step6/mapping_log_step6.csv">usdm-master-protocol/output_remapcap/step6/mapping_log_step6.csv</a>; <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/output_remapcap/step6/validation/60_validate_remapcap.ipynb">usdm-master-protocol/output_remapcap/step6/validation/60_validate_remapcap.ipynb</a>; <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/output_cpmp/step3/mapping_log.csv">usdm-master-protocol/output_cpmp/step3/mapping_log.csv</a>; <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/output_cpmp/step3/validation/60_validate_remapcap.ipynb">usdm-master-protocol/output_cpmp/step3/validation/60_validate_remapcap.ipynb</a>; <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/output_cpmp/step4/mapping_log_step4.csv">usdm-master-protocol/output_cpmp/step4/mapping_log_step4.csv</a>; <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/usdm-master-protocol/output_cpmp/step4/validation/60_validate_remapcap.ipynb">usdm-master-protocol/output_cpmp/step4/validation/60_validate_remapcap.ipynb</a>. Namespace for now:
+<code>https://kerfors.github.io/early-clinical-design-research/</code>. Code MIT, derived content CC BY 4.0.</footer>
+</body>
+</html>
