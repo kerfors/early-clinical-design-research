@@ -5,10 +5,14 @@ eligibility criteria, arms and doses, endpoints and instruments, schedule cells,
 carries that content as reusable units with one identity across trials and versions, or records who decides what at
 which layer.
 
-The idea is design content as modules of components: one identity per component, wherever it occurs; explicit
-relations between layers (inherits, delegates, overridable default, restates, extends, overrides); a binding to the
-version of the layer a component depends on; and decisions as objects of their own: who decides, at which layer,
-bound to what, with which alternatives and arguments.
+## First step: design content as Linked Data
+
+The idea is design content as components, each with its own identifier, wherever it occurs. The relations are then
+statements between identifiers: between layers (inherits, delegates, overridable default, restates, extends,
+overrides), to the version of the layer a component depends on, and to decisions as objects of their own: who
+decides, at which layer, bound to what, with which alternatives and arguments. Together these statements form a
+graph. Published as Linked Data, with identifiers that resolve as in [m11-rdf](https://w3id.org/m11-rdf/), the graph
+can be read and queried across trials and programmes.
 
 The future this points to:
 
@@ -20,7 +24,7 @@ The future this points to:
 5. **Evolution is native.** An amendment changes a component or a decision, and every user of it is listed, to
    rebind or to stay.
 
-## After components: the ontologies behind the content
+## Next step: the ontologies behind the content
 
 Components in a graph are only a first part. Behind the content are classes and relations: an objective, the
 endpoint that measures it, the procedure that produces the data, a specimen taken during it, an assessment, and its
@@ -39,9 +43,9 @@ authored class an upstream parent. Making a model precise enough for a machine a
 not, in the documents and in the ontologies reused.
 
 The design modules here are test cases on the way, not that ontology. They anchor their classes in 16 terms from OBI
-(with IAO and BFO), MONDO and HP and pass an OWL 2 DL check; no ontologist has reviewed them yet. Published as Linked
-Data, with identifiers that resolve as in [m11-rdf](https://w3id.org/m11-rdf/), they would let the questions here be
-asked across programmes.
+(with IAO and BFO), MONDO and HP and pass an OWL 2 DL check; no ontologist has reviewed them yet.
+
+## Earlier work
 
 Earlier work pointed in this direction. The EFPIA Smart Program Design team (2013) named the gap: industry standards
 do not cover the programme level or the rationale behind design decisions. A volunteer PhUSE project, the Clinical

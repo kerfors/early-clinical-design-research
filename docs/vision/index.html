@@ -89,10 +89,13 @@ footer { max-width: 64rem; margin: 0 auto; padding: 0 1rem 2rem; color: var(--mu
 eligibility criteria, arms and doses, endpoints and instruments, schedule cells, allocation rules. No standard today
 carries that content as reusable units with one identity across trials and versions, or records who decides what at
 which layer.</p>
-<p>The idea is design content as modules of components: one identity per component, wherever it occurs; explicit
-relations between layers (inherits, delegates, overridable default, restates, extends, overrides); a binding to the
-version of the layer a component depends on; and decisions as objects of their own: who decides, at which layer,
-bound to what, with which alternatives and arguments.</p>
+<h2>First step: design content as Linked Data</h2>
+<p>The idea is design content as components, each with its own identifier, wherever it occurs. The relations are then
+statements between identifiers: between layers (inherits, delegates, overridable default, restates, extends,
+overrides), to the version of the layer a component depends on, and to decisions as objects of their own: who
+decides, at which layer, bound to what, with which alternatives and arguments. Together these statements form a
+graph. Published as Linked Data, with identifiers that resolve as in <a href="https://w3id.org/m11-rdf/">m11-rdf</a>, the graph
+can be read and queried across trials and programmes.</p>
 <p>The future this points to:</p>
 <ol>
 <li><strong>Design in the model.</strong> A trial is composed from reusable components with one identity across trials.</li>
@@ -103,7 +106,7 @@ bound to what, with which alternatives and arguments.</p>
 <li><strong>Evolution is native.</strong> An amendment changes a component or a decision, and every user of it is listed, to
    rebind or to stay.</li>
 </ol>
-<h2>After components: the ontologies behind the content</h2>
+<h2>Next step: the ontologies behind the content</h2>
 <p>Components in a graph are only a first part. Behind the content are classes and relations: an objective, the
 endpoint that measures it, the procedure that produces the data, a specimen taken during it, an assessment, and its
 result as data, each a class, related by part of, input and output. Then it is explicit that a pharmacokinetic
@@ -119,9 +122,8 @@ definitions. The principle, from this work and earlier work: reuse them, author 
 authored class an upstream parent. Making a model precise enough for a machine also finds errors that reading does
 not, in the documents and in the ontologies reused.</p>
 <p>The design modules here are test cases on the way, not that ontology. They anchor their classes in 16 terms from OBI
-(with IAO and BFO), MONDO and HP and pass an OWL 2 DL check; no ontologist has reviewed them yet. Published as Linked
-Data, with identifiers that resolve as in <a href="https://w3id.org/m11-rdf/">m11-rdf</a>, they would let the questions here be
-asked across programmes.</p>
+(with IAO and BFO), MONDO and HP and pass an OWL 2 DL check; no ontologist has reviewed them yet.</p>
+<h2>Earlier work</h2>
 <p>Earlier work pointed in this direction. The EFPIA Smart Program Design team (2013) named the gap: industry standards
 do not cover the programme level or the rationale behind design decisions. A volunteer PhUSE project, the Clinical
 Development Design (CDD) Framework (2015–2018), sketched ideas for capturing decisions, alternatives not taken and

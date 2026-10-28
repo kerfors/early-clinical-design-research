@@ -19,10 +19,9 @@ and handed over between the documents of a master protocol, across sub-studies a
 document carrier here (`usdm-master-protocol/`, checked with the usdm-rdf validator), and the design modules sit
 next to it. Pointing statements at m11-rdf section identifiers, rather than at section numbers, is an open choice.
 
-**Towards Linked Data.** The direction is Linked Data, as in [m11-rdf](https://w3id.org/m11-rdf/), where every
-identifier resolves to a page that says what it is. This work is not there yet: the design modules are OWL files
-whose IRIs sit in a namespace for now (`https://kerfors.github.io/early-clinical-design-research/`), and those
-IRIs do not resolve yet. Where this is heading, and the role of ontologies in it: [VISION.md](VISION.md).
+**Identifiers, for now.** The design modules are OWL files whose IRIs sit in a namespace for now
+(`https://kerfors.github.io/early-clinical-design-research/`), and those IRIs do not resolve yet. Where this is
+heading, first Linked Data as in m11-rdf and then the ontologies behind the content: [VISION.md](VISION.md).
 
 ## The questions
 
