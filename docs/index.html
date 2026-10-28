@@ -75,7 +75,7 @@ footer { max-width: 64rem; margin: 0 auto; padding: 0 1rem 2rem; color: var(--mu
 </head>
 <body>
 <main>
-<nav><a href="">Early clinical design research</a> · <a href="cases/cpmp/">CPMP</a> · <a href="cases/remapcap/">REMAP-CAP</a> · <a href="templates/eupearl/">EU-PEARL templates</a> · <a href="https://github.com/kerfors/early-clinical-design-research">repository</a></nav>
+<nav><a href="">Early clinical design research</a> · <a href="questions/">Questions</a> · <a href="cases/">Cases</a> · <a href="templates/">Templates</a> · <a href="https://github.com/kerfors/early-clinical-design-research">repository</a></nav>
 <h1>Early clinical design research</h1>
 <p>How the design content of a clinical trial programme can be held as linked knowledge, and what the documents
 carry today. Two public master protocols are the cases: the Lilly Chronic Pain Master Protocol (CPMP) and
@@ -92,88 +92,7 @@ describe one study and one protocol. This repo explores what neither covers yet:
 and handed over between the documents of a master protocol, across sub-studies and versions. USDM v4 stays the
 document carrier here (<code>usdm-master-protocol/</code>, checked with the usdm-rdf validator), and the design modules sit
 next to it. Pointing statements at m11-rdf section identifiers, rather than at section numbers, is an open choice.</p>
-<h2>The two cases</h2>
-<ul>
-<li><strong>CPMP</strong> (H0P-MC-CPMP): 4 compounds × 3 disease states. One master protocol, 3 disease-state addenda (DSA,
-  not public) and 12 intervention-specific appendices (ISA), each posted on ClinicalTrials.gov under its own
-  NCT ID. The 13 Schedules of Activities are extracted to USDM in
-  <a href="https://kerfors.github.io/soa2usdm-collections/collections/cpmp/protocols/index.html">soa2usdm-collections</a>.</li>
-<li><strong>REMAP-CAP</strong>: an adaptive platform trial in community-acquired pneumonia. A Core Protocol (versions 4.0 and
-  4.1), the Patient, Pathogen and Disease Appendix (PANDA) and nine domain-specific appendices (DSA).</li>
-</ul>
-<p>The documents of each case, as layers: <a href="cases/cpmp/">CPMP</a> · <a href="cases/remapcap/">REMAP-CAP</a>.</p>
-<h2>Templates as data</h2>
-<p>Before the cases, two public template families were read as data, the same method on a template rather than a
-protocol: <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/eupearl-templates/">EU-PEARL</a> (sections with keys, text categories from the template's own markers,
-field labels, a TOC check, and the MPT ↔ ISA alignment) and <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/tpp-templates/">four TPP templates</a> (column models
-compared, with concept matching left to a review file).</p>
-<p>The EU-PEARL templates as data, with the MPT and ISA side by side: <a href="templates/eupearl/">EU-PEARL templates</a>.</p>
-<h2>The questions</h2>
-<p class="muted">Each card counts what the catalogue holds per case: findings with document evidence, case questions
-answered by SPARQL over the design modules, and questions still open. Earlier answers (before the modules) are on
-the question pages.</p>
-<div class="cards">
-<div class="card">
-<h3><span class="qid">Q1</span><a href="questions/Q1/">When are two occurrences in different documents the same component?</a></h3>
-<p><span class="chip">Identity</span></p>
-<p><b>CPMP</b>: 3 findings, 1 open<br><b>REMAP-CAP</b>: 2 findings</p>
-<p><span class="chip wait">waits for clinical reader</span></p>
-</div>
-<div class="card">
-<h3><span class="qid">Q2</span><a href="questions/Q2/">Which content is shared across sub-studies but stated as shared in no document?</a></h3>
-<p><span class="chip">Unstated sharing</span></p>
-<p><b>CPMP</b>: 3 findings, 3 case questions<br><b>REMAP-CAP</b>: 2 findings, 2 case questions</p>
-
-</div>
-<div class="card">
-<h3><span class="qid">Q3</span><a href="questions/Q3/">What does a new sub-study inherit before anything is written for it?</a></h3>
-<p><span class="chip">Layer relations</span><span class="chip">Obligations</span></p>
-<p><b>CPMP</b>: 1 finding, 2 case questions<br><b>REMAP-CAP</b>: 2 findings, 4 case questions</p>
-
-</div>
-<div class="card">
-<h3><span class="qid">Q4</span><a href="questions/Q4/">What is specific to one sub-study only?</a></h3>
-<p><span class="chip">Layer relations</span></p>
-<p><b>CPMP</b>: 2 findings, 1 case question<br><b>REMAP-CAP</b>: not asked</p>
-
-</div>
-<div class="card">
-<h3><span class="qid">Q5</span><a href="questions/Q5/">Which hand-overs to a child are never answered, or point at content that is not available?</a></h3>
-<p><span class="chip">Obligations</span></p>
-<p><b>CPMP</b>: 2 findings, 3 case questions<br><b>REMAP-CAP</b>: 3 findings, 1 case question</p>
-<p><span class="chip wait">waits for trial-design reviewer</span></p>
-</div>
-<div class="card">
-<h3><span class="qid">Q6</span><a href="questions/Q6/">Which defaults does a child take, override or stay silent on?</a></h3>
-<p><span class="chip">Layer relations</span><span class="chip">Obligations</span></p>
-<p><b>CPMP</b>: 1 finding, 1 case question<br><b>REMAP-CAP</b>: 1 finding, 1 case question<br><b>both</b>: 1 open</p>
-<p><span class="chip wait">waits for trial-design reviewer</span></p>
-</div>
-<div class="card">
-<h3><span class="qid">Q7</span><a href="questions/Q7/">Which child statements are affected when a parent document changes?</a></h3>
-<p><span class="chip">Version binding</span></p>
-<p><b>CPMP</b>: 1 finding<br><b>REMAP-CAP</b>: 5 findings, 4 case questions</p>
-<p><span class="chip wait">waits for trial-design reviewer</span></p>
-</div>
-<div class="card">
-<h3><span class="qid">Q8</span><a href="questions/Q8/">Which documents make up the set a sub-study depends on, and is that set stated?</a></h3>
-<p><span class="chip">Documents as views</span></p>
-<p><b>CPMP</b>: 1 finding<br><b>REMAP-CAP</b>: 4 findings</p>
-
-</div>
-<div class="card">
-<h3><span class="qid">Q9</span><a href="questions/Q9/">Where does a schedule depend on an event inside a visit?</a></h3>
-<p><span class="chip">Event anchors</span></p>
-<p><b>CPMP</b>: 1 finding, 1 open<br><b>REMAP-CAP</b>: not asked</p>
-
-</div>
-<div class="card">
-<h3><span class="qid">Q10</span><a href="questions/Q10/">Why was a design choice made, and what else was considered?</a></h3>
-<p><span class="chip">Decisions</span></p>
-<p><b>CPMP</b>: 1 finding<br><b>REMAP-CAP</b>: 1 finding<br><b>both</b>: 1 open</p>
-
-</div>
-</div>
+<div class="cards"><div class="card"><h3><a href="questions/">The questions</a></h3><p>10 competency questions; the catalogue holds 36 findings, 22 case questions and 4 open questions</p></div><div class="card"><h3><a href="cases/">The two cases</a></h3><p>CPMP: master and 12 ISAs</p><p>REMAP-CAP: 12 documents read</p></div><div class="card"><h3><a href="templates/">Templates as data</a></h3><p>EU-PEARL: 4 templates with their heading trees, MPT and ISA side by side</p></div></div>
 
 </main>
 <footer>Generated by <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/scripts/build_site.py">scripts/build_site.py</a> from <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/README.md">README.md</a> sha256 <code>2d27964124e4</code>; <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/competency-questions/sources/questions.csv">competency-questions/sources/questions.csv</a> sha256 <code>acc62a1d77fa</code>; <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/competency-questions/output/catalogue.csv">competency-questions/output/catalogue.csv</a> sha256 <code>05ad02dd277b</code>; <a href="https://github.com/kerfors/early-clinical-design-research/blob/main/evidence-matrix/sources/requirements.csv">evidence-matrix/sources/requirements.csv</a> sha256 <code>87f426666791</code>. Namespace for now:
