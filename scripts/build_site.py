@@ -1101,6 +1101,11 @@ validator. What USDM could not express is collected as a table of breakpoints. T
 USDM for what it cannot carry. Each case's published file is also laid out as an ICH M11 protocol, to show where a
 master protocol does not fit M11: <a href="m11-cpmp/">CPMP</a> · <a href="m11-remapcap/">REMAP-CAP</a>
 (<a href="#seen-as-an-ich-m11-protocol">more below</a>).</p>
+<p>Not yet in either USDM file: the Schedule of Activities, a large part of USDM (<code>ScheduleTimeline</code>,
+<code>Encounter</code>, <code>Activity</code>, <code>ScheduledActivityInstance</code>). For CPMP, the 13 schedules
+(master and 12 ISAs) are extracted as data tables in
+<a href="https://kerfors.github.io/soa2usdm-collections/collections/cpmp/protocols/index.html">soa2usdm-collections</a>,
+ready for review and for mapping to USDM (<a href="#what-we-have">more below</a>). REMAP-CAP has no schedule tables.</p>
 <p class="muted">Folder: <a href="{BLOB}{UMP}README.md">usdm-master-protocol/</a> (its README records each step and
 decision). The USDM JSON files as built hold whole-document text and are not published; the notebooks re-create them
 from the source documents. The most complete file of each case is published without the section text (below). The
