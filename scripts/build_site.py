@@ -726,7 +726,8 @@ each ISA's section 5 sentence naming the master protocol and its DSA
 <a href="{BLOB}usdm-master-protocol/sources/ctgov_api/QUERY.txt">QUERY.txt</a>).</p>
 <h2>Master protocol</h2>
 <div class="layer"><div class="box"><b>CPMP master protocol</b>{ctgov_link('CPMP')} · {html.escape(m['title'])}<br>
-<span class="muted">{protocol_line('CPMP')}</span></div></div>
+<span class="muted">{protocol_line('CPMP')} · <a href="../../usdm/m11-cpmp/">the USDM file shown as ICH M11</a> (master
+protocol and its 12 ISAs)</span></div></div>
 <h2>Disease-state addenda and ISAs</h2>
 <p class="muted">Rows: the disease states, each with its disease-state addendum (DSA). Columns: the compounds. Disease
 names as the ISAs' ClinicalTrials.gov records give them:
@@ -755,9 +756,19 @@ assert set(manifest.listing) == {"current", "superseded"}, set(manifest.listing)
 assert list(rdocs.layer.unique()) == ["CORE", "PANDA", "DSA"], list(rdocs.layer.unique())
 
 
+# the documents in the published USDM file (Core 4.0 and 4.1, PANDA 1.0, Corticosteroid DSA 6): their boxes link the
+# ICH M11 view of that file
+RCAP_IN_USDM = {"CORE40", "CORE41", "PANDA", "CS"}
+assert RCAP_IN_USDM <= set(rdocs.short), RCAP_IN_USDM - set(rdocs.short)
+assert sum(len(d["versions"]) for d in json.loads((ROOT / PUBLISHED[1]).read_text(encoding="utf-8"))["study"]["documentedBy"]) \
+    == len(RCAP_IN_USDM)
+
+
 def rbox(r):
+    m11 = ' · <a href="../../usdm/m11-remapcap/">USDM shown as ICH M11</a>' if r.short in RCAP_IN_USDM else ""
     return (f'<div class="box"><b>{esc(r.header_name)} {esc(r.version)}</b>'
-            f'<span class="muted">{esc(r.date)} · <a href="{esc(r.url)}">remapcap.org</a> · key in the data: {esc(r.short)}</span></div>')
+            f'<span class="muted">{esc(r.date)} · <a href="{esc(r.url)}">remapcap.org</a> · key in the data: {esc(r.short)}'
+            f'{m11}</span></div>')
 
 
 layer_html = {lay: "".join(rbox(r) for r in rdocs[rdocs.layer == lay].itertuples()) for lay in ["CORE", "PANDA", "DSA"]}
