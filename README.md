@@ -30,8 +30,9 @@ content. See [VISION.md](VISION.md).
 ## The questions
 
 The work is organised by ten competency questions. Each is answered per case by SPARQL queries over the design
-modules and by findings with document evidence. The catalogue gives the question, the case questions and
-findings under it, the answer, how it was checked, and its status:
+modules and by findings with document evidence. The queries ask about the structure of the documents (what is
+shared, inherited, delegated or versioned), not about what the content means. The catalogue gives the question,
+the case questions and findings under it, the answer, how it was checked, and its status:
 [competency-questions/output/catalogue.md](competency-questions/output/catalogue.md).
 
 | | Question | Requirement |

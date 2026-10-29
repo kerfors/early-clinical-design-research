@@ -41,7 +41,8 @@ objective is measured by an endpoint such as maximum concentration, which needs 
 after the dose. A change in the dosing schedule then also moves the sampling, and if the endpoint is dropped, it is
 clear which samples are no longer needed. Such ontologies could be defined for one study, and then evolve across the
 studies under one master protocol or one development programme, until they form a shared backbone that the next
-study starts from, instead of an empty template.
+study starts from, instead of an empty template. The design modules in this work do not yet go there: their OWL is
+about how the documents organise the content.
 
 This does not start from scratch. Community ontologies aligned to the Basic Formal Ontology (BFO) and the Core
 Ontology for Biology and Biomedicine (COB) already cover parts of it: OBI for investigations, study designs and assays,

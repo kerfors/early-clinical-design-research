@@ -649,9 +649,12 @@ for case, d in MOD.items():
 assert gap_rows, "no gaps found in the module files"
 cp1_n = int(re.match(r"(\d+) components", fchk.set_index("finding_id").observed["CP-1"]).group(1))
 modules_body = f"""<h1>Design modules</h1>
-<p><b>Early exploratory work.</b> The design modules are the second round of this work, after USDM. The design
-content of each case is read from its documents and held as OWL classes, so that a reasoner can tell designs apart
-and find what they share.</p>
+<p><b>Early exploratory work.</b> The design modules are the second round of this work, after USDM. They hold the
+design content as the documents organise it: each component, the documents and layers it occurs in, one identity
+across them, and the relations between layers (inherits, delegates, overrides). This is the structure of the
+documents, in OWL, so that a reasoner can tell designs apart and find what they share. It does not yet say what the
+content is: what an endpoint measures, which procedure produces its data. That is the next step in the
+<a href="../vision/">Vision</a>.</p>
 <ul>
 <li>A <i>component</i> is one unit of design content: an eligibility criterion, an objective, an endpoint, a Schedule
 of Activities cell (CPMP), a statement (REMAP-CAP). It has one identity wherever it occurs; where the wording
