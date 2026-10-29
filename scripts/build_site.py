@@ -19,6 +19,8 @@ Pages:
   the gaps recorded in the module files (upstreamGap annotations; authored classes commented "Authored:"), the
   module files with their imports and the classes each declares (modules/*.ttl, read with rdflib), and the
   asserted and inferred memberships (output/design_hierarchy.csv).
+- docs/examples/cp-11b/index.html: the README section "### One chain, end to end: CP-11b", one finding followed
+  from the documents to the catalogue; linked from that finding's row on its question page and the Findings page.
 - docs/cases/cpmp/index.html: the CPMP documents. The compound x disease grid of the 12 ISAs
   from usdm-master-protocol/output_cpmp/step5/grid.csv (read from each ISA's section 5);
   NCT ID, secondary ID and posted protocol (date, link) from the ClinicalTrials.gov records in
@@ -338,6 +340,8 @@ assert title_line == "# Early clinical design research", title_line
 intro = intro.split("\n## The questions", 1)[0]
 cases_md = readme.split("\n## The two cases\n", 1)[1].split("\n## ", 1)[0]
 templates_md = readme.split("\n## Templates as data\n", 1)[1].split("\n## ", 1)[0]
+EXAMPLES = {"CP-11b": "One chain, end to end: CP-11b"}
+examples_md = {fid: readme.split(f"\n### {title}\n", 1)[1].split("\n## ", 1)[0] for fid, title in EXAMPLES.items()}
 questions_md = readme.split("\n## The questions\n", 1)[1].split("\n## ", 1)[0].split("\n|", 1)[0]
 
 if DOCS.exists():
@@ -404,6 +408,8 @@ for q in questions.itertuples():
                 item = f'<a href="{BLOB}{FINDINGS}#L{finding_line[r.item_id]}">{item}</a>'
             cls = "unanswered" if r.kind in ("open", "not asked") else "answered"
             wait_html = "".join(f'<span class="chip wait">waits for {w}</span>' for w in waits(r.review))
+            if r.item_id in EXAMPLES:
+                item += f' · <a href="../../examples/{r.item_id.lower()}/">worked example</a>'
             trs.append(f"""<tr class="{cls}"><td>{esc(r.kind)}</td><td class="item">{item}</td><td>{esc(r.text if not pd.isna(r.text) else r.note)}</td><td>{esc(r.answer)}</td>
 <td>{esc(r.check)}</td><td>{status_chips(r.status)}</td><td>{esc(r.evidence_rows)}</td><td>{esc(r.review)}{(' ' + wait_html) if wait_html else ''}</td></tr>""")
         sections.append(f"""<h2>{case}</h2>
@@ -444,7 +450,9 @@ for req, rq in reqs.iterrows():
     sub = fall[fall.requirement == req].sort_values("case", kind="stable")
     assert len(sub), req
     trs = "".join(
-        f'<tr><td class="item"><a href="{BLOB}{FINDINGS}#L{finding_line[r.finding_id]}">{esc(r.finding_id)}</a></td>'
+        f'<tr><td class="item"><a href="{BLOB}{FINDINGS}#L{finding_line[r.finding_id]}">{esc(r.finding_id)}</a>'
+        + (f'<br><a href="../examples/{r.finding_id.lower()}/">worked example</a>' if r.finding_id in EXAMPLES else "")
+        + '</td>'
         f'<td>{esc(r.case)}</td><td>{esc(r.finding)}</td><td>{esc(r.observed)}</td><td>{esc(r.check)}</td>'
         f'<td>{esc(fq.loc[r.finding_id, "status"])}</td><td>{esc(r.evidence_rows)}</td>'
         f'<td><a href="../questions/{fq.loc[r.finding_id, "q_id"]}/">{fq.loc[r.finding_id, "q_id"]}</a></td></tr>'
@@ -581,6 +589,17 @@ the reasoner (inferred). The compound module of CPMP is found this way (<a href=
 (DOCS / "modules").mkdir(parents=True, exist_ok=True)
 (DOCS / "modules" / "index.html").write_text(page("Design modules", 1, modules_body, wide=True, inputs=MOD_INPUTS),
                                             encoding="utf-8")
+
+# Worked examples (README sections)
+for fid, title in EXAMPLES.items():
+    assert fid in fq.index, fid
+    q = fq.loc[fid, "q_id"]
+    body = (f"<h1>{esc(title)}</h1>\n<p class=\"muted\">A worked example: one finding followed from the documents "
+            f"to the catalogue, as the README gives it. The finding on the <a href=\"../../findings/\">Findings</a> "
+            f"page; its question <a href=\"../../questions/{q}/\">{q}</a>.</p>\n" + md_to_html(examples_md[fid]))
+    (DOCS / "examples" / fid.lower()).mkdir(parents=True, exist_ok=True)
+    (DOCS / "examples" / fid.lower() / "index.html").write_text(page(title, 2, body, inputs=[INPUTS["readme"]]),
+                                                               encoding="utf-8")
 
 # CPMP case page
 grid = pd.read_csv(ROOT / CPMP_INPUTS["grid"], dtype=str)
