@@ -513,9 +513,14 @@ for case, d in MOD.items():
         allg += g
         assert len(set(g.subjects(RDF.type, OWL.Ontology))) == 1, f
         imps = sorted(str(o).rsplit("/", 1)[-1] for o in g.objects(None, OWL.imports))
+        ncls = len(set(g.subjects(RDF.type, OWL.Class)))
+        if case == "REMAP-CAP" and f.stem.startswith("dsa-") and f.stem != "dsa-shared":
+            assert ncls == 2, (f.name, ncls)
+        if case == "CPMP" and f.stem.endswith("07"):
+            assert ncls == 1, (f.name, ncls)
         frows += (f'<tr><td class="item"><a href="{BLOB}{d}/modules/{f.name}">{f.name}</a></td>'
                   f'<td>{esc(mod_kind(case, f.stem))}</td><td>{esc(", ".join(imps))}</td>'
-                  f'<td class="num">{len(set(g.subjects(RDF.type, OWL.Class)))}</td></tr>')
+                  f'<td class="num">{ncls}</td></tr>')
     file_sections += f"""<h3>{case}: {len(files)} module files</h3>
 <div class="table-wrap"><table><thead><tr><th>File</th><th>Kind (by file name)</th><th>Imports</th>
 <th>Classes declared</th></tr></thead><tbody>{frows}</tbody></table></div>"""
@@ -531,11 +536,29 @@ for case, d in MOD.items():
     for status, n in h.status.value_counts().items():
         hier_rows += f"<tr><td>{case}</td><td>{esc(status)}</td><td class=\"num\">{n}</td></tr>"
 assert gap_rows, "no gaps found in the module files"
+cp1_n = int(re.match(r"(\d+) components", fchk.set_index("finding_id").observed["CP-1"]).group(1))
 modules_body = f"""<h1>Design modules</h1>
-<p>A design module is an OWL class that groups the components of one layer or one shared set, such as the CPMP
-compound module, which has no document of its own (README, Terms). Both cases are built as modules that pass the
-OWL 2 DL check and are classified with ELK. They are test cases, not a design ontology: no ontologist has
-reviewed them yet (<a href="../vision/">Vision</a>).</p>
+<p><b>Early exploratory work.</b> The design modules are the second round of this work, after USDM. The design
+content of each case is read from its documents and held as OWL classes, so that a reasoner can tell designs apart
+and find what they share.</p>
+<ul>
+<li>A <i>component</i> is one unit of design content: an eligibility criterion, an objective, an endpoint, a Schedule
+of Activities cell (CPMP), a statement (REMAP-CAP). It has one identity wherever it occurs; where the wording
+differs, that identity is a decision (<a href="../questions/Q1/">Q1</a>).</li>
+<li>A <i>module</i> groups the components of one layer or one shared set. CPMP: the master protocol, three disease
+states (not public, so only what is handed over to them), four compounds and twelve ISAs; each ISA module imports
+the master, its disease state and its compound. REMAP-CAP: the Core Protocol (one module per version, 4.0 and 4.1,
+under a version-independent Core), PANDA and nine DSAs.</li>
+<li>The reasoner then shows what no document states: in CPMP, a compound module of {cp1_n} components shared by the
+three ISAs of each compound (<a href="../findings/">CP-1</a>); in REMAP-CAP, that no DSA sits under either Core
+version, because no DSA names one (<a href="../questions/Q7/">Q7</a>).</li>
+</ul>
+<p>What this is not: a design ontology. The modules reuse {n_terms} upstream terms and pass an OWL 2 DL check, but no
+ontologist has reviewed them, and they were built only for the competency questions of two cases. A foundation that
+scales takes more. For every kind of content it has to be decided what a term denotes, the act performed, the
+information it produces or the plan for either, and that choice has to be aligned with BFO and the ontologies
+reused. The modules here are test cases for what such a model must represent (<a href="../findings/">Findings</a>,
+<a href="../vision/">Vision</a>).</p>
 <h2>Upstream terms: {n_terms}</h2>
 <p class="muted">Imported from pinned releases (ROBOT, MIREOT); every authored class has one of them as an ancestor.</p>
 <div class="table-wrap"><table><thead><tr><th>Term</th><th>Label</th><th>Kind</th><th>Release</th>
@@ -546,6 +569,9 @@ because no upstream class was found.</p>
 <div class="table-wrap"><table><thead><tr><th>Case</th><th>Class</th><th>Gap</th><th>Recorded as</th></tr></thead>
 <tbody>{gap_rows}</tbody></table></div>
 <h2>Module files</h2>
+<p class="muted">A REMAP-CAP DSA file declares only its domain and design classes; its components are declared in
+components.ttl. The CPMP files for OA07, BP07 and NP07 declare one class each: these ISAs are registered with no
+protocol posted.</p>
 {file_sections}
 <h2>Classification</h2>
 <p class="muted">Memberships of the design classes after reasoning: stated in the module files (asserted) or found by

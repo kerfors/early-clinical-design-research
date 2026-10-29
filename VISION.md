@@ -51,6 +51,13 @@ authored class an upstream parent. Making a model precise enough for a machine a
 not: in the documents here, strata said to be defined in "Core Protocol documents" are defined in PANDA (BP04),
 and the Core 4.1 table of contents misses two sections (BP16).
 
+Getting there is work, and work for an ontologist. The first build in a domain carries most of the cost. It has
+to decide what each kind of term denotes and which relations connect the kinds, and align those decisions with BFO.
+Most is learned where the model breaks: a term that would have to be both an act and the data the act produces is a
+term that was never pinned down. Later builds reuse those decisions and go faster, but each new kind of content
+still needs its own alignment round. Where a public relation is missing or obsolete, the discipline is to declare a
+narrow child of an existing relation, not new machinery.
+
 The design modules here are test cases on the way, not that ontology. They anchor their classes in 16 terms from OBI
 (with IAO and BFO), MONDO and HP and pass an OWL 2 DL check; no ontologist has reviewed them yet.
 
