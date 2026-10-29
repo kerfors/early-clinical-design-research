@@ -25,7 +25,7 @@ Requirements: R-COMMON
 |---|---|---|---|---|---|---|---|---|
 | CPMP | case question | [CQ1a](../../cpmp-design-modules/queries/cq1a_module_independent.rq) | which components are disease-independent by module? | 77 components | pass (against pandas, cq_results.csv) |  |  |  |
 | CPMP | case question | [CQ1b](../../cpmp-design-modules/queries/cq1b_occurrence_independent.rq) | which components occur in a design of every disease state? | 80 components (+3 vs CQ1a) | pass (against pandas, cq_results.csv) |  |  |  |
-| CPMP | case question | [CQ7](../../cpmp-design-modules/queries/cq7_compound_schedule.rq) | which SoA cells does each compound design hold? | LY3016859 50; LY3556050 26; LY3857210 33; 71 cells cross-compound | pass (against pandas, cq_results.csv) |  |  |  |
+| CPMP | case question | [CQ7](../../cpmp-design-modules/queries/cq7_compound_schedule.rq) | which SoA cells does each compound design hold? | LY3016859 50; LY3526318 0; LY3556050 26; LY3857210 33; 71 cells cross-compound | pass (against pandas, cq_results.csv) |  |  |  |
 | CPMP | finding | CP-1 | Compound module: components shared by the three ISAs of a compound, with no document of its own; recovered by the reasoner and equal to the compound each ISA section 5 names | 26 components; 12 ISAs name their compound | pass | document fact 12; rule-derived 65 | 77 |  |
 | CPMP | finding | CP-2 | SoA cells marked in all 12 ISAs and not in the master: a common schedule no document states | 22 cells | pass | rule-derived | 264 |  |
 | CPMP | finding | CP-3 | The pregnancy exclusion is in all 12 ISAs and in no master criterion; the master only delegates reproductive requirements to the ISAs | 12 ISAs; 1 master sentence | pass | document fact 1; document fact (identity decided by Kerstin) 12 | 13 |  |
@@ -62,7 +62,7 @@ Requirements: R-LAYER
 | CPMP | finding | CP-4 | The ISA SoA marks only what it adds or changes: it restates almost none of the master's cells | restated 0-8 of 151 master cells | pass | rule-derived | 12 |  |
 | CPMP | finding | CP-6 | Stated addition "in addition to schedule described in" the master, in the LY3857210 ISAs only; OA05 also names its DSA | 25 statements; LY3857210 only; DSA named in OA05 | pass | document fact | 25 |  |
 | CPMP | earlier | [Step 5 CQ1](../../usdm-master-protocol/output_cpmp/step5/cq1_endpoints_by_disease.csv) | Pandas, before the modules | 18 rows |  | earlier |  |  |
-| REMAP-CAP | not asked |  |  |  |  |  |  |  |
+| REMAP-CAP | not asked |  | Not asked of every DSA; R2c (Q3) gives it for Tropical Antibiotic 1: 16 components that no other DSA and no Core 4.1 or PANDA text states |  |  |  |  |  |
 
 ## Q5. Which hand-overs to a child are never answered, or point at content that is not available?
 
@@ -131,7 +131,7 @@ Requirements: R-ANCHOR
 |---|---|---|---|---|---|---|---|---|
 | CPMP | finding | CP-12 | Baseline is defined as everything before randomization at Visit 3, while master and ISAs mark activities at Visit 3: post randomization is an event inside a visit | 1 master sentences; 4 activities marked at V3 in master and ISA | first counted here | document fact 1; rule-derived 4 | 5 |  |
 | CPMP | open | [cdd-layer CQ-C](../../cdd-layer/README.md) | Which delegations start at an activity inside an encounter (randomisation inside Visit 3) | not answered |  | open |  |  |
-| REMAP-CAP | not asked |  |  |  |  |  |  |  |
+| REMAP-CAP | not asked |  | REMAP-CAP has no schedule tables |  |  |  |  |  |
 
 ## Q10. Why was a design choice made, and what else was considered?
 

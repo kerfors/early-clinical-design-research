@@ -8,5 +8,5 @@ CQ4 delegation to non-public module,"2 components + 8 slots (4 content, 4 role s
 CQ4b ISA references to the DSA,117 sentences,pass
 CQ5 new ISA inherits (schedule),148 master cells + 9 slots + 3 defaults,pass
 CQ6 overrides,"12: 9 master defaults, 3 to disease state",pass
-CQ7 compound schedule modules,LY3016859 50; LY3556050 26; LY3857210 33; 71 cells cross-compound,pass
+CQ7 compound schedule modules,LY3016859 50; LY3526318 0; LY3556050 26; LY3857210 33; 71 cells cross-compound,pass
 CQ8 delegated activities filled by ISAs,6 of 8 activities; 255 ISA cells,pass

@@ -377,7 +377,7 @@ summary = pd.DataFrame([
     {"question": "CQ4b ISA references to the DSA", "answer": f"{len(cq4b)} sentences", "check": "pass"},
     {"question": "CQ5 new ISA inherits (schedule)", "answer": f"{expected5['master cell']} master cells + {expected5['master slot']} slots + {expected5['default assumed, no document']} defaults", "check": "pass"},
     {"question": "CQ6 overrides", "answer": f"{len(cq6)}: {int((cq6['target_kind'] == 'master default').sum())} master defaults, {int((cq6['target_kind'] != 'master default').sum())} to disease state", "check": "pass"},
-    {"question": "CQ7 compound schedule modules", "answer": "; ".join(f"{c} {n}" for c, n in cq7.groupby('compound').size().items()) + f"; {len(cross)} cells cross-compound", "check": "pass"},
+    {"question": "CQ7 compound schedule modules", "answer": "; ".join(f"{c} {n}" for c, n in cq7.groupby('compound').size().reindex(sorted(grid['compound'].unique()), fill_value=0).items()) + f"; {len(cross)} cells cross-compound", "check": "pass"},
     {"question": "CQ8 delegated activities filled by ISAs", "answer": f"{cq8['activity'].nunique()} of {len(slots8)} activities; {len(cq8)} ISA cells", "check": "pass"},
 ])
 summary.to_csv(BASE / "output" / "cq_results.csv", index=False)

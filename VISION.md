@@ -44,7 +44,7 @@ studies under one master protocol or one development programme, until they form 
 study starts from, instead of an empty template.
 
 This does not start from scratch. Community ontologies aligned to the Basic Formal Ontology (BFO) and the Core
-Ontology for Biology and Biomedicine (COB) already hold much of it: OBI for investigations, study designs and assays,
+Ontology for Biology and Biomedicine (COB) already cover parts of it: OBI for investigations, study designs and assays,
 IAO for objectives, plans and data, RO for relations, MAxO for medical actions, MONDO for diseases, and NCIt for
 definitions. The principle, from this work and earlier work: reuse them, author only what they lack, and give every
 authored class an upstream parent. Making a model precise enough for a machine also finds errors that reading does
@@ -54,9 +54,9 @@ and the Core 4.1 table of contents misses two sections (BP16).
 The design modules here are test cases on the way, not that ontology. They anchor their classes in 16 terms from OBI
 (with IAO and BFO), MONDO and HP and pass an OWL 2 DL check; no ontologist has reviewed them yet.
 
-## Earlier work
+## Before this work
 
-Earlier work pointed in this direction. The EFPIA Smart Program Design team (2013) named the gap: industry standards
+Earlier projects pointed in this direction. The EFPIA Smart Program Design team (2013) named the gap: industry standards
 do not cover the programme level or the rationale behind design decisions. A volunteer PhUSE project, the Clinical
 Development Design (CDD) Framework (2015–2018), sketched ideas for capturing decisions, alternatives not taken and
 the evidence behind them ([PhUSE project page](https://advance.hub.phuse.global/wiki/x/byCZAQ);
