@@ -1,0 +1,7 @@
+case,m11_element,m11_label,breakpoint,evidence
+cpmp,C217342.C218707,Master Protocol Indicator,BP14,"m11-rdf reports/d2-residue.csv: HL7 row 83 and CDISC row 88 map this element to StudyDefinitionDocumentVersion.children, an attribute USDM v4.0.0 does not have on that class; the mapping set has no record for it, so the field has no route."
+remapcap,C217342.C218707,Master Protocol Indicator,BP14,"m11-rdf reports/d2-residue.csv: HL7 row 83 and CDISC row 88 map this element to StudyDefinitionDocumentVersion.children, an attribute USDM v4.0.0 does not have on that class; the mapping set has no record for it, so the field has no route."
+cpmp,C217356.C181232,Version Number,BP02,"The route keeps only versions of a StudyDefinitionDocument typed C70817 (Protocol). In this file only the master, H0P-MC-CPMP, carries a document type; the ISA documents carry none, so their versions are not kept."
+remapcap,C217356.C132346,Full Title,BP13,"Core 4.0 and Core 4.1 are two complete study versions; each carries its own copy of the titles, so the field has one value per study version."
+remapcap,C217356.C94108,Trial Acronym,BP13,"Core 4.0 and Core 4.1 are two complete study versions; each carries its own copy of the titles, so the field has one value per study version."
+remapcap,C217356.C181232,Version Number,BP13,"Core 4.0 and Core 4.1 are two complete study versions in one file; M11 describes one protocol version, so the field has one value per Core document version."

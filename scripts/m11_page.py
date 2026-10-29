@@ -4,7 +4,8 @@ Copied from usdm-one-graph m11/build_protocol_html.py (commit b9abf62), which wr
 Pilot; the Protocol and Deep-dive views are kept. Changed here: the page is a function called by
 scripts/build_site.py; each value shows where in the study it sits (study version, document, document
 version); the deep dive shows, per mapping route, this repo's mapping-log rows for the same object and
-attribute and the breakpoints that name the same USDM element; the links to usdm-one-graph's step page are
+attribute and the breakpoints that name the same USDM element; a field with a reviewed link to a breakpoint
+(sources/m11_breakpoint_links.csv) shows it in both views; the links to usdm-one-graph's step page are
 replaced by the input files; the section-rule text says that these protocols are not numbered as M11.
 """
 import html as htmllib
@@ -83,6 +84,8 @@ def page_html(data, links):
                 if ref(f) not in bp_fields[b]:
                     bp_fields[b].append(ref(f))
     data["oddities"]["breakpoints"] = [{**b, "fields": bp_fields[b["id"]]} for b in data["breakpoints"] if bp_fields[b["id"]]]
+    data["oddities"]["reviewed"] = [{"id": b["id"], "evidence": b["evidence"], "field": ref(f)}
+                                    for f in fields for b in f.get("breakpoints_reviewed", [])]
     data["counts"] = {
         "sections": len(data["sections"]),
         "fields": len(fields),
@@ -356,10 +359,12 @@ function simpleValues(f) {
 function simpleLabel(f) {
   return esc(f.element ? f.element.label : f.label);
 }
+// a reviewed link from the field's M11 element to a breakpoint, under the value in both views
+const revHtml = f => (f.breakpoints_reviewed || []).map(b => `<span class="where">breakpoint <a href="${esc(L.up)}#${esc(b.id)}" target="_blank" rel="noopener">${esc(b.id)}</a>: ${esc(b.evidence)}</span>`).join("");
 function simpleValue(f, v = simpleValues(f)) {
-  if (!v.length && f.status === "section-rule") return `<span class="ph">protocol text</span>`;
-  if (!v.length) return `<span class="ph">—</span>`;
-  return v.length === 1 ? `<span class="val">${v[0]}</span>` : `<ul>${v.map(x => `<li class="val">${x}</li>`).join("")}</ul>`;
+  if (!v.length && f.status === "section-rule") return `<span class="ph">protocol text</span>` + revHtml(f);
+  if (!v.length) return `<span class="ph">—</span>` + revHtml(f);
+  return (v.length === 1 ? `<span class="val">${v[0]}</span>` : `<ul>${v.map(x => `<li class="val">${x}</li>`).join("")}</ul>`) + revHtml(f);
 }
 // Repeating headings (<#>): the instances are the study objects behind the non-empty values of the field that
 // realises the heading's element (m11:headingElement); ordered by identifier (the graph holds no order for them).
@@ -427,6 +432,7 @@ function routeHtml(f, s) {
   let h = "";
   if (f.element) h += `<div class="route"><div class="row"><span>M11 element</span><span><a href="${esc(f.element.iri)}" target="_blank" rel="noopener"><code>${esc(lastSeg(f.element.iri))}</code></a> ${esc(f.element.label)}</span><span>Template field</span><span>${esc(f.label)} · page ${f.page}${f.optional ? " · optional" : ""}${f.conditional ? " · conditional" : ""}</span></div></div>`;
   else h += `<div class="route">This Template field realises no element in m11-rdf (see m11-rdf's <a href="https://github.com/kerfors/m11-rdf/blob/v0.4.0/reports/d5-residue.csv" target="_blank" rel="noopener">d5-residue.csv</a>).</div>`;
+  if (f.breakpoints_reviewed) h += `<div class="route"><div class="row"><span>Breakpoints, reviewed</span><span>${f.breakpoints_reviewed.map(b => `<a href="${esc(L.up)}#${esc(b.id)}" target="_blank" rel="noopener">${esc(b.id)}</a> ${esc(BP[b.id].breakpoint)}${bpNote(b.id)}<span class="where">why: ${esc(b.evidence)}</span>`).join("<br>")}</span></div></div>`;
   if (!f.element || !f.routes.length) h += hopsHtml(f, s, null);
   for (const r of f.routes) {
     const src = recLinks(r);
@@ -478,6 +484,11 @@ doc.insertAdjacentHTML("beforeend", `<div class="cover"><div class="k">ICH M11 T
     }
     h += `</ul></details>`;
   }
+  if (O.reviewed.length) {
+    h += `<h4>Reviewed links from an M11 field to a breakpoint (${O.reviewed.length})</h4><ul>`;
+    for (const b of O.reviewed) h += `<li><a href="${esc(L.up)}#${esc(b.id)}" target="_blank" rel="noopener">${esc(b.id)}</a> ${esc(BP[b.id].breakpoint)}${bpNote(b.id)}<br><span class="carries">${esc(b.evidence)}</span><br>${flinks([b.field])}</li>`;
+    h += `</ul>`;
+  }
   if (O.breakpoints.length) {
     h += `<h4>Breakpoints that name the USDM element of a route (${O.breakpoints.length})</h4><ul>`;
     for (const b of O.breakpoints) h += `<li><a href="${esc(L.up)}#${esc(b.id)}" target="_blank" rel="noopener">${esc(b.id)}</a> ${esc(b.breakpoint)} <span class="carries">(${esc(b.usdm_element)})</span>${bpNote(b.id)}${flinks(b.fields)}</li>`;
@@ -500,7 +511,7 @@ D.sections.forEach((s, i) => {
     h += `<div class="fields${s.num ? " compact" : ""}">`;
     for (const f of s.fields) {
       const id = f.fid;
-      h += `<div class="f-label${f.optional ? " optional" : ""}${f.element ? "" : " noel"}" id="L${id}" data-f="${id}"><span class="dv">${esc(f.label)}</span><span class="sv">${simpleLabel(f)}</span></div><div class="f-val ${f.status}${f.element ? "" : " noel"}" data-f="${id}"><div class="dv">${valueHtml(f)}</div><div class="sv">${simpleValue(f)}</div></div><div class="route-panel" id="${id}" hidden>${routeHtml(f, s)}</div>`;
+      h += `<div class="f-label${f.optional ? " optional" : ""}${f.element ? "" : " noel"}" id="L${id}" data-f="${id}"><span class="dv">${esc(f.label)}</span><span class="sv">${simpleLabel(f)}</span></div><div class="f-val ${f.status}${f.element ? "" : " noel"}" data-f="${id}"><div class="dv">${valueHtml(f)}${revHtml(f)}</div><div class="sv">${simpleValue(f)}</div></div><div class="route-panel" id="${id}" hidden>${routeHtml(f, s)}</div>`;
     }
     h += `</div>`;
   }

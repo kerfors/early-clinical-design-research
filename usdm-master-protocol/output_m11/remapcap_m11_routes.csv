@@ -1,10 +1,10 @@
 section,field,m11_element,usdm_attribute,status,n_kept,n_all,where_kept,breakpoints,log_rows
 Title Page,Enter Sponsor Confidentiality Statement,Sponsor Confidentiality Statement,NarrativeContentItem-text,section-rule,,,,,
-Title Page,Enter Full Title,Full Title,StudyTitle-text,several,2,4,study version Core 4.0 / PANDA 1.0 / Corticosteroid DSA 6 | study version Core 4.1 / PANDA 1.0 / Corticosteroid DSA 6,,
-Title Page,Enter Trial Acronym,Trial Acronym,StudyTitle-text,several,2,4,study version Core 4.0 / PANDA 1.0 / Corticosteroid DSA 6 | study version Core 4.1 / PANDA 1.0 / Corticosteroid DSA 6,,
+Title Page,Enter Full Title,Full Title,StudyTitle-text,several,2,4,study version Core 4.0 / PANDA 1.0 / Corticosteroid DSA 6 | study version Core 4.1 / PANDA 1.0 / Corticosteroid DSA 6,BP13(reviewed),
+Title Page,Enter Trial Acronym,Trial Acronym,StudyTitle-text,several,2,4,study version Core 4.0 / PANDA 1.0 / Corticosteroid DSA 6 | study version Core 4.1 / PANDA 1.0 / Corticosteroid DSA 6,BP13(reviewed),
 Title Page,Enter Sponsor Protocol Identifier,Sponsor Protocol Identifier,Identifier-text,not-checked,2,2,study version Core 4.0 / PANDA 1.0 / Corticosteroid DSA 6 | study version Core 4.1 / PANDA 1.0 / Corticosteroid DSA 6,,
 Title Page,Original Protocol Indicator,Original Protocol Indicator,StudyVersion-amendments,not-checked,1,1,study version Core 4.1 / PANDA 1.0 / Corticosteroid DSA 6,,
-Title Page,Enter Version Number,Version Number,StudyDefinitionDocumentVersion-version,several,2,4,document REMAP-CAP Core Protocol version 4.0 | document REMAP-CAP Core Protocol version 4.1,,
+Title Page,Enter Version Number,Version Number,StudyDefinitionDocumentVersion-version,several,2,4,document REMAP-CAP Core Protocol version 4.0 | document REMAP-CAP Core Protocol version 4.1,BP13(reviewed),
 Title Page,Enter Version Date,Version Date,GovernanceDate-dateValue,filtered-out,0,5,,,
 Title Page,Amendment Identifier,Amendment Identifier,StudyAmendment-number,one,1,1,study version Core 4.1 / PANDA 1.0 / Corticosteroid DSA 6,,mapping_log_step5.csv:80 derived
 Title Page,Amendment Scope,Amendment Scope,GeographicScope-type,none,0,0,,,
@@ -79,7 +79,7 @@ Amendment Details,Enter Section # and Name,Section # and Name,,unmapped,,,,,
 1.1.2,Intervention Assignment Method,Intervention Assignment Method,StudyDesign-characteristics,filtered-out,0,4,,BP01,mapping_log.csv:84 mapped_copy_from_core
 1.1.2,Randomisation Type,Randomisation Type,,unmapped,,,,,
 1.1.2,Other Intervention Assignment Method,Other Intervention Assignment Method,,unmapped,,,,,
-1.1.2,Master Protocol Indicator,Master Protocol Indicator,,unmapped,,,,,
+1.1.2,Master Protocol Indicator,Master Protocol Indicator,,unmapped,,,,BP14(reviewed),
 1.1.2,Stratification Indicator,Stratification Indicator,,unmapped,,,,,
 1.1.2,Drug/Device Combination Product Indicator,Drug/Device Combination Product Indicator,MedicalDevice-embeddedProductId,none,0,0,,,
 1.1.2,Adaptive Trial Design Indicator,Adaptive Trial Design Indicator,StudyDesign-characteristics,filtered-out,0,4,,BP01,mapping_log.csv:84 mapped_copy_from_core

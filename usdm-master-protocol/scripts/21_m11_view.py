@@ -7,14 +7,17 @@ each result also carries
     object (a master protocol has several of each; M11 describes one protocol);
   - the rows of this repo's mapping logs for the same object and attribute, other than 'mapped';
   - the breakpoints (output_remapcap/step5/breakpoints.csv) whose USDM element names the same
-    class and attribute, or the role of the target path's last hop.
+    class and attribute, or the role of the target path's last hop;
+  - the reviewed links from an M11 element to a breakpoint, with their evidence
+    (sources/m11_breakpoint_links.csv), for what the name match cannot find.
 
 Inputs (the M11, mapping and USDM files pinned as in usdm-one-graph, each checked by SHA-256):
   m11-rdf.ttl            ICH M11 sections, elements, Template headings and fields (m11-rdf v0.4.0)
   m11-usdm.sssom.ttl     the HL7 and CDISC M11-to-USDM mapping statements (m11-rdf v0.4.0)
   usdm_v4.ttl            the USDM v4 model (usdm-rdf v0.7.0)
   published/<case>_usdm_v*_without_text.json, read through usdm_v4.context.jsonld (usdm-rdf v0.7.0)
-  the mapping logs of the steps that built that file, and output_remapcap/step5/breakpoints.csv
+  the mapping logs of the steps that built that file, output_remapcap/step5/breakpoints.csv and
+  sources/m11_breakpoint_links.csv
 
 For each Template field: the element it realises, each mapping statement's USDM attribute, and the
 study's values for that attribute, found by a SPARQL query kept with the result. A condition clause is
@@ -52,6 +55,7 @@ CASES = {
                           "output_remapcap/step6/mapping_log_step6.csv"]},
 }
 BREAKPOINTS = "output_remapcap/step5/breakpoints.csv"
+REVIEWED = "sources/m11_breakpoint_links.csv"
 CASE = sys.argv[1] if len(sys.argv) == 2 else None
 if CASE not in CASES:
     raise SystemExit(f"usage: 21_m11_view.py {'|'.join(CASES)}")
@@ -255,6 +259,15 @@ with open(HERE / BREAKPOINTS, encoding="utf-8") as fh:
                    "names": set(re.findall(r"\b([A-Z]\w+)\.(\w+)", row["usdm_element"]))})
 
 
+REV = defaultdict(list)  # M11 element (local id) -> reviewed links for this case
+with open(HERE / REVIEWED, encoding="utf-8") as fh:
+    for row in csv.DictReader(fh):
+        if row["breakpoint"] not in {b["id"] for b in BP}:
+            raise ValueError(f"{REVIEWED}: {row['breakpoint']} is not in {BREAKPOINTS}")
+        if row["case"] == CASE:
+            REV[row["m11_element"]].append({"id": row["breakpoint"], "evidence": row["evidence"]})
+
+
 def log_rows(s, attr_name):
     return LOG.get((loc(s, BASE_IRI), attr_name), [])
 
@@ -426,6 +439,13 @@ for s, sec in sections.items():
         sec["fields"].append(field)
     sec["fields"].sort(key=lambda x: x["order"])
 
+# reviewed links: each must reach exactly one Template field of this case
+for el, links in REV.items():
+    hit = [f for sec in sections.values() for f in sec["fields"] if f["element"] and f["element"]["iri"] == str(M11) + el]
+    if len(hit) != 1:
+        raise ValueError(f"{REVIEWED}: {el} reaches {len(hit)} Template fields")
+    hit[0]["breakpoints_reviewed"] = links
+
 def nkey(num):
     return [int(x) if x.isdigit() else x for x in re.split(r"[.]", num)] if num else []
 
@@ -470,13 +490,13 @@ with open(OUT / f"{CASE}_m11_routes.csv", "w", newline="", encoding="utf-8") as 
                 el = f["element"]["label"] if f["element"] else ""
                 if r is None:
                     w.writerow([sec["num"] or sec["label"], f["label"], el, "", "unmapped" if el else "no-element",
-                                "", "", "", "", ""])
+                                "", "", "", " ".join(f"{b['id']}(reviewed)" for b in f.get("breakpoints_reviewed", [])), ""])
                     continue
                 kept = [c for c in r.get("candidates", []) if c["kept"]]
                 logs = [x for c in r.get("candidates", []) for x in c["log"]] + r.get("log_absent", [])
                 w.writerow([sec["num"] or sec["label"], f["label"], el, r["attr"], r["status"], r.get("n_kept", ""),
                             r.get("n_all", ""), " | ".join(sorted({"; ".join(c["where"]) for c in kept})),
-                            " ".join(r["breakpoints"]),
+                            " ".join(r["breakpoints"] + [f"{b['id']}(reviewed)" for b in f.get("breakpoints_reviewed", [])]),
                             " | ".join(sorted({f"{x['file'].split('/')[-1]}:{x['line']} {x['status']}" for x in logs}))])
 
 # --- counts for the page text and the README --------------------------------------------------------
