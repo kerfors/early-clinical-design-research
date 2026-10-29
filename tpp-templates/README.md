@@ -1,36 +1,33 @@
 # Target Product Profile templates compared
 
-Four public TPP templates and examples, read into one long table:
+Three public TPP sources, two templates and four worked examples, read into one long table:
 
 | Key | Source |
 |---|---|
 | FDA2007 | FDA draft guidance *Target Product Profile — A Strategic Development Process Tool*, Appendix C (March 2007; no longer on fda.gov, copy from fda.report) |
-| WOAH2026 | WOAH *Target Product Profile – Template for animal vaccines* (February 2026) |
 | PAVEGT | NCATS PaVe-GT *TPP Template* for AAV gene therapy (2025) |
 | SEED | NIH SEED example TPPs: small molecule, biologic, vaccine, cell and gene therapy |
 
 The notebook downloads any missing source into `tpp_sources/` (not in this repo).
 
-WOAH's [terms of use](https://www.woah.org/en/terms-and-conditions/) do not allow its content to be copied or stored
-by extraction tools without written permission. For WOAH2026 only the structure is kept: element numbers, labels,
-groups, columns and pages, not the text of its Comments column. FDA, PaVe-GT and NIH SEED are US government works;
-PaVe-GT asks that NIH be acknowledged.
+The WOAH *Target Product Profile – Template for animal vaccines* (February 2026) was looked at and left out: animal
+vaccines are outside the scope of this work.
+FDA, PaVe-GT and NIH SEED are US government works; PaVe-GT asks that NIH be acknowledged.
 
-- **Elements** (`tpp_elements.csv`): 172 in all (134 attributes, 17 label sections, 14 label subsections, 7
-  milestones), with their columns, prompts, guidance and example values (WOAH2026: structure only). The FDA label
-  sections carry their SPL section LOINC codes.
+- **Elements** (`tpp_elements.csv`): 140 in all (102 attributes, 17 label sections, 14 label subsections, 7
+  milestones), with their columns, prompts, guidance and example values. The FDA label sections carry their SPL
+  section LOINC codes.
 - **Column models** (`tpp_column_models.csv`): what distinguishes the families.
 
   | Source | Target columns |
   |---|---|
   | FDA2007 | Target, Annotations, Comments (plus a milestone box per TPP version) |
-  | WOAH2026 | Ideal, Minimum, Comments |
   | PAVEGT | Minimum Acceptable Result, Ideal Result |
   | SEED | Minimal Acceptance Criteria, Preferred Acceptance Criteria (plus a Description table) |
 
-- **Attribute inventory** (`tpp_label_inventory.csv`): labels matched only by exact normalised label. 99
-  labels: 95 occur in one family, 3 in two, 1 in three.
-- **Crosswalk** (`crosswalk_review.csv`, 109 rows): related concepts with different wording are deliberately not
+- **Attribute inventory** (`tpp_label_inventory.csv`): labels matched only by exact normalised label. 74
+  labels: 72 occur in one family, 2 in two.
+- **Crosswalk** (`crosswalk_review.csv`, 77 rows): related concepts with different wording are deliberately not
   merged. The `concept` column is empty, left for a human decision.
 - **Source metadata** (`tpp_source_metadata.json`): document metadata found in the files (product type,
   indication, product name, table title).

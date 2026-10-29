@@ -37,38 +37,6 @@ FDA2007,14,,Clinical Studies,label_section,Target | Annotations | Comments,24,Pr
 FDA2007,15,,References,label_section,,24,,,"Can include when labeling must summarize or otherwise rely on recommendation by authoritative scientific body, or a standardized methodology, scale, or technique, because information is necessary for safe and effective use.",34093-5,,,,,,,references
 FDA2007,16,,How Supplied/Storage and Handling,label_section,Target | Annotations | Comments,25,Include information about the available dosage forms to which the labeling will apply and for which the manufacturer or distributor will be responsible. For example: • Strength of the dosage form • Units in which the dosage form ordinarily is available • Information to facilitate identification of dosage forms • Special handling and storage conditions,"Summary information regarding completed or planned studies to support the target: • Protocol #, Serial #, Submission date",,34069-5 | 44425-7,,,,,,,how supplied storage and handling
 FDA2007,17,,Patient Counseling Information,label_section,Target | Annotations | Comments,25,Include information for prescribers to convey to patients to use the drug safely and effectively. For example: • Precautions concerning driving • Concomitant use of other substances that may have harmful additive effects • Proper use and disposal of syringes and needles • Adverse reactions reasonably associated with use of the drug • Lab tests and monitoring required Indicate whether a Patient Package Insert or MedGuide are planned.,"Summary information regarding completed or planned studies to support the target: Protocol #, Serial #, Submission date •",,88436-1,,,,,,,patient counseling information
-WOAH2026,1.1,1. Product use summary,Intended use,attribute,Ideal | Minimum | Comments,3,,,,,,,,,,,intended use
-WOAH2026,1.2,1. Product use summary,Target population,attribute,Ideal | Minimum | Comments,3,,,,,,,,,,,target population
-WOAH2026,1.3,1. Product use summary,Further comments,attribute,Ideal | Minimum | Comments,3,,,,,,,,,,,further comments
-WOAH2026,2.1,2. Design,Target immunogen,attribute,Ideal | Minimum | Comments,3,,,,,,,,,,,target immunogen
-WOAH2026,2.2,2. Design,Vaccination regime,attribute,Ideal | Minimum | Comments,3,,,,,,,,,,,vaccination regime
-WOAH2026,2.3,2. Design,"Maximum volume, route of administration",attribute,Ideal | Minimum | Comments,3,,,,,,,,,,,maximum volume route of administration
-WOAH2026,2.4,2. Design,Co-administration with other vaccines or medicines,attribute,Ideal | Minimum | Comments,3,,,,,,,,,,,co administration with other vaccines or medicines
-WOAH2026,2.5,2. Design,Differentiation of infected and vaccinated animals,attribute,Ideal | Minimum | Comments,3,,,,,,,,,,,differentiation of infected and vaccinated animals
-WOAH2026,2.6,2. Design,"Dissemination, shedding and carrier status after vaccination",attribute,Ideal | Minimum | Comments,3,,,,,,,,,,,dissemination shedding and carrier status after vaccination
-WOAH2026,2.7,2. Design,Further comments,attribute,Ideal | Minimum | Comments,3,,,,,,,,,,,further comments
-WOAH2026,3.1,3. Performance,Efficacy,attribute,Ideal | Minimum | Comments,3,,,,,,,,,,,efficacy
-WOAH2026,3.2,3. Performance,Efficacy evaluation,attribute,Ideal | Minimum | Comments,3,,,,,,,,,,,efficacy evaluation
-WOAH2026,3.3,3. Performance,Onset of immunity,attribute,Ideal | Minimum | Comments,3,,,,,,,,,,,onset of immunity
-WOAH2026,3.4,3. Performance,Duration of immunity (DoI),attribute,Ideal | Minimum | Comments,3,,,,,,,,,,,duration of immunity doi
-WOAH2026,3.5,3. Performance,"Safety, including adverse reactions",attribute,Ideal | Minimum | Comments,3,,,,,,,,,,,safety including adverse reactions
-WOAH2026,3.6,3. Performance,Withdrawal period,attribute,Ideal | Minimum | Comments,3,,,,,,,,,,,withdrawal period
-WOAH2026,3.7,3. Performance,Non-target animal safety and environmental impact,attribute,Ideal | Minimum | Comments,4,,,,,,,,,,,non target animal safety and environmental impact
-WOAH2026,3.8,3. Performance,Further comments,attribute,Ideal | Minimum | Comments,4,,,,,,,,,,,further comments
-WOAH2026,4.1,4. Product specifications,Physical presentation,attribute,Ideal | Minimum | Comments,4,,,,,,,,,,,physical presentation
-WOAH2026,4.2,4. Product specifications,Vial and pack size,attribute,Ideal | Minimum | Comments,4,,,,,,,,,,,vial and pack size
-WOAH2026,4.3,4. Product specifications,Vaccine stability,attribute,Ideal | Minimum | Comments,4,,,,,,,,,,,vaccine stability
-WOAH2026,4.4,4. Product specifications,In-use stability,attribute,Ideal | Minimum | Comments,4,,,,,,,,,,,in use stability
-WOAH2026,4.5,4. Product specifications,Formulation,attribute,Ideal | Minimum | Comments,4,,,,,,,,,,,formulation
-WOAH2026,4.6,4. Product specifications,Storage as bulk antigen,attribute,Ideal | Minimum | Comments,4,,,,,,,,,,,storage as bulk antigen
-WOAH2026,4.7,4. Product specifications,Supplies requirement,attribute,Ideal | Minimum | Comments,4,,,,,,,,,,,supplies requirement
-WOAH2026,4.8,4. Product specifications,Further comments,attribute,Ideal | Minimum | Comments,4,,,,,,,,,,,further comments
-WOAH2026,5.1,5. Regulatory aspects and further considerations,Product registration,attribute,Ideal | Minimum | Comments,4,,,,,,,,,,,product registration
-WOAH2026,5.2,5. Regulatory aspects and further considerations,Vaccino-vigilance,attribute,Ideal | Minimum | Comments,4,,,,,,,,,,,vaccino vigilance
-WOAH2026,5.3,5. Regulatory aspects and further considerations,Target price end user,attribute,Ideal | Minimum | Comments,4,,,,,,,,,,,target price end user
-WOAH2026,5.4,5. Regulatory aspects and further considerations,Product lead times,attribute,Ideal | Minimum | Comments,4,,,,,,,,,,,product lead times
-WOAH2026,5.5,5. Regulatory aspects and further considerations,Further comments,attribute,Ideal | Minimum | Comments,4,,,,,,,,,,,further comments
-WOAH2026,32,5. Regulatory aspects and further considerations,FINAL TPP COMMENTS,attribute,Ideal | Minimum | Comments,4,,,,,,,,,,,final tpp comments
 PAVEGT,1,,"Primary Product, Indication and Usage",attribute,Minimum Acceptable Result | Ideal Result,,,,,,"[Insert name of disease for which the gene therapy is indicated, name of therapeutic vector and intended physiological function.]","[Insert name of disease for which the gene therapy is indicated, name of therapeutic vector and intended physiological function.]",True,,,,primary product indication and usage
 PAVEGT,2,,Patient Population,attribute,Minimum Acceptable Result | Ideal Result,,,,,,[Insert patient age (initial target) range and target disease.],[Insert ideal patient age range and target disease.],False,,,,patient population
 PAVEGT,3,,Mechanism of Action,attribute,Minimum Acceptable Result | Ideal Result,,,,,,[Insert proposed mechanism of action for the intended gene therapy.],[Insert proposed mechanism of action for the intended gene therapy.],True,,,,mechanism of action

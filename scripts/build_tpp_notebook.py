@@ -24,14 +24,15 @@ cells = []
 cells.append(markdown_cell("""
 # Target Product Profile templates — structural comparison
 
-Extracts the structure of four public TPP templates/examples into one long table and compares their column models and attributes.
+Extracts the structure of three public TPP sources (two templates and four worked examples) into one long table and compares their column models and attributes.
 
 | Key | Source | Date | Nature |
 |---|---|---|---|
 | `FDA2007` | FDA draft guidance *Target Product Profile — A Strategic Development Process Tool*, Appendix C template | March 2007 (draft; no longer in FDA's guidance list) | blank template, label-anchored |
-| `WOAH2026` | WOAH *Target Product Profile – Template for animal vaccines* | Feb 2026 | blank template, attribute table |
 | `PAVEGT` | NCATS PaVe-GT *Target Product Profile (TPP) Template* (AAV gene therapy) | 2025 (upload path 2025/07) | blank template, attribute table |
 | `SEED_*` | NIH SEED *Example TPP* for small molecule, biologic, vaccine, cell & gene therapy | Dec 2023 | **filled examples** (illustrative values) |
+
+The WOAH *Target Product Profile – Template for animal vaccines* (February 2026) was looked at and left out: animal vaccines are outside the scope of this work.
 
 All content comes from the files. The SEED documents are filled examples, so their cell values are kept in `example_value_*` columns and are **not** template guidance. NIH SEED states that the examples are illustrative.
 """))
@@ -56,8 +57,6 @@ pd.set_option("display.width", 220)
 SOURCES = {{
     "FDA2007": ("fda_tpp_2007.pdf",
                 "https://fda.report/media/72566/Target-Product-Profile----A-Strategic-Development-Process-Tool.pdf"),
-    "WOAH2026": ("woah_tpp_template.pdf",
-                 "https://www.woah.org/app/uploads/2026/02/a-202601-ahg-tpp-template.pdf"),
     "PAVEGT": ("pavegt_tpp_template.docx",
                "https://pave-gt.ncats.nih.gov/wp-content/uploads/2025/07/PaVe-GT-Target-Product-Profile-Template-508.docx"),
     "SEED_SMALL_MOLECULE": ("seed_Example-TPP-Small-Molecule-Drug.pdf",
@@ -266,20 +265,15 @@ fda[fda.element_kind == "label_section"][["element_id", "element_label", "spl_lo
 """))
 
 cells.append(markdown_cell("""
-## WOAH 2026 and NIH SEED — pdfplumber tables
+## NIH SEED — pdfplumber tables
 
-Both sources are real PDF tables, but `extract_tables()` scatters cell text across grid columns. Rules:
+The examples are real PDF tables, but `extract_tables()` scatters cell text across grid columns. Rules:
 
 - A row containing `Attributes` is the **column header**. Header names and their grid positions are kept.
-- A row whose only non-empty cell sits at grid position ≤ 1 is a **group header**, e.g. `1. Product use summary` or `Preclinical Studies`. The exception is a numbered attribute such as `1.3. Further comments`, which is an attribute with an empty Comments cell. The first row of a table without a column header is also a group header; its cell fragments are joined, which repairs e.g. `Regulatory Guideline` + `s`.
+- A row whose only non-empty cell sits at grid position ≤ 1 is a **group header**, e.g. `Preclinical Studies`; a numbered attribute (`1.3. …`) is not. The first row of a table without a column header is also a group header; its cell fragments are joined, which repairs e.g. `Regulatory Guideline` + `s`.
 - A row whose only non-empty cell sits at position ≥ 3 is a **continuation** of the previous row's value.
 - A row containing `:` in its first cells (`Product Type: …`, `Indication: …`) is **document metadata**.
 - Otherwise the first non-empty cell is the **attribute label**, and each further cell is assigned to the nearest header column. Tables without a column header have one value column, `Description`.
-- The table title row (`WOAH TPP for a [disease name] vaccine`) is recorded as metadata.
-
-WOAH's terms of use do not allow its content to be copied or stored by extraction tools without written permission
-(https://www.woah.org/en/terms-and-conditions/). Only the WOAH template's structure is kept: element numbers,
-labels, groups, columns and pages. The text of its `Comments` column is dropped.
 """))
 
 cells.append(code_cell("""
@@ -312,12 +306,8 @@ def parse_plumber_tables(source, pdf_path, filled_example):
                         continue
                     if r_idx == 0 and not header_seen_in_table and (len(cells) > 1 or cells[0][0] <= 1) \\
                             and not re.match(r"^\\d+\\.\\d+\\.", texts[0]):
-                        title = "".join(texts) if len(cells) > 1 else texts[0]
-                        if title.startswith("WOAH TPP for"):
-                            meta["table_title"] = title
-                        else:
-                            group = title
-                            header = None
+                        group = "".join(texts) if len(cells) > 1 else texts[0]
+                        header = None
                         continue
                     if len(cells) == 1 and cells[0][0] <= 1 and not re.match(r"^\\d+\\.\\d+\\.", texts[0]):
                         group = texts[0]
@@ -351,12 +341,6 @@ def parse_plumber_tables(source, pdf_path, filled_example):
             row[key] = v
         out.append(row)
     return pd.DataFrame(out), meta
-
-
-woah, woah_meta = parse_plumber_tables("WOAH2026", SOURCE_DIR / SOURCES["WOAH2026"][0], filled_example=False)
-woah = woah.drop(columns=["guidance_comments"])
-print("WOAH metadata:", woah_meta)
-woah[["element_id", "group", "element_label", "columns"]]
 """))
 
 cells.append(code_cell("""
@@ -410,18 +394,18 @@ cells.append(markdown_cell("""
 
 The **column model** is what distinguishes TPP families:
 
-| Role | FDA2007 | WOAH2026 | PAVEGT | SEED |
-|---|---|---|---|---|
-| target / threshold | `Target` (labeling language) | `Ideal`, `Minimum` | `Ideal Result`, `Minimum Acceptable Result` | `Preferred`, `Minimal Acceptance Criteria` |
-| evidence link | `Annotations` (Protocol #, Serial #, Submission date) | — | — | — |
-| commentary | `Comments` | `Comments` (delete when done) | — | — |
-| versioning | milestone box (meeting × TPP version date) | — | — | — |
+| Role | FDA2007 | PAVEGT | SEED |
+|---|---|---|---|
+| target / threshold | `Target` (labeling language) | `Ideal Result`, `Minimum Acceptable Result` | `Preferred`, `Minimal Acceptance Criteria` |
+| evidence link | `Annotations` (Protocol #, Serial #, Submission date) | — | — |
+| commentary | `Comments` | — | — |
+| versioning | milestone box (meeting × TPP version date) | — | — |
 
 The table below is computed from the extracted `columns` values, not from this note.
 """))
 
 cells.append(code_cell("""
-elements = pd.concat([fda, woah, pave, seed], ignore_index=True, sort=False)
+elements = pd.concat([fda, pave, seed], ignore_index=True, sort=False)
 elements["norm_label"] = elements["element_label"].str.lower().str.replace(r"[^a-z0-9]+", " ", regex=True).str.strip()
 
 column_models = (elements.groupby(["source", "columns"]).size()
@@ -476,7 +460,7 @@ inventory.to_csv(OUTPUT_DIR / "tpp_label_inventory.csv")
 crosswalk_review.to_csv(OUTPUT_DIR / "crosswalk_review.csv", index=False)
 with open(OUTPUT_DIR / "tpp_source_metadata.json", "w", encoding="utf-8") as f:
     json.dump({"sources": {k: {"file": v[0], "url": v[1]} for k, v in SOURCES.items()},
-               "WOAH2026": woah_meta, "PAVEGT": pave_meta, "SEED": seed_meta},
+               "PAVEGT": pave_meta, "SEED": seed_meta},
               f, indent=1, ensure_ascii=False)
 print(elements.groupby(["source", "element_kind"]).size().to_string())
 for f in sorted(OUTPUT_DIR.iterdir()):

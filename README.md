@@ -7,7 +7,7 @@ Lilly Chronic Pain Master Protocol (CPMP) and REMAP-CAP. Programme-level design 
 
 **Status: early exploratory work.** Draft, not normative. It is published so the method and the evidence can
 be followed and reused, not as a model to adopt. Built from public documents (ClinicalTrials.gov, remapcap.org,
-EU-PEARL, FDA, WOAH, NIH SEED). The design classes are anchored in 16 terms from public ontologies (OBI with IAO
+EU-PEARL, FDA, NIH SEED). The design classes are anchored in 16 terms from public ontologies (OBI with IAO
 and BFO, MONDO, HP), imported from pinned releases; the gaps found are listed in the module READMEs. Analyst
 readings are marked as such, and each carries its review state; what still waits for a trial-design reviewer or a
 clinical reader is listed in the catalogue.
@@ -64,7 +64,7 @@ Some questions have no answer in the public documents (Q10 above all); the catal
 
 Before the cases, two public template families were read as data, the same method on a template rather than a
 protocol: [EU-PEARL](eupearl-templates/) (sections with keys, text categories from the template's own markers,
-field labels, a TOC check, and the MPT ↔ ISA alignment) and [four TPP templates](tpp-templates/) (column models
+field labels, a TOC check, and the MPT ↔ ISA alignment) and [three TPP sources](tpp-templates/) (column models
 compared, with concept matching left to a review file). A third template is read from a case: the REMAP-CAP DSAs
 share a structure that no REMAP-CAP document states as a template, read here from
 [the headings of its nine DSAs](remapcap-design-modules/output/step1/headings.csv).
@@ -139,7 +139,7 @@ in this repo today, and they may change as the work goes on.
 | `usdm-master-protocol/` | Both cases in USDM v4: document structure, cross-layer statements, amendments, breakpoints |
 | `cdd-layer/` | Sketch of an allocation layer above USDM (parked) |
 | `eupearl-templates/` | The five EU-PEARL templates as data: sections, text categories, field labels, TOC check, MPT ↔ ISA alignment |
-| `tpp-templates/` | Four TPP templates compared: elements, column models, attribute inventory, crosswalk for review |
+| `tpp-templates/` | Three TPP sources compared (FDA, PaVe-GT, NIH SEED): elements, column models, attribute inventory, crosswalk for review |
 | `literature/` | Europe PMC query script and hit list |
 | `scripts/` | Site generator (`build_site.py` → `docs/`) and notebook generators for the template and SoA-join notebooks |
 
