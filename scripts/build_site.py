@@ -61,6 +61,11 @@ build time, so an unchanged input gives byte-identical pages. Commit the inputs 
 Relative links in README.md and the catalogue point at files in the repo; on the site
 they point at the same file on GitHub (main).
 
+Navigation: every page is listed in PAGES (path, short title, parent, other pages that link to it). Pages below the
+top level get a line "where you are" under the top bar (with previous and next on the question pages), the top bar marks
+the current section, and the landing page lists all pages. The build stops if a generated page is not in PAGES, or a page
+named as linking to another does not.
+
 docs/ is generated; do not edit by hand.
 Run:    python3 scripts/build_site.py   (from the repo root)
 """
@@ -202,6 +207,26 @@ KIND_ORDER = ["finding", "case question", "earlier", "open", "not asked"]
 KIND_PLURAL = {"finding": "findings", "case question": "case questions"}
 CASE_ORDER = ["CPMP", "REMAP-CAP", "both"]
 REVIEWERS = ["trial-design reviewer", "clinical reader", "statistical reader"]
+# every page of the site: path -> (short title, parent path, other pages that link to it); the question pages are added
+# once questions.csv is read
+PAGES = {
+    "": ("Early clinical design research", None, []),
+    "questions/": ("Questions", "", []),
+    "findings/": ("Findings", "", []),
+    "examples/cp-11b/": ("Worked example: CP-11b", "findings/", ["questions/Q1/"]),
+    "modules/": ("Modules", "", []),
+    "cases/": ("Cases", "", []),
+    "cases/cpmp/": ("CPMP: the documents", "cases/", []),
+    "cases/remapcap/": ("REMAP-CAP: the documents", "cases/", []),
+    "usdm/": ("USDM", "", []),
+    "usdm/m11-cpmp/": ("CPMP: the USDM file shown as ICH M11", "usdm/", ["cases/cpmp/"]),
+    "usdm/m11-remapcap/": ("REMAP-CAP: the USDM file shown as ICH M11", "usdm/", ["cases/remapcap/"]),
+    "templates/": ("Templates", "", []),
+    "templates/eupearl/": ("EU-PEARL templates as data", "templates/", []),
+    "templates/remapcap-dsa/": ("REMAP-CAP: the DSA template", "templates/", ["cases/remapcap/"]),
+    "templates/tpp/": ("TPP templates compared", "templates/", []),
+    "vision/": ("Vision", "", []),
+}
 
 CSS = """
 :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f6368; --line: #dadce0; --link: #1a5fb4;
@@ -273,6 +298,10 @@ table.matrix th .dname { font-weight: 400; font-size: 0.72rem; color: var(--mute
 table.matrix td.title { min-width: 16rem; }
 details.own summary { cursor: pointer; font-weight: 600; margin: 0.4rem 0; }
 .toc { font-size: 0.9rem; color: var(--muted); margin: 0 0 1rem; }
+.crumbs { font-size: 0.9rem; color: var(--muted); margin: -0.4rem 0 0.8rem; }
+.crumbs .also { margin-left: 0.2rem; }
+nav a.here { font-weight: 700; text-decoration: none; color: var(--fg); }
+.sitemap { columns: 2 18rem; font-size: 0.92rem; } .sitemap ul { margin: 0.2rem 0 0.6rem; }
 .lead { border-left: 3px solid var(--link); background: var(--card); padding: 0.6rem 0.9rem; margin: 1rem 0; }
 .lv2 { margin-left: 0.8rem; } .lv3 { margin-left: 1.6rem; } .lv4 { margin-left: 2.4rem; }
 .tree .box { margin: 0.25rem 0; }
@@ -333,6 +362,26 @@ def with_toc(body):
     return body[:h1_end] + f'\n<p class="toc">On this page: {toc}</p>' + body[h1_end:]
 
 
+def crumbs(path, up):
+    """'Where you are' for a page below the top level: its parents as links, its own short title, the other pages that
+    link to it, and on a question page the previous and next question. up: the page's way back to the site root."""
+    chain, p = [], PAGES[path][1]
+    while p is not None:
+        chain.insert(0, p)
+        p = PAGES[p][1]
+    h = " › ".join(f'<a href="{up}{c}">{html.escape(PAGES[c][0])}</a>' for c in chain) + f" › {html.escape(PAGES[path][0])}"
+    also = PAGES[path][2]
+    if also:
+        h += ' <span class="also">· also linked from ' + ", ".join(f'<a href="{up}{a}">{html.escape(PAGES[a][0])}</a>'
+                                                                 for a in also) + "</span>"
+    if path.startswith("questions/Q"):
+        qs = [k for k in PAGES if k.startswith("questions/Q")]
+        i = qs.index(path)
+        h += ' <span class="also">·' + (f' <a href="{up}{qs[i - 1]}">← {PAGES[qs[i - 1]][0]}</a>' if i else "") \
+            + (f' <a href="{up}{qs[i + 1]}">{PAGES[qs[i + 1]][0]} →</a>' if i + 1 < len(qs) else "") + "</span>"
+    return h
+
+
 def page(title, depth, body, wide=False, inputs=None):
     up = "../" * depth
     paths = inputs or list(INPUTS.values())
@@ -379,6 +428,8 @@ cat = pd.read_csv(ROOT / INPUTS["catalogue"], dtype=str)
 reqs = pd.read_csv(ROOT / INPUTS["requirements"], dtype=str).set_index("requirement")
 
 assert list(questions.q_id) == [f"Q{i}" for i in range(1, 11)], list(questions.q_id)
+for q in questions.itertuples():
+    PAGES[f"questions/{q.q_id}/"] = (q.q_id, "questions/", [])
 assert set(cat.q_id) == set(questions.q_id), set(cat.q_id) ^ set(questions.q_id)
 assert set(cat.kind) <= set(KIND_ORDER), set(cat.kind) - set(KIND_ORDER)
 assert set(cat.case) <= set(CASE_ORDER), set(cat.case) - set(CASE_ORDER)
@@ -457,7 +508,7 @@ for q in questions.itertuples():
             if not pd.isna(r.query):
                 item = f'<a href="{repo_link(r.query)}">{item}</a>'
             elif r.kind == "finding":
-                item = f'<a href="{BLOB}{FINDINGS}#L{finding_line[r.item_id]}">{item}</a>'
+                item = f'<a href="../../findings/#{r.item_id}">{item}</a>'
             cls = "unanswered" if r.kind in ("open", "not asked") else "answered"
             wait_html = "".join(f'<span class="chip wait">waits for {w}</span>' for w in waits(r.review))
             if r.item_id in EXAMPLES:
@@ -473,7 +524,8 @@ for q in questions.itertuples():
     body = f"""<h1>{q.q_id}. {esc(q.question)}</h1>
 <ul>{req_html}</ul>
 <p class="muted">Item: <b>CP-</b> and <b>RC-</b> are findings for CPMP and REMAP-CAP, each with document evidence
-(<a href="{BLOB}{FINDINGS}">findings.csv</a>; the link opens the finding's row); <b>CQ</b> and <b>R</b> are the case
+(the link opens the finding on the <a href="../../findings/">Findings</a> page, which links its row in
+<a href="{BLOB}{FINDINGS}">findings.csv</a>); <b>CQ</b> and <b>R</b> are the case
 questions of the CPMP and REMAP-CAP design modules, each a SPARQL query (the link opens the query); <i>earlier</i>
 rows are answers from before the modules, and cdd-layer items are questions stated in the parked cdd-layer sketch.
 Case "both": a question asked of the two cases together.
@@ -502,7 +554,7 @@ for req, rq in reqs.iterrows():
     sub = fall[fall.requirement == req].sort_values("case", kind="stable")
     assert len(sub), req
     trs = "".join(
-        f'<tr><td class="item"><a href="{BLOB}{FINDINGS}#L{finding_line[r.finding_id]}">{esc(r.finding_id)}</a>'
+        f'<tr id="{esc(r.finding_id)}"><td class="item"><a href="{BLOB}{FINDINGS}#L{finding_line[r.finding_id]}">{esc(r.finding_id)}</a>'
         + (f'<br><a href="../examples/{r.finding_id.lower()}/">worked example</a>' if r.finding_id in EXAMPLES else "")
         + '</td>'
         f'<td>{esc(r.case)}</td><td>{esc(r.finding)}</td><td>{esc(r.observed)}</td><td>{esc(r.check)}</td>'
@@ -1122,7 +1174,8 @@ for c, name in M11_CASES.items():
     n_rev = sum(len(f.get("breakpoints_reviewed", [])) for f in flds)
     paths = [src, M11_PAGE, UMP + d["study_file"], BREAKPOINTS, M11_REVIEWED] + [UMP + x for x in d["logs"]]
     (DOCS / "usdm" / f"m11-{c}" / "index.html").write_text(m11_page.page_html(d, {
-        "title": f"{name} as an ICH M11 protocol", "up": "../", "blob": BLOB, "footer": provenance(paths)}),
+        "title": f"{name} as an ICH M11 protocol", "up": "../", "blob": BLOB, "footer": provenance(paths),
+        "crumbs": crumbs(f"usdm/m11-{c}/", "../../")}),
         encoding="utf-8")
     m11_rows.append(f'<tr><td><a href="m11-{c}/">{name}</a></td>'
                     + "".join(f'<td class="num">{int(n_st.get(k, 0))}</td>' for k, _ in M11_STATUS)
@@ -1438,13 +1491,21 @@ landing_cards = [
     area_card("questions/", "The questions",
               [f"{len(questions)} competency questions; the catalogue holds {n_kind.get('finding', 0)} findings, "
                f"{n_kind.get('case question', 0)} case questions and {n_kind.get('open', 0)} open questions"]),
+    area_card("findings/", "Findings",
+              [f"{len(fall)} findings with document evidence (CPMP {ncase['CPMP']}, REMAP-CAP {ncase['REMAP-CAP']}), "
+               f"grouped by the {len(reqs)} requirements they bear on"]),
+    area_card("modules/", "Design modules",
+              [f"Early work: the design content of both cases as OWL modules, anchored in {n_terms} terms from public "
+               f"ontologies"]),
     area_card("cases/", "The two cases",
               [f"CPMP: master and {len(grid)} ISAs", f"REMAP-CAP: {len(rdocs)} documents read"]),
     area_card("usdm/", "USDM v4 and master protocols",
-              [f"Both cases as USDM v4 JSON, validated; {len(bp)} breakpoints where USDM could not carry them"]),
+              [f"Both cases as USDM v4 JSON, validated; {len(bp)} breakpoints where USDM could not carry them",
+               "Each USDM file shown as an ICH M11 protocol"]),
     area_card("templates/", "Templates as data",
               [f"EU-PEARL: {len(tot)} templates with their heading trees, MPT and ISA side by side",
-               f"REMAP-CAP: the DSA template read from {len(dsa_keys)} DSAs"]),
+               f"REMAP-CAP: the DSA template read from {len(dsa_keys)} DSAs",
+               f"TPP: {len(tel)} elements from four template families compared"]),
 ]
 vision_md = (ROOT / VISION).read_text(encoding="utf-8")
 vision_title, vision_rest = vision_md.split("\n", 1)
@@ -1458,10 +1519,48 @@ heading_p = re.findall(r'<p><strong>Where this is heading:</strong>(.*?) See <a 
 assert len(heading_p) == 1, "README intro must end with one 'Where this is heading:' paragraph linking VISION.md"
 intro_html = re.sub(r'<p><strong>Where this is heading:</strong>.*?</p>',
                     f'<p class="lead"><a href="vision/"><b>Where this is heading</b></a>:{heading_p[0]}</p>', intro_html, flags=re.S)
+def sitemap(parent):
+    kids = [k for k, v in PAGES.items() if v[1] == parent]
+    if not kids:
+        return ""
+    return "<ul>" + "".join(f'<li><a href="{k}">{html.escape(PAGES[k][0])}</a>{qtext(k)}{sitemap(k)}</li>' for k in kids) + "</ul>"
+
+
+def qtext(k):
+    """On the landing page a question is listed with its text."""
+    return f" {esc(questions.set_index('q_id').loc[PAGES[k][0], 'question'])}" if k.startswith("questions/Q") else ""
+
+
 index_body = f"""<h1>Early clinical design research</h1>
 {intro_html}
-<div class="cards four">{''.join(landing_cards)}</div>
+<div class="cards">{''.join(landing_cards)}</div>
+<h2>All pages</h2>
+<div class="sitemap">{sitemap("")}</div>
 """
 (DOCS / "index.html").write_text(page("Early clinical design research", 0, index_body), encoding="utf-8")
+
+# Navigation pass: every generated page is in PAGES; the top bar marks the current section; pages below the top level
+# get the 'where you are' line (the M11 pages carry it in their own panel); every 'also linked from' page links there
+written = {str(f.parent.relative_to(DOCS)) + "/" if f.parent != DOCS else "" for f in DOCS.rglob("index.html")}
+assert written == set(PAGES), (written ^ set(PAGES))
+for path in PAGES:
+    f = DOCS / path / "index.html"
+    t = f.read_text(encoding="utf-8")
+    up = "../" * path.count("/")
+    for a in PAGES[path][2]:
+        assert f'href="{"../" * a.count("/")}{path}"' in (DOCS / a / "index.html").read_text(encoding="utf-8"), (a, path)
+    if path.startswith("usdm/m11-"):
+        assert crumbs(path, up) in t, path
+        continue
+    section = path
+    while PAGES[section][1]:
+        section = PAGES[section][1]
+    if path:
+        a = f'<a href="{up}{section}">'
+        assert t.count(a) >= 1, (path, section)
+        t = t.replace(a, f'<a href="{up}{section}" class="here">', 1)
+    if path.count("/") >= 2:
+        t = t.replace("</nav>\n", f'</nav>\n<p class="crumbs">{crumbs(path, up)}</p>\n', 1)
+    f.write_text(t, encoding="utf-8")
 
 print(f"docs/: index.html, vision, 3 area pages, {len(questions)} question pages, 2 case pages, 3 template pages, 2 M11 pages")

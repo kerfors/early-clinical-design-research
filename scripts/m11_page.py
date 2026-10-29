@@ -26,7 +26,7 @@ def field_status(f):
 
 def page_html(data, links):
     """data: the lift output for one case. links: 'title', 'up' (the USDM page), 'blob' (repo files on GitHub),
-    'footer' (the site's provenance line, HTML)."""
+    'footer' (the site's provenance line, HTML), 'crumbs' (where the page sits in the site, HTML)."""
     fields = [f for s in data["sections"] for f in s["fields"]]
     for i, f in enumerate(fields):
         f["status"] = field_status(f)
@@ -232,7 +232,7 @@ def page_html(data, links):
   .simple .f-label, .simple .f-val, .simple .f-label:hover { cursor: default; text-decoration: none; }
   .simple .noel { display: none; }
   .where { display: block; font-size: 11.5px; color: var(--ink-muted); }
-  .back { font-size: 12.5px; margin: 0 0 12px; } .back a { color: var(--amber); }
+  .back { font-size: 12.5px; margin: 0 0 12px; color: var(--muted); } .back a { color: var(--amber); }
   .colophon .prov a { color: var(--ink-muted); }
   .graph-box { margin: 0 0 12px; font-size: 12.5px; color: var(--muted); }
   .graph-box summary { cursor: pointer; color: var(--text); margin: 0 0 6px; }
@@ -261,7 +261,7 @@ def page_html(data, links):
 </head>
 <body>
 <aside class="panel">
-  <p class="back"><a id="up">← USDM v4 and master protocols</a></p>
+  <p class="back">__CRUMBS__</p>
   <div class="views" role="group" aria-label="View"><button type="button" data-view="simple">Protocol</button><button type="button" data-view="deep">Deep dive</button></div>
   <h1>A study laid out as an ICH M11 protocol: <span id="study-name"></span></h1>
   <p class="lede sv">The study read from a <b>graph</b>: the ICH M11 Template as m11-rdf renders it, the published HL7 and CDISC mappings, USDM v4 and this case's published USDM file, brought together by shared identifiers. A grey — marks an M11 element the graph finds no clear value for. M11 describes one protocol; this is a master protocol with several documents and versions, so where a field has several values each says where it sits. Switch to <b>Deep dive</b> to see how each value was found and where the study and the mappings do not fit.</p>
@@ -295,7 +295,6 @@ const pil = iri => iri.slice(D.base.length);
 const depth = num => num ? Math.min(num.split(".").length, 4) : 1;
 
 const L = __LINKS__;
-document.getElementById("up").href = L.up;
 const C = D.counts, FS = C.field_status;
 document.getElementById("study-name").textContent = D.study_name;
 document.getElementById("c-one").textContent = (FS["one"] || 0) + " / " + C.fields;
@@ -571,4 +570,5 @@ document.getElementById("open").addEventListener("change", e => document.querySe
 """
     html = html.replace("__DATA__", json.dumps(data, ensure_ascii=False).replace("</", "<\\/"))
     html = html.replace("__TITLE__", htmllib.escape(links["title"])).replace("__LINKS__", json.dumps(links))
+    html = html.replace("__CRUMBS__", links["crumbs"])
     return html.replace("__FOOTER__", links["footer"])
