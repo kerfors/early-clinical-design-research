@@ -830,11 +830,7 @@ from the source documents. The counts below are the validator's own, read from t
 <tbody>{''.join(file_rows)}</tbody></table></div>
 <p class="muted">Structural findings are all missing required attributes (MinCount); each one is an absence the mapping
 logged (required but not in the document, or not expressible), not an error in the file.</p>
-<p>Two things here are not in the public USDM v4 example files we compared (CDISC DDF-RA v4.0.0, Protocol Explorer,
-data4knowledge usdm_data, as of 28 October 2026): a real before and after (REMAP-CAP: two StudyVersions, Core 4.0 and
-4.1) and amendments with section-level changes (CPMP: 12 amendments, 204 changes, each pointing at the amended
-section). The section text is kept as read from the documents: it carries no usdm:ref links into the structured
-data.</p>
+<p>The section text is kept as read from the documents: it carries no usdm:ref links into the structured data.</p>
 <p><b>Published without the section text:</b> the most complete file of each case, with every section text and the
 REMAP-CAP intervention descriptions replaced by a marker, everything else as built, and validated with the same
 findings as the originals:
@@ -856,7 +852,9 @@ and how its outputs were compared.</p>
 <h2>What it showed: {len(bp)} breakpoints</h2>
 <p>Where USDM v4.0.0 could not carry the master protocols. Kind: <i>model</i>, USDM cannot express it; <i>mapping</i>,
 only by copying or convention; <i>content</i>, the protocol does not state it. {kinds_line}. Evidence from REMAP-CAP,
-with the CPMP counterpart where there is one (<a href="{BLOB}{BREAKPOINTS}">breakpoints.csv</a>).</p>
+with the CPMP counterpart where there is one (<a href="{BLOB}{BREAKPOINTS}">breakpoints.csv</a>). Collected in the
+first round from Core Protocol 4.0 and 4.1, PANDA 1.0 and the Corticosteroid DSA 6; candidate breakpoints from CPMP
+are recorded in the folder README, not yet in the table.</p>
 <div class="table-wrap"><table>
 <thead><tr><th>Id</th><th>Kind</th><th>Breakpoint</th><th>USDM element</th><th>Evidence</th></tr></thead>
 <tbody>{''.join(bp_rows)}</tbody></table></div>
