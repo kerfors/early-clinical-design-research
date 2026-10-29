@@ -429,7 +429,8 @@ fsrc = pd.read_csv(ROOT / FINDINGS, dtype=str)
 fchk = pd.read_csv(ROOT / FIND_INPUTS[2], dtype=str)
 fq = cat[cat.kind == "finding"].set_index("item_id")
 assert set(fsrc.finding_id) == set(fchk.finding_id) == set(fq.index), "finding ids differ between the inputs"
-assert (fchk.check == "pass").all(), fchk[fchk.check != "pass"]
+assert fchk.check.isin(["pass", "first counted here"]).all(), fchk[~fchk.check.isin(["pass", "first counted here"])]
+first = fchk[fchk.check == "first counted here"].finding_id.tolist()
 fall = fsrc.merge(fchk[["finding_id", "observed", "evidence_rows", "check"]], on="finding_id", validate="1:1")
 fsections = []
 for req, rq in reqs.iterrows():
@@ -448,9 +449,10 @@ for req, rq in reqs.iterrows():
 ncase = fall.case.value_counts()
 findings_body = f"""<h1>Findings</h1>
 <p>The {len(fall)} findings with document evidence (CPMP {ncase['CPMP']}, REMAP-CAP {ncase['REMAP-CAP']}), grouped by
-the requirement they bear on. Each finding's value is recomputed from the builds and checked against the value
-recorded when it was agreed. The question page gives the case questions and review state around it; the evidence
-rows are in <a href="{BLOB}evidence-matrix/output/evidence_matrix.csv">evidence_matrix.csv</a>.</p>
+the requirement they bear on. Each finding's value is recomputed from the builds. For {len(fall) - len(first)} it is checked
+against the value recorded when the finding was agreed; {len(first)} ({", ".join(first)}) were first counted in the evidence
+matrix, so only the presence of their evidence rows is checked. The question page gives the case questions and
+review state around it; the evidence rows are in <a href="{BLOB}evidence-matrix/output/evidence_matrix.csv">evidence_matrix.csv</a>.</p>
 {''.join(fsections)}"""
 (DOCS / "findings").mkdir(parents=True, exist_ok=True)
 (DOCS / "findings" / "index.html").write_text(page("Findings", 1, findings_body, wide=True, inputs=FIND_INPUTS),

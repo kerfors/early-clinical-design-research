@@ -75,7 +75,8 @@ compared, with concept matching left to a review file).
 - Claude proposes rules, readings and identity candidates; Kerstin decides. Decisions are files the builds read:
   crosswalk decisions, topic and response rules, reading reviews.
 - Every result is checked twice: SPARQL against pandas, and each finding's observed value against the value
-  recorded when it was agreed. A mismatch stops the build.
+  recorded when it was agreed. A mismatch stops the build. Two findings (RC-8, CP-12) were first counted in the
+  evidence matrix, with no value recorded before; for them only the presence of their evidence rows is checked.
 - Status labels (see Terms): *document fact*, *rule-derived*, *analyst-reading*, *decision by Kerstin*, and two
   combined forms. Readings that wait for a trial-design reviewer or a clinical reader are marked in the catalogue.
 
