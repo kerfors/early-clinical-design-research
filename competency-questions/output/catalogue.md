@@ -14,7 +14,7 @@ Requirements: R-ID
 | CPMP | finding | CP-11a | Identity needs human judgement: crosswalk decisions between criteria worded differently across ISAs | 115 decisions | pass | decision by Kerstin | 115 |  |
 | CPMP | finding | CP-11b | The eGFR exclusion is one rule with three values by compound, with the same formula and visits; text identity cannot express "same rule, different value" | eGFR values 30/60/70 | pass | decision by Kerstin | 12 |  |
 | CPMP | open | [cdd-layer CQ-B](../../cdd-layer/README.md) | Which delegated biomedical concepts each ISA carries (identity below the SoA row) | not answered |  | open |  |  |
-| REMAP-CAP | finding | RC-14 | Identity needs human judgement: crosswalk decisions, some still pending a clinical or statistical reader | 141 decisions; 6 tentative | pass | decision by Kerstin | 141 | 6 tentative: clinical reader (#16, #41, #91, #92) |
+| REMAP-CAP | finding | RC-14 | Identity needs human judgement: crosswalk decisions, some still pending a clinical or statistical reader | 141 decisions; 6 tentative | pass | decision by Kerstin | 141 | 6 tentative: clinical reader (#16, #41, #137, #138); statistical reader (#77, #79) |
 | REMAP-CAP | finding | RC-15 | One component is an inclusion criterion in one domain and an exclusion criterion in another (SARS-CoV-2) | 1 component | pass | document fact | 2 |  |
 
 ## Q2. Which content is shared across sub-studies but stated as shared in no document?

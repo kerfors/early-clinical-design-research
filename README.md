@@ -54,10 +54,11 @@ Some questions have no answer in the public documents (Q10 above all); the catal
 
 - **CPMP** (H0P-MC-CPMP): 4 compounds × 3 disease states. One master protocol, 3 disease-state addenda (DSA,
   not public) and 12 intervention-specific appendices (ISA), each posted on ClinicalTrials.gov under its own
-  NCT ID. The 13 Schedules of Activities are extracted to USDM in
+  NCT ID. The 13 Schedules of Activities are extracted as tables, not yet as USDM, in
   [soa2usdm-collections](https://kerfors.github.io/soa2usdm-collections/collections/cpmp/protocols/index.html).
 - **REMAP-CAP**: an adaptive platform trial in community-acquired pneumonia. A Core Protocol (versions 4.0 and
-  4.1), the Patient, Pathogen and Disease Appendix (PANDA) and nine domain-specific appendices (DSA).
+  4.1), the Patient, Pathogen and Disease Appendix (PANDA) and the nine domain-specific appendices (DSA) that
+  build on PANDA; the tenth current DSA (COVID-19 Antiviral II) predates PANDA and is not read.
 
 ## Templates as data
 
@@ -137,7 +138,7 @@ in this repo today, and they may change as the work goes on.
 | `eupearl-templates/` | The five EU-PEARL templates as data: sections, text categories, field labels, TOC check, MPT ↔ ISA alignment |
 | `tpp-templates/` | Four TPP templates compared: elements, column models, attribute inventory, crosswalk for review |
 | `literature/` | Europe PMC query script and hit list |
-| `scripts/` | Notebook generators for the template and SoA-join notebooks |
+| `scripts/` | Site generator (`build_site.py` → `docs/`) and notebook generators for the template and SoA-join notebooks |
 
 Each build folder has its own README. In `remapcap-design-modules/` and `evidence-matrix/` the README is the
 agreement record.

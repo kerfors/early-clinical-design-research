@@ -48,7 +48,8 @@ Ontology for Biology and Biomedicine (COB) already hold much of it: OBI for inve
 IAO for objectives, plans and data, RO for relations, MAxO for medical actions, MONDO for diseases, and NCIt for
 definitions. The principle, from this work and earlier work: reuse them, author only what they lack, and give every
 authored class an upstream parent. Making a model precise enough for a machine also finds errors that reading does
-not, in the documents and in the ontologies reused.
+not: in the documents here, strata said to be defined in "Core Protocol documents" are defined in PANDA (BP04),
+and the Core 4.1 table of contents misses two sections (BP16).
 
 The design modules here are test cases on the way, not that ontology. They anchor their classes in 16 terms from OBI
 (with IAO and BFO), MONDO and HP and pass an OWL 2 DL check; no ontologist has reviewed them yet.

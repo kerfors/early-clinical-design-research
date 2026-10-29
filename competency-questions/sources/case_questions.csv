@@ -3,7 +3,7 @@ Q1,CPMP,finding,CP-10,,,
 Q1,CPMP,finding,CP-11a,,,
 Q1,CPMP,finding,CP-11b,,,
 Q1,CPMP,open,cdd-layer CQ-B,cdd-layer/README.md,Which delegated biomedical concepts each ISA carries (identity below the SoA row),
-Q1,REMAP-CAP,finding,RC-14,,,"6 tentative: clinical reader (#16, #41, #91, #92)"
+Q1,REMAP-CAP,finding,RC-14,,,"6 tentative: clinical reader (#16, #41, #137, #138); statistical reader (#77, #79)"
 Q1,REMAP-CAP,finding,RC-15,,,
 Q2,CPMP,case question,CQ1a,cpmp-design-modules/queries/cq1a_module_independent.rq,,
 Q2,CPMP,case question,CQ1b,cpmp-design-modules/queries/cq1b_occurrence_independent.rq,,

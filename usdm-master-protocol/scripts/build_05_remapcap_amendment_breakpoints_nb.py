@@ -428,7 +428,7 @@ BREAKPOINTS = [
     ("version granularity", "model", "Versions branch by region (Immunoglobulin 2.2 Canada, 2.3 USA, 2.4.2 AUS, 2.5 NZ; Core 3.1 UK); Study.versions has no predecessor link and no branch or region qualifier.",
      "Study.versions; StudyVersion.versionIdentifier", "remapcap_inventory.csv", ""),
     ("substudy identity", "model", "One registry entry for the whole platform (NCT02735707); a domain has no identifier of its own.",
-     "StudyIdentifier (StudyVersion level only)", "CORE 2.4", "CPMP: opposite pattern, master and each ISA have own NCT (FDA Master Protocols guidance Appendix C)"),
+     "StudyIdentifier (StudyVersion level only)", "CORE 2.4", "CPMP: opposite pattern, master and each ISA have own NCT (ClinicalTrials.gov records)"),
     ("substudy identity", "content", "Universal Trial Number stated, issuing organization not; registry organization identifier not stated.",
      "StudyIdentifier.scopeId; Organization.identifier", "CORE 2.4", ""),
     ("codes", "model", "Code.codeSystemVersion is 1..1; no CT package date in any source. Value records where the code came from.",
