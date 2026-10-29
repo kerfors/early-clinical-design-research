@@ -11,9 +11,14 @@ Four public TPP templates and examples, read into one long table:
 
 The notebook downloads any missing source into `tpp_sources/` (not in this repo).
 
+WOAH's [terms of use](https://www.woah.org/en/terms-and-conditions/) do not allow its content to be copied or stored
+by extraction tools without written permission. For WOAH2026 only the structure is kept: element numbers, labels,
+groups, columns and pages, not the text of its Comments column. FDA, PaVe-GT and NIH SEED are US government works;
+PaVe-GT asks that NIH be acknowledged.
+
 - **Elements** (`tpp_elements.csv`): 172 in all (134 attributes, 17 label sections, 14 label subsections, 7
-  milestones), with their columns, prompts, guidance and example values. The FDA label sections carry their
-  SPL section LOINC codes.
+  milestones), with their columns, prompts, guidance and example values (WOAH2026: structure only). The FDA label
+  sections carry their SPL section LOINC codes.
 - **Column models** (`tpp_column_models.csv`): what distinguishes the families.
 
   | Source | Target columns |

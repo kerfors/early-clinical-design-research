@@ -276,6 +276,10 @@ Both sources are real PDF tables, but `extract_tables()` scatters cell text acro
 - A row containing `:` in its first cells (`Product Type: …`, `Indication: …`) is **document metadata**.
 - Otherwise the first non-empty cell is the **attribute label**, and each further cell is assigned to the nearest header column. Tables without a column header have one value column, `Description`.
 - The table title row (`WOAH TPP for a [disease name] vaccine`) is recorded as metadata.
+
+WOAH's terms of use do not allow its content to be copied or stored by extraction tools without written permission
+(https://www.woah.org/en/terms-and-conditions/). Only the WOAH template's structure is kept: element numbers,
+labels, groups, columns and pages. The text of its `Comments` column is dropped.
 """))
 
 cells.append(code_cell("""
@@ -350,8 +354,9 @@ def parse_plumber_tables(source, pdf_path, filled_example):
 
 
 woah, woah_meta = parse_plumber_tables("WOAH2026", SOURCE_DIR / SOURCES["WOAH2026"][0], filled_example=False)
+woah = woah.drop(columns=["guidance_comments"])
 print("WOAH metadata:", woah_meta)
-woah[["element_id", "group", "element_label", "columns", "guidance_comments"]]
+woah[["element_id", "group", "element_label", "columns"]]
 """))
 
 cells.append(code_cell("""

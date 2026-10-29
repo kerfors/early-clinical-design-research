@@ -39,6 +39,10 @@ Pages:
   read from the headings of its nine DSAs (remapcap-design-modules/output/step1/headings.csv, no text):
   one row per title key found in two or more DSAs, one column per DSA with that DSA's section
   number(s); then the headings found in one DSA only.
+- docs/templates/tpp/index.html: the four TPP templates and examples compared, from tpp-templates/output_tpp/:
+  column models, labels shared across families, then per family its elements. FDA, PaVe-GT and NIH SEED are US
+  government works and are shown with their prompts, guidance and example values; WOAH's terms do not allow its
+  content to be copied by extraction tools, so only the structure of the WOAH template is shown (and kept).
 - docs/templates/eupearl/index.html: the EU-PEARL templates as data, from eupearl-templates/output_eupearl/:
   the MPT and ISA side by side on the committed alignment (ISA-only sections placed after the ISA section
   they follow), the SAP and DMC heading trees, and the MPT and ISA field labels. Per section, the number of
@@ -172,6 +176,17 @@ EUP_INPUTS = {
 EUP_KINDS = ["instruction", "common", "suggested", "example", "sample", "guidance", "field_label"]
 EUP_RATIONALE = "https://doi.org/10.1186/s13063-024-08034-8"
 EUP_FLAGS = ["refers_to_master", "extends_master", "either_location"]
+TPP_DIR = "tpp-templates/output_tpp/"
+TPP_INPUTS = {
+    "elements": TPP_DIR + "tpp_elements.csv",
+    "column_models": TPP_DIR + "tpp_column_models.csv",
+    "inventory": TPP_DIR + "tpp_label_inventory.csv",
+    "crosswalk": TPP_DIR + "crosswalk_review.csv",
+    "metadata": TPP_DIR + "tpp_source_metadata.json",
+}
+TPP_FAMILIES = ["FDA2007", "WOAH2026", "PAVEGT", "SEED"]
+TPP_SEED = ["SEED_SMALL_MOLECULE", "SEED_BIOLOGIC", "SEED_VACCINE", "SEED_CGT"]
+WOAH_TERMS = "https://www.woah.org/en/terms-and-conditions/"
 KIND_ORDER = ["finding", "case question", "earlier", "open", "not asked"]
 KIND_PLURAL = {"finding": "findings", "case question": "case questions"}
 CASE_ORDER = ["CPMP", "REMAP-CAP", "both"]
@@ -353,6 +368,7 @@ if DOCS.exists():
 (DOCS / "cases" / "remapcap").mkdir(parents=True)
 (DOCS / "templates" / "eupearl").mkdir(parents=True)
 (DOCS / "templates" / "remapcap-dsa").mkdir(parents=True)
+(DOCS / "templates" / "tpp").mkdir(parents=True)
 (DOCS / ".nojekyll").write_text("")
 
 # Landing page
@@ -1087,6 +1103,200 @@ cases_cards = [
 <div class="cards">{''.join(cases_cards)}</div>
 """, inputs=[INPUTS["readme"]] + list(CPMP_INPUTS.values()) + list(RCAP_INPUTS.values())), encoding="utf-8")
 
+# TPP templates page
+tel = pd.read_csv(ROOT / TPP_INPUTS["elements"], dtype=str)
+tcm = pd.read_csv(ROOT / TPP_INPUTS["column_models"], dtype=str)
+tinv = pd.read_csv(ROOT / TPP_INPUTS["inventory"], dtype=str)
+tcw = pd.read_csv(ROOT / TPP_INPUTS["crosswalk"], dtype=str)
+tmeta = json.loads((ROOT / TPP_INPUTS["metadata"]).read_text(encoding="utf-8"))
+tel["family"] = tel.source.str.replace(r"^SEED_.*$", "SEED", regex=True)
+assert list(tel.family.unique()) == TPP_FAMILIES, list(tel.family.unique())
+assert list(tel[tel.family == "SEED"].source.unique()) == TPP_SEED
+assert "guidance_comments" not in tel.columns, "WOAH Comments text must not be in tpp_elements.csv"
+woah_text = [c for c in tel.columns if c.startswith(("guidance_", "example_value_", "target_", "annotation_"))
+             and tel.loc[tel.family == "WOAH2026", c].notna().any()]
+assert not woah_text, f"WOAH text columns: {woah_text}"
+n_tkind = tel.element_kind.value_counts()
+assert len(tel) == 172 and dict(n_tkind) == {"attribute": 134, "label_section": 17, "label_subsection": 14,
+                                              "milestone": 7}, dict(n_tkind)
+n_fam = tinv.n_families.astype(int).value_counts()
+assert len(tinv) == 99 and dict(n_fam) == {1: 95, 2: 3, 3: 1}, (len(tinv), dict(n_fam))
+assert len(tcw) == 109 and tcw.concept.isna().all(), "crosswalk concept column is no longer empty"
+
+
+def tpp_url(key):
+    return tmeta["sources"][key]["url"]
+
+
+def tpp_text(label, text):
+    return "" if pd.isna(text) else f"<p><b>{label}</b> {esc(text)}</p>"
+
+
+def tpp_rows(df, cols):
+    out = []
+    for r in df.itertuples():
+        texts = "".join(tpp_text(lab, getattr(r, c)) for lab, c in cols)
+        lab = esc(r.element_label)
+        cell = f"<details><summary>{lab}</summary>{texts}</details>" if texts else lab
+        out.append(f"<tr><td class=\"num\">{esc(r.element_id)}</td><td>{cell}</td>"
+                   f"<td class=\"num\">{esc(r.page)}</td></tr>")
+    return "".join(out)
+
+
+# column models per family
+cm_rows = []
+for fam in TPP_FAMILIES:
+    sub = tcm[tcm.source.str.replace(r"^SEED_.*$", "SEED", regex=True) == fam]
+    models = sub.groupby("columns", dropna=False, sort=False).n_elements.apply(lambda s: s.astype(int).sum())
+    cm_rows.append(f"<tr><td><b>{fam}</b></td><td>" + "<br>".join(
+        f"{esc(c) if not pd.isna(c) else '<i>no columns of its own</i>'} <span class=\"muted\">({n})</span>"
+        for c, n in models.items()) + f"</td><td class=\"num\">{(tel.family == fam).sum()}</td></tr>")
+
+# shared labels
+inv_cols = ["FDA2007", "WOAH2026", "PAVEGT", "SEED"]
+shared = tinv[tinv.n_families.astype(int) > 1]
+sh_rows = "".join("<tr><td>" + esc(r["norm_label"]) + "</td>"
+                  + "".join(f"<td class=\"num\">{esc(r[c])}</td>" for c in inv_cols) + "</tr>"
+                  for _, r in shared.iterrows())
+
+# FDA
+fda = tel[tel.source == "FDA2007"]
+fda_cols = [("Target:", "target_prompt"), ("Annotations:", "annotation_prompt"), ("Guidance:", "guidance_text")]
+fda_sec = []
+for r in fda[fda.element_kind == "label_section"].itertuples():
+    subs = fda[(fda.element_kind == "label_subsection") & (fda.group == r.element_id)]
+    texts = "".join(tpp_text(lab, getattr(r, c)) for lab, c in fda_cols)
+    sublist = "".join(f"<li>{esc(x.element_id)} {esc(x.element_label)}</li>" for x in subs.itertuples())
+    body = texts + (f"<ul>{sublist}</ul>" if sublist else "")
+    lab = esc(r.element_label)
+    fda_sec.append(f"<tr><td class=\"num\">{esc(r.element_id)}</td><td>"
+                   + (f"<details><summary>{lab}</summary>{body}</details>" if body else lab)
+                   + f"</td><td class=\"num\">{esc(r.spl_loinc)}</td><td class=\"num\">{esc(r.page)}</td></tr>")
+fda_ms = ", ".join(esc(x) for x in fda[fda.element_kind == "milestone"].element_label)
+ms_cols = fda[fda.element_kind == "milestone"]["columns"].iloc[0]
+
+# WOAH: structure only
+woah = tel[tel.source == "WOAH2026"]
+woah_rows = []
+for g, sub in woah.groupby("group", sort=False):
+    woah_rows.append(f"<tr><th class=\"area\" colspan=\"3\">{esc(g)}</th></tr>" + tpp_rows(sub, []))
+
+# PaVe-GT
+pave = tel[tel.source == "PAVEGT"]
+assert pave.page.isna().all()
+pave_rows = []
+for r in pave.itertuples():
+    same = r.minimum_equals_ideal == "True"
+    texts = (tpp_text("Minimum acceptable result and ideal result (the same):", r.guidance_minimum_acceptable_result) if same
+             else tpp_text("Minimum acceptable result:", r.guidance_minimum_acceptable_result)
+             + tpp_text("Ideal result:", r.guidance_ideal_result))
+    pave_rows.append(f"<tr><td class=\"num\">{esc(r.element_id)}</td><td><details><summary>{esc(r.element_label)}"
+                     f"</summary>{texts}</details></td></tr>")
+
+# SEED: labels across the four examples, values per example
+seed = tel[tel.family == "SEED"]
+seed_meta = tmeta["SEED"]
+seed = seed.assign(grp=seed.group.fillna(""))
+lab_order = list(dict.fromkeys(zip(*[seed.sort_values(["source", "element_id"], key=lambda c: c.map(
+    {k: i for i, k in enumerate(TPP_SEED)}) if c.name == "source" else c.astype(int))[c] for c in ("grp", "element_label")])))
+seed_head = "".join(f"<th class=\"dsa\">{esc(seed_meta[k]['Product Type'])}<br><span class=\"dname\">"
+                    f"{esc(seed_meta[k]['Indication'])}</span></th>" for k in TPP_SEED)
+seed_rows = []
+for grp, lab in lab_order:
+    cells = []
+    for k in TPP_SEED:
+        hit = seed[(seed.source == k) & (seed.grp == grp) & (seed.element_label == lab)]
+        assert len(hit) <= 1, (k, lab)
+        if hit.empty:
+            cells.append('<td class="num miss"><span></span></td>')
+            continue
+        h = hit.iloc[0]
+        texts = (tpp_text("Minimal:", h.example_value_minimal_acceptance_criteria)
+                 + tpp_text("Preferred:", h.example_value_preferred_acceptance_criteria)
+                 + tpp_text("", h.example_value_description))
+        cells.append(f"<td><details><summary>{esc(h.element_id)}</summary>{texts}</details></td>")
+    seed_rows.append(f"<tr><td class=\"title\">{esc(lab)}<br><span class=\"muted\">{esc(grp)}</span></td>"
+                     + "".join(cells) + "</tr>")
+n_seed_all = sum(1 for grp, lab in lab_order
+                 if seed[(seed.grp == grp) & (seed.element_label == lab)].source.nunique() == 4)
+
+tpp_body = f"""<h1>TPP templates compared</h1>
+<p>Four public Target Product Profile templates and examples, read by script into one table of 172 elements
+({n_tkind['attribute']} attributes, {n_tkind['label_section']} label sections, {n_tkind['label_subsection']} label
+subsections, {n_tkind['milestone']} milestones). How they were read:
+<a href="{BLOB}tpp-templates/README.md">README</a> and the
+<a href="{BLOB}tpp-templates/tpp_template_comparison.ipynb">notebook</a>.</p>
+<div class="table-wrap"><table>
+<tr><th>Key</th><th>Source</th><th>What is shown</th></tr>
+<tr><td><b>FDA2007</b></td><td>FDA draft guidance <i>Target Product Profile — A Strategic Development Process Tool</i>,
+Appendix C, March 2007 (<a href="{tpp_url('FDA2007')}">copy on fda.report</a>; no longer on fda.gov)</td>
+<td>Labels, prompts and guidance: a work of the US government</td></tr>
+<tr><td><b>WOAH2026</b></td><td>WOAH <i>Target Product Profile – Template for animal vaccines</i>, February 2026
+(<a href="{tpp_url('WOAH2026')}">woah.org</a>)</td>
+<td>Structure only: numbers, labels, groups, columns. WOAH's <a href="{WOAH_TERMS}">terms of use</a> do not allow its
+content to be copied or stored by extraction tools without written permission; the text of its Comments column is not
+shown and not kept in the repository.</td></tr>
+<tr><td><b>PAVEGT</b></td><td>NCATS PaVe-GT <i>TPP Template</i> for AAV gene therapy, 2025
+(<a href="{tpp_url('PAVEGT')}">pave-gt.ncats.nih.gov</a>)</td>
+<td>Labels and guidance: public domain per the PaVe-GT terms, which ask that NIH be acknowledged</td></tr>
+<tr><td><b>SEED</b></td><td>NIH SEED example TPPs: {', '.join(f'<a href="{tpp_url(k)}">{esc(seed_meta[k]["Product Type"])}</a>' for k in TPP_SEED)}</td>
+<td>Labels and example values: a work of the US government. Each example opens: "This information should not be
+considered to represent advice or guidance on behalf of the U.S. Department of Health and Human Services or any
+agency or office thereof."</td></tr>
+</table></div>
+<h2>Column models</h2>
+<p class="muted">The columns each element is filled in, with the number of elements in brackets. This is what
+distinguishes the families: a target with its evidence (FDA), ideal and minimum (WOAH), minimum acceptable and ideal
+result (PaVe-GT), minimal and preferred acceptance criteria (SEED).</p>
+<div class="table-wrap"><table>
+<tr><th>Family</th><th>Columns</th><th>Elements</th></tr>
+{''.join(cm_rows)}
+</table></div>
+<h2>Labels shared across families</h2>
+<p class="muted">Labels matched only on exact normalised text: {len(tinv)} labels, {n_fam[1]} in one family,
+{n_fam[2]} in two, {n_fam[3]} in three, none in all four. Cells give each family's element number. Related labels with
+different wording are not merged: the <a href="{BLOB}{TPP_INPUTS['crosswalk']}">crosswalk for review</a> has
+{len(tcw)} rows with an empty <code>concept</code> column, left for a human decision.</p>
+<div class="table-wrap"><table>
+<tr><th>Label (normalised)</th>{''.join(f'<th class="num">{c}</th>' for c in inv_cols)}</tr>
+{sh_rows}
+</table></div>
+<h2>FDA 2007: the TPP as draft labeling</h2>
+<p class="muted">{(fda.element_kind == 'label_section').sum()} label sections in the order of the drug label, each with
+its SPL section LOINC code; open a section for its Target and Annotations prompts, guidance and subsections. The TPP is
+also versioned: a milestone box records, for {fda_ms}, the columns {esc(ms_cols)}.</p>
+<div class="table-wrap"><table>
+<tr><th class="num">#</th><th>Label section</th><th class="num">SPL LOINC</th><th class="num">Page</th></tr>
+{''.join(fda_sec)}
+</table></div>
+<h2>WOAH 2026: animal vaccines</h2>
+<p class="muted">{len(woah)} attributes in {woah.group.nunique()} groups, each with the columns Ideal, Minimum and
+Comments ({esc(tmeta['WOAH2026']['table_title'])}). Structure only, see above.</p>
+<div class="table-wrap"><table>
+<tr><th class="num">#</th><th>Attribute</th><th class="num">Page</th></tr>
+{''.join(woah_rows)}
+</table></div>
+<h2>PaVe-GT 2025: AAV gene therapy</h2>
+<p class="muted">{len(pave)} attributes with a minimum acceptable and an ideal result; for
+{(pave.minimum_equals_ideal == 'True').sum()} of them the template gives the same text for both. A Word table, so no
+page numbers.</p>
+<div class="table-wrap"><table>
+<tr><th class="num">#</th><th>Attribute</th></tr>
+{''.join(pave_rows)}
+</table></div>
+<h2>NIH SEED: four worked examples</h2>
+<p class="muted">The same frame filled in for four products: {len(lab_order)} labels across the four, {n_seed_all} in all
+four (a label counted once per group). The first rows carry minimal and preferred acceptance criteria, the rest a
+description. A dashed cell: the label is
+not in that example. Open a number for the example's values.</p>
+<div class="table-wrap"><table class="matrix">
+<tr><th>Label<br><span class="dname">group</span></th>{seed_head}</tr>
+{''.join(seed_rows)}
+</table></div>
+"""
+(DOCS / "templates" / "tpp" / "index.html").write_text(
+    page("TPP templates compared", 2, tpp_body, wide=True, inputs=list(TPP_INPUTS.values())), encoding="utf-8")
+
 templates_cards = [
     area_card("eupearl/", "EU-PEARL templates as data",
               [", ".join(f"{d} {n}" for d, n in tot.items()) + " sections",
@@ -1095,13 +1305,16 @@ templates_cards = [
     area_card("remapcap-dsa/", "REMAP-CAP: the DSA template no document states",
               [f"{len(dh)} headings of the nine DSAs under {len(n_docs)} titles: {dist.get(len(dsa_keys), 0)} in all nine, "
                f"{len(order)} in two or more"]),
-    area_card(f"{BLOB}tpp-templates/", "TPP templates",
-              ["Not rendered on the site yet; the comparison is in the repository folder"]),
+    area_card("tpp/", "TPP templates compared",
+              [f"{len(tel)} elements from FDA 2007, WOAH 2026, PaVe-GT and four NIH SEED examples",
+               f"Four column models; {len(tinv)} labels, {(tinv.n_families.astype(int) > 1).sum()} shared by two or more "
+               f"families"]),
 ]
 (DOCS / "templates" / "index.html").write_text(page("Templates as data", 1, f"""<h1>Templates as data</h1>
 {md_to_html(templates_md)}
 <div class="cards">{''.join(templates_cards)}</div>
-""", inputs=[INPUTS["readme"]] + list(EUP_INPUTS.values()) + [RDSA_INPUTS["headings"]]), encoding="utf-8")
+""", inputs=[INPUTS["readme"]] + list(EUP_INPUTS.values()) + [RDSA_INPUTS["headings"]] + [TPP_INPUTS["elements"],
+           TPP_INPUTS["inventory"]]), encoding="utf-8")
 
 landing_cards = [
     area_card("questions/", "The questions",
@@ -1133,4 +1346,4 @@ index_body = f"""<h1>Early clinical design research</h1>
 """
 (DOCS / "index.html").write_text(page("Early clinical design research", 0, index_body), encoding="utf-8")
 
-print(f"docs/: index.html, vision, 3 area pages, {len(questions)} question pages, 2 case pages, 2 template pages")
+print(f"docs/: index.html, vision, 3 area pages, {len(questions)} question pages, 2 case pages, 3 template pages")
