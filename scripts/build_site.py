@@ -673,7 +673,12 @@ for st in studies:
     reg[code] = {"nct": ident["nctId"], "title": ident["briefTitle"], "secondary": sec,
                  "date": prot["date"] if prot else None, "url": url,
                  "conditions": st["protocolSection"]["conditionsModule"]["conditions"],
-                 "interventions": [i["name"] for i in st["protocolSection"].get("armsInterventionsModule", {}).get("interventions", [])]}
+                 "interventions": [i["name"] for i in st["protocolSection"].get("armsInterventionsModule", {}).get("interventions", [])],
+                 "part_of": re.findall(r"This trial is part of the chronic pain master protocol[^.]*\.",
+                                       st["protocolSection"].get("descriptionModule", {}).get("briefSummary", "")),
+                 "says_isa": bool(re.search(r"\bISAs?\b|intervention-specific", " ".join(
+                     [ident["briefTitle"], ident.get("officialTitle", ""),
+                      st["protocolSection"].get("descriptionModule", {}).get("briefSummary", "")]), re.I))}
 assert set(grid.doc) <= set(reg), set(grid.doc) - set(reg)
 assert "CPMP" in reg and reg["CPMP"]["url"], "master record or its protocol missing"
 compounds = (grid.assign(n=grid.doc.str[2:]).sort_values("n").drop_duplicates("compound").compound.tolist())
@@ -711,9 +716,19 @@ for dis in DISEASE_ORDER:
         d = hit.doc.iloc[0]
         cells.append(f'<div class="box"><b>{d}</b>{ctgov_link(d)}<br><span class="muted">{protocol_line(d)}</span></div>')
 others = sorted(k for k in reg if k != "CPMP" and k not in set(grid.doc))
+# what the records state: every ISA and other record says in its brief summary that it is part of the master protocol;
+# none of them calls itself an ISA (only the master's record speaks of ISAs); the other records' compound number is
+# read from the secondary ID, and their intervention is not one of the grid's compounds
+assert all(len(reg[k]["part_of"]) == 1 for k in list(grid.doc) + others), [k for k in reg if len(reg[k]["part_of"]) != 1]
+assert not any(reg[k]["says_isa"] for k in list(grid.doc) + others) and reg["CPMP"]["says_isa"]
+other_no = sorted({k[2:] for k in others})
+other_drugs = sorted({i for k in others for i in reg[k]["interventions"] if i != "Placebo"})
+assert all(not reg[k]["url"] for k in others) and not set(other_no) & set(suffix.values), (other_no, suffix)
+assert len(other_drugs) == 1 and other_drugs[0] not in compounds, other_drugs
 other_rows = "".join(
     f"<tr><td>{k}</td><td>{ctgov_link(k)}</td><td>{esc('; '.join(reg[k]['secondary']))}</td>"
-    f"<td>{esc('; '.join(reg[k]['interventions']))}</td><td>{esc('; '.join(reg[k]['conditions']))}</td><td>{protocol_line(k)}</td></tr>"
+    f"<td>{esc('; '.join(reg[k]['interventions']))}</td><td>{esc('; '.join(reg[k]['conditions']))}</td><td>{protocol_line(k)}</td>"
+    f"<td>{esc(reg[k]['part_of'][0])}</td></tr>"
     for k in others)
 cpmp_body = f"""<h1>CPMP: the documents</h1>
 <p>Lilly Chronic Pain Master Protocol (H0P-MC-CPMP). One master protocol; one disease-state addendum (DSA) per disease,
@@ -740,9 +755,17 @@ names as the ISAs' ClinicalTrials.gov records give them:
 <p class="muted">The 13 Schedules of Activities (master and 12 ISAs) are extracted as tables, not yet as USDM, in
 <a href="https://kerfors.github.io/soa2usdm-collections/collections/cpmp/protocols/index.html">soa2usdm-collections</a>.</p>
 <h2>Other records with a H0P-MC- secondary ID</h2>
-<p class="muted">Registered under the programme but not in the grid above (not among the 12 ISAs read here).</p>
+<p class="muted">Registered under the programme but not in the grid above: no protocol is posted for them, so they are
+not among the 12 ISAs read here. Each record's brief summary says the trial is part of the master protocol, as the 12
+ISAs' records do (last column). No record calls itself an ISA, the 12 included: only the master's record speaks of
+ISAs; the 12 are ISAs by their posted documents. The codes of these {len(others)} follow the grid's pattern, a disease
+prefix and a compound number, which suggests ISAs for a further compound; no posted document confirms it. The number
+{', '.join(other_no)} is read from the secondary ID only ({', '.join(reg[k]['secondary'][0] for k in others)});
+{', '.join(other_drugs)} is the intervention the records name, not one of the grid's compounds; no posted document
+pairs {', '.join(other_no)} with {', '.join(other_drugs)}.</p>
 <div class="table-wrap"><table>
-<thead><tr><th>Code</th><th>NCT</th><th>Secondary IDs</th><th>Interventions</th><th>Conditions</th><th>Protocol</th></tr></thead>
+<thead><tr><th>Code</th><th>NCT</th><th>Secondary IDs</th><th>Interventions</th><th>Conditions</th><th>Protocol</th>
+<th>Brief summary, its sentence on the master protocol (ClinicalTrials.gov)</th></tr></thead>
 <tbody>{other_rows}</tbody></table></div>
 """
 (DOCS / "cases" / "cpmp" / "index.html").write_text(
