@@ -272,6 +272,7 @@ table.matrix th.dsa { text-align: center; font-size: 0.8rem; vertical-align: bot
 table.matrix th .dname { font-weight: 400; font-size: 0.72rem; color: var(--muted); }
 table.matrix td.title { min-width: 16rem; }
 details.own summary { cursor: pointer; font-weight: 600; margin: 0.4rem 0; }
+.toc { font-size: 0.9rem; color: var(--muted); margin: 0 0 1rem; }
 .lead { border-left: 3px solid var(--link); background: var(--card); padding: 0.6rem 0.9rem; margin: 1rem 0; }
 .lv2 { margin-left: 0.8rem; } .lv3 { margin-left: 1.6rem; } .lv4 { margin-left: 2.4rem; }
 .tree .box { margin: 0.25rem 0; }
@@ -315,9 +316,27 @@ commit <a href="{REPO}/commit/{stamp}">{stamp}</a>. Namespace for now:
 documents remain their owners'."""
 
 
+def with_toc(body):
+    """A page with three or more sections gets an 'On this page' line under its title, from its own <h2> headings;
+    each <h2> gets an id from its text."""
+    heads = re.findall(r"<h2>(.*?)</h2>", body)
+    if len(heads) < 3:
+        return body
+    ids = []
+    for h in heads:
+        k = re.sub(r"[^a-z0-9]+", "-", re.sub(r"<[^>]+>", "", h).lower()).strip("-")
+        assert k and k not in ids, h
+        ids.append(k)
+        body = body.replace(f"<h2>{h}</h2>", f'<h2 id="{k}">{h}</h2>', 1)
+    toc = " · ".join(f'<a href="#{k}">{re.sub(r"<[^>]+>", "", h)}</a>' for h, k in zip(heads, ids))
+    h1_end = body.index("</h1>") + len("</h1>")
+    return body[:h1_end] + f'\n<p class="toc">On this page: {toc}</p>' + body[h1_end:]
+
+
 def page(title, depth, body, wide=False, inputs=None):
     up = "../" * depth
     paths = inputs or list(INPUTS.values())
+    body = with_toc(body)
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1079,7 +1098,9 @@ usdm_body = f"""<h1>USDM v4 and master protocols</h1>
 <p>The first round of this work asked whether USDM v4 can carry a master protocol. Both cases were built as USDM v4.0.0
 JSON from their documents, step by step, and checked with the <a href="https://w3id.org/cdisc/usdm/v4/">usdm-rdf</a>
 validator. What USDM could not express is collected as a table of breakpoints. The design modules were built next to
-USDM for what it cannot carry.</p>
+USDM for what it cannot carry. Each case's published file is also laid out as an ICH M11 protocol, to show where a
+master protocol does not fit M11: <a href="m11-cpmp/">CPMP</a> · <a href="m11-remapcap/">REMAP-CAP</a>
+(<a href="#seen-as-an-ich-m11-protocol">more below</a>).</p>
 <p class="muted">Folder: <a href="{BLOB}{UMP}README.md">usdm-master-protocol/</a> (its README records each step and
 decision). The USDM JSON files as built hold whole-document text and are not published; the notebooks re-create them
 from the source documents. The most complete file of each case is published without the section text (below). The

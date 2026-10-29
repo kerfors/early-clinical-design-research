@@ -65,7 +65,9 @@ Some questions have no answer in the public documents (Q10 above all); the catal
 Before the cases, two public template families were read as data, the same method on a template rather than a
 protocol: [EU-PEARL](eupearl-templates/) (sections with keys, text categories from the template's own markers,
 field labels, a TOC check, and the MPT ↔ ISA alignment) and [four TPP templates](tpp-templates/) (column models
-compared, with concept matching left to a review file).
+compared, with concept matching left to a review file). A third template is read from a case: the REMAP-CAP DSAs
+share a structure that no REMAP-CAP document states as a template, read here from
+[the headings of its nine DSAs](remapcap-design-modules/output/step1/headings.csv).
 
 ## How the work is done
 
