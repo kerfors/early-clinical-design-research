@@ -18,6 +18,7 @@ usdm-master-protocol/output_cpmp/step2/sections.csv
 usdm-master-protocol/output_remapcap/step2/sections.csv
 usdm-master-protocol/output_cpmp/**/*.json
 usdm-master-protocol/output_remapcap/**/*.json
+usdm-master-protocol/output_m11/downloads/
 literature/shortlist.json
 
 # Internal working notes and draft writing (kept locally, not published yet)

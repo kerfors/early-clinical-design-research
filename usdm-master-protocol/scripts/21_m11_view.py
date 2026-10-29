@@ -1,0 +1,492 @@
+"""The two cases' USDM files laid out as an ICH M11 protocol, using only published graphs.
+
+Copied from usdm-one-graph m11/lift_protocol.py (commit b9abf62), which does this for the CDISC Pilot;
+the query logic is unchanged. Changed here: the study is one of this repo's published USDM files, and
+each result also carries
+  - where in the study a value sits: the study version, document and document version above the
+    object (a master protocol has several of each; M11 describes one protocol);
+  - the rows of this repo's mapping logs for the same object and attribute, other than 'mapped';
+  - the breakpoints (output_remapcap/step5/breakpoints.csv) whose USDM element names the same
+    class and attribute, or the role of the target path's last hop.
+
+Inputs (the M11, mapping and USDM files pinned as in usdm-one-graph, each checked by SHA-256):
+  m11-rdf.ttl            ICH M11 sections, elements, Template headings and fields (m11-rdf v0.4.0)
+  m11-usdm.sssom.ttl     the HL7 and CDISC M11-to-USDM mapping statements (m11-rdf v0.4.0)
+  usdm_v4.ttl            the USDM v4 model (usdm-rdf v0.7.0)
+  published/<case>_usdm_v*_without_text.json, read through usdm_v4.context.jsonld (usdm-rdf v0.7.0)
+  the mapping logs of the steps that built that file, and output_remapcap/step5/breakpoints.csv
+
+For each Template field: the element it realises, each mapping statement's USDM attribute, and the
+study's values for that attribute, found by a SPARQL query kept with the result. A condition clause is
+run only when it tests a code (@code or @decode, = or IN) on the same object as the mapped attribute;
+the section-number condition is the mappings' own placement rule. Every other clause is kept as text.
+The protocol text is not read (in the published files it is replaced anyway): a field the mappings take
+from it, by their section rule, is marked as such. The section rule uses M11 section numbers; neither
+case's protocols are numbered as M11.
+
+Output: output_m11/<case>_m11.json (read by scripts/build_site.py) and output_m11/<case>_m11_routes.csv
+(one row per Template field and mapping route, for review).
+Run:    python3 scripts/21_m11_view.py cpmp|remapcap   (from usdm-master-protocol/; needs network once
+        for the pinned files, cached in output_m11/downloads/, not committed)
+"""
+import csv
+import hashlib
+import json
+import re
+import sys
+import urllib.request
+from collections import defaultdict
+from pathlib import Path
+
+import rdflib
+from rdflib.namespace import OWL, RDF, RDFS, SKOS
+
+HERE = Path(__file__).resolve().parent.parent
+OUT = HERE / "output_m11"
+CACHE = OUT / "downloads"
+CASES = {
+    "cpmp": {"file": "published/cpmp_usdm_v2_without_text.json",
+             "logs": ["output_cpmp/step3/mapping_log.csv", "output_cpmp/step4/mapping_log_step4.csv"]},
+    "remapcap": {"file": "published/remapcap_usdm_v3_without_text.json",
+                 "logs": ["output_remapcap/step3/mapping_log.csv", "output_remapcap/step5/mapping_log_step5.csv",
+                          "output_remapcap/step6/mapping_log_step6.csv"]},
+}
+BREAKPOINTS = "output_remapcap/step5/breakpoints.csv"
+CASE = sys.argv[1] if len(sys.argv) == 2 else None
+if CASE not in CASES:
+    raise SystemExit(f"usage: 21_m11_view.py {'|'.join(CASES)}")
+
+# the same pins as usdm-one-graph m11/lift_m11.py
+INPUTS = {
+    "m11": ("https://raw.githubusercontent.com/kerfors/m11-rdf/v0.4.0/m11-rdf.ttl",
+            "646b14fd5214a5aaba3020b266458796620869d2f5d536860bc3c62d3bd32eca"),
+    "usdm": ("https://raw.githubusercontent.com/kerfors/usdm-rdf/v0.7.0/usdm_v4.ttl",
+             "7c6c7b2f79ecc9908a5b7cc7f75011a93245b34c54713d7ee9a19b00dc261deb"),
+    "sssom": ("https://raw.githubusercontent.com/kerfors/m11-rdf/v0.4.0/m11-usdm.sssom.ttl",
+              "03b918e6b62bf94564e93ee79d6ddf2759f49274bfe94d9366a8adf33dc0f8ad"),
+    "context": ("https://raw.githubusercontent.com/kerfors/usdm-rdf/v0.7.0/usdm_v4.context.jsonld",
+                "1919be9f0b24b3db80f2e1815f7057cae08b32e9c28b2ad07fecbe65f91694eb"),
+}
+
+
+def fetch(key):
+    url, sha = INPUTS[key]
+    CACHE.mkdir(parents=True, exist_ok=True)
+    path = CACHE / url.rsplit("/", 1)[1]
+    if not path.exists():
+        with urllib.request.urlopen(url) as r:
+            path.write_bytes(r.read())
+    got = hashlib.sha256(path.read_bytes()).hexdigest()
+    if got != sha:
+        raise RuntimeError(f"{path.name}: SHA-256 {got}, expected {sha}")
+    return path, url
+
+
+M11 = rdflib.Namespace("https://w3id.org/m11-rdf/")
+USDM = "https://w3id.org/cdisc/usdm/v4/"
+U = rdflib.Namespace(USDM)
+BASE_IRI = f"https://example.org/studies/{CASE}/"
+CDISC_CODE_SYSTEM = "http://www.cdisc.org"  # the codeSystem USDM uses for CDISC / NCIt controlled terminology
+PREFIXES = f"PREFIX usdm: <{USDM}> "
+
+gm = rdflib.Graph().parse(fetch("m11")[0], format="turtle")
+gs = rdflib.Graph().parse(fetch("sssom")[0], format="turtle")
+gu = rdflib.Graph().parse(fetch("usdm")[0], format="turtle")
+STUDY_FILE = CASES[CASE]["file"]
+document = json.loads((HERE / STUDY_FILE).read_text(encoding="utf-8"))
+if document.get("usdmVersion") != "4.0.0":
+    raise ValueError(document.get("usdmVersion"))
+study = document["study"]
+study["@context"] = json.loads(fetch("context")[0].read_text())["@context"]
+gp = rdflib.Graph().parse(data=json.dumps(study), format="json-ld", publicID=BASE_IRI)
+print(f"m11-rdf {len(gm)}, sssom {len(gs)}, usdm-rdf {len(gu)}, {CASE} {len(gp)} triples; merged {len(gm + gu + gs + gp)} distinct")
+
+
+def loc(iri, ns):
+    s = str(iri)
+    if not s.startswith(ns):
+        raise ValueError(f"{s} is not under {ns}")
+    return s[len(ns):]
+
+
+# --- usdm-rdf: class chains and property lookup by attribute or role name ----------------------
+PROPS = set(gu.subjects(RDF.type, OWL.DatatypeProperty)) | set(gu.subjects(RDF.type, OWL.ObjectProperty))
+
+
+def chain(cls):
+    """The class and its superclasses in usdm-rdf."""
+    out, todo = [], [U[cls]]
+    while todo:
+        c = todo.pop(0)
+        if c not in out:
+            out.append(c)
+            todo.extend(x for x in gu.objects(c, RDFS.subClassOf) if str(x).startswith(USDM))
+    return [loc(c, USDM) for c in out]
+
+
+def prop(cls, name):
+    """usdm-rdf property for attribute or role `name` on `cls` or a superclass; None if there is none."""
+    if not re.fullmatch(r"\w+", name) or (U[cls], RDF.type, OWL.Class) not in gu:
+        return None
+    for c in chain(cls):
+        p = U[f"{c}-{name}"]
+        if p in PROPS:
+            return p
+        for q in gu.subjects(U.modelName, rdflib.Literal(name)):
+            if q in PROPS and (q, RDFS.domain, U[c]) in gu:
+                return q
+    return None
+
+
+# --- study values as display text ----------------------------------------------------------------
+REF = re.compile(r'<usdm:(ref|tag)\b([^>]*?)(?:/>|>\s*</usdm:\1>)')
+ATTR = re.compile(r'(\w+)="([^"]*)"')
+
+
+def study_class(s):
+    t = [loc(o, USDM) for o in gp.objects(s, RDF.type)]
+    if len(t) != 1:
+        raise ValueError(f"{s}: {len(t)} types")
+    return t[0]
+
+
+def resolve(text, owner, trail=()):
+    """Resolve usdm:ref (object id + attribute) and usdm:tag (owner's dictionary) in the graph.
+    A tag is looked up in the dictionary of the object whose text carries it."""
+    def one(m):
+        a = dict(ATTR.findall(m.group(2)))
+        if m.group(1) == "ref":
+            s = rdflib.URIRef(BASE_IRI + a["id"])
+            p = prop(a["klass"], a["attribute"])
+            vals = list(gp.objects(s, p)) if p else []
+            if len(vals) != 1:
+                return f'<span class="unres">[ref {a["klass"]} {a["id"]} {a["attribute"]}: {len(vals)} values]</span>'
+            return resolve(show(vals[0]), s, trail + (str(s),)) if str(s) not in trail else show(vals[0])
+        dct = None
+        if owner is not None:
+            dp = prop(study_class(owner), "dictionary")
+            dct = gp.value(owner, dp) if dp else None
+        if dct is not None:
+            for pm in gp.objects(dct, U["SyntaxTemplateDictionary-parameterMaps"]):
+                if str(gp.value(pm, U["ParameterMap-tag"])) == a["name"]:
+                    return resolve(str(gp.value(pm, U["ParameterMap-reference"])), owner, trail)
+        return f'<span class="unres">[tag {a["name"]}: no dictionary entry]</span>'
+    return REF.sub(one, text)
+
+
+def show(o):
+    """A study value as text: literals as they are, codes by decode, other objects by label/name."""
+    if isinstance(o, rdflib.Literal):
+        return str(o)
+    cls = study_class(o)
+    if cls == "Code":
+        return f'{gp.value(o, U["Code-decode"])} ({gp.value(o, U["Code-code"])})'
+    if cls == "AliasCode":
+        return show(gp.value(o, U["AliasCode-standardCode"]))
+    for name in ("label", "name", "text"):
+        p = prop(cls, name)
+        v = gp.value(o, p) if p else None
+        if v is not None and str(v).strip():
+            return str(v)
+    return loc(o, BASE_IRI)
+
+
+def codes_on(s, p):
+    """The codes an object carries through property p (Code or AliasCode), for showing why a clause keeps it."""
+    out = []
+    for c in gp.objects(s, p):
+        if study_class(c) == "AliasCode":
+            c = gp.value(c, U["AliasCode-standardCode"])
+        out.append({"code": str(gp.value(c, U["Code-code"])), "decode": str(gp.value(c, U["Code-decode"]))})
+    return out
+
+
+# --- where a value sits: study version, document, document version above the object -------------------
+UP = defaultdict(list)
+for a, p_, b in gp:
+    if isinstance(b, rdflib.URIRef) and str(b).startswith(BASE_IRI) and str(p_).startswith(USDM):
+        UP[b].append(a)
+DOC_OF = {v: d for d in gp.subjects(RDF.type, U.StudyDefinitionDocument)
+          for v in gp.objects(d, U["StudyDefinitionDocument-versions"])}
+WHERE = ("StudyVersion", "StudyDefinitionDocumentVersion", "StudyDefinitionDocument", "StudyDesign")
+
+
+def context(s):
+    """The nearest StudyDefinitionDocumentVersion (with its document), else StudyVersion, and StudyDesign at or
+    above s, each as text. The walk stops at a StudyVersion or a StudyDefinitionDocument."""
+    found, seen, todo = {}, set(), [s]
+    while todo:
+        o = todo.pop(0)
+        if o in seen:
+            continue
+        seen.add(o)
+        cls = study_class(o)
+        if cls in WHERE and cls not in found:
+            found[cls] = o
+        if cls in ("StudyVersion", "StudyDefinitionDocument"):
+            continue
+        todo.extend(UP.get(o, []))
+    out = []
+    if "StudyVersion" in found and "StudyDefinitionDocumentVersion" not in found:
+        out.append(f"study version {gp.value(found['StudyVersion'], U['StudyVersion-versionIdentifier'])}")
+    dv = found.get("StudyDefinitionDocumentVersion")
+    d = DOC_OF[dv] if dv is not None else found.get("StudyDefinitionDocument")
+    if d is not None:
+        out.append(f"document {gp.value(d, U['StudyDefinitionDocument-name'])}"
+                   + (f" version {gp.value(dv, U['StudyDefinitionDocumentVersion-version'])}" if dv is not None else ""))
+    if "StudyDesign" in found:
+        out.append(f"design {gp.value(found['StudyDesign'], U['StudyDesign-name'])}")
+    return out
+
+
+# --- this repo's mapping logs and breakpoints ---------------------------------------------------------
+LOG = defaultdict(list)  # (object id, attribute) -> rows other than 'mapped'
+for f in CASES[CASE]["logs"]:
+    with open(HERE / f, encoding="utf-8") as fh:
+        for i, row in enumerate(csv.DictReader(fh), start=2):
+            if row["status"] != "mapped":
+                LOG[(row["object"], row["attribute"])].append(
+                    {"file": f, "line": i, "status": row["status"], "note": row["note"], "evidence": row["evidence"]})
+BP = []
+with open(HERE / BREAKPOINTS, encoding="utf-8") as fh:
+    for row in csv.DictReader(fh):
+        BP.append({"id": row["id"], "area": row["area"], "kind": row["kind"], "breakpoint": row["breakpoint"],
+                   "usdm_element": row["usdm_element"], "cpmp_note": row["cpmp_note"],
+                   "names": set(re.findall(r"\b([A-Z]\w+)\.(\w+)", row["usdm_element"]))})
+
+
+def log_rows(s, attr_name):
+    return LOG.get((loc(s, BASE_IRI), attr_name), [])
+
+
+def log_rows_absent(attr_cls, attr_name):
+    """Mapping-log rows for an attribute no object in the study holds, on objects of the attribute's class
+    or a subclass (a mapping-log object id is the class name, '_', a number or key)."""
+    out = []
+    for (oid, a), rows in LOG.items():
+        cls = oid.split("_", 1)[0]
+        if a == attr_name and (U[cls], RDF.type, OWL.Class) in gu and attr_cls in chain(cls):
+            out.extend(dict(r, object=oid) for r in rows)
+    return out
+
+
+def breakpoints_for(classes, attr_name, hop):
+    names = {(c, attr_name) for c in classes}
+    if hop:
+        names.add((hop["pcls"], hop["text"].split("/")[1][1:]))
+    return [b["id"] for b in BP if b["names"] & names]
+
+
+# --- condition clauses -------------------------------------------------------------------------------
+CODE_CLAUSE = re.compile(r'^(?:.*/)?(?P<cls>\w+)/@(?P<attr>\w+)/Code/@(?P<f>code|decode)\s*'
+                         r'(?:=\s*"(?P<v>[^"]*)"|IN\s*\((?P<l>[^)]*)\))\s*$', re.I)
+
+
+def read_condition(cond, target_cls, hop):
+    """Run a code clause on the mapped object (of the class the target path's last hop names, else the
+    attribute's domain), or on its parent through the target path's last hop."""
+    clauses = []
+    for part in [p.strip() for p in cond.split(" | ") if p.strip()]:
+        if "sectionNumber" in part:
+            clauses.append({"text": part, "kind": "section"})
+            continue
+        m = CODE_CLAUSE.match(part)
+        on = None
+        if m and m.group("cls") in chain(hop["cls"] if hop else target_cls):
+            on = "s"
+        elif m and hop and m.group("cls") in chain(hop["pcls"]):
+            on = "parent"
+        if on:
+            p = prop(m.group("cls"), m.group("attr"))
+            if p is None:
+                raise ValueError(f"{part}: no usdm-rdf property for {m.group('cls')}.{m.group('attr')}")
+            values = [m.group("v")] if m.group("v") is not None else re.findall(r'"([^"]*)"', m.group("l"))
+            clauses.append({"text": part, "kind": "run", "on": on, "prop": str(p), "field": m.group("f").lower(), "values": values})
+        else:
+            clauses.append({"text": part, "kind": "not-run"})
+    return clauses
+
+
+def last_hop(target, attr):
+    """The role that reaches the mapped object in the stated target path, when it is stated in plain
+    Class/@role/Class/@attribute steps and resolves in usdm-rdf; else None."""
+    segs = [x for x in target.split("/") if x]
+    for i in range(len(segs) - 1, 2, -1):
+        cls, a = segs[i - 1], segs[i]
+        if re.fullmatch(r"\w+", cls) and a.startswith("@") and prop(cls, a[1:]) == rdflib.URIRef(attr):
+            pcls, role = segs[i - 3], segs[i - 2]
+            if re.fullmatch(r"\w+", pcls) and role.startswith("@"):
+                q = prop(pcls, role[1:])
+                if q is not None:
+                    return {"text": f"{pcls}/{role}/{cls}", "prop": str(q), "pcls": pcls, "cls": cls}
+            return None
+    return None
+
+
+def run_route(attr, clauses, hop=None):
+    """SPARQL for one mapping route; returns the query text, the rows kept and every candidate."""
+    run = [c for c in clauses if c["kind"] == "run"]
+    lines = [f"  ?s <{attr}> ?v ."]
+    if hop:
+        lines.append(f"  ?parent <{hop['prop']}> ?s .")
+    for i, c in enumerate(run):
+        field = "Code-code" if c["field"] == "code" else "Code-decode"
+        vals = ", ".join(json.dumps(v) for v in c["values"])
+        lines.append(f"  ?{c['on']} <{c['prop']}> ?c{i} . ?c{i} usdm:AliasCode-standardCode?/usdm:{field} ?x{i} . FILTER(?x{i} IN ({vals}))")
+    query = "SELECT DISTINCT ?s ?v WHERE {\n" + "\n".join(lines) + "\n}"
+    kept = {(str(s), str(v)) for s, v in gp.query(PREFIXES + query)}
+    cands = []
+    for s, v in sorted(gp.subject_objects(rdflib.URIRef(attr)), key=lambda x: (str(x[0]), str(x[1]))):
+        k = (str(s), str(v)) in kept
+        val = resolve(show(v), s)
+        if not k:
+            val = " ".join(re.sub(r"<[^>]+>", " ", val).split())
+            val = val if len(val) <= 240 else val[:239] + "…"
+        parents = list(gp.subjects(rdflib.URIRef(hop["prop"]), s)) if hop else []
+        cands.append({"s": str(s), "cls": study_class(s), "value": val, "kept": k,
+                      "via": [loc(x, BASE_IRI) for x in parents], "where": context(s),
+                      "log": log_rows(s, loc(rdflib.URIRef(attr), USDM).split("-", 1)[1]),
+                      "codes": [{"clause": c["text"], "on": c["on"],
+                                 "codes": [x for o in ([s] if c["on"] == "s" else parents) for x in codes_on(o, rdflib.URIRef(c["prop"]))]}
+                                for c in run]})
+    return query, cands
+
+
+def tidy(q):
+    return re.sub(r"<" + re.escape(USDM) + r"([^>]+)>", r"usdm:\1", q)
+
+
+P = PREFIXES
+
+# --- M11 sections, Template headings and fields ------------------------------------------------------
+sections = {}
+for s in gm.subjects(RDF.type, M11.Section):
+    num = gm.value(s, M11.sectionNumber)
+    page = gm.value(s, M11.templatePage)
+    sections[str(s)] = {"iri": str(s), "label": str(gm.value(s, SKOS.prefLabel)), "num": str(num) if num is not None else "",
+                        "heading": str(gm.value(s, M11.templateHeading) or ""), "page": int(page) if page is not None else None,
+                        "optional": str(gm.value(s, M11.templateOptional)) == "true",
+                        "conditional": str(gm.value(s, M11.templateConditional)) == "true",
+                        "heading_element": str(gm.value(s, M11.headingElement) or ""),
+                        "fields": []}
+
+records = defaultdict(list)
+for ax in gs.subjects(RDF.type, OWL.Axiom):
+    author = str(gs.value(ax, rdflib.URIRef("https://w3id.org/sssom/author_label")))
+    src = "HL7" if author.startswith("HL7") else "CDISC" if author.startswith("CDISC") else None
+    if src is None:
+        raise ValueError(author)
+    records[str(gs.value(ax, OWL.annotatedSource))].append({
+        "src": src, "row": int(gs.value(ax, M11.sourceRow)), "iri": str(ax) if isinstance(ax, rdflib.URIRef) else None,
+        "attr": str(gs.value(ax, OWL.annotatedTarget)), "cls": str(gs.value(ax, M11.statedClass)),
+        "cond": " ".join(str(gs.value(ax, M11.conditionPath) or "").split()),
+        "target": " ".join(str(gs.value(ax, M11.targetPath) or "").split())})
+
+route_cache = {}
+for s, sec in sections.items():
+    for f in gm.objects(rdflib.URIRef(s), M11.hasTemplateField):
+        e = gm.value(f, M11.realises)
+        field = {"label": str(gm.value(f, M11.fieldLabel)), "order": int(gm.value(f, M11.templateOrder)),
+                 "page": int(gm.value(f, M11.templatePage)), "kind": loc(gm.value(f, M11.fieldKind), str(M11)),
+                 "optional": str(gm.value(f, M11.templateOptional)) == "true",
+                 "conditional": str(gm.value(f, M11.templateConditional)) == "true",
+                 "element": None, "routes": []}
+        if e is not None:
+            field["element"] = {"iri": str(e), "label": str(gm.value(e, SKOS.prefLabel)),
+                                "code": str(gm.value(e, M11.ichConceptCode))}
+            groups = defaultdict(list)
+            for r in records.get(str(e), []):
+                hop = last_hop(r["target"], r["attr"])
+                groups[(r["attr"], r["cond"], json.dumps(hop))].append(r)
+            for (attr, cond, hopj), rs in sorted(groups.items()):
+                hop = json.loads(hopj)
+                target_cls = loc(gu.value(rdflib.URIRef(attr), RDFS.domain), USDM)
+                clauses = read_condition(cond, target_cls, hop) if cond else []
+                route = {"attr": loc(attr, USDM), "cond": cond, "hop": hop["text"] if hop else None,
+                         "clauses": [{k: c.get(k) for k in ("text", "kind", "on")} for c in clauses],
+                         "sources": sorted({(r["src"], r["row"], r["iri"]) for r in rs}), "targets": sorted({r["target"] for r in rs})}
+                if any(c["kind"] == "section" for c in clauses):
+                    route["status"] = "section-rule"
+                else:
+                    key = (attr, cond, hopj)
+                    if key not in route_cache:
+                        route_cache[key] = run_route(attr, clauses, hop)
+                    query, cands = route_cache[key]
+                    kept = [c for c in cands if c["kept"]]
+                    route.update({"query": tidy(query), "candidates": cands, "n_kept": len(kept), "n_all": len(cands),
+                                  "status": ("none" if not cands else "one" if len(kept) == 1 else
+                                             "filtered-out" if not kept else "several")})
+                    if not cands:
+                        route["log_absent"] = log_rows_absent(target_cls, route["attr"].split("-", 1)[1])
+                    if any(c["kind"] == "not-run" for c in clauses) and route["status"] in ("one", "several"):
+                        route["status"] = "not-checked"
+                classes = {target_cls} | {c["cls"] for c in route.get("candidates", [])}
+                route["breakpoints"] = breakpoints_for(sorted(classes), route["attr"].split("-", 1)[1], hop)
+                field["routes"].append(route)
+        sec["fields"].append(field)
+    sec["fields"].sort(key=lambda x: x["order"])
+
+def nkey(num):
+    return [int(x) if x.isdigit() else x for x in re.split(r"[.]", num)] if num else []
+
+
+for v in sections.values():
+    if v["page"] is None:
+        if not v["fields"]:
+            raise ValueError(f"{v['iri']}: no Template page and no fields")
+        v["page"] = min(f["page"] for f in v["fields"])
+order = sorted(sections.values(), key=lambda v: (v["page"], v["num"] != "", nkey(v["num"])))
+# --- codes the study puts in the CDISC code system that are not of the NCIt form C<digits> ---------------
+odd_codes = defaultdict(lambda: {"decode": set(), "attrs": set(), "n": 0})
+for c, code, decode in gp.query(P + """
+    SELECT ?c ?code ?decode WHERE {
+      ?c a usdm:Code ; usdm:Code-code ?code ; usdm:Code-decode ?decode ; usdm:Code-codeSystem ?cs .
+      FILTER(!REGEX(STR(?code), "^C[0-9]+$"))
+    }""", initBindings={"cs": rdflib.Literal(CDISC_CODE_SYSTEM)}):
+    g = odd_codes[str(code)]
+    g["decode"].add(str(decode))
+    g["n"] += 1
+    for holder, p_ in gp.subject_predicates(c):
+        if str(p_).startswith(USDM):
+            g["attrs"].add(loc(p_, USDM))
+codes = [{"code": k, "decode": sorted(g["decode"]), "attrs": sorted(g["attrs"]), "n": g["n"]} for k, g in sorted(odd_codes.items())]
+print("CDISC-system codes not of the form C<digits>:", [(c["code"], c["n"]) for c in codes])
+
+out = {"case": CASE, "m11": str(M11), "usdm": USDM, "base": BASE_IRI, "study_name": str(study.get("name", "")),
+       "study_file": STUDY_FILE, "study_sha256": hashlib.sha256((HERE / STUDY_FILE).read_bytes()).hexdigest(),
+       "logs": CASES[CASE]["logs"], "sections": order, "codes": codes,
+       "breakpoints": [{k: b[k] for k in ("id", "area", "kind", "breakpoint", "usdm_element", "cpmp_note")} for b in BP],
+       "inputs": {k: v[0] for k, v in INPUTS.items()},
+       "triples": {"m11": len(gm), "usdm": len(gu), "sssom": len(gs), "study": len(gp)}, "graph_triples": len(gm + gu + gs + gp)}
+OUT.mkdir(exist_ok=True)
+(OUT / f"{CASE}_m11.json").write_text(json.dumps(out, ensure_ascii=False), encoding="utf-8")
+with open(OUT / f"{CASE}_m11_routes.csv", "w", newline="", encoding="utf-8") as fh:
+    w = csv.writer(fh)
+    w.writerow(["section", "field", "m11_element", "usdm_attribute", "status", "n_kept", "n_all", "where_kept",
+                "breakpoints", "log_rows"])
+    for sec in order:
+        for f in sec["fields"]:
+            for r in f["routes"] or [None]:
+                el = f["element"]["label"] if f["element"] else ""
+                if r is None:
+                    w.writerow([sec["num"] or sec["label"], f["label"], el, "", "unmapped" if el else "no-element",
+                                "", "", "", "", ""])
+                    continue
+                kept = [c for c in r.get("candidates", []) if c["kept"]]
+                logs = [x for c in r.get("candidates", []) for x in c["log"]] + r.get("log_absent", [])
+                w.writerow([sec["num"] or sec["label"], f["label"], el, r["attr"], r["status"], r.get("n_kept", ""),
+                            r.get("n_all", ""), " | ".join(sorted({"; ".join(c["where"]) for c in kept})),
+                            " ".join(r["breakpoints"]),
+                            " | ".join(sorted({f"{x['file'].split('/')[-1]}:{x['line']} {x['status']}" for x in logs}))])
+
+# --- counts for the page text and the README --------------------------------------------------------
+fields = [f for s in order for f in s["fields"]]
+rstat = defaultdict(int)
+for f in fields:
+    for r in f["routes"]:
+        rstat[r["status"]] += 1
+print("sections", len(order))
+print("fields", len(fields), "| realising an element", sum(1 for f in fields if f["element"]),
+      "| with a mapping route", sum(1 for f in fields if f["routes"]), "| routes by status", dict(rstat),
+      "| with a last hop", sum(1 for f in fields for r in f["routes"] if r["hop"]))
+print("written", OUT / f"{CASE}_m11.json", (OUT / f"{CASE}_m11.json").stat().st_size, "bytes")
